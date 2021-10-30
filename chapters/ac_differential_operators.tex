@@ -1,2 +1,137 @@
 \chapter{Differential operators}
 Given the concept of partial derivatives new differential operators can be defined to be applied to scalar functions or vectorial fields.
+
+\section{Gradient, divergence and curl}
+
+	\subsection{Gradient}
+	Let $f:\mathbb{R}^3\supseteq A\rightarrow\mathbb{R}$, with $A$ an open set of $\mathbb{R}^2$, a function of three variables $f(x,y,z)$.
+	Be the function derivable.
+	The gradient of $f$ in Cartesian coordinates is defined by:
+
+	$$grad f = \nabla f := \frac{\partial f(x,y,z)}{\partial x}\hat{i} + \frac{\partial f(x,y,z)}{\partial y}\hat{j} + \frac{partial f(x,y,z)}{\partial z}\hat{k}$$
+
+	The gradient is then the vector that takes as components along the axes directions the first order partial derivatives.
+	The gradient is the vector of major increment of the function with respect to the variations in the variables.
+
+	\subsection{Divergence}
+	Suppose now to have a derivable vectorial field $\vec{V}:\mathbb{R}^3\supseteq A \rightarrow\mathbb{R}^3$, with $A$ an open set of $\mathbb{R}^3$.
+	This vectorial field is defined by means of its components along the axis directions: $\vec{V} = v_1\hat{i} + v_2\hat{j} + v_3\hat{k}$.
+	It associates a vector to each point of $A$.
+	The gradient, if it exists and if it is derivable is a vectorial field.
+	The divergence of $\vec{V}$ in Cartesian coordinates is:
+
+	$$div\vec{V} = \nabla\cdot\vec{V} := \frac{\partial v_1(x,y,z)}{\partial x} + \frac{\partial v_2(x,y,z)}{\partial y} + \frac{\partial v_3(x,y,z)}{\partial z}$$
+
+	This gives informations on where a vectorial fields has source or sink, or, when the vectorial field represent a fluid flux, if the fluid is incompressible or solenoidal.
+
+	\subsection{Curl}
+	Suppose now to have a derivable vectorial field $\vec{V}:\mathbb{R}^3\supseteq A \rightarrow\mathbb{R}^3$, with $A$ an open set of $\mathbb{R}^3$.
+	The application of the curl to $\vec{V}$ is:
+
+	$$rot\vec{V} = \nabla\times\vec{V} := \biggl(\frac{\partial v_3}{\partial y} - \frac{\partial v_2}{\partial z}\biggr)\hat{i} + \biggl(\frac{\partial v_1}{\partial z} - \frac{\partial v_3}{\partial x}\biggr)\hat{j} + \biggl(\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y}\biggr)\hat{k}$$
+
+	The application of the curl to a vectorial field gives information on if the field rotates around a point and the verse of that rotation.
+	The output of the curl is the modulus of the rotation, and the direction is linked by means of the right hand rule to the verse of rotation.
+
+	\subsection{Properties}
+
+	\begin{multicols}{3}
+		\begin{itemize}
+			\item $\nabla\times\nabla f = \vec{0}$
+			\item $\nabla\cdot\nabla\times\vec{V} = 0$
+			\item $\nabla\cdot f = \nabla^2 f$
+		\end{itemize}
+	\end{multicols}
+
+	\subsection{Laplacian}
+	The Laplacian is the last operator and it is defines as:
+
+	$$\nabla^2 f = \frac{\partial^2}{\partial x^2}f + \frac{\partial^2}{\partial y^2}f + \frac{\partial^2}{\partial z^2}f$$
+
+\section{Hessian matrix: maxima and minima}
+A matrix of second partial derivatives can be build to study functions from $\mathbb{R}^n$ to $\mathbb{R}$.
+The presence of possible extrema at one point is linked to the one of a null gradient in that point.
+Let $f:\mathbb{R}^2\supseteq A\rightarrow{R}$, with $A$ an open set of $\mathbb{R}^2$ a function $f(x,y)$.
+If $(x_0, y_0)$ is a local extremum if exists $\nabla f = \vec{0}$.
+To find local extrema are considered points in which $\nabla f = \vec{0}$.
+Let $f:\mathbb{R}^2\supseteq A\rightarrow{R}$, with $A$ an open set of $\mathbb{R}^2$ and $f\in C^2$, where $c^2$ meaning that all partial second derivatives exist and are continuous.
+Then the hessian matrix is defined as:
+
+$$H_f(x_0, y_0) = \begin{pmatrix} \partial_{xx} f(x_0, y_0) & \partial_{yx}f(x_0, y_0) \\ \partial_{xy} f(x_0, y_0) & \partial_{yy}f(x_0, y_0)\end{pmatrix}$$
+
+This matrix is useful to determine the nature of the extrema.
+Let $f\in C^2$ and $(x_0, y_0)$ a critical point of $f$, then:
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item If the determinant of $H_f(x_0, y_0) >0$ and $\partial_{xx}f(x_0, y_0) > 0$ then $(x_0, y_0)$ is a minimum.
+		\item If the determinant of $H_f(x_0, y_0) >0$ and $\partial_{xx}f(x_0, y_0) < 0$ then $(x_0, y_0)$ is a maximum.
+		\item If the determinant of $H_f(x_0, y_0)<0$ then $(x_0, y_0)$ is a saddle point.
+		\item If the determinant of $H_f(x_0,y_0) = 0$ further analysis is necessary.
+	\end{itemize}
+\end{multicols}
+
+\section{Jacobian matrix}
+With a vectorial function the concept of gradient can be extended and applied to each component of the function.
+Let $f:\mathbb{R}^2\supseteq A\rightarrow\mathbb{R}^2$ be a function of two variable $f = (f_1(x, y), f_2(x, y))$ for whigh all the derivatives exist ant are continuous.
+The jacobian matrix is defined as:
+
+$$J_f = \begin{pmatrix} \partial_x f_1 & \partial_y f_1\\\partial_x f_2 & \partial_y f_2\end{pmatrix} = \begin{pmatrix} \nabla f_1\\\nabla f_2\end{pmatrix}$$
+
+Due to the fact that we have a function that takes as input two variables and gives as output two variables, this can be thought as a change of coordinates:
+
+$$f = (f_1(x, y), f_2(x, y)) = (u, w)\qquad (x, y)\rightarrow (u, w)$$
+
+The Jacobian matrix allows to determine the domain of the transformation.
+The change of variables is $1\leftrightarrow 1$ (a bijective function) only if the determinant of the Jacobian matrix is not null.
+Also the Jacobian determinant makes possible to consistently define the change of volume in changing the coordinates.
+Given a transformation from $(x, y)$ to $(u, v)$ the change in the expression of the area with respect to the coordinates is:
+
+$$dA = dxdy = \biggl| det\frac{\partial(x, y)}{\partial(u, v)}\biggr|dudv$$
+
+Where $dx, dy, du, dv$ are small coordinates intervals.
+
+\section{Chain rule}
+Let $u(x, y)$ be a differentiable function of two variables that are differentiable function of two variables each $x(s, t)$ and $y(s, t)$, then the composite function is differentiable and the partial derivatives are:
+
+$$\frac{\partial u}{\partial s} = \frac{\partial u}{\partial x}\frac{\partial x}{\partial s} + \frac{\partial u}{\partial y}\frac{\partial y}{\partial s}\qquad\frac{\partial u}{\partial t} = \frac{\partial u}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial u}{\partial y}\frac{\partial y}{\partial t}$$
+
+	\subsection{Gradient in polar coordinates}
+	Suppose to have $g(x, y)$ a function of two variables in Cartesian coordinates.
+	If $(\rho, \theta)$ are the usual polar coordinates related to $(x, y)$ by $x = \rho\cos\theta$ and $y =\rho\sin\theta$, then by substituting these for $x$ and $y$ $g$ becomes a function of $\rho$ and $\theta$:
+
+	$$g(x, y) = f(\rho(x, y), \theta(x, y))$$
+
+	With $\rho(x,y) =\sqrt{x^2+y^2}$ and $\theta(x, y) = \arctan\frac{y}{x}$.
+	The objective is to compute the gradient $\nabla g(x,y)$ and express it in terms of $\rho$ and $\theta$.
+	The chain rule can be used to compute the partial derivatives of $g$ with respect to $x$ and $y$:
+
+	$$\frac{\partial g}{\partial x} = \frac{\partial f}{\partial \rho}\frac{\partial \rho}{\partial x} + \frac{\partial f}{\partial \theta}\frac{\partial \theta}{\partial x}\qquad\frac{\partial g}{\partial y} = \frac{\partial f}{\partial \rho}\frac{\partial \rho}{\partial y} + \frac{\partial f}{\partial \theta}\frac{\partial \theta}{\partial y}$$
+
+	To fill these relation there is a need to compute:
+
+	\begin{align*}
+		\frac{\partial\rho}{\partial x} &= \frac{\partial\sqrt{x^2+y^2}}{\partial x} = \frac{1}{2}\frac{2x}{\sqrt{x^2}{y^2}} = \frac{x}{\sqrt{x^2+y^2}} = \frac{\rho\cos\theta}{\rho} = \cos\theta\\
+		\frac{\partial\rho}{\partial y} &= \frac{\partial\sqrt{x^2+y^2}}{\partial y} = \frac{1}{2}\frac{2y}{\sqrt{x^2}{y^2}} = \frac{y}{\sqrt{x^2+y^2}} = \frac{\rho\sin\theta}{\rho} = \sin\theta\\
+		\frac{\partial\theta}{\partial x} &= \frac{\partial\arctan\frac{y}{x}}{\partial x} = -\frac{y}{x^2+y^2} = -\frac{\rho\sin\theta}{\rho^2} = -\frac{\sin\theta}{\rho}\\
+		\frac{\partial\theta}{\partial y} &= \frac{\partial\arctan\frac{y}{x}}{\partial y} = \frac{x}{x^2+y^2} = \frac{\rho\cos\theta}{\rho^2} = \frac{\cos\theta}{\rho}\\
+	\end{align*}
+
+	So:
+
+	$$\frac{\partial g}{\partial x} = \frac{\partial f}{\partial\rho}\cos\theta + \frac{\partial f}{\partial\theta}\frac{-\sin\theta}{\rho}\qquad \frac{\partial g}{\partial y} = \frac{\partial f}{\partial \rho}\sin\theta + \frac{\partial f}{\partial \theta}\frac{\cos\theta}{\rho}$$
+
+	The gradient of $g$ using Cartesian versors will be:
+
+	\begin{align*}
+		\nabla g = g_x\hat{e}_x + g_y\hat{e}_y &= \biggl(\frac{\partial f}{\partial\rho}\cos\theta + \frac{\partial f}{\partial \theta}\frac{-\sin\theta}{\rho}\biggr)\hat{e}_x +\biggl(\frac{\partial f}{\partial\rho}\sin\theta + \frac{\partial f}{\partial \theta}\frac{\cos\theta}{\rho}\biggr)\hat{e}_y=\\
+																					 &=\biggl(\frac{\partial f}{\partial\rho}\cos\theta\biggr)\hat{e}_x + \biggl(\frac{\partial f}{\partial \theta}\frac{-\sin\theta}{\rho}\biggr)\hat{e}_x +\biggl(\frac{\partial f}{\partial\rho}\sin\theta\biggr)\hat{e}_y + \biggl(\frac{\partial f}{\partial \theta}\frac{\cos\theta}{\rho}\biggr)\hat{e}_y=\\
+																					 &=\frac{\partial f}{\partial\rho}(\cos\theta\hat{e}_x + \sin\theta\hat{e}_y) + \frac{1}{\rho}\frac{\partial f}{\partial\theta}(-\sin\theta\hat{e}_x + \cos\theta\hat{e}_y)
+	\end{align*}
+
+	The unit versors $\hat{e}_\rho$ and $\hat{e}_\theta$ are introduced.
+	They have unitary modulus and direction that change from point to point.
+	In particolar for polar coordinates they have the components $\hat{e}^\rho = (\cos\theta, \sin\theta)$ and $\hat{e}_\theta = (-\sin\theta, \cos\theta)$.
+	So finally the explicit gradient in polar coordinates is:
+
+	$$\nabla g = f_\rho\hat{e}_\rho + \frac{f_\theta}{\rho}\hat{e}_\theta$$
