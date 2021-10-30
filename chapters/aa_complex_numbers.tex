@@ -1,0 +1,191 @@
+\chapter{Complex numbers}
+A broad range of problems can be solved within real numbers, however it is easy to find some that are not solvable in $\mathbb{R}$.
+For example the equation $x^2+1=0$ has no solution in the real number.
+Because of this the real number set is extended, trying to develop a coherent framework in which this problems can be treated.
+Following this procedure a new variable $i$ is defined, such that:
+
+$$i := \sqrt{-1}\not\in\mathbb{R}$$
+
+This quantity is called the imaginary unit and it is used to define a new kind of numbers or complex numbers, defined in standard form as:
+
+$$z := \underbrace{a}_{\text{Real part, }\Re{z}} + \underbrace{bi}_{\text{Imaginary part, }\Im{z}}$$
+
+Where $a\land b\in\mathbb{R}$.
+This create a new set of numbers $\mathbb{C}$ such that $z\in\mathbb{C}$ and $\mathbb{R}\subset\mathbb{C}$.
+In fact any real number is a complex number where $b=0$.
+
+\section{Argand plane}
+Complex numbers can be seen as ordered pairs of reals and they can be naturally plotted on the complex or argand plane.
+The horizontal direction represente the real axis and on the vertical the imaginary one.
+
+\section{Operations}
+
+	\subsection{Addition}
+	Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = a+bi$ and $w = c+di$, where $a,b,c,d\in\mathbb{R}$.
+	The addition is defined as:
+
+	$$z+w = (a+c) + (b+d)i$$
+
+	\subsection{Subtraction}
+	Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = a+bi$ and $w = c+di$, where $a,b,c,d\in\mathbb{R}$.
+	The subtraction is defined as:
+
+	$$z-w = (a-c) + (b-d)i$$
+
+	\subsection{Multiplication}
+	Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = a+bi$ and $w = c+di$, where $a,b,c,d\in\mathbb{R}$.
+	Remembering that $i^2 = -1$, the multiplication of two complex number is:
+
+	\begin{align*}
+		z\cdot w &= (a+bi)(c+di) = \\
+						 &=ac+adi+bci+bdi^2 =\\
+						 &= ac+(ad+bc)i -bd =\\
+						 &= (ac-bd)+(ad+bc)i
+	\end{align*}
+
+	\subsection{Complex conjugate}
+	Let $z\in\mathbb{C}$ be a complex number such that $z=a+bi$, where $a,b\in\mathbb{R}$.
+	The complex conjugate is defined as:
+
+	$$z^*=a-bi$$
+
+	So we take the opposite of the imaginary part.
+
+	\subsection{Division}
+	Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = a+bi$ and $w = c+di$, where $a,b,c,d\in\mathbb{R}$.
+	The complex conjugate can be used to define a division operation that brings the result in standard form.
+	The operation is similar to the rationalization of a fraction: the nominator and the denominator are multiplied by the complex conjugate of the denominator.
+	This is because the product of a complex number and its conjugate is always real.
+	So the division id defined as:
+
+	\begin{align*}
+		\frac{z}{w} &= \frac{a+bi}{c+di} = \\
+								&=\frac{a+bi}{c+di}\frac{c-di}{c-di}=\\
+								&=\frac{ac - adi + bci +bd}{c^2+d^2}=\\
+								&= \frac{(ac + bd) + (bc - ad)i}{c^2+d^2} = \\
+								&=\frac{ac +bd}{c^2+d^2} + \frac{bc-ad}{c^2+d^2}i
+	\end{align*}
+
+\section{Polar form}
+
+	\subsection{Complex numbers as vectors}
+	Complex numbers can be plotted as points in the Argand plane, using as coordinates the real and the imaginary parts.
+	In this way a complex number can be seen as a vector of modulus:
+
+	$$\rho = |z| = \sqrt{a^2+b^2}$$
+
+	Due to Pitagora's theorem.
+	Complex number are added and subctrated as such.
+
+	\subsection{Definition}
+	The polar form is useful to have a simple interpretation of multiplication and division and it is defined as:
+
+	$$z :=\rho(\cos\theta + i\sin\theta)$$
+
+	The variable used for this repreesntation are the modulus $\rho$ and the argument $\theta$, the angle between the positive direction of the real axis and the vector itself.
+	The modulus of a complex number is always positive.
+	Complex numbers in polar form are periodic with the argument $\theta$ with periodicity $2k\pi$, $\forall k\in\mathbb{Z}$.
+
+	\subsection{Conversion between polar form and standard form}
+	Any complex number writtein in standard form can be writtein in polar form, where:
+
+	$$\begin{cases}
+		\theta = \arctan \frac{b}{a}\\
+		\rho = \sqrt{a^2 + b^2}
+	\end{cases}$$
+
+	And the invers operation:
+
+	$$\begin{cases}
+		a = \rho\cos\theta\\
+		b = \rho\sin\theta
+	\end{cases}$$
+
+	\subsection{Operations}
+
+		\subsubsection{Multiplication}
+		Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = \rho_z(\cos\theta_z) + i\sin\theta_z)$ and $w = \rho_w(\cos\theta_w + i\sin\theta_w)$.
+		The multiplication between $w$ and $z$ is:
+
+		\begin{align*}
+			zw &= \rho_z\rho_w(\cos\theta_z +i \sin\theta_z)(\cos\theta_w +i \sin\theta_w) =\\
+				 &= \rho_z\rho_w[\cos\theta_z\cos\theta_w - \sin\theta_z\sin\theta_w + i(\sin\theta_z\cos\theta_w + \cos\theta_z\sin\theta_w)]
+		\end{align*}
+
+		Using now the addition formulas for cosine and sine:
+
+		$$zw = \rho_z\rho_q[\cos(\theta_z+\theta_w) + i\sin(\theta_z+\theta_w)]$$
+
+		\subsubsection{Division}
+		Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = \rho_z(\cos\theta_z) + i\sin\theta_z)$ and $w = \rho_w(\cos\theta_w + i\sin\theta_w)$.
+		In a similar way as the multiplication, the division will be:
+
+		$$\frac{z}{w} = \frac{r_z}{r_w}[\cos(\theta_z-\theta_w) + i\sin(\theta_z-\theta_q)]$$
+
+		\subsubsection{Power}
+		According to the de Moivre theorem, for every $n\in\mathbb{N}$ positive integer and $z\in\mathbb{C}, z = \rho(\cos\theta + i\sin\theta)$:
+
+		$$z^n - \rho^n(\cos n\theta + i\sin n\theta)$$
+
+		\subsubsection{N-th root}
+		For every $n\in\mathbb{N}$ positive integer and $z\in\mathbb{C}, z = \rho(\cos\theta + i\sin\theta)$:
+
+		$$\sqrt[n]{z} = \rho^{\frac{1}{n}}\biggl[\cos\biggl(\frac{\theta+2k\pi}{n}\biggr) + i\sin\biggl(\frac{\theta+2k\pi}{n}\biggr)\biggr]$$
+
+		Where $k$ is an integer.
+		Note that $k$ and $k=k+n$ produce identical solutiion, so $k$ can be limited to the set $\{0,1,\dots, n-1\}$.
+		In conclusion there are $n$ distinct roots, each with modulus $r^{\frac{1}{n}}$, that lie on the circle of radius equal to the modulus equally spaced on the Argand plane, creating a regular polygon.
+
+\section{Complex valued functions}
+Real function can be extended to complex valued function.
+Taken $f$ from an interval $A\subset\mathbb{R}$ to $\mathbb{C}$ the function can be written as:
+
+$$f(x) = u(x) + v(x)i$$
+
+Where $u$ and $v$ are reale valued functions.
+The limit of a complex valued function exists if the limits of the real and the complex component exist.
+
+	\subsection{Derivative}
+	The derivative of a complex valued function is obtained differentiating its real and imaginary parts:
+
+	$$f'(x) = u'(x) + v'(x)$$
+
+	The properties of the derivatives can be extended to this case: if $f$ and $g$ are two complex valued functions differentiable at some point $x_0$ in the domain of both functions, $f\pm g$, $fg$ and $\frac{f}{g}$ ($g(x_0)\neq 0$) are differentiable and the values of these functions are, as in the real case:
+
+	$$(f\pm g)'(x_0) = f'(x_0) + g'(x_0)$$
+
+	$$(fg)'(x_0) = f'(x_0)g(x_0) + f(x_0)g'(x_0)$$
+
+	$$\frac{f}{g}'(x_0) = \frac{f'(x_0)g(x_0)-f(x_0)g'(x_0)}{g^2(x_0)}$$
+
+\section{Complex exponential}
+Due to its properties and applications it is desirable to extend the exponential function to the complex field.
+A complex exponential function is in the form $e^{a+bi}$.
+From the case $a = 0$:
+
+$$e^{ti} = \cos t + i\sin t$$
+
+If $a, b\neq 0$;
+
+\begin{align*}
+	e^{a+bi} &= e^ae^{bi} =\\
+					 &=e^a(\cos b + i\sin b)
+\end{align*}
+
+	\subsection{Properties}
+	Not only the product of two complex exponentials meets the classical properties of the real exponentials, also the derivatives maintains them.
+	Let $t\in\mathbb{R}$ adn $y(t) = e^{(a+bi)t} = e^{at}(\cos t b + i\sin b)$, its derivative with respecto to $t$ is:
+
+	\begin{align*}
+		\frac{dy(t)}{dt} &= \frac{de^{(a+bi)t}}{dt}=\\
+										 &= (a+bi)e^{(a+bi)t}
+	\end{align*}
+
+	It can be demonstrated that given $z\in\mathbb{C}$, $\frac{de^z}{dz} = e^z$.
+
+	\subsection{Roots of a complex number}
+	The complex exponential allows to write the $n$ roots of a complex number $z = r(\cos\theta + i\sin\theta)$ as:
+
+	$$w_k = r^\frac{1}{n}e^{i\frac{\theta+2kn}{n}}$$
+
+	Where $k\in\{0, 1, \dots, n-1\}$.
