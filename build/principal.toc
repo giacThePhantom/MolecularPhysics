@@ -44,3 +44,10 @@
 \contentsline {chapter}{\numberline {D}Spherical coordinates}{16}{appendix.1.D}%
 \contentsline {section}{\numberline {D.1}Definition}{16}{section.1.D.1}%
 \contentsline {section}{\numberline {D.2}The sphere volume}{16}{section.1.D.2}%
+\contentsline {chapter}{\numberline {E}Multidimensional integrals}{18}{appendix.1.E}%
+\contentsline {section}{\numberline {E.1}Definition}{18}{section.1.E.1}%
+\contentsline {section}{\numberline {E.2}Properties}{19}{section.1.E.2}%
+\contentsline {subsection}{\numberline {E.2.1}Differentiability}{19}{subsection.1.E.2.1}%
+\contentsline {subsection}{\numberline {E.2.2}Order of integration}{19}{subsection.1.E.2.2}%
+\contentsline {subsection}{\numberline {E.2.3}x-simple and y-simple domains}{19}{subsection.1.E.2.3}%
+\contentsline {subsection}{\numberline {E.2.4}Change of variables}{19}{subsection.1.E.2.4}%
