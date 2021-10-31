@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  31 OCT 2021 01:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  31 OCT 2021 02:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,7 +800,7 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...rix: maxima and minima}{13}{section.1.C.2}
+l.40 ...rix: maxima and minima}{12}{section.1.C.2}
                                                   % [1
 
 ])
@@ -827,18 +827,22 @@ Appendix B.
 Appendix C.
 [12
 
-] [13] [14]) [15] (./build/principal.aux)
+] [13] [14]) (./chapters/ad_spherical_coordinates.tex [15]
+Appendix D.
+[16
+
+]) [17] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 23DD826AA9E9C982B5B7DFB4265AD0A6;5678.
+(rerunfilecheck)             Checksum: 687F5EBBA1564DA85E8F9840B77A25C1;6094.
  ) 
 Here is how much of TeX's memory you used:
- 18605 strings out of 478994
- 315511 string characters out of 5864751
- 673361 words of memory out of 5000000
- 35736 multiletter control sequences out of 15000+600000
+ 18617 strings out of 478994
+ 315744 string characters out of 5864751
+ 673364 words of memory out of 5000000
+ 35740 multiletter control sequences out of 15000+600000
  423715 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,12n,91p,472b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,14n,91p,472b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
 texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -858,10 +862,10 @@ dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type
 1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 >
-Output written on ./build/principal.pdf (16 pages, 292128 bytes).
+Output written on ./build/principal.pdf (18 pages, 297264 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 331 compressed objects within 4 object streams
- 60 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
 

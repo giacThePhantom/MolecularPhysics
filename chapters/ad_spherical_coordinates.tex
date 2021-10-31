@@ -1,0 +1,57 @@
+\chapter{Spherical coordinates}
+
+\section{Definition}
+An important change of coordinates is the one that takes the cartesian coordinates and maps them into the spherical ones $(\rho, \theta, \phi)$.
+This transformation allows to simplify the treatment of systems with spherical symmetry.
+The relationship between cartesian and spherical coordinates can be defined as:
+
+\begin{multicols}{3}
+	\begin{itemize}
+		\item $x = x_0 + \rho\cos\theta\sin\phi$
+		\item $y = y_0 + \rho\sin\theta\sin\phi$
+		\item $z = z_0 + \rho\cos\phi$
+	\end{itemize}
+\end{multicols}
+
+With conditions:
+
+\begin{multicols}{3}
+	\begin{itemize}
+		\item $0\le \rho\le \infty$
+		\item $0 \le \theta\le 2\pi$
+		\item $0 \le \phi\le \pi$
+	\end{itemize}
+\end{multicols}
+
+Computing all the first order partial derivatives the jacobian matrix is:
+
+\begin{align*}
+	J_f &= \begin{pmatrix}\nabla(x(\rho, \theta, \phi))\\\nabla(t(\rho, \theta, \phi))\\\nabla(z(\rho,\theta,\phi))\end{pmatrix} = \begin{pmatrix} x_\rho & x_\theta & x_\phi\\y_\rho & y_\theta & y_\phi\\z_\rho & z_\theta & z_\phi\end{pmatrix}=\\
+			&=\begin{pmatrix} \cos\theta\sin\phi & -\rho\sin\theta\cos\phi & \rho\cos\theta\cos\phi\\ \sin\theta\sin\phi & \rho\sin\theta\cos\phi & \rho\sin\theta\cos\phi\\\cos\phi & 0 & -\rho\sin\phi\end{pmatrix}
+\end{align*}
+
+With the jacobian determinant $-\rho^2\sin\phi$.
+So for spherical coordinates:
+
+$$dV = dxdydz = \biggl|det\frac{\partial(x,y,z)}{\partial(\rho,\theta,\phi)}\biggr|d\rho d\theta d\phi = \rho^2\sin\phi d\rho d\theta d\phi$$
+
+\section{The sphere volume}
+To compute the volume of a ball $B$ with radius $\rho\le R$, the most simple thing to do is to put it in spherical coordinates with the following conditions:
+
+\begin{multicols}{3}
+	\begin{itemize}
+		\item $0\le \rho\le R$
+		\item $0 \le \theta\le 2\pi$
+		\item $0 \le \phi\le \pi$
+	\end{itemize}
+\end{multicols}
+
+So that the integral to compute is:
+
+\begin{align*}
+	Vol(B) &= \int\limits_0^\pi\int\limits_0^{2\pi}\int\limits_{0}^R \rho^2\sin\phi d\rho d\theta d\phi=\\
+				 &=\int\limits_0^\pi\int\limits_0^{2\pi}\biggl[\frac{\rho^3}{3}\biggr]_0^R\sin\phi d\theta d\phi = \int\limits_0^\pi\int\limits_0^{2\pi}\frac{R^3}{3}\sin\phi d\theta d\phi=\\
+				 &=\int\limits_0^\pi[\theta]_0^{2\pi}\frac{R^3}{3}\sin\phi d\phi = \int\limits_0^\pi\frac{2\pi R^3}{3}\sin\phi d\phi = \\
+				 &= [-\cos\phi]_0^\pi\frac{2\pi R^3}{3}=\\
+				 &=\frac{4\pi R^3}{3}
+\end{align*}
