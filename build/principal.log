@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  31 OCT 2021 13:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  2 NOV 2021 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Principal.tex
+**principal.tex
 (./principal.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./prefix.tex
@@ -800,7 +800,7 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...rix: maxima and minima}{13}{section.1.C.2}
+l.40 ...e {C.2.4}Equality}{14}{subsection.1.C.2.4}
                                                   % [1
 
 ])
@@ -823,27 +823,31 @@ Appendix A.
 Appendix B.
 [10
 
-]) (./chapters/ac_differential_operators.tex [11]
+]) (./chapters/ac_differential_operators.tex [11] [12]
 Appendix C.
-[12
+[13
 
-] [13] [14]) (./chapters/ad_spherical_coordinates.tex [15]
+] [14] [15] [16] [17]) (./chapters/ad_spherical_coordinates.tex [18]
 Appendix D.
-[16
+[19
 
-]) (./chapters/ae_multidimensional_integrals.tex [17]
+]) (./chapters/ae_multidimensional_integrals.tex [20]
 Appendix E.
-[18
+[21
 
-]) [19] (./build/principal.aux)
+]) (./chapters/af_hilbert_spaces.tex [22]
+Appendix F.
+[23
+
+]) [24] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 3A23320F0968F860C72CCFD0ED5CEB8E;7204.
+(rerunfilecheck)             Checksum: C32437F1476D9ED127A8F140DB192382;9475.
  ) 
 Here is how much of TeX's memory you used:
- 18637 strings out of 478994
- 316149 string characters out of 5864751
- 673370 words of memory out of 5000000
- 35748 multiletter control sequences out of 15000+600000
+ 18681 strings out of 478994
+ 316932 string characters out of 5864751
+ 673379 words of memory out of 5000000
+ 35765 multiletter control sequences out of 15000+600000
  423715 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,14n,91p,472b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -866,10 +870,10 @@ dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type
 1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on ./build/principal.pdf (20 pages, 317895 bytes).
+Output written on ./build/principal.pdf (25 pages, 337046 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
- 74 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 559 PDF objects out of 1000 (max. 8388607)
+ 505 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 513 words of extra memory for PDF output out of 10000 (max. 10000000)
 
