@@ -98,6 +98,77 @@
 
 	$$\vec{w} = \hat{O}\vec{v}\rightarrow \vec{e}_j\cdot\vec{w} = \sum\limits_{i=1}^N(\vec{e}_i\cdot\vec{v})\vec{e}_j\cdot\hat{O}\vec{e}_i = \sum\limits_{i=1}^NO_{ji}v_j$$
 
+	Where $v_i = \vec{e}_i\cdot \vec{v}$ and $O_{ij} = \vec{e}_i\cdot\hat{O}\vec{e}_j$.
+	In a complete analogy, a linear operator $\hat{O}$ defined in an hilbert space $\mathcal{H}$ linearly maps a quantum state into another:
 
+	$$|w\rangle = \hat{O}|v\rangle\qquad \hat{O}(\alpha_1|v_1\rangle + \alpha_2|v_2\rangle) = \alpha_1\hat{O}|v_1\rangle +  \alpha_2\hat{O}|v_2\rangle$$
 
-	
+	Like real vector space, operators in Hilbert spaces can be represented in a given orthonormal basis like the position state basis through a projection procedure:
+
+	$$|\omega\rangle = \hat{O}|\psi\rangle\Rightarrow \omega(\vec{x} = \langle\vec{x}|w\rangle = \int d^3\vec{y}\langle\vec{y}|\psi\rangle\langle\vec{x}|\hat{O}|\vec{y}\rangle = \int d^3\vec{y} O(\vec{x}, \vec{y})\psi(\vec{y})$$
+
+	Where $\omega(\vec{x})$ and $\psi(\vec{x})$ denote the wave functions associated to the states $|\omega\rangle$ and $|\psi\rangle$ respectively.
+	In most cases $O(\vec{x}, \vec{y})$ is a nearly local operator.
+
+		\subsubsection{Multiplicative operator}
+		A multiplicative operator is the potential energy operator: $U(\vec{x}, \vec{y} = \delta(\vec{x}-\vec{y})u(y)$:
+
+		$$\int d^3\vec{y}U(\vec{x}, \vec{y})\psi(\vec{y}) = u(\vec{x})\psi(\vec{x})$$.
+
+		\subsubsection{Derivative operator}
+		A derivative operator is the kinetic energy operator: $T(\vec{x}, \vec{y}) = -\frac{\hbar^2}{2m}\delta(\vec{x}-\vec{y})\nabla^2_{\vec{x}}$:
+
+		$$\int d^3\vec{y}T(\vec{x}, \vec{y})\psi(\vec{y}) = -\frac{\hbar^2}{2m}\nabla^2\psi(\vec{x})$$
+
+\section{Spectral theorem}
+The spectral theorem is a fundamental result in the theory of linear operators in vector and hilbert spaces and specifies the general conditions under which operators can be diagonalized to yield a complete orthonormal basis.
+The spectral theorem of standard linear algebra follows as a special case of this fundamental result.
+
+	\subsection{Adjoint}
+	The adjoint or hermitian conjugate operator $O^\dagger$ of a generic linear operator $\hat{O}$ is defined as:
+
+	$$\langle \vec{v}\hat{O}^\dagger, \vec{w}\rangle = \langle\vec{v}, \hat{O}\vec{w}\rangle$$
+
+	An operator is called hermitian if it is self-adjoint, or if it coincides with its hermitian conjugate: $\hat{O} = \hat{O}^\dagger$.
+	Furthermore an operator $\hat{U}$ is called unitary if $\hat{U}^\dagger\hat{U} = 1$.
+
+	\subsection{Statement of the spectral theorem}
+	Let $\hat{O}$ be an hermitian operator defined on a hilbert space $\mathcal{H}$.
+	Then there exist a complete orthonormal basis of $\mathcal{H}$ defined by the eigenstates of $\hat{O}$.
+	Furthermore each eigenvalue is real.
+
+	\subsection{Corollaries}
+
+		\subsubsection{First corollary}
+		Hermitian matrices are such that:
+
+		$$(O^T)^* = O$$
+
+		\subsubsection{Second corollary}
+		Hermitian matrices in real vector spaces are symmetric.
+
+		\subsubsection{Third corollary}
+		Given a complete orthonormal basis of a hilbert space $\{|e_n\rangle\}$ possibly dense and a hermitian operator $\hat{O}$, it is possible to identify a unitary transformation which connects the $\{|e_n\rangle\}$ with the basis of eigenstates of $\hat{O}$, $\{|o_n\rangle\}$.
+
+\section{Fourier transform}
+A special case of basis change is provided by the fourier transformation.
+Let $\phi(\vec{x})$ be the wave function in coordinate representation.
+The unitary transformation to the momentum basis is called direct fourier transform and is defined as:
+
+$$\hat{F}[\phi(\vec{x})] = \tilde{\phi}(\vec{p}) = \int\limits_{-\infty}^\infty d^3\vec{x}e^{\frac{i}{\hbar}\vec{p}\cdot\vec{x}}\phi(\vec{x})$$
+
+The inverse transformation from the momentum basis to the position one is called the inverse fourier transform:
+
+$$\hat{F}^{-1}[\tilde{\phi}(\vec{p})] = \phi(\vec{x}) = \int\limits_{-\infty}^\infty \frac{d^3\vec{p}}{(2\pi)^3}e^{-\frac{i}{\hbar}\vec{p}\cdot\vec{x}}\tilde{\phi}(\vec{p})$$
+
+The term $(2\pi)^3$ is introduced conventionally to guarantee the preservation of the normalization condition.
+An important properties of the fourier transform is that:
+
+\begin{align*}
+	F^{-1}[\vec{p}\tilde{\phi}(\vec{p})] &= \int\limits_{-\infty}^\infty \frac{d^3\vec{p}}{(2\pi)^3}e^{-\frac{i}{\hbar}\vec{p}\cdot\vec{x}}\vec{p}\tilde{\phi}(\vec{p})=\\
+					     & = \biggl(-i\hbar\frac{\partial}{\partial \vec{x}}\biggr)\int\limits_{-\infty}^\infty \frac{d^3\vec{p}}{(2\pi)^3}e^{-\frac{i}{\hbar}\vec{p}\cdot\vec{x}}\tilde{\phi}(\vec{p})\\
+					     & = \biggl(-i\hbar\frac{\partial}{\partial \vec{x}}\biggr)\phi(x)
+\end{align*}
+
+Where $\frac{\partial}{\partial\vec{x}}$ denotes the gradient operator.
+
