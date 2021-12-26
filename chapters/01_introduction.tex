@@ -19,9 +19,19 @@
 \section{Classical mechanics}
 
   \subsection{Example - point particle moving in $1D$ and subject to an harmonic force}
-  For a point particle moving in $1D$ subject to an harmonic force follows the Newton's law for its equation of motion:
+  For a point particle moving in $1D$ subject to an harmonic force (bound to a spring for example) follows the Newton's law for its equation of motion:
 
-  $$m \frac{d{^2}}{d{t^2}}x(t) = -kx(t)$$
+  $$\frac{d{^2}}{d{t^2}}x(t) = -\frac{k}{m}x(t)$$
+
+  If, given $\lambda$ the amplitude, $L$ the oscillation and $L_0$ the distance of the point from the origin of the axis at time $0$:
+
+  \begin{multicols}{3}
+    \begin{itemize}
+      \item $\frac{\lambda}{L}\ll 1$
+      \item $\frac{\lambda}{L_0}\ll 1$.
+      \item $\frac{L}{L_0}\ll 1$.
+    \end{itemize}
+  \end{multicols}
 
   This is a second-order differential equation such that $\frac{d{^2}}{d{t^2}}f(t) = -\frac{k}{m}f(t)$.
   There are only two solutions:
@@ -32,6 +42,7 @@
   \end{align*}
 
   Clearly, $f_1(t)$ and $f_2(t)$ are solutions if $\omega^2 = \frac{k}{m}$.
+  Neither of them is a good solution, because for the first one is valid only if the particle starts at the origin and for the second only if the particle is at rest at time $0$.
   So the most general solution is:
 
   $$x(t) = A\cos\sqrt{\frac{k}{m}}t+B\sin\sqrt{\frac{k}{m}}t$$
@@ -51,11 +62,18 @@
 
   So the final solution is:
 
-  $$x(t) = x_0\cos\sqrt{\frac{k}{m}}Bt+\sqrt{\frac{m}{k}}v_0\sin\sqrt{\frac{k}{m}}t$$
+  $$\begin{cases}
+    x(t) = x_0\cos\sqrt{\frac{k}{m}}Bt+\sqrt{\frac{m}{k}}v_0\sin\sqrt{\frac{k}{m}}t\\
+    v(t) = v_0\cos\omega t -x_0\omega\sin\omega t
+  \end{cases}$$
 
   \subsection{Phase-space}
-  It is convenient to plot the solutions on the phase space, a plane such that on the $x$-axis there is the position $x$ and on the $y$-axis the momentum $mv$.
-  Cauchy's theorem implies that given an n-the order differential equation has exactly $n$ solutions.
+  It is convenient to plot the solutions on the phase space, a plane such that on the $x$-axis there is the position $x=q(t)$ and on the $y$-axis the momentum $m\times v=p(t)$.
+  In this way the state of the system will be described as:
+
+  $$\Gamma(t) = (q(t),p(t))$$
+
+  Cauchy s theorem implies that given an n-the order differential equation has exactly $n$ solutions.
   Moreover, given $n$ initial conditions there exists exactly one solution.
   Because of this trajectories in the phase space can never intersect.
   In this way future $x(t)$ and $v(t)$ can be unambiguously predicted.
@@ -164,11 +182,15 @@
 
   Now considering:
 
-  $$\frac{d{}}{d{t}}\vec{L} = \frac{d{}}{d{t}}\vec{r}\times \vec{v}m + \vec{r}xm \vec{a} = \vec{r}\times \vec{F}$$
+  \begin{align*}
+    \frac{d{}}{d{t}}\vec{L} &= \frac{d{}}{d{t}}(\vec{r}\times \vec{p}=\\
+                            &=\underbrace{\frac{d{\vec{r}}}{d{t}}}_{=0}\times\vec{p} + \underbrace{\frac{d{\vec{p}}}{d{t}}}_{=F}\times\vec{r} =\\
+                            &= \vec{r}\times \vec{F}
+  \end{align*}
 
   If $\vec{r}\parallel \vec{F}\Rightarrow \frac{d{}}{d{t}}\vec{L} = 0$.
-  Then for a conservative force there is angular momentum conservation
-  So the motion in a centra force conserves energy and angular momentum.
+  Then for a conservative force there is angular momentum conservation.
+  So the motion in a central force conserves energy and angular momentum.
 
 \section{Classical theory of the hydrogen atom}
 The classical theory of the hydrogen atom is defined by the classical Bohr model.
@@ -178,15 +200,29 @@ Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's m
 
   \subsection{Mechanical energy in polar coordinates}
 
-  $$H = \frac{1}{2}m v^2-\frac{e^2}{r}$$
+  $$H = \underbrace{\frac{p^2}{2m}}_{\text{kinetic energy}}-\underbrace{\frac{e^2}{r}}_{\text{potential energy}}$$
 
-  Now:
+  The potential energy is derived from Coulomb's $F=-\hat{r}\frac{e^2}{r^2}$, so $U(|\vec{r}|) = -\frac{e^2}{|\vec{r}|}$
+
+
+  Now, using conservation to replace the differential equation the position is divided in two components $\hat{u}_r$ and $\hat{u}_\theta$ orthogonal to each other so that $v^2 = v_r^2+v_\theta^2$:
 
   $$\vec{v} = \hat{u}_\theta v_\theta +\hat{u}_r\underbrace{v_r}_{\frac{d{r}}{d{t}}}\Rightarrow v_2 = \biggl(\frac{d{r}}{d{t}}\biggr)^2+v_\theta$$
 
-  Now $\vec{L}^2 = (\vec{r}\times m \vec{v})^2 = mv_\theta^2r$, therefore:
+  Now, rewriting the angular momentum:
 
-  $$H = \frac{1}{2}m\biggl(\frac{d{r}}{d{t}}\biggr) + \underbrace{\frac{L^2}{2mr^2}}_{\text{constant}}-\frac{e^2}{r}$$
+  \begin{align*}
+    \vec{L} = m \vec{r}\times(\underbrace{\vec{v}_r}_{=0}+\vec{v}_\theta) &= m \vec{r}\times\vec{v}_\theta\\
+    |L| &= mrv_\theta\\
+    L^2 = m^2r^2v^2
+  \end{align*}
+
+  Substituting this in the Hamiltonian:
+
+  \begin{align*}
+    H &= \frac{1}{2}mv_r^2 + \frac{1}{2}mv_\theta^2 - \frac{e^2}{r}=\\
+      &=\frac{1}{2}mv_r^2 + \underbrace{\frac{L^2}{2mr^2}}_{\text{Simil-potential, L constant}} - \frac{e^2}{r}
+  \end{align*}
   
   This term depends on $r$ and not on $\theta$ and effectively looks like a potential energy.
   So $\frac{L^2}{2mr^2}-\frac{e^2}{r}\equiv V_{eff}(r)$.
@@ -199,6 +235,7 @@ Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's m
 
   \subsection{Case 1 - $E>0$}
   The case that $E>0$ is the case of an unbound orbit.
+  The electron approaches the proton and accelerates.
   There is an inversion point and:
 
   $$\begin{cases} H = \frac{1}{2}m\biggl(\frac{d{r}}{d{t}}\biggr)^2+V_{eff}(r)\\
@@ -211,12 +248,14 @@ Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's m
 
   \subsection{Case 2 - $E<0$}
   The case that $E<0$ is the case of  the bound orbit.
+  The electron is trying to escape the proton.
+  There are two inversion points
   
   \subsection{Conclusion}
-  Whenever a charge Ganges its velocity it emits $\frac{e}{m}$ radiations.
+  Whenever a charge changes its velocity it emits $\frac{e}{m}$ radiations.
   The energy loss per unit time is:
 
-  $$P = \frac{2}{3}\frac{m_er_ea^2}{c}$$
+  $$P = \frac{2}{3}\frac{m_er_e}{c}a^2\qquad a = \omega^2 r$$
 
   According to Larmer's law.
   The electron would spiral into the nucleus in $10^{-15}s$.
@@ -236,7 +275,7 @@ Defining a physical theory in classical mechanics corresponds to specifying what
   \subsection{Hamilton's equations}
   From this point Energy will be identified in an Hamiltonian:
 
-  $$H(\underbrace{p}_{\text{momentum}}, \underbrace{q}_{\text{position}}) = \frac{p^2}{2m} + U(q)$$
+  $$H(\underbrace{\vec{p}}_{\text{momentum}}, \underbrace{\vec{q}}_{\text{position}}) = \frac{\vec{p}^2}{2m} + U(\vec{q})$$
 
   So the equations of motion becomes:
 
