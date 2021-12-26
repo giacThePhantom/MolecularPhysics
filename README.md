@@ -8,7 +8,7 @@ See this [Github gist](https://gist.github.com/giacThePhantom/e080a777782754542d
 
 ### Quantum mechanics
 
-  * [ ] Revisiting classical mechanics
+  * [Professor notes] Revisiting classical mechanics
   * [ ] The breakdown of classical mechanics
   * [ ] Waves of matter
   * [ ] Mathematical digression (probably will be placed in the appendix)

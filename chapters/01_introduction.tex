@@ -2,40 +2,276 @@
 
 \section{Physical theories}
 
-\section{Equation of motion}
+  \subsection{Experiment}
+  An experiment performed on a physical system is a way to measure observable quantities at a determined time: $O_1(t), \dots, O_n(t)$.
+  By measuring more and more observables at the same time the instantaneous state of the system is more and more characterized.
+  A maximum set of observables that leads to the complete characterization of the instantaneous state can be assumed.
 
-  \subsection{Point-particle subject to an harmonic force}
+    \subsubsection{Example - particle of mass $m$ subject to an harmonic force}
+    For a particle of mass $m$ subject to an harmonic force like one of a spring is completely characterized by: 
+    
+    $$(\vec{r}(t),\vec{v}(t))=\vec{r}(t)\in \mathbb{R}^6$$
+
+  \subsection{Definition}
+  A physical theory is a mathematical scheme to predict the state of the system, the outcome of feature observations: $O_1(t'), \dots, O_n(t')$.
+  In particular an equation that can be used to compute the state at $t'$ given the state at $t$ is called an equation of motion.
+
+\section{Classical mechanics}
+
+  \subsection{Example - point particle moving in $1D$ and subject to an harmonic force}
+  For a point particle moving in $1D$ subject to an harmonic force follows the Newton's law for its equation of motion:
+
+  $$m \frac{d{^2}}{d{t^2}}x(t) = -kx(t)$$
+
+  This is a second-order differential equation such that $\frac{d{^2}}{d{t^2}}f(t) = -\frac{k}{m}f(t)$.
+  There are only two solutions:
+
+  \begin{align*}
+    f_1(t) = \sin(\omega t) &\Rightarrow \frac{d{^2}}{d{t^2}}f)1(t) = -\omega^2f_1(t)\\
+    f_2(t) = \cos(\omega t) &\Rightarrow \frac{d{^2}}{d{t^2}}f)2(t) = -\omega^2f_2(t)\\
+  \end{align*}
+
+  Clearly, $f_1(t)$ and $f_2(t)$ are solutions if $\omega^2 = \frac{k}{m}$.
+  So the most general solution is:
+
+  $$x(t) = A\cos\sqrt{\frac{k}{m}}t+B\sin\sqrt{\frac{k}{m}}t$$
+
+  To find $A$ and $B$ information about the initial conditions are used.
+  Let the initial position $x(0) = x_0$.
+  Then 
+
+  $$x(0) = A = x_0$$
+
+  Considering initial velocity: $\frac{d{}}{d{t}}x(t)|_{t=0} = v_0$, then:
+
+  \begin{align*}
+    \frac{d{}}{d{t}}x(t) &= -\sqrt{\frac{k}{m}}A\sin\sqrt{\frac{k}{m}}t + \sqrt{\frac{k}{m}}B\cos\sqrt{\frac{k}{m}}t\\
+    v_0 &= \sqrt{\frac{k}{m}} B \Rightarrow B = \sqrt{\frac{m}{k}}v_0
+  \end{align*}
+
+  So the final solution is:
+
+  $$x(t) = x_0\cos\sqrt{\frac{k}{m}}Bt+\sqrt{\frac{m}{k}}v_0\sin\sqrt{\frac{k}{m}}t$$
 
   \subsection{Phase-space}
+  It is convenient to plot the solutions on the phase space, a plane such that on the $x$-axis there is the position $x$ and on the $y$-axis the momentum $mv$.
+  Cauchy's theorem implies that given an n-the order differential equation has exactly $n$ solutions.
+  Moreover, given $n$ initial conditions there exists exactly one solution.
+  Because of this trajectories in the phase space can never intersect.
+  In this way future $x(t)$ and $v(t)$ can be unambiguously predicted.
+  So classical mechanics is fully deterministic.
 
-    \subsubsection{Cauchy's theorem}
+  \subsection{Systems in three dimension and with more than one particle}
+  For systems with $D=3$ and for more than one particle the equation of motion is:
 
-\section{Determinism in classical mechanics}
+  $$\begin{cases}
+    m_1 \frac{d{^2}}{d{t^2}}\vec{r}_1(t) = \vec{F}_1(\vec{r}_1(t), \dots,\vec{r}_N(t))\\
+    \vdots\\
+    m_N \frac{d{^2}}{d{t^2}}\vec{r}_N(t) = \vec{F}_N(\vec{r}_1(t), \dots,\vec{r}_N(t))\\
+  \end{cases}$$
 
-\section{Work and energy}
+  Correspondingly the phase-space is $6N$ dimensional.
+  Moreover for the $N$ vector equations there are $N$ scalar ones.
 
-  \subsection{Work}
+  \subsection{Work and energy}
+  Let $\vec{r}$ be a trajectory followed by a particle subject to a force $\vec{F}$.
+  The work of the force $\vec{F}$ from point $A$ to point $B$ of the trajectory is defined as:
 
-  \subsection{Energy}
+  $$W_{AB} = \int_{\vec{r}_a}^{\vec{r}_b}d \vec{r}\cdot \vec{F}$$
 
-  \subsection{Conservative forces}
+  The kinetic energy of the particle is instead:
 
-    \subsubsection{Central forces}
+  $$T = \frac{1}{2}mv^2$$
 
-\section{Conservation}
+  Work and energy are related:
 
-  \subsection{Mechanical energy}
+  \begin{align*}
+    \frac{d{}}{d{t}}T = \frac{d{}}{d{t}}\frac{1}{2}mv^2 = \frac{1}{2}m \frac{d{}}{d{t}}v^2 = \frac{1}{2}2m \vec{v}\underbrace{\frac{d{\vec{v}}}{d{t}}}_{\vec{a}} = \vec{v} \vec{F}\\
+    \int_{t_0}^{t_f}dt \frac{d{}}{d{t}}T = T_B-T_A = int_{t_i}^{t_f}dt \frac{d{\vec{r}}}{d{t}}\vec{F} = \int_{\vec{r}_A}^{\vec{r}_B} d \vec{r}\cdot \vec{F} = W_{AB}\\
+    T_B-T_a = W_{A\rightarrow B}
+  \end{align*}
 
-  \subsection{Angular momentum}
+    \subsubsection{Conservative forces}
+    For conservative forces the work from point $A$ to point $B$ does not depend on the path followed, in particular, for each paths $1$ and $2$: $W_{AB}^1 = W_{AB}^2$ and:
+
+    $$-W_{AB} = U(\vec{r}_B) - U(\vec{r}_A)$$
+
+    Where $U(\vec{r})$ is the potential energy.
+    In one dimension:
+
+    \begin{align*}
+      U(r) -U(r_0) = -w_{x_0x} = -int_{x_0}^xdyF(y) \Rightarrow\\
+      -\frac{d{}}{d{x}}U(x) = F(x)
+    \end{align*}
+
+      \paragraph{Three dimensional case}
+  
+      $$\begin{cases}
+        F_x(x,y,z) = - \frac{\partial {}}{\partial {x}}U(x,y,z)\\
+        F_y(x,y,z) = - \frac{\partial {}}{\partial {y}}U(x,y,z)\\
+        F_z(x,y,z) = - \frac{\partial {}}{\partial {z}}U(x,y,z)\\
+      \end{cases}$$
+  
+      Or, in short hand notation, let $\vec{r}=(x,y,z)$ and $\vec{\nabla}(\frac{\partial {}}{\partial {x}},\frac{\partial {}}{\partial {y}},\frac{\partial {}}{\partial {z}})$, then:
+  
+      $$\vec{F}(\vec{r}) = -\vec{\nabla}U(\vec{r})$$
+  
+      \paragraph{Central forces}
+      Central forces are a notable class of conservative forces, for which $\vec{F}(\vec{r}) = \hat{\omega}_{r}f(r)$ and $\vec{r} = \hat{U}_{r}|\vec{r}| = \hat{U}_{r}r$.
+      Some examples:
+
+      \begin{multicols}{2}
+        \begin{itemize}
+          \item Coulomb: $\vec{F}_e = \hat{U}_{\vec{r}}\frac{q_1q_2}{r_{12}^2}$
+          \item Gravity: $\vec{F}_G = -\hat{U}_r\frac{M_1M_2}{r_{12}^2}G$
+          \item Harmonic $\vec{F} = -\hat{\omega}_r(\vec{r}-\vec{r}_0)$
+          \item $\cdots$
+        \end{itemize}
+      \end{multicols}
+
+  \subsection{Conservation of mechanical energy}
+  Reconsidering the relationships between $T$ and $W$:
+
+  $$T_B-T_A = W_{A\rightarrow B} = U_A-U_B$$
+
+  The mechanical energy $H$ can be introduced, such that:
+
+  $$H_A = T_A+U_A = T_B+U_B = H_B$$
+
+  The mechanical energy is conserved in the system if only conservative forces act on it.
+  Energy conservation allow to solve Newton's equation generally impossible to handle.
+  This is because conservation laws help gaining partial information without having to solve Newton's equation.
+  At this level energy conservation comes in as a matter of convenience.
+
+    \subsubsection{Example}
+    Consider a cart going down a path with a loop.
+    Let $A$ the starting highest point when it starts going and $B$ the lowest point where it stops accelerating.
+
+    $$\begin{cases}H_A = \underbrace{T_A}_{=0}+\underbrace{U_A}_{=mgh}\\
+    H_B = \underbrace{T_B}_{-\frac{1}{2}mv^2}+\underbrace{U_B}_{=0}\end{cases}
+    \Rightarrow v = \sqrt{2gh}$$
+
+  \subsection{Angular momentum conservation}
+  Let the angular momentum:
+
+  $$\vec{L}(t) = \vec{r}(t)\times m \vec{v}(t)$$
+
+  There are two ways to solve a cross product: $\vec{a}\times \vec{b}\perp \vec{a}$, $\vec{a}\times \vec{b}\perp \vec{b}$ and $|\vec{a}\times \vec{b}| = |\vec{a}||\vec{b}|\sin\theta$.
+  This implies that $\vec{a}\parallel \vec{b}\Rightarrow \vec{a}\times \vec{b} = 0$.
+  Now considering the vectors' coordinates:
+
+  $$\vec{a}\times \vec{b} = \hat{i}(a_yb_z - a_zb_y) + \hat{j}(a_xb_z - a_zb_x) + \hat{k}(a_xb_y-a_yb_x)$$
+
+  Now considering:
+
+  $$\frac{d{}}{d{t}}\vec{L} = \frac{d{}}{d{t}}\vec{r}\times \vec{v}m + \vec{r}xm \vec{a} = \vec{r}\times \vec{F}$$
+
+  If $\vec{r}\parallel \vec{F}\Rightarrow \frac{d{}}{d{t}}\vec{L} = 0$.
+  Then for a conservative force there is angular momentum conservation
+  So the motion in a centra force conserves energy and angular momentum.
 
 \section{Classical theory of the hydrogen atom}
+The classical theory of the hydrogen atom is defined by the classical Bohr model.
+The hydrogen atom if formed by a proton in the centre with an electron orbiting around it.
+Because $\frac{m_e}{M_p}\approx \frac{1}{2000}$, for the sake of simplicity an infinite proton mass $\frac{m_e}{M_p}=0$ is assumed.
+Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's motion occurs on a plane and it is two dimensional
 
-  \subsection{Classical Bohr model}
+  \subsection{Mechanical energy in polar coordinates}
+
+  $$H = \frac{1}{2}m v^2-\frac{e^2}{r}$$
+
+  Now:
+
+  $$\vec{v} = \hat{u}_\theta v_\theta +\hat{u}_r\underbrace{v_r}_{\frac{d{r}}{d{t}}}\Rightarrow v_2 = \biggl(\frac{d{r}}{d{t}}\biggr)^2+v_\theta$$
+
+  Now $\vec{L}^2 = (\vec{r}\times m \vec{v})^2 = mv_\theta^2r$, therefore:
+
+  $$H = \frac{1}{2}m\biggl(\frac{d{r}}{d{t}}\biggr) + \underbrace{\frac{L^2}{2mr^2}}_{\text{constant}}-\frac{e^2}{r}$$
+  
+  This term depends on $r$ and not on $\theta$ and effectively looks like a potential energy.
+  So $\frac{L^2}{2mr^2}-\frac{e^2}{r}\equiv V_{eff}(r)$.
+  And:
+
+  $$H = \frac{1}{2}m\biggl(\frac{d{r}}{d{t}}\biggr)^2+V_{eff}(r)$$
+
+  So using polar coordinate and angular momentum conservation the mechanical energy has been written in the form of that of an effective one dimensional system with $U(r) \rightarrow V_{eff}(r)$.
+  Using this trick it is immediate to infer the qualitative structure of orbits.
+
+  \subsection{Case 1 - $E>0$}
+  The case that $E>0$ is the case of an unbound orbit.
+  There is an inversion point and:
+
+  $$\begin{cases} H = \frac{1}{2}m\biggl(\frac{d{r}}{d{t}}\biggr)^2+V_{eff}(r)\\
+    \parallel\\
+    E<V_{eff}(r)
+  \end{cases}
+  \Rightarrow \biggl(\frac{d{r}}{d{t}}\biggr)^2< 0$$
+
+  And that is impossible.
+
+  \subsection{Case 2 - $E<0$}
+  The case that $E<0$ is the case of  the bound orbit.
+  
+  \subsection{Conclusion}
+  Whenever a charge Ganges its velocity it emits $\frac{e}{m}$ radiations.
+  The energy loss per unit time is:
+
+  $$P = \frac{2}{3}\frac{m_er_ea^2}{c}$$
+
+  According to Larmer's law.
+  The electron would spiral into the nucleus in $10^{-15}s$.
+  Because of this classical atoms are unstable.
 
 \section{Hamiltonian formulation of mechanics}
+In the Newtonian formulation the fundamental inspect is tat of the force:
+
+$$m \vec{a} = \vec{F}$$
+
+Defining a physical theory in classical mechanics corresponds to specifying what is a force.
 
   \subsection{Hamilton's theory}
+  Hamilton's theory is an equivalent reformulation of mechanics in which the key concept is not the force but the Hamiltonian $H$, which is closely related to energy.
+  While from a practical standpoint the two formulation are equivalent with identical equations of motion, modern physics has shown that the notion of energy is more fundamental than the one of force.
 
   \subsection{Hamilton's equations}
+  From this point Energy will be identified in an Hamiltonian:
+
+  $$H(\underbrace{p}_{\text{momentum}}, \underbrace{q}_{\text{position}}) = \frac{p^2}{2m} + U(q)$$
+
+  So the equations of motion becomes:
+
+  $$\begin{cases}
+    \dot{q} = + \frac{\partial {H}}{\partial {p}}\Rightarrow \dot{q} = \frac{p}{m}\Rightarrow p = \dot{q}m\\
+    \dot{p} = - \frac{\partial {H}}{\partial {q}}\Rightarrow \dot{p} = -\frac{\partial {U(q)}}{\partial {q}}\Rightarrow ma = F
+  \end{cases}$$
+
+  The Hamilton's equation describes directly the evolution of a point of phase space and the state of the system.
+  Let $\Gamma = (p,q)$ and $H = H(\Gamma)$, then:
+
+  $$\begin{cases}
+    \dot{\Gamma}_1 = +\frac{\partial {H}}{\partial {\Gamma_2}}\\
+    \dot{\Gamma}_2 = +\frac{\partial {H}}{\partial {\Gamma_1}}
+  \end{cases}$$
+
+  For many particles in three dimensions:
+
+  $$\Gamma\overbrace{(\underbrace{\vec{p}_1,\dots,\vec{p}_N}_{\vec{P}\in \mathbb{R}^{3n}};\underbrace{\vec{q}_1,\dots,\vec{q}_N}_{\vec{Q}\in \mathbb{R}^{3N}})}^{\Gamma\in \mathbb{R}^{6N}}$$
+
+  The state of a many body system is described by the evolution of a point in a large dimensional vector space.
 
   \subsection{Harmonic oscillator}
+  Consider $\omega = \sqrt{\frac{k}{m}}$:
+
+  $$\begin{cases}
+    p(t) = -\omega q_0\sin\omega t + v_0\cos\omega t\\
+    q(t) = q_0\cos\omega t + \frac{v_0}{\omega}\sin\omega t
+  \end{cases}$$
+
+  Now from that:
+
+  \begin{align*}
+    \frac{p^2}{\omega^2}+q^2 &= q_0^2\sin^2\omega t + \frac{v_0^2}{\omega^2}\cos^2\omega t - 2 \frac{q_0v_0}{\omega}\sin \omega t\cos \omega t + q_0^2\cos^2\omega t + \frac{v_0^2}{\omega_2}\sin^2\omega t + 2\frac{q_0v_0}{\omega}\sin \omega t\cos \omega t =\\
+                             &=2\biggl(q_0^2+\frac{v_0^2}{\omega^2}\biggr)
+  \end{align*}
+
+  The problem has a general structure of $\frac{q^2}{A}+\frac{p^2}{B}=1$ and the trajectories draw ellipses in the phase space.

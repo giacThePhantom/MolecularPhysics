@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  25 DEC 2021 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  26 DEC 2021 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,7 +800,7 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ... {B}Partial derivatives}{19}{appendix.1.B}
+l.46 ... {3.2.1}Plane waves}{13}{subsection.3.2.1}
                                                   % [1
 
 ] [2])
@@ -812,97 +812,129 @@ l.34 ... {B}Partial derivatives}{19}{appendix.1.B}
 ]
 (./chapters/01_introduction.tex
 Chapter 1.
-) (./chapters/02_breakdown_classical_mechanics.tex [5
 
-]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 21.
+
+[5
+
+] [6] [7] [8]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 200.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 200.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 212.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 212.
+
+[9] [10]
+Overfull \hbox (11.77821pt too wide) detected at line 275
+[]
+ []
+
+) (./chapters/02_breakdown_classical_mechanics.tex [11]
 Chapter 2.
-) (./chapters/03_waves_of_matter.tex [6
+) (./chapters/03_waves_of_matter.tex [12
 
 ]
 Chapter 3.
-) (./chapters/04_quantum_mechanics.tex [7
+) (./chapters/04_quantum_mechanics.tex [13
 
 ]
 Chapter 4.
-) [8
+) [14
 
-] [9
+] [15
 
 ] (./chapters/05_approximation_methods.tex
 Chapter 5.
-) (./chapters/06_atomic_physics.tex [10
+) (./chapters/06_atomic_physics.tex [16
 
 ]
 Chapter 6.
-) (./chapters/07_molecular_physics.tex [11
+) (./chapters/07_molecular_physics.tex [17
 
 ]
 Chapter 7.
-) [12
+) [18
 
-] [13
+] [19
 
 
 ] (./chapters/aa_complex_numbers.tex
 Appendix A.
-[14
+[20
 
-] [15] [16] [17]) (./chapters/ab_partial_derivatives.tex [18]
+] [21] [22] [23]) (./chapters/ab_partial_derivatives.tex [24]
 Appendix B.
-[19
+[25
 
-]) (./chapters/ac_differential_operators.tex [20] [21]
+]) (./chapters/ac_differential_operators.tex [26] [27]
 Appendix C.
-[22
-
-] [23] [24] [25] [26]) (./chapters/ad_spherical_coordinates.tex [27]
-Appendix D.
 [28
 
-]) (./chapters/ae_multidimensional_integrals.tex [29]
+] [29] [30] [31] [32]) (./chapters/ad_spherical_coordinates.tex [33]
+Appendix D.
+[34
+
+]) (./chapters/ae_multidimensional_integrals.tex [35]
 Appendix E.
-[30
+[36
 
-]) (./chapters/af_hilbert_spaces.tex [31]
+]) (./chapters/af_hilbert_spaces.tex [37]
 Appendix F.
-[32
+[38
 
-] [33] [34] [35]) [36] (./build/principal.aux)
+] [39] [40] [41]) [42] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 0CC81FBCFA9BA632634DC84D39A5CEBB;11684.
+(rerunfilecheck)             Checksum: 802AE4D89B998CD97294665CD2FE040D;17849.
  ) 
 Here is how much of TeX's memory you used:
- 18751 strings out of 478994
- 318280 string characters out of 5864750
- 673396 words of memory out of 5000000
- 35785 multiletter control sequences out of 15000+600000
+ 18836 strings out of 478994
+ 319567 string characters out of 5864750
+ 673429 words of memory out of 5000000
+ 35820 multiletter control sequences out of 15000+600000
  423715 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,14n,91p,472b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
-texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/font
+ 88i,18n,91p,498b,893s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
+exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm090
-0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on ./build/principal.pdf (37 pages, 363598 bytes).
+mmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx24
+88.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1200.pfb>
+Output written on ./build/principal.pdf (43 pages, 415972 bytes).
 PDF statistics:
- 698 PDF objects out of 1000 (max. 8388607)
- 630 compressed objects within 7 object streams
- 131 named destinations out of 1000 (max. 500000)
- 625 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 928 PDF objects out of 1000 (max. 8388607)
+ 850 compressed objects within 9 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 905 words of extra memory for PDF output out of 10000 (max. 10000000)
 
