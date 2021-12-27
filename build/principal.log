@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  27 DEC 2021 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  28 DEC 2021 00:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -80,6 +80,9 @@ Package: inputenc 2020/08/01 v1.3d Input encoding file
 )
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
@@ -805,11 +808,11 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
 l.48 ...berline {3}Waves of matter}{17}{chapter.3}
                                                   % [1
 
-] [2])
+] [2] [3])
 \tf@toc=\write4
 \openout4 = `principal.toc'.
 
- [3] [4] [5
+ [4] [5
 
 ]
 (./chapters/01_introduction.tex
@@ -872,67 +875,67 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
 
-[19]
+[19] [20]
 Chapter 4.
-) [20
+) [21
 
-] [21
+] [22
 
 ] (./chapters/05_approximation_methods.tex
 Chapter 5.
-) (./chapters/06_atomic_physics.tex [22
+) (./chapters/06_atomic_physics.tex [23
 
 ]
 Chapter 6.
-) (./chapters/07_molecular_physics.tex [23
+) (./chapters/07_molecular_physics.tex [24
 
 ]
 Chapter 7.
-) [24
+) [25
 
-] [25
+] [26
 
 
 ] (./chapters/aa_complex_numbers.tex
 Appendix A.
-[26
+[27
 
-] [27] [28] [29]) (./chapters/ab_partial_derivatives.tex [30]
+] [28] [29] [30]) (./chapters/ab_partial_derivatives.tex [31]
 Appendix B.
-[31
+[32
 
-]) (./chapters/ac_differential_operators.tex [32] [33]
+]) (./chapters/ac_differential_operators.tex [33] [34]
 Appendix C.
-[34
+[35
 
-] [35] [36] [37] [38]) (./chapters/ad_spherical_coordinates.tex [39]
+] [36] [37] [38] [39]) (./chapters/ad_spherical_coordinates.tex [40]
 Appendix D.
-[40
+[41
 
-]) (./chapters/ae_multidimensional_integrals.tex [41]
+]) (./chapters/ae_multidimensional_integrals.tex [42]
 Appendix E.
-[42
+[43
 
-]) (./chapters/af_wave_equations.tex [43]
+]) (./chapters/af_wave_equations.tex [44]
 Appendix F.
-[44
+[45
 
-]) (./chapters/ag_hilbert_spaces.tex [45]
+]) (./chapters/ag_hilbert_spaces.tex [46]
 Appendix G.
-[46
+[47
 
-] [47] [48] [49]) [50] (./build/principal.aux)
+] [48] [49] [50]) [51] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 1C033E1CA2A073F212B902C00AADCB73;18863.
+(rerunfilecheck)             Checksum: 5E6E48A3FDB0D0DCD3CCB7DF033D4E4E;20946.
  ) 
 Here is how much of TeX's memory you used:
- 18865 strings out of 478994
- 320037 string characters out of 5864750
- 673605 words of memory out of 5000000
- 35828 multiletter control sequences out of 15000+600000
+ 18921 strings out of 478994
+ 320839 string characters out of 5864750
+ 674474 words of memory out of 5000000
+ 35868 multiletter control sequences out of 15000+600000
  423715 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,18n,91p,498b,893s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,18n,91p,498b,894s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -945,21 +948,22 @@ public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbo
-ls/msbm5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx24
-88.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
-rm1200.pfb>
-Output written on ./build/principal.pdf (51 pages, 470885 bytes).
+nts/latxfont/line10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.p
+fb>
+Output written on ./build/principal.pdf (52 pages, 476946 bytes).
 PDF statistics:
- 1009 PDF objects out of 1200 (max. 8388607)
- 921 compressed objects within 10 object streams
- 199 named destinations out of 1000 (max. 500000)
- 961 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1074 PDF objects out of 1200 (max. 8388607)
+ 984 compressed objects within 10 object streams
+ 211 named destinations out of 1000 (max. 500000)
+ 1049 words of extra memory for PDF output out of 10000 (max. 10000000)
 

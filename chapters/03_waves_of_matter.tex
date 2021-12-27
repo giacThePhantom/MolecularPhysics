@@ -83,5 +83,50 @@ Physical laws can never be demonstrated, but only inferred from experiment and t
     $$i\hbar \frac{\partial {}}{\partial {t}}\phi(\vec{r},t) = \hat{H} \phi(\vec{r},t)$$
 
 \section{Stationary Shr\"oedinger equation}
+Assuming that the system conserves mechanical energy:
 
-\section{Linear operators}
+$$H(p,q, \bcancel{t}) = \frac{p^2}{2m}+U(q,\bcancel{t})$$
+
+Considering the plane wave:
+
+$$\phi(\vec{r}, t) = \psi(\vec{r}) e^{-i \frac{E}{\hbar}t}$$
+
+As a guess for the form of the solution and plugging it into the Schr\"oedinger equation:
+
+$$E\psi e^{-i \frac{i}{\hbar}(Et)} = He^{-\frac{i}{\hbar}Et}\psi$$
+
+Which gives:
+
+$$\hat{H}\phi(\vec{r}) = E\psi(\vec{r})$$
+
+Where $E$ is unknown.
+This is an eigen problem: given $\hat{H}$ a function $\psi(\vec{r}($ has to be found such that $\hat{H}\psi(\vec{r})$ is a function proportional to $\psi(\vec{r})$ through some constant $E$.
+In other words the energy of a quantum system is an eigenvalue of the quantum Hamiltonian operator.
+So, from a discrete spectrum energy quantization is obtained and:
+
+$$E = \underbrace{E_0}_{\text{ground state energy}} < \underbrace{E_1 < \cdots < E_n}_{\text{excited state energies}}$$
+
+And:
+
+\begin{align*}
+  \hat{H}\psi(\vec{r}) &= E_0\psi_0(\vec{r})\\
+  \hat{H}\psi(\vec{r}) &= E_1\psi_1(\vec{r})\\
+                       &\vdots\\
+  \hat{H}\psi(\vec{r}) &= E_n\psi_n(\vec{r})\\
+\end{align*}
+
+\section{Ground state of the quantum harmonic oscillator}
+
+\section{Quantum particle in a one dimensional infinite square well}
+
+  \subsection{Energy spectrum}
+
+  \subsection{Energy eigenstates}
+
+  \subsection{Discussion}
+
+\section{Two dimensional square well}
+
+\section{Lattice discretization}
+
+
