@@ -1,0 +1,69 @@
+\chapter{Wave equations}
+
+\section{Definition}
+In mathematical physics, a propagating wave is described by a function retaining its shape while shifting in time and space.
+In one dimension this is formalized as:
+
+$$f(x,t)\dot{=}\begin{cases}f_+(x-v t) &\text{forward propagating}\\f_-(x+vt) &\text{backward propagating}\end{cases}$$
+
+The functions $f_\pm$ are solution of:
+
+$$\frac{\partial^2{}}{\partial{t^2}}f_\pm(x\pm vt) = v^2f''(x\pm vt)$$
+
+$$\frac{\partial^2{}}{\partial{x^2}}f_\pm(x\pm vt) = k^2f''(x\pm vt)$$
+
+So the wave equation is:
+
+$$\biggl(\underbrace{\frac{1}{v^2}}_{\text{speed of the wave}}-\frac{\partial^2{}}{\partial{t^2}}-\frac{\partial^2{}}{\partial{x^2}}\biggr)]f_\pm = 0$$
+
+  \subsection{Three-dimensional case}
+  To get the corresponding form for a wave in three dimension note that a function $f(kx + \omega t)$ is still a function of $(x,t)$ in the form $x+vt$:
+
+  $$f(kx+\omega t) = f\biggl(k\biggl(x+\underbrace{\frac{\omega}{k}}_{=v}t\biggr)\biggr)$$
+
+  Consequently, $f(kx\pm\omega t)$ satisfies as a wave equation:
+
+  $$\frac{\partial^2{}}{\partial{t^2}}f_(kx+ \omega t) = \omega^2f(kx+ \omega t)$$
+
+  $$\frac{\partial^2{}}{\partial{x^2}}f(kx + vt) = k^2f(kx + \omega t)$$
+
+  And: 
+
+  $$\biggl(\frac{1}{vr^2}\frac{\partial^2{}}{\partial{t^2}} - \frac{\partial^2{}}{\partial{x^2}}\biggr)f = 0$$
+
+  If $\frac{\omega^2}{v^2} = k\Rightarrow |k| = \frac{\omega}{v}\Rightarrow \omega|k|v$.
+  To generalize to three dimensions:
+  \begin{itemize}
+    \item $k\rightarrow \vec{k}$
+    \item $x\rightarrow \vec{r}=(x,y,z)$
+    \item $\frac{\partial^2{}}{\partial{x^2}}\rightarrow \frac{\partial^2{}}{\partial{x^2}}+\frac{\partial^2{}}{\partial{y^2}}+\frac{\partial^2{}}{\partial{z^2}}\equiv\nabla^2$
+  \end{itemize}
+
+  So the three dimensional wave equation becomes:
+
+  $$\biggl(\nabla^2 - \frac{1}{v^2}\frac{\partial^2{}}{\partial{t^2}}\biggr)f(\vec{r},t) = 0$$
+
+\section{Plane waves}
+Plane waves are oscillatory waves in the form:
+
+$$f(\vec{k}\vec{x}\pm\omega t) = A_{\pm}e^{i(\overbrace{\vec{k}}^{\text{wave vector}}\vec{x}\pm\overbrace{\omega}^{\text{pulsation}} t)}$$
+
+Fixing $t = 0$ in one dimension:
+
+$$f(kx) = Ae^{ikx} = A(\cos kx + i\sin kx)$$
+
+Fixing $x = 0$:
+
+$$f(\omega t) = Ae^{i\omega t} = A(\cos\omega t + i\sin\omega t)$$
+
+Where $\nu = \frac{\omega}{2\pi} = \frac{1}{T}$.
+In a plane wave the amplitude is constant throughout a plane perpendicular to $\vec{k}$.
+Assuming $\vec{k} = k_0\hat{z}$: $\vec{r}\vec{k} = z\cdot k$ and:
+
+$$f_\pm (\vec{r}\cdot \vec{k}\pm\omega t) = f(zk\pm \omega t)$$
+
+So it does not depend on $x$ nor $y$.
+Any wave can be locally approximated by a plane wave.
+
+
+ 

@@ -1,12 +1,86 @@
 \chapter{Waves of matter}
 
 \section{The Shr\"odinger equation}
+Physical laws can never be demonstrated, but only inferred from experiment and then verified or falsified by other ones
 
-\section{Wave equations}
 
-  \subsection{Plane waves}
+  \subsection{Double-slit experiment}
+  The propagation of the electrons in the double-slit experiment has wave-like properties.
+  The probability of an electron being detected in certain points of the screen is described by complex-wave apliduteds, which are functions of $x$ and $t$, so being $A(x,y)$ a wave, its intensity:
 
-\section{Quantum Hamiltonian}
+  $$Intensity(x,t) = A^*(x,t)\cdot A(x,t)$$
+
+  The estate of the electron in the beams is assumed described by a complex amplitude called the wave-function:
+
+  \begin{align*}
+    \phi(x,t) &\rightarrow Prob(x,t)\\
+              &=\phi^*(x,t)\phi(x,t)\\
+              &\equiv |\phi(x,t)|^2
+  \end{align*}
+
+  \subsection{Main assumption}
+  Electrons behave exactly like photons: they both have a dual particle and wave nature.
+  So for electron too is assumed that energy is proportional to frequency:
+
+  $$E = \hbar\omega = h\nu$$
+
+  Protons propagate according to a wave equation:
+
+  $$\biggl(\underbrace{\frac{1}{c^2}}_{\text{speed of light}}\frac{\partial^2{}}{\partial{t^2}} - \nabla^2\biggr)\underbrace{\text{Maxwell equation}} = 0$$
+
+  There is a need to find if the same equation describes the propagation of a massive particle like the electron.
+  Let the electron wave particle:
+
+  $$\phi(x,t) = Ae^{i(\vec{k}\vec{r}-\omega t)}$$
+
+  Then: $\frac{\partial^2{}}{\partial{t^2}}\phi = \omega^2\phi$ and $\nabla^2\phi = |\vec{k}|^2\phi$.
+  So it is obtained that: 
+
+  $$\underbrace{k^2}_{\propto p^2}\propto\underbrace{\omega^2}_{\propto E^2}$$
+
+  Then $E = cons|p|$.
+  This is true for light, but it is false for massive particles: the correspondence principle implies that:
+
+  $$E = \frac{p^2}{2m}\rightarrow E\propto p^2$$
+
+  And not just to $|p|$.
+
+  \subsection{Defining the Shr\"oedinger equation}
+  So there is a need to use a different wave equation with respect to the photon's one.
+  Noticing that $E^2\propto p^2$ follows from having two time derivatives, to have $E\propto p^2$ one time derivative is tried:
+
+  $$\frac{\partial {}}{\partial {t}}e^{i(\vec{k}\vec{r}-\omega t)} = -i\omega e^{i(\vec{k}\vec{r}-\omega t)}$$
+
+  And:
+
+  $$\biggl(iA \frac{\partial {}}{\partial {t}}+ B\nabla^2\biggr)\phi = 0\Rightarrow \omega A - B k^2 = 0$$
+
+  To obtain an energy $A = \hbar$, then:
+
+  $$\hbar\omega = E = Bk^2\propto p$$
+
+  The remaining constant is set by phenomenology:
+
+  $$i\hbar \frac{\partial {}}{\partial {t}}\phi = -\frac{\hbar^2}{2m}\nabla^2\phi$$
+
+  The right hand side represent a kinetic energy.
+  For a free electron $H$ equals the kinetic energy and is approximately the Hamiltonian.
+  For an interacting electron:
+
+  $$H_0 \rightarrow H_0 + \underbrace{V(\vec{r})}_{\text{potential energy}} = H$$
+
+  So finally the Schr\"oedinger equation:
+
+  $$i\hbar \frac{\partial {}}{\partial {t}}\phi(\vec{r},t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+V(\vec{r})\biggr)\phi(x,t)$$
+
+    \subsubsection{Quantum Hamiltonian}
+    Now the quantum Hamiltonian can be defines as:
+
+    $$\hat{H} \equiv -\frac{\hbar^2}{2m}\nabla^2+U(\vec{r})$$
+
+    The Schr\"oedinger equation is then recast as:
+
+    $$i\hbar \frac{\partial {}}{\partial {t}}\phi(\vec{r},t) = \hat{H} \phi(\vec{r},t)$$
 
 \section{Stationary Shr\"oedinger equation}
 

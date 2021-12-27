@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  27 DEC 2021 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  27 DEC 2021 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -802,14 +802,14 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 ...berline {3}Waves of matter}{16}{chapter.3}
+l.48 ...berline {3}Waves of matter}{17}{chapter.3}
                                                   % [1
 
 ] [2])
 \tf@toc=\write4
 \openout4 = `principal.toc'.
 
- [3] [4
+ [3] [4] [5
 
 ]
 (./chapters/01_introduction.tex
@@ -822,9 +822,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 21.
 
-[5
+[6
 
-] [6] [7] [8] [9]
+] [7] [8] [9] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 236.
@@ -841,73 +841,77 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 249.
 
-[10]
+[11]
 Overfull \hbox (11.77821pt too wide) detected at line 314
 []
  []
 
-) (./chapters/02_breakdown_classical_mechanics.tex [11]
+) (./chapters/02_breakdown_classical_mechanics.tex [12]
 Chapter 2.
-[12
+[13
 
-] [13]) (./chapters/03_waves_of_matter.tex [14] [15]
+] [14]) (./chapters/03_waves_of_matter.tex [15] [16]
 Chapter 3.
-) (./chapters/04_quantum_mechanics.tex [16
+) (./chapters/04_quantum_mechanics.tex [17
 
 ]
 Chapter 4.
-) [17
+) [18
 
-] [18
+] [19
 
 ] (./chapters/05_approximation_methods.tex
 Chapter 5.
-) (./chapters/06_atomic_physics.tex [19
+) (./chapters/06_atomic_physics.tex [20
 
 ]
 Chapter 6.
-) (./chapters/07_molecular_physics.tex [20
+) (./chapters/07_molecular_physics.tex [21
 
 ]
 Chapter 7.
-) [21
+) [22
 
-] [22
+] [23
 
 
 ] (./chapters/aa_complex_numbers.tex
 Appendix A.
-[23
+[24
 
-] [24] [25] [26]) (./chapters/ab_partial_derivatives.tex [27]
+] [25] [26] [27]) (./chapters/ab_partial_derivatives.tex [28]
 Appendix B.
-[28
+[29
 
-]) (./chapters/ac_differential_operators.tex [29] [30]
+]) (./chapters/ac_differential_operators.tex [30] [31]
 Appendix C.
-[31
+[32
 
-] [32] [33] [34] [35]) (./chapters/ad_spherical_coordinates.tex [36]
+] [33] [34] [35] [36]) (./chapters/ad_spherical_coordinates.tex [37]
 Appendix D.
-[37
+[38
 
-]) (./chapters/ae_multidimensional_integrals.tex [38]
+]) (./chapters/ae_multidimensional_integrals.tex [39]
 Appendix E.
-[39
+[40
 
-]) (./chapters/af_hilbert_spaces.tex [40]
+]) (./chapters/af_wave_equations.tex [41]
 Appendix F.
-[41
+[42
 
-] [42] [43] [44]) [45] (./build/principal.aux)
+]) (./chapters/ag_hilbert_spaces.tex [43]
+Appendix G.
+[44
+
+] [45] [46] [47]) [48] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: A1923DE049AB1DFFACD6A03332C59522;18173.
+(rerunfilecheck)             Checksum: 4313E84279D834D055F83FA6D526B1C8;18886.
  ) 
 Here is how much of TeX's memory you used:
- 18847 strings out of 478994
- 319732 string characters out of 5864750
- 673599 words of memory out of 5000000
- 35823 multiletter control sequences out of 15000+600000
+ 18864 strings out of 478994
+ 320016 string characters out of 5864750
+ 673608 words of memory out of 5000000
+ 35829 multiletter control sequences out of 15000+600000
  423715 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,18n,91p,498b,893s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -929,14 +933,15 @@ fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx24
-88.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1200.pfb>
-Output written on ./build/principal.pdf (46 pages, 434633 bytes).
+88.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+rm1200.pfb>
+Output written on ./build/principal.pdf (49 pages, 466263 bytes).
 PDF statistics:
- 960 PDF objects out of 1000 (max. 8388607)
- 879 compressed objects within 9 object streams
- 189 named destinations out of 1000 (max. 500000)
- 929 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1004 PDF objects out of 1200 (max. 8388607)
+ 918 compressed objects within 10 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 969 words of extra memory for PDF output out of 10000 (max. 10000000)
 
