@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  27 DEC 2021 00:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  27 DEC 2021 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,24 +665,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )) (./build/principal.aux)
 \openout1 = `principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -719,7 +719,7 @@ LaTeX Font Info:    ... okay on input line 10.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count339
-Package hyperref Info: Link coloring OFF on input line 10.
+Package hyperref Info: Link coloring OFF on input line 13.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -731,9 +731,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
 
 (./build/principal.out) (./build/principal.out)
 \@outlinefile=\write3
@@ -781,15 +781,15 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 
-Package chemgreek Info: Activating mapping `default' on line 10.
+Package chemgreek Info: Activating mapping `default' on line 13.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -802,7 +802,7 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 ... {3.2.1}Plane waves}{14}{subsection.3.2.1}
+l.48 ...berline {3}Waves of matter}{16}{chapter.3}
                                                   % [1
 
 ] [2])
@@ -850,64 +850,64 @@ Overfull \hbox (11.77821pt too wide) detected at line 314
 Chapter 2.
 [12
 
-]) (./chapters/03_waves_of_matter.tex [13]
+] [13]) (./chapters/03_waves_of_matter.tex [14] [15]
 Chapter 3.
-) (./chapters/04_quantum_mechanics.tex [14
+) (./chapters/04_quantum_mechanics.tex [16
 
 ]
 Chapter 4.
-) [15
+) [17
 
-] [16
+] [18
 
 ] (./chapters/05_approximation_methods.tex
 Chapter 5.
-) (./chapters/06_atomic_physics.tex [17
+) (./chapters/06_atomic_physics.tex [19
 
 ]
 Chapter 6.
-) (./chapters/07_molecular_physics.tex [18
+) (./chapters/07_molecular_physics.tex [20
 
 ]
 Chapter 7.
-) [19
+) [21
 
-] [20
+] [22
 
 
 ] (./chapters/aa_complex_numbers.tex
 Appendix A.
-[21
+[23
 
-] [22] [23] [24]) (./chapters/ab_partial_derivatives.tex [25]
+] [24] [25] [26]) (./chapters/ab_partial_derivatives.tex [27]
 Appendix B.
-[26
+[28
 
-]) (./chapters/ac_differential_operators.tex [27] [28]
+]) (./chapters/ac_differential_operators.tex [29] [30]
 Appendix C.
-[29
+[31
 
-] [30] [31] [32] [33]) (./chapters/ad_spherical_coordinates.tex [34]
+] [32] [33] [34] [35]) (./chapters/ad_spherical_coordinates.tex [36]
 Appendix D.
-[35
-
-]) (./chapters/ae_multidimensional_integrals.tex [36]
-Appendix E.
 [37
 
-]) (./chapters/af_hilbert_spaces.tex [38]
-Appendix F.
+]) (./chapters/ae_multidimensional_integrals.tex [38]
+Appendix E.
 [39
 
-] [40] [41] [42]) [43] (./build/principal.aux)
+]) (./chapters/af_hilbert_spaces.tex [40]
+Appendix F.
+[41
+
+] [42] [43] [44]) [45] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 802AE4D89B998CD97294665CD2FE040D;17849.
+(rerunfilecheck)             Checksum: A1923DE049AB1DFFACD6A03332C59522;18173.
  ) 
 Here is how much of TeX's memory you used:
- 18837 strings out of 478994
- 319574 string characters out of 5864750
- 673457 words of memory out of 5000000
- 35820 multiletter control sequences out of 15000+600000
+ 18847 strings out of 478994
+ 319732 string characters out of 5864750
+ 673599 words of memory out of 5000000
+ 35823 multiletter control sequences out of 15000+600000
  423715 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,18n,91p,498b,893s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -933,10 +933,10 @@ cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx24
 are/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1200.pfb>
-Output written on ./build/principal.pdf (44 pages, 424625 bytes).
+Output written on ./build/principal.pdf (46 pages, 434633 bytes).
 PDF statistics:
- 932 PDF objects out of 1000 (max. 8388607)
- 853 compressed objects within 9 object streams
- 182 named destinations out of 1000 (max. 500000)
- 905 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 960 PDF objects out of 1000 (max. 8388607)
+ 879 compressed objects within 9 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 929 words of extra memory for PDF output out of 10000 (max. 10000000)
 
