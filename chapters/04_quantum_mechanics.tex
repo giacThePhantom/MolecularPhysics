@@ -1,11 +1,46 @@
 \chapter{Quantum mechanics}
 
 \section{State of a system}
+The instantaneous state of a system is represented by points in a Hilbert space: $|\psi(t)\rangle$.
+More precisely states are associated to rays since $a|\psi\rangle$ and $|\psi\rangle$ represent the same state.
+Let $|\psi_3\rangle = a |\psi_2\rangle$, $|\psi_1\rangle$ and $|\psi_2\rangle$ represent different states and $|\psi_1\rangle$ and $|\psi_3\rangle$ represent the same one.
 
 \section{Observable quantities}
+Observable quantities are associated to an Hermitian Operator, for example:
+
+$$\underbrace{x}_{\text{position}}\rightarrow\underbrace{\hat{x}}_{\text{position operator}}$$
+
+$$\underbrace{h}_{\text{energy}}\rightarrow\underbrace{\hat{H}}_{\text{Hamiltonian operator}}$$
+
+The only exception is time, which is not associated to an operator. 
 
 \section{Outcomes of measurement}
+Possible outcomes of measurement of an observable $O$ are the eigenvalues of the corresponding operator $\hat{O}$:
+
+$$\hat{O}|o_n\rangle = o_n|o_n\rangle$$
+
+If the system is in the quantum state $|\psi\rangle$, the probability of finding the value $o_n$ when measuring $\hat{O}$ is:
+
+$$P(o_n) = |\langle o_n|\psi\rangle|^2$$
 
 \section{Expectation value}
+The average over many measurement of $\hat{O}$ or expectation value is given by:
+
+$$\langle \hat{O}\rangle = \frac{\langle\psi|\hat{O}|\psi\rangle}{\langle \psi|\psi\rangle}$$
+
+As a corollary the mean-square deviation of the measurement is:
+
+$$\Delta^2\hat{O} = \frac{\langle \psi|\hat{O}^2|\psi\rangle}{\langle\psi|\psi\rangle}-\biggl(\frac{\langle\psi|\hat{O}|\psi\rangle}{\langle\psi|\psi\rangle}\biggr)^2$$
+
+It $|\psi\rangle$ is an eigenstate of $\hat{O}$ $|\psi\rangle = |o_n\rangle$, then $\Delta^2\hat{O} = 0$
 
 \section{Time evolution}
+The time evolution of $|\psi(t)\rangle$ is described by the Schr\"oedinger equation:
+
+$$i\hbar \frac{d{}}{d{t}}|\psi(t)\rangle = H|\psi(t)\rangle$$
+
+The formal solution of this equation is given by the time evolution operator:
+
+$$|\psi(t)\rangle = \hat{U}(t-t_0(|\psi(t_0)\rangle$$
+
+$$\hat{U}(t-t_0) = e^{-\frac{i}{\hbar}\hat{H}(t-t_0)}$$
