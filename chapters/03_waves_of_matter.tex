@@ -116,17 +116,216 @@ And:
 \end{align*}
 
 \section{Ground state of the quantum harmonic oscillator}
+The quantum Hamiltonian for the quantum harmonic oscillator is:
+
+$$\hat{H} = - \frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}} +\frac{1}{2}m\omega^2 x^2$$
+
+The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
+
+  \subsection{Form of the ground state}
+  The ground state will be in the form:
+
+  $$\phi(x) = \mathcal{N}e^{-\frac{\alpha x^2}{4}}$$
+
+  So:
+
+  \begin{align*}
+    -\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\psi_0 &= -\frac{\hbar^2}{2m}\mathcal{N}\frac{d{}}{d{x}}\biggl[-\frac{\alpha}{2}xe^{-\frac{\alpha x^2}{4}}=\\
+                                                  &= -\frac{\hbar^2}{2m}\biggl[-\frac{\alpha}{2}e^{-\frac{\alpha x^2}{4}}+\frac{\alpha^2}{4}x^2e^{-\frac{\alpha x^2}{4}}\biggr]\mathcal{N}
+  \end{align*}
+
+  So:
+
+  \begin{align*}
+    \hat{H}\psi_0 &= -\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\psi_0 + \frac{1}{2}m\omega^2x^2\psi_0=\\
+                  &= \frac{\alpha}{4}\frac{\hbar^2}{m}\psi_0 -\frac{\hbar^2\alpha^2}{8m}x^2\psi_0 + \frac{1}{2}m\omega^2x^2\psi_0
+  \end{align*}
+
+  For $\psi_0$ to be an eigenstate $\hat{H}\psi_0 = const\cdot\psi_0$ so the dependence on $x^2$ must be cancelled:
+
+  $$-\frac{\hbar^2}{\bcancel{2}m}\alpha^2\cancelto{2}{4}\bcancel{x^2}\bcancel{\psi_0} + \frac{1}{2}m\omega^2\bcancel{x^2}\bcancel{\psi_0} = 0$$
+
+  From this:
+
+  $$\alpha^2 = \frac{m^2\omega^2}{4\hbar^2}\Rightarrow\alpha=\frac{m\omega}{2\hbar}$$
+
+  So:
+
+  $$\psi_0(x) = \mathcal{N}e^{-\frac{m\omega}{2\hbar}x^2}$$
 
 \section{Quantum particle in a one dimensional infinite square well}
+For the case of a quantum particle in a one dimensional infinite square well consider a particle constrained in a trap where interactions are so strong that it cannot escape and with two confining direction much narrower than the third.
+This can be modelled with a one dimensional confining potential:
 
-  \subsection{Energy spectrum}
+$$U(x) = \begin{cases} 0, &-\frac{L}{2}<x<\frac{L}{2}\\\infty &|x|>\frac{L}{2}\end{cases}$$
 
-  \subsection{Energy eigenstates}
+Inside the box $U=0$, so the Schr\"oedinger equation is:
+
+$$-\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\psi(x) = E\psi(x)$$
+
+Mathematically the looks like the Newton's equation for the harmonic oscillator:
+
+$$+m \frac{d{^2}}{d{t^2}}x(t) = -kx(t)$$
+
+Where $x\rightarrow t$ and $\psi\rightarrow x$.
+However the constraints are different, instead of the classical initial values $x(0) = x_0$ and $\frac{d{}}{d{t}}x|_{t=0} = 0$ there is a boundary value $\psi\biggl(\pm \frac{L}{2}\biggr) = 0$.
+
+  \subsection{Solution}
+  Given the mathematical similarity between the two equation the general structure of the solution should be:
+
+  $$\psi(x) = \begin{cases}A_1\cos k_1 x \\A_2\sin k_2x\end{cases}$$
+
+  Where $A_1,A_2,k_1, k_2$ need to be fixed.
+
+    \subsubsection{Option 1}
+    $A_1\cos\biggl(k_1 \frac{L}{2}\biggr) = 0$, then:
+
+    \begin{align*}
+      k_1 \frac{L}{2} &=\pm \frac{\pi}{2}\pm n\pi\Rightarrow\\
+      \Rightarrow k_1^{(n)} &=\pm \frac{\pi}{L},\pm \frac{3\pi}{L},\dots =\\
+                            &= \pm 2(n-1)\frac{\pi}{L}\qquad n = \mathbb{N}
+    \end{align*}
+
+    So for this option the possible quantized energy levels are:
+
+    $$E^{(n)} = \frac{\hbar^2}{2m}\frac{\pi^2}{L^2}(2n-1)^2$$
+
+    \subsubsection{Option 2}
+    $A_1\sin\biggl(k_2 \frac{L}{2}\biggr) = 0$, then:
+
+    \begin{align*}
+      k_2 \frac{L}{2} &=\pm \pi\pm n\pi\Rightarrow\\
+      \Rightarrow k_2^{(n)} &=\pm \frac{2\pi}{L},\pm \frac{4\pi}{L},\dots =\\
+                            &= \pm 2n\frac{\pi}{L}\qquad n = \mathbb{N}
+    \end{align*}
+
+    So for this option the possible quantized energy levels are:
+
+    $$E^{(n)} = \frac{\hbar^2}{2m}\frac{\pi^2}{L^2}(2n)^2$$
+
+    \subsubsection{$A_1$ and $A_2$}
+    $A_1$ and $A_2$ can be determined by the normalization conditions.
+    The probability of finding the particle somewhere in the box is one, so:
+
+    \begin{align*}
+      \int_{-\frac{L}{2}}^{\frac{L}{2}} dx|\psi(x)|^2 = 1\\
+      1 = \int_{-\frac{L}{2}}^{\frac{L}{2}} dx\begin{cases}A_1^2\cos^2k_1x\\A_2^2\sin^2 k_2x\end{cases}\Rightarrow\begin{cases}A_1 = \\A_2 = \end{cases}
+    \end{align*}
+
+    \subsubsection{Summary}
+    To summarize the results:
+
+      \paragraph{Energy spectrum}
+
+      $$E_n = \frac{\hbar^2}{2m}\frac{\pi^2}{L^2}\mathcal{L}^2$$
+
+      \paragraph{Energy eigenstates}
+      The energy eigenstates of the stationary wave-functions are:
+
+      $$\psi_m(x) = \begin{cases}A_1\cos k_1 x & n\ odd\\ A_2\sin k_2 x & n\ een\end{cases}$$
+
 
   \subsection{Discussion}
 
+    \subsubsection{Quantized momenta}
+    From the quantized energy:
+
+    $$E_n = \frac{1}{2m}\biggl(\underbrace{\frac{\pi^2\hbar^2}{L_2}m^2}_{=p_m^2}\biggr)$$
+
+    So the quantized momenta is $p_m = \pm \frac{\pi\hbar}{L}m$.
+
+    \subsubsection{Lowest energy state}
+    In classical mechanics the lowest energy state is $p = 0\Rightarrow E = 0$.
+    However in quantum mechanics the lowest energy level is:
+
+    $$E_1 = \frac{\hbar^2}{2m}\biggl(\frac{\pi}{L}\biggr)^2 > 0$$
+
+    Recalling that $E_1 = \frac{p_1^2}{2m}$, it is inferred that:
+
+    $$p_1 = \pm \frac{\hbar\pi}{L}\neq 0$$
+
+    $p_1$ can point in $+$ or $-$ direction with equal probability, so the quantum uncertainty is $\Delta p =\frac{2\hbar\pi}{L}$.
+    On the other hand $\Delta p \sim L$ so there is quantum delocalization for $\psi_1(x)$.
+    However in the classical ground state:
+
+    $$T = \frac{p^2}{2m = 0}\Rightarrow p = 0\Rightarrow \Delta p = 0$$
+
+    But $\Delta q = b$, hence there is a violation of the uncertainty principle:
+
+    $$\Delta q\Delta p = 0$$.
+
+    \subsubsection{Correspondence principle}
+    Considering for $L\rightarrow\infty$ and $m\rightarrow\infty$ $E_0 = 0$, so there is no uncertainty in classical mechanics and $E_{n+1}-E_n \rightarrow 0$, so there is no quantization.
+    So classical mechanics is contained in quantum mechanics in the macroscopic limit, for large size and heavy masses.
+
+    \subsubsection{Excited states}
+    The wave function of the n-th excited state has $N$ nodes, a general result that holds for any quantum system.
+
 \section{Two dimensional square well}
+Consider a quantum particle in a two dimensional square well with dimension $L_1$ and $L_2$.
+Then:
+
+$$\hat{H} = -\frac{\hbar^2}{2m}\frac{\partial {^2}}{\partial {x^2}}-\frac{\hbar^2}{2m}\frac{\partial {^2}}{\partial {y^2}}$$
+
+Any $H$ can be separated as: $H(x,y) = H_1(x) + H_2(y)$.
+
+  \subsection{Solution}
+  Then the solution is:
+
+  $$\begin{cases}\psi(x,y) = \psi_1(x)\psi_2(y)\\H\psi=(E_1+E_2(\psi))\end{cases}$$
+
+  Where $H_1\psi_1 = E_1\psi_1$  and $H_2\psi_2 = E_2\psi_2$
+  So:
+
+  \begin{align*}
+    (H_1 + H_2)\psi_1(x)\psi_2(y) &= H_1\psi_1(x)\psi_2(y) + H_2\psi_1(x)\psi_2(y)=\\
+                                  &= \psi_2(y)\hat{H}_1\psi_1(x)+\psi_1(x0+\psi)1(x)H_2\psi_2(y)=\\
+                                  &= \psi_2 E_1\psi_1 + \psi_1E_2\psi_2=\\
+                                  &=(E_1+E_2)\psi_1\psi_2
+  \end{align*}
+
+  So:
+
+  $$\phi_{n,m}(x,y) = \underbrace{\psi_n(x)}_{\text{solution of the 1D problem}}\psi_m(y)$$
+
+  And $E_{n,m} = E_n+E_m$.
 
 \section{Lattice discretization}
+Lattice discretization is a technique by which a numerical solution is obtained exploiting the connection between operators and matrices.
+A large but finite number of equally spaced possible position is used.
+The possible positions are $x = x_{\min} + \Delta x$, where $\Delta x = \frac{x_{\max}-x_{\min}}{N}$.
+Then the wave function is represented by a list $\psi(x) \rightarrow(\psi_1,\dots, \psi_N)$.
+Thus the wave function becomes  a vector and the Hamiltonian a matrix.
 
+  \subsection{Discrete representation of derivative}
 
+  $$\frac{d{}}{d{x}}\psi(x) \rightarrow \frac{\psi_{i+1}-\psi_i}{\Delta x}$$
+
+  $$\frac{d{^2}}{d{x^2}}\psi(x) \rightarrow \frac{\psi_{i+1}+\psi_{i-1}-2\psi_i}{\Delta x^2}$$
+
+  Let the Kronecker delta be:
+
+      $$\delta_{ij} =\begin{cases}1 &i=j\\0 &i\neq j\end{cases}\Rightarrow S_{ij} \rightarrow\begin{pmatrix}1 & 0 & \cdots\\\vdots & \ddots &\vdots \\0&\cdots & 1 \end{pmatrix}$$
+
+  Now:
+
+  $$-\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\rightarrow T_{ij}=-\frac{\hbar^2}{2m\Delta x^2}(\delta_{ij+1}+\delta_{ij-1}-2\delta_{ij})$$
+
+  Indeed:
+
+  $$\sum\limits_{j}T_{ij}\psi_i = -\frac{\hbar^2}{2m}(\psi_{i+1}+\psi_{i-1}-2\psi_i)\frac{1}{\Delta x^2}$$
+
+  Now $V(x) \rightarrow V_{ij} = V_i\delta_{ij}$, so:
+
+  $$\sum\limits_{j}V_{ij}\psi_j = V_i\psi_i$$
+
+  Finally:
+
+  $$H_{ij} = T_{ij} + V_{ij}$$
+
+  $$H_{ij} = \begin{pmatrix}\frac{\hbar^2}{m\Delta x^2} + V_1 & -\frac{\hbar^2}{2m\Delta x} & 0 & \cdots\\ -\frac{\hbar^2}{2m\Delta x^2} & \frac{\hbar^2}{m\Delta x^2}+V_2-\frac{\hbar^2}{2m \Delta x^2} & 0 & \cdots\\ 0 & -\frac{\hbar^2}{2m\Delta x^2} & \frac{\hbar^2}{m\Delta x^2}+V_3 - \frac{\hbar^2}{2m\Delta x^2} & \cdots\end{pmatrix}$$
+
+  Solving the  matrix eigenproblem $\sum\limits_i H_{ij}\psi_i = E_i\psi_i$ yields $\{E_i\}_{i=\{1,\dots,N\}}$ and $\{y_j\}_i$.
+  The dimensionality grows with the number of mesh points $N$.
+  The exact case is $N\rightarrow\infty$.
+  Quantum mechanics is described by a infinite dimensional vector space called the Hilbert space.

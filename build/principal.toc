@@ -53,106 +53,118 @@
 \contentsline {subsubsection}{\numberline {3.1.3.1}Quantum Hamiltonian}{19}{subsubsection.3.1.3.1}%
 \contentsline {section}{\numberline {3.2}Stationary Shr\"oedinger equation}{19}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Ground state of the quantum harmonic oscillator}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Form of the ground state}{20}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4}Quantum particle in a one dimensional infinite square well}{20}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Energy spectrum}{20}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Energy eigenstates}{20}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Discussion}{20}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Two dimensional square well}{20}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Lattice discretization}{20}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Quantum mechanics}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}State of a system}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Observable quantities}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Outcomes of measurement}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Expectation value}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Time evolution}{21}{section.4.5}%
-\contentsline {part}{II\hspace {1em}Quantum chemistry}{22}{part.2}%
-\contentsline {chapter}{\numberline {5}Approximation methods}{23}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Atomic physics}{24}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Molecular physics}{25}{chapter.7}%
-\contentsline {chapter}{Appendices}{26}{section*.2}%
-\contentsline {chapter}{\numberline {A}Complex numbers}{27}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Argand plane}{27}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Operations}{27}{section.1.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Addition}{27}{subsection.1.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Subtraction}{28}{subsection.1.A.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}Multiplication}{28}{subsection.1.A.2.3}%
-\contentsline {subsection}{\numberline {A.2.4}Complex conjugate}{28}{subsection.1.A.2.4}%
-\contentsline {subsection}{\numberline {A.2.5}Division}{28}{subsection.1.A.2.5}%
-\contentsline {section}{\numberline {A.3}Polar form}{29}{section.1.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Complex numbers as vectors}{29}{subsection.1.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Definition}{29}{subsection.1.A.3.2}%
-\contentsline {subsection}{\numberline {A.3.3}Conversion between polar form and standard form}{29}{subsection.1.A.3.3}%
-\contentsline {subsection}{\numberline {A.3.4}Operations}{29}{subsection.1.A.3.4}%
-\contentsline {subsubsection}{\numberline {A.3.4.1}Multiplication}{29}{subsubsection.1.A.3.4.1}%
-\contentsline {subsubsection}{\numberline {A.3.4.2}Division}{30}{subsubsection.1.A.3.4.2}%
-\contentsline {subsubsection}{\numberline {A.3.4.3}Power}{30}{subsubsection.1.A.3.4.3}%
-\contentsline {subsubsection}{\numberline {A.3.4.4}N-th root}{30}{subsubsection.1.A.3.4.4}%
-\contentsline {section}{\numberline {A.4}Complex valued functions}{30}{section.1.A.4}%
-\contentsline {subsection}{\numberline {A.4.1}Derivative}{30}{subsection.1.A.4.1}%
-\contentsline {section}{\numberline {A.5}Complex exponential}{31}{section.1.A.5}%
-\contentsline {subsection}{\numberline {A.5.1}Properties}{31}{subsection.1.A.5.1}%
-\contentsline {subsection}{\numberline {A.5.2}Roots of a complex number}{31}{subsection.1.A.5.2}%
-\contentsline {chapter}{\numberline {B}Partial derivatives}{32}{appendix.1.B}%
-\contentsline {section}{\numberline {B.1}First order derivatives}{32}{section.1.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Differentiability}{32}{subsection.1.B.1.1}%
-\contentsline {subsection}{\numberline {B.1.2}Tangent plane}{33}{subsection.1.B.1.2}%
-\contentsline {subsection}{\numberline {B.1.3}Determine if a function is differentiable}{33}{subsection.1.B.1.3}%
-\contentsline {section}{\numberline {B.2}Higher order derivatives}{33}{section.1.B.2}%
-\contentsline {subsection}{\numberline {B.2.1}Schwartz's theorem}{33}{subsection.1.B.2.1}%
-\contentsline {section}{\numberline {B.3}Differential equation}{33}{section.1.B.3}%
-\contentsline {chapter}{\numberline {C}Differential operators}{35}{appendix.1.C}%
-\contentsline {section}{\numberline {C.1}Definition}{35}{section.1.C.1}%
-\contentsline {section}{\numberline {C.2}Properties}{35}{section.1.C.2}%
-\contentsline {subsection}{\numberline {C.2.1}Sum and difference}{35}{subsection.1.C.2.1}%
-\contentsline {subsection}{\numberline {C.2.2}Product}{35}{subsection.1.C.2.2}%
-\contentsline {subsection}{\numberline {C.2.3}Power}{35}{subsection.1.C.2.3}%
-\contentsline {subsection}{\numberline {C.2.4}Equality}{36}{subsection.1.C.2.4}%
-\contentsline {subsection}{\numberline {C.2.5}Identity operator}{36}{subsection.1.C.2.5}%
-\contentsline {subsection}{\numberline {C.2.6}Commutability}{36}{subsection.1.C.2.6}%
-\contentsline {subsection}{\numberline {C.2.7}Linearity}{36}{subsection.1.C.2.7}%
-\contentsline {section}{\numberline {C.3}Gradient, divergence and curl}{36}{section.1.C.3}%
-\contentsline {subsection}{\numberline {C.3.1}Nabla operator}{36}{subsection.1.C.3.1}%
-\contentsline {subsection}{\numberline {C.3.2}Scalar fields and vector fields}{37}{subsection.1.C.3.2}%
-\contentsline {subsection}{\numberline {C.3.3}Gradient}{37}{subsection.1.C.3.3}%
-\contentsline {subsubsection}{\numberline {C.3.3.1}Directional derivatives}{37}{subsubsection.1.C.3.3.1}%
-\contentsline {subsection}{\numberline {C.3.4}Divergence}{37}{subsection.1.C.3.4}%
-\contentsline {subsection}{\numberline {C.3.5}Curl}{37}{subsection.1.C.3.5}%
-\contentsline {subsection}{\numberline {C.3.6}Properties}{38}{subsection.1.C.3.6}%
-\contentsline {subsection}{\numberline {C.3.7}Laplacian}{38}{subsection.1.C.3.7}%
-\contentsline {section}{\numberline {C.4}Hessian matrix: maxima and minima}{38}{section.1.C.4}%
-\contentsline {section}{\numberline {C.5}Jacobian matrix}{38}{section.1.C.5}%
-\contentsline {section}{\numberline {C.6}Chain rule}{39}{section.1.C.6}%
-\contentsline {subsection}{\numberline {C.6.1}Gradient in polar coordinates}{39}{subsection.1.C.6.1}%
-\contentsline {chapter}{\numberline {D}Spherical coordinates}{41}{appendix.1.D}%
-\contentsline {section}{\numberline {D.1}Definition}{41}{section.1.D.1}%
-\contentsline {section}{\numberline {D.2}The sphere volume}{41}{section.1.D.2}%
-\contentsline {chapter}{\numberline {E}Multidimensional integrals}{43}{appendix.1.E}%
-\contentsline {section}{\numberline {E.1}Definition}{43}{section.1.E.1}%
-\contentsline {section}{\numberline {E.2}Properties}{44}{section.1.E.2}%
-\contentsline {subsection}{\numberline {E.2.1}Differentiability}{44}{subsection.1.E.2.1}%
-\contentsline {subsection}{\numberline {E.2.2}Order of integration}{44}{subsection.1.E.2.2}%
-\contentsline {subsection}{\numberline {E.2.3}x-simple and y-simple domains}{44}{subsection.1.E.2.3}%
-\contentsline {subsection}{\numberline {E.2.4}Change of variables}{44}{subsection.1.E.2.4}%
-\contentsline {chapter}{\numberline {F}Wave equations}{45}{appendix.1.F}%
-\contentsline {section}{\numberline {F.1}Definition}{45}{section.1.F.1}%
-\contentsline {subsection}{\numberline {F.1.1}Three-dimensional case}{45}{subsection.1.F.1.1}%
-\contentsline {section}{\numberline {F.2}Plane waves}{46}{section.1.F.2}%
-\contentsline {chapter}{\numberline {G}Hilbert spaces}{47}{appendix.1.G}%
-\contentsline {section}{\numberline {G.1}From vector to hilbert spaces}{47}{section.1.G.1}%
-\contentsline {subsection}{\numberline {G.1.1}Definition}{47}{subsection.1.G.1.1}%
-\contentsline {subsubsection}{\numberline {G.1.1.1}Classical mechanics}{47}{subsubsection.1.G.1.1.1}%
-\contentsline {subsubsection}{\numberline {G.1.1.2}Quantum mechanics}{47}{subsubsection.1.G.1.1.2}%
-\contentsline {subsection}{\numberline {G.1.2}Complete orthonormal bases}{48}{subsection.1.G.1.2}%
-\contentsline {subsubsection}{\numberline {G.1.2.1}Standard vector spaces}{48}{subsubsection.1.G.1.2.1}%
-\contentsline {subsubsection}{\numberline {G.1.2.2}Hilbert space}{48}{subsubsection.1.G.1.2.2}%
-\contentsline {subsection}{\numberline {G.1.3}Operators}{49}{subsection.1.G.1.3}%
-\contentsline {subsubsection}{\numberline {G.1.3.1}Multiplicative operator}{49}{subsubsection.1.G.1.3.1}%
-\contentsline {subsubsection}{\numberline {G.1.3.2}Derivative operator}{50}{subsubsection.1.G.1.3.2}%
-\contentsline {section}{\numberline {G.2}Spectral theorem}{50}{section.1.G.2}%
-\contentsline {subsection}{\numberline {G.2.1}Adjoint}{50}{subsection.1.G.2.1}%
-\contentsline {subsection}{\numberline {G.2.2}Statement of the spectral theorem}{50}{subsection.1.G.2.2}%
-\contentsline {subsection}{\numberline {G.2.3}Corollaries}{50}{subsection.1.G.2.3}%
-\contentsline {subsubsection}{\numberline {G.2.3.1}First corollary}{50}{subsubsection.1.G.2.3.1}%
-\contentsline {subsubsection}{\numberline {G.2.3.2}Second corollary}{50}{subsubsection.1.G.2.3.2}%
-\contentsline {subsubsection}{\numberline {G.2.3.3}Third corollary}{50}{subsubsection.1.G.2.3.3}%
-\contentsline {section}{\numberline {G.3}Fourier transform}{51}{section.1.G.3}%
+\contentsline {subsection}{\numberline {3.4.1}Solution}{21}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Option 1}{21}{subsubsection.3.4.1.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.2}Option 2}{21}{subsubsection.3.4.1.2}%
+\contentsline {subsubsection}{\numberline {3.4.1.3}$A_1$ and $A_2$}{22}{subsubsection.3.4.1.3}%
+\contentsline {subsubsection}{\numberline {3.4.1.4}Summary}{22}{subsubsection.3.4.1.4}%
+\contentsline {paragraph}{\numberline {3.4.1.4.1}Energy spectrum}{22}{paragraph.3.4.1.4.1}%
+\contentsline {paragraph}{\numberline {3.4.1.4.2}Energy eigenstates}{22}{paragraph.3.4.1.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}Discussion}{22}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}Quantized momenta}{22}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}Lowest energy state}{23}{subsubsection.3.4.2.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.3}Correspondence principle}{23}{subsubsection.3.4.2.3}%
+\contentsline {subsubsection}{\numberline {3.4.2.4}Excited states}{23}{subsubsection.3.4.2.4}%
+\contentsline {section}{\numberline {3.5}Two dimensional square well}{23}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Solution}{24}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Lattice discretization}{24}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Discrete representation of derivative}{24}{subsection.3.6.1}%
+\contentsline {chapter}{\numberline {4}Quantum mechanics}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}State of a system}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Observable quantities}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Outcomes of measurement}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Expectation value}{25}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Time evolution}{25}{section.4.5}%
+\contentsline {part}{II\hspace {1em}Quantum chemistry}{26}{part.2}%
+\contentsline {chapter}{\numberline {5}Approximation methods}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Atomic physics}{28}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Molecular physics}{29}{chapter.7}%
+\contentsline {chapter}{Appendices}{30}{section*.2}%
+\contentsline {chapter}{\numberline {A}Complex numbers}{31}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Argand plane}{31}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Operations}{31}{section.1.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Addition}{31}{subsection.1.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Subtraction}{32}{subsection.1.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Multiplication}{32}{subsection.1.A.2.3}%
+\contentsline {subsection}{\numberline {A.2.4}Complex conjugate}{32}{subsection.1.A.2.4}%
+\contentsline {subsection}{\numberline {A.2.5}Division}{32}{subsection.1.A.2.5}%
+\contentsline {section}{\numberline {A.3}Polar form}{33}{section.1.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Complex numbers as vectors}{33}{subsection.1.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Definition}{33}{subsection.1.A.3.2}%
+\contentsline {subsection}{\numberline {A.3.3}Conversion between polar form and standard form}{33}{subsection.1.A.3.3}%
+\contentsline {subsection}{\numberline {A.3.4}Operations}{33}{subsection.1.A.3.4}%
+\contentsline {subsubsection}{\numberline {A.3.4.1}Multiplication}{33}{subsubsection.1.A.3.4.1}%
+\contentsline {subsubsection}{\numberline {A.3.4.2}Division}{34}{subsubsection.1.A.3.4.2}%
+\contentsline {subsubsection}{\numberline {A.3.4.3}Power}{34}{subsubsection.1.A.3.4.3}%
+\contentsline {subsubsection}{\numberline {A.3.4.4}N-th root}{34}{subsubsection.1.A.3.4.4}%
+\contentsline {section}{\numberline {A.4}Complex valued functions}{34}{section.1.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Derivative}{34}{subsection.1.A.4.1}%
+\contentsline {section}{\numberline {A.5}Complex exponential}{35}{section.1.A.5}%
+\contentsline {subsection}{\numberline {A.5.1}Properties}{35}{subsection.1.A.5.1}%
+\contentsline {subsection}{\numberline {A.5.2}Roots of a complex number}{35}{subsection.1.A.5.2}%
+\contentsline {chapter}{\numberline {B}Partial derivatives}{36}{appendix.1.B}%
+\contentsline {section}{\numberline {B.1}First order derivatives}{36}{section.1.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Differentiability}{36}{subsection.1.B.1.1}%
+\contentsline {subsection}{\numberline {B.1.2}Tangent plane}{37}{subsection.1.B.1.2}%
+\contentsline {subsection}{\numberline {B.1.3}Determine if a function is differentiable}{37}{subsection.1.B.1.3}%
+\contentsline {section}{\numberline {B.2}Higher order derivatives}{37}{section.1.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}Schwartz's theorem}{37}{subsection.1.B.2.1}%
+\contentsline {section}{\numberline {B.3}Differential equation}{37}{section.1.B.3}%
+\contentsline {chapter}{\numberline {C}Differential operators}{39}{appendix.1.C}%
+\contentsline {section}{\numberline {C.1}Definition}{39}{section.1.C.1}%
+\contentsline {section}{\numberline {C.2}Properties}{39}{section.1.C.2}%
+\contentsline {subsection}{\numberline {C.2.1}Sum and difference}{39}{subsection.1.C.2.1}%
+\contentsline {subsection}{\numberline {C.2.2}Product}{39}{subsection.1.C.2.2}%
+\contentsline {subsection}{\numberline {C.2.3}Power}{39}{subsection.1.C.2.3}%
+\contentsline {subsection}{\numberline {C.2.4}Equality}{40}{subsection.1.C.2.4}%
+\contentsline {subsection}{\numberline {C.2.5}Identity operator}{40}{subsection.1.C.2.5}%
+\contentsline {subsection}{\numberline {C.2.6}Commutability}{40}{subsection.1.C.2.6}%
+\contentsline {subsection}{\numberline {C.2.7}Linearity}{40}{subsection.1.C.2.7}%
+\contentsline {section}{\numberline {C.3}Gradient, divergence and curl}{40}{section.1.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}Nabla operator}{40}{subsection.1.C.3.1}%
+\contentsline {subsection}{\numberline {C.3.2}Scalar fields and vector fields}{41}{subsection.1.C.3.2}%
+\contentsline {subsection}{\numberline {C.3.3}Gradient}{41}{subsection.1.C.3.3}%
+\contentsline {subsubsection}{\numberline {C.3.3.1}Directional derivatives}{41}{subsubsection.1.C.3.3.1}%
+\contentsline {subsection}{\numberline {C.3.4}Divergence}{41}{subsection.1.C.3.4}%
+\contentsline {subsection}{\numberline {C.3.5}Curl}{41}{subsection.1.C.3.5}%
+\contentsline {subsection}{\numberline {C.3.6}Properties}{42}{subsection.1.C.3.6}%
+\contentsline {subsection}{\numberline {C.3.7}Laplacian}{42}{subsection.1.C.3.7}%
+\contentsline {section}{\numberline {C.4}Hessian matrix: maxima and minima}{42}{section.1.C.4}%
+\contentsline {section}{\numberline {C.5}Jacobian matrix}{42}{section.1.C.5}%
+\contentsline {section}{\numberline {C.6}Chain rule}{43}{section.1.C.6}%
+\contentsline {subsection}{\numberline {C.6.1}Gradient in polar coordinates}{43}{subsection.1.C.6.1}%
+\contentsline {chapter}{\numberline {D}Spherical coordinates}{45}{appendix.1.D}%
+\contentsline {section}{\numberline {D.1}Definition}{45}{section.1.D.1}%
+\contentsline {section}{\numberline {D.2}The sphere volume}{45}{section.1.D.2}%
+\contentsline {chapter}{\numberline {E}Multidimensional integrals}{47}{appendix.1.E}%
+\contentsline {section}{\numberline {E.1}Definition}{47}{section.1.E.1}%
+\contentsline {section}{\numberline {E.2}Properties}{48}{section.1.E.2}%
+\contentsline {subsection}{\numberline {E.2.1}Differentiability}{48}{subsection.1.E.2.1}%
+\contentsline {subsection}{\numberline {E.2.2}Order of integration}{48}{subsection.1.E.2.2}%
+\contentsline {subsection}{\numberline {E.2.3}x-simple and y-simple domains}{48}{subsection.1.E.2.3}%
+\contentsline {subsection}{\numberline {E.2.4}Change of variables}{48}{subsection.1.E.2.4}%
+\contentsline {chapter}{\numberline {F}Wave equations}{49}{appendix.1.F}%
+\contentsline {section}{\numberline {F.1}Definition}{49}{section.1.F.1}%
+\contentsline {subsection}{\numberline {F.1.1}Three-dimensional case}{49}{subsection.1.F.1.1}%
+\contentsline {section}{\numberline {F.2}Plane waves}{50}{section.1.F.2}%
+\contentsline {chapter}{\numberline {G}Hilbert spaces}{51}{appendix.1.G}%
+\contentsline {section}{\numberline {G.1}From vector to hilbert spaces}{51}{section.1.G.1}%
+\contentsline {subsection}{\numberline {G.1.1}Definition}{51}{subsection.1.G.1.1}%
+\contentsline {subsubsection}{\numberline {G.1.1.1}Classical mechanics}{51}{subsubsection.1.G.1.1.1}%
+\contentsline {subsubsection}{\numberline {G.1.1.2}Quantum mechanics}{51}{subsubsection.1.G.1.1.2}%
+\contentsline {subsection}{\numberline {G.1.2}Complete orthonormal bases}{52}{subsection.1.G.1.2}%
+\contentsline {subsubsection}{\numberline {G.1.2.1}Standard vector spaces}{52}{subsubsection.1.G.1.2.1}%
+\contentsline {subsubsection}{\numberline {G.1.2.2}Hilbert space}{52}{subsubsection.1.G.1.2.2}%
+\contentsline {subsection}{\numberline {G.1.3}Operators}{53}{subsection.1.G.1.3}%
+\contentsline {subsubsection}{\numberline {G.1.3.1}Multiplicative operator}{53}{subsubsection.1.G.1.3.1}%
+\contentsline {subsubsection}{\numberline {G.1.3.2}Derivative operator}{54}{subsubsection.1.G.1.3.2}%
+\contentsline {section}{\numberline {G.2}Spectral theorem}{54}{section.1.G.2}%
+\contentsline {subsection}{\numberline {G.2.1}Adjoint}{54}{subsection.1.G.2.1}%
+\contentsline {subsection}{\numberline {G.2.2}Statement of the spectral theorem}{54}{subsection.1.G.2.2}%
+\contentsline {subsection}{\numberline {G.2.3}Corollaries}{54}{subsection.1.G.2.3}%
+\contentsline {subsubsection}{\numberline {G.2.3.1}First corollary}{54}{subsubsection.1.G.2.3.1}%
+\contentsline {subsubsection}{\numberline {G.2.3.2}Second corollary}{54}{subsubsection.1.G.2.3.2}%
+\contentsline {subsubsection}{\numberline {G.2.3.3}Third corollary}{54}{subsubsection.1.G.2.3.3}%
+\contentsline {section}{\numberline {G.3}Fourier transform}{55}{section.1.G.3}%
