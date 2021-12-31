@@ -111,3 +111,57 @@ It would be expected that, irregardless of the frequency or wave-length the amou
   Instead we find only two possible orientation of the magnetic moment that is in fact quantizied.
   Considering three $SGs$ in series with different orientations: $\hat{z}\rightarrow\hat{x}\rightarrow\hat{z}$:
   The first selects $\hat{\mu}_z = +\mu_0$ and the second $\hat{\mu}_x = +\mu_0$.
+
+\section{Conclusions}
+Particle propagation is not ballistic:
+
+$$P_{12} \neq P_1 + P_2$$
+
+Probability $P(2)$ displayed interference pattern.
+Interference pattern naturally arises when taking squared modules of complex amplitudes:
+
+\begin{align*}
+  I_{12} &= |A_1 + A_2|^2=\\
+         &=(A_1 + A_2)(A_1^*+A_2^*)^*=\\
+         &=(A_1A_1^*+\underbrace{A_1A_2^*+A_2A_1^*}_{\text{interference pattern+}}A_2A_2^*)
+\end{align*}
+
+Considering $E=n\nu$ a wave function for the electron propagating wave can be written:
+
+$$f(x,t) = f_>(x-vt)+f_<(x+vt)$$
+
+And:
+
+\begin{align*}
+  \biggl(\frac{1}{v^2}\frac{\partial {^2}}{\partial {t^2}}-\frac{\partial {^2}}{\partial {x^2}}\biggr)\begin{cases}f_>(x+vt)\\f_<(x-vt)\end{cases} &= 0\\
+  \frac{1}{v^2}\frac{\partial {}}{\partial {t}}\biggl(\frac{\partial {}}{\partial {t}}f_>(x-vt)\biggr)&-\frac{\partial {}}{\partial {x}}\biggl(\frac{\partial {}}{\partial {x}}f_>(x+vt)\biggr)=\\
+  -\frac{1}{v}\frac{\partial {}}{\partial {t}}[f_>'(x-vt)]&=f''_>(x-vt)\\
+  f_>''(x-vt) &=f''_>(x-vt)
+\end{align*}
+
+Now an electron is assumed to propagate as a wave $\psi(x.t)$ for which: $|\psi(x,t)|^2 = P(x,t)$.
+Trying to apply a photon wave to the electron:
+
+$$\psi(x,t) = A_oe^{i(vt-kx)} = \cos(vt-kx) + i\sin(vt - kx)$$
+
+Considering that both the real and imaginary part oscillates:
+
+\begin{align*}
+  \begin{cases}\frac{\partial {^2}}{\partial {t^2}}A_0e^{i(vt-kx)} = A_0(-v^2e^{i(vt-kx)})\\\frac{\partial {^2}}{\partial {x^2}}A_0e^{i(vt-kx)} = A_0(-k^2e^{i(vt-kx)})\end{cases}&\rightarrow \frac{1}{\nu^2}\biggl[-A_0v^2e^{i(vt-kx)}+A_0k^2e^{i(vt-kx)}\biggr] = 0\\
+                                                                                                                                                                                  &\Rightarrow \nu = v^2k^2\text{ frequency or velocity of propagation}
+\end{align*}
+
+From this it can be seen that $E=\nu h\propto v$, but because of the mass of the electron it should be that $E\propto v^2$.
+So the Schr\"oedinger equation is a modified wave equation to accomodate this:
+
+$$ia \frac{\partial {}}{\partial {t}}\psi=-d \frac{\partial {^2}}{\partial {x^2}}\psi(x,t)$$
+
+  \subsection{Free particle Schr\"oedinger equation}
+  In this equation particle interactions and potential energy are not considered:
+
+  $$i\hbar \frac{\partial {}}{\partial {t}}\psi(x,t) = \frac{\hbar^2}{2m}\frac{\partial {^2}}{\partial {x^2}}\psi(x,t)$$
+
+  \subsection{Complete Schr\"oedinger equation}
+  It can be seen how the potential energy is more important than the forec:
+
+  $$i\hbar \frac{\partial {}}{\partial {t}}\psi(x,t) = \overbrace{\biggl[-\underbrace{\frac{\hbar^2}{2m}\frac{\hat{\partial} {^2}}{\partial {x^2}}}_{\text{kinetic energy operator}}+\underbrace{\hat{U}(x)}_{\text{quantum energy operator}}\biggr]}^{\text{Quantum Hamiltonian}}\psi(x,t) = \hat{H}\psi(x,t)$$

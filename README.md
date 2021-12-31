@@ -11,9 +11,9 @@ See this [Github gist](https://gist.github.com/giacThePhantom/e080a777782754542d
 
   * [First draft] Revisiting classical mechanics
   * [First draft] The breakdown of classical mechanics
-  * [Professor notes] Waves of matter
+  * [Professor's notes] Waves of matter
   * [Check with appendix] Mathematical digression (probably will be placed in the appendix)
-  * [Index done] Quantum mechanics
+  * [Professor's notes] Quantum mechanics
 
 ### Quantum chemistry
  
