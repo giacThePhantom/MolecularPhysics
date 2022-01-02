@@ -13,9 +13,9 @@ Physical laws can never be demonstrated, but only inferred from experiment and t
   The estate of the electron in the beams is assumed described by a complex amplitude called the wave-function:
 
   \begin{align*}
-    \phi(x,t) &\rightarrow Prob(x,t)\\
-              &=\phi^*(x,t)\phi(x,t)\\
-              &\equiv |\phi(x,t)|^2
+    \psi(x,t) &\rightarrow Prob(x,t)\\
+              &=\psi^*(x,t)\psi(x,t)\\
+              &\equiv |\psi(x,t)|^2
   \end{align*}
 
   \subsection{Main assumption}
@@ -31,12 +31,13 @@ Physical laws can never be demonstrated, but only inferred from experiment and t
   There is a need to find if the same equation describes the propagation of a massive particle like the electron.
   Let the electron wave particle:
 
-  $$\phi(x,t) = Ae^{i(\vec{k}\vec{r}-\omega t)}$$
+  $$\psi(x,t) = Ae^{\frac{i}{\hbar}(Et -px)}$$
 
-  Then: $\frac{\partial^2{}}{\partial{t^2}}\phi = \omega^2\phi$ and $\nabla^2\phi = |\vec{k}|^2\phi$.
-  So it is obtained that: 
 
-  $$\underbrace{k^2}_{\propto p^2}\propto\underbrace{\omega^2}_{\propto E^2}$$
+  Then: $\frac{\partial^2{}}{\partial{t^2}}\psi = \omega^2\psi$ and $\frac{partial^2}{\partial x^2}\psi = p^2\psi$.
+  So it is obtained that:
+
+  $${p^2}\propto\underbrace{\omega^2}_{\propto E^2}$$
 
   Then $E = cons|p|$.
   This is true for light, but it is false for massive particles: the correspondence principle implies that:
@@ -47,23 +48,26 @@ Physical laws can never be demonstrated, but only inferred from experiment and t
 
   \subsection{Defining the Shr\"oedinger equation}
   So there is a need to use a different wave equation with respect to the photon's one.
-  Noticing that $E^2\propto p^2$ follows from having two time derivatives, to have $E\propto p^2$ one time derivative is tried:
+  Noticing that $E^2\propto p^2$ follows from having two time derivatives, to have $E\propto p^2$ one time derivative is tried.
+  Then the equation to solve becomes:
 
-  $$\frac{\partial {}}{\partial {t}}e^{i(\vec{k}\vec{r}-\omega t)} = -i\omega e^{i(\vec{k}\vec{r}-\omega t)}$$
+  $$\biggl(iC_1\frac{\partial}{\partial t} C_2\frac{\partial^2}{\partial x^2}\biggr)\psi = 0$$
 
-  And:
+  \begin{align*}
+    \begin{cases}\frac{\partial\psi}{\partial t} = A\frac{i}{\hbar}E\psi(x,t)\\\frac{\partial^2\psi}{\partial x^2} = A\frac{-1}{\hbar^2}p^2\psi(x,t)\end{cases}\\
+    \biggl(C_1\frac{\partial}{\partial t} - C_2\frac{\partial^2}{\partial x^2}\biggr)\psi(x,t) &=0\\
+    \biggl(C_1\frac{i}{\hbar}E-C_2\bigl(-\frac{1}{\hbar^2}p^2\bigr)\biggr)\psi(x,t) &= 0\\
+    \biggl(C_1\frac{i}{\hbar}E-C_2\bigl(-\frac{1}{\hbar^2}p^2\bigr)\biggr) &= 0\\
+  \end{align*}
 
-  $$\biggl(iA \frac{\partial {}}{\partial {t}}+ B\nabla^2\biggr)\phi = 0\Rightarrow \omega A - B k^2 = 0$$
+  Now, considering $\frac{C_1}{C_2}=R\rightarrow \hbar^2$:
 
-  To obtain an energy $A = \hbar$, then:
+  $$\begin{cases} i\underbrace{\hbar\frac{\partial}{\partial t}\psi}_{\text{kinetic energy}}-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\psi = 0\\E =\frac{p^2}{2m}\\E = \hbar\omega\end{cases}$$
 
-  $$\hbar\omega = E = Bk^2\propto p$$
+  Now:
 
-  The remaining constant is set by phenomenology:
+  $$\hbar\omega = E \propto p^2$$
 
-  $$i\hbar \frac{\partial {}}{\partial {t}}\phi = -\frac{\hbar^2}{2m}\nabla^2\phi$$
-
-  The right hand side represent a kinetic energy.
   For a free electron $H$ equals the kinetic energy and is approximately the Hamiltonian.
   For an interacting electron:
 
@@ -71,16 +75,29 @@ Physical laws can never be demonstrated, but only inferred from experiment and t
 
   So finally the Schr\"oedinger equation:
 
-  $$i\hbar \frac{\partial {}}{\partial {t}}\phi(\vec{r},t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+V(\vec{r})\biggr)\phi(x,t)$$
+  $$i\hbar \frac{\partial {}}{\partial {t}}\psi(\vec{r},t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+V(\vec{r})\biggr)\psi(x,t)$$
 
     \subsubsection{Quantum Hamiltonian}
-    Now the quantum Hamiltonian can be defines as:
+    Now the quantum Hamiltonian can be defined as:
 
-    $$\hat{H} \equiv -\frac{\hbar^2}{2m}\nabla^2+U(\vec{r})$$
+    $$\hat{H} \equiv -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x}+U(x)$$
+
+    Comparing it with a classical Hamiltonian there can be seen that $\frac{p^2}{2m}\xrightarrow[]{\text{quantization}} - \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\Rightarrow p^2\rightarrow \hbar^2\frac{\partial^2}{\partial x^2}$.
+    Then because the forward propagating  wave has a positive momentum $\hat{p}\rightarrow i\hbar\frac{\partial}{\partial x}$.
+    The same happens in three dimensions, where:
+
+    $$i\hbar\frac{\partial }{\partial x}\psi(\vec{x}, t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+U(\vec{x})\biggr)\psi(\vec{x},t)$$
 
     The Schr\"oedinger equation is then recast as:
 
-    $$i\hbar \frac{\partial {}}{\partial {t}}\phi(\vec{r},t) = \hat{H} \phi(\vec{r},t)$$
+    $$i\hbar \frac{\partial {}}{\partial {t}}\psi(\vec{r},t) = \hat{H} \psi(\vec{r},t)$$
+
+    So to solve this equation there is a need to solve a partial differential equation that defines the state of a system.
+    The operators are:
+
+    $$\hat{H} = \biggl(-\frac{\hbar^2}{2m}\nabla^2+U(\vec{r})\biggr)$$
+
+    $$\nabla^2 = \biggl(\frac{\partial^2}{\partial x^2} +\frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}\biggr)$$
 
 \section{Stationary Shr\"oedinger equation}
 Assuming that the system conserves mechanical energy:
@@ -89,18 +106,18 @@ $$H(p,q, \bcancel{t}) = \frac{p^2}{2m}+U(q,\bcancel{t})$$
 
 Considering the plane wave:
 
-$$\phi(\vec{r}, t) = \psi(\vec{r}) e^{-i \frac{E}{\hbar}t}$$
+$$\psi(\vec{r}, t) = \phi(\vec{r}) e^{-i \frac{E}{\hbar}t}$$
 
 As a guess for the form of the solution and plugging it into the Schr\"oedinger equation:
 
-$$E\psi e^{-i \frac{i}{\hbar}(Et)} = He^{-\frac{i}{\hbar}Et}\psi$$
+$$E\phi e^{-i \frac{i}{\hbar}(Et)} = He^{-\frac{i}{\hbar}Et}\phi$$
 
 Which gives:
 
-$$\hat{H}\phi(\vec{r}) = E\psi(\vec{r})$$
+$$\hat{H}\phi(\vec{r}) = E\phi(\vec{r})$$
 
 Where $E$ is unknown.
-This is an eigen problem: given $\hat{H}$ a function $\psi(\vec{r}($ has to be found such that $\hat{H}\psi(\vec{r})$ is a function proportional to $\psi(\vec{r})$ through some constant $E$.
+This is an eigen problem: given $\hat{H}$ a function $\psi(\vec{r})$ has to be found such that $\hat{H}\psi(\vec{r})$ is a function proportional to $\psi(\vec{r})$ through some constant $E$.
 In other words the energy of a quantum system is an eigenvalue of the quantum Hamiltonian operator.
 So, from a discrete spectrum energy quantization is obtained and:
 
@@ -125,33 +142,129 @@ The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
   \subsection{Form of the ground state}
   The ground state will be in the form:
 
-  $$\phi(x) = \mathcal{N}e^{-\frac{\alpha x^2}{4}}$$
+  $$\psi(x) = \mathcal{N}e^{-\frac{\alpha x^2}{4}}$$
 
   So:
 
   \begin{align*}
-    -\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\psi_0 &= -\frac{\hbar^2}{2m}\mathcal{N}\frac{d{}}{d{x}}\biggl[-\frac{\alpha}{2}xe^{-\frac{\alpha x^2}{4}}=\\
+    -\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\phi_0 &= -\frac{\hbar^2}{2m}\mathcal{N}\frac{d{}}{d{x}}\biggl[-\frac{\alpha}{2}xe^{-\frac{\alpha x^2}{4}}\biggr]=\\
                                                   &= -\frac{\hbar^2}{2m}\biggl[-\frac{\alpha}{2}e^{-\frac{\alpha x^2}{4}}+\frac{\alpha^2}{4}x^2e^{-\frac{\alpha x^2}{4}}\biggr]\mathcal{N}
   \end{align*}
 
   So:
 
   \begin{align*}
-    \hat{H}\psi_0 &= -\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\psi_0 + \frac{1}{2}m\omega^2x^2\psi_0=\\
-                  &= \frac{\alpha}{4}\frac{\hbar^2}{m}\psi_0 -\frac{\hbar^2\alpha^2}{8m}x^2\psi_0 + \frac{1}{2}m\omega^2x^2\psi_0
+    \hat{H}\phi_0 &= -\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\phi_0 + \frac{1}{2}m\omega^2x^2\phi_0=\\
+                  &= \frac{\alpha}{4}\frac{\hbar^2}{m}\phi_0 -\frac{\hbar^2\alpha^2}{8m}x^2\phi_0 + \frac{1}{2}m\omega^2x^2\phi_0
   \end{align*}
 
-  For $\psi_0$ to be an eigenstate $\hat{H}\psi_0 = const\cdot\psi_0$ so the dependence on $x^2$ must be cancelled:
+  For $\phi_0$ to be an eigenstate $\hat{H}\psi_0 = const\cdot\psi_0$ so the dependence on $x^2$ must be cancelled:
 
-  $$-\frac{\hbar^2}{\bcancel{2}m}\alpha^2\cancelto{2}{4}\bcancel{x^2}\bcancel{\psi_0} + \frac{1}{2}m\omega^2\bcancel{x^2}\bcancel{\psi_0} = 0$$
+  $$-\frac{\hbar^2}{8m}\alpha^2\bcancel{x^2}\bcancel{\phi_0} + \frac{1}{2}m\omega^2\bcancel{x^2}\bcancel{\psi_0} = 0$$
 
   From this:
 
-  $$\alpha^2 = \frac{m^2\omega^2}{4\hbar^2}\Rightarrow\alpha=\frac{m\omega}{2\hbar}$$
+  $$\alpha^2 = \frac{4m^2\omega^2}{\hbar^2}\Rightarrow\alpha=\frac{2m\omega}{\hbar}$$
 
-  So:
+  So the solution is
 
-  $$\psi_0(x) = \mathcal{N}e^{-\frac{m\omega}{2\hbar}x^2}$$
+  $$\phi_0(x) = \mathcal{N}e^{-\frac{2m\omega}{\hbar}x^2}$$
+
+  \subsection{Solution of the ground state of the quantum mechanic oscillator}
+  The one dimensional quantum mechanic oscillator is the most used model:
+
+  $$H = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + \frac{1}{2}m\omega^2x^2$$
+
+  A wave function for a one particle system contains zero nodes for the ground state.
+  It is expected that the ground state is different than zero and assume a Gaussian for a solution:
+
+  $$\phi_0(x) = \mathcal{N} e^{\alpha x^2}$$
+
+  The objective is to compute $\hat{H}\phi_0 = n\phi_0(x)$:
+
+  \begin{align*}
+    \hat{H}\phi_0 &= -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}(\mathcal{N}e^{-\alpha x^2}) = -\frac{\hbar^2}{2m}\frac{\partial}{\partial x}(-2\alpha x e^{-\alpha x^2})\mathcal{N}=\\
+                  &=-\frac{\hbar^2}{2m}(-2\alpha e^{-\alpha x^2}+4\alpha xe^{-\alpha x^2})\mathcal{N}=\\
+                  &= \frac{\hbar^2}{\bcancel{2}m}\bcancel{2}\alpha\phi_0 -\frac{\hbar^2}{2m}4\alpha^2 x^2\phi_0\\
+    \hat{H}\phi_0 &= \underbrace{\frac{\hbar^2}{m}\alpha\phi_0(x)}_{n\phi_0(x)} + \underbrace{\biggl(\frac{1}{2}m\omega^2-\frac{\hbar^2}{m}\alpha^2\biggr)x^2\phi_0(x)}_{\text{depends on }x^2}
+  \end{align*}
+
+  The solution are found for values of $\alpha$ that set to $0$ the part dependent on $x^2$:
+
+  \begin{align*}
+    \frac{1}{2}m\omega^2 -\frac{\hbar^2}{m}2\alpha^2 &= 0\\
+    \alpha &= \frac{m\omega}{2\hbar}
+  \end{align*}
+
+  So the Gaussian is a good solution:
+
+  $$\phi_0(x) = \mathcal{N}e^{-\frac{m\omega^2x}{2\hbar}}$$
+
+    \subsubsection{Normalization evaluation}
+    Consider that $\frac{1}{\sigma^2} = \frac{m\omega}{\hbar} \rightarrow \sigma^2 = \frac{\hbar}{2m\omega}\rightarrow \sigma = \sqrt{\frac{\hbar}{2m\omega}}$.
+    Then consider:
+
+    $$\mathcal{N}\int_{-\infty}^\infty e^{-\frac{m\omega x^2}{\hbar}}$$
+
+    And solve the Gaussian integral:
+
+    $$\int e^{-\sigma x^2} = \sqrt{2\pi}\sigma$$
+
+    Then:
+
+    \begin{align*}
+      \mathcal{N}^2 &= \frac{1}{\int|\phi_0|^2dx} = \frac{1}{(2\pi\sigma)^{\frac{1}{2}}} = \frac{1}{(2\pi\sqrt{\frac{\hbar}{2m\omega}})^\frac{1}{2}}\\
+      \mathcal{N} &= \frac{1}{(2\pi\sqrt{\frac{\hbar}{2m\omega}})^{\frac{1}{4}}}
+    \end{align*}
+
+    \subsubsection{Compute the average value of kinetic and potential energy}
+    Because this operations are stochastic the outcome cannot be predicted, only the probability or the average values can be computed.
+    Let $\langle U\rangle $ be the average value of the potential energy, then:
+
+    \begin{align*}
+      \langle U\rangle  &= \int P_0(x)U(x)dx = \frac{\int dx e^{-\frac{m\omega x^2}{\hbar}}\frac{1}{2}m\omega^2x^2}{\int dx e^{-\frac{m\omega x^2}{\hbar}}} =\\
+          &= \frac{1}{2}m\omega^2\underbrace{\langle x^2\rangle }_{\text{variance }\sigma^2} = \frac{1}{2}\bcancel{m}\omega^{\bcancel{2}}\frac{\hbar^2}{2\bcancel{m}\bcancel{\omega}}=\\
+          &=\frac{1}{4}\hbar\omega
+    \end{align*}
+
+    So considering $E_0 = \frac{1}{2}\hbar\omega$, the energy remains the same, but the potential energy changes stochastically, then:
+
+    $$E_0 = \langle U\rangle  + \langle T\rangle $$
+
+    To compute the kinetic energy, it needs to be considered that in quantum mechanics anything that can be measured except time is an observable.
+    So, starting with classical mechanics, the observable $o(p,q)$ momentum and position, and after quantization and using the position representation:
+
+    \begin{align*}
+      O(\underbrace{\hat{p}}_{-i\hbar\vec{\nabla}},\underbrace{\hat{q}}_{\vec{q}}) &\rightarrow \hat{O}\\
+      T = \frac{p^2}{2m}&\rightarrow \hat{T} = \frac{\hat{p}^2}{2m} = \frac{(-i\hbar\nabla)^2}{2m} = -\frac{\hbar^2\nabla^2}{2m}\\
+      U(q)&\rightarrow \hat{U}
+    \end{align*}
+
+    Now considering the orbital angular momentum $\vec{L} =\vec{r}\cdot\vec{p}$:
+
+    $$\begin{vmatrix}i&j&k\\x&y&z\\P_x&P_y&P_z\end{vmatrix}$$
+
+    Then:
+
+    $$L_z = xP_y - yP_x\xrightarrow[]{\text{quantization}}x\biggl(-i\hbar\frac{\partial}{\partial y}\biggr) - y\biggl(-i\hbar\frac{\partial}{\partial x}\biggr)$$
+
+    Now considering $\langle \phi|O|\phi\rangle$ that specify the state and that is equivalent to $\langle O\rangle$, where:
+
+    $$\langle O\rangle = \frac{\int dx \phi^*(x)(O(x)\cdot\phi(x))}{\int dx\phi^*(x)\phi(x)}$$
+
+    Then:
+
+    \begin{align*}
+      \langle\phi|\hat{T}|\phi\rangle &=\frac{\int dx\phi^*(x)(-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\phi(x))}{\int dx |\phi(x)|^2 = \frac{1}{4}\hbar^2}=\\
+                                      &=e^{-\alpha x^2}\frac{\partial^2}{\partial x^2}e^{-\alpha x^2} = e^{-\alpha x^2}\frac{\partial}{\partial x}(-2\alpha xe^{-\alpha x^2}) =\\
+                                      &=e^{-\alpha x^2}(-2\sigma w^{-\alpha x^2}+4\alpha^2x^2e^{-\alpha x^2})= \\
+                                      &=-2\alpha|\phi|^2 = 4\alpha^2 x^2|\phi|^2
+    \end{align*}
+
+    And so:
+
+    $$\langle\phi|\hat{T}|\phi\rangle = \frac{-\frac{\hbar^2}{2m}\int |\phi(x)|^2dx}{\int|\phi(x)|^2}2\alpha= - \frac{\hbar^2}{2m}4\alpha^2\frac{\int dx|\psi|^2x^2}{\int dx|\psi|^2}$$
+
 
 \section{Quantum particle in a one dimensional infinite square well}
 For the case of a quantum particle in a one dimensional infinite square well consider a particle constrained in a trap where interactions are so strong that it cannot escape and with two confining direction much narrower than the third.
@@ -272,23 +385,26 @@ Any $H$ can be separated as: $H(x,y) = H_1(x) + H_2(y)$.
   \subsection{Solution}
   Then the solution is:
 
-  $$\begin{cases}\psi(x,y) = \psi_1(x)\psi_2(y)\\H\psi=(E_1+E_2(\psi))\end{cases}$$
+  $$\begin{cases}\phi(x,y) = \phi_1(x)\phi_2(y)\\H\phi=(E_1+E_2)\phi\end{cases}$$
 
-  Where $H_1\psi_1 = E_1\psi_1$  and $H_2\psi_2 = E_2\psi_2$
+  Where $H_1\phi_1 = E_1\phi_1$  and $H_2\phi_2 = E_2\phi_2$
   So:
 
   \begin{align*}
-    (H_1 + H_2)\psi_1(x)\psi_2(y) &= H_1\psi_1(x)\psi_2(y) + H_2\psi_1(x)\psi_2(y)=\\
-                                  &= \psi_2(y)\hat{H}_1\psi_1(x)+\psi_1(x0+\psi)1(x)H_2\psi_2(y)=\\
-                                  &= \psi_2 E_1\psi_1 + \psi_1E_2\psi_2=\\
-                                  &=(E_1+E_2)\psi_1\psi_2
+    (H_1 + H_2)\phi_1(x)\phi_2(y) &= H_1\phi_1(x)\phi_2(y) + H_2\phi_1(x)\phi_2(y)=\\
+                                  &= \phi_2(y)\hat{H}_1\phi_1(x)+\phi_1(x0+\phi)1(x)H_2\phi_2(y)=\\
+                                  &= \phi_2 E_1\phi_1 + \phi_1E_2\phi_2=\\
+                                  &=(E_1+E_2)\phi_1\phi_2
   \end{align*}
 
   So:
 
-  $$\phi_{n,m}(x,y) = \underbrace{\psi_n(x)}_{\text{solution of the 1D problem}}\psi_m(y)$$
+  $$\phi_{n,m}(x,y) = \underbrace{\phi_n(x)}_{\text{solution of the 1D problem}}\phi_m(y)$$
 
-  And $E_{n,m} = E_n+E_m$.
+  And $E_{n,m} = E_n^x+E_m^y = -\frac{\hbar^2}{2m}\pi^2\biggl(\frac{n^2}{L_x^2}+\frac{m^2}{L_y^2}\biggr)$.
+  Then the ground state is $E_{11} = E_1^x+E_1^y$ and the system is doubly degenerative in opposite directions:
+
+  $$E_{12} + E_1^x+E_2^y + E_{21} = E_2^x+E_1^y$$
 
 \section{Lattice discretization}
 Lattice discretization is a technique by which a numerical solution is obtained exploiting the connection between operators and matrices.

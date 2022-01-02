@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.29)  31 DEC 2021 12:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.1)  2 JAN 2022 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,67 +875,68 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
 
-[20] [21] [22] [23] [24] [25]) (./chapters/04_quantum_mechanics.tex [26]
+[20] [21] [22] [23] [24] [25] [26] [27] [28])
+(./chapters/04_quantum_mechanics.tex [29]
 Chapter 4.
-[27
+[30
 
-]) [28] [29
+]) [31] [32
 
 ] (./chapters/05_approximation_methods.tex
 Chapter 5.
-) (./chapters/06_atomic_physics.tex [30
+) (./chapters/06_atomic_physics.tex [33
 
 ]
 Chapter 6.
-) (./chapters/07_molecular_physics.tex [31
+) (./chapters/07_molecular_physics.tex [34
 
 ]
 Chapter 7.
-) [32
+) [35
 
-] [33
+] [36
 
 
 ] (./chapters/aa_complex_numbers.tex
 Appendix A.
-[34
+[37
 
-] [35] [36] [37]) (./chapters/ab_partial_derivatives.tex [38]
+] [38] [39] [40]) (./chapters/ab_partial_derivatives.tex [41]
 Appendix B.
-[39
-
-]) (./chapters/ac_differential_operators.tex [40] [41]
-Appendix C.
 [42
 
-] [43] [44] [45] [46]) (./chapters/ad_spherical_coordinates.tex [47]
+]) (./chapters/ac_differential_operators.tex [43] [44]
+Appendix C.
+[45
+
+] [46] [47] [48] [49]) (./chapters/ad_spherical_coordinates.tex [50]
 Appendix D.
-[48
+[51
 
-]) (./chapters/ae_multidimensional_integrals.tex [49]
+]) (./chapters/ae_multidimensional_integrals.tex [52]
 Appendix E.
-[50
+[53
 
-]) (./chapters/af_wave_equations.tex [51]
+]) (./chapters/af_wave_equations.tex [54]
 Appendix F.
-[52
+[55
 
-]) (./chapters/ag_hilbert_spaces.tex [53]
+]) (./chapters/ag_hilbert_spaces.tex [56]
 Appendix G.
-[54
+[57
 
-] [55] [56] [57]) [58] (./build/principal.aux)
+] [58] [59] [60]) [61] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: EC1D5F4A276EFEBADC34ED7B9DB301C5;21890.
+(rerunfilecheck)             Checksum: 1078BFF9E00943BA620A13803F732846;22295.
  ) 
 Here is how much of TeX's memory you used:
- 18948 strings out of 478994
- 321254 string characters out of 5864750
+ 18955 strings out of 478994
+ 321351 string characters out of 5864751
  674486 words of memory out of 5000000
- 35873 multiletter control sequences out of 15000+600000
+ 35874 multiletter control sequences out of 15000+600000
  423715 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,18n,91p,498b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,19n,91p,498b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -960,10 +961,10 @@ f-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
 uper/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.p
 fb>
-Output written on ./build/principal.pdf (59 pages, 508263 bytes).
+Output written on ./build/principal.pdf (62 pages, 519749 bytes).
 PDF statistics:
- 1145 PDF objects out of 1200 (max. 8388607)
- 1047 compressed objects within 11 object streams
- 233 named destinations out of 1000 (max. 500000)
- 1089 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1166 PDF objects out of 1200 (max. 8388607)
+ 1065 compressed objects within 11 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 1097 words of extra memory for PDF output out of 10000 (max. 10000000)
 
