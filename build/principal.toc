@@ -113,7 +113,7 @@
 \contentsline {section}{\numberline {8.2}Two qubits system}{63}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Quantum circuits}{64}{section.8.3}%
 \contentsline {section}{\numberline {8.4}The Elitzur-Vaidman bomb tester}{66}{section.8.4}%
-\contentsline {part}{IV\hspace {1em}Appendices}{68}{part.4}%
+\contentsline {part}{IV\hspace {1em}Mathematical Background}{68}{part.4}%
 \contentsline {chapter}{\numberline {9}Complex numbers}{69}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Argand plane}{69}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Operations}{69}{section.9.2}%
