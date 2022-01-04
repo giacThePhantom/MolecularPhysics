@@ -4,17 +4,17 @@
 
   \subsection{Experiment}
   An experiment performed on a physical system is a way to measure observable quantities at a determined time: $O_1(t), \dots, O_n(t)$.
-  By measuring more and more observables at the same time the instantaneous state of the system is more and more characterized.
+  By measuring more and more observables at the same time, the instantaneous state of the system becomes increasingly characterized.
   A maximum set of observables that leads to the complete characterization of the instantaneous state can be assumed.
 
     \subsubsection{Example - particle of mass $m$ subject to an harmonic force}
-    For a particle of mass $m$ subject to an harmonic force like one of a spring is completely characterized by: 
+    A particle of mass $m$ subject to an harmonic force like one of a spring is completely characterized by: 
     
     $$(\vec{r}(t),\vec{v}(t))=\vec{r}(t)\in \mathbb{R}^6$$
 
   \subsection{Definition}
   A physical theory is a mathematical scheme to predict the state of the system, the outcome of feature observations: $O_1(t'), \dots, O_n(t')$.
-  In particular an equation that can be used to compute the state at $t'$ given the state at $t$ is called an equation of motion.
+  In particular, an equation that can be used to compute the state at $t'$ given the state at $t$ is called an equation of motion.
 
 \section{Classical mechanics}
 
@@ -42,12 +42,12 @@
   \end{align*}
 
   Clearly, $f_1(t)$ and $f_2(t)$ are solutions if $\omega^2 = \frac{k}{m}$.
-  Neither of them is a good solution, because for the first one is valid only if the particle starts at the origin and for the second only if the particle is at rest at time $0$.
+  Neither of them is a good solution: the first one is only valid if the particle starts at the origin, while the second one only holds if the particle is at rest at time $0$.
   So the most general solution is:
 
   $$x(t) = A\cos\sqrt{\frac{k}{m}}t+B\sin\sqrt{\frac{k}{m}}t$$
 
-  To find $A$ and $B$ information about the initial conditions are used.
+  To find $A$ and $B$, information about the initial conditions are used.
   Let the initial position $x(0) = x_0$.
   Then 
 
@@ -73,11 +73,9 @@
 
   $$\Gamma(t) = (q(t),p(t))$$
 
-  Cauchy s theorem implies that given an n-the order differential equation has exactly $n$ solutions.
-  Moreover, given $n$ initial conditions there exists exactly one solution.
-  Because of this trajectories in the phase space can never intersect.
-  In this way future $x(t)$ and $v(t)$ can be unambiguously predicted.
-  So classical mechanics is fully deterministic.
+  Cauchy's theorem implies that given a n-th order differential equation and given $n$ initial conditions, there exists exactly one solution.
+  Because of this, trajectories in the phase space can never intersect (corollary).
+  Classical mechanics is fully deterministic, as future $x(t)$ and $v(t)$ can be unambiguously predicted. 
 
   \subsection{Systems in three dimension and with more than one particle}
   For systems with $D=3$ and for more than one particle the equation of motion is:
@@ -88,8 +86,8 @@
     m_N \frac{d{^2}}{d{t^2}}\vec{r}_N(t) = \vec{F}_N(\vec{r}_1(t), \dots,\vec{r}_N(t))\\
   \end{cases}$$
 
-  Correspondingly the phase-space is $6N$ dimensional.
-  Moreover for the $N$ vector equations there are $N$ scalar ones.
+  Correspondingly, the phase-space is $6N$ dimensional.
+  Moreover, for the $N$ vector equations there are $N$ scalar ones.
 
   \subsection{Work and energy}
   Let $\vec{r}$ be a trajectory followed by a particle subject to a force $\vec{F}$.
@@ -110,7 +108,7 @@
   \end{align*}
 
     \subsubsection{Conservative forces}
-    For conservative forces the work from point $A$ to point $B$ does not depend on the path followed, in particular, for each paths $1$ and $2$: $W_{AB}^1 = W_{AB}^2$ and:
+    For conservative forces, the work from point $A$ to point $B$ does not depend on the path followed. In particular, for each path $1$ and $2$: $W_{AB}^1 = W_{AB}^2$ and:
 
     $$-W_{AB} = U(\vec{r}_B) - U(\vec{r}_A)$$
 
@@ -156,14 +154,14 @@
 
   $$H_A = T_A+U_A = T_B+U_B = H_B$$
 
-  The mechanical energy is conserved in the system if only conservative forces act on it.
-  Energy conservation allow to solve Newton's equation generally impossible to handle.
+  The mechanical energy is conserved in the system only if conservative forces act on it.
+  Energy conservation allows us to solve Newton's equation, which is generally impossible to handle.
   This is because conservation laws help gaining partial information without having to solve Newton's equation.
-  At this level energy conservation comes in as a matter of convenience.
+  At this level, energy conservation comes in as a matter of convenience.
 
     \subsubsection{Example}
     Consider a cart going down a path with a loop.
-    Let $A$ the starting highest point when it starts going and $B$ the lowest point where it stops accelerating.
+    Let $A$ be the starting highest point when it starts going and $B$ the lowest point where it stops accelerating.
 
     $$\begin{cases}H_A = \underbrace{T_A}_{=0}+\underbrace{U_A}_{=mgh}\\
     H_B = \underbrace{T_B}_{-\frac{1}{2}mv^2}+\underbrace{U_B}_{=0}\end{cases}
@@ -189,14 +187,14 @@
   \end{align*}
 
   If $\vec{r}\parallel \vec{F}\Rightarrow \frac{d{}}{d{t}}\vec{L} = 0$.
-  Then for a conservative force there is angular momentum conservation.
-  So the motion in a central force conserves energy and angular momentum.
+  Therefore, for a conservative force there is angular momentum conservation.
+  Summarizing, the motion in a central force conserves energy and angular momentum.
 
 \section{Classical theory of the hydrogen atom}
 The classical theory of the hydrogen atom is defined by the classical Bohr model.
-The hydrogen atom if formed by a proton in the centre with an electron orbiting around it.
+The hydrogen atom is formed by a proton in the centre with an electron orbiting around it.
 Because $\frac{m_e}{M_p}\approx \frac{1}{2000}$, for the sake of simplicity an infinite proton mass $\frac{m_e}{M_p}=0$ is assumed.
-Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's motion occurs on a plane and it is two dimensional
+Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation), the electron's motion occurs on a plane and is two dimensional.
 
   \subsection{Mechanical energy in polar coordinates}
 
@@ -205,7 +203,7 @@ Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's m
   The potential energy is derived from Coulomb's $F=-\hat{r}\frac{e^2}{r^2}$, so $U(|\vec{r}|) = -\frac{e^2}{|\vec{r}|}$
 
 
-  Now, using conservation to replace the differential equation the position is divided in two components $\hat{u}_r$ and $\hat{u}_\theta$ orthogonal to each other so that $v^2 = v_r^2+v_\theta^2$:
+  Now, by using conservation to replace the differential equation, the position is divided in two components $\hat{u}_r$ and $\hat{u}_\theta$ orthogonal to each other, so that $v^2 = v_r^2+v_\theta^2$:
 
   $$\vec{v} = \hat{u}_\theta v_\theta +\hat{u}_r\underbrace{v_r}_{\frac{d{r}}{d{t}}}\Rightarrow v_2 = \biggl(\frac{d{r}}{d{t}}\biggr)^2+v_\theta$$
 
@@ -230,11 +228,11 @@ Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's m
 
   $$H = \frac{1}{2}m\biggl(\frac{d{r}}{d{t}}\biggr)^2+V_{eff}(r)$$
 
-  So using polar coordinate and angular momentum conservation the mechanical energy has been written in the form of that of an effective one dimensional system with $U(r) \rightarrow V_{eff}(r)$.
-  Using this trick it is immediate to infer the qualitative structure of orbits.
+  By using polar coordinates and angular momentum conservation, the mechanical energy has been written in the form of an effective one dimensional system with $U(r) \rightarrow V_{eff}(r)$.
+  Using this trick, it is immediate to infer the qualitative structure of orbits.
 
   \subsection{Case 1 - $E>0$}
-  The case that $E>0$ is the case of an unbound orbit.
+  The case in which $E>0$ is the case of an unbound orbit.
   The electron approaches the proton and accelerates.
   There is an inversion point and:
 
@@ -247,9 +245,8 @@ Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's m
   And that is impossible.
 
   \subsection{Case 2 - $E<0$}
-  The case that $E<0$ is the case of  the bound orbit.
-  The electron is trying to escape the proton.
-  There are two inversion points
+  The case in which $E<0$ is the case of the bound orbit.
+  The electron is trying to escape the proton and there are two inversion points.
   
   \subsection{Conclusion}
   Whenever a charge changes its velocity it emits $\frac{e}{m}$ radiations.
@@ -257,27 +254,26 @@ Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation) electron's m
 
   $$P = \frac{2}{3}\frac{m_er_e}{c}a^2\qquad a = \omega^2 r$$
 
-  According to Larmer's law.
-  The electron would spiral into the nucleus in $10^{-15}s$.
-  Because of this classical atoms are unstable.
+  According to Larmer's law, the electron would spiral into the nucleus in $10^{-15}s$.
+  Because of this, classical atoms are unstable.
 
 \section{Hamiltonian formulation of mechanics}
-In the Newtonian formulation the fundamental inspect is tat of the force:
+In the Newtonian formulation, the fundamental aspect is the force:
 
 $$m \vec{a} = \vec{F}$$
 
 Defining a physical theory in classical mechanics corresponds to specifying what is a force.
 
   \subsection{Hamilton's theory}
-  Hamilton's theory is an equivalent reformulation of mechanics in which the key concept is not the force but the Hamiltonian $H$, which is closely related to energy.
+  Hamilton's theory is an equivalent reformulation of mechanics in which the key concept is not the force, but the Hamiltonian $H$ - which is closely related to energy.
   While from a practical standpoint the two formulation are equivalent with identical equations of motion, modern physics has shown that the notion of energy is more fundamental than the one of force.
 
   \subsection{Hamilton's equations}
-  From this point Energy will be identified in an Hamiltonian:
+  From this point on, energy will be identified in an Hamiltonian:
 
   $$H(\underbrace{\vec{p}}_{\text{momentum}}, \underbrace{\vec{q}}_{\text{position}}) = \frac{\vec{p}^2}{2m} + U(\vec{q})$$
 
-  So the equations of motion becomes:
+  So the equations of motion become:
 
   $$\begin{cases}
     \dot{q} = + \frac{\partial {H}}{\partial {p}}\Rightarrow \dot{q} = \frac{p}{m}\Rightarrow p = \dot{q}m\\
