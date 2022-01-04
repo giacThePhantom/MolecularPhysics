@@ -7,7 +7,7 @@
 		\subsubsection{Classical mechanics}
 		In classical mechanics the instantaneous state of a single particle is specified by the vector position $\vec{r}(t)$ and its momentum $\vec{p}(t)$ in the real vector spaces.
 		In these vector spaces linearity holds: any linear combination of elements arbitrarily chosen inside the vector space $\mathcal{V}$ is still an element of the same vector space:
-	
+
 		$$\forall \vec{v}, \vec{w}\in\mathcal{V}\land\forall a, b\in\mathbb{R}: a\vec{v}+b\vec{w}\in\mathcal{V}$$
 
 		Imposing that $a,b\in\mathbb{R}$ the discussion is restricted to real vector spaces.
@@ -33,10 +33,10 @@
 		In hilbert spaces reversing the order of elements in the inner spaces leads to the complex conjugate result.
 		The inner product is bi-linear:
 
-		$$\begin{cases}|\xi\rangle \equiv \alpha_1|\psi_1\rangle + \alpha_2|\psi_2\rangle\\|\omega equiv \beta_1|\phi_1\rangle + \beta_2|\phi_2\end{cases}\Rightarrow \langle\xi|\omega\rangle = \sum\limits_{i=1}^2\alpha_i^*\beta_i\langle \psi_i|\phi_i\rangle$$
+		$$\begin{cases}|\xi\rangle \equiv \alpha_1|\psi_1\rangle + \alpha_2|\psi_2\rangle\\|\omega\rangle \equiv \beta_1|\phi_1\rangle + \beta_2|\phi_2\end{cases}\Rightarrow \langle\xi|\omega\rangle = \sum\limits_{i=1}^2\alpha_i^*\beta_i\langle \psi_i|\phi_i\rangle$$
 
 	\subsection{Complete orthonormal bases}
-	
+
 		\subsubsection{Standard vector spaces}
 		In standard vector spaces orthonormal basis vectors are a set form of elements which are mutually orthogonal and have unitary norm:
 
@@ -54,11 +54,11 @@
 
 		$$\vec{v} = \sum\limits_{k=1}^N\lambda_k\vec{e}_k$$
 
-		$N$ is de dimension of the vector spece.
+		$N$ is the dimension of the vector space.
 		The set of coefficients is called the coordinates of the vector $\vec{v}$ in the given complete orthonormal basis $\{e_k\}_{k = 1, \dots, N}$.
 
 		\subsubsection{Hilbert space}
-		A set of quantum states is defined to be a complete orthonormal basis of the Hilbert space $\mathcal{H}$ if: 
+		A set of quantum states is defined to be a complete orthonormal basis of the Hilbert space $\mathcal{H}$ if:
 		\begin{multicols}{2}
 			\begin{itemize}
 				\item They are mutually orthogonal.
@@ -67,7 +67,7 @@
 			\end{itemize}
 		\end{multicols}
 
-		The elements of a complete orthonormal basis of a Hilbert space may form an infinite and dens set.
+		The elements of a complete orthonormal basis of a Hilbert space may form an infinite and dense set.
 		Let's consider the set of position quantum states $|x\rangle$.
 		Clearly two position can differ by an infinitesimal amount, therefore a continuous index $x$ is needed to label them.
 		Two position states are said to obey the orthonormally condition if if holds:
@@ -80,7 +80,7 @@
 
 		The fact that position states form a basis of $\mathcal{H}$ expresses the fact that any quantum state in the Hilbert space can be obtained from a linear combination of the position states:
 
-		$$|\psi\rangle = \int d^3 \vec{x}\phi(\vec(x))|vec{x}\rangle\qquad \phi(\vec{x})\in\mathbb{C}$$
+		$$|\psi\rangle = \int d^3 \vec{x}\phi(\vec{x})|\vec{x}\rangle\qquad \phi(\vec{x})\in\mathbb{C}$$
 
 		The complex function $\phi(x)$ is called the wave function and can be regarded as a dense and infinite set of complex coefficients.
 		Therefore Hilbert spaces are infinite dimension vector spaces.
@@ -105,13 +105,13 @@
 
 	Like real vector space, operators in Hilbert spaces can be represented in a given orthonormal basis like the position state basis through a projection procedure:
 
-	$$|\omega\rangle = \hat{O}|\psi\rangle\Rightarrow \omega(\vec{x} = \langle\vec{x}|w\rangle = \int d^3\vec{y}\langle\vec{y}|\psi\rangle\langle\vec{x}|\hat{O}|\vec{y}\rangle = \int d^3\vec{y} O(\vec{x}, \vec{y})\psi(\vec{y})$$
+	$$|\omega\rangle = \hat{O}|\psi\rangle\Rightarrow \omega(\vec{x} = \langle\vec{x}|w\rangle) = \int d^3\vec{y}\langle\vec{y}|\psi\rangle\langle\vec{x}|\hat{O}|\vec{y}\rangle = \int d^3\vec{y} O(\vec{x}, \vec{y})\psi(\vec{y})$$
 
 	Where $\omega(\vec{x})$ and $\psi(\vec{x})$ denote the wave functions associated to the states $|\omega\rangle$ and $|\psi\rangle$ respectively.
 	In most cases $O(\vec{x}, \vec{y})$ is a nearly local operator.
 
 		\subsubsection{Multiplicative operator}
-		A multiplicative operator is the potential energy operator: $U(\vec{x}, \vec{y} = \delta(\vec{x}-\vec{y})u(y)$:
+		A multiplicative operator is the potential energy operator: $U(\vec{x}, \vec{y}) = \delta(\vec{x}-\vec{y})u(y)$:
 
 		$$\int d^3\vec{y}U(\vec{x}, \vec{y})\psi(\vec{y}) = u(\vec{x})\psi(\vec{x})$$.
 
@@ -119,6 +119,15 @@
 		A derivative operator is the kinetic energy operator: $T(\vec{x}, \vec{y}) = -\frac{\hbar^2}{2m}\delta(\vec{x}-\vec{y})\nabla^2_{\vec{x}}$:
 
 		$$\int d^3\vec{y}T(\vec{x}, \vec{y})\psi(\vec{y}) = -\frac{\hbar^2}{2m}\nabla^2\psi(\vec{x})$$
+
+		\subsubsection{Exponential of an operator}
+		Let $\hat{A}$ an operator, then:
+
+		$$e^{\hat{A}} \equiv\mathbb{1} + \hat{A} + \frac{1}{2}\hat{A}^2+\cdots = \sum\limits_{n=0}^\infty\frac{1}{n!}\hat{A}^n$$
+
+		Not that:
+
+		$$e^{\hat{A} + \hat{B}} \neq e^{\hat{A}}e^{\hat{B}}$$
 
 \section{Spectral theorem}
 The spectral theorem is a fundamental result in the theory of linear operators in vector and hilbert spaces and specifies the general conditions under which operators can be diagonalized to yield a complete orthonormal basis.
@@ -130,7 +139,11 @@ The spectral theorem of standard linear algebra follows as a special case of thi
 	$$\langle \vec{v}\hat{O}^\dagger, \vec{w}\rangle = \langle\vec{v}, \hat{O}\vec{w}\rangle$$
 
 	An operator is called hermitian if it is self-adjoint, or if it coincides with its hermitian conjugate: $\hat{O} = \hat{O}^\dagger$.
-	Furthermore an operator $\hat{U}$ is called unitary if $\hat{U}^\dagger\hat{U} = 1$.
+	Furthermore an operator $\hat{U}$ is called unitary if $\hat{U}^\dagger\hat{U} = \mathbb{1}$.
+	Observables in quantum mechanics are associated to hermitian operators and the outcome of a measurement it's one of its real eigenvalues.
+	The expectation value of an observable $O$ in any state $\phi$ is:
+
+	$$\frac{(\phi,O,\phi)}{(\phi,\phi)}$$
 
 	\subsection{Statement of the spectral theorem}
 	Let $\hat{O}$ be an hermitian operator defined on a hilbert space $\mathcal{H}$.
@@ -171,4 +184,3 @@ An important properties of the fourier transform is that:
 \end{align*}
 
 Where $\frac{\partial}{\partial\vec{x}}$ denotes the gradient operator.
-

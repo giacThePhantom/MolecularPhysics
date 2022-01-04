@@ -445,3 +445,36 @@ Thus the wave function becomes  a vector and the Hamiltonian a matrix.
   The dimensionality grows with the number of mesh points $N$.
   The exact case is $N\rightarrow\infty$.
   Quantum mechanics is described by a infinite dimensional vector space called the Hilbert space.
+
+\section{Time evolution operators}
+Consider the time-dependent Schr\"oedinger equation:
+
+$$i\hbar\frac{\partial}{\partial t}\psi(x,t) = \hat{H}\psi(x,t)$$
+
+Where:
+
+$$\psi(x,t) = e^{-\frac{i}{\hbar}\hat{H}(t-t_0)}\psi(x,t_0)$$
+
+And the time-evolution operator:
+
+$$U(t,t_0) = e^{-\frac{i}{\hbar}\hat{H}(t-t_0)}$$
+
+If the argument of the Taylor expansion is too large infinitely many operators unless it is a special quantum mechanics operators such that it is the eigenvalues of the Hamiltonian.
+Let $\vec{a}_k$ be an eigenvector, then:
+
+$$e^{\hat{A}}\vec{a}_k = e^{a_k}\vec{a}_n$$
+
+So the time-evolution operator for the eigenvectors of the Hamiltonian can be easily evaluated.
+If $\psi(x,t=t_0) = \phi_n(x)$, where $\hat{H}\phi_n(x) = E_n\phi_n(x)$, then:
+
+$$\psi(x,t) = e^{-\frac{i}{\hbar}(t-t_0)E_n}\phi_n(x)$$
+
+And:
+
+$$P(x,t) = |\psi(x,t)|^2 = |e^{-\frac{i}{\hbar}(t-t_0)E_n}|^2|\phi_n(x)|^2$$
+
+If it has a pure phase: $|e^{ia}|^2 = e^{ia}(e^{ia})^* = e^{i(a-a)} = 1$, then:
+
+$$P(x,t) = |\phi_n(x)|^2 = P(x,t)0$$
+
+And it is the same as the initial time.

@@ -16,9 +16,13 @@
 \usepackage{pdfpages}
 \usepackage{multicol}
 \usepackage[ruled,vlined]{algorithm2e}
+\usepackage{soul}
 \usepackage{mhchem}
 \usepackage[toc, page]{appendix}
 \usepackage{float}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{\rightmark}
@@ -51,3 +55,4 @@
 \renewcommand*{\algorithmcfname}{}
 \renewcommand*{\algorithmautorefname}{}
 \renewcommand{\thealgocf}{}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
