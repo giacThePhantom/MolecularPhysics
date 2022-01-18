@@ -15,8 +15,37 @@
   \subsection{Definition}
   A physical theory is a mathematical scheme to predict the state of the system, the outcome of feature observations: $O_1(t'), \dots, O_n(t')$.
   In particular, an equation that can be used to compute the state at $t'$ given the state at $t$ is called an equation of motion.
+  A physical theory is composed by the following elements:
+  \begin{itemize}
+    \item definition of the state of a system
+    \item recipe to determine the system's equation of motion
+    \item prediction of an observable quantity given the state of the system
+   \end{itemize}
+   
 
 \section{Classical mechanics}
+In classical mechanics, the state of a system is a collection at time $t$ of all the positions of all the particles in the system. We also need to define the velocity of the particle, or, better, the momentum - which is obtained by scaling the velocity by a constant in classical mechanics, so the two are equivalent. The mathematical tool that allows us to understand how a state evolves in time is the time derivative of the equation of interest (differential equation).
+
+  \subsection{Newtonian mechanics}
+  Newtonian Mechanics is a theory described by the three Newton's laws, which are in principle well stated:
+  \begin{enumerate}
+    \item a body will continue its state at rest or at constant speed unless a force acts. Loophole: it is only true in inertial frames. The lack of an initial consensus inertial frames raises issues.
+    \item how does the body change when it is subject to a force. Loophole: but what is a force? Here we only deal with mass and acceleration. We have an issue, stuck in a loop.
+    \item whenever A acts on B, B acts on A with opposite sign (action-reaction)
+  \end{enumerate}
+  
+  Hamilton's function is a function of position and momentum. 
+  $$H(\underbrace{\vec{p}}_{\text{momentum}}, \underbrace{\vec{q}}_{\text{position}}) = \frac{\vec{p}^2}{2m} + U(\vec{q})$$
+  The first term is the kinetic energy, while the second term is the potential energy (scalar function of position). Remember that what we are after is   a rigorous definition; since kinetic energy is given, we only need to specify the potential energy. The derivative of the position will be the derivative of H with respect to position.
+Are Hamilton's equation really consistent with Newton's equations? Indeed, from H(p,Q) we can retrieve Newton's equations of motion, solve them, get predictions and compare with experimental results. The workflow is the following:
+\begin{itemize}
+    \item define H
+    \item compute equation of motion
+    \item solve equation of motion
+    \item use solution to obtain predictions of experimentally observable quantities
+    \item experimentally test the prediction (yes/no)
+\end{itemize}
+The procedure is repeated until concordance with experiments is reached. But we never defined force, we only deal with H!
 
   \subsection{Example - point particle moving in $1D$ and subject to an harmonic force}
   For a point particle moving in $1D$ subject to an harmonic force (bound to a spring for example) follows the Newton's law for its equation of motion:
@@ -171,9 +200,26 @@
   Let the angular momentum:
 
   $$\vec{L}(t) = \vec{r}(t)\times m \vec{v}(t)$$
-
+ The angular momentum is also defined as the vector product of the particle position and its linear momentum. 
+ $$\vec{L}=\bar{x} \times \bar{P}$$ \\
   There are two ways to solve a cross product: $\vec{a}\times \vec{b}\perp \vec{a}$, $\vec{a}\times \vec{b}\perp \vec{b}$ and $|\vec{a}\times \vec{b}| = |\vec{a}||\vec{b}|\sin\theta$.
   This implies that $\vec{a}\parallel \vec{b}\Rightarrow \vec{a}\times \vec{b} = 0$.
+  
+  Youtube:
+  By taking the derivative of the angular momentum with respect to time, we can asses under which conditions linear momenutm is conserved.. The velocity and momentum are parallel, therefore the cross product depending on the angle between them is zero. 
+  
+  $$\frac{d \vec{L}}{d t}=\frac{d \bar{x}}{d t} \times \vec{p}+\bar{x} \times \frac{d \vec{p}}{d t}=\underbrace{\bar{v} \times \bar{p}}_{0}+m \frac{d \bar{v}}{d t} \Rightarrow \vec{F}=m \cdot \bar{a}$$
+
+$$
+\frac{d}{d t} \bar{p}_{+0 r}=\frac{d}{d t}\left(\sum_{i=1}^{N} \bar{p}_{i}\right)=0 \\
+m \bar{v}+m \vec{v}=m \bar{v}^{-}+M \vec{v}^{0} \\
+\vec{v}^{\prime}=-\left(\frac{m}{M}\right) \bar{v}^{\prime}$$
+Whenever the torque of a particle is zero, then the angular momentum of that particle is conserved (centripetal/centrifugal force).
+$$\frac{d \vec{L}}{d t}=\bar{x} \times \vec{F}=0 \\
+\frac{d}{d t}\left(\vec{L}_{\text {TOT }}\right)=\frac{d}{d t}\left(\Sigma_{i} \vec{L}_{i}\right)=0 \\
+$$
+  
+  Lecture:
   Now considering the vectors' coordinates:
 
   $$\vec{a}\times \vec{b} = \hat{i}(a_yb_z - a_zb_y) + \hat{j}(a_xb_z - a_zb_x) + \hat{k}(a_xb_y-a_yb_x)$$
@@ -193,8 +239,17 @@
 \section{Classical theory of the hydrogen atom}
 The classical theory of the hydrogen atom is defined by the classical Bohr model.
 The hydrogen atom is formed by a proton in the centre with an electron orbiting around it.
-Because $\frac{m_e}{M_p}\approx \frac{1}{2000}$, for the sake of simplicity an infinite proton mass $\frac{m_e}{M_p}=0$ is assumed.
-Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation), the electron's motion occurs on a plane and is two dimensional.
+Approximations:
+\begin{itemize}
+  \item the mass of the electron divided by the mass of the proton is around 1/2000 ($\frac{m_e}{M_p}\approx \frac{1}{2000}$). The center of mass of the system is very close to the nucleus, therefore we can assume that the nucleus remains still. For the sake of simplicity an infinite proton mass $\frac{m_e}{M_p}=0$ is assumed.
+  \item the charge of the proton is the negative of the charge of the electron, so the overall system is neutral
+  \item  Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation), the electron's motion occurs on a plane and is two dimensional.
+
+Let us start from the Newton's equations. We wish to express the attracting force acting on the electron towards the proton (inward direction, negative sign). Since x,y,z are varying with time (as the electron is moving) we can express them as $x(t)$,$y(t)$ and $z(t)$. The equations are coupled, meaning that we cannot solve one at a time e.g. we require $y(t)$ and $z(t)$ for solving the first one, the same applies to the others.
+This is a quite tricky task, but luckily there is a way round this problem. We can employ the energy conservation that we mentioned previously though the usage of polar coordinates.
+
+In this case we have a position vector $r$ going from the proton to the electron. The Coulombic force has a specific feature: it points on the same line of the position, radial centripetal force. The important aspect is that $F$ is parallel to $r$. The mathematical expression shows that forces are anti-parallel. Rather than using cartesian coordinates, we can use rotating coordinates. The centrality of force will imply two main results: mechanical energy is conserved and the angular momentum  of the particle is ... the torque, but it is zero for centripetal force, i.e. L is conserved.
+The second considerations lead us to understand that orbit lines are confined on a plane. This is particularly relevant, as in a plane we only need two coordinates- as the third coordinate is fixed to zero.
 
   \subsection{Mechanical energy in polar coordinates}
 
