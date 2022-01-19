@@ -3,19 +3,28 @@
 \section{The fall of determinism}
 
   \subsection{Double slit experiment}
-  Consider a gun shooting particle through a screen with two holes and a detection screen behind the first one.
+  The double-slit experiment is a virtual experiment, as it cannot be performed as we will describe it due to technological limitations. However, we can treat is as a real experiment - as it can summarize many technically feasible and performed experiments.
+  
+ Consider a gun shooting particles through a screen with two holes and a detection screen behind the first one.
+ 
+  \subsubsection{Case 1 - particles are macroscopic bullets}
+  The gun shoots macroscopic bullets. We imagine the distance gun-screen to be large, implying that the bullets might arrive at different locations due to error, vibrations, wind etc. Therefore, we expect bullets to arrive as a beam.
 
-    \subsubsection{Case 1 - particles are macroscopic bullets}
-    If particles are bullets and macroscopic on the second detector a particle-like behaviour is detected.
-    Bullets arrive one-by-one.
-    First considering the experiment with one of the holes shut a Gaussian like probability of detection $P_1$ can be seen such that $\mu$ is directly perpendicular to the hole.
-    If both holes are open there is a ballistic behaviour and the resulting distribution of detection $P_{12}$ is the sum of the two deriving for each hole open by itself:
-
-    $$P_{12} = P_1+P_2$$
-
+  Most of the bullets will not reach the second wall, as they will remain stuck on the first one. However, the ones directed towards the holes will pass through. We expect to obtain a distribution of bullets for hole 1 and hole 2. If we shut down one hole 2, nothing will pass through it - leading to $p_1$ distribution. Conversely, if we shut down hole 1 we will observe $p_2$.
+  
+Summarizing, we will find the following observations:
+\begin{enumerate}
+    \item bullets arrive "one by one", we can recognize the sound of each bullet impacting the screen (if sufficient resolution is available for the recording)
+    \item $P(z)$, the probability of a bullet reaching a point, can be obtained by plotting a histogram of the times a bullet has hit the point of interest. Through a statistical model we could then predict future locations. 
+     \item considering the experiment with one of the holes shut, a Gaussian like probability of detection $P_1$ can be seen such that $\mu$ is directly perpendicular to the hole.
+     \item ff both holes are open there is a ballistic behaviour and the resulting distribution of detection $P_{12}$ is the sum of the two deriving for each hole open by itself: $$P_{12} = P_1+P_2$$ (disjoint event).
+\end{enumerate}
+    
+  
     \subsubsection{Case 2 - macroscopic waves in a tank}
-    In the case of macroscopic waves in a tank, can be seen that $P_{12} \neq P_1+P_2$.
-    This is because wave aptitudes are complex objects.
+    Suppose that rather than having a screen, we have a tank of water with a wall with two holes. In this case, we have an instrument producing waves e.g. something touching water. Since the source is very far, waves will reach the wall as it as plane waves. We want to measure whether the waves manage to impact the second wall. From each of the holes, we will observe circular waves. We can repeat the previous procedure of shutting each hole at a time. The maximum intensity (square of max amplitude) will be observed at the hole. 
+
+When the wave arrives, it reaches different locations at the same time (delocalization), very differently from bullets. A second difference is what we obtain when we let waves pass through both holes. It has alternating minima and maxima and it can be seen that $P_{12} \neq P_1+P_2$. In this case we obtain an interference pattern, as waves can sum and subtract in a non-trivial way (waves are complex objects).
     So, deriving from wave theory:
 
     $$A_1\rightarrow P_1 = |A_1|^2 = A_1^*A_1$$
@@ -31,39 +40,44 @@
     So a wave-like behaviour with de localization can be seen.
 
     \subsubsection{Case 3 - cathode as an electron gun}
-    Finally considering a cathode to be an electron gun.
-    If one hole is blocked electrons are detected one by one and have particle-like behaviour.
-    If both holes are open quantum delocalization happens and an interference pattern can be seen ($P_{12} \neq P_1 + P_2$) and have wave-like behaviour.
-    So detections reveals particle behaviour and the propagation wave-like behaviour in which the electron is everywhere like a wave.
-    To see if he electron goes through both holes simultaneously an apparatus that emits a signal if an electron travels nearby is put near the holes.
+    Finally, let us have a cathode electron gun shooting electrons at a wall with very small holes - which need to be so small that the effect becomes      evident. As before, we close one of the holes and the screen will record the arrival of electrons on the wall through a detector (device producing a small signal as soon as an electron arrives). If we place many detectors on the wall, we will retrieve when and where the electron has arrived. The electron signals arrive one at a time, as a "rain". If we open both holes, an interference pattern will be observed: $P_tot$ is not the sum of the single probabilities, implying that the two are not disjoint events 
+Result: we observe either a particle-like behaviour (one hole closed) or a wave-like behaviour (both holes open).
+    
+   
+    
+    To verify whether the electron goes through both holes simultaneously, an apparatus that emits a signal if an electron travels nearby is put near the holes.
     Detection on the screen happens only if the signal is emitted.
-    The two apparatus never trigger together and the electron travels through one of the holes like a particle.
-    Defining $P_{A_1}$ the probability that counts only events in which $A_1$ is triggered and $P_{A_2}$ the results of counting only events triggering $A_2$.
-    Counting all the events can be seen that the resulting pattern is $P_{A_1}+P_{A_2}$.
-    In this case so $P_{A_1+A_2} = P_{A_1} + P_{A_2}$, delocalization is lost and the electron assumes ballistic behaviour.
-    So can be seen that the measurement affects the nature of the electron and can change the state of the system.
+    The two apparatuses never trigger a signal together, meaning that the electron travels through one of the holes like a particle.
+    We can define $P_{A_1}$ as the probability that counts only events in which $A_1$ is triggered and $P_{A_2}$ the results of counting only events triggering $A_2$.
+    By counting all the events, it can be seen that the resulting pattern is $P_{A_1}+P_{A_2}$.
+    In the case in which $P_{A_1+A_2} = P_{A_1} + P_{A_2}$, delocalization is lost and the electron assumes ballistic behaviour.
+    Summarizing, measurement affects the nature of the electron and can change the state of the system.
+When we try to measure where the particle goes, we observe a ballistic behaviour. Conversely, if we do not impose any measurement, we will obtain an interference pattern. The result depends on the kind of behaviour we are trying to detect. 
+
+Example: suppose that we are blind. We can detect a ball by throwing something smaller at it e.g. pen cap. If instead we throw a pen cap towards with another pen cap, we will have a collision and both objects will end up in a different location. The act of measuring has changed the system! 
+Throwing photons at electrons perturbes the system, as they are comparable in size.
 
     \subsubsection{Conclusions}
-    The notion of trajectory looses significance for microscopic particles.
+    The notion of trajectory loses significance for microscopic particles.
     This is quantified by Heisemberg's uncertainty principle:
 
     $$\underbrace{\Delta p}_{\text{Uncertainty on }p}\ \underbrace{\Delta q }_{\text{Uncertainty on }q} \ge \frac{\hbar}{2}$$
 
-    It is impossible to simultaneously measure with arbitrary accuracy the position and the velocity of a microscopic partile.
+    It is impossible to simultaneously measure with arbitrary accuracy the position and the velocity of a microscopic particle.
 
 \section{The photoelectric effect}
-Considering the classical theory of the hydrogen atom and ignoring that energy loss through electromagnetic radiation would be unstable, this model can transfer any amount of energy to the electron by shining light on it.
-In classical electromagnetism the energy of radiation comes from the intensity of the electromagnetic wave.
-It would be expected that, irregardless of the frequency or wave-length the amount of electron extracted woud scale with the intensity of the electromagnetic wave.
+By considering the classical theory of the hydrogen atom and ignoring that energy loss through electromagnetic radiation would be unstable, this model can transfer any amount of energy to the electron by shining light on it.
+In classical electromagnetism, the energy of radiation comes from the intensity of the electromagnetic wave.
+It would be expected that, irregardless of the frequency or wave-length, the amount of electron extracted would scale with the intensity of the electromagnetic wave.
 
   \subsection{Experimental findings}
   Electrons are extracted only if the light has a $\nu > \nu_{\min}$ or $\lambda<\lambda_{\max}$.
-  If $\nu>\nu_{\min}$ the amount of electrons scale with the intensity.
+  If $\nu>\nu_{\min}$, the amount of electrons scale with the intensity.
 
   \subsection{Conclusions}
   This experiment determined that the energy transfer depends on the frequency $\nu$ of the electromagnetic radiation.
-  Moreover electron can only acquire certain quanta of energy.
-  This led to the introduction of two pivotal  concepts of modern physics.
+  Moreover, electrons can only acquire certain quanta of energy.
+  This led to the introduction of two pivotal concepts of modern physics.
 
     \subsubsection{Energy quantization}
     The amount of energy transfer to a bound system cannot be arbitrary small.
@@ -73,8 +87,8 @@ It would be expected that, irregardless of the frequency or wave-length the amou
 
     $$E = \hbar\omega$$
 
-    Photons, like electrons share wave-like and particle-like properties.
-    So electrons can be considered as waves of matter and photons as particles of light.
+    Photons, like electrons, share wave-like and particle-like properties.
+    Therefore, electrons can be considered as waves of matter and photons as particles of light.
 
 \section{Quantization and atomic spectra}
 
@@ -83,36 +97,44 @@ It would be expected that, irregardless of the frequency or wave-length the amou
   The prism splits the frequencies and those frequencies are collected on a screen.
 
   \subsection{Finding}
-  Performing this experiment has been found that only certain frequencies can be absorbed by the atoms.
+  By performing this experiment, it has been found that only certain frequencies can be absorbed by the atoms.
 
   \subsection{Conclusion}
   Only certain excitation energies are permitted and those form a characteristic signature of atoms:
 
   $$\hbar\omega = E_n-E_m$$
 
-  Because of this finding classical mechanics can be seen is not a fundamental theory: it perfectly describes observations in some limited range of length, mass, temperature.
-  Any more fundamental theory must contain classical mechanics as an approximation in the macroscopic regime according to the correspondence principle.
+  Because of this finding, classical mechanics can be seen as a non-fundamental theory: it perfectly describes observations in some limited range of length, mass, temperature.
+  Any more fundamental theory must contain classical mechanics as an approximation in the macroscopic regime, according to the correspondence principle.
 
 \section{Stern Gerlach experiment}
 
   \subsection{Experiment}
   An electron beam shoots electrons with different momenta $\vec{\mu}$ through an inhomogeneous magnetic field $SG$.
-  Behind this there is a screen that detect those electron.
+  Behind this there is a screen that detects those electron. If we shut off the magnetic field, the electrons will not interact with anything and we will obtain a high peak. When we activate a magnetic field, there will be some electrons with magnetic moment aligned with velocity and basically left unchanged, while others will be deflected either up or down. We expect to see a wider distribution as a result.
 
   \subsection{Finding}
-  Classically, the electrons are expected to be bended by $SG$ more or less depending on the orientation of $\vec{\mu}$.
-  With an expected density shaped like a Gaussian with $\mu$ at the middle.
-  Since $\hat{z}$ has been selected by $SG_1$, $SG_3$ would  be expected to find only $\mu_z = + \mu_0$.
-  The final beam contains $\mu_z =\pm \mu_0$.
+  Classically, the electrons are expected to be bended by $SG$ more or less depending on the orientation of $\vec{\mu}$, with an expected density shaped like a Gaussian with $\mu$ at the middle.
+  Since $\hat{z}$ has been selected by $SG_1$, $SG_3$, it would be expected to find only $\mu_z = + \mu_0$. Instead, the final beam contains $\mu_z =\pm \mu_0$.
+
+In real experiments what we see are two narrow peaks; the position of the peaks is compatible with a scenario in which all particles are completely aligned or completely unti-alinged with the z-axis. Somehow, the z component of the magnetic moment is QUANTIZED. It can only take maximum or negative maximum values. Other atoms provide different shapes e.g. up, down, zero. But let’s stick to the case in which we observe two peaks.
+Suppose that now we insert a second device aligned to the x-axis. This time we are measuring the x-component of the magnetic field. Not only the z component is quantised, but also the x and y components.
+\begin{enumerate}
+  \item select z component
+  \item filter positive z component
+  \item select x component
+  \item filter positive z component
+  \item measure z component
+We already measured the z component, so we expect x to be deflected in a single direction. Surprisingly, x will deflect to both positive and negative with equal probability. 
 
   \subsection{Conclusion}
-  The act of measuring $\mu_x$ completely destroy the information about the state of $\mu_z$.
-  According to the uncertainty principle $\mu_x$ and $\mu_z$ cannot be simultaneously determined.
-  Instead we find only two possible orientation of the magnetic moment that is in fact quantizied.
+  The act of measuring $\mu_x$ completely destroys the information about the state of $\mu_z$.
+  According to the uncertainty principle, $\mu_x$ and $\mu_z$ cannot be simultaneously determined.
+  Instead, we only find two possible orientations of the magnetic moment, that is in fact quantizied.
   Considering three $SGs$ in series with different orientations: $\hat{z}\rightarrow\hat{x}\rightarrow\hat{z}$:
   The first selects $\hat{\mu}_z = +\mu_0$ and the second $\hat{\mu}_x = +\mu_0$.
 
-\section{Conclusions}
+\section{Finding the Schr\"oedinger equation}
 Particle propagation is not ballistic:
 
 $$P_{12} \neq P_1 + P_2$$
@@ -126,7 +148,8 @@ Interference pattern naturally arises when taking squared modules of complex amp
          &=(A_1A_1^*+\underbrace{A_1A_2^*+A_2A_1^*}_{\text{interference pattern+}}A_2A_2^*)
 \end{align*}
 
-Considering $E=n\nu$ a wave function for the electron propagating wave can be written:
+
+Considering $E=n\nu$ a wave function for the electron, a propagating wave can be written as:
 
 $$f(x,t) = f_>(x-vt)+f_<(x+vt)$$
 
@@ -144,7 +167,7 @@ Trying to apply a photon wave to the electron:
 
 $$\psi(x,t) = A_oe^{i(vt-kx)} = \cos(vt-kx) + i\sin(vt - kx)$$
 
-Considering that both the real and imaginary part oscillates:
+Considering that both the real and imaginary part oscillate:
 
 \begin{align*}
   \begin{cases}\frac{\partial {^2}}{\partial {t^2}}A_0e^{i(vt-kx)} = A_0(-v^2e^{i(vt-kx)})\\\frac{\partial {^2}}{\partial {x^2}}A_0e^{i(vt-kx)} = A_0(-k^2e^{i(vt-kx)})\end{cases}&\rightarrow \frac{1}{\nu^2}\biggl[-A_0v^2e^{i(vt-kx)}+A_0k^2e^{i(vt-kx)}\biggr] = 0\\
@@ -157,11 +180,13 @@ So the Schr\"oedinger equation is a modified wave equation to accomodate this:
 $$ia \frac{\partial {}}{\partial {t}}\psi=-d \frac{\partial {^2}}{\partial {x^2}}\psi(x,t)$$
 
   \subsection{Free particle Schr\"oedinger equation}
-  In this equation particle interactions and potential energy are not considered:
+  In this equation, particle interactions and potential energy are not considered:
 
   $$i\hbar \frac{\partial {}}{\partial {t}}\psi(x,t) = \frac{\hbar^2}{2m}\frac{\partial {^2}}{\partial {x^2}}\psi(x,t)$$
 
   \subsection{Complete Schr\"oedinger equation}
-  It can be seen how the potential energy is more important than the forec:
+  By allowing the electron to react, we can introduce the operator $H$ - which is composed by kinetic energy and potential energy component (as the classical Hamiltonian). Based on this, we can refer to the operator as Quantum Hamiltonian.
+  It can be seen how the potential energy is more important than the force:
 
   $$i\hbar \frac{\partial {}}{\partial {t}}\psi(x,t) = \overbrace{\biggl[-\underbrace{\frac{\hbar^2}{2m}\frac{\hat{\partial} {^2}}{\partial {x^2}}}_{\text{kinetic energy operator}}+\underbrace{\hat{U}(x)}_{\text{quantum energy operator}}\biggr]}^{\text{Quantum Hamiltonian}}\psi(x,t) = \hat{H}\psi(x,t)$$
+  This is a partial differential equation (PDE) describing the evolution over time of the wavefunction. Uncertainty is reflected by the fact that we do not talk about a space trajectory, the interpretation is stochastic (as the wavefunction is a probability). Therefore, QM is not about the nature itself, but rather about predicting the outcomes of experiments on nature. The entire foundation of QM is computing the probability for an outcome of an experiment. 
