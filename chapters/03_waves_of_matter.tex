@@ -1,6 +1,6 @@
 \chapter{Waves of matter}
 
-\section{The Shr\"odinger equation}
+\section{The Schr\"odinger equation}
 Physical laws can never be demonstrated, but only inferred from experiments and then verified or falsified by other ones.
 
 
@@ -10,7 +10,7 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
 
   $$Intensity(x,t) = A^*(x,t)\cdot A(x,t)$$
 
-  The state of the electron in the beams is assumed described by a complex amplitude called the wave-function:
+  The state of the electron in the beams is assumed to be described by a complex amplitude called the wave-function:
 
   \begin{align*}
     \psi(x,t) &\rightarrow Prob(x,t)\\
@@ -20,7 +20,7 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
 
   \subsection{Main assumption}
   Electrons behave exactly like photons: they both have a dual particle and wave nature.
-  As a consequence, we can assume that for electron energy is proportional to frequency:
+  As a consequence, we can assume that for an electron the energy is proportional to frequency:
 
   $$E = \hbar\omega = h\nu = \frac{p^2}{2m}$$
 
@@ -46,7 +46,7 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
 
   And not just to $|p|$.
 
-  \subsection{Defining the Shr\"oedinger equation}
+  \subsection{Defining the Schr\"oedinger equation}
   There is a need to use a different wave equation with respect to the photon's one.
   Noticing that $E^2\propto p^2$ follows from having two time derivatives, we can try a first time derivative to obtain $E\propto p^2$.
   Then the equation to solve becomes:
@@ -73,7 +73,7 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
 
   $$H_0 \rightarrow H_0 + \underbrace{V(\vec{r})}_{\text{potential energy}} = H$$
 
-  So finally the Schr\"oedinger equation is:
+  Finally, the Schr\"oedinger equation is:
 
   $$i\hbar \frac{\partial {}}{\partial {t}}\psi(\vec{r},t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+V(\vec{r})\biggr)\psi(x,t)$$
 
@@ -99,7 +99,7 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
 
     $$\nabla^2 = \biggl(\frac{\partial^2}{\partial x^2} +\frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}\biggr)$$
 
-\section{Stationary Shr\"oedinger equation}
+\section{Stationary Schr\"oedinger equation}
 Assuming that the system conserves mechanical energy:
 
 $$H(p,q, \bcancel{t}) = \frac{p^2}{2m}+U(q,\bcancel{t})$$
@@ -267,7 +267,11 @@ The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
 
 
 \section{Quantum particle in a one dimensional infinite square well}
-For the case of a quantum particle in a one dimensional infinite square well, we will consider a particle constrained in a trap where interactions are so strong that it cannot escape and with two confining directions much narrower than the third.
+We previously discussed at the classical level that a physical system can be bound or unbound. In quantum physics, a bound state is a quantum state of a particle subject to a potential such that the particle has a tendency to remain localized in one or more regions of space. Ultimately, matter and life exist because of bound systems, which allow the presence of macro structures.  
+While trying to solve a bound system problem, we will require a toy model - a model deliberately too simple to be realistic, which is not meant to predict the outcome of an experiment, but rather to understand the qualitative nature of the object under study.
+While implementing a toy model, if the scale where a detail occurs is very small compared with the size of the box, its effect can be neglected. As a consequence, everything which occurs within the box is idealized, allowing us to solve the problem. It's all a matter of scale e.g. $\lambda$ is the scale for details, $L$ the size of the physical system, $\eta$ the energy we are interested in, $E$ the unbounding energy. If the ratio $\frac{\lambda}{L}<<<1$ and $\frac{\eta}{E}<<<1$ , we can neglect the detail.
+
+For the case of a quantum particle in a one dimensional infinite square well, we will consider a particle constrained in a trap where interactions are so strong that it cannot escape and with two confining directions much narrower than the third. We can consider a box with size $L/2$ and $-L/2$ and find the eigenvalues and eigenvectors for the SE in this specific condition. 
 This can be modelled with a one dimensional confining potential:
 
 $$U(x) = \begin{cases} 0, &-\frac{L}{2}<x<\frac{L}{2}\\\infty &|x|>\frac{L}{2}\end{cases}$$
@@ -317,7 +321,7 @@ However, the constraints are different. Instead of the classical initial values 
     $$E^{(n)} = \frac{\hbar^2}{2m}\frac{\pi^2}{L^2}(2n)^2$$
 
     \subsubsection{$A_1$ and $A_2$}
-    $A_1$ and $A_2$ can be determined by the normalization conditions.
+    $A_1$ and $A_2$ can be determined by applying the normalization conditions.
     The probability of finding the particle somewhere in the box is one, so:
 
     \begin{align*}
@@ -336,7 +340,7 @@ However, the constraints are different. Instead of the classical initial values 
       The energy eigenstates of the stationary wave-functions are:
 
       $$\psi_m(x) = \begin{cases}A_1\cos k_1 x & n\ odd\\ A_2\sin k_2 x & n\ een\end{cases}$$
-
+      
 
   \subsection{Discussion}
 
