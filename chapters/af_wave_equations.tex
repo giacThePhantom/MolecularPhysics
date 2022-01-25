@@ -6,18 +6,18 @@ In one dimension this is formalized as:
 
 $$f(x,t)\dot{=}\begin{cases}f_+(x-v t) &\text{forward propagating}\\f_-(x+vt) &\text{backward propagating}\end{cases}$$
 
-The functions $f_\pm$ are solution of:
+The functions $f_\pm$ are solutions of:
 
 $$\frac{\partial^2{}}{\partial{t^2}}f_\pm(x\pm vt) = v^2f''(x\pm vt)$$
 
 $$\frac{\partial^2{}}{\partial{x^2}}f_\pm(x\pm vt) = k^2f''(x\pm vt)$$
 
-So the wave equation is:
+Hence the wave equation becomes:
 
-$$\biggl(\underbrace{\frac{1}{v^2}}_{\text{speed of the wave}}-\frac{\partial^2{}}{\partial{t^2}}-\frac{\partial^2{}}{\partial{x^2}}\biggr)]f_\pm = 0$$
+$$\biggl(\underbrace{\frac{1}{v^2}}_{\text{speed of the wave}}-\frac{\partial^2{}}{\partial{t^2}}-\frac{\partial^2{}}{\partial{x^2}}\biggr)f_\pm = 0$$
 
   \subsection{Three-dimensional case}
-  To get the corresponding form for a wave in three dimension note that a function $f(kx + \omega t)$ is still a function of $(x,t)$ in the form $x+vt$:
+  To get the corresponding form for a wave in three dimensions, note that a function $f(kx + \omega t)$ is still a function of $(x,t)$ in the form $x+vt$:
 
   $$f(kx+\omega t) = f\biggl(k\biggl(x+\underbrace{\frac{\omega}{k}}_{=v}t\biggr)\biggr)$$
 
@@ -58,7 +58,7 @@ $$f(\omega t) = Ae^{i\omega t} = A(\cos\omega t + i\sin\omega t)$$
 
 Where $\nu = \frac{\omega}{2\pi} = \frac{1}{T}$.
 In a plane wave the amplitude is constant throughout a plane perpendicular to $\vec{k}$.
-Assuming $\vec{k} = k_0\hat{z}$: $\vec{r}\vec{k} = z\cdot k$ and:
+Assuming $\vec{k} = k_0\hat{z}$ and $\vec{r}\vec{k} = z\cdot k$:
 
 $$f_\pm (\vec{r}\cdot \vec{k}\pm\omega t) = f(zk\pm \omega t)$$
 
