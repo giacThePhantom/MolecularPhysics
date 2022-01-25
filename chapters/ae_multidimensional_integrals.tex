@@ -1,14 +1,14 @@
 \chapter{Multidimensional integrals}
-In many dimension the domain can have a shape that can produce effects on the integration procedure.
-Another difficulty introduced by solving integrals in many dimensions is the choice of order of integrations.
+When working in multiple dimensions, the domain can have a shape that can produce effects on the integration procedure.
+Another difficulty introduced by solving integrals in many dimensions is the choice of the order of integration.
 
 \section{Definition}
-The integral of a function $f(x,y)$ in two dimension is the volume under the surface $z = f(x,y)$.
-Supposing that the function is defined over a rectangular domain $(a,b)\times (c,d)$ the domain can be divided in many smaller rectangles with dimension $\Delta x\times \Delta y$.
-These subdomains cover the whole original domain.
-In each subdomain the infimum and the supremum.
-The infimum of the function is the greatest element of $\mathbb{R}$ that is less than or equal to all elements of the function on the corresponding subdomain.
-The supremum is the least element of $\mathbb{R}$ that is less than or equal to all elements of the function on the corresponding subdomain.
+The integral of a function $f(x,y)$ in two dimensions is the volume under the surface $z = f(x,y)$.
+Supposing that the function is defined over a rectangular domain $(a,b)\times (c,d)$, the domain can be divided in many smaller rectangles with dimension $\Delta x\times \Delta y$.
+The sum of all these subdomains covers the whole original domain.
+In each subdomain we can define the infimum and the supremum.
+The infimum of the function is the greatest element of $\mathbb{R}$ that is less than or equal to all elements of the function in the corresponding subdomain.
+The supremum is the least element of $\mathbb{R}$ that is greater than or equal to all elements of the function in the corresponding subdomain.
 A specific division of the domain is denoted as $P$.
 The Darboux sums are defined as:
 
@@ -16,29 +16,32 @@ $$L(f,P)= \sum\limits_{\Delta x_k\times \Delta y_k}\sup\limits_{[\Delta x_k\time
 
 $$U(f,P)= \sum\limits_{\Delta x_k\times \Delta y_k}\inf\limits_{[\Delta x_k\times \Delta y_k]} f(x,y)(\Delta x_k\times \Delta y_k)$$
 
-Where the sum is over all the subdomain labelled by $k$.
+Where the sum is over all the subdomains labelled by $k$.
 The function $f(x,y)$ is Riemann-integrable if:
 
 $$\sup L(f,P) = \inf U(f,P) = I$$
 
-Varying the partition, so
+when varying the partition; furthermore we can write that:
 
 $$I = \int\limits_c^d\int\limits_a^bf(x,y)dxdy$$
 
+This relation implies several properties.
+
 \section{Properties}
 
-	\subsection{Differentiability}
-	Let $f(x,y)$ be a continuous function from $(a,b)\times (c,d)$ then the function is integrable.
-	This result can be extended with different kind of integrals.
-	Also this definition can be easily extended in more dimension.
+	\subsection{Integrability}
+	Let $f(x,y)$ be a continuous function from $(a,b)\times (c,d)$, then the function is integrable.
+	This lemma states the integrability requirements for a small subset of functions, but the result can be extended to different kind of integrals and to more than two dimensions.
 
 	\subsection{Order of integration}
 	If $f(x,y)$ is continuous on $(a,b)\times (c,d)$ then:
 
 	$$\int\limits_c^d\biggl(\int\limits_a^b f(x,y)dx\biggr)dy = \int\limits_a^b\biggl(\int\limits_c^d f(x,y)dy\biggr)dx$$
 
+	Basically you can choose the order of integration as you see fit.
+
 	\subsection{x-simple and y-simple domains}
-	IN some cases the domain of the function is not defined over a rectangular domain.
+	In some cases the domain of the function is not defined over a rectangular domain.
 	One case of easy integration is when the domain is x-simple or y-simple.
 	In the case of a y-simple domain, the function is bounded on the $x$ axis by two numerical values and on the $y$ axis by two continuous function $y = g_1(x)$ and $y = g_2(x)$.
 	The case of a x-simple domain is the symmetric of the y-simple one.
@@ -50,14 +53,14 @@ $$I = \int\limits_c^d\int\limits_a^bf(x,y)dxdy$$
 
 	$$\iint\limits_{\Omega} f = \int\limits_c^ddy\biggl(\int\limits_{h_1(y)}^{h_2(y)}f(x,y)dx\biggr)$$
 
-	In the same way for an y-simple domain:
+	In the same way for a y-simple domain:
 
 	$$\Omega = \{(x,y)\in\mathbb{R}, g_1(x)\le y\le g_2(x), a\le x\le b\}$$
 
 	$$\iint\limits_\Omega f = \int\limits_a^bdx\biggl(\int\limits_{g_1(x)}^{g_2(x)}f(x,y)dy\biggr)$$
 
 	\subsection{Change of variables}
-	The absolute value of the jacobian determinant gives the change in the volume element when passing from a set of coordinate to another.
+	The absolute value of the jacobian determinant gives the change in the volume element when passing from a set of coordinates to another.
 	In two dimension, given $f(x,y)$ defined on $\Omega$ and supposing to change the integral variables from $x$ and $y$ to $u$ and $v$:
 
 	$$\iint\limits_\Omega f(x,y)dxdy = \iint\limits_{\Omega^*} f(x(u,v), y(u,v))|J|dudv$$

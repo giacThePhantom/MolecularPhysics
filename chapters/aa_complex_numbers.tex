@@ -1,7 +1,7 @@
 \chapter{Complex numbers}
 A broad range of problems can be solved within real numbers, however it is easy to find some that are not solvable in $\mathbb{R}$.
-For example the equation $x^2+1=0$ has no solution in the real number.
-Because of this the real number set is extended, trying to develop a coherent framework in which this problems can be treated.
+For example the equation $x^2+1=0$ has no solution in the real numbers.
+Because of this reason, the real number set is extended, trying to develop a coherent framework in which these problems can be solved.
 Following this procedure a new variable $i$ is defined, such that:
 
 $$i := \sqrt{-1}\not\in\mathbb{R}$$
@@ -11,12 +11,12 @@ This quantity is called the imaginary unit and it is used to define a new kind o
 $$z := \underbrace{a}_{\text{Real part, }\Re{z}} + \underbrace{bi}_{\text{Imaginary part, }\Im{z}}$$
 
 Where $a\land b\in\mathbb{R}$.
-This create a new set of numbers $\mathbb{C}$ such that $z\in\mathbb{C}$ and $\mathbb{R}\subset\mathbb{C}$.
+Thus we can define a new set of numbers $\mathbb{C}$ such that $z\in\mathbb{C}$ and $\mathbb{R}\subset\mathbb{C}$.
 In fact any real number is a complex number where $b=0$.
 
 \section{Argand plane}
 Complex numbers can be seen as ordered pairs of reals and they can be naturally plotted on the complex or argand plane.
-The horizontal direction represente the real axis and on the vertical the imaginary one.
+The horizontal direction represents the real axis while the vertical one represents the imaginary one.
 
 \section{Operations}
 
@@ -56,7 +56,7 @@ The horizontal direction represente the real axis and on the vertical the imagin
 	The complex conjugate can be used to define a division operation that brings the result in standard form.
 	The operation is similar to the rationalization of a fraction: the nominator and the denominator are multiplied by the complex conjugate of the denominator.
 	This is because the product of a complex number and its conjugate is always real.
-	So the division id defined as:
+	So the division is defined as:
 
 	\begin{align*}
 		\frac{z}{w} &= \frac{a+bi}{c+di} = \\
@@ -82,29 +82,29 @@ The horizontal direction represente the real axis and on the vertical the imagin
 
 	$$z :=\rho(\cos\theta + i\sin\theta)$$
 
-	The variable used for this repreesntation are the modulus $\rho$ and the argument $\theta$, the angle between the positive direction of the real axis and the vector itself.
+	The variables used for this representation are the modulus $\rho$ and the argument $\theta$, the angle between the positive direction of the real axis and the vector itself.
 	The modulus of a complex number is always positive.
 	Complex numbers in polar form are periodic with the argument $\theta$ with periodicity $2k\pi$, $\forall k\in\mathbb{Z}$.
 
 	\subsection{Conversion between polar form and standard form}
-	Any complex number writtein in standard form can be writtein in polar form, where:
+	Any complex number written in standard form can be written in polar form, where:
 
 	$$\begin{cases}
 		\theta = \arctan \frac{b}{a}\\
 		\rho = \sqrt{a^2 + b^2}
 	\end{cases}$$
 
-	And the invers operation:
+	Likewise, you can pass from polar form to standard form using:
 
 	$$\begin{cases}
 		a = \rho\cos\theta\\
 		b = \rho\sin\theta
 	\end{cases}$$
-
+   
 	\subsection{Operations}
 
 		\subsubsection{Multiplication}
-		Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = \rho_z(\cos\theta_z) + i\sin\theta_z)$ and $w = \rho_w(\cos\theta_w + i\sin\theta_w)$.
+		Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = \rho_z(\cos\theta_z + i\sin\theta_z)$ and $w = \rho_w(\cos\theta_w + i\sin\theta_w)$.
 		The multiplication between $w$ and $z$ is:
 
 		\begin{align*}
@@ -117,15 +117,15 @@ The horizontal direction represente the real axis and on the vertical the imagin
 		$$zw = \rho_z\rho_q[\cos(\theta_z+\theta_w) + i\sin(\theta_z+\theta_w)]$$
 
 		\subsubsection{Division}
-		Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = \rho_z(\cos\theta_z) + i\sin\theta_z)$ and $w = \rho_w(\cos\theta_w + i\sin\theta_w)$.
+		Let $z, w\in\mathbb{C}$ be two complex numbers such that $z = \rho_z(\cos\theta_z + i\sin\theta_z)$ and $w = \rho_w(\cos\theta_w + i\sin\theta_w)$.
 		In a similar way as the multiplication, the division will be:
 
 		$$\frac{z}{w} = \frac{r_z}{r_w}[\cos(\theta_z-\theta_w) + i\sin(\theta_z-\theta_q)]$$
 
 		\subsubsection{Power}
-		According to the de Moivre theorem, for every $n\in\mathbb{N}$ positive integer and $z\in\mathbb{C}, z = \rho(\cos\theta + i\sin\theta)$:
+		According to the de Moivre theorem, for every $n\in\mathbb{N}$ positive integer and $z\in\mathbb{C}$, where $z = \rho(\cos\theta + i\sin\theta)$:
 
-		$$z^n - \rho^n(\cos n\theta + i\sin n\theta)$$
+		$$z^n = \rho^n(\cos n\theta + i\sin n\theta)$$
 
 		\subsubsection{N-th root}
 		For every $n\in\mathbb{N}$ positive integer and $z\in\mathbb{C}, z = \rho(\cos\theta + i\sin\theta)$:
@@ -133,24 +133,29 @@ The horizontal direction represente the real axis and on the vertical the imagin
 		$$\sqrt[n]{z} = \rho^{\frac{1}{n}}\biggl[\cos\biggl(\frac{\theta+2k\pi}{n}\biggr) + i\sin\biggl(\frac{\theta+2k\pi}{n}\biggr)\biggr]$$
 
 		Where $k$ is an integer.
-		Note that $k$ and $k=k+n$ produce identical solutiion, so $k$ can be limited to the set $\{0,1,\dots, n-1\}$.
-		In conclusion there are $n$ distinct roots, each with modulus $r^{\frac{1}{n}}$, that lie on the circle of radius equal to the modulus equally spaced on the Argand plane, creating a regular polygon.
+		Note that $k$ and $k=k+n$ produce identical solutions, so $k$ can be limited to the set $\{0,1,\dots, n-1\}$.
+		In conclusion there are $n$ distinct roots, each with modulus $r^{\frac{1}{n}}$, that when represented together on the Argand plane lie on the circle of radius $\rho$. The roots are equally spaced and they create a regular polygon when joined.
 
 \section{Complex valued functions}
-Real function can be extended to complex valued function.
-Taken $f$ from an interval $A\subset\mathbb{R}$ to $\mathbb{C}$ the function can be written as:
+Real functions can be extended to complex valued functions.
+Taken $f$ from an interval $A\subset\mathbb{R}$ to $\mathbb{C}$, the function can then be written as:
 
 $$f(x) = u(x) + v(x)i$$
 
-Where $u$ and $v$ are reale valued functions.
+Where $u$ and $v$ are real valued functions.
 The limit of a complex valued function exists if the limits of the real and the complex component exist.
+    
+    \subsection{Complex conjugate}
+    The complex conjugate of a composite function propagates through each of the components, meaning you have to change the sign before each imaginary unit $i$. For example:
+
+    $$(\sin(ix) + ie^{3x + 2i})^* = (\sin(ix))^* + (ie^{3x + 2i})^* = \sin(-ix) - ie^{3x - 2i}$$
 
 	\subsection{Derivative}
 	The derivative of a complex valued function is obtained differentiating its real and imaginary parts:
 
 	$$f'(x) = u'(x) + v'(x)$$
 
-	The properties of the derivatives can be extended to this case: if $f$ and $g$ are two complex valued functions differentiable at some point $x_0$ in the domain of both functions, $f\pm g$, $fg$ and $\frac{f}{g}$ ($g(x_0)\neq 0$) are differentiable and the values of these functions are, as in the real case:
+	The properties of the derivatives can be extended to this case: if $f$ and $g$ are two complex valued functions differentiable at some point $x_0$ in the domain of both functions, $f\pm g$, $fg$ and $\frac{f}{g}$ ($g(x_0)\neq 0$) are differentiable and the values of these functions are, just like in the real case:
 
 	$$(f\pm g)'(x_0) = f'(x_0) + g'(x_0)$$
 
@@ -173,8 +178,8 @@ If $a, b\neq 0$;
 \end{align*}
 
 	\subsection{Properties}
-	Not only the product of two complex exponentials meets the classical properties of the real exponentials, also the derivatives maintains them.
-	Let $t\in\mathbb{R}$ adn $y(t) = e^{(a+bi)t} = e^{at}(\cos t b + i\sin b)$, its derivative with respecto to $t$ is:
+	Not only the product of two complex exponentials meets the classical properties of the real exponentials, the derivatives maintains them too.
+	Let $t\in\mathbb{R}$ and $y(t) = e^{(a+bi)t} = e^{at}(\cos t b + i\sin b)$, its derivative with respecto to $t$ is:
 
 	\begin{align*}
 		\frac{dy(t)}{dt} &= \frac{de^{(a+bi)t}}{dt}=\\
