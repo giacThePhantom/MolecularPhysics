@@ -10,7 +10,7 @@
 
 		$$\forall \vec{v}, \vec{w}\in\mathcal{V}\land\forall a, b\in\mathbb{R}: a\vec{v}+b\vec{w}\in\mathcal{V}$$
 
-		Imposing that $a,b\in\mathbb{R}$ the discussion is restricted to real vector spaces.
+		Imposing that $a,b\in\mathbb{R}$ restricts the discussion to real vector spaces.
 		These have an operation called inner or scalar product that takes as input two vectors and gives as output a scalar.
 		This is a real number for real vector spaces:
 
@@ -21,28 +21,28 @@
 		$$(a_1\vec{v}_1 + a_2\vec{v}_2)\cdot(b_1\vec{w}_1 + b_2\vec{w}_2) = \sum\limits_{i, k=1}^2 a_ib_k\vec{v}_i\vec{w}_k$$
 
 		\subsubsection{Quantum mechanics}
-		In quantum mechanics the state of a particle is instantaneously described by a quantum state $|\psi(t)\rangle$ that belongs to a hilbert space or $\mathcal{H}$, which provides a suitable generalization for the notion of vector speces.
+		In quantum mechanics the instantaneous state of a particle is described by a quantum state $|\psi(t)\rangle$ that belongs to a hilbert space or $\mathcal{H}$, which provides a suitable generalization for the notion of vector spaces.
 		In a hilbert space any linear combination of quantum states is still inside the hilbert space:
 
 		$$\forall |\psi\rangle,|\phi\rangle\in\mathcal{H}\land \alpha,\beta\in\mathbb{C}: \alpha|\psi\rangle + \beta|\phi\rangle\in\mathcal{H}$$
 
-		A scalar product can be defined:
+		A scalar product can be then defined as:
 
 		$$\langle\psi|\phi\rangle = (\langle\phi|\psi\rangle)^*\in\mathbb{C}$$
 
-		In hilbert spaces reversing the order of elements in the inner spaces leads to the complex conjugate result.
+		In hilbert spaces, reversing the order of the elements of an inner product leads to the complex conjugate result.
 		The inner product is bi-linear:
 
-		$$\begin{cases}|\xi\rangle \equiv \alpha_1|\psi_1\rangle + \alpha_2|\psi_2\rangle\\|\omega\rangle \equiv \beta_1|\phi_1\rangle + \beta_2|\phi_2\end{cases}\Rightarrow \langle\xi|\omega\rangle = \sum\limits_{i=1}^2\alpha_i^*\beta_i\langle \psi_i|\phi_i\rangle$$
+		$$\begin{cases}|\xi\rangle \equiv \alpha_1|\psi_1\rangle + \alpha_2|\psi_2\rangle\\|\omega\rangle \equiv \beta_1|\phi_1\rangle + \beta_2|\phi_2\rangle\end{cases}\Rightarrow \langle\xi|\omega\rangle = \sum\limits_{i=1}^2\alpha_i^*\beta_i\langle \psi_i|\phi_i\rangle$$
 
 	\subsection{Complete orthonormal bases}
 
 		\subsubsection{Standard vector spaces}
-		In standard vector spaces orthonormal basis vectors are a set form of elements which are mutually orthogonal and have unitary norm:
+		When talking about standard vector spaces, orthonormal basis vectors are a set form of elements which are mutually orthogonal and have unitary norm:
 
 		$$\vec{e}_i\cdot\vec{e}_j = \delta_{ij}$$
 
-		Where $\delta_{ij}$ is the kronecker-delta and is defined as:
+		Where $\delta_{ij}$ is the Kronecker-Delta and it is defined as:
 
 		$$\delta_{ij} = \begin{cases}1\qquad i = j\\ 0\qquad i\neq j\end{cases}$$
 
@@ -50,31 +50,31 @@
 
 		$$\sum\limits_j\delta_{ij}A_j = A_i$$
 
-		A set of $N$ versors is said to form a complete orthonormal basis of the vector space $\mathcal{V}$ if for any vector $\vec{v}\in\mathcal{V}$ there exists a unique set of $N$ real coefficient $\lambda_1, \dots, \lambda_N$ which enable to express $\vec{v}$ as a linear combination of the basis:
+		A set of $N$ versors is said to form a complete orthonormal basis of the vector space $\mathcal{V}$ if, for any vector $\vec{v}\in\mathcal{V}$, there exists a unique set of $N$ real coefficient $\lambda_1, \dots, \lambda_N$ which enables to express $\vec{v}$ as a linear combination of the vectors of the basis:
 
 		$$\vec{v} = \sum\limits_{k=1}^N\lambda_k\vec{e}_k$$
 
 		$N$ is the dimension of the vector space.
-		The set of coefficients is called the coordinates of the vector $\vec{v}$ in the given complete orthonormal basis $\{e_k\}_{k = 1, \dots, N}$.
+		The set of coefficients is refferred to as coordinates of the vector $\vec{v}$ in the given complete orthonormal basis $\{e_k\}_{k = 1, \dots, N}$.
 
 		\subsubsection{Hilbert space}
-		A set of quantum states is defined to be a complete orthonormal basis of the Hilbert space $\mathcal{H}$ if:
+		A set of quantum states is said to be a complete orthonormal basis of a Hilbert space $\mathcal{H}$ if:
 		\begin{multicols}{2}
 			\begin{itemize}
 				\item They are mutually orthogonal.
 				\item They have unit norm.
-				\item Any state can be written as linear combination of them.
+				\item Any quantum state belonging to the Hilbert space can be written as linear combination of them.
 			\end{itemize}
 		\end{multicols}
 
 		The elements of a complete orthonormal basis of a Hilbert space may form an infinite and dense set.
 		Let's consider the set of position quantum states $|x\rangle$.
 		Clearly two position can differ by an infinitesimal amount, therefore a continuous index $x$ is needed to label them.
-		Two position states are said to obey the orthonormally condition if if holds:
+		Two position states are said to obey the orthonormally condition if the following equality holds:
 
-		$$\langle \vec{x}|\vec{y}\rangle = \delta(\vec{x}-\vec{y}_)$$
+		$$\langle \vec{x}|\vec{y}\rangle = \delta(\vec{x}-\vec{y})$$
 
-		$\delta(\vec{x}-\vec{y})$ denotes the dirac-delta:
+		$\delta(\vec{x}-\vec{y})$ denotes the Dirac-delta, defined as:
 
 		$$\int d^3\vec{y} A(y)\delta(\vec{x}-\vec{y}) = A(\vec{x})$$
 
@@ -94,7 +94,7 @@
 
 	$$\hat{O}(\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2) = \alpha_1\hat{O}\vec{v}_1 + \alpha_2\hat{O}\vec{v}_2$$
 
-	Once a basis of a $N$-dimensional real vector space is defined, then each linear operator can be assigned a $N\times N$ matrix, through the representation of the operator in the specific basis:
+	Once a basis of an $N$-dimensional real vector space is defined, then to each linear operator can be assigned an $N\times N$ matrix, through the representation of the operator in the specific basis:
 
 	$$\vec{w} = \hat{O}\vec{v}\rightarrow \vec{e}_j\cdot\vec{w} = \sum\limits_{i=1}^N(\vec{e}_i\cdot\vec{v})\vec{e}_j\cdot\hat{O}\vec{e}_i = \sum\limits_{i=1}^NO_{ji}v_j$$
 
@@ -103,7 +103,7 @@
 
 	$$|w\rangle = \hat{O}|v\rangle\qquad \hat{O}(\alpha_1|v_1\rangle + \alpha_2|v_2\rangle) = \alpha_1\hat{O}|v_1\rangle +  \alpha_2\hat{O}|v_2\rangle$$
 
-	Like real vector space, operators in Hilbert spaces can be represented in a given orthonormal basis like the position state basis through a projection procedure:
+	Just like what happens for real vector spaces, operators in hilbert spaces can be represented in a given orthonormal basis, like the position state basis, through a projection procedure:
 
 	$$|\omega\rangle = \hat{O}|\psi\rangle\Rightarrow \omega(\vec{x} = \langle\vec{x}|w\rangle) = \int d^3\vec{y}\langle\vec{y}|\psi\rangle\langle\vec{x}|\hat{O}|\vec{y}\rangle = \int d^3\vec{y} O(\vec{x}, \vec{y})\psi(\vec{y})$$
 
@@ -121,11 +121,11 @@
 		$$\int d^3\vec{y}T(\vec{x}, \vec{y})\psi(\vec{y}) = -\frac{\hbar^2}{2m}\nabla^2\psi(\vec{x})$$
 
 		\subsubsection{Exponential of an operator}
-		Let $\hat{A}$ an operator, then:
+		Let $\hat{A}$ be an operator, then:
 
-		$$e^{\hat{A}} \equiv\mathbb{1} + \hat{A} + \frac{1}{2}\hat{A}^2+\cdots = \sum\limits_{n=0}^\infty\frac{1}{n!}\hat{A}^n$$
+		$$e^{\hat{A}} \equiv\hat{\mathds{1}} + \hat{A} + \frac{1}{2}\hat{A}^2+\cdots = \sum\limits_{n=0}^\infty\frac{1}{n!}\hat{A}^n$$
 
-		Not that:
+		Notice that:
 
 		$$e^{\hat{A} + \hat{B}} \neq e^{\hat{A}}e^{\hat{B}}$$
 
@@ -138,16 +138,16 @@ The spectral theorem of standard linear algebra follows as a special case of thi
 
 	$$\langle \vec{v}\hat{O}^\dagger, \vec{w}\rangle = \langle\vec{v}, \hat{O}\vec{w}\rangle$$
 
-	An operator is called hermitian if it is self-adjoint, or if it coincides with its hermitian conjugate: $\hat{O} = \hat{O}^\dagger$.
-	Furthermore an operator $\hat{U}$ is called unitary if $\hat{U}^\dagger\hat{U} = \mathbb{1}$.
-	Observables in quantum mechanics are associated to hermitian operators and the outcome of a measurement it's one of its real eigenvalues.
+	An operator is called hermitian if it is self-adjoint, meaning that it coincides with its hermitian conjugate: $\hat{O} = \hat{O}^\dagger$.
+	Furthermore an operator $\hat{U}$ is called unitary if $\hat{U}^\dagger\hat{U} = \hat{\mathds{1}}$.
+	Observables in quantum mechanics are associated to hermitian operators and the outcome of a measurement is one of its real eigenvalues.
 	The expectation value of an observable $O$ in any state $\phi$ is:
 
 	$$\frac{(\phi,O,\phi)}{(\phi,\phi)}$$
 
 	\subsection{Statement of the spectral theorem}
 	Let $\hat{O}$ be an hermitian operator defined on a hilbert space $\mathcal{H}$.
-	Then there exist a complete orthonormal basis of $\mathcal{H}$ defined by the eigenstates of $\hat{O}$.
+	Then there exists a complete orthonormal basis of $\mathcal{H}$ defined by the eigenstates of $\hat{O}$.
 	Furthermore each eigenvalue is real.
 
 	\subsection{Corollaries}
@@ -161,12 +161,12 @@ The spectral theorem of standard linear algebra follows as a special case of thi
 		Hermitian matrices in real vector spaces are symmetric.
 
 		\subsubsection{Third corollary}
-		Given a complete orthonormal basis of a hilbert space $\{|e_n\rangle\}$ possibly dense and a hermitian operator $\hat{O}$, it is possible to identify a unitary transformation which connects the $\{|e_n\rangle\}$ with the basis of eigenstates of $\hat{O}$, $\{|o_n\rangle\}$.
+		Given a complete orthonormal basis of a hilbert space $\{|e_n\rangle\}$ possibly dense and a hermitian operator $\hat{O}$, it is possible to identify a unitary transformation which connects the $\{|e_n\rangle\}$ with the basis of eigenstates of $\hat{O}$, called $\{|o_n\rangle\}$.
 
 \section{Fourier transform}
-A special case of basis change is provided by the fourier transformation.
+A special case of basis change is provided by the fourier transform.
 Let $\phi(\vec{x})$ be the wave function in coordinate representation.
-The unitary transformation to the momentum basis is called direct fourier transform and is defined as:
+The unitary transformation to the momentum basis is called direct fourier transform and it is defined as:
 
 $$\hat{F}[\phi(\vec{x})] = \tilde{\phi}(\vec{p}) = \int\limits_{-\infty}^\infty d^3\vec{x}e^{\frac{i}{\hbar}\vec{p}\cdot\vec{x}}\phi(\vec{x})$$
 
@@ -175,7 +175,7 @@ The inverse transformation from the momentum basis to the position one is called
 $$\hat{F}^{-1}[\tilde{\phi}(\vec{p})] = \phi(\vec{x}) = \int\limits_{-\infty}^\infty \frac{d^3\vec{p}}{(2\pi)^3}e^{-\frac{i}{\hbar}\vec{p}\cdot\vec{x}}\tilde{\phi}(\vec{p})$$
 
 The term $(2\pi)^3$ is introduced conventionally to guarantee the preservation of the normalization condition.
-An important properties of the fourier transform is that:
+An important property of the fourier transform is that:
 
 \begin{align*}
 	F^{-1}[\vec{p}\tilde{\phi}(\vec{p})] &= \int\limits_{-\infty}^\infty \frac{d^3\vec{p}}{(2\pi)^3}e^{-\frac{i}{\hbar}\vec{p}\cdot\vec{x}}\vec{p}\tilde{\phi}(\vec{p})=\\

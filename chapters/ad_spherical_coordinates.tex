@@ -2,7 +2,7 @@
 
 \section{Definition}
 An important change of coordinates is the one that takes the cartesian coordinates and maps them into the spherical ones $(\rho, \theta, \phi)$.
-This transformation allows to simplify the treatment of systems with spherical symmetry.
+This transformation allows to simplify working on systems with spherical symmetry.
 The relationship between cartesian and spherical coordinates can be defined as:
 
 \begin{multicols}{3}
@@ -13,7 +13,7 @@ The relationship between cartesian and spherical coordinates can be defined as:
 	\end{itemize}
 \end{multicols}
 
-With conditions:
+With the following conditions:
 
 \begin{multicols}{3}
 	\begin{itemize}
@@ -23,7 +23,7 @@ With conditions:
 	\end{itemize}
 \end{multicols}
 
-Computing all the first order partial derivatives the jacobian matrix is:
+Computing all the first order partial derivatives, we obtain the following jacobian matrix:
 
 \begin{align*}
 	J_f &= \begin{pmatrix}\nabla(x(\rho, \theta, \phi))\\\nabla(t(\rho, \theta, \phi))\\\nabla(z(\rho,\theta,\phi))\end{pmatrix} = \begin{pmatrix} x_\rho & x_\theta & x_\phi\\y_\rho & y_\theta & y_\phi\\z_\rho & z_\theta & z_\phi\end{pmatrix}=\\
@@ -36,7 +36,7 @@ So for spherical coordinates:
 $$dV = dxdydz = \biggl|det\frac{\partial(x,y,z)}{\partial(\rho,\theta,\phi)}\biggr|d\rho d\theta d\phi = \rho^2\sin\phi d\rho d\theta d\phi$$
 
 \section{The sphere volume}
-To compute the volume of a ball $B$ with radius $\rho\le R$, the most simple thing to do is to put it in spherical coordinates with the following conditions:
+To compute the volume of a ball $B$ with radius $\rho\le R$, the simplest way is to rewrite the problem in spherical coordinates with the following conditions:
 
 \begin{multicols}{3}
 	\begin{itemize}

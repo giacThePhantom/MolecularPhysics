@@ -1,13 +1,13 @@
 \chapter{Differential operators}
 
 \section{Definition}
-An operator is a mapping of a certain set of structured objects such a functions onto itself:
+An operator is a mapping of a certain set of structured objects such as a functions onto itself:
 
 $$\hat{A}\cdot f = g$$
 
 Operators can map functions to function or vectors to vectors.
 These two cases are conceptually the same, because functions are elements of a vector space called the Hilbert space.
-A differential operator is an operator which acts on functions and is defined as come combination of differentiation operations.
+A differential operator is an operator which acts on functions and it is defined as some combination of differentiation operations.
 
 \section{Properties}
 
@@ -17,9 +17,11 @@ A differential operator is an operator which acts on functions and is defined as
 	$$(\hat{A} \pm\hat{B})f = \hat{A}f\pm \hat{B}f$$
 
 	\subsection{Product}
-	Given two operators $\hat{A}$ and $\hat{B}$ acting on some function $f$ is their subsequent application:
+	Given two operators $\hat{A}$ and $\hat{B}$ acting on some function $f$:
 
 	$$(\hat{A}\hat{B})f = \hat{A}(\hat{B}f)$$
+
+	Basically you apply the operators in subsequent order.
 
 	\subsection{Power}
 	Given an operator $\hat{A}$
@@ -32,12 +34,12 @@ A differential operator is an operator which acts on functions and is defined as
 	$$\hat{A} = \hat{B} \Leftrightarrow \hat{A}f = \hat{B}f$$
 
 	\subsection{Identity operator}
-	The identity operator $\hat{1}$ is an operator such that:
+	The identity operator $\hat{\mathds{1}}$ is an operator such that:
 
-	$$\hat{1}f = f$$
+	$$\hat{\mathds{1}}f = f$$
 
 	\subsection{Commutability}
-	Two operatore are said to commute when the order of their consecutive application does not matter:
+	Two operators are said to commute when the order of their consecutive application does not matter:
 
 	$$\hat{A}\hat{B} = \hat{B}\hat{A}$$
 
@@ -49,13 +51,14 @@ A differential operator is an operator which acts on functions and is defined as
 
 	$$\forall \hat{A}, \hat{B}: [\hat{A}, \hat{B}] = -[\hat{B}, \hat{A}]$$
 
-	Two partial derivatives commute for $C^2$ functions.
+	Two partial derivatives commute for $\mathbb{C}^2$ functions.
 
 	\subsection{Linearity}
-	Linear operator are operators which respect the property of linearity: given $\hat{A}$ an operator acting on $f$ and $g$ and $c$ a constant multiplier:
+	Linear operators are operators which respect the property of linearity: given an operator $\hat{A}$ acting on $f$ and $g$, and given a constant multiplier $c$:
 
 	$$\hat{A}(f\pm g) = \hat{A}f\pm \hat{A}g$$
 	$$\hat{A}(cf) = c\hat{A}f$$
+
 \section{Gradient, divergence and curl}
 
 	\subsection{Nabla operator}
@@ -63,7 +66,7 @@ A differential operator is an operator which acts on functions and is defined as
 
 	$$\vec{\nabla} = \begin{pmatrix} \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\end{pmatrix}$$
 
-	The nabla operator is a linear differential operator which acts on function and works as a $3D$ vector in space.
+	The nabla operator is a linear differential operator which acts on functions and works as a $3D$ vector in space.
 
 	\subsection{Scalar fields and vector fields}
 	Single-valued functions of coordinate $f(\vec{x})$ are called scalar fields.
@@ -72,32 +75,34 @@ A differential operator is an operator which acts on functions and is defined as
 	They can represent quantities such as currents flow in a fluid, or the electric and magnetic fields in space.
 
 	\subsection{Gradient}
-	Let $f:\mathbb{R}^3\supseteq A\rightarrow\mathbb{R}$, with $A$ an open set of $\mathbb{R}^2$, a function of three variables $f(x,y,z)$.
+	Let $f:\mathbb{R}^3\supseteq A\rightarrow\mathbb{R}$, with $A$ an open set of $\mathbb{R}^3$, a function of three variables $f(x,y,z)$.
 	Be the function derivable.
-	The gradient of $f$ in Cartesian coordinates is defined by:
+	The gradient of $f$ in Cartesian coordinates is defined as:
 
-	$$grad f = \nabla f := \frac{\partial f(x,y,z)}{\partial x}\hat{i} + \frac{\partial f(x,y,z)}{\partial y}\hat{j} + \frac{partial f(x,y,z)}{\partial z}\hat{k}$$
+	$$grad(f) = \nabla f := \frac{\partial f(x,y,z)}{\partial x}\hat{i} + 
+							\frac{\partial f(x,y,z)}{\partial y}\hat{j} + 
+							\frac{\partial f(x,y,z)}{\partial z}\hat{k}$$
 
 	The gradient of a scalar function is defined as nabla acting on it and producing a vector field of its derivatives.
-	The gradient is then the vector that takes as components along the axis directions the first order partial derivatives.
-	The gradient is the vector of major increment of the function with respect to the variations in the variables and its has a magnitude equal to the maximum rate of increase at the point.
+	The gradient is then the vector that takes as components along the axes directions the first order partial derivatives.
+	The gradient is the vector of major increment of the function with respect to the variations in the variables and it has magnitude equal to the maximum rate of increase at the point.
 
 		\subsubsection{Directional derivatives}
-		Directional derivatives for $C^1$ functions can be written as a scalar product of the gradient of the function and the vector $\vec{v}$:
+		Directional derivatives for $\mathbb{C}^1$ functions can be written as the scalar product of the gradient of the function and the vector $\vec{v}$:
 
 		$$\vec{\nabla}_{\vec{v}}f(\vec{x}) = \vec{v}\vec{\nabla}f(\vec{x})$$
 
 	\subsection{Divergence}
-	Suppose now to have a derivable vectorial field $\vec{V}:\mathbb{R}^3\supseteq A \rightarrow\mathbb{R}^3$, with $A$ an open set of $\mathbb{R}^3$.
-	This vectorial field is defined by means of its components along the axis directions: $\vec{V} = v_1\hat{i} + v_2\hat{j} + v_3\hat{k}$.
-	It associates a vector to each point of $A$.
-	The gradient, if it exists and if it is derivable is a vectorial field.
+	Suppose now to have a derivable vectorial field $\vec{V}:\mathbb{R}^3\supseteq A \rightarrow\mathbb{R}^3$, with $A$ being an open set of $\mathbb{R}^3$.
+	This vectorial field is defined by means of its components along the axes directions: $\vec{V} = v_1\hat{i} + v_2\hat{j} + v_3\hat{k}$.
+	Basically, the vectorial field associates a vector to each point of $A$.
+	The gradient, if it exists and if it is derivable, is a vectorial field.
 	The divergence of $\vec{V}$ in Cartesian coordinates is:
 
 	$$div\vec{V} = \nabla\cdot\vec{V} := \frac{\partial v_1(x,y,z)}{\partial x} + \frac{\partial v_2(x,y,z)}{\partial y} + \frac{\partial v_3(x,y,z)}{\partial z}$$
 
-	It is defined as nabla acting on a vector field via the scalar product
-	This gives informations on where a vectorial fields has source or sink, or, when the vectorial field represent a fluid flux, if the fluid is incompressible or solenoidal.
+	It is thus defined as nabla acting on a vector field via the scalar product.
+	This gives information on where a vectorial field has source or sink or, when the vectorial field represents a fluid flux, if the fluid is incompressible or solenoidal.
 
 	\subsection{Curl}
 	Suppose now to have a derivable vectorial field $\vec{V}:\mathbb{R}^3\supseteq A \rightarrow\mathbb{R}^3$, with $A$ an open set of $\mathbb{R}^3$.
@@ -105,8 +110,8 @@ A differential operator is an operator which acts on functions and is defined as
 
 	$$rot\vec{V} = \nabla\times\vec{V} := \biggl(\frac{\partial v_3}{\partial y} - \frac{\partial v_2}{\partial z}\biggr)\hat{i} + \biggl(\frac{\partial v_1}{\partial z} - \frac{\partial v_3}{\partial x}\biggr)\hat{j} + \biggl(\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y}\biggr)\hat{k}$$
 
-	It is defined as nabla acting on a vector field via the vector or cross product.
-	The application of the curl to a vectorial field gives information on if the field rotates around a point and the verse of that rotation.
+	It is thus defined as nabla acting on a vector field via the vector or cross product.
+	The application of the curl to a vectorial field gives information on whether the field rotates around a point and on the verse of that rotation.
 	The output of the curl is the modulus of the rotation, and the direction is linked by means of the right hand rule to the verse of rotation.
 
 	\subsection{Properties}
@@ -120,27 +125,27 @@ A differential operator is an operator which acts on functions and is defined as
 	\end{multicols}
 
 	\subsection{Laplacian}
-	The Laplacian is the last operator and it is defines as:
+	The Laplacian is an operator defined as:
 
 	$$\Delta f = \nabla^2 f = \frac{\partial^2}{\partial x^2}f + \frac{\partial^2}{\partial y^2}f + \frac{\partial^2}{\partial z^2}f$$
+
 	It is the scalar product of two nabla operators.
 	In spherical coordinates:
 
 	$$\Delta f = \frac{1}{r^2}\frac{\partial}{\partial r}\biggl(r^2\frac{\partial}{\partial r}f\biggr) + \frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\biggl(\sin\theta\frac{\partial}{\partial\theta}f\biggr) + \frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\phi^2}f$$
 
 \section{Hessian matrix: maxima and minima}
-A matrix of second partial derivatives can be build to study functions from $\mathbb{R}^n$ to $\mathbb{R}$.
-The presence of possible extrema at one point is linked to the one of a null gradient in that point.
+A matrix of $n$ order partial derivatives can be built to study functions from $\mathbb{R}^n$ to $\mathbb{R}$. We will only consider Hessian matrices where $n = 2$
 Let $f:\mathbb{R}^2\supseteq A\rightarrow{R}$, with $A$ an open set of $\mathbb{R}^2$ a function $f(x,y)$.
-If $(x_0, y_0)$ is a local extremum if exists $\nabla f = \vec{0}$.
+If $(x_0, y_0)$ is a local extremum if exists $\nabla f = \vec{0}$ (the point is a local extremum is the gradient of the function in that point is null).
 To find local extrema are considered points in which $\nabla f = \vec{0}$.
-Let $f:\mathbb{R}^2\supseteq A\rightarrow{R}$, with $A$ an open set of $\mathbb{R}^2$ and $f\in C^2$, where $c^2$ meaning that all partial second derivatives exist and are continuous.
-Then the hessian matrix is defined as:
+Let $f:\mathbb{R}^2\supseteq A\rightarrow{R}$, with $A$ an open set of $\mathbb{R}^2$ and $f\in \mathbb{C}^2$, where $\mathbb{C}^2$ means that all second order partial derivatives exist and are continuous.
+Then the Hessian matrix is defined as:
 
 $$H_f(x_0, y_0) = \begin{pmatrix} \partial_{xx} f(x_0, y_0) & \partial_{yx}f(x_0, y_0) \\ \partial_{xy} f(x_0, y_0) & \partial_{yy}f(x_0, y_0)\end{pmatrix}$$
 
 This matrix is useful to determine the nature of the extrema.
-Let $f\in C^2$ and $(x_0, y_0)$ a critical point of $f$, then:
+Let $f\in \mathbb{C}^2$ and $(x_0, y_0)$ be a critical point of $f$, then:
 
 \begin{multicols}{2}
 	\begin{itemize}
@@ -153,7 +158,7 @@ Let $f\in C^2$ and $(x_0, y_0)$ a critical point of $f$, then:
 
 \section{Jacobian matrix}
 With a vectorial function the concept of gradient can be extended and applied to each component of the function.
-Let $f:\mathbb{R}^2\supseteq A\rightarrow\mathbb{R}^2$ be a function of two variable $f = (f_1(x, y), f_2(x, y))$ for whigh all the derivatives exist ant are continuous.
+Let $f:\mathbb{R}^2\supseteq A\rightarrow\mathbb{R}^2$ be a function of two variables $f = (f_1(x, y), f_2(x, y))$ for which all the derivatives exist and are continuous.
 The jacobian matrix is defined as:
 
 $$J_f = \begin{pmatrix} \partial_x f_1 & \partial_y f_1\\\partial_x f_2 & \partial_y f_2\end{pmatrix} = \begin{pmatrix} \nabla f_1\\\nabla f_2\end{pmatrix}$$
@@ -164,7 +169,7 @@ $$f = (f_1(x, y), f_2(x, y)) = (u, w)\qquad (x, y)\rightarrow (u, w)$$
 
 The Jacobian matrix allows to determine the domain of the transformation.
 The change of variables is $1\leftrightarrow 1$ (a bijective function) only if the determinant of the Jacobian matrix is not null.
-Also the Jacobian determinant makes possible to consistently define the change of volume in changing the coordinates.
+The Jacobian determinant also allows to consistently define the change of volume while changing the coordinates.
 Given a transformation from $(x, y)$ to $(u, v)$ the change in the expression of the area with respect to the coordinates is:
 
 $$dA = dxdy = \biggl| det\frac{\partial(x, y)}{\partial(u, v)}\biggr|dudv$$
@@ -172,13 +177,13 @@ $$dA = dxdy = \biggl| det\frac{\partial(x, y)}{\partial(u, v)}\biggr|dudv$$
 Where $dx, dy, du, dv$ are small coordinates intervals.
 
 \section{Chain rule}
-Let $u(x, y)$ be a differentiable function of two variables that are differentiable function of two variables each $x(s, t)$ and $y(s, t)$, then the composite function is differentiable and the partial derivatives are:
+Let $u(x, y)$ be a differentiable function of two variables which are differentiable functions of two variables each $x(s, t)$ and $y(s, t)$, then the composite function is differentiable and the partial derivatives are:
 
 $$\frac{\partial u}{\partial s} = \frac{\partial u}{\partial x}\frac{\partial x}{\partial s} + \frac{\partial u}{\partial y}\frac{\partial y}{\partial s}\qquad\frac{\partial u}{\partial t} = \frac{\partial u}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial u}{\partial y}\frac{\partial y}{\partial t}$$
 
 	\subsection{Gradient in polar coordinates}
-	Suppose to have $g(x, y)$ a function of two variables in Cartesian coordinates.
-	If $(\rho, \theta)$ are the usual polar coordinates related to $(x, y)$ by $x = \rho\cos\theta$ and $y =\rho\sin\theta$, then by substituting these for $x$ and $y$ $g$ becomes a function of $\rho$ and $\theta$:
+	Suppose to have $g(x, y)$, a function of two variables in Cartesian coordinates.
+	If $(\rho, \theta)$ are the usual polar coordinates related to $(x, y)$ by $x = \rho\cos\theta$ and $y =\rho\sin\theta$, then by substituting these for $x$ and $y$, $g$ becomes a function of $\rho$ and $\theta$:
 
 	$$g(x, y) = f(\rho(x, y), \theta(x, y))$$
 
@@ -188,7 +193,7 @@ $$\frac{\partial u}{\partial s} = \frac{\partial u}{\partial x}\frac{\partial x}
 
 	$$\frac{\partial g}{\partial x} = \frac{\partial f}{\partial \rho}\frac{\partial \rho}{\partial x} + \frac{\partial f}{\partial \theta}\frac{\partial \theta}{\partial x}\qquad\frac{\partial g}{\partial y} = \frac{\partial f}{\partial \rho}\frac{\partial \rho}{\partial y} + \frac{\partial f}{\partial \theta}\frac{\partial \theta}{\partial y}$$
 
-	To fill these relation there is a need to compute:
+	To fill these relations one must compute:
 
 	\begin{align*}
 		\frac{\partial\rho}{\partial x} &= \frac{\partial\sqrt{x^2+y^2}}{\partial x} = \frac{1}{2}\frac{2x}{\sqrt{x^2}{y^2}} = \frac{x}{\sqrt{x^2+y^2}} = \frac{\rho\cos\theta}{\rho} = \cos\theta\\
@@ -197,21 +202,22 @@ $$\frac{\partial u}{\partial s} = \frac{\partial u}{\partial x}\frac{\partial x}
 		\frac{\partial\theta}{\partial y} &= \frac{\partial\arctan\frac{y}{x}}{\partial y} = \frac{x}{x^2+y^2} = \frac{\rho\cos\theta}{\rho^2} = \frac{\cos\theta}{\rho}\\
 	\end{align*}
 
-	So:
+	Hence:
 
 	$$\frac{\partial g}{\partial x} = \frac{\partial f}{\partial\rho}\cos\theta + \frac{\partial f}{\partial\theta}\frac{-\sin\theta}{\rho}\qquad \frac{\partial g}{\partial y} = \frac{\partial f}{\partial \rho}\sin\theta + \frac{\partial f}{\partial \theta}\frac{\cos\theta}{\rho}$$
 
 	The gradient of $g$ using Cartesian versors will be:
 
 	\begin{align*}
-		\nabla g = g_x\hat{e}_x + g_y\hat{e}_y &= \biggl(\frac{\partial f}{\partial\rho}\cos\theta + \frac{\partial f}{\partial \theta}\frac{-\sin\theta}{\rho}\biggr)\hat{e}_x +\biggl(\frac{\partial f}{\partial\rho}\sin\theta + \frac{\partial f}{\partial \theta}\frac{\cos\theta}{\rho}\biggr)\hat{e}_y=\\
-																					 &=\biggl(\frac{\partial f}{\partial\rho}\cos\theta\biggr)\hat{e}_x + \biggl(\frac{\partial f}{\partial \theta}\frac{-\sin\theta}{\rho}\biggr)\hat{e}_x +\biggl(\frac{\partial f}{\partial\rho}\sin\theta\biggr)\hat{e}_y + \biggl(\frac{\partial f}{\partial \theta}\frac{\cos\theta}{\rho}\biggr)\hat{e}_y=\\
-																					 &=\frac{\partial f}{\partial\rho}(\cos\theta\hat{e}_x + \sin\theta\hat{e}_y) + \frac{1}{\rho}\frac{\partial f}{\partial\theta}(-\sin\theta\hat{e}_x + \cos\theta\hat{e}_y)
+		\nabla g = g_x\hat{e}_x + g_y\hat{e}_y 
+		    &= \biggl(\frac{\partial f}{\partial\rho}\cos\theta + \frac{\partial f}{\partial \theta}\frac{-\sin\theta}{\rho}\biggr)\hat{e}_x +\biggl(\frac{\partial f}{\partial\rho}\sin\theta + \frac{\partial f}{\partial \theta}\frac{\cos\theta}{\rho}\biggr)\hat{e}_y=\\
+		    &=\biggl(\frac{\partial f}{\partial\rho}\cos\theta\biggr)\hat{e}_x + \biggl(\frac{\partial f}{\partial \theta}\frac{-\sin\theta}{\rho}\biggr)\hat{e}_x +\biggl(\frac{\partial f}{\partial\rho}\sin\theta\biggr)\hat{e}_y + \biggl(\frac{\partial f}{\partial \theta}\frac{\cos\theta}{\rho}\biggr)\hat{e}_y=\\
+		    &=\frac{\partial f}{\partial\rho}(\cos\theta\hat{e}_x + \sin\theta\hat{e}_y) + \frac{1}{\rho}\frac{\partial f}{\partial\theta}(-\sin\theta\hat{e}_x + \cos\theta\hat{e}_y)
 	\end{align*}
 
 	The unit versors $\hat{e}_\rho$ and $\hat{e}_\theta$ are introduced.
 	They have unitary modulus and direction that change from point to point.
-	In particolar for polar coordinates they have the components $\hat{e}^\rho = (\cos\theta, \sin\theta)$ and $\hat{e}_\theta = (-\sin\theta, \cos\theta)$.
+	In particolar for polar coordinates they have the components $\hat{e}_\rho = (\cos\theta, \sin\theta)$ and $\hat{e}_\theta = (-\sin\theta, \cos\theta)$.
 	So finally the explicit gradient in polar coordinates is:
 
 	$$\nabla g = f_\rho\hat{e}_\rho + \frac{f_\theta}{\rho}\hat{e}_\theta$$
