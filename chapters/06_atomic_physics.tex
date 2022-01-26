@@ -119,7 +119,7 @@ Depending on the value of $l$ I can get the probability of the electron dependin
 \section{Relation between spin and statistics: Quantum many-body systems}
 \subsection{The importance of spin}
 Spin statistics can explain chemistry, quantum entanglement, and quantum computers.\\
-Stern Gerlach experiments confirm the fact that electrons have a magnetic moment, which is quantised in 2, 3, 4... units, because they can interact with a magnetic field. Generally, particles behave differently and may have different states of being.\\
+Stern Gerlach experiments confirm the fact that electrons have a magnetic moment, which is quantised in integers or half integers, because they can interact with a magnetic field. Generally, particles behave differently and may have different states of being.\\
 What we know is that we cannot measure more than one component of the magnetic moment (quantum uncertainty) and this \textbf{intrinsic} magnetic moment behaves like an angular momentum.\\
 The rotation of the electron upon itself generates a magnetic field and a magnetic moment. This is called \textbf{spin}, $\hat{S^2},\hat{S_z}$ a property of particles that \textbf{doesn't change with time} and that can distinguish a particle from one another.\\
 \newline
@@ -143,7 +143,7 @@ The particles that have an antisymmetric wavefunction are called \textbf{fermion
 \newline
 \textbf{symmetric wave-function (bosons)}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...). Swapping the wave function \textbf{doesn't change} it.\\
 \[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})=\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\]
-The particles that have an antisymmetric wavefunction are called \textbf{bosons}.\\
+The particles that have an antisymmetric wavefunction are called \textbf{bosons}.
 \begin{quote}
 "A fermion once, a fermion forever".
 "fermions and bosons are like Montecchi and Capuleti. They don't want anyhing to do with each other"
@@ -153,9 +153,11 @@ The particles that have an antisymmetric wavefunction are called \textbf{bosons}
 \textbf{Corollary}: In a quantum wave function, there cannot be two fermions with identical state or else two identical fermions cannot be found in the same quantum state.
 \[\Psi(q_1, q_2)= -\Psi(q_2,q_1)\] the two electrons are the same, $q_1=q_2=q$
 \[\Psi(q,q)=-\Psi(q,q) \]
-The only condition for which this equality is true is for  $\Psi = 0$. This is called \textbf{PAULI'S EXCLUSION PRINCIPLE}.
+The only condition for which this equality is true is for  $\Psi = 0$. This is called \textbf{Pauli's exclusion principle}.
 \\
 \subsection{Mean Field Approximation}
+Solving the S.E. for more than one particle rapidly becomes challenghing, even resorting to High Performance Computing. However, much of the global, qualitative structure of the Mondelyev table can be understood within a simple \textbf{mean field} picture: instead of accounting for all pairwise Coulomb interactinos, we assume that the effect on each electron, due to all other electrons and the protons can be represented by an overall confining potential.\\
+Suppose we are dealing with two electrons: 
 \[
 \bigg(-\frac{\hbar^2}{2m}\sum_{i}^{N}\nabla^2_i+U(\vec{r_1}...\vec{r_n})\bigg)\Psi(\varphi_1 ... \varphi_n)=E\Psi(q_1 ... q_n)
 \]
@@ -163,19 +165,23 @@ The solution to the eigenvalue problem that is also antisymmetric to the potenti
 \[
 U(\vec{r_1}...\vec{r_n})=\sum_{i,j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}-e^2\frac{\mathbb{Z}}{r_i}
 \]
-Instead of keeping track of all the interactions of particles on one another,\ul{ I consider the average of the whole many-body system e.g., mean coulombic repulsion. I calculate the interaction bertween single electron and average electron density. The larger symmetry is the ground state}, for the H atom this is \textbf{1s}.\\
+Instead of keeping track of all the interactions of particles on one another, we consider the average of the whole many-body system, e.g., mean coulombic repulsion. I calculate the interaction between single electron and average electron density. The larger symmetry is the ground state, which for the H-atom this is \textbf{1s}, as shown in figure \ref{fig:spin1}.\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.20]{img_6}
+	\caption{Position of electrons in the 1p and 1s states with relative spin (up pr down)}
+	\label{fig:spin1}
 \end{figure}
 \\
-The structure of the wave function is influenced by spin even if it doesn't appear in the hamiltonian and can be used not only for electrons but for all subatomic/subnuclear particles.
-A nucleus is divided into two different nucleons. Nucleons can have two different states: spin up (protons) and spin down (neutrons). For each spin I can have an isospin up and an isospin down (isospin measures the charge).\\
+The structure of the wave function is influenced by spin even if it doesn't appear in the hamiltonian and can be used not only for electrons but for all subatomic/subnuclear particles. \\
+We may ask ourselves: is there any stable nucleus? For clarity, a nucleus is divided into two different type of nucleons, protons and neutrons. Nucleons can have two different states: spin up (protons) and spin down (neutrons). Actually, the spin is really the only thing that allow us to differentiate the two, since their mass is basically the same (neutrons have a little heavier mass). For each spin there's an isospin up and an isospin down (isospin measures the charge). An example of (impossible) nucleus decay is shown in figure \ref{fig:decay}.\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.20]{img_7}
+	\caption{In this picture the $He^4$ nucleus is represented. It it the most stable nucleus ($\alpha$particle). The thing is that the difference in mass ($m_n > m_p$) $\Delta m \rightarrow \text{energy}$ is not sufficient to reach the higher energy state and become a proton. Is there any other way? No, because of the spin theory. So, even if in principle a neutron could decay into a proton, ultimately Pauli's exclusion principle does not allow to have the same spin.}
+	\label{fig:decay}
 \end{figure}\\
-Neutrons can decay into protons by going up to the next energy levels $\rightarrow$ PAULI BLOCK, not a spontaneous process.\\
+
 
 \subsection{Quantum Entanglement}
 In an external/mean potential, the Schr\"odinger equation has a potential of a single coordinate that depends on where that potential is located.
