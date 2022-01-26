@@ -60,106 +60,107 @@
 \BOOKMARK [1][-]{section.4.3}{Outcomes of measurement}{chapter.4}% 60
 \BOOKMARK [1][-]{section.4.4}{Expectation value}{chapter.4}% 61
 \BOOKMARK [1][-]{section.4.5}{Time evolution}{chapter.4}% 62
-\BOOKMARK [-1][-]{part.2}{II Quantum chemistry}{}% 63
-\BOOKMARK [0][-]{chapter.5}{Approximation methods}{part.2}% 64
-\BOOKMARK [1][-]{section.5.1}{Truncated eigenstate expansion \(Generalized Fourier\)}{chapter.5}% 65
-\BOOKMARK [2][-]{subsection.5.1.1}{The art of approximation}{section.5.1}% 66
-\BOOKMARK [1][-]{section.5.2}{Quantum tunneling - The Landau problem -The ass problem}{chapter.5}% 67
-\BOOKMARK [1][-]{section.5.3}{Ritz-Rayleigh variational principle}{chapter.5}% 68
-\BOOKMARK [0][-]{chapter.6}{Atomic physics}{part.2}% 69
-\BOOKMARK [1][-]{section.6.1}{Quantum theory of the Hydrogen atom}{chapter.6}% 70
-\BOOKMARK [2][-]{subsection.6.1.1}{Evaluation of conservation of energy}{section.6.1}% 71
-\BOOKMARK [2][-]{subsection.6.1.2}{Angular momentum conservation}{section.6.1}% 72
-\BOOKMARK [1][-]{section.6.2}{Relation between spin and statistics: Quantum many-body systems}{chapter.6}% 73
-\BOOKMARK [2][-]{subsection.6.2.1}{The importance of spin}{section.6.2}% 74
-\BOOKMARK [2][-]{subsection.6.2.2}{Spin-Statistics theorem}{section.6.2}% 75
-\BOOKMARK [2][-]{subsection.6.2.3}{Mean Field Approximation}{section.6.2}% 76
-\BOOKMARK [2][-]{subsection.6.2.4}{Quantum Entanglement}{section.6.2}% 77
-\BOOKMARK [2][-]{subsection.6.2.5}{Tensor product states}{section.6.2}% 78
-\BOOKMARK [0][-]{chapter.7}{Molecular physics}{part.2}% 79
-\BOOKMARK [1][-]{section.7.1}{The Born-Oppenheimer Approximation}{chapter.7}% 80
-\BOOKMARK [1][-]{section.7.2}{The H2 molecule}{chapter.7}% 81
-\BOOKMARK [1][-]{section.7.3}{Electronic structure calculation methods}{chapter.7}% 82
-\BOOKMARK [2][-]{subsection.7.3.1}{Density Function Theory \(DFT\)}{section.7.3}% 83
-\BOOKMARK [2][-]{subsection.7.3.2}{QM-MM Schemes}{section.7.3}% 84
-\BOOKMARK [-1][-]{part.3}{III Quantum computing}{}% 85
-\BOOKMARK [0][-]{chapter.8}{Quantum computing}{part.3}% 86
-\BOOKMARK [1][-]{section.8.1}{Qubits}{chapter.8}% 87
-\BOOKMARK [2][-]{subsection.8.1.1}{Adiabatic Quantum Computing}{section.8.1}% 88
-\BOOKMARK [1][-]{section.8.2}{Two qubits system}{chapter.8}% 89
-\BOOKMARK [1][-]{section.8.3}{Quantum circuits}{chapter.8}% 90
-\BOOKMARK [1][-]{section.8.4}{The Elitzur-Vaidman bomb tester}{chapter.8}% 91
-\BOOKMARK [-1][-]{part.4}{IV Mathematical Background}{}% 92
-\BOOKMARK [0][-]{chapter.9}{Complex numbers}{part.4}% 93
-\BOOKMARK [1][-]{section.9.1}{Argand plane}{chapter.9}% 94
-\BOOKMARK [1][-]{section.9.2}{Operations}{chapter.9}% 95
-\BOOKMARK [2][-]{subsection.9.2.1}{Addition}{section.9.2}% 96
-\BOOKMARK [2][-]{subsection.9.2.2}{Subtraction}{section.9.2}% 97
-\BOOKMARK [2][-]{subsection.9.2.3}{Multiplication}{section.9.2}% 98
-\BOOKMARK [2][-]{subsection.9.2.4}{Complex conjugate}{section.9.2}% 99
-\BOOKMARK [2][-]{subsection.9.2.5}{Division}{section.9.2}% 100
-\BOOKMARK [1][-]{section.9.3}{Polar form}{chapter.9}% 101
-\BOOKMARK [2][-]{subsection.9.3.1}{Complex numbers as vectors}{section.9.3}% 102
-\BOOKMARK [2][-]{subsection.9.3.2}{Definition}{section.9.3}% 103
-\BOOKMARK [2][-]{subsection.9.3.3}{Conversion between polar form and standard form}{section.9.3}% 104
-\BOOKMARK [2][-]{subsection.9.3.4}{Operations}{section.9.3}% 105
-\BOOKMARK [1][-]{section.9.4}{Complex valued functions}{chapter.9}% 106
-\BOOKMARK [2][-]{subsection.9.4.1}{Complex conjugate}{section.9.4}% 107
-\BOOKMARK [2][-]{subsection.9.4.2}{Derivative}{section.9.4}% 108
-\BOOKMARK [1][-]{section.9.5}{Complex exponential}{chapter.9}% 109
-\BOOKMARK [2][-]{subsection.9.5.1}{Properties}{section.9.5}% 110
-\BOOKMARK [2][-]{subsection.9.5.2}{Roots of a complex number}{section.9.5}% 111
-\BOOKMARK [0][-]{chapter.10}{Partial derivatives}{part.4}% 112
-\BOOKMARK [1][-]{section.10.1}{First order derivatives}{chapter.10}% 113
-\BOOKMARK [2][-]{subsection.10.1.1}{Differentiability}{section.10.1}% 114
-\BOOKMARK [2][-]{subsection.10.1.2}{Tangent plane}{section.10.1}% 115
-\BOOKMARK [2][-]{subsection.10.1.3}{Determine if a function is differentiable}{section.10.1}% 116
-\BOOKMARK [1][-]{section.10.2}{Higher order derivatives}{chapter.10}% 117
-\BOOKMARK [2][-]{subsection.10.2.1}{Schwartz's theorem}{section.10.2}% 118
-\BOOKMARK [1][-]{section.10.3}{Differential equation}{chapter.10}% 119
-\BOOKMARK [0][-]{chapter.11}{Differential operators}{part.4}% 120
-\BOOKMARK [1][-]{section.11.1}{Definition}{chapter.11}% 121
-\BOOKMARK [1][-]{section.11.2}{Properties}{chapter.11}% 122
-\BOOKMARK [2][-]{subsection.11.2.1}{Sum and difference}{section.11.2}% 123
-\BOOKMARK [2][-]{subsection.11.2.2}{Product}{section.11.2}% 124
-\BOOKMARK [2][-]{subsection.11.2.3}{Power}{section.11.2}% 125
-\BOOKMARK [2][-]{subsection.11.2.4}{Equality}{section.11.2}% 126
-\BOOKMARK [2][-]{subsection.11.2.5}{Identity operator}{section.11.2}% 127
-\BOOKMARK [2][-]{subsection.11.2.6}{Commutability}{section.11.2}% 128
-\BOOKMARK [2][-]{subsection.11.2.7}{Linearity}{section.11.2}% 129
-\BOOKMARK [1][-]{section.11.3}{Gradient, divergence and curl}{chapter.11}% 130
-\BOOKMARK [2][-]{subsection.11.3.1}{Nabla operator}{section.11.3}% 131
-\BOOKMARK [2][-]{subsection.11.3.2}{Scalar fields and vector fields}{section.11.3}% 132
-\BOOKMARK [2][-]{subsection.11.3.3}{Gradient}{section.11.3}% 133
-\BOOKMARK [2][-]{subsection.11.3.4}{Divergence}{section.11.3}% 134
-\BOOKMARK [2][-]{subsection.11.3.5}{Curl}{section.11.3}% 135
-\BOOKMARK [2][-]{subsection.11.3.6}{Properties}{section.11.3}% 136
-\BOOKMARK [2][-]{subsection.11.3.7}{Laplacian}{section.11.3}% 137
-\BOOKMARK [1][-]{section.11.4}{Hessian matrix: maxima and minima}{chapter.11}% 138
-\BOOKMARK [1][-]{section.11.5}{Jacobian matrix}{chapter.11}% 139
-\BOOKMARK [1][-]{section.11.6}{Chain rule}{chapter.11}% 140
-\BOOKMARK [2][-]{subsection.11.6.1}{Gradient in polar coordinates}{section.11.6}% 141
-\BOOKMARK [0][-]{chapter.12}{Spherical coordinates}{part.4}% 142
-\BOOKMARK [1][-]{section.12.1}{Definition}{chapter.12}% 143
-\BOOKMARK [1][-]{section.12.2}{The sphere volume}{chapter.12}% 144
-\BOOKMARK [0][-]{chapter.13}{Multidimensional integrals}{part.4}% 145
-\BOOKMARK [1][-]{section.13.1}{Definition}{chapter.13}% 146
-\BOOKMARK [1][-]{section.13.2}{Properties}{chapter.13}% 147
-\BOOKMARK [2][-]{subsection.13.2.1}{Integrability}{section.13.2}% 148
-\BOOKMARK [2][-]{subsection.13.2.2}{Order of integration}{section.13.2}% 149
-\BOOKMARK [2][-]{subsection.13.2.3}{x-simple and y-simple domains}{section.13.2}% 150
-\BOOKMARK [2][-]{subsection.13.2.4}{Change of variables}{section.13.2}% 151
-\BOOKMARK [0][-]{chapter.14}{Wave equations}{part.4}% 152
-\BOOKMARK [1][-]{section.14.1}{Definition}{chapter.14}% 153
-\BOOKMARK [2][-]{subsection.14.1.1}{Three-dimensional case}{section.14.1}% 154
-\BOOKMARK [1][-]{section.14.2}{Plane waves}{chapter.14}% 155
-\BOOKMARK [0][-]{chapter.15}{Hilbert spaces}{part.4}% 156
-\BOOKMARK [1][-]{section.15.1}{From vector to hilbert spaces}{chapter.15}% 157
-\BOOKMARK [2][-]{subsection.15.1.1}{Definition}{section.15.1}% 158
-\BOOKMARK [2][-]{subsection.15.1.2}{Complete orthonormal bases}{section.15.1}% 159
-\BOOKMARK [2][-]{subsection.15.1.3}{Operators}{section.15.1}% 160
-\BOOKMARK [1][-]{section.15.2}{Spectral theorem}{chapter.15}% 161
-\BOOKMARK [2][-]{subsection.15.2.1}{Adjoint}{section.15.2}% 162
-\BOOKMARK [2][-]{subsection.15.2.2}{Statement of the spectral theorem}{section.15.2}% 163
-\BOOKMARK [2][-]{subsection.15.2.3}{Corollaries}{section.15.2}% 164
-\BOOKMARK [1][-]{section.15.3}{Fourier transform}{chapter.15}% 165
+\BOOKMARK [1][-]{section.4.6}{Remarks}{chapter.4}% 63
+\BOOKMARK [-1][-]{part.2}{II Quantum chemistry}{}% 64
+\BOOKMARK [0][-]{chapter.5}{Approximation methods}{part.2}% 65
+\BOOKMARK [1][-]{section.5.1}{Truncated eigenstate expansion \(Generalized Fourier\)}{chapter.5}% 66
+\BOOKMARK [2][-]{subsection.5.1.1}{The art of approximation}{section.5.1}% 67
+\BOOKMARK [1][-]{section.5.2}{Quantum tunneling - The Landau problem -The ass problem}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.3}{Ritz-Rayleigh variational principle}{chapter.5}% 69
+\BOOKMARK [0][-]{chapter.6}{Atomic physics}{part.2}% 70
+\BOOKMARK [1][-]{section.6.1}{Quantum theory of the Hydrogen atom}{chapter.6}% 71
+\BOOKMARK [2][-]{subsection.6.1.1}{Evaluation of conservation of energy}{section.6.1}% 72
+\BOOKMARK [2][-]{subsection.6.1.2}{Angular momentum conservation}{section.6.1}% 73
+\BOOKMARK [1][-]{section.6.2}{Relation between spin and statistics: Quantum many-body systems}{chapter.6}% 74
+\BOOKMARK [2][-]{subsection.6.2.1}{The importance of spin}{section.6.2}% 75
+\BOOKMARK [2][-]{subsection.6.2.2}{Spin-Statistics theorem}{section.6.2}% 76
+\BOOKMARK [2][-]{subsection.6.2.3}{Mean Field Approximation}{section.6.2}% 77
+\BOOKMARK [2][-]{subsection.6.2.4}{Quantum Entanglement}{section.6.2}% 78
+\BOOKMARK [2][-]{subsection.6.2.5}{Tensor product states}{section.6.2}% 79
+\BOOKMARK [0][-]{chapter.7}{Molecular physics}{part.2}% 80
+\BOOKMARK [1][-]{section.7.1}{The Born-Oppenheimer Approximation}{chapter.7}% 81
+\BOOKMARK [1][-]{section.7.2}{The H2 molecule}{chapter.7}% 82
+\BOOKMARK [1][-]{section.7.3}{Electronic structure calculation methods}{chapter.7}% 83
+\BOOKMARK [2][-]{subsection.7.3.1}{Density Function Theory \(DFT\)}{section.7.3}% 84
+\BOOKMARK [2][-]{subsection.7.3.2}{QM-MM Schemes}{section.7.3}% 85
+\BOOKMARK [-1][-]{part.3}{III Quantum computing}{}% 86
+\BOOKMARK [0][-]{chapter.8}{Quantum computing}{part.3}% 87
+\BOOKMARK [1][-]{section.8.1}{Qubits}{chapter.8}% 88
+\BOOKMARK [2][-]{subsection.8.1.1}{Adiabatic Quantum Computing}{section.8.1}% 89
+\BOOKMARK [1][-]{section.8.2}{Two qubits system}{chapter.8}% 90
+\BOOKMARK [1][-]{section.8.3}{Quantum circuits}{chapter.8}% 91
+\BOOKMARK [1][-]{section.8.4}{The Elitzur-Vaidman bomb tester}{chapter.8}% 92
+\BOOKMARK [-1][-]{part.4}{IV Mathematical Background}{}% 93
+\BOOKMARK [0][-]{chapter.9}{Complex numbers}{part.4}% 94
+\BOOKMARK [1][-]{section.9.1}{Argand plane}{chapter.9}% 95
+\BOOKMARK [1][-]{section.9.2}{Operations}{chapter.9}% 96
+\BOOKMARK [2][-]{subsection.9.2.1}{Addition}{section.9.2}% 97
+\BOOKMARK [2][-]{subsection.9.2.2}{Subtraction}{section.9.2}% 98
+\BOOKMARK [2][-]{subsection.9.2.3}{Multiplication}{section.9.2}% 99
+\BOOKMARK [2][-]{subsection.9.2.4}{Complex conjugate}{section.9.2}% 100
+\BOOKMARK [2][-]{subsection.9.2.5}{Division}{section.9.2}% 101
+\BOOKMARK [1][-]{section.9.3}{Polar form}{chapter.9}% 102
+\BOOKMARK [2][-]{subsection.9.3.1}{Complex numbers as vectors}{section.9.3}% 103
+\BOOKMARK [2][-]{subsection.9.3.2}{Definition}{section.9.3}% 104
+\BOOKMARK [2][-]{subsection.9.3.3}{Conversion between polar form and standard form}{section.9.3}% 105
+\BOOKMARK [2][-]{subsection.9.3.4}{Operations}{section.9.3}% 106
+\BOOKMARK [1][-]{section.9.4}{Complex valued functions}{chapter.9}% 107
+\BOOKMARK [2][-]{subsection.9.4.1}{Complex conjugate}{section.9.4}% 108
+\BOOKMARK [2][-]{subsection.9.4.2}{Derivative}{section.9.4}% 109
+\BOOKMARK [1][-]{section.9.5}{Complex exponential}{chapter.9}% 110
+\BOOKMARK [2][-]{subsection.9.5.1}{Properties}{section.9.5}% 111
+\BOOKMARK [2][-]{subsection.9.5.2}{Roots of a complex number}{section.9.5}% 112
+\BOOKMARK [0][-]{chapter.10}{Partial derivatives}{part.4}% 113
+\BOOKMARK [1][-]{section.10.1}{First order derivatives}{chapter.10}% 114
+\BOOKMARK [2][-]{subsection.10.1.1}{Differentiability}{section.10.1}% 115
+\BOOKMARK [2][-]{subsection.10.1.2}{Tangent plane}{section.10.1}% 116
+\BOOKMARK [2][-]{subsection.10.1.3}{Determine if a function is differentiable}{section.10.1}% 117
+\BOOKMARK [1][-]{section.10.2}{Higher order derivatives}{chapter.10}% 118
+\BOOKMARK [2][-]{subsection.10.2.1}{Schwartz's theorem}{section.10.2}% 119
+\BOOKMARK [1][-]{section.10.3}{Differential equation}{chapter.10}% 120
+\BOOKMARK [0][-]{chapter.11}{Differential operators}{part.4}% 121
+\BOOKMARK [1][-]{section.11.1}{Definition}{chapter.11}% 122
+\BOOKMARK [1][-]{section.11.2}{Properties}{chapter.11}% 123
+\BOOKMARK [2][-]{subsection.11.2.1}{Sum and difference}{section.11.2}% 124
+\BOOKMARK [2][-]{subsection.11.2.2}{Product}{section.11.2}% 125
+\BOOKMARK [2][-]{subsection.11.2.3}{Power}{section.11.2}% 126
+\BOOKMARK [2][-]{subsection.11.2.4}{Equality}{section.11.2}% 127
+\BOOKMARK [2][-]{subsection.11.2.5}{Identity operator}{section.11.2}% 128
+\BOOKMARK [2][-]{subsection.11.2.6}{Commutability}{section.11.2}% 129
+\BOOKMARK [2][-]{subsection.11.2.7}{Linearity}{section.11.2}% 130
+\BOOKMARK [1][-]{section.11.3}{Gradient, divergence and curl}{chapter.11}% 131
+\BOOKMARK [2][-]{subsection.11.3.1}{Nabla operator}{section.11.3}% 132
+\BOOKMARK [2][-]{subsection.11.3.2}{Scalar fields and vector fields}{section.11.3}% 133
+\BOOKMARK [2][-]{subsection.11.3.3}{Gradient}{section.11.3}% 134
+\BOOKMARK [2][-]{subsection.11.3.4}{Divergence}{section.11.3}% 135
+\BOOKMARK [2][-]{subsection.11.3.5}{Curl}{section.11.3}% 136
+\BOOKMARK [2][-]{subsection.11.3.6}{Properties}{section.11.3}% 137
+\BOOKMARK [2][-]{subsection.11.3.7}{Laplacian}{section.11.3}% 138
+\BOOKMARK [1][-]{section.11.4}{Hessian matrix: maxima and minima}{chapter.11}% 139
+\BOOKMARK [1][-]{section.11.5}{Jacobian matrix}{chapter.11}% 140
+\BOOKMARK [1][-]{section.11.6}{Chain rule}{chapter.11}% 141
+\BOOKMARK [2][-]{subsection.11.6.1}{Gradient in polar coordinates}{section.11.6}% 142
+\BOOKMARK [0][-]{chapter.12}{Spherical coordinates}{part.4}% 143
+\BOOKMARK [1][-]{section.12.1}{Definition}{chapter.12}% 144
+\BOOKMARK [1][-]{section.12.2}{The sphere volume}{chapter.12}% 145
+\BOOKMARK [0][-]{chapter.13}{Multidimensional integrals}{part.4}% 146
+\BOOKMARK [1][-]{section.13.1}{Definition}{chapter.13}% 147
+\BOOKMARK [1][-]{section.13.2}{Properties}{chapter.13}% 148
+\BOOKMARK [2][-]{subsection.13.2.1}{Integrability}{section.13.2}% 149
+\BOOKMARK [2][-]{subsection.13.2.2}{Order of integration}{section.13.2}% 150
+\BOOKMARK [2][-]{subsection.13.2.3}{x-simple and y-simple domains}{section.13.2}% 151
+\BOOKMARK [2][-]{subsection.13.2.4}{Change of variables}{section.13.2}% 152
+\BOOKMARK [0][-]{chapter.14}{Wave equations}{part.4}% 153
+\BOOKMARK [1][-]{section.14.1}{Definition}{chapter.14}% 154
+\BOOKMARK [2][-]{subsection.14.1.1}{Three-dimensional case}{section.14.1}% 155
+\BOOKMARK [1][-]{section.14.2}{Plane waves}{chapter.14}% 156
+\BOOKMARK [0][-]{chapter.15}{Hilbert spaces}{part.4}% 157
+\BOOKMARK [1][-]{section.15.1}{From vector to hilbert spaces}{chapter.15}% 158
+\BOOKMARK [2][-]{subsection.15.1.1}{Definition}{section.15.1}% 159
+\BOOKMARK [2][-]{subsection.15.1.2}{Complete orthonormal bases}{section.15.1}% 160
+\BOOKMARK [2][-]{subsection.15.1.3}{Operators}{section.15.1}% 161
+\BOOKMARK [1][-]{section.15.2}{Spectral theorem}{chapter.15}% 162
+\BOOKMARK [2][-]{subsection.15.2.1}{Adjoint}{section.15.2}% 163
+\BOOKMARK [2][-]{subsection.15.2.2}{Statement of the spectral theorem}{section.15.2}% 164
+\BOOKMARK [2][-]{subsection.15.2.3}{Corollaries}{section.15.2}% 165
+\BOOKMARK [1][-]{section.15.3}{Fourier transform}{chapter.15}% 166
