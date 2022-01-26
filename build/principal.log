@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.4)  26 JAN 2022 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.4)  26 JAN 2022 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1036,14 +1036,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--262
  []
 
 [42]
-
-Package caption Warning: \label without proper reference on input line 276.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:pulsation' on page 43 undefined on input line 272
-.
-
 <chapters/05/img_3.jpg, id=1063, 705.63625pt x 326.21875pt>
 File: chapters/05/img_3.jpg Graphic file (type jpg)
 <use chapters/05/img_3.jpg>
@@ -1055,27 +1047,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--281
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 293--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--295
+Underfull \hbox (badness 10000) in paragraph at lines 302--312
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--309
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--309
+Underfull \hbox (badness 10000) in paragraph at lines 302--312
 
  []
 
 [43 <./chapters/05/img_3.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 329--338
+Underfull \hbox (badness 10000) in paragraph at lines 331--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--341
 
  []
 
@@ -1083,7 +1080,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--338
 <chapters/05/img_4.jpg, id=1073, 523.9575pt x 378.41376pt>
 File: chapters/05/img_4.jpg Graphic file (type jpg)
 <use chapters/05/img_4.jpg>
-Package pdftex.def Info: chapters/05/img_4.jpg  used on input line 371.
+Package pdftex.def Info: chapters/05/img_4.jpg  used on input line 376.
 (pdftex.def)             Requested size: 104.78964pt x 75.6814pt.
 ) (./chapters/06_atomic_physics.tex [45 <./chapters/05/img_4.jpg>]
 Chapter 6.
@@ -1567,10 +1564,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 17286 strings out of 482820
- 304742 string characters out of 5957805
- 610962 words of memory out of 5000000
- 31868 multiletter control sequences out of 15000+600000
+ 17287 strings out of 482820
+ 304757 string characters out of 5957805
+ 610949 words of memory out of 5000000
+ 31869 multiletter control sequences out of 15000+600000
  558037 words of font info for 96 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  44i,19n,47p,886b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1605,9 +1602,9 @@ m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on build/principal.pdf (92 pages, 1958084 bytes).
+Output written on build/principal.pdf (92 pages, 1959499 bytes).
 PDF statistics:
- 2005 PDF objects out of 2073 (max. 8388607)
+ 2007 PDF objects out of 2073 (max. 8388607)
  1356 compressed objects within 14 object streams
  327 named destinations out of 1000 (max. 500000)
  1333 words of extra memory for PDF output out of 10000 (max. 10000000)

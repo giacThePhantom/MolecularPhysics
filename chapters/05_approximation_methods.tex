@@ -54,8 +54,8 @@ For example, we might want to use the harmonic oscillator ground state to approx
 Our aim is to solve the Schr{\"o}dinger equation written as $\hat{H}\varphi_n=E_n\varphi_n$, but "there's no free launch", and we must "pay the price" assuming we can solve $\hat{H}_0\psi_n=\lambda_n\psi_n$ as it represents an harmonic oscillator (shown in figure \ref{fig:approximation}).\\
 \begin{figure}[htbp!]
 \includegraphics[scale=0.20]{img_1.jpg}
-\label{fig:approximation}
 \caption{How to approximate an otherwise very difficult function with a known, simpler one.}
+\label{fig:approximation}
 \end{figure}
 \textbf{1)} First we proceed by writing the S.E. with the truncated basis set.
 \[
@@ -75,14 +75,14 @@ $H_{lm}=H_{ml}^*$ is an hermitian matrix that can be diagonalized to get the eig
 \]
 We reduced a complex problem to a conventional eigenvalue problem with a $H_{lm}$ matrix. The pain is to compute the $M$ integrals and to find an appropriate "probelm B". As a results, this method is hardly applicable to any problems with more of 3 dimensions. \\
 
-\section{Quantum tunneling - The Landau problem -The ass problem}
+\section{Quantum tunneling - The Landau problem}
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_2.jpg}
 	\label{fig:ass}
 	\caption{ass problem}
 \end{figure}
-The ass problem is the gate to the understanding of quantum tunneling (necessary for quantum bonds, which are a reflection of the quantum tunneling behaviour). \\
+The ass problem (because the potential kinda looks like an ass) is the gate to the understanding of quantum tunneling (necessary for quantum bonds, which are a reflection of the quantum tunneling behaviour). \\
 The potential is: $U(x)=U_0(x^2-x_0^2)^2$.\\
 
 The Hamiltonian for the wave function: $\hat{H}=-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2$
@@ -175,8 +175,8 @@ This ground state has slightly lower energy than the normal ground state
 Since the barrier is at very high energy, we could expect to find the correspondance principle at some point. Classical interpretation of the system at this point says that the particle could "decay" from a state of very high energy into one of the two ground states (50\% probability for each state, fair game). Quantum interpretation gives the 100\% probability to the electron of being in both the states at the same time.\\
 \[
 \begin{cases}
-\varphi_0(x) = \frac{1}{\sqrt{2}}\psi^L(x)+C_R^0\,\psi^R(x)]\\
-\varphi_1(x) = \frac{1}{\sqrt{2}}\psi^L(x)+C_R^0\,\psi^R(x)]
+\varphi_0(x) = \frac{1}{\sqrt{2}}[\psi^L(x)+C_R^0\,\psi^R(x)]\\
+\varphi_1(x) = \frac{1}{\sqrt{2}}[\psi^L(x)+C_R^0\,\psi^R(x)]
 \end{cases}
 \]
 \newline
@@ -278,15 +278,17 @@ For $t=0$, $P=0$ then $\cos^2x$ grows with a $t^2$ rate. There is an oscillation
 	\label{fig:pulsation}
 \end{figure}
 \newline
+
 \section{Ritz-Rayleigh variational principle}
-Suppose we want to solve the stationary Schr\"{o}dinger equation for the ground state ($E_0$, energy and corresponding wave function).\\
+Suppose we want to estimate the ground state energy $E_0$ and corresponding wave function of the stationary Schr\"{o}dinger equation.\\
+We define $\varphi(x)$ as a function approximating $\psi_0(x)$. Remember that it can always be written as:
 \[
-\varphi(x)=\sum_{n}^{\infty}c_n\psi_n(x),\,\,\, \hat{H}\psi_n=E_n\psi_n\, \text{with furthermore} \sum_{n=0}|c_n|^2=1
+\varphi(x)=\sum_{n}^{\infty}c_n\psi_n(x),\;\;\; \hat{H}\psi_n=E_n\psi_n\, \text{ furthermore} \;\; \sum_{n=0}|c_n|^2=1
 \]
-I need to find any function approximating $\psi_0^{(x)}$, I also assume that the wave function is already normalized.
+We need to find any function approximating $\psi_0^{(x)}$, and we also assume that the wave function is already normalized. The expectation value for $\varphi$ is:
 \[
 \frac{\braket{\varphi\,|\,\hat{H}\,|\,\varphi}}{(\braket{\varphi \,|\, \varphi})}=
-\sum_{n,m}c_n^*c_m\braket{\psi_n\,|\,\hat{H}\,|\,\psi_m}=\sum_{n,m}c_nc_mE_m\delta_{nm}=
+\sum_{n,m}c_n^{*}c_m\braket{\psi_n\,|\,\hat{H}\,|\,\psi_m}=\sum_{n,m}c_n^{*}c_mE_m\delta_{nm}=
 \sum_{n}|c_n|^2E_n
 \]
 By assuming $c_n \geq 0$, the whole operation is $\geq E_0$ but this is true only if $\psi_n=\psi_0$.\\
@@ -299,26 +301,26 @@ c_n=1, & n=0
 \end{cases}
 \]
 \newline
+The point here is that if we guess a function, compute the eigenvalues, and do the same with another function, the one that lowers the energy the most is the most accurate approximation of the wavefunction. E.g.:\\
 Function 1 $\rightarrow$ Expected value $E_0$\\
 Function 2 $\rightarrow$ Expected value $E_1$\\
 $\rightarrow$ if $E_0 < E_1$ then $E_0$ is a better approximation of the wave function.\\
 \newline
 \noindent\rule{4cm}{0.1pt}
 \newline
-\textit{Example: Given $\varphi(x, \alpha)$, which is a family of wave functions, find $\psi_0(x)$ such as it is the best approximation of the family. }\\
+\textit{Example: Given $\varphi(x, \alpha)$, which is a family of wave functions, find $\psi_0(x)$ such as it is the best approximation of the family.} In other words, we need to evaluate the following equation\\
 \[
 \braket{\varphi_{\alpha}(x)\,|\,\hat{H}\,|\,\varphi_{\alpha}(x)}=E(\alpha)
 \]
-I must find the minimum of the function (derivative = 0).
+for whih $E$ is minimum. We must find the minimum of the function (derivative = 0).
 \[
 \frac{\partial}{\partial\alpha}E(\alpha)=0\, \text{  solve for  }\, \alpha=\alpha_{min}
 \]
-Find $\alpha$ such as $E$ is the best approximation of $E_0$ and $\varphi_{\alpha min}(x)$ is the best approximation of $\psi_0$.\\
-If I have multiple parameters: $\varphi_{\alpha \dots \alpha_n(x)}$
+Find $\alpha$ such as $E_{\alpha min}$ is the best approximation of $E_0$ and $\varphi_{\alpha min}(x)$ is the best approximation of $\psi_0$. Putting it formally, if we have multiple parameters: $\varphi_{\alpha \dots \alpha_n(x)}$
 \[
 \braket{\varphi_{\alpha \dots \alpha_n(x)}\,|\,\hat{H}\,|\,\varphi_{\alpha \dots \alpha_n(x)}} = E_{\alpha \dots \alpha_n}
 \]
-I calculate the minimum of the multidimensional function:
+We need to calculate the minimum of the multidimensional function:
 \[
 \nabla_{\alpha}E=0 \rightarrow
 \begin{cases}
@@ -327,14 +329,17 @@ I calculate the minimum of the multidimensional function:
 \frac{\partial}{\partial \alpha_n}=0 \rightarrow \alpha_n= \alpha_{n, min}\\
 \end{cases}
 \]
-I find a collection of energies and wavefunctions.\\
-I am not always close to get the right solution because the probability of getting the right ground state is very low.\\
+Doing so we find a collection of energies and wavefunctions. The more parameters we have, the more we can explore the space, but  we have no guarantee of finding the exact solution. Indeed, the probability of getting the right ground state is very low.
 \newline
 \noindent\rule{4cm}{0.1pt}
 \newline
-Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2$\\
-1) Variational Ansatz: I use the \underline{normalized gaussian} to best represent the harmonic oscillator: $\varphi_{\alpha}(x)=\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}e^{-{\frac{x^2}{4\alpha^2}}}$\\
-2) Computation of $E(\alpha)$ by first evaluating the hamiltonian function of $\varphi_{\alpha}(x)$ (first fragment, so to say)
+\\
+So which are the steps of this approximation method? Let's go through them using the quantum harmonic oscillator.\\
+
+Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2$\\
+1) \textbf{Variational Ansatz}: We "guess" a normalized (the $4$ term is used for normalization) gaussian to best represent the harmonic oscillator: $\varphi_{\alpha}(x)=\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}e^{-{\frac{x^2}{4\alpha^2}}}$\\
+
+2) \textbf{Computation of $E(\alpha)$} by first evaluating the hamiltonian function of $\varphi_{\alpha}(x)$ (first fragment, so to say)
 \[
 -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\varphi_{\alpha}(x)=\]
 \[=\,-\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\frac{d}{dx}e^{-{\frac{x^2}{4\alpha^2}}}\]
@@ -350,13 +355,13 @@ Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{
 \[
 =\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\cdot\frac{1}{2\alpha^2}\cdot\bigg(1-\frac{x}{2\alpha^2}\bigg)e^{-{\frac{x^2}{4\alpha^2}}}
 \]
-I can also evaluate the harmonic oscillator's period.
+Which ultimately results in (also quantum oscillation period?): 
 \[
 T=\frac{\hbar^2}{4m\alpha^2}\bigg[1+\frac{x^2}{2\alpha^2}\bigg]e^{-{\frac{x^2}{4\alpha^2}}}\cdot\frac{1}{(\sqrt{2\pi}\alpha)^{1/2}}
 \]
 And go on with the evaluation of $E(\alpha)$.
 \[
-E(\alpha)=\frac{1}{\sqrt{2\pi}\alpha}\cdot \int dx\, e^{\frac{x^2}{2\alpha^2}}\bigg[\frac{\hbar^2}{4m\alpha}\bigg(1-\frac{x^2}{2\alpha^2}\bigg)+\frac{1}{2}m\omega^2x^2\bigg]=
+E(\alpha)=\frac{1}{\sqrt{2\pi}\alpha}\cdot \int dx\, e^{\frac{x^2}{2\alpha^2}}\bigg[\frac{\hbar^2}{4m\alpha}\bigg(1+\frac{x^2}{2\alpha^2}\bigg)+\frac{1}{2}m\omega^2x^2\bigg]=
 \]
 \[
 =\frac{1}{\sqrt{2\pi}\alpha}+\bigg(\frac{\hbar^2}{8m\alpha^4}+\frac{1}{2}m\omega^2\bigg)\cdot \int\,dx\,\frac{e^{\frac{x^2}{2\alpha^2}}}{\sqrt{2\pi}\alpha}x^2
@@ -369,10 +374,12 @@ The latter sum is a sum of two energy values.
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.20]{img_4.jpg}
+	\caption{In this picture we can see a point of intersection becuase we get the exat result.}
+	\label{fig:intersect}
 \end{figure}
 To find $\alpha_{min}\rightarrow\frac{\partial}{\partial \alpha}E(\alpha)=0$
 \[
-\frac{\partial}{\partial \alpha}E(\alpha)=-2\cdot\frac{3}{8}\frac{\hbar}{m}\alpha^{-3}+\alpha m\omega^2=0
+\frac{\partial}{\partial \alpha}E(\alpha)=-2\cdot\frac{3}{8}\frac{\hbar}{m\alpha^{3}}+\alpha m\omega^2=0
 \]
 Multiply by $\alpha^3$ both sides:
 \[
@@ -382,4 +389,4 @@ Multiply by $\alpha^3$ both sides:
 \[
 \alpha^2=\sqrt{\frac{\hbar^2}{m^2\omega^2}}
 \]
-It's an intercept and it's valid for ground state only.
+This is the same result we got for the quantum harmoni oscillation problem! Keep in mind that this method \underline{only} applies to the ground state.
