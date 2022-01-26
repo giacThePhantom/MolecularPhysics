@@ -1,30 +1,40 @@
 \graphicspath{{chapters/05/}}
 \chapter{Approximation methods}
-
+How do we solve quantum mechanical problems? Or to be more specific, how to solve the (stationary) Schrodinger equation $ H \psi = E \psi$? There are some "solvable" problems, for which we get a wave function to fit any desired value. As the problems become more complicated, even by relying on super computers it is impossible to design algorithms that provide for an exact solution. Here's the need for approximation methods. Approximation methods can be "ideal" and "non-ideal" (not conventional names). An ideal approximation method can become an exact method by tuning some parameters, the non-ideal ones will always remain an approximation, even with huge computational power (many in biology are non-ideal, like the Hartree-Fock, and are developed upon a physical intuition that allows to make important assumptions).
+Some assumption concern the shape of the Hamiltonian (like confining a particle in a box instead of a complex potential), some concern the solution of a given Hamiltonian. 
+The question we ask ourselves as biologist is "do we want to be more accurate or insightful?". If our aim is a biological application of quantum mechanics we are more interested in accuracy rather than completely understanding a structure $\rightarrow$ approximation.
 \section{Truncated eigenstate expansion (Generalized Fourier)}
 An Hermitian operator $\hat{O}$ defined such as it is complete and orthonormal $\hat{O}^+=\hat{O}$ can be applied to a wave function $\hat{O}\Psi_n(x)=o_n\Psi_n(x)$ such as $\bigl(\Psi_n(x),\Psi_m(x)\bigr)=\delta_{mn}$\\
+Remember that \textit{complete} and \textit{orthonormal} means:
+\begin{itemize}
+\item \textit{orthonormal}: $\bigl(\Psi_n(x),\Psi_m(x)\bigr)=\delta_{mn}$, or using Dirac notation $\langle o_k|o_n \rangle = \delta_{mn}$
+\item \textit{complete}: $ | \psi \rangle = \sum_n \langle o_k | \psi \rangle |o_n \rangle$.
+\end{itemize}
+
 $\rightarrow$ If given $g(x)\in L^2$ I can write the projection of function onto a basis of functions\\
 \[
-g(x)=\sum_{n}\bigl(\Psi_n(n),g(n)\bigr)\Psi_n(x) =\sum_{n=1}^{\infty}c_n\Psi_n(x)\\
+g(x)=\sum_{n}\bigl(\Psi_n(x),g(x)\bigr)\Psi_n(x) =\sum_{n=1}^{\infty}c_n\Psi_n(x)\\
 \]
-$\bigl(\Psi_n(n),g(n)\bigr)$ are coefficient of an inner product with $c_n\in \mathbb{C}$
-I have a vector projected to its components.\\
-$\vec v = v_1\hat{e}_1+v_r\hat{e}_r$\\
+Where $\bigl(\Psi_n(n),g(n)\bigr)$ are coefficient of the inner product with $c_n\in \mathbb{C}$. \\
+
+\textbf{NB:} any wave function can be expanded, just like $\vec{v} = \sum_n c_n \vec{e}_n$, where $c_n = \vec{v} \vec{e}_n$. But the expansion can be truncated. For example, if we have a vector projected to its components $\vec v = v_1\hat{e}_1+v_r\hat{e}_r$, we can choose a smart basis ${\vec{w}_1, \vec{w}_2}$, so that we can describe the vector with fewer elements and end up with something like $ \vec{v} \cong (\vec{v} \cdot \vec{w}_1) \vec{w}_1 $ .
 We shall truncate the sum to a finite number - not to infinite - such as there is no projection onto the third coordinate but only to a two dimensional plane.\\
-NOTE: $\hat{O}=\hat{P}$ $\rightarrow$ eigenstates are represented by plane waves that are continuous. I can integrate:\\
+
+
+\textbf{NB}: Suppose $\hat{O}=\hat{P}$ (momentum operator) $\rightarrow$ eigenstates are represented by plane waves that are continuous. I can integrate:\\
 \[
 g(x)=\int_{-\infty}^{\infty}\frac{dp}{2\pi}(e^{ipx},g(x))\cdot e^{i\frac{px}{\hbar}}
 \]
-This is an integral of a function over phase. The inner product represents a coefficient with a continuous label so it's a function of the label.
+This is an integral of a function over phase (where $\frac{dp}{2\pi}$ serves as normalization costant). The inner product represents a coefficient with a continuous label so it's a function of the label.
 \[
-\tilde{g}(p)=\int dx\cdot e^{-ipx}g(x) \rightarrow g(x)=\int \frac{dp}{2\pi} \cdot \tilde{g}(p) \cdot e^{-ipx}
+\tilde{g}(p)=\int dx\cdot e^{-ipx}g(x)\; \rightarrow \; g(x)=\int \frac{dp}{2\pi} \cdot \tilde{g}(p) \cdot e^{-ipx}
 \]
-This latter is an integral over momentum of Fourier transform with a negative sign.
-$\mathbf{\tilde{g}(p)}$ is the \textbf{FOURIER TRANSFORM} that is a measurable quantity and it's also one of the most successful algorithms (FFT).\\
+The latter is an integral over momentum of Fourier transform with a negative sign.
+$\mathbf{\tilde{g}(p)}$ is the \textbf{Fourier transform}, that is a measurable quantity and it's also one of the most successful algorithms (FFT).\\
 \\
-Suppose I have a nucleus with an electron flying by. I need $|\Psi(x)|^2$, I can get it by solving Schr{\"o}dinger equation. With scattering experiments I can measure $\mathbf{|\tilde{\Psi}(p)|^2}$. This method is used in X-Ray Diffraction Crystallography, IR spectroscopy and so on.
+Suppose we have a quantum system composed by a nucleus with an electron flying by. I need $|\Psi(x)|^2$, I can get it by solving Schr{\"o}dinger equation. With scattering experiments I can measure the Fourier transform $\mathbf{|\tilde{\Psi}(p)|^2}$. This method is used in X-Ray Diffraction Crystallography, IR spectroscopy and so on.
 \newline
-Example:
+So, how do we truncate the expasion? Example:
 \[
 (g,g)=\biggl(\sum_nc_n\Psi_n(x), \sum_mc_m\Psi_m(x)\biggr) = \sum_{m,n}c_n^*\cdot c_m(\Psi_n, \Psi_m)
 \]
@@ -33,26 +43,29 @@ where $(\Psi_n,\Psi_m)=\delta_{nm}$ and for the Kronecker delta properties I get
 (g,g)= \sum_nc_n^* \cdot c_m \cdot 1 \rightarrow (g,g)=\sum_{n=0}^{\infty}|c_n|^2
 \]
 that is the square module of Fourier coefficient.\\
-If $g(x)$ is a wave function then $(g,g)=1$, which is the probability of \emph{always} finding the electron anywhere.\\
+If $g(x)$ is a wave function then $(g,g)=1$, which is the probability of finding the electron in the region delimited by the function (obviusly, the electron will \textit{always} be somewhere).\\
 \newline
-\textbf{SUM RULE}: $\sum_{n=0}^{\infty}|c_n|^2=1$
+From $(g,g)=1$ we get the \textbf{SUM RULE}: $\; \sum_{n=0}^{\infty}|c_n|^2=1$
+The aim of the approximation method is finding a $M$ integer that indicates how far from one is the wave function that needs to be approximated.E.g.: $\; \sum_{n=0}^{M}|c_n|^2 \simeq 0.98$\\
 
-\ul{The aim of the approximation method is finding a $M$ integer that indicates how far from one is the wave function that needs to be approximated.}\\
-\newline
-\noindent\rule{4cm}{0.1pt}
-\newline
-We shall solve Schr{\"o}dinger equation written as $\hat{H}\varphi_n=E_n\varphi_n$. We assume we can solve $\hat{H}_0\psi_n=\lambda_n\psi_n$ because it represents an harmonic oscillator.\\
+\noindent
+\subsection{The art of approximation}
+For example, we might want to use the harmonic oscillator ground state to approximate a sum of Gaussian. Meaning "use problem B to solve problem A". Clearly, problem B shall be as close as possible to probelm A.\\
+Our aim is to solve the Schr{\"o}dinger equation written as $\hat{H}\varphi_n=E_n\varphi_n$, but "there's no free launch", and we must "pay the price" assuming we can solve $\hat{H}_0\psi_n=\lambda_n\psi_n$ as it represents an harmonic oscillator (shown in figure \ref{fig:approximation}).\\
 \begin{figure}[htbp!]
 \includegraphics[scale=0.20]{img_1.jpg}
+\label{fig:approximation}
+\caption{How to approximate an otherwise very difficult function with a known, simpler one.}
 \end{figure}
+\textbf{1)} First we proceed by writing the S.E. with the truncated basis set.
 \[
 \hat{H}\bigg(\sum_{m=1}^{M}c_m^{(n)}\psi_m(x)\bigg)=E_n\bigg(\sum_{m=1}{M}c_m^{(n)}\psi_m(x)\bigg)
 \text{ where $c_m^{(n)}=\int dx\,\psi_m^*(x)\varphi_n(x)$}
 \]
-since the Hamiltonian operator is a function it can be propagated through the equation. Right now I am expanding $n$ and projecting it onto $m$.\\
+since the Hamiltonian operator is a function it can be propagated through the equation. Right now we are expanding $n$ and projecting it onto $m$.\\
 \[
 \sum_{m=1}^{M}c_m^{(n)}\,\hat{H}\psi_m=E_n\,\sum_{m=1}^{M}c_m^{(n)}\psi_m\]
-We multiply both sides for an arbitrary wave function $\psi_l$ (that we can supposedly solve).
+\textbf{2)} We project both functions on the basis (scalar product). We multiply both sides for an arbitrary wave function $\psi_l$ (that we can supposedly solve).
 \[\sum_{m=1}^{M}\,(\psi_l,\hat{H}\psi_m)c_m^{(n)}=E_n\,\sum_{m=1}^{M}c_m^{(n)}(\psi_l,\psi_m)
 \]
 The inner product between two functions gives an integer. \\
@@ -60,16 +73,22 @@ $H_{lm}=H_{ml}^*$ is an hermitian matrix that can be diagonalized to get the eig
 \[
 \sum_{m}^{M}H_{lm}c_m^{(n)}=E^{(n)}c_l
 \]
-I reduced a complex problem to a conventional matrix problem with a $H_{lm}$ integral.\\
+We reduced a complex problem to a conventional eigenvalue problem with a $H_{lm}$ matrix. The pain is to compute the $M$ integrals and to find an appropriate "probelm B". As a results, this method is hardly applicable to any problems with more of 3 dimensions. \\
 
-\section{Quantum tunneling - The Landau problem}
-\begin{wrapfloat}{figure}{R}{0pt}
-	\includegraphics[scale=0.20]{img_2.jpg}
-\end{wrapfloat}
-Wave function: $U(x)=U_0(x^2-x_0^2)^2$\\
-Hamiltonian for said wave function: $\hat{H}=-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2$
-This is a symmetric function, we can approximate the function with an harmonic oscillator. Considering the potential to its lowest points it can be approximated and then expanded. \\
-I have two basis elements $\rightarrow$ two eigenstates $n=0,1$ (ground state and first excited state)
+\section{Quantum tunneling - The Landau problem -The ass problem}
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.30]{img_2.jpg}
+	\label{fig:ass}
+	\caption{ass problem}
+\end{figure}
+The ass problem is the gate to the understanding of quantum tunneling (necessary for quantum bonds, which are a reflection of the quantum tunneling behaviour). 
+The potential is: $U(x)=U_0(x^2-x_0^2)^2$\\
+
+The Hamiltonian for the wave function: $\hat{H}=-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2$
+Note that this is a symmetric function, roughly composed by two gaussians, so we can approximate the function with an harmonic oscillator. Considering the potential to its lowest points it can be approximated and then expanded. \\
+
+We have two basis elements $\rightarrow$ two eigenstates $n=0,1$ (ground state and first excited state), and we whish to solve $hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
 \[
 \hat{H}\varphi_n=E_n\varphi_n
 \begin{cases}
@@ -78,7 +97,7 @@ I have two basis elements $\rightarrow$ two eigenstates $n=0,1$ (ground state an
 \end{cases}
 \]
 $C_L$ and $C_R$ are coefficients for each part of the function, one for each eigenstate.\\
-I calculate the value of the matrices.\\
+We then proceed to calculate the value of the matrices for the expansion.\\
 \[
 H_{RR}=(\psi_R,\hat{H}\,\psi_R)= \int\psi_R^*(x)\,-\frac{\hbar^2}{2m}\,\bigg(\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2\bigg)\,\psi_R(x)\,dx\]
 \[
