@@ -89,7 +89,7 @@
 \contentsline {chapter}{\numberline {5}Approximation methods}{37}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Truncated eigenstate expansion (Generalized Fourier)}{37}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}The art of approximation}{38}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Quantum tunneling - The Landau problem -The ass problem}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Quantum tunneling - The Landau problem}{39}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Ritz-Rayleigh variational principle}{43}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Atomic physics}{46}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Quantum theory of the Hydrogen atom}{46}{section.6.1}%

@@ -2,11 +2,15 @@
 \chapter{Atomic physics}
 \section{Quantum theory of the Hydrogen atom}
 \subsection{Evaluation of conservation of energy}
-In classical mechanics I can write
+Remember that when talink about classical theory of the hydrogen atom we simplified the problem by switching from Cartesian to polar coordinates and, by applying the conservation laws, we obtained:
 \[
 E=\frac{1}{2}m\bigg(\frac{d}{dt}n\bigg)^2+\frac{L^2}{2mr^2}+U(r)
 \]
-that can be represented in quantum mechanics with the hamiltonian. The best evaluation of the hamiltonian for the quantum analysis of the hydrogen atom is obtained by using the \textbf{spherical coordinates}. Nabla in spherical coordinates $(r,\theta,\varphi)$ is hence written as:
+that can be represented in quantum mechanics with the hamiltonian. The hamiltonian in polar coordinates is written as
+\[
+\hat{H}=(-\frac{\hbar^2}{2m^2}\, \nabla - \frac{e^2}{r})
+\]
+The best evaluation of the hamiltonian for the quantum analysis of the hydrogen atom is obtained by using the \textbf{spherical coordinates}. Nabla (the Laplacian) in spherical coordinates $(r,\theta,\varphi)$ is hence written as:
 \[
 \nabla^2=\frac{1}{r^2}\frac{\partial^2}{\partial r^2}+\frac{1}{r^2}\cdot\bigg(\frac{\partial^2}{\partial \theta^2}+\frac{1}{\tan\theta}\frac{\partial}{\partial\theta}+\frac{1}{\sin\theta}\frac{\partial^2}{\partial\varphi^2}\bigg)
 \]
@@ -15,14 +19,14 @@ The hamiltonian so becomes:
 \hat{H}=\frac{\hbar^2}{2mr^2}\frac{\partial^2}{\partial r^2}+\frac{\hbar^2}{2mr^2}\cdot\bigg(\frac{\partial^2}{\partial \theta^2}+\frac{1}{\tan\theta}\frac{\partial}{\partial\theta}+\frac{1}{\sin\theta}\frac{\partial^2}{\partial\varphi^2}\bigg)-\frac{e^2}{r}
 \]
 The first part is called \textbf{radial part} because it's $r$-dependent only, the other is the \textbf{angular part}.\\
-Now I can consider the angular momentum in classical mechanics and quantum mechanics:
+Now we can consider the angular momentum in classical mechanics and quantum mechanics:
 \[
 \vec{L}=\vec{r}\times\vec{p}=\vec{r}\times(-i\vec{\nabla}\hbar)
 \]
 \[
-\rightarrow \vec{\hat{L^2}}=\hat{L_x}\hat{L_x}+\hat{L_y}\hat{L_y}+\hat{L_z}\hat{L_z}
+\textit{Fact} \rightarrow \vec{\hat{L^2}}=\hat{L_x}\hat{L_x}+\hat{L_y}\hat{L_y}+\hat{L_z}\hat{L_z}
 \]
-This is corresponding to the angular part of the hamiltonian that can be rewritten with the inclusion of the angular momentum multiplied by $\hbar^2$.
+This is corresponding to the angular part of the hamiltonian that can be rewritten in sperical coordinates with the inclusion of the angular momentum multiplied by $\hbar^2$.
 \[
 \hat{H}=\frac{\hbar^2}{2mr^2}\frac{\partial^2}{\partial r^2}+\frac{\hat{L^2}}{2mr^2}-\frac{e^2}{r}
 \]
@@ -34,15 +38,15 @@ The fact that the angular momentum is not present in the radial part of the hami
 \end{cases}
 \]
 \\
-These are called \textbf{SPHERICAL HARMONICS}, they depend on two quantum numbers because they use two different operators and are only part of the angular part of the hamiltonian.\\
+These are called \textbf{spherical harmonics}, they depend on two quantum numbers because they use two different operators and are only part of the angular part of the hamiltonian.\\
 \[
 \begin{cases}
-\hat{L_z}Y(\theta,\varphi)=\hbar mY_{l,m}(\theta,\varphi) & m = l, -l+1,..., 0,..., -l \,\text{(projection)}\\
-\hat{L^2}Y(\theta,\varphi)=\hbar^2 l(l+1)Y_{l,m}(\theta,\varphi) & l = 0, 1, 2, ... \,\text{(max length,)}\, m < l^2
+\hat{L_z}Y_{lm}(\theta,\varphi)=\hbar mY_{l,m}(\theta,\varphi) & m = l, -l+1,..., 0,..., -l \,\text{(projection)}\\
+\hat{L^2}Y_{lm}(\theta,\varphi)=\hbar^2 l(l+1)Y_{l,m}(\theta,\varphi) & l = 0, 1, 2, ... \,\text{(max length,)}\, m < l^2
 \end{cases}
 \]
-$\rightarrow$ QUANTIZATION OF $\hat{L_j}$ and $\hat{L^2}$.\\
-The difference between $l^2$ and $l(l+1)$ is noticeable when $l$ is small. For larger $l$ you go back to the classical realm (correspondence principle).\\
+\textbf{N.B.:} in this way we obtain the quantization of $\hat{L_j}$ and $\hat{L^2}$.\\
+Where $m$ represents the projection (bounded to $l$), and $l$ the length. Note that we wrote $l(l+1)$ and not $l^2$, the difference only matters in the quantum realm and it is noticeable when $l$ is small. For larger $l$ we go back to the classical realm (correspondence principle).\\
 The wave function can then undergo variables separation, this implies the fact that eigenstates of the hamiltonian are also eigenstates of the square of the angular momentum.
 \[
 \Psi_{n,l,m}(r,\theta,\varphi)=R(r)\cdot Y_{l,m}(\theta,\varphi)
@@ -56,34 +60,49 @@ By eliminating $Y_{l,m}$ we obtain the \textbf{one-dimensional Schr\"odinger equ
 \frac{-\hbar^2}{2mr^2}\frac{\partial^2r}{\partial r^2}R_n+\frac{\hbar^2l(l+1)}{2mr^2}R_n-\frac{e^2}{r}R_n=E_{n,m,l}R_n
 \]
 \\
+
 \subsection{Angular momentum conservation}
-I always use spherical coordinates and with these I can rewrite kinetic energy in a polar form.\\
+We can also rewrite kinetic energy in a polar form.\\
 \[
 -\frac{\hbar^2}{2m}\nabla^2 \rightarrow-\frac{\hbar^2}{2m}\frac{1}{r}\frac{\partial^2}{\partial r^2}\dot{r}+\frac{\hat{L^2}}{2mr^2} = \hat{T_r}+\hat{T}_{(\theta,\varphi)}
 \]
-$\hat{T_r}$ is the radial component of kinetic energy, $\hat{T}_{(\theta,\varphi)}$ is the angular component of kinetic energy. Note that if the radial part is applied to a radial function $rR(r)$, the second derivative applies to the product of $r$ and the function, not just to $r$.
+Where $\hat{T_r}$ is the radial component of kinetic energy, $\hat{T}_{(\theta,\varphi)}$ is the angular component of kinetic energy. Note that if the radial part is applied to a radial function $rR(r)$, the second derivative applies to the product of $r$ and the function, not just to $r$.
 \[
 R(r)=\frac{1}{r}\frac{\partial^2(r\cdot R(r))}{\partial r^2}
 \]
 As we said before, the hamiltonian commutes with the square of the angular momentum $[\hat{H},\,\hat{L^2}]=0$ because the angular momentum doesn't have any derivatives with respect to $r$. By considering the hamiltonian as $\hat{H}=\hat{T_r}+\hat{V}$ with $\hat{V}$ as describing the coulomb potential, these commutations are possible:\\
 \[
-[\hat{T_r}\,,\,\hat{L^2}]=0\,,\,\,\,[\hat{V}\,,\,\hat{L}]=0\,,\,\,\,[\hat{L^2}\,,\,\hat{L^2}]=0
+[\hat{T_r}\,,\,\hat{L^2}]=0 \textit{as \hat{T_r} doesn't depened on \theta}\,,\,\,\,[\hat{V}\,,\,\hat{L}]=0\,,\,\,\,[\hat{L^2}\,,\,\hat{L^2}]=0
 \]
 All these have common sets of eigenstates. \\
 \newline
-We can consider again one-dimensional Schr\"odinger equation:
+We can implement the fact that the operators, as said above, share a common set of eigenstate by pluggin the following:
+\[
+\psi_{nml}(r, \theta, \varphi) = R_n(r)Y_{lm}(\theta, \varphi)
+\]
+in the Schr\"odinger equation, obtaining a family of equations, one for each unit of angular momentum:
 \[
 \frac{-\hbar^2}{2mr^2}\frac{\partial^2r}{\partial r^2}R_n+\frac{\hbar^2l(l+1)}{2mr^2}R_n-\frac{e^2}{r}R_n=E_{n,m,l}R_n
 \]
 $l=0 \rightarrow$ \textbf{s-state}: $\frac{-\hbar^2}{2mr^2}\frac{\partial^2r}{\partial r^2}R_n-\frac{e^2}{r}R_n=E_{n,l}R_n$\\
+\\
 $l=1 \rightarrow$ \textbf{p-state}: $\frac{-\hbar^2}{2mr^2}\frac{\partial^2r}{\partial r^2}R_n+\frac{3\hbar^2}{2mr^2}R_n-\frac{e^2}{r}R_n=E_{n,m,l}R_n$\\
+\\
 $l=2 \rightarrow$ \textbf{d-state}: $\frac{-\hbar^2}{2mr^2}\frac{\partial^2r}{\partial r^2}R_n+\frac{6\hbar^2}{2mr^2}R_n-\frac{e^2}{r}R_n=E_{n,m,l}R_n$\\
-I get stronger repulsions between states as $l$ grows. These function have specific graphs:\\
+\\
+We can infer from these equation that we get stronger repulsions between states as $l$ grows (graphs of such functions shown in figure \ref{fig_swaves}).\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_5.jpg}
+	\caption{Representation of s-waves}
+	\label{fig_swaves}
 \end{figure}
-I want to calculate the probability of a particle to be at distance $r$.
+\textbf{N.B.}: defining $U(r) \equiv rR(r)$ implies
+\[
+-\frac{\hbar}{2m} \frac{d^2}{dr^2} U(r) + \frac{\hbar l(l+1)}{2mr^2} U(r) - \frac{e^2}{r} u(r) = E U(r)
+\]
+Where $u(r)$ is not a potential. When we tried to solve the h-atom with classical mechanics, the analogy with the kinetic energy was perfect. This is not quite the case?
+Finally we want to calculate the probability of a particle to be at distance $r$.
 \[
 drProb(r)=|R(r)|^2r^2dr
 \]
@@ -94,7 +113,7 @@ Since the function is not dependent on $\theta$ or $\varphi$, the integral equal
 \[
 P(\vec{r},\vec{r}+dr)=\vec{r}^2R^2(r)dr
 \]
-Depending on the value of $l$ I can get the probability of the electron depending on $\theta$ and $\varphi$. At $l=0$ the probability is more concentrated on the centre and then fades out (s orbital). At $l=1$ the function depends on $\theta$ but not on $\varphi$, the function is cylindrically symmetrical (p orbital). There is no orbit on an atom, the concept of trajectory breaks down on a quantum level.\\
+Depending on the value of $l$ I can get the probability of the electron depending on $\theta$ and $\varphi$. At $l=0$ the probability is more concentrated on the centre and then fades out (s orbital). At $l=1$ the function depends on $\theta$ but not on $\varphi$, the function is cylindrically symmetrical (p orbital). It is important to remember that there is no orbit in an atom, for the concept of trajectory breaks down on a quantum level.\\
 \\
 
 \section{Relation between spin and statistics: Quantum many-body systems}
