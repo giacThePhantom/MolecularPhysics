@@ -9,23 +9,25 @@
 \contentsline {subsection}{\numberline {1.2.1}Newtonian mechanics}{8}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Example - point particle moving in $1D$ and subject to an harmonic force}{8}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Phase-space}{9}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Systems in three dimension and with more than one particle}{10}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Work and energy}{10}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.4}Systems in three dimension and with more than one particle}{9}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Work and energy}{9}{subsection.1.2.5}%
 \contentsline {subsubsection}{\numberline {1.2.5.1}Conservative forces}{10}{subsubsection.1.2.5.1}%
-\contentsline {paragraph}{\numberline {1.2.5.1.1}Three dimensional case}{11}{paragraph.1.2.5.1.1}%
-\contentsline {paragraph}{\numberline {1.2.5.1.2}Central forces}{11}{paragraph.1.2.5.1.2}%
-\contentsline {subsection}{\numberline {1.2.6}Conservation of mechanical energy}{11}{subsection.1.2.6}%
+\contentsline {paragraph}{\numberline {1.2.5.1.1}Three dimensional case}{10}{paragraph.1.2.5.1.1}%
+\contentsline {paragraph}{\numberline {1.2.5.1.2}Central forces}{10}{paragraph.1.2.5.1.2}%
+\contentsline {subsection}{\numberline {1.2.6}Conservation of mechanical energy}{10}{subsection.1.2.6}%
 \contentsline {subsubsection}{\numberline {1.2.6.1}Example}{11}{subsubsection.1.2.6.1}%
 \contentsline {subsection}{\numberline {1.2.7}Angular momentum conservation}{11}{subsection.1.2.7}%
-\contentsline {section}{\numberline {1.3}Classical theory of the hydrogen atom}{12}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Mechanical energy in polar coordinates}{13}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Case 1 - $E>0$}{14}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Case 2 - $E<0$}{14}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Conclusion}{14}{subsection.1.3.4}%
-\contentsline {section}{\numberline {1.4}Hamiltonian formulation of mechanics}{14}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Hamilton's theory}{15}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Hamilton's equations}{15}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Harmonic oscillator}{15}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.3}Hamiltonian formulation of mechanics}{12}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Hamilton's theory}{12}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Hamilton's equations}{13}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Harmonic oscillator}{13}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Classical theory of the hydrogen atom}{13}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Approximations}{14}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Newton's equation}{14}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Mechanical energy in polar coordinates}{14}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Case 1 - $E>0$}{15}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Case 2 - $E<0$}{15}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}Conclusion}{15}{subsection.1.4.6}%
 \contentsline {chapter}{\numberline {2}Breakdown of classical mechanics}{16}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The fall of determinism}{16}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Double slit experiment}{16}{subsection.2.1.1}%

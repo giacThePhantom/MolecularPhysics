@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.1)  26 JAN 2022 12:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.1)  26 JAN 2022 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -830,14 +830,14 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 ... Schr\"oedinger equation}{23}{section.2.5}
+l.49 ...line {2.4.2}Finding}{22}{subsection.2.4.2}
                                                   % [1
 
-] [2] [3])
+] [2] [3] [4])
 \tf@toc=\write4
 \openout4 = `principal.toc'.
 
- [4] [5]
+ [5]
 [6
 
 ] (./chapters/01_introduction.tex
@@ -847,33 +847,33 @@ Chapter 1.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
+(hyperref)                removing `math shift' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
+(hyperref)                removing `math shift' on input line 53.
 
-[8] [9] [10] [11] [12] [13]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 289.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 289.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 302.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 302.
-
-[14]
-Overfull \hbox (11.77821pt too wide) detected at line 365
+[8] [9] [10] [11] [12]
+Overfull \hbox (11.77821pt too wide) detected at line 311
 []
  []
+
+[13] [14]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 380.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 380.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 393.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 393.
 
 ) (./chapters/02_breakdown_classical_mechanics.tex [15]
 Chapter 2.
@@ -882,7 +882,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
-<chapters/02//gun_ds.png, id=938, 626.94225pt x 348.70274pt>
+<chapters/02//gun_ds.png, id=948, 626.94225pt x 348.70274pt>
 File: chapters/02//gun_ds.png Graphic file (type png)
 <use chapters/02//gun_ds.png>
 Package pdftex.def Info: chapters/02//gun_ds.png  used on input line 15.
@@ -900,7 +900,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--26
 [16
 
  <./chapters/02//gun_ds.png>]
-<chapters/02//wave_ds.png, id=950, 566.115pt x 328.22626pt>
+<chapters/02//wave_ds.png, id=960, 566.115pt x 328.22626pt>
 File: chapters/02//wave_ds.png Graphic file (type png)
 <use chapters/02//wave_ds.png>
 Package pdftex.def Info: chapters/02//wave_ds.png  used on input line 37.
@@ -911,7 +911,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--46
  []
 
 [17 <./chapters/02//wave_ds.png>]
-<chapters/02//electron_ds.png, id=964, 1606.0pt x 863.225pt>
+<chapters/02//electron_ds.png, id=974, 1606.0pt x 863.225pt>
 File: chapters/02//electron_ds.png Graphic file (type png)
 <use chapters/02//electron_ds.png>
 Package pdftex.def Info: chapters/02//electron_ds.png  used on input line 62.
@@ -921,7 +921,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
-<chapters/02//ele_bal_ds.png, id=966, 518.93875pt x 250.9375pt>
+<chapters/02//ele_bal_ds.png, id=976, 518.93875pt x 250.9375pt>
 File: chapters/02//ele_bal_ds.png Graphic file (type png)
 <use chapters/02//ele_bal_ds.png>
 Package pdftex.def Info: chapters/02//ele_bal_ds.png  used on input line 75.
@@ -940,14 +940,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--86
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18 <./chapters/02//electron_ds.png>]
-<chapters/02//photoelectric.png, id=976, 2569.6pt x 1290.8225pt>
+<chapters/02//photoelectric.png, id=986, 2569.6pt x 1290.8225pt>
 File: chapters/02//photoelectric.png Graphic file (type png)
 <use chapters/02//photoelectric.png>
 Package pdftex.def Info: chapters/02//photoelectric.png  used on input line 108
 .
 (pdftex.def)             Requested size: 260.17464pt x 130.68521pt.
  [19 <./chapters/02//ele_bal_ds.png>]
-<chapters/02//quantization.png, id=986, 1048.91875pt x 931.48pt>
+<chapters/02//quantization.png, id=996, 1048.91875pt x 931.48pt>
 File: chapters/02//quantization.png Graphic file (type png)
 <use chapters/02//quantization.png>
 Package pdftex.def Info: chapters/02//quantization.png  used on input line 134.
@@ -958,7 +958,7 @@ Package pdftex.def Info: chapters/02//quantization.png  used on input line 134.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20 <./chapters/02//photoelectric.png>] [21 <./chapters/02//quantization.png>]
-<chapters/02//stern_ger.png, id=1003, 642.4pt x 304.13625pt>
+<chapters/02//stern_ger.png, id=1013, 642.4pt x 304.13625pt>
 File: chapters/02//stern_ger.png Graphic file (type png)
 <use chapters/02//stern_ger.png>
 Package pdftex.def Info: chapters/02//stern_ger.png  used on input line 172.
@@ -1058,7 +1058,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:approximation' on page 42 undefined on input line
  54.
 
-<chapters/05//img_1.jpg, id=1114, 544.0325pt x 381.425pt>
+<chapters/05//img_1.jpg, id=1124, 544.0325pt x 381.425pt>
 File: chapters/05//img_1.jpg Graphic file (type jpg)
 <use chapters/05//img_1.jpg>
 Package pdftex.def Info: chapters/05//img_1.jpg  used on input line 56.
@@ -1078,7 +1078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
-<chapters/05//img_2.jpg, id=1122, 684.5575pt x 358.33875pt>
+<chapters/05//img_2.jpg, id=1132, 684.5575pt x 358.33875pt>
 File: chapters/05//img_2.jpg Graphic file (type jpg)
 <use chapters/05//img_2.jpg>
 Package pdftex.def Info: chapters/05//img_2.jpg  used on input line 81.
@@ -1123,7 +1123,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--253
 
  []
 
-<chapters/05//img_3.jpg, id=1137, 705.63625pt x 326.21875pt>
+<chapters/05//img_3.jpg, id=1147, 705.63625pt x 326.21875pt>
 File: chapters/05//img_3.jpg Graphic file (type jpg)
 <use chapters/05//img_3.jpg>
 Package pdftex.def Info: chapters/05//img_3.jpg  used on input line 266.
@@ -1158,7 +1158,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--326
 
  []
 
-<chapters/05//img_4.jpg, id=1147, 523.9575pt x 378.41376pt>
+<chapters/05//img_4.jpg, id=1157, 523.9575pt x 378.41376pt>
 File: chapters/05//img_4.jpg Graphic file (type jpg)
 <use chapters/05//img_4.jpg>
 Package pdftex.def Info: chapters/05//img_4.jpg  used on input line 359.
@@ -1198,7 +1198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--75
  []
 
 [51]
-<chapters/06//img_5.jpg, id=1166, 1095.09125pt x 269.005pt>
+<chapters/06//img_5.jpg, id=1176, 1095.09125pt x 269.005pt>
 File: chapters/06//img_5.jpg Graphic file (type jpg)
 <use chapters/06//img_5.jpg>
 Package pdftex.def Info: chapters/06//img_5.jpg  used on input line 84.
@@ -1263,12 +1263,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-<chapters/06//img_6.jpg, id=1176, 421.575pt x 372.39125pt>
+<chapters/06//img_6.jpg, id=1187, 421.575pt x 372.39125pt>
 File: chapters/06//img_6.jpg Graphic file (type jpg)
 <use chapters/06//img_6.jpg>
 Package pdftex.def Info: chapters/06//img_6.jpg  used on input line 146.
 (pdftex.def)             Requested size: 84.31349pt x 74.47693pt.
-<chapters/06//img_7.jpg, id=1177, 537.00626pt x 372.39125pt>
+<chapters/06//img_7.jpg, id=1188, 537.00626pt x 372.39125pt>
 File: chapters/06//img_7.jpg Graphic file (type jpg)
 <use chapters/06//img_7.jpg>
 Package pdftex.def Info: chapters/06//img_7.jpg  used on input line 153.
@@ -1429,7 +1429,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 46.
 
-<chapters/07//img_8.jpg, id=1217, 411.5375pt x 255.95625pt>
+<chapters/07//img_8.jpg, id=1227, 411.5375pt x 255.95625pt>
 File: chapters/07//img_8.jpg Graphic file (type jpg)
 <use chapters/07//img_8.jpg>
 Package pdftex.def Info: chapters/07//img_8.jpg  used on input line 50.
@@ -1475,12 +1475,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
-<chapters/07//img_9.jpg, id=1223, 555.07375pt x 376.40625pt>
+<chapters/07//img_9.jpg, id=1233, 555.07375pt x 376.40625pt>
 File: chapters/07//img_9.jpg Graphic file (type jpg)
 <use chapters/07//img_9.jpg>
 Package pdftex.def Info: chapters/07//img_9.jpg  used on input line 97.
 (pdftex.def)             Requested size: 166.52339pt x 112.92273pt.
-<chapters/07//img_13.jpg, id=1224, 1542.76375pt x 697.60625pt>
+<chapters/07//img_13.jpg, id=1234, 1542.76375pt x 697.60625pt>
 File: chapters/07//img_13.jpg Graphic file (type jpg)
 <use chapters/07//img_13.jpg>
 Package pdftex.def Info: chapters/07//img_13.jpg  used on input line 103.
@@ -1533,7 +1533,7 @@ mr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )	([] \OMS/cmsy/m/n/10 ^^@
  []\OT1/cmr/m/n/10 )[]
  []
 
-<chapters/07//img_14.png, id=1240, 557.08125pt x 414.54875pt>
+<chapters/07//img_14.png, id=1250, 557.08125pt x 414.54875pt>
 File: chapters/07//img_14.png Graphic file (type png)
 <use chapters/07//img_14.png>
 Package pdftex.def Info: chapters/07//img_14.png  used on input line 170.
@@ -1584,7 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
  []
 
 [66 <./chapters/07//img_14.png>]
-<chapters/07//img_15.jpg, id=1256, 1229.59375pt x 249.93375pt>
+<chapters/07//img_15.jpg, id=1266, 1229.59375pt x 249.93375pt>
 File: chapters/07//img_15.jpg Graphic file (type jpg)
 <use chapters/07//img_15.jpg>
 Package pdftex.def Info: chapters/07//img_15.jpg  used on input line 198.
@@ -1605,7 +1605,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-<chapters/08/img_10.jpg, id=1270, 657.45625pt x 167.62625pt>
+<chapters/08/img_10.jpg, id=1280, 657.45625pt x 167.62625pt>
 File: chapters/08/img_10.jpg Graphic file (type jpg)
 <use chapters/08/img_10.jpg>
 Package pdftex.def Info: chapters/08/img_10.jpg  used on input line 50.
@@ -1646,7 +1646,7 @@ Overfull \hbox (1.07393pt too wide) in paragraph at lines 137--138
  the CON-TROL QUBIT, the $[]$
  []
 
-<chapters/08/img_11.png, id=1285, 219.82124pt x 157.58875pt>
+<chapters/08/img_11.png, id=1295, 219.82124pt x 157.58875pt>
 File: chapters/08/img_11.png Graphic file (type png)
 <use chapters/08/img_11.png>
 Package pdftex.def Info: chapters/08/img_11.png  used on input line 141.
@@ -1691,7 +1691,7 @@ Overfull \hbox (33.4172pt too wide) detected at line 160
 = [] [] = [] = []
  []
 
-<chapters/08/img_12.jpg, id=1292, 909.3975pt x 467.7475pt>
+<chapters/08/img_12.jpg, id=1302, 909.3975pt x 467.7475pt>
 File: chapters/08/img_12.jpg Graphic file (type jpg)
 <use chapters/08/img_12.jpg>
 Package pdftex.def Info: chapters/08/img_12.jpg  used on input line 170.
@@ -1737,16 +1737,16 @@ Chapter 15.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 736188865416990035F2D203027E1978;27998.
+(rerunfilecheck)             Checksum: 515A732E4E1D6F84758377E11C1B7E8F;28282.
  ) 
 Here is how much of TeX's memory you used:
- 19585 strings out of 478994
- 330758 string characters out of 5864751
+ 19589 strings out of 478994
+ 330826 string characters out of 5864751
  689796 words of memory out of 5000000
- 36333 multiletter control sequences out of 15000+600000
+ 36335 multiletter control sequences out of 15000+600000
  429033 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,19n,91p,886b,896s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,19n,91p,886b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1775,10 +1775,10 @@ are/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 ti1000.pfb>
-Output written on ./build/principal.pdf (103 pages, 2544804 bytes).
+Output written on ./build/principal.pdf (103 pages, 2545697 bytes).
 PDF statistics:
- 1616 PDF objects out of 1728 (max. 8388607)
- 1430 compressed objects within 15 object streams
- 354 named destinations out of 1000 (max. 500000)
- 1473 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1627 PDF objects out of 1728 (max. 8388607)
+ 1441 compressed objects within 15 object streams
+ 356 named destinations out of 1000 (max. 500000)
+ 1489 words of extra memory for PDF output out of 10000 (max. 10000000)
 
