@@ -82,13 +82,13 @@ We reduced a complex problem to a conventional eigenvalue problem with a $H_{lm}
 	\label{fig:ass}
 	\caption{ass problem}
 \end{figure}
-The ass problem is the gate to the understanding of quantum tunneling (necessary for quantum bonds, which are a reflection of the quantum tunneling behaviour). 
-The potential is: $U(x)=U_0(x^2-x_0^2)^2$\\
+The ass problem is the gate to the understanding of quantum tunneling (necessary for quantum bonds, which are a reflection of the quantum tunneling behaviour). \\
+The potential is: $U(x)=U_0(x^2-x_0^2)^2$.\\
 
 The Hamiltonian for the wave function: $\hat{H}=-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2$
 Note that this is a symmetric function, roughly composed by two gaussians, so we can approximate the function with an harmonic oscillator. Considering the potential to its lowest points it can be approximated and then expanded. \\
 
-We have two basis elements $\rightarrow$ two eigenstates $n=0,1$ (ground state and first excited state), and we whish to solve $hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
+We have two basis elements, the two eigenstates $n=0,1$ (ground state and first excited state), and we whish to solve $hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
 \[
 \hat{H}\varphi_n=E_n\varphi_n
 \begin{cases}
@@ -96,7 +96,7 @@ We have two basis elements $\rightarrow$ two eigenstates $n=0,1$ (ground state a
 \varphi_1 \cong C_L^1\,\psi^L(x)+C_R^1\,\psi^R(x).
 \end{cases}
 \]
-$C_L$ and $C_R$ are coefficients for each part of the function, one for each eigenstate.\\
+$C_L$ and $C_R$ are coefficients for each part of the function, one for each eigenstate. The values $\varphi_o$ adn $\varphi_1$ are the two eigenvalues of a $2 \times 2 $ matrix.\\
 We then proceed to calculate the value of the matrices for the expansion.\\
 \[
 H_{RR}=(\psi_R,\hat{H}\,\psi_R)= \int\psi_R^*(x)\,-\frac{\hbar^2}{2m}\,\bigg(\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2\bigg)\,\psi_R(x)\,dx\]
@@ -111,7 +111,7 @@ The final result is
 H_{RR}=\frac{1}{2}\hbar\omega
 \]
 and since this is a symmetrical problem we can also foresee that $H_{LL}\cong\frac{1}{2}\hbar\omega$.\\
-The result of $H_{LR}=H_{RL}$ is expected to be very small because the probability of finding the particle in the middle of the harmonic oscillator is very small.
+The result of $H_{LR}=H_{RL}$ is expected to be very small because the probability of finding the particle in the middle of the harmonic oscillator is very small, i.e. when $\psi_L(x)$ is large, $\psi_R(x)$ is going o be small and viceversa. 
 \[
 H_{RL}=H_{LR}=\int dx\,\psi_L(x)\hat{H}\psi_R(x) = \varepsilon
 \]
@@ -119,30 +119,31 @@ Now we can calculate the matrix
 \[
 H_{mn}=
 \begin{pmatrix}
-\frac{1}{2}\hbar\omega & \varepsilon\\
-\varepsilon & \frac{1}{2}\hbar\omega
+E_0 & -\varepsilon\\
+-\varepsilon & E_0
 \end{pmatrix}
 =
 \begin{pmatrix}
-H_0 & \varepsilon\\
-\varepsilon & H_0
+\frac{1}{2}\hbar\omega & -\varepsilon\\
+-\varepsilon & \frac{1}{2}\hbar\omega
 \end{pmatrix}
 =
+E_0
 \begin{pmatrix}
-\frac{H_0}{\varepsilon} & 1\\
-1 & \frac{H_0}{\varepsilon}
+1 & -\frac{\varepsilon}{E_0}\\
+-\frac{\varepsilon}{E_0} & 1
 \end{pmatrix}
 \]
-$E_0>>>\varepsilon$ because of the energy barrier due to $H_{mn}$\\
-I reduced a complex problem to a linear algebra problem.\\
-$\hat{H}\psi=E\psi \rightarrow H_{mn}C_n^{(l)}=E_lC_n^{(l)}$\\
+\textbf{NB:} $E_0>>>\varepsilon$ because of the energy barrier due to $H_{mn}$.
+\newline
+We reduced a complex problem to a linear algebra problem: $\hat{H}\psi=E\psi \rightarrow H_{mn}C_n^{(l)}=E_lC_n^{(l)}$.\\
 \newline
 \textbf{Ansatz 1}: In the ground state I have 50\% probability of finding the particle
 \[
 \text{G.s.:}
 \begin{pmatrix}
-\frac{H_0}{\varepsilon} & 1\\
-1 & \frac{H_0}{\varepsilon}
+1 & -\frac{\varepsilon}{E_0}\\
+-\frac{\varepsilon}{E_0} & 1
 \end{pmatrix}
 \begin{pmatrix}
 1\\1
@@ -157,8 +158,8 @@ This ground state has slightly lower energy than the normal ground state
 \[
 \text{$1^{st}$ ex. st.:}
 \begin{pmatrix}
-\frac{H_0}{\varepsilon} & 1\\
-1 & \frac{H_0}{\varepsilon}
+1 & -\frac{\varepsilon}{E_0}\\
+-\frac{\varepsilon}{E_0} & 1
 \end{pmatrix}
 \begin{pmatrix}
 1\\-1
@@ -169,45 +170,49 @@ This ground state has slightly lower energy than the normal ground state
 1\\-1
 \end{pmatrix}
 \]
-\textbf{N.B.:} If the barrier is infinite the ground state is trivially degenerate. I then have two independent quantum systems. The particle cannot change its state.\\
-If the barrier is finite (slightly determined end of the barrier at very high energies) there's a chance that two states interact between each other. This leads to \textbf{splitting states}. The particle goes back to a 100\% probability of being in either one or another system.\\
-This is called \textbf{QUANTUM SUPERPOSITION}.
+\textbf{NB:} If the barrier is infinite the ground state is trivially degenerate. I then have two independent quantum systems. The particle cannot change its state. Instead, if the barrier is finite (slightly determined end of the barrier at very high energies) it splits into two states (\textbf{splitting states}) that interact with each other. The particle goes back to a 100\% probability of being in either one or another system. This is called \textbf{quantum superposition}.
 \newline
-Since the barrier is at very high energy, I could expect to find the correspondance principle at some point. Classical interpretation of the system at this point says that the particle could "decay" from a state of very high energy into one of the two ground states (50\% probability for each state, fair game). Quantum interpretation gives the 100\% probability to the electron of being in both the states at the same time.\\
+Since the barrier is at very high energy, we could expect to find the correspondance principle at some point. Classical interpretation of the system at this point says that the particle could "decay" from a state of very high energy into one of the two ground states (50\% probability for each state, fair game). Quantum interpretation gives the 100\% probability to the electron of being in both the states at the same time.\\
+\[
+\begin{cases}
+\varphi_0(x) = \frac{1}{\sqrt{2}}\psi^L(x)+C_R^0\,\psi^R(x)]\\
+\varphi_1(x) = \frac{1}{\sqrt{2}}\psi^L(x)+C_R^0\,\psi^R(x)]
+\end{cases}
+\]
 \newline
-At $t=0$, the  particle is on the left $\ket{\psi_0}=\ket{\psi_L}$ \\
-What is the probability of finding the particle on the right at given time $t$?\\
-$P_R(t>0)=\,?$\\
-$P_L(t>0)=1-P_R(t>0)$
+So, if at $t=0$, the  particle is on the left $\ket{\psi_0}=\ket{\psi_L}$, the function immediately after will be $\psi_L(x)$. However, if we wait long enough, the probability to find it in each state will be 50\% - 50\%. \\
+What is the probability of finding the particle on the right at given time $t$? \\
+$(P_R(t>0)=\,?$)\\
+$P_L(t>0)=1-P_R(t>0)$\\
 By definition $E_0=0, E_1= \varepsilon$. Consequently, $\varepsilon = E_1-E_0$\\
-To find the probability of the particle being on the right/left, $P_{R/L}(t)=|\braket{\psi_{R/L}\,|\,\varphi(t)}|^2$\\
+To find the probability of the particle being on the right/left, ($P_{R/L}(t)=|\braket{\psi_{R/L}\,|\,\varphi(t)}|^2$), we will use the time evolution operator.\\
 \[
 P_R(t)=|\braket{\psi_R\,|\,e^{-\frac{i}{\hbar}\cdot t \hat{H}}\,|\,\psi_L}|^2
 \]
-minding that $\psi_R$ occurs at time $t$ whilst $\psi_L$ occurs at $t=0$.\\
+Minding that $\psi_R$ occurs at time $t$ whilst $\psi_L$ occurs at $t=0$.\\
 If I want to check whether the particle is still on the left
 \[
 P_L(t)=|\braket{\psi_L\,|\,e^{-\frac{i}{\hbar}\cdot t \hat{H}}\,|\,\psi_L}|^2
 \]
-Let's first compute the probability for small $t$. We perform the Taylor expansion of $e^{-\frac{i}{\hbar}\cdot t \hat{H}} = \mathbb{\hat{1}}-\frac{i}{\hbar}\cdot t\hat{H}$
+Let's first compute the probability for a small $t$. We perform the Taylor expansion of $e^{-\frac{i}{\hbar}\cdot t \hat{H}} = \mathds{1} -\frac{i}{\hbar}\cdot t\hat{H}$
 \[
 \ket{\psi_L}=\begin{pmatrix}
 1\\0
-\end{pmatrix}
-\text{, }
-\hat{H}=
-\begin{pmatrix}
-0 & \varepsilon\\ \varepsilon & 0
 \end{pmatrix}
 \text{, }
 \ket{\psi_R}=
 \begin{pmatrix}
 0\\1
 \end{pmatrix}
+\text{, }
+\hat{H}=
+\begin{pmatrix}
+0 & \varepsilon\\ \varepsilon & 0
+\end{pmatrix}
 \]
 \[
 P_R(t)\cong\bigg|\braket{\psi_R\,|\,1-\frac{i}{\hbar}\cdot t \hat{H}\,|\,\psi_L}\bigg|^2 \cong
-\bigg|(1,\,0) \cdot \mathbb{\hat{1}}
+\bigg|(1,\,0) \cdot \mathds{1}
 \begin{pmatrix}
 0\\1
 \end{pmatrix}
@@ -221,16 +226,20 @@ P_R(t)\cong\bigg|\braket{\psi_R\,|\,1-\frac{i}{\hbar}\cdot t \hat{H}\,|\,\psi_L}
 \cong \frac{t^2}{\hbar^2}\varepsilon
 \]
 but since $\frac{t\varepsilon}{\hbar}<<1$ we get $t << \frac{\hbar}{\varepsilon}$.\\
-At little time the probability on the other side increases $\rightarrow$ Quantum Tunneling. \\
-The rate of transitions is given by
-\[
-k=\frac{\varepsilon}{\hbar}
-\]
-which is an exponentially small amount.\\
-There is an analogy between thermal kinetic activation and quantum tunneling, both happen because of \underline{stochastic fluctuations}. ($K\propto e^{\frac{\Delta V}{K_B T}}$)\\
-In quantum tunneling, the superposition between the higher energy levels that is caused by the lowering of the potential barrier causes the splitting of the lower energy levels. This is remarkably important when considering the \textbf{formation of the hydrogen bond $\rightarrow$ electron sharing is quantum tunneling!}\\
-At infinite distance we don't have any sharing because it's like having an infinite energy barrier. When the two atoms get close to each other, they share an electron via quantum tunneling, because of this then the energy levels split and create the two orbitals (bonding, antibonding).\\
-... anyway,
+This is telling us that by waiting a little time the probability of finding the particle on the other side increases. This phenomenom is called \textbf{quantum tunneling}.\\
+The conclusion up until this point is 
+\begin{itemize}
+	\item A quantistic particle can cross an energy barrier, and the probability (or 		rate at which the transitions happen) is given by 
+	\[
+	k=\frac{\varepsilon}{\hbar}
+	\]
+	which is an exponentially small amount.\\
+	There is an analogy between thermal kinetic activation and quantum tunneling, both 	happen because of stochastic fluctuations. ($K\propto e^{\frac{\Delta V}{K_B T}}$)		. The difference is that in a quantum system this happens in quantum time and is 		not influenced by the temperature of the system.\\
+	\item In quantum tunneling, the superposition between the higher energy levels 			that is caused by the lowering of the potential barrier causes the splitting of 		the lower energy levels. This is remarkably important when considering the 				\textbf{formation of the hydrogen bond $\rightarrow$ electron sharing is quantum 		tunneling!}\\
+	At infinite distance we don't have any sharing because it's like having an 				infinite energy barrier. When the two atoms get close to each other, they share an 	electron via quantum tunneling, because of this then the energy levels split and 		create the two orbitals (bonding, antibonding).\\
+\end{itemize}
+
+For the final $t$ we cannot expand the exponent like we did before. Given $e^{-\frac{it}{\hbar}\hat{H}}\ket{\psi_R}$, we don't know $H\psi_R$, but can rewrite $\psi_R$ as linear combination of eigenstates of $H$:
 \[
 \text{ground state:} \ket{0}=\bigg(\frac{\ket{L}+\ket{R}}{\sqrt{2}}\bigg) \rightarrow \sqrt{2}\ket{0}= \ket{L}+\ket{R}
 \]
@@ -260,10 +269,13 @@ Knowing that $\braket{L\,|\,L}=\frac{1}{\sqrt{2}}$ and $\braket{L\,|\,R}=0$,
 \[
 P_L=\frac{1}{2}\bigg(1-\cos^2\frac{\varepsilon}{\hbar}t\bigg)
 \]
-For $t=0$, $P=0$ then $\cos^2x$ grows with a $t^2$ rate. There is an oscillation with a given period $T=\frac{\hbar}{2\varepsilon}$.\\
+For $t=0$, $P=0$ then $\cos^2x$ grows with a $t^2$ rate. There is an oscillation (figure \ref{fig:pulsation}) with a given period $T=\frac{\hbar}{2\varepsilon}$.\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_3.jpg}
+	
+	\caption{The oscillatory behaviour here represented is called \textbf{quantum pulsation}.}
+	\label{fig:pulsation}
 \end{figure}
 \newline
 \section{Ritz-Rayleigh variational principle}
