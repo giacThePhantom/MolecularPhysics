@@ -438,10 +438,10 @@ Anytime the Hamiltonian factorizes, i.e. $\hat{H}=\sum_i{\hat{h}_i}$, the soluti
 
 \section{Lattice discretization}
 Lattice discretization is a technique by which a numerical solution is obtained by exploiting the connection between operators and matrices.\\
-\noindent
 
- %insert image%
+\noindent
 We know that the wavefunction should be normlized and localized in a certain position of the space. By going towards the end and beginning of the x-axis, the function will go to zero - meaning that we have a maximum and minimum after which the function value can be neglected. We can either stop at maximum/minimum point, and this would be a first approximation. But let us divide the axis into little dots, such that the function can be considered almost constant in each dot. We are going to obtain a very accurate step-wise representation of the function,  and we can proceed until the result is good enough i.e. when the lattice space is smaller than the scale at which the wavefunction changes. Though discretization, we can tune the number of dots required to obtain an accurate result.\\
+\\
 \noindent
 A large but finite number of equally spaced possible position is used. The possible positions are $x = x_{\min} + \Delta x$, where $\Delta x = \frac{x_{\max}-x_{\min}}{N}$. 
 After discretization, the wave function is represented by a list $\psi(x) \rightarrow(\psi_1,\dots, \psi_N)$.
@@ -474,12 +474,12 @@ Thus, the wave function becomes a vector and the Hamiltonian a matrix.
   $$H_{ij} = T_{ij} + V_{ij}$$
 
   $$H_{ij} = \begin{pmatrix}\frac{\hbar^2}{m\Delta x^2} + V_1 & -\frac{\hbar^2}{2m\Delta x} & 0 & \cdots\\ -\frac{\hbar^2}{2m\Delta x^2} & \frac{\hbar^2}{m\Delta x^2}+V_2-\frac{\hbar^2}{2m \Delta x^2} & 0 & \cdots\\ 0 & -\frac{\hbar^2}{2m\Delta x^2} & \frac{\hbar^2}{m\Delta x^2}+V_3 - \frac{\hbar^2}{2m\Delta x^2} & \cdots\end{pmatrix}$$
-
-  Solving the matrix eigenproblem $\sum\limits_i H_{ij}\psi_i = E_i\psi_i$ yields $\{E_i\}_{i=\{1,\dots,N\}}$ and $\{y_j\}_i$. 
+\noindent
+  Solving the matrix eigenproblem $\sum\limits_i H_{ij}\psi_i = E_i\psi_i$ yields $\{E_i\}_{i=\{1,\dots,N\}}$ and $\{y_j\}_i$. \\
   The dimensionality grows with the number of mesh points $N$.
   The exact case is $N\rightarrow\infty$.
   Quantum mechanics is described by an infinite dimensional vector space called the Hilbert space.
-
+\noindent
   After discretization, changing from coordinate representation to momentum representation (and opposite), i.e. performing Fourier transformation, basically involves changing a basis in the vector space that describes the state of the system. Lattice discretization allows us to go from quantum mechanics mathematics to linear algebra.
 
 \section{Time evolution operators}
