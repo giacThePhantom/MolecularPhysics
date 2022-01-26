@@ -72,9 +72,9 @@ R(r)=\frac{1}{r}\frac{\partial^2(r\cdot R(r))}{\partial r^2}
 \]
 As we said before, the hamiltonian commutes with the square of the angular momentum $[\hat{H},\,\hat{L^2}]=0$ because the angular momentum doesn't have any derivatives with respect to $r$. By considering the hamiltonian as $\hat{H}=\hat{T_r}+\hat{V}$ with $\hat{V}$ as describing the coulomb potential, these commutations are possible:\\
 \[
-[\hat{T_r}\,,\,\hat{L^2}]=0 \textit{as \hat{T_r} doesn't depened on \theta}\,,\,\,\,[\hat{V}\,,\,\hat{L}]=0\,,\,\,\,[\hat{L^2}\,,\,\hat{L^2}]=0
+[\hat{T_r}\,,\,\hat{L^2}]=0\,,\,\,\,[\hat{V}\,,\,\hat{L}]=0\,,\,\,\,[\hat{L^2}\,,\,\hat{L^2}]=0
 \]
-All these have common sets of eigenstates. \\
+All these have common sets of eigenstates. Note that $\hat{T_r}\,,\,\hat{L^2}]=0$ is possible beacuse $\hat{T_r}$ doesn't depened on $\theta$ \\
 \newline
 We can implement the fact that the operators, as said above, share a common set of eigenstate by pluggin the following:
 \[
@@ -119,9 +119,9 @@ Depending on the value of $l$ I can get the probability of the electron dependin
 \section{Relation between spin and statistics: Quantum many-body systems}
 \subsection{The importance of spin}
 Spin statistics can explain chemistry, quantum entanglement, and quantum computers.\\
-Stern Gerlach experiments confirm the fact that electrons have a magnetic moment because they can interact with a magnetic field. Generally, particles behave differently and may have different states of being.\\
-I cannot measure more than one component of the magnetic moment (quantum uncertainty) and this intrinsic magnetic moment behaves like an angular momentum.\\
-The rotation of the electron upon itself generates a magnetic fiels and a magnetic moment. This is called \textbf{SPIN}, $\hat{S^2},\hat{S_z}$ a property of particles that \ul{doesn't change with time} and that can distinguish a particle from one another.\\
+Stern Gerlach experiments confirm the fact that electrons have a magnetic moment, which is quantised in 2, 3, 4... units, because they can interact with a magnetic field. Generally, particles behave differently and may have different states of being.\\
+What we know is that we cannot measure more than one component of the magnetic moment (quantum uncertainty) and this \textbf{intrinsic} magnetic moment behaves like an angular momentum.\\
+The rotation of the electron upon itself generates a magnetic field and a magnetic moment. This is called \textbf{spin}, $\hat{S^2},\hat{S_z}$ a property of particles that \textbf{doesn't change with time} and that can distinguish a particle from one another.\\
 \newline
 We assume that:
 \[ [\hat{S_x}\,,\,\hat{S_y}]=i\hbar\hat{S_z} \]
@@ -130,23 +130,27 @@ The values of $\hat{S^2}$ characterize the behaviour of the particle.\\
 \[\hat{L^2}\,\rightarrow\,l=0, 1, 2, ...\]
 \[\hat{S^2}\,\rightarrow\,s=0, \frac{1}{2}, 1, \frac{3}{2}, ...\]
 Electrons, neutrons, and protons have $s=1/2$. Photons, for instance, have $s=1$.\\
-\\
-\subsection{Spin-Statistics theorem}
+
+\subsection{Spin-Statistics theorem (in identical particles}
 Let's consider a wave function of many identical particles $\psi$, for instance $n$ identical electrons with spin $s$, $\hat{S_z}$, and position $r$. All the particles have the same velocity.\\
 \[
-\Psi(\vec{r_1}, s_1^z, \vec{r_2}, s_2^z, ..., \vec{r_n}, s_n^z) \text{ with } \vec{q}=(\vec{r},\vec{s_z})
+\Psi(\vec{r_1}, s_1^z, \vec{r_2}, s_2^z, ..., \vec{r_n}, s_n^z) \text{   ,with } \vec{q}=(\vec{r},\vec{s_z})
 \]
 \[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n}) \]
-\textbf{ANTISYMMETRIC WAVEFUNCTION}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{half integer} (1/2, 3/2, ...). Swapping the wave function \textbf{changes} it.\\
+\textbf{antisymmetric wave-function (fermions)}: wave-function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{half integer} (1/2, 3/2, ...). Swapping the wave function \textbf{changes} it.\\
 \[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})=-\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\]
-The particles that have an antisymmetric wavefunction are called \textbf{FERMIONS}.\\
+The particles that have an antisymmetric wavefunction are called \textbf{fermions}.\\
 \newline
-\textbf{SYMMETRIC WAVEFUNCTION}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...). Swapping the wave function \textbf{doesn't change} it.\\
+\textbf{symmetric wave-function (bosons)}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...). Swapping the wave function \textbf{doesn't change} it.\\
 \[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})=\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\]
-The particles that have an antisymmetric wavefunction are called \textbf{BOSONS}.\\
-\marginpar{\textit{A fermion once, a fermion forever}}
-\newline
-\ul{COROLLARY: In a quantum wave function, there cannot be two fermions with identical state} or else \ul{two identical fermions cannot be found in the same quantum state}.
+The particles that have an antisymmetric wavefunction are called \textbf{bosons}.\\
+\begin{quote}
+"A fermion once, a fermion forever".
+"fermions and bosons are like Montecchi and Capuleti. They don't want anyhing to do with each other"
+- Pietro Faccioli
+\end{quote}
+\noindent
+\textbf{Corollary}: In a quantum wave function, there cannot be two fermions with identical state or else two identical fermions cannot be found in the same quantum state.
 \[\Psi(q_1, q_2)= -\Psi(q_2,q_1)\] the two electrons are the same, $q_1=q_2=q$
 \[\Psi(q,q)=-\Psi(q,q) \]
 The only condition for which this equality is true is for  $\Psi = 0$. This is called \textbf{PAULI'S EXCLUSION PRINCIPLE}.
