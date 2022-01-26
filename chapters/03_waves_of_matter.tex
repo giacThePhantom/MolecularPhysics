@@ -1,3 +1,4 @@
+\graphicspath{{chapters/03/}}
 \chapter{Waves of matter}
 
 \section{The Schr\"odinger equation}
@@ -9,7 +10,7 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
   The probability of an electron being detected in certain points of the screen is described by complex-wave amplitudes, which are functions of $x$ and $t$. Being $A(x,y)$ a wave, its intensity:
 
   $$Intensity(x,t) = A^*(x,t)\cdot A(x,t)$$
-
+\noindent
   The state of the electron in the beams is assumed to be described by a complex amplitude called the wave-function:
 
   \begin{align*}
@@ -23,22 +24,23 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
   As a consequence, we can assume that for an electron the energy is proportional to frequency:
 
   $$E = \hbar\omega = h\nu = \frac{p^2}{2m}$$
-
+\noindent
   Protons propagate according to a wave equation:
 
   $$\biggl(\underbrace{\frac{1}{c^2}}_{\text{speed of light}}\frac{\partial^2{}}{\partial{t^2}} - \nabla^2\biggr)\underbrace{A}_{\text{Maxwell equation}} = 0$$
 
+\noindent
   There is a need to find if the same equation describes the propagation of a massive particle like the electron.
   Let the electron wave particle be:
 
   $$\psi(x,t) = Ae^{\frac{i}{\hbar}(Et -px)}$$
 
-
+\noindent
   Then: $\frac{\partial^2{}}{\partial{t^2}}\psi = \omega^2\psi$ and $\frac{partial^2}{\partial x^2}\psi = p^2\psi$.
   So it is obtained that:
 
   $${p^2}\propto\underbrace{\omega^2}_{\propto E^2}$$
-
+\noindent
   Then $E = cons|p|$.
   This is true for light, but it is false for massive particles. The correspondence principle implies that:
 
@@ -67,12 +69,13 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
   Now:
 
   $$\hbar\omega = E \propto p^2$$
-
+Recall that $\hbar$ is the Dirac's constant, obtained by the following formula: $\hbar=\frac{h}{2\pi}$, where $h$ is Planck's constant.\\
+\noindent
   For a free electron, $H$ equals the kinetic energy and is approximately the Hamiltonian.
   For an interacting electron:
 
   $$H_0 \rightarrow H_0 + \underbrace{V(\vec{r})}_{\text{potential energy}} = H$$
-
+\noindent
   Finally, the Schr\"oedinger equation is:
 
   $$i\hbar \frac{\partial {}}{\partial {t}}\psi(\vec{r},t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+V(\vec{r})\biggr)\psi(x,t)$$
@@ -81,18 +84,18 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
     The quantum Hamiltonian can be defined as:
 
     $$\hat{H} \equiv -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x}+U(x)$$
-
+\noindent
     Comparing it with a classical Hamiltonian, it can be seen that $\frac{p^2}{2m}\xrightarrow[]{\text{quantization}} - \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\Rightarrow p^2\rightarrow \hbar^2\frac{\partial^2}{\partial x^2}$.
     Then, due to the fact that the forward propagating wave has a positive momentum, $\hat{p}\rightarrow i\hbar\frac{\partial}{\partial x}$.
     The same happens in three dimensions, where:
 
     $$i\hbar\frac{\partial }{\partial x}\psi(\vec{x}, t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+U(\vec{x})\biggr)\psi(\vec{x},t)$$
-
+\noindent
     The Schr\"oedinger equation is then recast as:
 
     $$i\hbar \frac{\partial {}}{\partial {t}}\psi(\vec{r},t) = \hat{H} \psi(\vec{r},t)$$
-
-    So to solve this equation there is a need to solve a partial differential equation that defines the state of a system.
+\noindent
+    To solve this equation there is a need to solve a partial differential equation that defines the state of a system.
     The operators are:
 
     $$\hat{H} = \biggl(-\frac{\hbar^2}{2m}\nabla^2+U(\vec{r})\biggr)$$
@@ -103,26 +106,26 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
 Assuming that the system conserves mechanical energy:
 
 $$H(p,q, \bcancel{t}) = \frac{p^2}{2m}+U(q,\bcancel{t})$$
-
+\noindent
 Considering the plane wave:
 
 $$\psi(\vec{r}, t) = \phi(\vec{r}) e^{-i \frac{E}{\hbar}t}$$
-
+\noindent
 By formulating a guess for the form of the solution and plugging it into the Schr\"oedinger equation:
 
 $$E\phi e^{-i \frac{i}{\hbar}(Et)} = He^{-\frac{i}{\hbar}Et}\phi$$
-
+\noindent
 Which gives:
 
 $$\hat{H}\phi(\vec{r}) = E\phi(\vec{r})$$
-
+\noindent
 Where $E$ is unknown.
 This is an eigen problem: given $\hat{H}$, a function $\psi(\vec{r})$ has to be found such that $\hat{H}\psi(\vec{r})$ is a function proportional to $\psi(\vec{r})$ through some constant $E$.
 In other words, the energy of a quantum system is an eigenvalue of the quantum Hamiltonian operator.
 Energy quantization is obtained and:
 
 $$E = \underbrace{E_0}_{\text{ground state energy}} < \underbrace{E_1 < \cdots < E_n}_{\text{excited state energies}}$$
-
+\noindent
 And:
 
 \begin{align*}
@@ -136,9 +139,13 @@ And:
 The quantum Hamiltonian for the quantum harmonic oscillator is:
 
 $$\hat{H} = - \frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}} +\frac{1}{2}m\omega^2 x^2$$
-
+\noindent
 The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[clip, width=0.6\textwidth]{qm_oscillator.png}
+    \caption{\label{fig:qm_oscillator} Quantum mechanics oscillator }
+\end{figure}
   \subsection{Form of the ground state}
   The ground state will be in the form:
 
@@ -269,8 +276,14 @@ The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
 \section{Quantum particle in a one dimensional infinite square well}
 We previously discussed at the classical level that a physical system can be bound or unbound. In quantum physics, a bound state is a quantum state of a particle subject to a potential such that the particle has a tendency to remain localized in one or more regions of space. Ultimately, matter and life exist because of bound systems, which allow the presence of macro structures.  
 While trying to solve a bound system problem, we will require a toy model - a model deliberately too simple to be realistic, which is not meant to predict the outcome of an experiment, but rather to understand the qualitative nature of the object under study.
-While implementing a toy model, if the scale where a detail occurs is very small compared with the size of the box, its effect can be neglected. As a consequence, everything which occurs within the box is idealized, allowing us to solve the problem. It's all a matter of scale e.g. $\lambda$ is the scale for details, $L$ the size of the physical system, $\eta$ the energy we are interested in, $E$ the unbounding energy. If the ratio $\frac{\lambda}{L}<<<1$ and $\frac{\eta}{E}<<<1$ , we can neglect the detail.
-
+While implementing a toy model, if the scale where a detail occurs is very small compared with the size of the box, its effect can be neglected. As a consequence, everything which occurs within the box is idealized, allowing us to solve the problem. It's all a matter of scale e.g. $\lambda$ is the scale for details, $L$ the size of the physical system, $\eta$ the energy we are interested in, $E$ the unbounding energy. If the ratio $\frac{\lambda}{L}<<<1$ and $\frac{\eta}{E}<<<1$ , we can neglect the detail.\\
+\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[clip, width=0.6\textwidth]{1D_well.png}
+    \caption{\label{fig:1D_well} Particle trapped in 1D infinite square well}
+\end{figure}
+\noindent
 For the case of a quantum particle in a one dimensional infinite square well, we will consider a particle constrained in a trap where interactions are so strong that it cannot escape and with two confining directions much narrower than the third. We can consider a box with size $L/2$ and $-L/2$ and find the eigenvalues and eigenvectors for the SE in this specific condition. 
 This can be modelled with a one dimensional confining potential:
 
@@ -385,7 +398,8 @@ Then:
 $$\hat{H} = -\frac{\hbar^2}{2m}\frac{\partial {^2}}{\partial {x^2}}-\frac{\hbar^2}{2m}\frac{\partial {^2}}{\partial {y^2}}$$
 
 Any $H$ can be separated as: $H(x,y) = H_1(x) + H_2(y)$.
-
+Anytime the Hamiltonian factorizes, i.e. $\hat{H}=\sum_i{\hat{h}_i}$, the solution of the SE can be written as the product of two wavefunctions $\phi(x,y)=phi_1(x)\phi_2(y)$. The corresponding energy will be obtained by summing the two energies $E=E_1+E_2$. By applying this property, we can write the solution to the Hamiltonian for our problem.
+ 
   \subsection{Solution}
   Then the solution is:
 
@@ -403,20 +417,36 @@ Any $H$ can be separated as: $H(x,y) = H_1(x) + H_2(y)$.
 
   So:
 
-  $$\phi_{n,m}(x,y) = \underbrace{\phi_n(x)}_{\text{solution of the 1D problem}}\phi_m(y)$$
-
-  And $E_{n,m} = E_n^x+E_m^y = -\frac{\hbar^2}{2m}\pi^2\biggl(\frac{n^2}{L_x^2}+\frac{m^2}{L_y^2}\biggr)$.
+ Resulting in:
+  
+  $$\phi_n(x) = \begin{cases}\sqrt{\frac{2}{L_{x}}} \sin k_n x\\ \sqrt{\frac{2}{L_{x}}} \cos k_n x\end{cases}$$
+  $$\phi_m(x) = \begin{cases}\sqrt{\frac{2}{L_{y}}} \sin k_m y\\ \sqrt{\frac{2}{L_{y}}} \cos k_m y\end{cases}$$
+  
+  For $n=1$ and $m=1$:
+  
+  $$\psi_1 = \sqrt{\frac{2}{L_{x}}\frac{2}{L_{y}} \cos k_1^x x \cos k_1^y y}$$ 
+  $$k_1^x = \frac{\pi}{L_{x}} n = \frac{\pi}{L_{x}}$$
+  $$k_1^y = \frac{\pi}{L_{y}} m = \frac{\pi}{L_{y}}$$
+  
+  For $n=2$ and $m=1$:
+  $$\psi_2 = \sqrt{\frac{2 \cdot 2}{L_{x}L_{y}}} \sin k_2^x x \cos k_1^y y$$ 
+  
+  The total energy can be obtained as $E_{n,m} = E_n^x+E_m^y = -\frac{\hbar^2}{2m}\pi^2\biggl(\frac{n^2}{L_x^2}+\frac{m^2}{L_y^2}\biggr)$.
   Then the ground state is $E_{11} = E_1^x+E_1^y$ and the system is doubly degenerative in opposite directions:
 
   $$E_{12} + E_1^x+E_2^y + E_{21} = E_2^x+E_1^y$$
 
 \section{Lattice discretization}
-Lattice discretization is a technique by which a numerical solution is obtained by exploiting the connection between operators and matrices.
-A large but finite number of equally spaced possible position is used.
-The possible positions are $x = x_{\min} + \Delta x$, where $\Delta x = \frac{x_{\max}-x_{\min}}{N}$.
-The wave function is represented by a list $\psi(x) \rightarrow(\psi_1,\dots, \psi_N)$.
-Thus, the wave function becomes a vector and the Hamiltonian a matrix.
+Lattice discretization is a technique by which a numerical solution is obtained by exploiting the connection between operators and matrices.\\
+\noindent
 
+ %insert image%
+We know that the wavefunction should be normlized and localized in a certain position of the space. By going towards the end and beginning of the x-axis, the function will go to zero - meaning that we have a maximum and minimum after which the function value can be neglected. We can either stop at maximum/minimum point, and this would be a first approximation. But let us divide the axis into little dots, such that the function can be considered almost constant in each dot. We are going to obtain a very accurate step-wise representation of the function,  and we can proceed until the result is good enough i.e. when the lattice space is smaller than the scale at which the wavefunction changes. Though discretization, we can tune the number of dots required to obtain an accurate result.\\
+\noindent
+A large but finite number of equally spaced possible position is used. The possible positions are $x = x_{\min} + \Delta x$, where $\Delta x = \frac{x_{\max}-x_{\min}}{N}$. 
+After discretization, the wave function is represented by a list $\psi(x) \rightarrow(\psi_1,\dots, \psi_N)$.
+Thus, the wave function becomes a vector and the Hamiltonian a matrix.
+  
   \subsection{Discrete representation of the derivative}
 
   $$\frac{d{}}{d{x}}\psi(x) \rightarrow \frac{\psi_{i+1}-\psi_i}{\Delta x}$$
@@ -439,16 +469,18 @@ Thus, the wave function becomes a vector and the Hamiltonian a matrix.
 
   $$\sum\limits_{j}V_{ij}\psi_j = V_i\psi_i$$
 
-  Finally:
+  Finally, the matrix lattice representation is obtained as:
 
   $$H_{ij} = T_{ij} + V_{ij}$$
 
   $$H_{ij} = \begin{pmatrix}\frac{\hbar^2}{m\Delta x^2} + V_1 & -\frac{\hbar^2}{2m\Delta x} & 0 & \cdots\\ -\frac{\hbar^2}{2m\Delta x^2} & \frac{\hbar^2}{m\Delta x^2}+V_2-\frac{\hbar^2}{2m \Delta x^2} & 0 & \cdots\\ 0 & -\frac{\hbar^2}{2m\Delta x^2} & \frac{\hbar^2}{m\Delta x^2}+V_3 - \frac{\hbar^2}{2m\Delta x^2} & \cdots\end{pmatrix}$$
 
-  Solving the matrix eigenproblem $\sum\limits_i H_{ij}\psi_i = E_i\psi_i$ yields $\{E_i\}_{i=\{1,\dots,N\}}$ and $\{y_j\}_i$.
+  Solving the matrix eigenproblem $\sum\limits_i H_{ij}\psi_i = E_i\psi_i$ yields $\{E_i\}_{i=\{1,\dots,N\}}$ and $\{y_j\}_i$. 
   The dimensionality grows with the number of mesh points $N$.
   The exact case is $N\rightarrow\infty$.
   Quantum mechanics is described by an infinite dimensional vector space called the Hilbert space.
+
+  After discretization, changing from coordinate representation to momentum representation (and opposite), i.e. performing Fourier transformation, basically involves changing a basis in the vector space that describes the state of the system. Lattice discretization allows us to go from quantum mechanics mathematics to linear algebra.
 
 \section{Time evolution operators}
 Consider the time-dependent Schr\"oedinger equation:
