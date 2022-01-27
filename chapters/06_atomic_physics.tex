@@ -116,7 +116,7 @@ P(\vec{r},\vec{r}+dr)=\vec{r}^2R^2(r)dr
 Depending on the value of $l$ I can get the probability of the electron depending on $\theta$ and $\varphi$. At $l=0$ the probability is more concentrated on the centre and then fades out (s orbital). At $l=1$ the function depends on $\theta$ but not on $\varphi$, the function is cylindrically symmetrical (p orbital). It is important to remember that there is no orbit in an atom, for the concept of trajectory breaks down on a quantum level.\\
 \\
 
-\section{Relation between spin and statistics: Quantum many-body systems}
+\section{Relationship between spin and statistics: Quantum many-body systems}
 \subsection{The importance of spin}
 Spin statistics can explain chemistry, quantum entanglement, and quantum computers.\\
 Stern Gerlach experiments confirm the fact that electrons have a magnetic moment, which is quantised in integers or half integers, because they can interact with a magnetic field. Generally, particles behave differently and may have different states of being.\\
@@ -271,57 +271,74 @@ We can calculate $\hat{S^2} = \hat{S_x}^2+\hat{S_y}^2+\hat{S_z}^2$ that results 
 The identity matrix $\\mathds{1}_e$ allows $\hat{S^2}$ to commute with every component of the spin operator.
 
 \subsection{Tensor product states}
-I have two vectors
+Up until now, we learned how to deal with spin's degrees of freedom only. But how do we integrate spin in the $L_2$ space of the wave function? We'll use the tensor product. Given two vectors, the definition of tensor product is:
 \[
 \begin{pmatrix}a_1\\a_2\\...\\a_n\end{pmatrix}\otimes\begin{pmatrix}b_1\\b_2\\...\\b_n\end{pmatrix}=\begin{pmatrix}a_1b_1\\a_1b_2\\...\\a_1b_n\\a_2b_1\\a_2b_2\\...\\a_mb_n\end{pmatrix}
 \]
-Tensor product is obtained by multiplying each $a$ term with every $b$ term. It creates another vector space (a larger Hillbert space) that is used to combine spins for many particles, spin and particle space of one particle et cetera.\\
-I use tensor product to describe the \emph{combination of two quantum states}.
+Tensor product is obtained by multiplying each $a$ term with every $b$ term. It creates another vector space (a larger Hillbert space) that is used to combine spins for many particles, spin and particle space of one particle ect.\\
+Tensor product is used to describe the \emph{combination of two quantum states}.
 \[\text{Quantum state of particle 1: } \begin{pmatrix}\alpha_1\\\alpha_2\end{pmatrix}=\alpha_1\begin{pmatrix}1\\0\end{pmatrix}+\alpha_2\begin{pmatrix}0\\1\end{pmatrix}=\alpha_1\ket{\uparrow}+\alpha_2\ket{\downarrow}=\vec{\ket\alpha}\]
 \[\text{Quantum state of particle 2: } \begin{pmatrix}\beta_1\\\beta_2\end{pmatrix}=\beta_1\begin{pmatrix}1\\0\end{pmatrix}+\beta_2\begin{pmatrix}0\\1\end{pmatrix}=\beta_1\ket{\uparrow}+\beta_2\ket{\downarrow}=\vec{\ket{\beta}}\]
 \marginpar{\textit{These single quantum states represent qubits}}
 \[\text{Combination of the two states: }
 \vec{\ket{\alpha}}\otimes\vec{\ket{\beta}}\equiv{\ket{\vec{\alpha}\vec{\beta}}}=\begin{pmatrix}\alpha_1\beta_1\\\alpha_1\beta_2\\\alpha_2\beta_1\\\alpha_2\beta_2\end{pmatrix}
 \]
-The combination of the two states creates a wavefunction which amplitude corresponds to the observation of all the combinations of the particles. \\
-I can build the basis for a vector product of two particles and with this I can describe four different states since $\mathbb{R}^2\otimes\mathbb{R}^2=\mathbb{R}^4$
+The combination of the two states creates a wavefunction which amplitude corresponds to the observation of all the combinations of the particles. For example, $\alpha_1\,\beta_1$ is the amplitude of observing the first particle $\uparrow$ and the second particle $\uparrow$ \\
+We can build the basis for a vector product of two particles and with this we can describe four different states since $\mathbb{R}^2\otimes\mathbb{R}^2=\mathbb{R}^4$
 \[
-\begin{pmatrix}1\\0\\0\\0\end{pmatrix}=\ket{\uparrow\uparrow}\begin{matrix}\alpha_1=1\\\beta_1=1\end{matrix}\bigg|
-\begin{pmatrix}0\\1\\0\\0\end{pmatrix}=\ket{\uparrow\downarrow}\begin{matrix}\alpha_1=1\\\beta_2=1\end{matrix}\bigg|
-\begin{pmatrix}0\\0\\1\\0\end{pmatrix}=\ket{\downarrow\uparrow}\begin{matrix}\alpha_2=1\\\beta_1=1\end{matrix}\bigg|
-\begin{pmatrix}0\\0\\0\\1\end{pmatrix}=\ket{\downarrow\downarrow}\begin{matrix}\alpha_2=1\\\beta_2=1\end{matrix}
+\begin{pmatrix}1\\0\\0\\0\end{pmatrix}=\ket{\uparrow\uparrow}\begin{matrix}\alpha_1=1\\\beta_1=1\end{matrix}\bigg| \;\;
+\begin{pmatrix}0\\1\\0\\0\end{pmatrix}=\ket{\uparrow\downarrow}\begin{matrix}\alpha_1=1\\\beta_2=1\end{matrix}\bigg| \;\;
+\begin{pmatrix}0\\0\\1\\0\end{pmatrix}=\ket{\downarrow\uparrow}\begin{matrix}\alpha_2=1\\\beta_1=1\end{matrix}\bigg| \;\;
+\begin{pmatrix}0\\0\\0\\1\end{pmatrix}=\ket{\downarrow\downarrow}\begin{matrix}\alpha_2=1\\\beta_2=1\end{matrix}\bigg|
 \]
-Most general quantum mechanical state description of the EPR pair:
+We can also derive the most general quantum mechanical state description of the EPR pair:
 \[
 \ket{\vec{\alpha}\vec{\beta}}=\alpha_1\beta_1\ket{\uparrow\uparrow}+\alpha_1\beta_2\ket{\uparrow\downarrow}+\alpha_2\beta_1\ket{\downarrow\uparrow}+\alpha_2\beta_2\ket{\downarrow\downarrow}
 \]
 In this way I can carry on information about multiple state simultaneously.\\
 \newline
-$\varphi(x)$ wavefunction lives in a \emph{$L^2$} Hillbert space.\\
+Given $\varphi(x)$ wavefunction lives in a \emph{$L^2$} Hillbert space.\\
 \[
 \varphi(x)\otimes(\alpha\ket{\uparrow}+\beta\ket{\downarrow})=\begin{pmatrix}\alpha\varphi(x)\\\beta\varphi(x)\end{pmatrix}=\begin{pmatrix}\varphi_{\uparrow}(x)\\\varphi_{\downarrow}(x)\end{pmatrix}
 \]
-This latter matrix is called a \textbf{SPINOR}, which is a wavefunction that includes spin amplitude (usually wavefunction doesn't have information about spin of the particle).\\
-Let's consider a \ul{non-entangled state}.
+This latter matrix is called a \textbf{spinor}, which is a wavefunction that includes spin amplitude (usually wavefunction doesn't have information about spin of the particle).\\
+Let's consider a \underline{non-entangled state}.
 \[
 \ket{\Psi}=\frac{1}{\sqrt{2}}\ket{\uparrow\uparrow}+\frac{1}{\sqrt{2}}\ket{\uparrow\downarrow}=\ket{\alpha\uparrow}
 \]
-The two measures are independent of each other, I can find particle 2 with a probability which is independent of the measurement of particle 1.\\
-\ul{Entangled state}:
+The two measures are independent of each other, I can find particle 2 with a probability which is independent of the measurement of particle 1. It is said to be factorizable.\\
+Let's now condier an \underline{entangled state}:
 \[
-\ket{\Psi}=\frac{1}{\sqrt{2}}\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big)
+\ket{\Psi}=\frac{1}{\sqrt{2}}\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big) = \begin{pmatrix}0\\\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\\0\end{pmatrix}
 \]
-I can generate an operator that generates entangled states
+Note that the expression cannot be factorized now. We can generate an operator that generates entangled states:
 \[
 \frac{\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big)}{2}=\frac{1}{\sqrt{2}}\begin{pmatrix}0\\1\\1\\0\end{pmatrix}\bigg(U\bigg)\begin{pmatrix}1\\0\\0\\0\end{pmatrix}
 \]
 U is called \textbf{quantum gate} in quantum computing.\\
-Quantum gates can be defined as a \textbf{time evolution operator} that acts on the function to solve time-dependent Schr\"odinger equation.\\
+Quantum gates can be defined as a \textbf{time evolution operators} that acts on the function to solve time-dependent Schr\"odinger equation.\\
 $\hat{U}(\Delta t) = e^{i\hat{H}\Delta t}$ at state $\ket{\Psi(0)}$ can be approximated with $(1-\hat{H}\Delta t)$ and this latter can be solved by a quantum gate to give out $\ket{\Psi(t)}$. This operation cannot be solved by classical computers, dynamics is naturally given out by quantum computers.\\
-\newline
-\underline{Three-electrons system.}\\
-\newline
-For this application we need two energy levels, I calculate the Slater determinant for a 3-particles-system:\\
+
+\subsubsection{Three-electrons system}
+Remember that thanks to the mean fiel approximation (nedeed for many-body calculations) we have the advantage that:
+\[
+\sum_{i<j} U(r_{ij}) \simeq \sum_i \bar{U}(r_i)
+\]
+making the computation piece-wise and therefore, muche easier to solve. 
+The Hamiltonian becomes the sum of many small hamiltonians: 
+\[
+H = \sum_{ij} h_i \rightarrow \phi(q_1, ... , q_n) = \prod_i \phi(q_i)
+\]
+with $q_i = (\bar{r}_i, S^z_i)$ representing the position. The thing is that a simple product generally does not respect the spin and its rules (e.g. Pauli blocking). This factorization works well for distinguishable particles, like in Boltzmanions systems. These are almost classical settings. \\
+Let's assume we have he following systems:
+\[
+\textbf{Bosons} \;\; \frac{1}{\sqrt{2}}(\phi_0(r_1)\phi_1(r_2) + \phi_0(r_2)\phi_1(r_1))
+\]
+\[
+\textbf{Fermions} \;\; \frac{1}{\sqrt{2}}(\phi_0(r_1)\phi_1(r_2) + \phi_0(r_2)\phi_1(r_1))
+\]
+While for bosons for systems with $N>2$ the sum of permutations is sufficient (symmetry), for fermions we'll need to calculate the Slater determinant (since it's guaranteed that the wave-function is antisymmetric). \\ 
+For this application ($N = 3 $) we need two energy levels. Indeed if we try to force the three particles in the same s-state, the Slater determinant will eventually go to zero.\\
 \[
 \det\frac{1}{\sqrt{N!}}
 \begin{pmatrix}
@@ -342,7 +359,7 @@ For this application we need two energy levels, I calculate the Slater determina
 \]
 Six-terms determinant, complicated to evaluate!\\
 \newline
-\underline{Application of the mean field approximation to calculate the density of electrons in a point}\\
+\underline{Application of the mean field approximation to calculate the density of electrons in a point ($N=2$)}\\
 \newline
 We can define a \textit{density operator}
 \[
