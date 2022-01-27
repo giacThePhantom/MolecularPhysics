@@ -4,6 +4,7 @@ How do we solve quantum mechanical problems? Or to be more specific, how to solv
 Some assumption concern the shape of the Hamiltonian (like confining a particle in a box instead of a complex potential), some concern the solution of a given Hamiltonian.
 The question we ask ourselves as biologist is "do we want to be more accurate or insightful?". If our aim is a biological application of quantum mechanics we are more interested in accuracy rather than completely understanding a structure $\rightarrow$ approximation.
 \section{Truncated eigenstate expansion (Generalized Fourier)}
+Most quantum mechanical problems have an infinite number of functions in the basis set of functions that should be used to represent the problem. We can simplify our calculations and make a useful and accurate approximate solution by considering a finite subset of all the possible functions, especially those that have energies close to the state of the system of interest.\\
 An Hermitian operator $\hat{O}$ defined such as it is complete and orthonormal $\hat{O}^+=\hat{O}$ can be applied to a wave function $\hat{O}\Psi_n(x)=o_n\Psi_n(x)$ such as $\bigl(\Psi_n(x),\Psi_m(x)\bigr)=\delta_{mn}$\\
 Remember that \textit{complete} and \textit{orthonormal} means:
 \begin{itemize}
@@ -11,7 +12,7 @@ Remember that \textit{complete} and \textit{orthonormal} means:
 \item \textit{complete}: $ | \psi \rangle = \sum_n \langle o_k | \psi \rangle |o_n \rangle$.
 \end{itemize}
 
-$\rightarrow$ If given $g(x)\in L^2$ I can write the projection of function onto a basis of functions\\
+$\rightarrow$ If given $g(x)\in L^2$ I can write the projection of function onto a basis of functions. The \textbb{Generalized Fourier Series of a $L^2$ function} is\\
 \[
 g(x)=\sum_{n}\bigl(\Psi_n(x),g(x)\bigr)\Psi_n(x) =\sum_{n=1}^{\infty}c_n\Psi_n(x)\\
 \]
@@ -43,7 +44,7 @@ where $(\Psi_n,\Psi_m)=\delta_{nm}$ and for the Kronecker delta properties I get
 (g,g)= \sum_nc_n^* \cdot c_m \cdot 1 \rightarrow (g,g)=\sum_{n=0}^{\infty}|c_n|^2
 \]
 that is the square module of Fourier coefficient.\\
-If $g(x)$ is a wave function then $(g,g)=1$, which is the probability of finding the electron in the region delimited by the function (obviusly, the electron will \textit{always} be somewhere).\\
+If $g(x)$ is a wave function then $(g,g)=1$, which is the probability of finding the electron in the region delimited by the function (obviously, the electron will \textit{always} be somewhere).\\
 \newline
 From $(g,g)=1$ we get the \textbf{SUM RULE}: $\; \sum_{n=0}^{\infty}|c_n|^2=1$
 The aim of the approximation method is finding a $M$ integer that indicates how far from one is the wave function that needs to be approximated. E.g.: $\; \sum_{n=0}^{M}|c_n|^2 \simeq 0.98$\\
