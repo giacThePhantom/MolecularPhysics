@@ -34,4 +34,5 @@ See this [Github gist](https://gist.github.com/giacThePhantom/e080a777782754542d
 * [X] Multidimensional integrals
 * [X] Wave equations
 * [X] Hilbert spaces
+* [X] Dirac notation
 * [ ] Solved exercises

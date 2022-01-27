@@ -1,7 +1,7 @@
 \graphicspath{{chapters/07/}}
 \chapter{Molecular physics}
 \section{The Born-Oppenheimer Approximation}
-Molecular physics and chemistry can be represented by an "unsolvable" Schr\"odinger equation:\\
+Molecular physics expalins the origin of chemical bonds and makes it possible to understand quantum chemistry calculations. Chemistry can be represented by an "unsolvable" Schr\"odinger equation:\\
 \[
 \bigg[-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2
 -\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i
@@ -13,57 +13,67 @@ V[\{\vec{R}\}_{\alpha},\{\vec{r}_i\}]=\bigg(\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec
 -\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}\bigg)\]
 In order, the different parts of the equation represent:
 \begin{enumerate}
-	\item Kinetics of nuclei
-	\item Kinetics of electrons
-	\item Repulsive coulombic interaction between electrons
-	\item Repulsive coulombic interaction between nuclei
-	\item Attractive coulombic interaction between nucleus and electrons
+	\item $-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2$,  Kinetics of nuclei
+	\item $-\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i$,  Kinetics of electrons
+	\item $\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}$,  Repulsive coulombic interaction between electrons
+	\item $\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}$,  Repulsive coulombic interaction between nuclei
+	\item $-\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}$,  Attractive coulombic interaction between nucleus and electrons
 	\item Curly brackets represent the collection of all r and R
 \end{enumerate}
-This equation can be approximated by considering that protons are much bigger and slower than electrons. The Born-Oppenheimer approximation divides these operations in two.\\
+This equation can be approximated by considering that protons are much bigger and slower than electrons, and therefore are fixed. The Born-Oppenheimer approximation divides these operations in two (\textbf{decoupling}).\\
 \newline
-1 - Study the electronic problem at fixed nuclear configuration.\\
-I ignore the first fragment (no motion, no kinetic energy) and the coulombic repulsion becomes constant consequently. Nuclei bind only when they are close to each other.
+We can implement a \textit{divide et impera} approach:\\
+\textbf{1)} Study the electronic problem at fixed nuclear configuration (i.e. ignoring the kinetic energy of the nuclei).\\
+The first fragment is ignored (no motion, no kinetic energy) and the coulombic repulsion becomes constant consequently. Nuclei bind only when they are close to each other.
 \[
 \bigg[-\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i
 +\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}
--\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}\bigg]\cdot\Psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i] =E|\{R_{\alpha}\}|\Psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i]
+-\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}\bigg]\cdot\Psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i] =E[\{R_{\alpha}\}]\Psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i]
 \]
-The energy eigenvalue describes the electron density around the nuclei at fixed nuclei positions.\\
-The fact that there are electrons moving increases the overall potential energy (repulsive interactions), electrons can lower their higher potential energy by tunneling to another nucleus with Pauli symmetry. This lowers the total energy of the system and creates bonds.\\
+Where $E[\{R_{\alpha}\}]$ is the energy of the system at a fixed nuclear position, ${R_{\alpha}}$ represents the contributions of the electrons to the potential energy.\\
+The energy eigenvalue describes the electron density around the nuclei at fixed nuclei positions. The fact that there are electrons moving increases the overall potential energy (repulsive interactions), electrons can lower their higher potential energy by tunneling to another nucleus with Pauli symmetry. This lowers the total energy of the system and creates bonds.\\ 
+Note that this is not a "charge-driven" attraction, but a phenomenon driven by quantum tunneling and Pauli's symmetry. 
 \newline
-2- Solve the dynamics of the nuclei based on their own coulombic interactions + electrons effect.
+\textbf{2)} Solve the dynamics of the nuclei based on their own coulombic interactions and electrons effect.
 \[
 \bigg[-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2
 +\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}+E|\{R_\alpha\}| \bigg]\varphi(|R|)=\varepsilon\varPhi(\{R\})
 \]
-$\varepsilon$ is a value, not a function, it does not depend on any parameter.\\
+Note that $\varepsilon$ is a value, not a function, it does not depend on any parameter.\\
 The quantum effect becomes weaker as the weight of the system increases. To describe a many-body system, I can replace this Schr\"odinger equation with a Newtonian equation.\\
 \[
 M_\alpha\frac{d^2}{dt^2}R_\alpha(t)=-\nabla_\alpha(E(R)+E_t(R))
 \]
-This equation describes \textbf{CLASSICAL MOLECULAR SIMULATIONS}. I miss the quantum effects of the nuclei (protonation - quantum tunneling of protons, chemical reactions...)\\
+This equation is fine for describing \textbf{classical molecular simulations}. We loose the quantum effects of the nuclei (protonation - quantum tunneling of protons, chemical reactions...), and often for molecules a classical formulation is enough.
+
 \section{The H$_2$ molecule}
-I have two protons (a,b) and two electrons (1,2). Consider the structure of the electronic wave function as $\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z,(\vec{R_a},\vec{R_b}))$ where $(\vec{R_a},\vec{R_b})$ is a fixed external parameter because of Born-Oppenheimer approximation (distance between nuclei).\\
+We are given two protons (a,b) and two electrons (1,2). Consider the structure of the electronic wave function as $\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z,(\vec{R_a},\vec{R_b}))$ where $(\vec{R_a},\vec{R_b})$ is a fixed external parameter because of the Born-Oppenheimer approximation (distance between nuclei). A schematic draw of the problem is depicted in figure \ref{fig:h2}.\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_8}
+	\caption{A representation of the $H_2$ molecule, given the Born-Oppenheimer approximation.}
+	\label{fig:h2}
 \end{figure}
 \newline
-The system can be firstly represented as two atoms at a large distance that approach slowly to each other, generating a linear combination of mean wave functions. The electrons are in a superposition of states when they start interacting, \marginpar{\textit{first reaction: shock}}so the resulting H-H chemical bond is actually an entangled electron tunneling.
+The system can be firstly represented as two atoms at a large distance that approach slowly to each other, generating a linear combination of mean wave functions. The electrons are in a superposition of states when they start interacting, so the resulting H-H chemical bond is actually an entangled electron tunneling.
 \[
-\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z,(\vec{R_a},\vec{R_b}))=\Psi_{\text{spatial}}(\vec{r_1},\vec{r_2})\otimes\Psi_{\text{spin}}(s_1^z,s_2^z)=\Phi\otimes\chi
+\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z,(\vec{R_a},\vec{R_b}))=\Psi_{\text{spatial}}(\vec{r_1},\vec{r_2})\otimes\Psi_{\text{spin}}(s_1^z,s_2^z)=\Phi\otimes\mathcal{X}
 \]
-I can factorize the wave function, as the Hamiltonian is separable.\\
-Spins can be $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\ket{\uparrow\downarrow}$, and $\ket{\downarrow\uparrow}$. Since electrons are fermions, the two spins' product must be antisymmetric, hence one of the two spins must be antisymmetric and the other one must be symmetric. Symmetry can be evaluated in entangled states, too. \\
-\newline
-\underline{Symmetric spin} ($J=1$): $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}$ also called \textbf{TRIPLET STATE}, molecule bends in Stern-Gerlach.\\
-\newline
-\underline{Antisymmetric spin} ($J=0$):\marginpar{\textit{Tinder-state singlet molecule} :D} $\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}}$ also called \textbf{SINGLET STATE}, molecule doesn't bend in Stern-Gerlach.\\
+The wave-function can be factorized, as the Hamiltonian is separable (i.e. does not depend on the spin).\\
+Spins can be $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\ket{\uparrow\downarrow}$, and $\ket{\downarrow\uparrow}$. Since electrons are fermions, the two spins' product must be antisymmetric, hence one of the two spins must be antisymmetric and the other one must be symmetric (the two possibilities are \textit{i}) spatial symmetry and spin antisymmetric, \textit{ii}) spatial antisymmetry and simmetric spin). Symmetry can be evaluated in entangled states, too. 
+
+\begin{description}
+   \item[Symmetric spin] ($J=1$): $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}$ also called \textbf{triplet state} (quantum state of a system with a spin quantum number $s=1$), molecule bends in Stern-Gerlach.\\
+   \item[Antisymmetric spin] ($J=0$): $\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}}$ also called \textbf{singlet state} (total spin angular moment $s=0$), molecule doesn't bend in Stern-Gerlach.\\
+\end{description}
+
+The result is that a combination of two spin-1/2 particles can carry a total spin of 1 or 0, depending on whether they occupy a triplet or singlet state.\\
+
+Now we can generate now a model through a variational ansatz:
 \[
-\Psi=\Phi\chi=\begin{cases}
-\Psi_1=\Phi_S\chi_A=\frac{\varphi_a^{r_{1a}}\varphi_b^{r_{1b}}+\varphi_a^{r_{2a}}\varphi_b^{r_{2b}}}{\sqrt{2}}\otimes\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}}\\
-\Psi_2=\Phi_A\chi_S=\frac{\varphi_a^{r_{1a}}\varphi_b^{r_{1b}}-\varphi_a^{r_{2a}}\varphi_b^{r_{2b}}}{\sqrt{2}}\otimes\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}\\
+\Psi=\Phi \mathcal{X}=\begin{cases}
+\Psi_1=\Phi_S \mathcal{X}_A = \frac{1}{\sqrt{2}} \big(\varphi_a(r_{1a}) \varphi_b (r_{1b})+\varphi_a (r_{2a}) \varphi_b (r_{2b})\big) \otimes\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}}\\
+\Psi_2=\Phi_A\mathcal{X}_S = \frac{1}{\sqrt{2}} \big(\varphi_a(r_{1a}) \varphi_b (r_{1b})+\varphi_a (r_{2a}) \varphi_b (r_{2b})\big) \otimes\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}\\
 \end{cases}
 \]
 The latter is a mean field model where E1 lives in P1 and E2 lives in P2.\\
@@ -71,10 +81,10 @@ By the variational principle, the wavefunction with the lowest value of energy i
 \[
 \hat{H}=-\frac{\hbar^2}{2m}\nabla_n^2-\frac{\hbar^2}{2m}\nabla_e^2-\frac{e^2}{|r_1a|}-\frac{e^2}{|r_1b|}-\frac{e^2}{|r_2a|}-\frac{e^2}{|r_2b|}-\frac{e^2}{|R_ab|}
 \]
-Even if spin is not involved in the Hamiltonian and eventually results in $\braket{\hat{S}\,|\,\hat{S}}=1$, the sign of the expected value of the Hamiltonian depends on the spin symmetry, because \underline{spatial value and spin symmetry are entangled}.
-\[E_1=\braket{\Psi_1\,|\,\hat{H}\,|\,\Psi_1}=\braket{\Phi_S\,|\,\hat{H}\,|\,\Phi_S}\]
-\[E_2=\braket{\Psi_2\,|\,\hat{H}\,|\,\Psi_2}=\braket{\Phi_A\,|\,\hat{H}\,|\,\Phi_A}\]
-I must solve, then,
+Even if spin is not involved in the Hamiltonian and eventually results in $\braket{\hat{S}\,|\,\hat{S}}=1$, the sign of the expected value of the Hamiltonian depends on the spin symmetry, because spatial value and spin symmetry are entangled.
+\[E_1=\langle{\Psi_1\,|\,\hat{H}\,|\,\Psi_1}\rangle =\langle{\Phi_S\,|\,\hat{H}\,|\,\Phi_S}\rangle\]
+\[E_2=\langle{\Psi_2\,|\,\hat{H}\,|\,\Psi_2}\rangle=\langle{\Phi_A\,|\,\hat{H}\,|\,\Phi_A}\rangle\]
+We must solve, then,
 \[
 E_1=\frac{1}{2}\int d\vec{r_1}\int d\vec{r_2}\,\big[\varphi(|\vec{r_1}-\vec{R_a}|)\varphi(|\vec{r_2}-\vec{R_b}|)+\varphi(|\vec{r_1}-\vec{R_b}|)\varphi(|\vec{r_2}-\vec{R_a}|)\big](\hat{H})(\Phi_S)
 \]
