@@ -1,0 +1,20 @@
+\section{Partial derivatives}
+
+  \subsection{Solving partial derivatives}
+  Compute both first order partial derivatives of $f = e^{ix}(x^3 + y^3 + 1)$.
+  \begin{align*}
+    \frac{\partial f}{\partial x} & = ie^{ix}(x^3 + y^3 + 1) + e^{ix}(3x^2) \\
+                                  & = e^{ix}(ix^3 + iy^3 + i + 3x^2) \\
+    \frac{\partial f}{\partial y} & = 3y^2e^{ix} \\
+  \end{align*}
+
+  Compute $\frac{\partial^5f}{\partial^2x\partial^3y}$ with $f = xy^3e^{-\frac{1}{y}} + 5e^{ix^3}y^2$.
+  \begin{align*}
+    f                                           & = xy^3e^{-\frac{1}{y}} + 5e^{ix^3}y^2 \\
+    \frac{\partial f}{\partial x}               & = y^3e^{-\frac{1}{y}} + i15x^2e^{ix^3}y^2\\
+    \frac{\partial^2f}{\partial^2x}             & = i15y^2[(2x)(e^{ix^3}) + (x^2)(i3x^2e^{ix^3})]\\
+                                                & = i15y^2xe^{ix^3}(2 + i3x^3)\\
+    \frac{\partial^3f}{\partial^2x\partial y}   & = i30yxe^{ix^3}(2 + i3x^3) \\
+    \frac{\partial^4f}{\partial^2x\partial^2y}  & = i30xe^{ix^3}(2 + i3x^3) \\
+    \frac{\partial^5f}{\partial^2x\partial^3y}  & = 0 \\
+  \end{align*}

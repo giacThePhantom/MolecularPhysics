@@ -89,7 +89,7 @@ The potential is: $U(x)=U_0(x^2-x_0^2)^2$.\\
 The Hamiltonian for the wave function: $\hat{H}=-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2$
 Note that this is a symmetric function, roughly composed by two gaussians, so we can approximate the function with an harmonic oscillator. Considering the potential to its lowest points it can be approximated and then expanded. \\
 
-We have two basis elements, the two eigenstates $n=0,1$ (ground state and first excited state), and we whish to solve $hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
+We have two basis elements, the two eigenstates $n=0,1$ (ground state and first excited state), and we wish to solve $\hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
 
 \[
 \hat{H}\varphi_n=E_n\varphi_n
@@ -107,7 +107,7 @@ H_{RR}=(\psi_R,\hat{H}\,\psi_R)= \int\psi_R^*(x)\,\bigg[-\frac{\hbar^2}{2m}\,\fr
 \]
 $U_0$ has been substitued with the potential energy of the harmonic oscillator approximation. The integral is computable with Taylor expansion because we consider the minimum of the function.
 \[
-U(x)=U(x_0)+U'(x_0)(x-x_0)+\frac{1}{2}\,U''(x_0)(x-x_0)+\dots\]
+U(x)=U(x_0)+U'(x_0)(x-x_0)+\frac{1}{2}\,U''(x_0)(x-x_0)^2+\dots\]
 The final result is
 \[
 H_{RR}=\frac{1}{2}\hbar\omega
@@ -189,12 +189,12 @@ $P_L(t>0)=1-P_R(t>0)$\\
 By definition $E_0=0, E_1= \varepsilon$. Consequently, $\varepsilon = E_1-E_0$\\
 To find the probability of the particle being on the right/left, ($P_{R/L}(t)=|\braket{\psi_{R/L}\,|\,\varphi(t)}|^2$), we will use the time evolution operator.\\
 \[
-P_R(t)=|\braket{\psi_R\,|\,e^{-\frac{i}{\hbar}\cdot t \hat{H}}\,|\,\psi_L}|^2
+P_R(t)=|\mel{\psi_R}{e^{-\frac{i}{\hbar}\cdot t \hat{H}}}{\psi_L}|^2
 \]
 Minding that $\psi_R$ occurs at time $t$ whilst $\psi_L$ occurs at $t=0$.\\
 If I want to check whether the particle is still on the left
 \[
-P_L(t)=|\braket{\psi_L\,|\,e^{-\frac{i}{\hbar}\cdot t \hat{H}}\,|\,\psi_L}|^2
+P_L(t)=|\mel{\psi_L}{e^{-\frac{i}{\hbar}\cdot t \hat{H}}}{\psi_L}|^2
 \]
 Let's first compute the probability for a small $t$. We perform the Taylor expansion of $e^{-\frac{i}{\hbar}\cdot t \hat{H}} = \mathds{1} -\frac{i}{\hbar}\cdot t\hat{H}$
 \[
@@ -213,19 +213,12 @@ Let's first compute the probability for a small $t$. We perform the Taylor expan
 \end{pmatrix}
 \]
 \[
-P_R(t)\cong\bigg|\braket{\psi_R\,|\,1-\frac{i}{\hbar}\cdot t \hat{H}\,|\,\psi_L}\bigg|^2 \cong
-\bigg|(1,\,0) \cdot \mathds{1}
-\begin{pmatrix}
-0\\1
-\end{pmatrix}
--\frac{i}{\hbar}\cdot t \cdot (1,\,0)
-\begin{pmatrix}
-0 & \varepsilon\\ \varepsilon & 0
-\end{pmatrix}
-(0,\,1)\bigg|^2
+P_R(t)\cong\bigg|\mel{\psi_R}{\mathds{1}-\frac{i}{\hbar}\cdot t \hat{H}}{\psi_L}\bigg|^2 \cong
+\bigg|(0,\,1) \bigg[\mathds{1}-\frac{i}{\hbar}\cdot t\hat{H}
+\begin{pmatrix}1\\0\end{pmatrix}\bigg]\bigg|^2
 \]
 \[
-\cong \frac{t^2}{\hbar^2}\varepsilon
+\cong \frac{t^2}{\hbar^2}\varepsilon^2
 \]
 but since $\frac{t\varepsilon}{\hbar}<<1$ we get $t << \frac{\hbar}{\varepsilon}$.\\
 This is telling us that by waiting a little time the probability of finding the particle on the other side increases. This phenomenom is called \textbf{quantum tunneling}.\\
@@ -248,25 +241,27 @@ For the final $t$ we cannot expand the exponent like we did before. Given $e^{-\
 \[
 \text{first excited state:} \ket{1}=\bigg(\frac{\ket{L}-\ket{R}}{\sqrt{2}}\bigg) \rightarrow \sqrt{2}\ket{1}= \ket{L}-\ket{R}
 \]
-By summing and dividing,
+By summing and subtracting,
 \[
 \begin{cases}
-\ket{L}=\frac{1}{\sqrt{2}}\ket{\ket{0}+\ket{1}}\\
-\ket{R}=\frac{1}{\sqrt{2}}\ket{\ket{0}-\ket{1}}
+\ket{L}=\frac{1}{\sqrt{2}}(\ket{0}+\ket{1})\\
+\ket{R}=\frac{1}{\sqrt{2}}(\ket{0}-\ket{1})
 \end{cases}
 \]
-so we can substitute them:
+so we can substitute them and use hamiltonian operator:
 \[
-e^{-\frac{it}{\hbar}\hat{H}}\ket{R}=\frac{e^{-\frac{it}{\hbar}\hat{H}}}{\sqrt{2}}\cdot \ket{\ket{0}-\ket{1}}=\frac{1}{\sqrt{2}}\ket{0}-\frac{e^{-\frac{it}{\hbar}\varepsilon}}{\sqrt{2}}\ket{1}
+e^{-\frac{it}{\hbar}\hat{H}}\ket{R}=\frac{e^{-\frac{it}{\hbar}\hat{H}}}{\sqrt{2}}\cdot (\ket{0}-\ket{1})=\frac{1}{\sqrt{2}}\ket{0}-\frac{e^{-\frac{it}{\hbar}\varepsilon}}{\sqrt{2}}\ket{1}
 \]
-where $e^{-\frac{it}{\hbar}\varepsilon}$ is the relative weight of quantum superposition.\\
-\newline
+where $e^{-\frac{it}{\hbar}\varepsilon}$ is the relative weight of quantum superposition for the first excited state (E_1=\varepsilon). Ground state has an eigenvalue E_0=0 as stated above.\\
+Let's calculate the probability for the particle to be on the left.\\
 \[
-P_L=|\braket{L\,|\,\psi(t)}|^2=\bigg|\bra {L}\bigg(\frac{1}{\sqrt{2}}\ket{0}-\frac{1}{\sqrt{2}}\cdot e^{-\frac{it}{\hbar}\varepsilon} \ket{1} \bigg)\bigg|^2
+P_L=|\braket{L}{\psi(t)}|^2=\bigg|\braket{L}{\bigg(\frac{1}{\sqrt{2}}\ket{0}-\frac{1}{\sqrt{2}}\cdot e^{-\frac{it}{\hbar}\varepsilon} \ket{1} \bigg)}\bigg|^2
 \]
-Knowing that $\braket{L\,|\,L}=\frac{1}{\sqrt{2}}$ and $\braket{L\,|\,R}=0$,
+Knowing that $\braket{L}{L}=\frac{1}{\sqrt{2}}$ and $\braket{L}{R}=0$,
 \[
-= \bigg|\frac{1}{2}\cdot \frac{1}{\sqrt{2}}\cdot e^{-\frac{it}{\hbar}\varepsilon} \cdot \braket{L\,|\,1}\bigg|^2=\bigg(\frac{1}{2}-\frac{1}{2}\cdot e^{-\frac{it}{\hbar}\varepsilon}\bigg)^2=\bigg[\frac{1}{2}-\frac{1}{2}\bigg(\cos\frac{\varepsilon t}{\hbar}+i\sin\frac{\varepsilon t}{\hbar}\bigg)\bigg]^2
+=\bigg|\braket{L}{\frac{\ket{L}+{R}}{\sqrt{2}}-e^{-\frac{it}{\hbar}\varepsilon}\cdot\frac{\ket{L}-\ket{R}}{\sqrt{2}}}\bigg|^2
+=\bigg(\frac{1}{2}-\frac{1}{2}\cdot e^{-\frac{it}{\hbar}\varepsilon}\bigg)^2
+=\bigg[\frac{1}{2}-\frac{1}{2}\bigg(\cos\frac{\varepsilon t}{\hbar}+i\sin\frac{\varepsilon t}{\hbar}\bigg)\bigg]^2
 \]
 \[
 P_L=\frac{1}{2}\bigg(1-\cos^2\frac{\varepsilon}{\hbar}t\bigg)
