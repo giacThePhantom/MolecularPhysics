@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.4)  26 JAN 2022 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.4)  27 JAN 2022 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,7 +1189,7 @@ File: chapters/06/img_7.jpg Graphic file (type jpg)
 Package pdftex.def Info: chapters/06/img_7.jpg  used on input line 180.
 (pdftex.def)             Requested size: 107.39934pt x 74.47693pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--185
+Underfull \hbox (badness 10000) in paragraph at lines 167--184
 
  []
 
@@ -1209,101 +1209,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--199
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
-[]$[]$\T1/cmr/m/it/10 :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
-\T1/cmr/m/it/10 a two-particle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
-\T1/cmr/m/it/10 state that
- []
-
-
-Underfull \hbox (badness 5231) in paragraph at lines 211--211
-\T1/cmr/m/it/10 can-not be ex-
- []
-
-
-Underfull \hbox (badness 2384) in paragraph at lines 211--211
-\T1/cmr/m/it/10 pressed as the
- []
-
-
-Underfull \hbox (badness 1082) in paragraph at lines 211--211
-\T1/cmr/m/it/10 prod-uct of two
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
-\T1/cmr/m/it/10 one-particle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--218
+Underfull \hbox (badness 10000) in paragraph at lines 217--223
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--239
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 238--244
 
  []
 
-[52] [53]
-Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
 []\T1/cmr/m/it/10 These sin-gle
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 276--276
+Underfull \hbox (badness 1028) in paragraph at lines 281--281
 \T1/cmr/m/it/10 quan-tum states
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--295
+Underfull \hbox (badness 10000) in paragraph at lines 296--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--295
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--319
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--319
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--319
+Underfull \hbox (badness 10000) in paragraph at lines 296--300
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 336--342
+Underfull \hbox (badness 10000) in paragraph at lines 316--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--342
+Underfull \hbox (badness 10000) in paragraph at lines 316--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--383
+Underfull \hbox (badness 10000) in paragraph at lines 316--324
 
  []
 
-[55]) (./chapters/07_molecular_physics.tex [56]
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--347
+
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
+
+ []
+
+) (./chapters/07_molecular_physics.tex [56]
 Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -1344,7 +1309,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 46.
 
-<chapters/07/img_8.jpg, id=1148, 411.5375pt x 255.95625pt>
+<chapters/07/img_8.jpg, id=1155, 411.5375pt x 255.95625pt>
 File: chapters/07/img_8.jpg Graphic file (type jpg)
 <use chapters/07/img_8.jpg>
 Package pdftex.def Info: chapters/07/img_8.jpg  used on input line 50.
@@ -1390,12 +1355,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
-<chapters/07/img_9.jpg, id=1154, 555.07375pt x 376.40625pt>
+<chapters/07/img_9.jpg, id=1161, 555.07375pt x 376.40625pt>
 File: chapters/07/img_9.jpg Graphic file (type jpg)
 <use chapters/07/img_9.jpg>
 Package pdftex.def Info: chapters/07/img_9.jpg  used on input line 97.
 (pdftex.def)             Requested size: 166.52339pt x 112.92273pt.
-<chapters/07/img_13.jpg, id=1155, 1542.76375pt x 697.60625pt>
+<chapters/07/img_13.jpg, id=1162, 1542.76375pt x 697.60625pt>
 File: chapters/07/img_13.jpg Graphic file (type jpg)
 <use chapters/07/img_13.jpg>
 Package pdftex.def Info: chapters/07/img_13.jpg  used on input line 103.
@@ -1448,7 +1413,7 @@ mr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )	([] \OMS/cmsy/m/n/10 ^^@
  []\OT1/cmr/m/n/10 )[]
  []
 
-<chapters/07/img_14.png, id=1173, 557.08125pt x 414.54875pt>
+<chapters/07/img_14.png, id=1180, 557.08125pt x 414.54875pt>
 File: chapters/07/img_14.png Graphic file (type png)
 <use chapters/07/img_14.png>
 Package pdftex.def Info: chapters/07/img_14.png  used on input line 170.
@@ -1499,7 +1464,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
  []
 
 [63 <./chapters/07/img_14.png>]
-<chapters/07/img_15.jpg, id=1189, 1229.59375pt x 249.93375pt>
+<chapters/07/img_15.jpg, id=1196, 1229.59375pt x 249.93375pt>
 File: chapters/07/img_15.jpg Graphic file (type jpg)
 <use chapters/07/img_15.jpg>
 Package pdftex.def Info: chapters/07/img_15.jpg  used on input line 198.
@@ -1550,59 +1515,60 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `principal.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 17318 strings out of 482820
- 305064 string characters out of 5957805
- 611705 words of memory out of 5000000
- 31888 multiletter control sequences out of 15000+600000
- 563007 words of font info for 111 fonts, out of 8000000 for 9000
+ 17325 strings out of 482820
+ 305142 string characters out of 5957805
+ 610708 words of memory out of 5000000
+ 31891 multiletter control sequences out of 15000+600000
+ 564862 words of font info for 115 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  44i,19n,47p,886b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600
-pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.60
-0pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.6
-00pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.
-600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000
-.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx144
-0.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx20
-74.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1
+pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0800.60
+0pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.6
+00pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.
+600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900
+.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti100
+0.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm07
+00.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1
 000.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-1000.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
-x1200.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
-rm0900.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-crm1200.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on build/principal.pdf (93 pages, 1994903 bytes).
+1440.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
+x2074.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
+rm1000.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx1000.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecbx1200.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec
+/ecrm0900.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecrm1200.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm7.pfb>
+Output written on build/principal.pdf (93 pages, 2020504 bytes).
 PDF statistics:
- 2041 PDF objects out of 2073 (max. 8388607)
- 1374 compressed objects within 14 object streams
- 328 named destinations out of 1000 (max. 500000)
+ 2105 PDF objects out of 2487 (max. 8388607)
+ 1394 compressed objects within 14 object streams
+ 329 named destinations out of 1000 (max. 500000)
  1333 words of extra memory for PDF output out of 10000 (max. 10000000)
 

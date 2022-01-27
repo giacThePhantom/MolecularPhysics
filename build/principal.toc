@@ -100,7 +100,7 @@
 \contentsline {subsection}{\numberline {6.2.2}Spin-Statistics theorem (in identical particles}{49}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Mean Field Approximation}{50}{subsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.2.4}Quantum Entanglement}{51}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Tensor product states}{53}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.5}Tensor product states}{54}{subsection.6.2.5}%
 \contentsline {chapter}{\numberline {7}Molecular physics}{57}{chapter.7}%
 \contentsline {section}{\numberline {7.1}The Born-Oppenheimer Approximation}{57}{section.7.1}%
 \contentsline {section}{\numberline {7.2}The H$_2$ molecule}{58}{section.7.2}%

@@ -184,18 +184,18 @@ We may ask ourselves: is there any stable nucleus? For clarity, a nucleus is div
 
 
 \subsection{Quantum Entanglement}
-In an external/mean potential, the Schr\"odinger equation has a potential of a single coordinate that depends on where that potential is located.
+In an external/mean potential, the Schr\"odinger equation has a potential of a single coordinate that depends on where that potential is located, thanks to the mean field approximation.
 \[
 \hat{H}=-\frac{\hbar^2}{2m}\sum_{i}\nabla_i^2+\sum_{i=1}^NU(q_i)=\sum_i h_i
 \]
 When $\hat{H}$ is separable into two parts, the wave function is the product of these two parts.\\
-Consider N identical spin-0 bosons (simplest system that represents the sum of all possible permutations for N<2):\\
+Consider N identical spin-0 bosons (simplest system that represents the sum of all possible permutations for N > 2):\\
 \[
 \Psi(r_1, ..., r_n)= \prod_K^n\varphi_n(r_i)=\varphi_1(r_1)\cdot ... \cdot \varphi_n(r_n)
 \]
 If I swap two excited states eg., $\varphi_s(r_3)$ and $\varphi_p(r_1)$, I do not obtain the same wave function (I get $\varphi_s(r_1)$ and $\varphi_p(r_3)$) so they are antisymmetric. If I swap two ground states they stay the same (they are symmetric). This system is also used for distinguishable particles (boltzmanions) or identical particles in semiclassic regimes.\\
 \newline
-Consider 2 identical fermions described by single-electron wave functions.\\
+Consider now two identical fermions described by single-electron wave functions.\\
 \[
 \Psi(r_1, s_1^2, r_2, s_2^2)=\varphi_{\uparrow}(r_1)\varphi_{\downarrow}(r_2)
 \]
@@ -208,11 +208,16 @@ by swapping their indices
 \Psi'=\frac{1}{\sqrt{2}}\big(\varphi_{\uparrow}(r_2)\varphi_{\downarrow}(r_1)-\varphi_{\uparrow}(r_1)\varphi_{\downarrow}(r_2)\big)
 \]
 and it's noticeable how $\Psi = -\Psi'$. The two functions are antisymmetric.\\
-This represents a QUANTUM SUPERPOSITION OF STATES. In order to follow Pauli's principle, each state has a 50\% of probability to occur and when $r_1$ is $\uparrow$,  $r_2$ must necessarily be $\downarrow$. \textbf{The state of particle 2 is \ul{entangled} \marginpar{\textit{\underline{entangled state}: a two-particle state that cannot be expressed as the product of two one-particle states.}}to the state of particle 1}.\\
+This represents a quantum superposition of states. In order to follow Pauli's principle, each state has a 50\% of probability to occur and when $r_1$ is $\uparrow$,  $r_2$ must necessarily be $\downarrow$. We found out that Pauli's principle \textbf{entangles}particles. In our case with two fermions, the state of particle n.2 is entangled to the state of particle 1.
+
+\begin{center}
+\textbf{Quantum entanglement}: a physical phenomenon that occurs when a group of particles are generated, interact, or share spatial proximity in a way such that the quantum state of each particle of the group cannot be described independently of the state of the others, including when the particles are separated by a large distance.
+\end{center}
+
 The two particles are said to be an \textbf{EPR pair} (Einstein-Podolsky-Rosen) and the state of the two particles is called a \textbf{Bell state}.
 If I measure spin 1, the wave function collapses into spin value 1 and spin 2 consequently collapses into spin value 2.\\
 The concept of \textbf{quantum entanglement} has no correspondences in classical mechanics and is used to develop quantum computers.\\
-In classical computers I carry on information in one single state out of two (either the gate is open or is closed, binary system). In quantum computers I have N states, I have $2_N$ states entangled with each other at the same time. I can store much more information in $2_N$ compared to 1. \\
+In classical computers the iformation is carried on in one single state out of two (either the gate is open or is closed, binary system). In quantum computers I have N states, I have $2^N$ states entangled with each other at the same time. I can store much more information in $2^N$ compared to 1 \footnote{It may confuse a little, beacause we know that in a classical architecture, N bits can represent $2^N$ numbers. This formulation is not very correct and I will provide my own understanding on the matter. That is, with N bits we can ultimately have just one number, even if we have N possible ways to arrange the bits. Instead, a quantum architecture supports $2^N$ states \textit{simultaneously}. This more expressive power contributes to the idea of "quantum supremacy".}. \\
 \newline
 The antisymmetric equation is the determinant of this matrix:
 \[
@@ -233,24 +238,24 @@ that can be generalized into
 \]
 This latter matrix is called \textbf{Slater matrix} and I can calculate Slater determinant that guarantees that the wave function is antisymmetric.\\
 \newline
-$\hat{S^2}$ doesn't have a classical correspondence, we cannot directly obtain a formula for $\hat{S^2}$ in classical mechanics. I must find objects that have two states.\\
-Consider spin $1/2$ only to build an Hillbert space and an operator that acts on it. Since a particle with $s=1/2$ can have two different states, the most natural choice for a Hillbert space would be \emph{$L^2$}.\\
+The spin $\hat{S^2}$ doesn't have a classical correspondence, we cannot directly obtain a formula for $\hat{S^2}$ in classical mechanics. I must find objects that have two states.\\
+Consider spin $1/2$ only and choose an Hillbert space and an operator that acts on it. Since a particle with $s=1/2$ can have two different states, the most natural choice for a Hillbert space would be \emph{$L^2$}.\\
 The eigenstates of the z-components are:
 \[\ket{\uparrow}=\begin{pmatrix}1\\0\end{pmatrix}\, \ket{\downarrow}=\begin{pmatrix}0\\1\end{pmatrix}\]
 $\hat{S_x}$, $\hat{S_y}$, and $\hat{S_z}$ are represented by 2x2 matrices that must obey the commutation rule of $[\hat{S^2}\,,\,\hat{S_z}]=0$ and $[\hat{S_x}\,,\,\hat{S_y}]=i\hbar\hat{S_z}$.
 \\
 \textbf{Pauli matrices:}
 \[
-\hat{S_x}=\frac{\hbar}{2}\begin{pmatrix}0&1\\1&0\end{pmatrix}\,
-\hat{S_y}=\frac{\hbar}{2}\begin{pmatrix}0&-i\\i&0\end{pmatrix}\,
+\hat{S_x}=\frac{\hbar}{2}\begin{pmatrix}0&1\\1&0\end{pmatrix}\;\,
+\hat{S_y}=\frac{\hbar}{2}\begin{pmatrix}0&-i\\i&0\end{pmatrix}\;\,
 \hat{S_z}=\frac{\hbar}{2}\begin{pmatrix}1&0\\0&-1\end{pmatrix}
 \]
 The normalized eigenstates for the x-component are:
 \[
-\ket{\rightarrow}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\1\end{pmatrix}\,
+\ket{\rightarrow}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\1\end{pmatrix}\;\,
 \ket{\leftarrow}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\-1\end{pmatrix}\,
 \]
-We can find the conditional probability of finding spin up with the condition of being in a state of spin left.
+We can find the conditional probability of finding spin up with the condition of being in a state of spin left (but also spin up given spin up, etc.).
 \[
 P(\ket{\uparrow}|\ket{\leftarrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&0\end{pmatrix}\begin{pmatrix}1\\-1\end{pmatrix}\bigg)^2=\frac{1}{2}
 \]
@@ -260,10 +265,11 @@ P(\ket{\uparrow}|\ket{\uparrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&0\end{
 \[
 P(\ket{\leftarrow}|\ket{\uparrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&-1\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}\bigg)^2=\frac{1}{2}
 \]
-This latter is the mathematical formalism that represents the Stern Gerlach experiment.\\
-I can calculate $\hat{S^2} = \hat{S_x}^2+\hat{S_y}^2+\hat{S_z}^2$ that results in a sum of identity matrices, in fact
-\[\hat{S^2}=\frac{3}{4}\hbar^2\big(\mathbb{1}_e\big)\]
-The identity matrix $\mathbb{1}_e$ allows $\hat{S^2}$ to commute with every component of the spin operator.
+This is also the mathematical formalism that represents the Stern Gerlach experiment. In fact, if we calculate $P(\ket{\uparrow}|\ket{\leftarrow}) = \frac{1}{2}$, then $P(\ket{\uparrow}|\ket{\uparrow}) = 1$, we will get again $P(\ket{\uparrow}|\ket{\leftarrow}) = \frac{1}{2}$.  \\
+We can calculate $\hat{S^2} = \hat{S_x}^2+\hat{S_y}^2+\hat{S_z}^2$ that results in a sum of identity matrices, in fact
+\[\hat{S^2}=\frac{3}{4}\hbar^2\big(\mathds{1}_e\big)\]
+The identity matrix $\\mathds{1}_e$ allows $\hat{S^2}$ to commute with every component of the spin operator.
+
 \subsection{Tensor product states}
 I have two vectors
 \[
