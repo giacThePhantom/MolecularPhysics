@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  27 JAN 2022 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  27 JAN 2022 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1060,118 +1060,118 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
 ] (./chapters/05_approximation_methods.tex
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
 [43
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--38
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--50
+Underfull \hbox (badness 10000) in paragraph at lines 32--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--50
+Underfull \hbox (badness 10000) in paragraph at lines 45--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--51
 
  []
 
 <chapters/05//img_1.jpg, id=1206, 544.0325pt x 381.425pt>
 File: chapters/05//img_1.jpg Graphic file (type jpg)
 <use chapters/05//img_1.jpg>
-Package pdftex.def Info: chapters/05//img_1.jpg  used on input line 56.
+Package pdftex.def Info: chapters/05//img_1.jpg  used on input line 57.
 (pdftex.def)             Requested size: 108.80457pt x 76.28365pt.
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--73
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 <chapters/05//img_2.jpg, id=1213, 684.5575pt x 358.33875pt>
 File: chapters/05//img_2.jpg Graphic file (type jpg)
 <use chapters/05//img_2.jpg>
-Package pdftex.def Info: chapters/05//img_2.jpg  used on input line 81.
+Package pdftex.def Info: chapters/05//img_2.jpg  used on input line 82.
 (pdftex.def)             Requested size: 205.36882pt x 107.50244pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 [45 <./chapters/05//img_1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 99--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--143
+Underfull \hbox (badness 10000) in paragraph at lines 100--103
 
  []
 
 [46 <./chapters/05//img_2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 173--177
+Underfull \hbox (badness 10000) in paragraph at lines 138--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--190
+Underfull \hbox (badness 10000) in paragraph at lines 174--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--191
 
  []
 
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-98.
+99.
 (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [47]
-Underfull \hbox (badness 10000) in paragraph at lines 236--239
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
@@ -1179,40 +1179,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--263
 <chapters/05//img_3.jpg, id=1235, 705.63625pt x 326.21875pt>
 File: chapters/05//img_3.jpg Graphic file (type jpg)
 <use chapters/05//img_3.jpg>
-Package pdftex.def Info: chapters/05//img_3.jpg  used on input line 276.
+Package pdftex.def Info: chapters/05//img_3.jpg  used on input line 277.
 (pdftex.def)             Requested size: 211.6925pt x 97.86636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--282
+Underfull \hbox (badness 10000) in paragraph at lines 273--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
+Underfull \hbox (badness 10000) in paragraph at lines 295--299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--313
+Underfull \hbox (badness 10000) in paragraph at lines 304--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--313
+Underfull \hbox (badness 10000) in paragraph at lines 304--314
 
  []
 
 [49 <./chapters/05//img_3.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 332--339
+Underfull \hbox (badness 10000) in paragraph at lines 333--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--339
+Underfull \hbox (badness 10000) in paragraph at lines 333--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--342
+Underfull \hbox (badness 10000) in paragraph at lines 341--343
 
  []
 
@@ -1220,7 +1220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--342
 <chapters/05//img_4.jpg, id=1245, 523.9575pt x 378.41376pt>
 File: chapters/05//img_4.jpg Graphic file (type jpg)
 <use chapters/05//img_4.jpg>
-Package pdftex.def Info: chapters/05//img_4.jpg  used on input line 377.
+Package pdftex.def Info: chapters/05//img_4.jpg  used on input line 378.
 (pdftex.def)             Requested size: 104.78964pt x 75.6814pt.
 ) (./chapters/06_atomic_physics.tex [51 <./chapters/05//img_4.jpg>]
 Chapter 6.
@@ -1838,7 +1838,7 @@ Package rerunfilecheck Info: File `principal.out' has not changed.
 Here is how much of TeX's memory you used:
  22771 strings out of 478353
  422379 string characters out of 5854635
- 749033 words of memory out of 5000000
+ 749041 words of memory out of 5000000
  40116 multiletter control sequences out of 15000+600000
  433744 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1878,7 +1878,7 @@ frm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></u
 sr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-
 dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type
 1/public/cm-super/sfti1000.pfb>
-Output written on ./build/principal.pdf (109 pages, 2807712 bytes).
+Output written on ./build/principal.pdf (109 pages, 2808066 bytes).
 PDF statistics:
  1815 PDF objects out of 2073 (max. 8388607)
  1566 compressed objects within 16 object streams
