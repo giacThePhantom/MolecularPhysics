@@ -114,7 +114,7 @@
 \contentsline {chapter}{\numberline {7}Molecular physics}{64}{chapter.7}%
 \contentsline {section}{\numberline {7.1}The Born-Oppenheimer Approximation}{64}{section.7.1}%
 \contentsline {section}{\numberline {7.2}The H$_2$ molecule}{65}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Electronic structure calculation methods}{66}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Electronic structure calculation methods}{67}{section.7.3}%
 \contentsline {subsubsection}{\numberline {7.3.0.1}Hartree-Fock Method}{68}{subsubsection.7.3.0.1}%
 \contentsline {subsection}{\numberline {7.3.1}Density Function Theory (DFT)}{69}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}QM-MM Schemes}{71}{subsection.7.3.2}%
@@ -214,28 +214,20 @@
 \contentsline {subsubsection}{\numberline {15.2.3.2}Second corollary}{106}{subsubsection.15.2.3.2}%
 \contentsline {subsubsection}{\numberline {15.2.3.3}Third corollary}{106}{subsubsection.15.2.3.3}%
 \contentsline {section}{\numberline {15.3}Fourier transform}{106}{section.15.3}%
-\contentsline {chapter}{\numberline {16}Dirac notation}{107}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Vector space representation}{108}{section.16.1}%
-\contentsline {subsection}{\numberline {16.1.1}Inner product}{108}{subsection.16.1.1}%
-\contentsline {subsection}{\numberline {16.1.2}Operator}{108}{subsection.16.1.2}%
-\contentsline {section}{\numberline {16.2}Hilbert space representation}{109}{section.16.2}%
-\contentsline {subsection}{\numberline {16.2.1}Inner product}{109}{subsection.16.2.1}%
-\contentsline {subsection}{\numberline {16.2.2}Operator}{109}{subsection.16.2.2}%
-\contentsline {section}{\numberline {16.3}\textit {Example: two linearly independent states}}{109}{section.16.3}%
-\contentsline {chapter}{\numberline {17}Solved exercises}{111}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Complex numbers}{111}{section.17.1}%
-\contentsline {subsection}{\numberline {17.1.1}Conversion to polar form}{111}{subsection.17.1.1}%
-\contentsline {subsection}{\numberline {17.1.2}Multivalued functions}{111}{subsection.17.1.2}%
-\contentsline {section}{\numberline {17.2}Partial derivatives}{112}{section.17.2}%
-\contentsline {subsection}{\numberline {17.2.1}Solving partial derivatives}{112}{subsection.17.2.1}%
-\contentsline {section}{\numberline {17.3}Differential operators}{113}{section.17.3}%
-\contentsline {subsection}{\numberline {17.3.1}Computing the gradient of a function}{113}{subsection.17.3.1}%
-\contentsline {subsection}{\numberline {17.3.2}Computing the divergence of a function}{113}{subsection.17.3.2}%
-\contentsline {subsection}{\numberline {17.3.3}Computing the curl of a function}{113}{subsection.17.3.3}%
-\contentsline {subsection}{\numberline {17.3.4}Curl of the grad of a function}{113}{subsection.17.3.4}%
-\contentsline {subsection}{\numberline {17.3.5}Divergence of the curl of a function}{114}{subsection.17.3.5}%
-\contentsline {subsection}{\numberline {17.3.6}Divergence of the gradient of a function}{114}{subsection.17.3.6}%
-\contentsline {section}{\numberline {17.4}Spherical coordinates}{115}{section.17.4}%
-\contentsline {section}{\numberline {17.5}Multidimensional integrals}{115}{section.17.5}%
-\contentsline {section}{\numberline {17.6}Wave equations}{115}{section.17.6}%
-\contentsline {section}{\numberline {17.7}Hilbert spaces}{115}{section.17.7}%
+\contentsline {chapter}{\numberline {16}Solved exercises}{107}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Complex numbers}{107}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Conversion to polar form}{107}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.2}Multivalued functions}{107}{subsection.16.1.2}%
+\contentsline {section}{\numberline {16.2}Partial derivatives}{108}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Solving partial derivatives}{108}{subsection.16.2.1}%
+\contentsline {section}{\numberline {16.3}Differential operators}{109}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Computing the gradient of a function}{109}{subsection.16.3.1}%
+\contentsline {subsection}{\numberline {16.3.2}Computing the divergence of a function}{109}{subsection.16.3.2}%
+\contentsline {subsection}{\numberline {16.3.3}Computing the curl of a function}{109}{subsection.16.3.3}%
+\contentsline {subsection}{\numberline {16.3.4}Curl of the grad of a function}{109}{subsection.16.3.4}%
+\contentsline {subsection}{\numberline {16.3.5}Divergence of the curl of a function}{110}{subsection.16.3.5}%
+\contentsline {subsection}{\numberline {16.3.6}Divergence of the gradient of a function}{110}{subsection.16.3.6}%
+\contentsline {section}{\numberline {16.4}Spherical coordinates}{111}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Multidimensional integrals}{111}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Wave equations}{111}{section.16.6}%
+\contentsline {section}{\numberline {16.7}Hilbert spaces}{111}{section.16.7}%
