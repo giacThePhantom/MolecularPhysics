@@ -9,14 +9,30 @@ See this [Github gist](https://gist.github.com/giacThePhantom/e080a777782754542d
 
 ### Quantum mechanics
 
-  * [First draft] Revisiting classical mechanics
-  * [First draft] The breakdown of classical mechanics
-  * [Ilaria's notes] Waves of matter
-  * [Check with appendix] Mathematical digression (probably will be placed in the appendix)
-  * [Professor's notes] Quantum mechanics
+* [X] Revisiting classical mechanics
+* [X] The breakdown of classical mechanics
+* [X] Waves of matter
+* [X] Mathematical digression (probably will be placed in the appendix)
+* [X] Quantum mechanics
 
 ### Quantum chemistry
 
- * [ ] Approximation methods
- * [ ] Atomic physics
- * [ ] Molecular physics
+* [X] Approximation methods
+* [X] Atomic physics
+* [X] Molecular physics
+
+### Quantum computing
+
+* [X] Quantum computing
+
+### Mathematical background
+
+* [X] Complex numbers
+* [X] Partial derivatives
+* [X] Differential operators
+* [X] Spherical coordinates
+* [X] Multidimensional integrals
+* [X] Wave equations
+* [X] Hilbert spaces
+* [X] Dirac notation
+* [ ] Solved exercises
