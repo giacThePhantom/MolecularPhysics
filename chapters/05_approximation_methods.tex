@@ -46,11 +46,11 @@ that is the square module of Fourier coefficient.\\
 If $g(x)$ is a wave function then $(g,g)=1$, which is the probability of finding the electron in the region delimited by the function (obviusly, the electron will \textit{always} be somewhere).\\
 \newline
 From $(g,g)=1$ we get the \textbf{SUM RULE}: $\; \sum_{n=0}^{\infty}|c_n|^2=1$
-The aim of the approximation method is finding a $M$ integer that indicates how far from one is the wave function that needs to be approximated.E.g.: $\; \sum_{n=0}^{M}|c_n|^2 \simeq 0.98$\\
+The aim of the approximation method is finding a $M$ integer that indicates how far from one is the wave function that needs to be approximated. E.g.: $\; \sum_{n=0}^{M}|c_n|^2 \simeq 0.98$\\
 
 \noindent
 \subsection{The art of approximation}
-For example, we might want to use the harmonic oscillator ground state to approximate a sum of Gaussian. Meaning "use problem B to solve problem A". Clearly, problem B shall be as close as possible to probelm A.\\
+For example, we might want to use the harmonic oscillator ground state to approximate a sum of Gaussian. Meaning "use problem B to solve problem A". Clearly, problem B shall be as close as possible to problem A.\\
 Our aim is to solve the Schr{\"o}dinger equation written as $\hat{H}\varphi_n=E_n\varphi_n$, but "there's no free launch", and we must "pay the price" assuming we can solve $\hat{H}_0\psi_n=\lambda_n\psi_n$ as it represents an harmonic oscillator (shown in figure \ref{fig:approximation}).\\
 \begin{figure}[htbp!]
 \includegraphics[scale=0.20]{img_1.jpg}
@@ -59,7 +59,7 @@ Our aim is to solve the Schr{\"o}dinger equation written as $\hat{H}\varphi_n=E_
 \end{figure}
 \textbf{1)} First we proceed by writing the S.E. with the truncated basis set.
 \[
-\hat{H}\bigg(\sum_{m=1}^{M}c_m^{(n)}\psi_m(x)\bigg)=E_n\bigg(\sum_{m=1}{M}c_m^{(n)}\psi_m(x)\bigg)
+\hat{H}\bigg(\sum_{m=1}^{M}c_m^{(n)}\psi_m(x)\bigg)=E_n\bigg(\sum_{m=1}^{M}c_m^{(n)}\psi_m(x)\bigg)
 \text{ where $c_m^{(n)}=\int dx\,\psi_m^*(x)\varphi_n(x)$}
 \]
 since the Hamiltonian operator is a function it can be propagated through the equation. Right now we are expanding $n$ and projecting it onto $m$.\\
@@ -73,7 +73,7 @@ $H_{lm}=H_{ml}^*$ is an hermitian matrix that can be diagonalized to get the eig
 \[
 \sum_{m}^{M}H_{lm}c_m^{(n)}=E^{(n)}c_l
 \]
-We reduced a complex problem to a conventional eigenvalue problem with a $H_{lm}$ matrix. The pain is to compute the $M$ integrals and to find an appropriate "probelm B". As a results, this method is hardly applicable to any problems with more of 3 dimensions. \\
+We reduced a complex problem to a conventional eigenvalue problem with a $H_{lm}$ matrix. The pain is to compute the $M$ integrals and to find an appropriate "problem B". As a results, this method is hardly applicable to any problems with more of 3 dimensions. \\
 
 \section{Quantum tunneling - The Landau problem -The ass problem}
 \begin{figure}[htbp!]
@@ -88,7 +88,7 @@ The potential is: $U(x)=U_0(x^2-x_0^2)^2$\\
 The Hamiltonian for the wave function: $\hat{H}=-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2$
 Note that this is a symmetric function, roughly composed by two gaussians, so we can approximate the function with an harmonic oscillator. Considering the potential to its lowest points it can be approximated and then expanded. \\
 
-We have two basis elements $\rightarrow$ two eigenstates $n=0,1$ (ground state and first excited state), and we whish to solve $hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
+We have two basis elements $\rightarrow$ two eigenstates $n=0,1$ (ground state and first excited state), and we wish to solve $\hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
 \[
 \hat{H}\varphi_n=E_n\varphi_n
 \begin{cases}
@@ -99,9 +99,9 @@ We have two basis elements $\rightarrow$ two eigenstates $n=0,1$ (ground state a
 $C_L$ and $C_R$ are coefficients for each part of the function, one for each eigenstate.\\
 We then proceed to calculate the value of the matrices for the expansion.\\
 \[
-H_{RR}=(\psi_R,\hat{H}\,\psi_R)= \int\psi_R^*(x)\,-\frac{\hbar^2}{2m}\,\bigg(\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2\bigg)\,\psi_R(x)\,dx\]
+H_{RR}=(\psi_R,\hat{H}\,\psi_R)= \int\psi_R^*(x)\,\bigg[-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2\bigg]\,\psi_R(x)\,dx\]
 \[
-=\int\psi_R^*(x)\,-\frac{\hbar^2}{2m}\,\bigg  (\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2\cdot(x^2-x_0^2)^2\bigg)\,\psi_R(x)\,dx
+=\int\psi_R^*(x)\,\bigg[-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2\cdot(x^2-x_0^2)^2\bigg]\,\psi_R(x)\,dx
 \]
 $U_0$ has been substitued with the potential energy of the harmonic oscillator approximation. The integral is computable with Taylor expansion because we consider the minimum of the function.
 \[
@@ -180,11 +180,11 @@ What is the probability of finding the particle on the right at given time $t$?\
 $P_R(t>0)=\,?$\\
 $P_L(t>0)=1-P_R(t>0)$
 By definition $E_0=0, E_1= \varepsilon$. Consequently, $\varepsilon = E_1-E_0$\\
-To find the probability of the particle being on the right/left, $P_{R/L}(t)=|\braket{\psi_{R/L}\,|\,\varphi(t)}|^2$\\
+To find the probability of the particle being on the right/left, $P_{R/L}(t)=|\braket{\psi_{R/L}\,|\,\varphi(t)\,|\,\psi_{R/L}}|^2$ where $\varphi(t) = e^{-\frac{i}{\hbar}\cdot (t-t_0)\hat{H}}$ is the time evolution operator\\
 \[
 P_R(t)=|\braket{\psi_R\,|\,e^{-\frac{i}{\hbar}\cdot t \hat{H}}\,|\,\psi_L}|^2
 \]
-minding that $\psi_R$ occurs at time $t$ whilst $\psi_L$ occurs at $t=0$.\\
+minding that $\psi_R$ occurs at time $t$ whilst $\psi_L$ occurs at $t_0=0$.\\
 If I want to check whether the particle is still on the left
 \[
 P_L(t)=|\braket{\psi_L\,|\,e^{-\frac{i}{\hbar}\cdot t \hat{H}}\,|\,\psi_L}|^2
