@@ -1,0 +1,195 @@
+\section{Differential operators}
+  
+  % TODO Add exercises on differential equations (here or in previous section)
+
+  \subsection{Computing the gradient of a function}
+  Compute $\text{grad}(f)$ with $f = x^2 + y^2 + z^2$.
+  \begin{align*}
+    \text{grad}(f) = \vec\nabla f 
+      & = \begin{pmatrix} 
+            \frac{\partial f}{\partial x} &
+            \frac{\partial f}{\partial y} &
+            \frac{\partial f}{\partial z}
+          \end{pmatrix} \\
+      & = \begin{pmatrix}
+            2x & 2y & 2z
+          \end{pmatrix}
+  \end{align*}
+  % TODO Normalize result
+
+  Compute $\text{grad}(f)$ with $f = \sin(x^2yz)$.
+  \begin{align*}
+    \text{grad}(f) = \vec\nabla f 
+      & = \begin{pmatrix} 
+            \frac{\partial f}{\partial x} &
+            \frac{\partial f}{\partial y} &
+            \frac{\partial f}{\partial z}
+          \end{pmatrix} \\
+      & = \begin{pmatrix}
+            xyz\cos(x^2yx) & 
+            x^2z\cos(x^2yx) &
+            x^2y\cos(x^2yx)
+          \end{pmatrix}
+  \end{align*}
+
+  \subsection{Computing the divergence of a function}
+  Compute $\text{div}(\vec f \,)$ with $\vec f = \begin{pmatrix} xy & y & zx^2\end{pmatrix}$.
+  \begin{align*}
+    \text{div}(\vec f \,) = \vec\nabla \cdot \vec f 
+      & = 
+        \begin{pmatrix} 
+          \frac{\partial}{\partial x} &
+          \frac{\partial}{\partial y} &
+          \frac{\partial}{\partial z}
+        \end{pmatrix} \cdot
+        \begin{pmatrix}
+          f_x & f_y & f_z
+        \end{pmatrix} \\
+      & = 
+        \frac{\partial f_x}{\partial x} +
+        \frac{\partial f_y}{\partial y} +
+        \frac{\partial f_z}{\partial z} \\
+      & = 
+        \frac{\partial (xy)}{\partial x} +
+        \frac{\partial (y)}{\partial y} +
+        \frac{\partial (zx^2)}{\partial z} \\
+      & = y + 1 + x^2 \\
+  \end{align*}
+
+  \subsection{Computing the curl of a function}
+  Compute $\text{rot}(\vec f \,)$ with $\vec f = \begin{pmatrix} y & -x & 0\end{pmatrix}$.
+  \begin{align*}
+    \text{rot}(\vec f \,) = \vec\nabla \times \vec f 
+      & = 
+        \begin{pmatrix} 
+          \frac{\partial f_z}{\partial y} - \frac{\partial f_y}{\partial z} &
+          \frac{\partial f_x}{\partial z} - \frac{\partial f_z}{\partial x} &
+          \frac{\partial f_y}{\partial x} - \frac{\partial f_x}{\partial y} 
+        \end{pmatrix} \\
+      & = 
+        \begin{pmatrix} 
+          \frac{\partial (0)}{\partial y} - \frac{\partial (-x)}{\partial z} &
+          \frac{\partial (y)}{\partial z} - \frac{\partial (0)}{\partial x} &
+          \frac{\partial (-x)}{\partial x} - \frac{\partial (y)}{\partial y} 
+        \end{pmatrix} \\
+      & = 
+        \begin{pmatrix}
+          0 - 0 & 0 - 0 & -1 - -1 
+        \end{pmatrix} \\
+      & = 
+        \begin{pmatrix}
+          0 & 0 & -2
+        \end{pmatrix} \\
+  \end{align*}
+  % TODO Standardize?
+  
+  \subsection{Curl of the grad of a function}
+  Compute $\text{rot}(\text{grad}(\vec f))$.
+
+  \begin{align*}
+  \text{rot}(\text{grad}(\vec f \,)) = \vec\nabla \times \left(\vec\nabla \vec f\,\right) 
+    & = 
+      \vec\nabla \times
+      \begin{pmatrix} 
+        \frac{\partial f}{\partial x} &
+        \frac{\partial f}{\partial y} &
+        \frac{\partial f}{\partial z} 
+      \end{pmatrix} \\
+    & = \det
+      \begin{vmatrix} 
+        \vec e_x & \vec e_y & \vec e_z \\[6pt]
+        \frac{\partial}{\partial x} & 
+        \frac{\partial}{\partial y} & 
+        \frac{\partial}{\partial z} \\[6pt]
+        \frac{\partial f}{\partial x} &
+        \frac{\partial f}{\partial y} &
+        \frac{\partial f}{\partial z} 
+      \end{vmatrix} \\
+    & = 
+      \begin{pmatrix} 
+        \frac{\partial^2 f}{\partial y \partial z} - \frac{\partial^2 f}{\partial z \partial y} &
+        \frac{\partial^2 f}{\partial z \partial x} - \frac{\partial^2 f}{\partial x \partial z} &
+        \frac{\partial^2 f}{\partial x \partial y} - \frac{\partial^2 f}{\partial y \partial x}
+      \end{pmatrix} \\
+    & \text{since you can change the order of derivation} \\
+    & = 
+      \begin{pmatrix}
+        0 & 0 & 0
+      \end{pmatrix}
+  \end{align*}
+  Notice that $\text{rot}(\text{grad}(\vec f))$ is equal to the zero vector regardless of $f$.
+
+  \subsection{Divergence of the curl of a function}
+  Compute $\text{div}(\text{rot}(\vec f))$.
+
+  \begin{align*}
+  \text{div}(\text{rot}(\vec f \,)) = \vec\nabla \cdot \left(\vec\nabla \times \vec f\,\right) 
+    & = 
+      \vec\nabla \cdot
+      \begin{pmatrix} 
+        \frac{\partial f_z}{\partial y} - \frac{\partial f_y}{\partial z} &
+        \frac{\partial f_x}{\partial z} - \frac{\partial f_z}{\partial x} &
+        \frac{\partial f_y}{\partial x} - \frac{\partial f_x}{\partial y} 
+      \end{pmatrix} \\
+    & = 
+      \begin{pmatrix}
+        \frac{\partial f}{\partial x} &
+        \frac{\partial f}{\partial y} &
+        \frac{\partial f}{\partial z}
+      \end{pmatrix}
+      \cdot
+      \begin{pmatrix} 
+        \frac{\partial f_z}{\partial y} - \frac{\partial f_y}{\partial z} &
+        \frac{\partial f_x}{\partial z} - \frac{\partial f_z}{\partial x} &
+        \frac{\partial f_y}{\partial x} - \frac{\partial f_x}{\partial y} 
+      \end{pmatrix} \\
+    & = 
+      \frac{\partial^2 f_z}{\partial y \partial x} - \frac{\partial^2 f_y}{\partial z \partial x} +
+      \frac{\partial^2 f_x}{\partial z \partial y} - \frac{\partial^2 f_z}{\partial x \partial y} +
+      \frac{\partial^2 f_y}{\partial x \partial z} - \frac{\partial^2 f_x}{\partial y \partial z} \\
+    & \text{then, changing the order of the terms we notice that} \\
+    & =
+      \frac{\partial^2 f_z}{\partial y \partial x} - \frac{\partial^2 f_z}{\partial x \partial y} +
+      \frac{\partial^2 f_x}{\partial z \partial y} - \frac{\partial^2 f_x}{\partial y \partial z} +
+      \frac{\partial^2 f_y}{\partial x \partial z} - \frac{\partial^2 f_y}{\partial z \partial x} \\
+    & \text{since you can change the order of derivation} \\
+    & = 0
+  \end{align*}
+  Notice that $\text{div}(\text{rot}(\vec f))$ is equal to zero vector regardless of $f$.
+
+  \subsection{Divergence of the gradient of a function}
+  Demonstrate that $\Delta f = \text{div}(\text{grad}(f))$
+  
+  \begin{align*}
+  \text{div}(\text{grad}(\vec f\,)) = \vec\nabla \cdot \left(\vec\nabla \vec f\,\right) 
+    & = 
+      \vec\nabla \cdot
+      \begin{pmatrix} 
+        \frac{\partial f}{\partial x} &
+        \frac{\partial f}{\partial y} &
+        \frac{\partial f}{\partial z}
+      \end{pmatrix} \\
+    & =
+      \begin{pmatrix} 
+        \frac{\partial}{\partial x} &
+        \frac{\partial}{\partial y} &
+        \frac{\partial}{\partial z}
+      \end{pmatrix}
+      \cdot
+      \begin{pmatrix} 
+        \frac{\partial f}{\partial x} &
+        \frac{\partial f}{\partial y} &
+        \frac{\partial f}{\partial z}
+      \end{pmatrix} \\
+    & =  
+      \frac{\partial^2 f}{\partial^2 x} +
+      \frac{\partial^2 f}{\partial^2 y} +
+      \frac{\partial^2 f}{\partial^2 z} \\
+    & = f
+      \left(
+      \frac{\partial^2}{\partial^2 x} +
+      \frac{\partial^2}{\partial^2 y} +
+      \frac{\partial^2}{\partial^2 z}
+      \right) \\
+    & = \Delta f
+  \end{align*}
