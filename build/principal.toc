@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {part}{I\hspace {1em}Quantum mechanics}{6}{part.1}%
 \contentsline {chapter}{\numberline {1}Revisiting classical mechanics}{7}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Physical theories}{7}{section.1.1}%
