@@ -227,8 +227,15 @@
 \contentsline {subsection}{\numberline {17.1.1}Conversion to polar form}{111}{subsection.17.1.1}%
 \contentsline {subsection}{\numberline {17.1.2}Multivalued functions}{111}{subsection.17.1.2}%
 \contentsline {section}{\numberline {17.2}Partial derivatives}{112}{section.17.2}%
-\contentsline {section}{\numberline {17.3}Differential operators}{112}{section.17.3}%
-\contentsline {section}{\numberline {17.4}Spherical coordinates}{112}{section.17.4}%
-\contentsline {section}{\numberline {17.5}Multidimensional integrals}{112}{section.17.5}%
-\contentsline {section}{\numberline {17.6}Wave equations}{112}{section.17.6}%
-\contentsline {section}{\numberline {17.7}Hilbert spaces}{112}{section.17.7}%
+\contentsline {subsection}{\numberline {17.2.1}Solving partial derivatives}{112}{subsection.17.2.1}%
+\contentsline {section}{\numberline {17.3}Differential operators}{113}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Computing the gradient of a function}{113}{subsection.17.3.1}%
+\contentsline {subsection}{\numberline {17.3.2}Computing the divergence of a function}{113}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Computing the curl of a function}{113}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.4}Curl of the grad of a function}{113}{subsection.17.3.4}%
+\contentsline {subsection}{\numberline {17.3.5}Divergence of the curl of a function}{114}{subsection.17.3.5}%
+\contentsline {subsection}{\numberline {17.3.6}Divergence of the gradient of a function}{114}{subsection.17.3.6}%
+\contentsline {section}{\numberline {17.4}Spherical coordinates}{115}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Multidimensional integrals}{115}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Wave equations}{115}{section.17.6}%
+\contentsline {section}{\numberline {17.7}Hilbert spaces}{115}{section.17.7}%
