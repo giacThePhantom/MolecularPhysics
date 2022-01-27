@@ -214,13 +214,21 @@
 \contentsline {subsubsection}{\numberline {15.2.3.2}Second corollary}{106}{subsubsection.15.2.3.2}%
 \contentsline {subsubsection}{\numberline {15.2.3.3}Third corollary}{106}{subsubsection.15.2.3.3}%
 \contentsline {section}{\numberline {15.3}Fourier transform}{106}{section.15.3}%
-\contentsline {chapter}{\numberline {16}Solved exercises}{107}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Complex numbers}{107}{section.16.1}%
-\contentsline {subsection}{\numberline {16.1.1}Conversion to polar form}{107}{subsection.16.1.1}%
-\contentsline {subsection}{\numberline {16.1.2}Multivalued functions}{107}{subsection.16.1.2}%
-\contentsline {section}{\numberline {16.2}Partial derivatives}{108}{section.16.2}%
-\contentsline {section}{\numberline {16.3}Differential operators}{108}{section.16.3}%
-\contentsline {section}{\numberline {16.4}Spherical coordinates}{108}{section.16.4}%
-\contentsline {section}{\numberline {16.5}Multidimensional integrals}{108}{section.16.5}%
-\contentsline {section}{\numberline {16.6}Wave equations}{108}{section.16.6}%
-\contentsline {section}{\numberline {16.7}Hilbert spaces}{108}{section.16.7}%
+\contentsline {chapter}{\numberline {16}Dirac notation}{107}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Vector space representation}{108}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Inner product}{108}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.2}Operator}{108}{subsection.16.1.2}%
+\contentsline {section}{\numberline {16.2}Hilbert space representation}{109}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Inner product}{109}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.2}Operator}{109}{subsection.16.2.2}%
+\contentsline {section}{\numberline {16.3}\textit {Example: two linearly independent states}}{109}{section.16.3}%
+\contentsline {chapter}{\numberline {17}Solved exercises}{111}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Complex numbers}{111}{section.17.1}%
+\contentsline {subsection}{\numberline {17.1.1}Conversion to polar form}{111}{subsection.17.1.1}%
+\contentsline {subsection}{\numberline {17.1.2}Multivalued functions}{111}{subsection.17.1.2}%
+\contentsline {section}{\numberline {17.2}Partial derivatives}{112}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Differential operators}{112}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Spherical coordinates}{112}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Multidimensional integrals}{112}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Wave equations}{112}{section.17.6}%
+\contentsline {section}{\numberline {17.7}Hilbert spaces}{112}{section.17.7}%

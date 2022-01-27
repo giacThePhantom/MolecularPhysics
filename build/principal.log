@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  27 JAN 2022 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  27 JAN 2022 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,8 +691,10 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_shortintertext_sep=\dimen275
 \xmathstrut@box=\box122
 \xmathstrut@dim=\dimen276
-))
-(./build/principal.aux)
+)
+(/usr/share/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+)) (./build/principal.aux)
 \openout1 = `principal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -889,7 +891,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./chapters/02_breakdown_classical_mechanics.tex [15]
 Chapter 2.
-<chapters/02//gun_ds.png, id=1004, 626.94225pt x 348.70274pt>
+<chapters/02//gun_ds.png, id=1045, 626.94225pt x 348.70274pt>
 File: chapters/02//gun_ds.png Graphic file (type png)
 <use chapters/02//gun_ds.png>
 Package pdftex.def Info: chapters/02//gun_ds.png  used on input line 15.
@@ -897,18 +899,18 @@ Package pdftex.def Info: chapters/02//gun_ds.png  used on input line 15.
 [16
 
  <./chapters/02//gun_ds.png>]
-<chapters/02//wave_ds.png, id=1017, 566.115pt x 328.22626pt>
+<chapters/02//wave_ds.png, id=1058, 566.115pt x 328.22626pt>
 File: chapters/02//wave_ds.png Graphic file (type png)
 <use chapters/02//wave_ds.png>
 Package pdftex.def Info: chapters/02//wave_ds.png  used on input line 43.
 (pdftex.def)             Requested size: 260.17464pt x 150.85068pt.
  [17 <./chapters/02//wave_ds.png>]
-<chapters/02//electron_ds.png, id=1031, 1606.0pt x 863.225pt>
+<chapters/02//electron_ds.png, id=1072, 1606.0pt x 863.225pt>
 File: chapters/02//electron_ds.png Graphic file (type png)
 <use chapters/02//electron_ds.png>
 Package pdftex.def Info: chapters/02//electron_ds.png  used on input line 78.
 (pdftex.def)             Requested size: 260.17464pt x 139.84431pt.
-<chapters/02//ele_bal_ds.png, id=1033, 518.93875pt x 250.9375pt>
+<chapters/02//ele_bal_ds.png, id=1074, 518.93875pt x 250.9375pt>
 File: chapters/02//ele_bal_ds.png Graphic file (type png)
 <use chapters/02//ele_bal_ds.png>
 Package pdftex.def Info: chapters/02//ele_bal_ds.png  used on input line 98.
@@ -918,7 +920,7 @@ Package pdftex.def Info: chapters/02//ele_bal_ds.png  used on input line 98.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18 <./chapters/02//electron_ds.png>]
-<chapters/02//photoelectric.png, id=1045, 2569.6pt x 1290.8225pt>
+<chapters/02//photoelectric.png, id=1086, 2569.6pt x 1290.8225pt>
 File: chapters/02//photoelectric.png Graphic file (type png)
 <use chapters/02//photoelectric.png>
 Package pdftex.def Info: chapters/02//photoelectric.png  used on input line 136
@@ -929,7 +931,7 @@ Package pdftex.def Info: chapters/02//photoelectric.png  used on input line 136
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19 <./chapters/02//ele_bal_ds.png>]
-<chapters/02//quantization.png, id=1057, 1048.91875pt x 931.48pt>
+<chapters/02//quantization.png, id=1098, 1048.91875pt x 931.48pt>
 File: chapters/02//quantization.png Graphic file (type png)
 <use chapters/02//quantization.png>
 Package pdftex.def Info: chapters/02//quantization.png  used on input line 162.
@@ -940,7 +942,7 @@ Package pdftex.def Info: chapters/02//quantization.png  used on input line 162.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20 <./chapters/02//photoelectric.png>] [21 <./chapters/02//quantization.png>]
-<chapters/02//stern_ger.png, id=1074, 642.4pt x 304.13625pt>
+<chapters/02//stern_ger.png, id=1116, 642.4pt x 304.13625pt>
 File: chapters/02//stern_ger.png Graphic file (type png)
 <use chapters/02//stern_ger.png>
 Package pdftex.def Info: chapters/02//stern_ger.png  used on input line 210.
@@ -995,7 +997,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
 
 [27]
-<chapters/03//qm_oscillator.png, id=1113, 376.40625pt x 256.45813pt>
+<chapters/03//qm_oscillator.png, id=1154, 376.40625pt x 256.45813pt>
 File: chapters/03//qm_oscillator.png Graphic file (type png)
 <use chapters/03//qm_oscillator.png>
 Package pdftex.def Info: chapters/03//qm_oscillator.png  used on input line 146
@@ -1006,7 +1008,7 @@ Package pdftex.def Info: chapters/03//qm_oscillator.png  used on input line 146
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [28] [29 <./chapters/03//qm_oscillator.png>] [30] [31]
-<chapters/03//1D_well.png, id=1137, 325.215pt x 151.16475pt>
+<chapters/03//1D_well.png, id=1178, 325.215pt x 151.16475pt>
 File: chapters/03//1D_well.png Graphic file (type png)
 <use chapters/03//1D_well.png>
 Package pdftex.def Info: chapters/03//1D_well.png  used on input line 283.
@@ -1017,12 +1019,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--289
  []
 
 [32 <./chapters/03//1D_well.png>] [33] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--449
+Underfull \hbox (badness 10000) in paragraph at lines 440--447
 
  []
 
@@ -1096,7 +1098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--51
 
  []
 
-<chapters/05//img_1.jpg, id=1206, 544.0325pt x 381.425pt>
+<chapters/05//img_1.jpg, id=1246, 544.0325pt x 381.425pt>
 File: chapters/05//img_1.jpg Graphic file (type jpg)
 <use chapters/05//img_1.jpg>
 Package pdftex.def Info: chapters/05//img_1.jpg  used on input line 57.
@@ -1116,7 +1118,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-<chapters/05//img_2.jpg, id=1213, 684.5575pt x 358.33875pt>
+<chapters/05//img_2.jpg, id=1253, 684.5575pt x 358.33875pt>
 File: chapters/05//img_2.jpg Graphic file (type jpg)
 <use chapters/05//img_2.jpg>
 Package pdftex.def Info: chapters/05//img_2.jpg  used on input line 82.
@@ -1144,6 +1146,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--144
 
 Underfull \hbox (badness 10000) in paragraph at lines 174--178
 
+ []
+
+
+Overfull \hbox (3.73376pt too wide) in paragraph at lines 183--191
+\T1/cmr/m/n/10 To find the prob-a-bil-ity of the par-ti-cle be-ing on the right
+/left, ($\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10
+ ) = \OMS/cmsy/m/n/10 j [] j[]$\T1/cmr/m/n/10 ),
  []
 
 
@@ -1176,7 +1185,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--264
  []
 
 [48]
-<chapters/05//img_3.jpg, id=1235, 705.63625pt x 326.21875pt>
+<chapters/05//img_3.jpg, id=1275, 705.63625pt x 326.21875pt>
 File: chapters/05//img_3.jpg Graphic file (type jpg)
 <use chapters/05//img_3.jpg>
 Package pdftex.def Info: chapters/05//img_3.jpg  used on input line 277.
@@ -1217,7 +1226,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--343
  []
 
 [50]
-<chapters/05//img_4.jpg, id=1245, 523.9575pt x 378.41376pt>
+<chapters/05//img_4.jpg, id=1285, 523.9575pt x 378.41376pt>
 File: chapters/05//img_4.jpg Graphic file (type jpg)
 <use chapters/05//img_4.jpg>
 Package pdftex.def Info: chapters/05//img_4.jpg  used on input line 378.
@@ -1256,7 +1265,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
-<chapters/06//img_5.jpg, id=1260, 1095.09125pt x 269.005pt>
+<chapters/06//img_5.jpg, id=1300, 1095.09125pt x 269.005pt>
 File: chapters/06//img_5.jpg Graphic file (type jpg)
 <use chapters/06//img_5.jpg>
 Package pdftex.def Info: chapters/06//img_5.jpg  used on input line 96.
@@ -1334,12 +1343,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--158
 
  []
 
-<chapters/06//img_6.jpg, id=1272, 421.575pt x 372.39125pt>
+<chapters/06//img_6.jpg, id=1312, 421.575pt x 372.39125pt>
 File: chapters/06//img_6.jpg Graphic file (type jpg)
 <use chapters/06//img_6.jpg>
 Package pdftex.def Info: chapters/06//img_6.jpg  used on input line 171.
 (pdftex.def)             Requested size: 84.31349pt x 74.47693pt.
-<chapters/06//img_7.jpg, id=1274, 537.00626pt x 372.39125pt>
+<chapters/06//img_7.jpg, id=1314, 537.00626pt x 372.39125pt>
 File: chapters/06//img_7.jpg Graphic file (type jpg)
 <use chapters/06//img_7.jpg>
 Package pdftex.def Info: chapters/06//img_7.jpg  used on input line 180.
@@ -1530,7 +1539,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 46.
 
-<chapters/07//img_8.jpg, id=1333, 411.5375pt x 255.95625pt>
+<chapters/07//img_8.jpg, id=1373, 411.5375pt x 255.95625pt>
 File: chapters/07//img_8.jpg Graphic file (type jpg)
 <use chapters/07//img_8.jpg>
 Package pdftex.def Info: chapters/07//img_8.jpg  used on input line 50.
@@ -1566,9 +1575,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--71
  []
 
 
-Overfull \hbox (81.67084pt too wide) in paragraph at lines 73--75
-\T1/cmr/m/n/10 pected value of the Hamil-to-nian de-pends on the spin sym-me-tr
-y, be-cause $[]$. 
+Overfull \hbox (107.49786pt too wide) in paragraph at lines 73--75
+\T1/cmr/m/n/10 the ex-pected value of the Hamil-to-nian de-pends on the spin sy
+m-me-try, be-cause $[]$. 
  []
 
 
@@ -1576,12 +1585,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
-<chapters/07//img_9.jpg, id=1339, 555.07375pt x 376.40625pt>
+<chapters/07//img_9.jpg, id=1379, 555.07375pt x 376.40625pt>
 File: chapters/07//img_9.jpg Graphic file (type jpg)
 <use chapters/07//img_9.jpg>
 Package pdftex.def Info: chapters/07//img_9.jpg  used on input line 97.
 (pdftex.def)             Requested size: 166.52339pt x 112.92273pt.
-<chapters/07//img_13.jpg, id=1340, 1542.76375pt x 697.60625pt>
+<chapters/07//img_13.jpg, id=1380, 1542.76375pt x 697.60625pt>
 File: chapters/07//img_13.jpg Graphic file (type jpg)
 <use chapters/07//img_13.jpg>
 Package pdftex.def Info: chapters/07//img_13.jpg  used on input line 103.
@@ -1606,12 +1615,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
-[68]
+
 Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
@@ -1627,14 +1636,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--159
  []
 
 
-Overfull \hbox (33.37024pt too wide) detected at line 163
+Overfull \hbox (106.10745pt too wide) detected at line 163
 [] [] \OT1/cmr/m/n/10 = 1[]  [] = [] []  \OML/cmm/m/it/10 d[]:::d[][]\OT1/cmr/m
 /n/10 	[]([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ^^N\OT1/c
 mr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )	([] \OMS/cmsy/m/n/10 ^^@
  []\OT1/cmr/m/n/10 )[]
  []
 
-<chapters/07//img_14.png, id=1357, 557.08125pt x 414.54875pt>
+<chapters/07//img_14.png, id=1398, 557.08125pt x 414.54875pt>
 File: chapters/07//img_14.png Graphic file (type png)
 <use chapters/07//img_14.png>
 Package pdftex.def Info: chapters/07//img_14.png  used on input line 170.
@@ -1685,7 +1694,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
  []
 
 [70 <./chapters/07//img_14.png>]
-<chapters/07//img_15.jpg, id=1372, 1229.59375pt x 249.93375pt>
+<chapters/07//img_15.jpg, id=1413, 1229.59375pt x 249.93375pt>
 File: chapters/07//img_15.jpg Graphic file (type jpg)
 <use chapters/07//img_15.jpg>
 Package pdftex.def Info: chapters/07//img_15.jpg  used on input line 198.
@@ -1706,7 +1715,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-<chapters/08//img_10.jpg, id=1387, 657.45625pt x 167.62625pt>
+<chapters/08//img_10.jpg, id=1428, 657.45625pt x 167.62625pt>
 File: chapters/08//img_10.jpg Graphic file (type jpg)
 <use chapters/08//img_10.jpg>
 Package pdftex.def Info: chapters/08//img_10.jpg  used on input line 50.
@@ -1747,7 +1756,7 @@ Overfull \hbox (1.07393pt too wide) in paragraph at lines 137--138
  the CON-TROL QUBIT, the $[]$
  []
 
-<chapters/08//img_11.png, id=1401, 219.82124pt x 157.58875pt>
+<chapters/08//img_11.png, id=1442, 219.82124pt x 157.58875pt>
 File: chapters/08//img_11.png Graphic file (type png)
 <use chapters/08//img_11.png>
 Package pdftex.def Info: chapters/08//img_11.png  used on input line 141.
@@ -1787,12 +1796,12 @@ Overfull \hbox (20.3587pt too wide) detected at line 157
  []
 
 
-Overfull \hbox (33.4172pt too wide) detected at line 160
+Overfull \hbox (34.80608pt too wide) detected at line 160
 \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 C[][] [] \OT1/cmr/m/n/10 = [] [] [] = [] [] 
 = [] [] = [] = []
  []
 
-<chapters/08//img_12.jpg, id=1408, 909.3975pt x 467.7475pt>
+<chapters/08//img_12.jpg, id=1449, 909.3975pt x 467.7475pt>
 File: chapters/08//img_12.jpg Graphic file (type jpg)
 <use chapters/08//img_12.jpg>
 Package pdftex.def Info: chapters/08//img_12.jpg  used on input line 170.
@@ -1827,61 +1836,87 @@ Chapter 14.
 Chapter 15.
 [102
 
-] [103] [104] [105]) (./chapters/ee_solved_exercises.tex [106]
+] [103] [104] [105]) (./chapters/ah_dirac_notation.tex [106]
 Chapter 16.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
 [107
 
-]) [108] (./build/principal.aux)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+[108]
+Underfull \hbox (badness 10000) in paragraph at lines 79--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
+
+ []
+
+[109]) (./chapters/ee_solved_exercises.tex [110]
+Chapter 17.
+[111
+
+]) [112] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 6DB0D4B0FC8FC72028A4EA32A3141AA8;30000.
+(rerunfilecheck)             Checksum: 0E2C0E3785EC67BE57EB3C5F64AEB6EB;31274.
  ) 
 Here is how much of TeX's memory you used:
- 22771 strings out of 478353
- 422379 string characters out of 5854635
- 749041 words of memory out of 5000000
- 40116 multiletter control sequences out of 15000+600000
- 433744 words of font info for 104 fonts, out of 8000000 for 9000
+ 23385 strings out of 478353
+ 428525 string characters out of 5854635
+ 760476 words of memory out of 5000000
+ 40697 multiletter control sequences out of 15000+600000
+ 436275 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,19n,80p,905b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share
-/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msbm5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0900.
-pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share
-/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fon
-ts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2
-488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist
-/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-frm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfti1000.pfb>
-Output written on ./build/principal.pdf (109 pages, 2808066 bytes).
+s/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/f
+onts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/latxfont/line10.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
+7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfb
+x1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.p
+fb>
+Output written on ./build/principal.pdf (113 pages, 2864974 bytes).
 PDF statistics:
- 1815 PDF objects out of 2073 (max. 8388607)
- 1566 compressed objects within 16 object streams
- 384 named destinations out of 1000 (max. 500000)
- 1599 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1894 PDF objects out of 2073 (max. 8388607)
+ 1636 compressed objects within 17 object streams
+ 403 named destinations out of 1000 (max. 500000)
+ 1663 words of extra memory for PDF output out of 10000 (max. 10000000)
 
