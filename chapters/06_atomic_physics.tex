@@ -2,7 +2,7 @@
 \chapter{Atomic physics}
 \section{Quantum theory of the Hydrogen atom}
 \subsection{Evaluation of conservation of energy}
-Remember that when talink about classical theory of the hydrogen atom we simplified the problem by switching from Cartesian to polar coordinates and, by applying the conservation laws, we obtained:
+Remember that when talking about classical theory of the hydrogen atom we simplified the problem by switching from Cartesian to polar coordinates and, by applying the conservation laws, we obtained:
 \[
 E=\frac{1}{2}m\bigg(\frac{d}{dt}n\bigg)^2+\frac{L^2}{2mr^2}+U(r)
 \]
@@ -18,13 +18,13 @@ The hamiltonian so becomes:
 \[
 \hat{H}=\frac{\hbar^2}{2mr^2}\frac{\partial^2}{\partial r^2}+\frac{\hbar^2}{2mr^2}\cdot\bigg(\frac{\partial^2}{\partial \theta^2}+\frac{1}{\tan\theta}\frac{\partial}{\partial\theta}+\frac{1}{\sin\theta}\frac{\partial^2}{\partial\varphi^2}\bigg)-\frac{e^2}{r}
 \]
-The first part is called \textbf{radial part} because it's $r$-dependent only, the other is the \textbf{angular part}.\\
+The first part is called \textbf{radial part} because it's $r$-dependent only, the other is the \textbf{angular part} and depends on $r$, $\theta$, and $\varphi$.\\
 Now we can consider the angular momentum in classical mechanics and quantum mechanics:
 \[
 \vec{L}=\vec{r}\times\vec{p}=\vec{r}\times(-i\vec{\nabla}\hbar)
 \]
 \[
-\textit{Fact} \rightarrow \vec{\hat{L^2}}=\hat{L_x}\hat{L_x}+\hat{L_y}\hat{L_y}+\hat{L_z}\hat{L_z}
+\textit{Fact} \rightarrow \vec{\hat{L^2}}=\hat{L_x}\hat{L_x}+\hat{L_y}\hat{L_y}+\hat{L_z}\hat{L_z}=\vec{\nabla}^2\hbar^2
 \]
 This is corresponding to the angular part of the hamiltonian that can be rewritten in sperical coordinates with the inclusion of the angular momentum multiplied by $\hbar^2$.
 \[
@@ -38,7 +38,7 @@ The fact that the angular momentum is not present in the radial part of the hami
 \end{cases}
 \]
 \\
-These are called \textbf{spherical harmonics}, they depend on two quantum numbers because they use two different operators and are only part of the angular part of the hamiltonian.\\
+The following functions are called \textbf{spherical harmonics}, these functions are defined on the surface of a sphere and form a complete and orthonormal set of functions. For this latter reason they can be expressed as a linear combination. In quantum mechanics, spherical harmonics are the eigenfunctions of $\hat{L}^2$ and actually generate a rotation of azimuthal angle ($\varphi$). They depend on two quantum numbers because they use two different operators and are only part of the angular part of the hamiltonian.\\
 \[
 \begin{cases}
 \hat{L_z}Y_{lm}(\theta,\varphi)=\hbar mY_{l,m}(\theta,\varphi) & m = l, -l+1,..., 0,..., -l \,\text{(projection)}\\
