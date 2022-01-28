@@ -131,29 +131,29 @@ The values of $\hat{S^2}$ characterize the behaviour of the particle.\\
 \[\hat{S^2}\,\rightarrow\,s=0, \frac{1}{2}, 1, \frac{3}{2}, ...\]
 Electrons, neutrons, and protons have $s=1/2$. Photons, for instance, have $s=1$.\\
 
-\subsection{Spin-Statistics theorem (in identical particles}
+\subsection{Spin-Statistics theorem for identical particles}
 Let's consider a wave function of many identical particles $\psi$, for instance $n$ identical electrons with spin $s$, $\hat{S_z}$, and position $r$. All the particles have the same velocity.\\
 \[
 \Psi(\vec{r_1}, s_1^z, \vec{r_2}, s_2^z, ..., \vec{r_n}, s_n^z) \text{   ,with } \vec{q}=(\vec{r},\vec{s_z})
 \]
-\[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n}) \]
-\textbf{antisymmetric wave-function (fermions)}: wave-function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{half integer} (1/2, 3/2, ...). Swapping the wave function \textbf{changes} it.\\
+\[\text{For identical particles: }\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})A[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\pm\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})] \]
+\textbf{Antisymmetric wave-function (fermions)}: wave-function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{half integer} (1/2, 3/2, ...). Swapping the wave function \textbf{changes} it.\\
 \[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})=-\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\]
 The particles that have an antisymmetric wavefunction are called \textbf{fermions}.\\
 \newline
-\textbf{symmetric wave-function (bosons)}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...). Swapping the wave function \textbf{doesn't change} it.\\
+\textbf{Symmetric wave-function (bosons)}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...). Swapping the wave function \textbf{doesn't change} it.\\
 \[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})=\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\]
-The particles that have an antisymmetric wavefunction are called \textbf{bosons}.
+The particles that have a symmetric wavefunction are called \textbf{bosons}.
 \begin{quote}
-"A fermion once, a fermion forever".
-"fermions and bosons are like Montecchi and Capuleti. They don't want anyhing to do with each other"
-- Pietro Faccioli
+	"A fermion once, a fermion forever".\\
+	"Fermions and bosons are like Montecchi and Capuleti. They don't want anything to do with each other"\\
+	- Pietro Faccioli
 \end{quote}
 \noindent
 \textbf{Corollary}: In a quantum wave function, there cannot be two fermions with identical state or else two identical fermions cannot be found in the same quantum state.
 \[\Psi(q_1, q_2)= -\Psi(q_2,q_1)\] the two electrons are the same, $q_1=q_2=q$
 \[\Psi(q,q)=-\Psi(q,q) \]
-The only condition for which this equality is true is for  $\Psi = 0$. This is called \textbf{Pauli's exclusion principle}.
+The only condition for which this equality is true is for  $\Psi = 0$, there is no wave function that can describe a system of two identical fermions with identical state. This is called \textbf{Pauli's exclusion principle} and applies to all identical fermions.
 \\
 \subsection{Mean Field Approximation}
 Solving the S.E. for more than one particle rapidly becomes challenghing, even resorting to High Performance Computing. However, much of the global, qualitative structure of the Mondelyev table can be understood within a simple \textbf{mean field} picture: instead of accounting for all pairwise Coulomb interactinos, we assume that the effect on each electron, due to all other electrons and the protons can be represented by an overall confining potential.\\
