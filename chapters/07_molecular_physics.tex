@@ -106,17 +106,21 @@ I obtain two different functions:
 	\centering
 	\includegraphics[scale=0.30]{img_9}
 \end{figure}
+
 \section{Electronic structure calculation methods}
-When choosing the best method to obtain an electronic structure, some evaluations have to be made regarding the accuracy of the calculation vs the computational cost of the operation. The first approximation to be chosen is always the most important and it determines the further steps that need to be taken. It is very important then to consider strategic decisions in computational sciences.\\
+When choosing the best method to obtain an electronic structure, some evaluations have to be made regarding the accuracy of the calculation vs the computational cost of the operation. 
+The first approximation to be chosen is always the most important, as it determines the further steps that need to be taken. \\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_13}
 \end{figure}
 \newline
-I also have \textbf{EXACT DIAGONALIZATION (TRUNCATED BASIS)} that is very precise, but can't be used with system with more than 5 or 6 particles at the same time.\\
-For biological system, chemical accuracy is important as long as the error is not dramatic (slightly change of temperature can dramatically change the system). A simulation is acceptable when $K_BT < 1.5\text{ KJ/mol} \div 2.4 \text{ KJ/mol}$.\\
-For macromolecules in biology, very accurate DFT are performed. The problem is that it's very difficult to predict Van Der Waals forces, since they are polynomial and DFT uses exponentials.\\
+The \textbf{EXACT DIAGONALIZATION (TRUNCATED BASIS)} technique is very precise, but it can't be used with system with more than 5 or 6 particles at the same time.\\
+For biological system, chemical accuracy is important as long as the error is not dramatic (keep in mind that a slight change of temperature can drastically change the system). 
+A simulation is acceptable when $K_BT < 1.5\text{ KJ/mol} \div 2.4 \text{ KJ/mol}$.\\
+For macromolecules in biology, very accurate DFT are performed. The problem is that it's very difficult to predict Van Der Waals forces, since they are polynomial and DFT employs exponentials.\\
 The general goal is using classical equations to predict quantum-mechanics-descripted movements.\\
+
 \subsubsection{Hartree-Fock Method}
 Hartree-Fock method is a method of approximation for the determination of the wave function and the energy of a quantum many-body system in a stationary state that combines Mean Field Approximation, Fermi symmetry, and the Variational Principle.\\
 The method uses the Slater matrix's determinant to approximate a set of $N$ fermions.
@@ -128,10 +132,12 @@ The method uses the Slater matrix's determinant to approximate a set of $N$ ferm
 \phi_1(r_m)&...&\phi_n(r_m)
 \end{pmatrix}
 \]
-I do not expect to find $\Psi(q_1...q_n)$, I can say it is the result of an equation and so calculate the energy by using the Variational Principle with $E=\braket{\Psi\,|\,E\,|\,\Psi}$ and minimize $E$ with respect to$\psi(q)$ (a single-particle function) under the costraint of normalization ($\braket{\psi\,|\,\psi}=1$)\\
+We do not expect to find $\Psi(q_1...q_n)$.
+We can say it is the result of an equation and calculate the energy by using the Variational Principle with $E=\braket{\Psi\,|\,E\,|\,\Psi}$ and minimize $E$ with respect to$\psi(q)$ (a single-particle function) under the costraint of normalization ($\braket{\psi\,|\,\psi}=1$)\\
 Costraint minimization is operated with \textbf{Lagrange multipliers}: I consider a system of equations $f(x_1...x_n)$ where I can calculate the minimum and the maximum with the application of the gradient $\nabla f=0$.\\
 
-We eventually obtain the \textbf{Hartree Equation}, representing \ul{one electron interacting with a probability cloud}. It is a symmetric system (valid for bosons, since they have classical limits and can be represented as shown without further additions):
+We eventually obtain the \textbf{Hartree Equation}, representing \ul{one electron interacting with a probability cloud}. 
+It is a symmetric system (valid for bosons, since they have classical limits and can be represented as shown without further additions):
 \[
 \bigg(-\frac{\hbar^2}{2m}\nabla^2_i-\frac{Z}{r_i}\bigg)\Phi_\lambda(\vec{r_i})+\sum_\mu \sum_{j \neq i} \int\,d^3\vec{r_j}\bigg(\Phi^*_\mu(\vec{r_j})\Phi_\mu(\vec{r_j})\frac{1}{|r_i-r_j|}\Phi_\lambda(\vec{r_i})\bigg)=E\Phi_\lambda(\vec{r_i})
 \]
@@ -142,73 +148,90 @@ In particular:
 	\item $\mu$ is the orbital index that changes the wave function
 	\item $\Phi^*_\mu(r_j)\Phi_\mu(r_j) = \rho_\mu^{(i)}(r_j)$ is the electron density + density of charge around it (probability density) with sum of all electrons in all orbitals ($\mu$)
 \end{itemize}
-Fermi symmetry introduces Slater determinant that is also called \textbf{exchange term} (\textbf{Fock equation}). This introduction implies that I cannot bring two electrons with the same spin in the same orbital. The wave function collapses to zero and I have repulsion between the electrons.\\
+The Fermi symmetry introduces the Slater determinant, that is also called \textbf{exchange term} (\textbf{Fock equation}). 
+This introduction implies that I cannot bring two electrons with the same spin in the same orbital. 
+The wave function collapses to zero and I have repulsion between the electrons.\\
 \[
 \text{HARTREE EQN.}+
 \sum_\mu \sum_{j \neq i} \int\,d^3\vec{r_j}\bigg(\Phi^*_{\mathcolorbox{yellow}{\mu}}(\vec{r_j})\Phi_{\mathcolorbox{yellow}{\lambda}}(\vec{r_j})\frac{1}{|r_i-r_j|}\Phi_{\mathcolorbox{yellow}{\mu}}(\vec{r_i})\bigg)=E\Phi_\lambda(\vec{r_i})
 \]
-This implies that the electron density factor of Hartree equation is not present anymore, the two particles are in a different state. At the same time $\Phi_\mu(r_i)$ becomes Fock's generalization exchange term for fermions.\\
-
+This implies that the electron density factor of Hartree equation is not present anymore, the two particles are in a different state. 
+At the same time, $\Phi_\mu(r_i)$ becomes Fock's generalization exchange term for fermions.
 This equation though is non linear ($\Phi^3$), so many quantum mechanics properties can't be applied to HF.\\
-The computational cost doesn't change over the introduction of the exchange term even if it has a three-dimensional integral.\\
-I can't expand the equation on a different basis, I must use SELF CONSISTED METHODS/APPROACHES that are \ul{iterative procedures operated until the function converges.}
+\\
+The computational cost doesn't change over the introduction of the exchange term, even if it has a three-dimensional integral.
+Since I can't expand the equation on a different basis, I must use SELF CONSISTED METHODS/APPROACHES, which are \ul{iterative procedures operated until the function converges.}
 \begin{enumerate}
 	\item (Guess) $\Phi_\lambda (\vec{r})$
-	\item Compute $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$ as they are numerical values
+	\item Compute $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$, as they are numerical values
 	\item Insert $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$ into HF equation, resulting in a conventional linear Schr\"odinger equation.
 	\item Solve HF equation and get a more accurate wave function $\Phi_\lambda (\vec{r})$
 	\end{enumerate}
-The obtained $\Phi_\lambda (\vec{r})$ is a better guess than the initial one so I use the latter obtained again for point 1 and recompute the density. I continue until I converge. Usually I have a single minimum. \\
-I can use SELF CONSISTENT FIELDS to compute HF equation but they are computationally expensive, they can be used for parallel computing. \\
+The obtained $\Phi_\lambda (\vec{r})$ is a better guess than the initial one, so I use the latter obtained again for point 1 and recompute the density. 
+I continue until convergence is reached (usually a single minimum is present). \\
 
-I can further use HF equation with SEMI EMPIRICAL METHODS with coefficients in front of direct and exchange terms that can weight the two terms in order to better match the experiment. I usually use HF to build the expansion of the eigenfunction or in quantum computing.\\
+I can use self consistent fields to compute the HF equation, but they are computationally expensive (parallel computing). \\
+
+I can further use the HF equation with SEMI EMPIRICAL METHODS with coefficients in front of direct and exchange terms, that can weight the two terms in order to better match the experimental results.  The HF equation is usually employed to build the expansion of the eigenfunction or in quantum computing.\\
 
 \subsection{Density Function Theory (DFT)}
-Variational scheme that in principle can yield the exact result,  but in practice needs heuristic input/approximation. Over the made assumptions, I can have excellent results. I need simple inputs for the perfect compromise between accuracy and computational cost.\\
+Variational scheme that in principle can yield the exact result,  but in practice needs heuristic input/approximation. 
+Over the made assumptions, it is possible to achieve excellent results. 
+Simple inputs are required for the perfect compromise between accuracy and computational cost.\\
 This theory is not based on the wave function computation, but on the \textbf{density function computation}.\\
-\[
- \text{Density operator:}\hat{\rho}(\vec{r})=\sum_{i=1}^{N_0}\delta(\vec{r}-\vec{r_i})\]
- \[
-\text{Expectation value, assuming} \braket{\Psi\,|\,\Psi}=1 \text{:}\, \braket{\Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi}=\sum_i \int\,d\vec{r_1}...d\vec{r_{N_e}}\bigg(\Psi^*(\vec{r_1}-\vec{r_{N_e}})\delta(\vec{r}-\vec{r_i})\Psi(\vec{r_1}-\vec{r_{N_e}})\bigg)
-\]
-\[
+
+
+\begin{multline}
+ \text{Density operator:}\hat{\rho}(\vec{r})=\sum_{i=1}^{N_0}\delta(\vec{r}-\vec{r_i})\\
+\text{Expectation value, assuming} \braket{\Psi\,|\,\Psi}=1 \text{:}\, \braket{\Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi}=\\
+\sum_i \int\,d\vec{r_1}...d\vec{r_{N_e}}\bigg(\Psi^*(\vec{r_1}-\vec{r_{N_e}})\delta(\vec{r}-\vec{r_i})\Psi(\vec{r_1}-\vec{r_{N_e}})\bigg)\\
 \braket{\Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi}=n(\vec{r})
-\]
-which is the probability of finding any electron at the point $r$. This concept is shown in the following picture,  where blue is low electron density and red is high electron density.\\
+\end{multline}
+
+
+which is the probability of finding any electron at the point $r$. 
+This concept is shown in the following picture,  where blue is low electron density and red is high electron density.\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_14}
 \end{figure}
 \newline
-\ul{OBS}: $n(\vec{r})$ is a so-called \textbf{SINGLE-BODY DENSITY}, it doesn't tell me the same information of the wave function (in fact $\hat{\rho}(\vec{r})$ reduces it when compared to $\Psi$). For any Hamiltonian there is one and only single-body density.\\
+\ul{OBS}: $n(\vec{r})$ is a so-called \textbf{SINGLE-BODY DENSITY}, it doesn't tell me the same information of the wave function (in fact $\hat{\rho}(\vec{r})$ reduces it when compared to $\Psi$). 
+For any Hamiltonian there is one and only single-body density.\\
 
-Hochenberg and Kohn have elaborated two theorems that show that the ground state and excited states' properties of a system (quantum manybody system)\marginpar{\textit{determined by some sort of *quantum magic*, cit.}} are entirely determined by a single-body wavefunction $n(\vec{r})$.\\
+Hochenberg and Kohn have elaborated two theorems that show that the ground state and excited states' properties of a system (quantum many-body system) are entirely determined by a single-body wavefunction $n(\vec{r})$.\\
 Mind that the quantum electronic structure calculation problem is:
 \[
 \hat{H}=-\frac{\hbar^2}{2m}\sum_i^{N_e}\nabla_i^2+\frac{1}{2}\sum_{i\neq j} \frac{e^2}{|r_i-r_j|}+\sum_i^{N_e}V_{ext}(\vec{r_i})
 \]
-Te last term is the interaction between single electrons and nuclei. IN BO approximation this was the external potential because nuclei were fixed.\\
+The last term is the interaction between single electrons and nuclei. 
+In BO approximation, this was the external potential - as nuclei were fixed.\\
 
 \ul{THEOREM 1)} For any system of interacting particles, the external potential is determined uniquely by the ground state one-body density.
 \[n_o(\vec{r})=\braket{\Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi}\]
 
-$\rightarrow\,\,$\ul{Corollary}: All wavefunctions (ground state, first excited state, all eigenstates of $\hat{H}$) are fully determined by $n_0(\vec{r})$\\
+$\rightarrow\,\,$\ul{Corollary}: All wavefunctions (ground state, first excited state and all eigenstates of $\hat{H}$) are fully determined by $n_0(\vec{r})$\\
 
 \ul{THEOREM 2)} A functional $E[n_0]$ can be defined such that the minimum of this functional with respect to $n_0(\vec{r})$ provides the exact $n_0(\vec{r})$ and $E_0$ (ground state energy).\\
 
 \ul{OBS}: A function: $f: x \rightarrow f(x)$ ($x$ is a variable, $f(x)$ is a number)\\
-A functional: $E[f]: f(x) \rightarrow E[f]$ ($f(x)$ is a function of operators, $E[f]$ is a number). Examples of functionals are definite integrals or expectation values of operators.\\
+A functional: $E[f]: f(x) \rightarrow E[f]$ ($f(x)$ is a function of operators, $E[f]$ is a number). 
+Examples of functionals are definite integrals or the expectation values of operators.\\
 Anyway, from Ritz Theorem we know that the minimum of the functional of the wave function (i.e., the expectation value of the Hamiltonian) is the exact ground state.\\
 
-I can define/is it possible to define a functional such as the minimum of the functional is the exact value of the ground state energy. Differently from Ritz Theorem, here the functional is not given and not referred to the wave function. One body density's functional's minimum is the exact ground state energy of the problem $\forall$ Hamiltonians.\\
+It is possible to define a functional such as the minimum of the functional is the exact value of the ground state energy. 
+Differently from Ritz Theorem, here the functional is not given and not referred to the wave function. 
+The one body density's functional's minimum is the exact ground state energy of the problem $\forall$ Hamiltonians.\\
 
-These two are existent theorems, they do not provide any solution, usually they are complemented with ways to build the right functional to solve the problem.\\
+These two are existent theorems; they do not provide any solution, and usually they are complemented with ways to build the right functional to solve the problem.\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_15}
 \end{figure}
 
 \subsection{QM-MM Schemes}
-QM-MM = Quantum Mechanics, Molecular Mechanics. These schemes are used for large molecular models and chemical reactions studies (e.g., enzymatic reactions).\\
-QM is applied to the region of interest so to have the computational effort only where needed,  while classical molecular mechanics is applied elsewhere and an hybrid method is used at the threshold of the two regions.\\
-The difficulty is presented when considering thermodynamics. The more degrees of freedom, the more entropy.\\
+QM-MM = Quantum Mechanics, Molecular Mechanics. 
+These schemes are used for large molecular models and chemical reactions studies (e.g., enzymatic reactions).\\
+QM is applied to the region of interest (so to have the computational effort only where needed),  while classical molecular mechanics is applied elsewhere and an hybrid method is used at the border between the two regions.\\
+The difficulty is presented when considering thermodynamics. 
+The more degrees of freedom, the more entropy.\\

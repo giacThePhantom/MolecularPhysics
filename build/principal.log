@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  28 JAN 2022 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  28 JAN 2022 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1766,114 +1766,96 @@ Package pdftex.def Info: chapters/07/img_9.jpg  used on input line 107.
 <chapters/07/img_13.jpg, id=1395, 1542.76375pt x 697.60625pt>
 File: chapters/07/img_13.jpg Graphic file (type jpg)
 <use chapters/07/img_13.jpg>
-Package pdftex.def Info: chapters/07/img_13.jpg  used on input line 113.
+Package pdftex.def Info: chapters/07/img_13.jpg  used on input line 115.
 (pdftex.def)             Requested size: 462.8327pt x 209.28348pt.
 
-Overfull \hbox (29.2127pt too wide) in paragraph at lines 113--114
+Overfull \hbox (29.2127pt too wide) in paragraph at lines 115--116
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--120
+Underfull \hbox (badness 10000) in paragraph at lines 111--123
 
  []
 
 [69 <./chapters/07/img_9.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 [70 <./chapters/07/img_13.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+Underfull \hbox (badness 10000) in paragraph at lines 157--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Overfull \hbox (106.10745pt too wide) detected at line 173
-[] [] \OT1/cmr/m/n/10 = 1[]  [] = [] []  \OML/cmm/m/it/10 d[]:::d[][]\OT1/cmr/m
-/n/10 	[]([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ^^N\OT1/c
-mr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )	([] \OMS/cmsy/m/n/10 ^^@
- []\OT1/cmr/m/n/10 )[]
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
+
  []
 
 [71]
 <chapters/07/img_14.png, id=1416, 557.08125pt x 414.54875pt>
 File: chapters/07/img_14.png Graphic file (type png)
 <use chapters/07/img_14.png>
-Package pdftex.def Info: chapters/07/img_14.png  used on input line 180.
+Package pdftex.def Info: chapters/07/img_14.png  used on input line 196.
 (pdftex.def)             Requested size: 167.12566pt x 124.36557pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--184
+Underfull \hbox (badness 10000) in paragraph at lines 192--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
-[]\T1/cmr/m/it/10 determined
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
-\T1/cmr/m/it/10 by some sort
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
-\T1/cmr/m/it/10 of *quan-tum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--202
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 [72 <./chapters/07/img_14.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-<chapters/07/img_15.jpg, id=1424, 1229.59375pt x 249.93375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
+
+ []
+
+<chapters/07/img_15.jpg, id=1425, 1229.59375pt x 249.93375pt>
 File: chapters/07/img_15.jpg Graphic file (type jpg)
 <use chapters/07/img_15.jpg>
-Package pdftex.def Info: chapters/07/img_15.jpg  used on input line 208.
+Package pdftex.def Info: chapters/07/img_15.jpg  used on input line 229.
 (pdftex.def)             Requested size: 368.88097pt x 74.9807pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 212--34
+Underfull \hbox (badness 10000) in paragraph at lines 233--34
 
  []
 
@@ -1888,7 +1870,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-<chapters/08/img_10.jpg, id=1438, 657.45625pt x 167.62625pt>
+<chapters/08/img_10.jpg, id=1439, 657.45625pt x 167.62625pt>
 File: chapters/08/img_10.jpg Graphic file (type jpg)
 <use chapters/08/img_10.jpg>
 Package pdftex.def Info: chapters/08/img_10.jpg  used on input line 50.
@@ -1929,7 +1911,7 @@ Overfull \hbox (1.07393pt too wide) in paragraph at lines 137--138
  the CON-TROL QUBIT, the $[]$
  []
 
-<chapters/08/img_11.png, id=1453, 219.82124pt x 157.58875pt>
+<chapters/08/img_11.png, id=1454, 219.82124pt x 157.58875pt>
 File: chapters/08/img_11.png Graphic file (type png)
 <use chapters/08/img_11.png>
 Package pdftex.def Info: chapters/08/img_11.png  used on input line 141.
@@ -1974,7 +1956,7 @@ Overfull \hbox (34.80608pt too wide) detected at line 160
 = [] [] = [] = []
  []
 
-<chapters/08/img_12.jpg, id=1460, 909.3975pt x 467.7475pt>
+<chapters/08/img_12.jpg, id=1461, 909.3975pt x 467.7475pt>
 File: chapters/08/img_12.jpg Graphic file (type jpg)
 <use chapters/08/img_12.jpg>
 Package pdftex.def Info: chapters/08/img_12.jpg  used on input line 170.
@@ -2032,8 +2014,8 @@ Package rerunfilecheck Info: File `principal.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 27250 strings out of 492616
- 488133 string characters out of 6129482
+ 27251 strings out of 492616
+ 488147 string characters out of 6129482
  593280 words of memory out of 5000000
  30364 multiletter control sequences out of 15000+600000
  568252 words of font info for 123 fonts, out of 8000000 for 9000
@@ -2082,10 +2064,10 @@ e1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
 ublic/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
 lic/cm-super/sfti0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
 c/cm-super/sfti1000.pfb>
-Output written on ./build/principal.pdf (114 pages, 2800697 bytes).
+Output written on ./build/principal.pdf (114 pages, 2800438 bytes).
 PDF statistics:
- 1844 PDF objects out of 2073 (max. 8388607)
- 1629 compressed objects within 17 object streams
- 397 named destinations out of 1000 (max. 500000)
+ 1845 PDF objects out of 2073 (max. 8388607)
+ 1630 compressed objects within 17 object streams
+ 398 named destinations out of 1000 (max. 500000)
  1663 words of extra memory for PDF output out of 10000 (max. 10000000)
 
