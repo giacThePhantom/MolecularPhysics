@@ -5,7 +5,8 @@ The instantaneous state of a system is represented by points in a Hilbert space:
 More precisely,  states are associated to rays - since $a|\psi\rangle$ and $|\psi\rangle$ represent the same state.
 Let $|\psi_3\rangle = a |\psi_2\rangle$, $|\psi_1\rangle$ and $|\psi_2\rangle$ represent different states and $|\psi_1\rangle$ and $|\psi_3\rangle$ represent the same one.\\
 \noindent
-The wavefunction $\psi(Q,t)$ describes the state of a quantum system, where $Q=\vec{q_1},...,\vec{q_N}$ are coordinates for the position of all the particles. Keep in mind that $\psi$ cannot be measured, it is a mere mathematical tool that we use for computing and making predictions.
+The wavefunction $\psi(Q,t)$ describes the state of a quantum system, where $Q=\vec{q_1},...,\vec{q_N}$ are coordinates for the position of all the particles. 
+Keep in mind that $\psi$ cannot be measured, it is a mere mathematical tool that we use for computing and making predictions.
 
 \section{Observable quantities}
 Observable quantities are associated to an Hermitian Operator, for example:
@@ -30,6 +31,7 @@ $$P(o_n) = |\langle o_n|\psi\rangle|^2$$
 Immediately after the measurement of $\hat{O}$ , yielding $o_n$, the state of the system is described by:
 $$psi(Q,t_0)=f_n°(Q)$$
 By measuring we observe the \textbf{collapse of the wavefunction} e.g. the state of the cat collapses to either dead or alive when we open the box.
+
 \section{Expectation value}
 The average over many measurement of $\hat{O}$ or expectation value is given by:
 
@@ -57,7 +59,9 @@ $\hat{O}_1,\hat{O}_2,...,\hat{O}_N$ are Hermitian operators.\\
 Let ${O_l}_{l=1,...,M<N}$ be the subset of mutually commuting operators. Then, for $[O_l,O_m]=0$ with $O_l,O_m \in M$ there will be a common set of eigenstates.\\
 \noindent
 
-$\hat{O}_lf_i=o_i^{(l)}f_i$, where $f_i$ are the eigenstates. By measuring immediately after a previous measurement $M,$ the result will be equal - as the $M$ measurement will provide the maximum information possible on the quantum system. Any other measurement will destroy the information e.g. if we measure the momentum (non-commuting) after the position, we will not know the position anymore.
+$\hat{O}_lf_i=o_i^{(l)}f_i$, where $f_i$ are the eigenstates. 
+By measuring immediately after a previous measurement $M,$ the result will be equal - as the $M$ measurement will provide the maximum information possible on the quantum system. 
+Any other measurement will destroy the information e.g. if we measure the momentum (non-commuting) after the position, we will not know the position anymore.
 
 Example: check whether $L_x$ and $L_y$ do not commute.
 $$\bar{L}=\left|\begin{array}{ll}\hat{i} \hat{j} \hat{k} \\ x y z \\ p_{x} p_{y} p_{z}\end{array}\right|=\hat{i} \underbrace{\left(y p_{z}-z p_{y}\right)}_{L_{x}}+\hat{j}(\underbrace{z p_{x}-x p_{z}}_{L_{y}}+\hat{k} \underbrace{\left(x p_{y}-y p_{x}\right)}_{L_{z}}$$

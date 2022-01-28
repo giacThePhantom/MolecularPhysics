@@ -257,24 +257,28 @@ The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
 
     $$L_z = xP_y - yP_x\xrightarrow[]{\text{quantization}}x\biggl(-i\hbar\frac{\partial}{\partial y}\biggr) - y\biggl(-i\hbar\frac{\partial}{\partial x}\biggr)$$
 
-    Now considering $\langle \varphi|O|\varphi\rangle$ that specifies the state and that is equivalent to $\langle O\rangle$, where:
+    The quantum kinetic energy operator is obtained as following from the classical kinetic energy  $T=\frac{p^2}{2m} \rightarrow \hat{T}=\frac{\hat{p}^2}{2m}=\frac{(-i\hbar\vec{\nabla})^2}{2m}=\frac{\hbar^2}{2m}\nabla^2$
+    
+    In order to compute the expected value of operators, we need to consider $\langle \varphi|O|\varphi\rangle$ that specifies the state and that is equivalent to $\langle O\rangle$, where:
 
     $$\langle O\rangle = \frac{\int dx \varphi^*(x)(O(x)\cdot\varphi(x))}{\int dx\varphi^*(x)\varphi(x)}$$
 
-    Potential energy operator:
+    \underline{Potential energy operator}:
     $$\langle\varphi|\hat{U}|\varphi\rangle =\frac{\int dx\varphi^*(x)(\hat{U}\varphi(x))}{\int dx |\varphi|^2}= \int d x U(x) |\varphi|^2$$
 
+	\underline{Kinetic energy operator}:
+	Consider $\varphi=e^{-\frac{\alpha x^2}{2}}$
     \begin{align*}
-      \langle\varphi|\hat{T}|\varphi\rangle &=\frac{\int dx\varphi^*(x)(-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\varphi(x))}{\int dx |\varphi|^2}= \frac{1}{4}\hbar^2\\
-                                      &=e^{-\alpha x^2}\frac{\partial^2}{\partial x^2}e^{-\alpha x^2} = e^{-\alpha x^2}\frac{\partial}{\partial x}(-2\alpha xe^{-\alpha x^2}) =\\
-                                      &=e^{-\alpha x^2}(-2\alpha e^{-\alpha x^2}+4\alpha x^2e^{-\alpha x^2})= \\
-                                      &=-2\alpha|\varphi|^2 + 4\alpha x^2|\varphi|^2
+      \langle\varphi|\hat{T}|\varphi\rangle =\frac{\int dx\varphi^*(x)(-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\varphi(x))}{\int dx |\varphi|^2}\
+                                      &=e^{-\frac{\alpha x^2}{2}}\frac{\partial^2}{\partial x^2}e^{-\frac{\alpha x^2}{2}} = e^{-\frac{\alpha x^2}{2}}\frac{\partial}{\partial x}(-2\alpha xe^{-\frac{\alpha x^2}{2}}) =\\
+                                      &=e^{-\frac{\alpha x^2}{2}}(-\alpha e^{-\frac{\alpha x^2}{2}}+\alpha^2 x^2e^{-\frac{\alpha x^2}{2}})= \\
+                                      &=-\alpha|\varphi|^2 + \alpha^2 x^2|\varphi|^2
     \end{align*}
 
    
-    And so:
+    We can then subsitute for $\alpha=\frac{m\omega}{\hbar}$ and $\langle{x^2}\rangle=\sigma^2=\frac{\hbar}{2\omega m}$:
 
-    $$\langle\varphi|\hat{T}|\varphi\rangle = \frac{-\frac{\hbar^2}{2m}\int -2\alpha |\varphi(x)|^2 dx +\int 4 \alpha x^2|\varphi(x)|^2 dx}{\int|\varphi(x)|^2} = -\frac{\hbar^2}{2m} (2\alpha) -\frac{\hbar^2}{2m} (4\alpha x^2) $$
+    $$\langle\varphi|\hat{T}|\varphi\rangle = -\frac{\hbar^2}{2m} \alpha(\alpha x^2-1)=\frac{\hbar\omega}{4}$$
 
 
 \section{Quantum particle in a one dimensional infinite square well}

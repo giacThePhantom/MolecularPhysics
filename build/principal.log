@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  28 JAN 2022 01:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  28 JAN 2022 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1251,20 +1251,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <chapters/03/1D_well.png, id=1177, 325.215pt x 151.16475pt>
 File: chapters/03/1D_well.png Graphic file (type png)
 <use chapters/03/1D_well.png>
-Package pdftex.def Info: chapters/03/1D_well.png  used on input line 292.
+Package pdftex.def Info: chapters/03/1D_well.png  used on input line 296.
 (pdftex.def)             Requested size: 260.17464pt x 120.94118pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--299
+Underfull \hbox (badness 10000) in paragraph at lines 285--303
 
  []
 
 [32 <./chapters/03/1D_well.png>] [33] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--465
+Underfull \hbox (badness 10000) in paragraph at lines 456--469
 
  []
 
@@ -1274,56 +1274,56 @@ Chapter 4.
 
 ]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 31.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 32.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 31.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 32.
 
 Missing character: There is no ° in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
 [40]
-Overfull \hbox (30.48204pt too wide) detected at line 78
+Overfull \hbox (30.48204pt too wide) detected at line 82
 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 i\U/msb/m/n/10 ~\OT1/cmr/
 m/n/10 )[] [] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cm
 m/m/it/10 ih\OT1/cmr/m/n/10 )[] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--107
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--135
+Underfull \hbox (badness 10000) in paragraph at lines 127--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--135
+Underfull \hbox (badness 10000) in paragraph at lines 127--139
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 149--154
+Underfull \hbox (badness 10000) in paragraph at lines 153--158
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--170
+Underfull \hbox (badness 10000) in paragraph at lines 168--174
 
  []
 
@@ -2082,7 +2082,7 @@ e1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
 ublic/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
 lic/cm-super/sfti0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
 c/cm-super/sfti1000.pfb>
-Output written on ./build/principal.pdf (114 pages, 2800297 bytes).
+Output written on ./build/principal.pdf (114 pages, 2800697 bytes).
 PDF statistics:
  1844 PDF objects out of 2073 (max. 8388607)
  1629 compressed objects within 17 object streams
