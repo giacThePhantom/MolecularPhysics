@@ -1,7 +1,7 @@
 \section{Complex numbers}
 
-  \subsection{Conversion to polar form}
-  Rewrite $\cos(3-2i)$ in polar form.
+  \subsection{Conversion in different forms}
+  Rewrite $\cos(3-2i)$ in standard form.
   \begin{align*}
     \cos(3-2i) & = \frac{e^{i(3-2i)} + e^{-i(3-2i)}}{2}
                & \text{since }\cos\phi = \frac{e^{i\phi} + e^{-i\phi}}{2} \\
@@ -13,6 +13,41 @@
                & \text{collecting } \cos3 \text{ and } i\sin3 \\
                & = \underbrace{\cos3\cosh2}_{\text{real part}} + \underbrace{i\sin3\sinh2}_{\text{immaginary part}}
                & \text{since } \cosh x = \frac{e^x+e^{-x}}{2}, \sinh x = \frac{e^x-e^{-x}}{2} \\
+  \end{align*}
+  
+  Rewrite $z = 3 - 4i$in polar form.
+  \begin{align*}
+    r       & = \sqrt{3^2 + (-4)^2} = 5
+            & \text{modulus} \\
+    \phi    & = \arctan(-4/3)
+            & \text{angle on Argand plane} \\
+            & \text{Therefore} \\
+    z       & = 5e^{\arctan(-4/3)}\\
+  \end{align*}
+
+  Show that $|z| = \sqrt{zz^*}$, where $z$ is any complex number.
+  \begin{align*}
+    \sqrt{zz^*} & = \sqrt{re^{i\phi}re^{-i\phi}}
+                & \text{converting into polar form } z \text{ and } z^* \\
+                & = \sqrt{r^2e^{i\phi -i\phi}}
+                & \text{collecting } r \text{ and using exponent rules} \\
+                & = \sqrt{r^2e^{0}} \\
+                & = \sqrt{r^2} \\
+                & = r = |z|
+  \end{align*}
+  
+  Show that $A\cos(wt + \phi) = A_1\cos(wt) + A_2\sin(wt) = B_1e^{iwt} + B_2e^{-iwt}$.
+  \begin{align*}
+    A\cos(wt+\phi)  & = A\cos(wt)\cos(\phi) - A\sin(wt)\sin(\phi)
+                    & \text{because } \cos(A+B) = \cos(A)\cos(B) - \sin(A)\sin(B)\\
+                    & = A_1\cos(wt) + A_2\sin(wt)
+                    & \text{with } A_1 = A\cos(\phi), A_2=-A\sin(\phi)\\
+                    & = A_1\left(\frac{e^{iwt}+e^{-iwt}}{2}\right) + A_2\left(\frac{e^{iwt}-e^{-iwt}}{2i}\right)
+                    & \text{since } \cos(z)=\frac{e^{iz}+e^{-iz}}{2}, \sin(z)=\frac{e^{iz}-e^{-iz}}{2i} \\
+                    & =\left(\frac{A_1}{2}+\frac{A_2}{2i}\right)e^{iwt}+\left(\frac{A_1}{2}-\frac{A_2}{2i}\right)e^{-iwt}
+                    & \text{rearranging} \\
+                    & = B_1e^{iwt} + B_2e^{-iwt}
+                    & \text{with } B_1=\left(\frac{A_1}{2}+\frac{A_2}{2i}\right),B_2=\left(\frac{A_1}{2}-\frac{A_2}{2i}\right)
   \end{align*}
 
   \subsection{Multivalued functions}

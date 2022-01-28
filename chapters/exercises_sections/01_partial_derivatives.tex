@@ -1,6 +1,13 @@
 \section{Partial derivatives}
 
   \subsection{Solving partial derivatives}
+  Compute all first order partial derivatives of $f(x, y, z) = ze^{-x^2-y^2}$.
+  \begin{align*}
+    \frac{\partial f}{\partial x} & = -2xze^{-x^2-y^2} \\
+    \frac{\partial f}{\partial y} & = -2yze^{-x^2-y^2} \\
+    \frac{\partial f}{\partial z} & = e^{-x^2-y^2}\\
+  \end{align*}
+
   Compute both first order partial derivatives of $f = e^{ix}(x^3 + y^3 + 1)$.
   \begin{align*}
     \frac{\partial f}{\partial x} & = ie^{ix}(x^3 + y^3 + 1) + e^{ix}(3x^2) \\
@@ -18,3 +25,5 @@
     \frac{\partial^4f}{\partial^2x\partial^2y}  & = i30xe^{ix^3}(2 + i3x^3) \\
     \frac{\partial^5f}{\partial^2x\partial^3y}  & = 0 \\
   \end{align*}
+
+  % TODO Add exercises on differential equations
