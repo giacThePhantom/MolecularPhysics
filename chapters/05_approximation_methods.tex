@@ -1,22 +1,27 @@
 \graphicspath{{chapters/05/}}
 \chapter{Approximation methods}
-How do we solve quantum mechanical problems? Or to be more specific, how to solve the (stationary) Schrodinger equation $ H \psi = E \psi$? There are some "solvable" problems, for which we get a wave function to fit any desired value. As the problems become more complicated, even by relying on super computers it is impossible to design algorithms that provide for an exact solution. Here's the need for approximation methods. Approximation methods can be "ideal" and "non-ideal" (not conventional names). An ideal approximation method can become an exact method by tuning some parameters, the non-ideal ones will always remain an approximation, even with huge computational power (many in biology are non-ideal, like the Hartree-Fock, and are developed upon a physical intuition that allows to make important assumptions).
+How do we solve quantum mechanical problems? Or to be more specific, how to solve the (stationary) Schrodinger equation $ H \psi = E \psi$? There are some "solvable" problems, for which we get a wave function to fit any desired value.
+As the problems become more complicated, even by relying on super computers it is impossible to design algorithms that provide for an exact solution.
+Here's the need for approximation methods.
+Approximation methods can be "ideal" and "non-ideal" (not conventional names).
+An ideal approximation method can become an exact method by tuning some parameters, the non-ideal ones will always remain an approximation, even with huge computational power (many in biology are non-ideal, like the Hartree-Fock, and are developed upon a physical intuition that allows to make important assumptions).
 Some assumption concern the shape of the Hamiltonian (like confining a particle in a box instead of a complex potential), some concern the solution of a given Hamiltonian.
-The question we ask ourselves as biologist is "do we want to be more accurate or insightful?". If our aim is a biological application of quantum mechanics we are more interested in accuracy rather than completely understanding a structure $\rightarrow$ approximation.
+The question we ask ourselves as biologist is "do we want to be more accurate or insightful?".
+If our aim is a biological application of quantum mechanics we are more interested in accuracy rather than completely understanding a structure $\rightarrow$ approximation.
 \section{Truncated eigenstate expansion (Generalized Fourier)}
 Most quantum mechanical problems have an infinite number of functions in the basis set of functions that should be used to represent the problem. We can simplify our calculations and make a useful and accurate approximate solution by considering a finite subset of all the possible functions, especially those that have energies close to the state of the system of interest.\\
-An Hermitian operator $\hat{O}$ defined such as it is complete and orthonormal $\hat{O}^+=\hat{O}$ can be applied to a wave function $\hat{O}\Psi_n(x)=o_n\Psi_n(x)$ such as $\bigl(\Psi_n(x),\Psi_m(x)\bigr)=\delta_{mn}$\\
+An Hermitian operator $\hat{O}$ defined such as it is complete and orthonormal $\hat{O}^\dagger=\hat{O}$ can be applied to a wave function $\hat{O}\psi_n(x)=o_n\psi_n(x)$ such as $\bigl(\psi_n(x),\psi_m(x)\bigr)=\delta_{mn}$\\
 Remember that \textit{complete} and \textit{orthonormal} means:
 \begin{itemize}
-\item \textit{orthonormal}: $\bigl(\Psi_n(x),\Psi_m(x)\bigr)=\delta_{mn}$, or using Dirac notation $\langle o_k|o_n \rangle = \delta_{mn}$
+\item \textit{orthonormal}: $\bigl(\psi_n(x),\psi_m(x)\bigr)=\delta_{mn}$, or using Dirac notation $\langle o_k|o_n \rangle = \delta_{mn}$
 \item \textit{complete}: $ | \psi \rangle = \sum_n \langle o_k | \psi \rangle |o_n \rangle$.
 \end{itemize}
 
 $\rightarrow$ If given $g(x)\in L^2$ I can write the projection of function onto a basis of functions. The \textbf{Generalized Fourier Series of a $L^2$ function} is\\
 \[
-g(x)=\sum_{n}\bigl(\Psi_n(x),g(x)\bigr)\Psi_n(x) =\sum_{n=1}^{\infty}c_n\Psi_n(x)\\
+g(x)=\sum_{n}\bigl(\psi_n(x),g(x)\bigr)\psi_n(x) =\sum_{n=1}^{\infty}c_n\psi_n(x)\\
 \]
-Where $\bigl(\Psi_n(n),g(n)\bigr)$ are coefficient of the inner product with $c_n\in \mathbb{C}$. \\
+Where $\bigl(\psi_n(n),g(n)\bigr)$ are coefficient of the inner product with $c_n\in \mathbb{C}$. \\
 
 \textbf{NB:} any wave function can be expanded, just like $\vec{v} = \sum_n c_n \vec{e}_n$, where $c_n = \vec{v} \vec{e}_n$. But the expansion can be truncated. For example, if we have a vector projected to its components $\vec v = v_1\hat{e}_1+v_r\hat{e}_r$, we can choose a smart basis ${\vec{w}_1, \vec{w}_2}$, so that we can describe the vector with fewer elements and end up with something like $ \vec{v} \cong (\vec{v} \cdot \vec{w}_1) \vec{w}_1 $ .
 We shall truncate the sum to a finite number - not to infinite - such as there is no projection onto the third coordinate but only to a two dimensional plane.\\
@@ -33,13 +38,13 @@ This is an integral of a function over phase (where $\frac{dp}{2\pi}$ serves as 
 The latter is an integral over momentum of Fourier transform with a negative sign.
 $\mathbf{\tilde{g}(p)}$ is the \textbf{Fourier transform}, that is a measurable quantity and it's also one of the most successful algorithms (FFT).\\
 \\
-Suppose we have a quantum system composed by a nucleus with an electron flying by. I need $|\Psi(x)|^2$, I can get it by solving Schr{\"o}dinger equation. With scattering experiments I can measure the Fourier transform $\mathbf{|\tilde{\Psi}(p)|^2}$. This method is used in X-Ray Diffraction Crystallography, IR spectroscopy and so on.
+Suppose we have a quantum system composed by a nucleus with an electron flying by. I need $|\psi(x)|^2$, I can get it by solving Schr{\"o}dinger equation. With scattering experiments I can measure the Fourier transform $\mathbf{|\tilde{\psi}(p)|^2}$. This method is used in X-Ray Diffraction Crystallography, IR spectroscopy and so on.
 \newline
 So, how do we truncate the expasion? Example:
 \[
-(g,g)=\biggl(\sum_nc_n\Psi_n(x), \sum_mc_m\Psi_m(x)\biggr) = \sum_{m,n}c_n^*\cdot c_m(\Psi_n, \Psi_m)
+(g,g)=\biggl(\sum_nc_n\psi_n(x), \sum_mc_m\psi_m(x)\biggr) = \sum_{m,n}c_n^*\cdot c_m(\psi_n, \psi_m)
 \]
-where $(\Psi_n,\Psi_m)=\delta_{nm}$ and for the Kronecker delta properties I get:
+where $(\psi_n,\psi_m)=\delta_{nm}$ and for the Kronecker delta properties I get:
 \[
 (g,g)= \sum_nc_n^* \cdot c_m \cdot 1 \rightarrow (g,g)=\sum_{n=0}^{\infty}|c_n|^2
 \]
@@ -89,7 +94,7 @@ The potential is: $U(x)=U_0(x^2-x_0^2)^2$.\\
 The Hamiltonian for the wave function: $\hat{H}=-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2$
 Note that this is a symmetric function, roughly composed by two gaussians, so we can approximate the function with an harmonic oscillator. Considering the potential to its lowest points it can be approximated and then expanded. \\
 
-We have two basis elements, the two eigenstates $n=0,1$ (ground state and first excited state), and we whish to solve $hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
+We have two basis elements, the two eigenstates $n=0,1$ (ground state and first excited state), and we wish to solve $\hat{H}\varphi_n=E_n\varphi_n$, with $n=0,1$:
 
 \[
 \hat{H}\varphi_n=E_n\varphi_n
@@ -98,7 +103,7 @@ We have two basis elements, the two eigenstates $n=0,1$ (ground state and first 
 \varphi_1 \cong C_L^1\,\psi^L(x)+C_R^1\,\psi^R(x).
 \end{cases}
 \]
-$C_L$ and $C_R$ are coefficients for each part of the function, one for each eigenstate. The values $\varphi_o$ adn $\varphi_1$ are the two eigenvalues of a $2 \times 2 $ matrix.\\
+$C_L$ and $C_R$ are coefficients for each part of the function, one for each eigenstate. The values $\varphi_o$ and $\varphi_1$ are the two eigenvalues of a $2 \times 2 $ matrix.\\
 We then proceed to calculate the value of the matrices for the expansion.\\
 \[
 H_{RR}=(\psi_R,\hat{H}\,\psi_R)= \int\psi_R^*(x)\,\bigg[-\frac{\hbar^2}{2m}\,\frac{d^2}{dx^2}+U_0\cdot(x^2-x_0^2)^2\bigg]\,\psi_R(x)\,dx\]
@@ -107,7 +112,7 @@ H_{RR}=(\psi_R,\hat{H}\,\psi_R)= \int\psi_R^*(x)\,\bigg[-\frac{\hbar^2}{2m}\,\fr
 \]
 $U_0$ has been substitued with the potential energy of the harmonic oscillator approximation. The integral is computable with Taylor expansion because we consider the minimum of the function.
 \[
-U(x)=U(x_0)+U'(x_0)(x-x_0)+\frac{1}{2}\,U''(x_0)(x-x_0)+\dots\]
+U(x)=U(x_0)+U'(x_0)(x-x_0)+\frac{1}{2}\,U''(x_0)(x-x_0)^2+\dots\]
 The final result is
 \[
 H_{RR}=\frac{1}{2}\hbar\omega
@@ -189,12 +194,12 @@ $P_L(t>0)=1-P_R(t>0)$\\
 By definition $E_0=0, E_1= \varepsilon$. Consequently, $\varepsilon = E_1-E_0$\\
 To find the probability of the particle being on the right/left, ($P_{R/L}(t)=|\braket{\psi_{R/L}\,|\,\varphi(t)}|^2$), we will use the time evolution operator.\\
 \[
-P_R(t)=|\braket{\psi_R\,|\,e^{-\frac{i}{\hbar}\cdot t \hat{H}}\,|\,\psi_L}|^2
+P_R(t)=|\mel{\psi_R}{e^{-\frac{i}{\hbar}\cdot t \hat{H}}}{\psi_L}|^2
 \]
 Minding that $\psi_R$ occurs at time $t$ whilst $\psi_L$ occurs at $t=0$.\\
 If I want to check whether the particle is still on the left
 \[
-P_L(t)=|\braket{\psi_L\,|\,e^{-\frac{i}{\hbar}\cdot t \hat{H}}\,|\,\psi_L}|^2
+P_L(t)=|\mel{\psi_L}{e^{-\frac{i}{\hbar}\cdot t \hat{H}}}{\psi_L}|^2
 \]
 Let's first compute the probability for a small $t$. We perform the Taylor expansion of $e^{-\frac{i}{\hbar}\cdot t \hat{H}} = \mathds{1} -\frac{i}{\hbar}\cdot t\hat{H}$
 \[
@@ -213,19 +218,12 @@ Let's first compute the probability for a small $t$. We perform the Taylor expan
 \end{pmatrix}
 \]
 \[
-P_R(t)\cong\bigg|\braket{\psi_R\,|\,1-\frac{i}{\hbar}\cdot t \hat{H}\,|\,\psi_L}\bigg|^2 \cong
-\bigg|(1,\,0) \cdot \mathds{1}
-\begin{pmatrix}
-0\\1
-\end{pmatrix}
--\frac{i}{\hbar}\cdot t \cdot (1,\,0)
-\begin{pmatrix}
-0 & \varepsilon\\ \varepsilon & 0
-\end{pmatrix}
-(0,\,1)\bigg|^2
+P_R(t)\cong\bigg|\mel{\psi_R}{\mathds{1}-\frac{i}{\hbar}\cdot t \hat{H}}{\psi_L}\bigg|^2 \cong
+\bigg|(0,\,1) \bigg[\mathds{1}-\frac{i}{\hbar}\cdot t\hat{H}
+\begin{pmatrix}1\\0\end{pmatrix}\bigg]\bigg|^2
 \]
 \[
-\cong \frac{t^2}{\hbar^2}\varepsilon
+\cong \frac{t^2}{\hbar^2}\varepsilon^2
 \]
 but since $\frac{t\varepsilon}{\hbar}<<1$ we get $t << \frac{\hbar}{\varepsilon}$.\\
 This is telling us that by waiting a little time the probability of finding the particle on the other side increases. This phenomenom is called \textbf{quantum tunneling}.\\
@@ -248,30 +246,33 @@ For the final $t$ we cannot expand the exponent like we did before. Given $e^{-\
 \[
 \text{first excited state:} \ket{1}=\bigg(\frac{\ket{L}-\ket{R}}{\sqrt{2}}\bigg) \rightarrow \sqrt{2}\ket{1}= \ket{L}-\ket{R}
 \]
-By summing and dividing,
+By summing and subtracting,
 \[
 \begin{cases}
-\ket{L}=\frac{1}{\sqrt{2}}\ket{\ket{0}+\ket{1}}\\
-\ket{R}=\frac{1}{\sqrt{2}}\ket{\ket{0}-\ket{1}}
+\ket{L}=\frac{1}{\sqrt{2}}(\ket{0}+\ket{1})\\
+\ket{R}=\frac{1}{\sqrt{2}}(\ket{0}-\ket{1})
 \end{cases}
 \]
-so we can substitute them:
+so we can substitute them and use hamiltonian operator:
 \[
-e^{-\frac{it}{\hbar}\hat{H}}\ket{R}=\frac{e^{-\frac{it}{\hbar}\hat{H}}}{\sqrt{2}}\cdot \ket{\ket{0}-\ket{1}}=\frac{1}{\sqrt{2}}\ket{0}-\frac{e^{-\frac{it}{\hbar}\varepsilon}}{\sqrt{2}}\ket{1}
+e^{-\frac{it}{\hbar}\hat{H}}\ket{R}=\frac{e^{-\frac{it}{\hbar}\hat{H}}}{\sqrt{2}}\cdot (\ket{0}-\ket{1})=\frac{1}{\sqrt{2}}\ket{0}-\frac{e^{-\frac{it}{\hbar}\varepsilon}}{\sqrt{2}}\ket{1}
 \]
-where $e^{-\frac{it}{\hbar}\varepsilon}$ is the relative weight of quantum superposition.\\
-\newline
+where $e^{-\frac{it}{\hbar}\varepsilon}$ is the relative weight of quantum superposition for the first excited state ($E_1=\varepsilon$). Ground state has an eigenvalue $E_0=0$ as stated above.\\
+Let's calculate the probability for the particle to be on the left.\\
 \[
-P_L=|\braket{L\,|\,\psi(t)}|^2=\bigg|\bra {L}\bigg(\frac{1}{\sqrt{2}}\ket{0}-\frac{1}{\sqrt{2}}\cdot e^{-\frac{it}{\hbar}\varepsilon} \ket{1} \bigg)\bigg|^2
+P_L=|\braket{L}{\psi(t)}|^2=\bigg|\braket{L}{\bigg(\frac{1}{\sqrt{2}}\ket{0}-\frac{1}{\sqrt{2}}\cdot e^{-\frac{it}{\hbar}\varepsilon} \ket{1} \bigg)}\bigg|^2
 \]
-Knowing that $\braket{L\,|\,L}=\frac{1}{\sqrt{2}}$ and $\braket{L\,|\,R}=0$,
+Knowing that $\braket{L}{L}=\frac{1}{\sqrt{2}}$ and $\braket{L}{R}=0$,
 \[
-= \bigg|\frac{1}{2}\cdot \frac{1}{\sqrt{2}}\cdot e^{-\frac{it}{\hbar}\varepsilon} \cdot \braket{L\,|\,1}\bigg|^2=\bigg(\frac{1}{2}-\frac{1}{2}\cdot e^{-\frac{it}{\hbar}\varepsilon}\bigg)^2=\bigg[\frac{1}{2}-\frac{1}{2}\bigg(\cos\frac{\varepsilon t}{\hbar}+i\sin\frac{\varepsilon t}{\hbar}\bigg)\bigg]^2
+=\bigg|\braket{L}{\frac{\ket{L}+\ket{R}}{\sqrt{2}}-e^{-\frac{it}{\hbar}\varepsilon}\cdot\frac{\ket{L}-\ket{R}}{\sqrt{2}}}\bigg|^2
+=\bigg(\frac{1}{2}-\frac{1}{2}\cdot e^{-\frac{it}{\hbar}\varepsilon}\bigg)^2
+=\bigg[\frac{1}{2}-\frac{1}{2}\bigg(\cos\frac{\varepsilon t}{\hbar}+i\sin\frac{\varepsilon t}{\hbar}\bigg)\bigg]^2
 \]
 \[
 P_L=\frac{1}{2}\bigg(1-\cos^2\frac{\varepsilon}{\hbar}t\bigg)
 \]
-For $t=0$, $P=0$ then $\cos^2x$ grows with a $t^2$ rate. There is an oscillation (figure \ref{fig:pulsation}) with a given period $T=\frac{\hbar}{2\varepsilon}$.\\
+For $t=0$, $P=0$ then $\cos^2x$ grows with a $t^2$ rate.
+There is an oscillation (figure \ref{fig:pulsation}) with a given period $T=\frac{\hbar}{2\varepsilon}$.\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_3.jpg}
@@ -283,17 +284,22 @@ For $t=0$, $P=0$ then $\cos^2x$ grows with a $t^2$ rate. There is an oscillation
 
 \section{Ritz-Rayleigh variational principle}
 Suppose we want to estimate the ground state energy $E_0$ and corresponding wave function of the stationary Schr\"{o}dinger equation.\\
-We define $\varphi(x)$ as a function approximating $\psi_0(x)$. Remember that it can always be written as:
+We define $\varphi_n(x)$ as a set of functions approximating $\psi_0(x)$. Variational principle gives an upper bound for the ground state energy. The chosen function's expectation value for energy normally overestimates the g.s. energy; if the chosen function (unfortunately) represent an excited state, the exp. val. of energy for chosen function will highly overcome $E_0$.\\
+This set of function is assumed to be complete, so it can always be written as a sum of the linear combination of all the functions:
 \[
 \varphi(x)=\sum_{n}^{\infty}c_n\psi_n(x),\;\;\; \hat{H}\psi_n=E_n\psi_n\, \text{ furthermore} \;\; \sum_{n=0}|c_n|^2=1
 \]
-We need to find any function approximating $\psi_0^{(x)}$, and we also assume that the wave function is already normalized. The expectation value for $\varphi$ is:
+The set of functions is normalized and orthonormal, too. Normalization implies $\sum_{n=0}|c_n|^2=1$.\\
+We need to find any function approximating $\psi_0^{(x)}$.\\
+The expectation value for $\varphi$ is:
 \[
-\frac{\braket{\varphi\,|\,\hat{H}\,|\,\varphi}}{(\braket{\varphi \,|\, \varphi})}=
+\mel{\varphi}{\hat{H}}{\varphi}=
+\braket{\sum_mc_m\psi_m}{sum_nc_n\psi_n}
 \sum_{n,m}c_n^{*}c_m\braket{\psi_n\,|\,\hat{H}\,|\,\psi_m}=\sum_{n,m}c_n^{*}c_mE_m\delta_{nm}=
-\sum_{n}|c_n|^2E_n
+\sum_{n}|c_n|^2E_n=
+E_n\sum_n |c_n|^2
 \]
-By assuming $c_n \geq 0$, the whole operation is $\geq E_0$ but this is true only if $\psi_n=\psi_0$.\\
+We recall that for a normalized set of functions $\sum_{n=0}|c_n|^2=1$ so $\mel{\varphi}{\hat{H}}{\varphi}=E_n$!!! And, of course, by assuming $c_n \geq 0$, the whole operation is $\geq E_0$ but this is true only if $\psi_n=\psi_0$.\\
 \newline
 TRIVIAL NOTE: if $\varphi(x)=\psi_0$ then we have a projection on a vector on itself:
 \[
@@ -303,7 +309,8 @@ c_n=1, & n=0
 \end{cases}
 \]
 \newline
-The point here is that if we guess a function, compute the eigenvalues, and do the same with another function, the one that lowers the energy the most is the most accurate approximation of the wavefunction. E.g.:\\
+The point here is that if we guess a function, compute the eigenvalues, and do the same with another function, the one that lowers the energy the most is the most accurate approximation of the wavefunction.
+E.g.:\\
 Function 1 $\rightarrow$ Expected value $E_0$\\
 Function 2 $\rightarrow$ Expected value $E_1$\\
 $\rightarrow$ if $E_0 < E_1$ then $E_0$ is a better approximation of the wave function.\\
@@ -312,15 +319,17 @@ $\rightarrow$ if $E_0 < E_1$ then $E_0$ is a better approximation of the wave fu
 \newline
 \textit{Example: Given $\varphi(x, \alpha)$, which is a family of wave functions, find $\psi_0(x)$ such as it is the best approximation of the family.} In other words, we need to evaluate the following equation\\
 \[
-\braket{\varphi_{\alpha}(x)\,|\,\hat{H}\,|\,\varphi_{\alpha}(x)}=E(\alpha)
+\langle\varphi_{\alpha}(x)\,|\,\hat{H}\,|\,\varphi_{\alpha}(x)\rangle=E(\alpha)
 \]
-for whih $E$ is minimum. We must find the minimum of the function (derivative = 0).
+for whih $E$ is minimum.
+We must find the minimum of the function (derivative = 0).
 \[
 \frac{\partial}{\partial\alpha}E(\alpha)=0\, \text{  solve for  }\, \alpha=\alpha_{min}
 \]
-Find $\alpha$ such as $E_{\alpha min}$ is the best approximation of $E_0$ and $\varphi_{\alpha min}(x)$ is the best approximation of $\psi_0$. Putting it formally, if we have multiple parameters: $\varphi_{\alpha \dots \alpha_n(x)}$
+Find $\alpha$ such as $E_{\alpha min}$ is the best approximation of $E_0$ and $\varphi_{\alpha min}(x)$ is the best approximation of $\psi_0$.
+Putting it formally, if we have multiple parameters: $\varphi_{\alpha \dots \alpha_n(x)}$
 \[
-\braket{\varphi_{\alpha \dots \alpha_n(x)}\,|\,\hat{H}\,|\,\varphi_{\alpha \dots \alpha_n(x)}} = E_{\alpha \dots \alpha_n}
+\langle\varphi_{\alpha \dots \alpha_n(x)}\,|\,\hat{H}\,|\,\varphi_{\alpha \dots \alpha_n(x)}\rangle = E_{\alpha \dots \alpha_n}
 \]
 We need to calculate the minimum of the multidimensional function:
 \[
@@ -331,22 +340,24 @@ We need to calculate the minimum of the multidimensional function:
 \frac{\partial}{\partial \alpha_n}=0 \rightarrow \alpha_n= \alpha_{n, min}\\
 \end{cases}
 \]
-Doing so we find a collection of energies and wavefunctions. The more parameters we have, the more we can explore the space, but  we have no guarantee of finding the exact solution. Indeed, the probability of getting the right ground state is very low.
+Doing so we find a collection of energies and wavefunctions.
+The more parameters we have, the more we can explore the space, but  we have no guarantee of finding the exact solution.
+Indeed, the probability of getting the right ground state is very low.
 \newline
 \noindent\rule{4cm}{0.1pt}
 \newline
 \\
 So which are the steps of this approximation method? Let's go through them using the quantum harmonic oscillator.\\
 
-Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2$\\
+Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2=\braket{T}+\braket{U}$\\
 1) \textbf{Variational Ansatz}: We "guess" a normalized (the $4$ term is used for normalization) gaussian to best represent the harmonic oscillator: $\varphi_{\alpha}(x)=\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}e^{-{\frac{x^2}{4\alpha^2}}}$\\
 
 2) \textbf{Computation of $E(\alpha)$} by first evaluating the hamiltonian function of $\varphi_{\alpha}(x)$ (first fragment, so to say)
 \[
--\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\varphi_{\alpha}(x)=\]
-\[=\,-\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\frac{d}{dx}e^{-{\frac{x^2}{4\alpha^2}}}\]
+-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\varphi_{\alpha}(x)=
+\]
 \[
-=\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\cdot\frac{2x}{4\alpha^2}e^{-{\frac{x^2}{4\alpha^2}}}
+=\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\frac{d}{dx}e^{-{\frac{x^2}{4\alpha^2}}}
 \]
 \[
 =\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\cdot\frac{d}{dx}\frac{x}{2\alpha^2}e^{-{\frac{x^2}{4\alpha^2}}}
@@ -357,38 +368,38 @@ Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}
 \[
 =\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\cdot\frac{1}{2\alpha^2}\cdot\bigg(1-\frac{x}{2\alpha^2}\bigg)e^{-{\frac{x^2}{4\alpha^2}}}
 \]
-Which ultimately results in (also quantum oscillation period?):
+The total kinetic energy for this approximation of the quantum oscillator is:
 \[
-T=\frac{\hbar^2}{4m\alpha^2}\bigg[1+\frac{x^2}{2\alpha^2}\bigg]e^{-{\frac{x^2}{4\alpha^2}}}\cdot\frac{1}{(\sqrt{2\pi}\alpha)^{1/2}}
+\braket{T}=\frac{\hbar^2}{4m\alpha^2}\bigg[1-\frac{x^2}{2\alpha^2}\bigg]e^{-{\frac{x^2}{4\alpha^2}}}\cdot\frac{1}{(\sqrt{2\pi}\alpha)^{1/2}}
 \]
 And go on with the evaluation of $E(\alpha)$.
 \[
-E(\alpha)=\frac{1}{\sqrt{2\pi}\alpha}\cdot \int dx\, e^{\frac{x^2}{2\alpha^2}}\bigg[\frac{\hbar^2}{4m\alpha}\bigg(1+\frac{x^2}{2\alpha^2}\bigg)+\frac{1}{2}m\omega^2x^2\bigg]=
+E(\alpha)=\frac{1}{\sqrt{2\pi}\alpha}\cdot \int dx\, e^{\frac{x^2}{2\alpha^2}}\bigg[\frac{\hbar^2}{4m\alpha^2}\bigg(1-\frac{x^2}{2\alpha^2}\bigg)+\frac{1}{2}m\omega^2x^2\bigg]=
 \]
 \[
-=\frac{1}{\sqrt{2\pi}\alpha}+\bigg(\frac{\hbar^2}{8m\alpha^4}+\frac{1}{2}m\omega^2\bigg)\cdot \int\,dx\,\frac{e^{\frac{x^2}{2\alpha^2}}}{\sqrt{2\pi}\alpha}x^2
+=\frac{1}{\sqrt{2\pi}\alpha}-\bigg(\frac{\hbar^2}{8m\alpha^4}+\frac{1}{2}m\omega^2\bigg)\cdot \int\,dx\,\frac{e^{\frac{x^2}{2\alpha^2}}}{\sqrt{2\pi}\alpha}x^2
 \]
-The integrand is called \textbf{gaussian variance} and it is equal to $\mathbf{\alpha^2}$. So
+The integrand is called \textbf{gaussian variance} and it is equal to $\mathbf{\alpha^2}$.
+So
 \[
-E(\alpha)=\bigg(\frac{1}{4}+\frac{1}{8}\bigg)\frac{\hbar^2}{m\alpha^2}+\frac{\alpha^2}{2}m\omega^2 = \frac{3}{8}\frac{\hbar^2}{m\alpha^2}+\frac{\alpha^2}{2}m\omega^2
+E(\alpha)=\bigg(\frac{1}{4}-\frac{1}{8}\bigg)\frac{\hbar^2}{m\alpha^2}+\frac{\alpha^2}{2}m\omega^2 = \frac{1}{8}\frac{\hbar^2}{m\alpha^2}+\frac{\alpha^2}{2}m\omega^2
 \]
 The latter sum is a sum of two energy values.
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.20]{img_4.jpg}
-	\caption{In this picture we can see a point of intersection becuase we get the exat result.}
+	\caption{In this picture we can see a point of intersection because we get the exact result.}
 	\label{fig:intersect}
 \end{figure}
 To find $\alpha_{min}\rightarrow\frac{\partial}{\partial \alpha}E(\alpha)=0$
 \[
-\frac{\partial}{\partial \alpha}E(\alpha)=-2\cdot\frac{3}{8}\frac{\hbar}{m\alpha^{3}}+\alpha m\omega^2=0
+\frac{\partial}{\partial \alpha}E(\alpha)=-2\cdot\frac{1}{8}\frac{\hbar}{m\alpha^{3}}+\alpha m\omega^2=0
 \]
 Multiply by $\alpha^3$ both sides:
 \[
-\frac{\partial}{\partial \alpha}E(\alpha)=-\frac{\hbar}{m}+\alpha^4m\omega^2=0
+\frac{\partial}{\partial \alpha}E(\alpha)=-\frac{\hbar}{4m}+\alpha^4m\omega^2=0
 \]
-%notare che il prof aveva sbagliato a mettere il fattore della gaussiana
 \[
-\alpha^2=\sqrt{\frac{\hbar^2}{m^2\omega^2}}
+\alpha^2=\sqrt{\frac{\hbar^2}{4m^2\omega^2}}
 \]
-This is the same result we got for the quantum harmoni oscillation problem! Keep in mind that this method \underline{only} applies to the ground state.
+This is the same result we got for the quantum harmonic oscillation problem! Keep in mind that this method \underline{only} applies to the ground state.
