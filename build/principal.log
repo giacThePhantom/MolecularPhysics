@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  28 JAN 2022 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  28 JAN 2022 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1033,61 +1033,53 @@ Chapter 4.
 [39
 
 ]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 32.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 32.
-
-Missing character: There is no ° in font cmr10!
-
 Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
 [40]
-Overfull \hbox (30.48204pt too wide) detected at line 82
+Overfull \hbox (30.48204pt too wide) detected at line 84
 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 i\U/msb/m/n/10 ~\OT1/cmr/
 m/n/10 )[] [] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cm
 m/m/it/10 ih\OT1/cmr/m/n/10 )[] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--107
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--139
+Underfull \hbox (badness 10000) in paragraph at lines 129--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--139
+Underfull \hbox (badness 10000) in paragraph at lines 129--141
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 153--158
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--174
+)
+Underfull \hbox (badness 10000) in paragraph at lines 170--28
 
  []
 
-) [43] [44
+[43] [44
 
 ] (./chapters/05_approximation_methods.tex
 Chapter 5.
@@ -1846,10 +1838,10 @@ Package rerunfilecheck Info: File `principal.out' has not changed.
 (rerunfilecheck)             Checksum: BC1279DD18EB71030662C3A5E354BE26;32282.
  ) 
 Here is how much of TeX's memory you used:
- 23418 strings out of 478353
- 430562 string characters out of 5854635
+ 23417 strings out of 478353
+ 430549 string characters out of 5854635
  761856 words of memory out of 5000000
- 40717 multiletter control sequences out of 15000+600000
+ 40716 multiletter control sequences out of 15000+600000
  435574 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,20n,80p,857b,931s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1889,7 +1881,7 @@ public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
 f-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
 uper/sfti1000.pfb>
-Output written on ./build/principal.pdf (115 pages, 2844334 bytes).
+Output written on ./build/principal.pdf (115 pages, 2844272 bytes).
 PDF statistics:
  1896 PDF objects out of 2073 (max. 8388607)
  1638 compressed objects within 17 object streams
