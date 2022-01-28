@@ -2,7 +2,7 @@
 \chapter{Atomic physics}
 \section{Quantum theory of the Hydrogen atom}
 \subsection{Evaluation of conservation of energy}
-Remember that when talink about classical theory of the hydrogen atom we simplified the problem by switching from Cartesian to polar coordinates and, by applying the conservation laws, we obtained:
+Remember that when talking about classical theory of the hydrogen atom we simplified the problem by switching from Cartesian to polar coordinates and, by applying the conservation laws, we obtained:
 \[
 E=\frac{1}{2}m\bigg(\frac{d}{dt}n\bigg)^2+\frac{L^2}{2mr^2}+U(r)
 \]
@@ -18,13 +18,13 @@ The hamiltonian so becomes:
 \[
 \hat{H}=\frac{\hbar^2}{2mr^2}\frac{\partial^2}{\partial r^2}+\frac{\hbar^2}{2mr^2}\cdot\bigg(\frac{\partial^2}{\partial \theta^2}+\frac{1}{\tan\theta}\frac{\partial}{\partial\theta}+\frac{1}{\sin\theta}\frac{\partial^2}{\partial\varphi^2}\bigg)-\frac{e^2}{r}
 \]
-The first part is called \textbf{radial part} because it's $r$-dependent only, the other is the \textbf{angular part}.\\
+The first part is called \textbf{radial part} because it's $r$-dependent only, the other is the \textbf{angular part} and depends on $r$, $\theta$, and $\varphi$.\\
 Now we can consider the angular momentum in classical mechanics and quantum mechanics:
 \[
 \vec{L}=\vec{r}\times\vec{p}=\vec{r}\times(-i\vec{\nabla}\hbar)
 \]
 \[
-\textit{Fact} \rightarrow \vec{\hat{L^2}}=\hat{L_x}\hat{L_x}+\hat{L_y}\hat{L_y}+\hat{L_z}\hat{L_z}
+\textit{Fact} \rightarrow \vec{\hat{L^2}}=\hat{L_x}\hat{L_x}+\hat{L_y}\hat{L_y}+\hat{L_z}\hat{L_z}=\vec{\nabla}^2\hbar^2
 \]
 This is corresponding to the angular part of the hamiltonian that can be rewritten in sperical coordinates with the inclusion of the angular momentum multiplied by $\hbar^2$.
 \[
@@ -38,7 +38,7 @@ The fact that the angular momentum is not present in the radial part of the hami
 \end{cases}
 \]
 \\
-These are called \textbf{spherical harmonics}, they depend on two quantum numbers because they use two different operators and are only part of the angular part of the hamiltonian.\\
+The following functions are called \textbf{spherical harmonics}, these functions are defined on the surface of a sphere and form a complete and orthonormal set of functions. For this latter reason they can be expressed as a linear combination. In quantum mechanics, spherical harmonics are the eigenfunctions of $\hat{L}^2$ and actually generate a rotation of azimuthal angle ($\varphi$). They depend on two quantum numbers because they use two different operators and are only part of the angular part of the hamiltonian.\\
 \[
 \begin{cases}
 \hat{L_z}Y_{lm}(\theta,\varphi)=\hbar mY_{l,m}(\theta,\varphi) & m = l, -l+1,..., 0,..., -l \,\text{(projection)}\\
@@ -131,29 +131,29 @@ The values of $\hat{S^2}$ characterize the behaviour of the particle.\\
 \[\hat{S^2}\,\rightarrow\,s=0, \frac{1}{2}, 1, \frac{3}{2}, ...\]
 Electrons, neutrons, and protons have $s=1/2$. Photons, for instance, have $s=1$.\\
 
-\subsection{Spin-Statistics theorem (in identical particles}
+\subsection{Spin-Statistics theorem for identical particles}
 Let's consider a wave function of many identical particles $\psi$, for instance $n$ identical electrons with spin $s$, $\hat{S_z}$, and position $r$. All the particles have the same velocity.\\
 \[
 \Psi(\vec{r_1}, s_1^z, \vec{r_2}, s_2^z, ..., \vec{r_n}, s_n^z) \text{   ,with } \vec{q}=(\vec{r},\vec{s_z})
 \]
-\[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n}) \]
-\textbf{antisymmetric wave-function (fermions)}: wave-function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{half integer} (1/2, 3/2, ...). Swapping the wave function \textbf{changes} it.\\
+\[\text{For identical particles: }\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})A[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\pm\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})] \]
+\textbf{Antisymmetric wave-function (fermions)}: wave-function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{half integer} (1/2, 3/2, ...). Swapping the wave function \textbf{changes} it.\\
 \[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})=-\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\]
 The particles that have an antisymmetric wavefunction are called \textbf{fermions}.\\
 \newline
-\textbf{symmetric wave-function (bosons)}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...). Swapping the wave function \textbf{doesn't change} it.\\
+\textbf{Symmetric wave-function (bosons)}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...). Swapping the wave function \textbf{doesn't change} it.\\
 \[\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})=\Psi(\vec{q_1},\vec{q_2}, ..., \vec{q_n})\]
-The particles that have an antisymmetric wavefunction are called \textbf{bosons}.
+The particles that have a symmetric wavefunction are called \textbf{bosons}.
 \begin{quote}
-"A fermion once, a fermion forever".
-"fermions and bosons are like Montecchi and Capuleti. They don't want anyhing to do with each other"
-- Pietro Faccioli
+	"A fermion once, a fermion forever".\\
+	"Fermions and bosons are like Montecchi and Capuleti. They don't want anything to do with each other"\\
+	- Pietro Faccioli
 \end{quote}
 \noindent
 \textbf{Corollary}: In a quantum wave function, there cannot be two fermions with identical state or else two identical fermions cannot be found in the same quantum state.
 \[\Psi(q_1, q_2)= -\Psi(q_2,q_1)\] the two electrons are the same, $q_1=q_2=q$
 \[\Psi(q,q)=-\Psi(q,q) \]
-The only condition for which this equality is true is for  $\Psi = 0$. This is called \textbf{Pauli's exclusion principle}.
+The only condition for which this equality is true is for  $\Psi = 0$, there is no wave function that can describe a system of two identical fermions with identical state. This is called \textbf{Pauli's exclusion principle} and applies to all identical fermions.
 \\
 \subsection{Mean Field Approximation}
 Solving the S.E. for more than one particle rapidly becomes challenghing, even resorting to High Performance Computing. However, much of the global, qualitative structure of the Mondelyev table can be understood within a simple \textbf{mean field} picture: instead of accounting for all pairwise Coulomb interactinos, we assume that the effect on each electron, due to all other electrons and the protons can be represented by an overall confining potential.\\
@@ -237,7 +237,8 @@ that can be generalized into
 \end{pmatrix}
 \]
 This latter matrix is called \textbf{Slater matrix} and I can calculate Slater determinant that guarantees that the wave function is antisymmetric.\\
-\newline
+
+\subsection{Mathematical formalism of Stern-Gerlach experiment}
 The spin $\hat{S^2}$ doesn't have a classical correspondence, we cannot directly obtain a formula for $\hat{S^2}$ in classical mechanics. I must find objects that have two states.\\
 Consider spin $1/2$ only and choose an Hillbert space and an operator that acts on it. Since a particle with $s=1/2$ can have two different states, the most natural choice for a Hillbert space would be \emph{$L^2$}.\\
 The eigenstates of the z-components are:
@@ -279,7 +280,7 @@ Tensor product is obtained by multiplying each $a$ term with every $b$ term. It 
 Tensor product is used to describe the \emph{combination of two quantum states}.
 \[\text{Quantum state of particle 1: } \begin{pmatrix}\alpha_1\\\alpha_2\end{pmatrix}=\alpha_1\begin{pmatrix}1\\0\end{pmatrix}+\alpha_2\begin{pmatrix}0\\1\end{pmatrix}=\alpha_1\ket{\uparrow}+\alpha_2\ket{\downarrow}=\vec{\ket\alpha}\]
 \[\text{Quantum state of particle 2: } \begin{pmatrix}\beta_1\\\beta_2\end{pmatrix}=\beta_1\begin{pmatrix}1\\0\end{pmatrix}+\beta_2\begin{pmatrix}0\\1\end{pmatrix}=\beta_1\ket{\uparrow}+\beta_2\ket{\downarrow}=\vec{\ket{\beta}}\]
-\marginpar{\textit{These single quantum states represent qubits}}
+These two single quantum states represent qubits.\\
 \[\text{Combination of the two states: }
 \vec{\ket{\alpha}}\otimes\vec{\ket{\beta}}\equiv{\ket{\vec{\alpha}\vec{\beta}}}=\begin{pmatrix}\alpha_1\beta_1\\\alpha_1\beta_2\\\alpha_2\beta_1\\\alpha_2\beta_2\end{pmatrix}
 \]
@@ -307,20 +308,20 @@ Let's consider a \underline{non-entangled state}.
 \ket{\Psi}=\frac{1}{\sqrt{2}}\ket{\uparrow\uparrow}+\frac{1}{\sqrt{2}}\ket{\uparrow\downarrow}=\ket{\alpha\uparrow}
 \]
 The two measures are independent of each other, I can find particle 2 with a probability which is independent of the measurement of particle 1. It is said to be factorizable.\\
-Let's now condier an \underline{entangled state}:
+Let's now consider an \underline{entangled state}:
 \[
 \ket{\Psi}=\frac{1}{\sqrt{2}}\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big) = \begin{pmatrix}0\\\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\\0\end{pmatrix}
 \]
 Note that the expression cannot be factorized now. We can generate an operator that generates entangled states:
 \[
-\frac{\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big)}{2}=\frac{1}{\sqrt{2}}\begin{pmatrix}0\\1\\1\\0\end{pmatrix}\bigg(U\bigg)\begin{pmatrix}1\\0\\0\\0\end{pmatrix}
+\frac{\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big)}{\sqrt{2}}=\frac{1}{\sqrt{2}}\begin{pmatrix}0\\1\\1\\0\end{pmatrix}\bigg(U\bigg)\begin{pmatrix}1\\0\\0\\0\end{pmatrix}
 \]
 U is called \textbf{quantum gate} in quantum computing.\\
-Quantum gates can be defined as a \textbf{time evolution operators} that acts on the function to solve time-dependent Schr\"odinger equation.\\
+Quantum gates can be defined as a \textbf{time evolution operators} that acts on the function to solve time-dependent Schr\"odinger equation and provide the dynamics of the system.\\
 $\hat{U}(\Delta t) = e^{i\hat{H}\Delta t}$ at state $\ket{\Psi(0)}$ can be approximated with $(1-\hat{H}\Delta t)$ and this latter can be solved by a quantum gate to give out $\ket{\Psi(t)}$. This operation cannot be solved by classical computers, dynamics is naturally given out by quantum computers.\\
 
-\subsubsection{Three-electrons system}
-Remember that thanks to the mean fiel approximation (nedeed for many-body calculations) we have the advantage that:
+\textit{Example: A three-electrons system}
+Remember that thanks to the mean field approximation (nedeed for many-body calculations) we have the advantage that:
 \[
 \sum_{i<j} U(r_{ij}) \simeq \sum_i \bar{U}(r_i)
 \]
@@ -359,20 +360,20 @@ For this application ($N = 3 $) we need two energy levels. Indeed if we try to f
 \]
 Six-terms determinant, complicated to evaluate!\\
 \newline
-\underline{Application of the mean field approximation to calculate the density of electrons in a point ($N=2$)}\\
+\textit{Example: Application of the mean field approximation to calculate the density of electrons in a point ($N=2$)}\\
 \newline
 We can define a \textit{density operator}
 \[
 \hat{\rho}(x)=\sum_i\delta(x-r_i)
 \]
-and apply it to a wave function that defines a point with two electrons (basically we want to calculate how much space these electrons occupy). We want to calculate $\braket{\Psi\,|\,\hat{\rho}(x)\,|\,\Psi}$
+and apply it to a wave function that defines a point with two electrons (basically we want to calculate how much space these electrons occupy). We want to calculate $\mel{\Psi}{\hat{\rho}(x)}{\Psi}$
 The wave function is:
 \[
 \Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=\frac{1}{\sqrt{2}}\big(\phi_\uparrow(r_1)\phi_\downarrow(r_2)-\phi_\downarrow(r_1)\phi_\uparrow(r_2)\big)
 \]
 \marginpar{\textit{This is a 6-dim integral}}
 \[
-\braket{\Psi\,|\,\hat{\rho}(x)\,|\,\Psi}=\frac{1}{2}\int d\vec{r_1}d\vec{r_2} \Psi^*(\vec{r_1},\vec{r_2},s_1^z,s_2^z)\cdot\bigg(\sum_i \delta(\vec{x}-\vec{r_i})\bigg)\cdot\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=
+\mel{\Psi}{\hat{\rho}(x)}{\Psi}=\frac{1}{2}\int d\vec{r_1}d\vec{r_2} \Psi^*(\vec{r_1},\vec{r_2},s_1^z,s_2^z)\cdot\bigg(\sum_i \delta(\vec{x}-\vec{r_i})\bigg)\cdot\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=
 \]
 \[
 =\frac{1}{2}\int d\vec{r_1}d\vec{r_2}\big(\phi^*_\uparrow(r_1)\phi^*_\downarrow(r_2)-\phi^*_\downarrow(r_1)\phi^*_\uparrow(r_2)\big)\cdot\big(\delta(\vec{x}-\vec{r_1})+\delta(\vec{x}-\vec{r_2})\big)\cdot\big(\phi_\uparrow(r_1)\phi_\downarrow(r_2)-\phi_\downarrow(r_1)\phi_\uparrow(r_2)\big)
@@ -420,6 +421,6 @@ By knowing that $\int\,dx\, g(x)\delta(x-x_0)=g(x_0)$ and by considering that th
 \[P_1^\downarrow(x)=P_2^\downarrow(x)=P^\downarrow(x)\]
 Hence the probability density becomes
 \[
-\braket{\Psi\,|\,\hat{\rho}(x)\,|\,\Psi}=\frac{1}{2}\bigg[P^\uparrow(x)+P^\uparrow(x)+P^\downarrow(x)+P^\downarrow(x)\bigg]=P^\uparrow(x)+P^\downarrow(x)
+\mel{\Psi}{\hat{\rho}(x)}{\Psi}=\frac{1}{2}\bigg[P^\uparrow(x)+P^\uparrow(x)+P^\downarrow(x)+P^\downarrow(x)\bigg]=P^\uparrow(x)+P^\downarrow(x)
 \]
-Either a particle is spin up or spin down in x.
+Either a particle is spin up or spin down in $x$.

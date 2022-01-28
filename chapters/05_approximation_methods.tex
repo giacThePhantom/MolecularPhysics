@@ -264,7 +264,7 @@ P_L=|\braket{L}{\psi(t)}|^2=\bigg|\braket{L}{\bigg(\frac{1}{\sqrt{2}}\ket{0}-\fr
 \]
 Knowing that $\braket{L}{L}=\frac{1}{\sqrt{2}}$ and $\braket{L}{R}=0$,
 \[
-=\bigg|\braket{L}{\frac{\ket{L}+{R}}{\sqrt{2}}-e^{-\frac{it}{\hbar}\varepsilon}\cdot\frac{\ket{L}-\ket{R}}{\sqrt{2}}}\bigg|^2
+=\bigg|\braket{L}{\frac{\ket{L}+\ket{R}}{\sqrt{2}}-e^{-\frac{it}{\hbar}\varepsilon}\cdot\frac{\ket{L}-\ket{R}}{\sqrt{2}}}\bigg|^2
 =\bigg(\frac{1}{2}-\frac{1}{2}\cdot e^{-\frac{it}{\hbar}\varepsilon}\bigg)^2
 =\bigg[\frac{1}{2}-\frac{1}{2}\bigg(\cos\frac{\varepsilon t}{\hbar}+i\sin\frac{\varepsilon t}{\hbar}\bigg)\bigg]^2
 \]
@@ -284,19 +284,22 @@ There is an oscillation (figure \ref{fig:pulsation}) with a given period $T=\fra
 
 \section{Ritz-Rayleigh variational principle}
 Suppose we want to estimate the ground state energy $E_0$ and corresponding wave function of the stationary Schr\"{o}dinger equation.\\
-We define $\varphi(x)$ as a function approximating $\psi_0(x)$.
-Remember that it can always be written as:
+We define $\varphi_n(x)$ as a set of functions approximating $\psi_0(x)$. Variational principle gives an upper bound for the ground state energy. The chosen function's expectation value for energy normally overestimates the g.s. energy; if the chosen function (unfortunately) represent an excited state, the exp. val. of energy for chosen function will highly overcome $E_0$.\\
+This set of function is assumed to be complete, so it can always be written as a sum of the linear combination of all the functions:
 \[
 \varphi(x)=\sum_{n}^{\infty}c_n\psi_n(x),\;\;\; \hat{H}\psi_n=E_n\psi_n\, \text{ furthermore} \;\; \sum_{n=0}|c_n|^2=1
 \]
-We need to find any function approximating $\psi_0^{(x)}$, and we also assume that the wave function is already normalized.
+The set of functions is normalized and orthonormal, too. Normalization implies $\sum_{n=0}|c_n|^2=1$.\\
+We need to find any function approximating $\psi_0^{(x)}$.\\
 The expectation value for $\varphi$ is:
 \[
-\frac{\braket{\varphi\,|\,\hat{H}\,|\,\varphi}}{(\braket{\varphi \,|\, \varphi})}=
+\mel{\varphi}{\hat{H}}{\varphi}=
+\braket{\sum_mc_m\psi_m}{sum_nc_n\psi_n}
 \sum_{n,m}c_n^{*}c_m\braket{\psi_n\,|\,\hat{H}\,|\,\psi_m}=\sum_{n,m}c_n^{*}c_mE_m\delta_{nm}=
-\sum_{n}|c_n|^2E_n
+\sum_{n}|c_n|^2E_n=
+E_n\sum_n |c_n|^2
 \]
-By assuming $c_n \geq 0$, the whole operation is $\geq E_0$ but this is true only if $\psi_n=\psi_0$.\\
+We recall that for a normalized set of functions $\sum_{n=0}|c_n|^2=1$ so $\mel{\varphi}{\hat{H}}{\varphi}=E_n$!!! And, of course, by assuming $c_n \geq 0$, the whole operation is $\geq E_0$ but this is true only if $\psi_n=\psi_0$.\\
 \newline
 TRIVIAL NOTE: if $\varphi(x)=\psi_0$ then we have a projection on a vector on itself:
 \[
@@ -316,7 +319,7 @@ $\rightarrow$ if $E_0 < E_1$ then $E_0$ is a better approximation of the wave fu
 \newline
 \textit{Example: Given $\varphi(x, \alpha)$, which is a family of wave functions, find $\psi_0(x)$ such as it is the best approximation of the family.} In other words, we need to evaluate the following equation\\
 \[
-\braket{\varphi_{\alpha}(x)\,|\,\hat{H}\,|\,\varphi_{\alpha}(x)}=E(\alpha)
+\langle\varphi_{\alpha}(x)\,|\,\hat{H}\,|\,\varphi_{\alpha}(x)\rangle=E(\alpha)
 \]
 for whih $E$ is minimum.
 We must find the minimum of the function (derivative = 0).
@@ -326,7 +329,7 @@ We must find the minimum of the function (derivative = 0).
 Find $\alpha$ such as $E_{\alpha min}$ is the best approximation of $E_0$ and $\varphi_{\alpha min}(x)$ is the best approximation of $\psi_0$.
 Putting it formally, if we have multiple parameters: $\varphi_{\alpha \dots \alpha_n(x)}$
 \[
-\braket{\varphi_{\alpha \dots \alpha_n(x)}\,|\,\hat{H}\,|\,\varphi_{\alpha \dots \alpha_n(x)}} = E_{\alpha \dots \alpha_n}
+\langle\varphi_{\alpha \dots \alpha_n(x)}\,|\,\hat{H}\,|\,\varphi_{\alpha \dots \alpha_n(x)}\rangle = E_{\alpha \dots \alpha_n}
 \]
 We need to calculate the minimum of the multidimensional function:
 \[
@@ -346,15 +349,15 @@ Indeed, the probability of getting the right ground state is very low.
 \\
 So which are the steps of this approximation method? Let's go through them using the quantum harmonic oscillator.\\
 
-Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2$\\
+Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2=\braket{T}+\braket{U}$\\
 1) \textbf{Variational Ansatz}: We "guess" a normalized (the $4$ term is used for normalization) gaussian to best represent the harmonic oscillator: $\varphi_{\alpha}(x)=\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}e^{-{\frac{x^2}{4\alpha^2}}}$\\
 
 2) \textbf{Computation of $E(\alpha)$} by first evaluating the hamiltonian function of $\varphi_{\alpha}(x)$ (first fragment, so to say)
 \[
--\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\varphi_{\alpha}(x)=\]
-\[=\,-\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\frac{d}{dx}e^{-{\frac{x^2}{4\alpha^2}}}\]
+-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\varphi_{\alpha}(x)=
+\]
 \[
-=\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\cdot\frac{2x}{4\alpha^2}e^{-{\frac{x^2}{4\alpha^2}}}
+=\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\frac{d}{dx}e^{-{\frac{x^2}{4\alpha^2}}}
 \]
 \[
 =\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\cdot\frac{d}{dx}\frac{x}{2\alpha^2}e^{-{\frac{x^2}{4\alpha^2}}}
@@ -365,21 +368,21 @@ Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}
 \[
 =\,\frac{\hbar^2}{2m}\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}\cdot\frac{1}{2\alpha^2}\cdot\bigg(1-\frac{x}{2\alpha^2}\bigg)e^{-{\frac{x^2}{4\alpha^2}}}
 \]
-Which ultimately results in (also quantum oscillation period?):
+The total kinetic energy for this approximation of the quantum oscillator is:
 \[
-T=\frac{\hbar^2}{4m\alpha^2}\bigg[1+\frac{x^2}{2\alpha^2}\bigg]e^{-{\frac{x^2}{4\alpha^2}}}\cdot\frac{1}{(\sqrt{2\pi}\alpha)^{1/2}}
+\braket{T}=\frac{\hbar^2}{4m\alpha^2}\bigg[1-\frac{x^2}{2\alpha^2}\bigg]e^{-{\frac{x^2}{4\alpha^2}}}\cdot\frac{1}{(\sqrt{2\pi}\alpha)^{1/2}}
 \]
 And go on with the evaluation of $E(\alpha)$.
 \[
-E(\alpha)=\frac{1}{\sqrt{2\pi}\alpha}\cdot \int dx\, e^{\frac{x^2}{2\alpha^2}}\bigg[\frac{\hbar^2}{4m\alpha}\bigg(1+\frac{x^2}{2\alpha^2}\bigg)+\frac{1}{2}m\omega^2x^2\bigg]=
+E(\alpha)=\frac{1}{\sqrt{2\pi}\alpha}\cdot \int dx\, e^{\frac{x^2}{2\alpha^2}}\bigg[\frac{\hbar^2}{4m\alpha^2}\bigg(1-\frac{x^2}{2\alpha^2}\bigg)+\frac{1}{2}m\omega^2x^2\bigg]=
 \]
 \[
-=\frac{1}{\sqrt{2\pi}\alpha}+\bigg(\frac{\hbar^2}{8m\alpha^4}+\frac{1}{2}m\omega^2\bigg)\cdot \int\,dx\,\frac{e^{\frac{x^2}{2\alpha^2}}}{\sqrt{2\pi}\alpha}x^2
+=\frac{1}{\sqrt{2\pi}\alpha}-\bigg(\frac{\hbar^2}{8m\alpha^4}+\frac{1}{2}m\omega^2\bigg)\cdot \int\,dx\,\frac{e^{\frac{x^2}{2\alpha^2}}}{\sqrt{2\pi}\alpha}x^2
 \]
 The integrand is called \textbf{gaussian variance} and it is equal to $\mathbf{\alpha^2}$.
 So
 \[
-E(\alpha)=\bigg(\frac{1}{4}+\frac{1}{8}\bigg)\frac{\hbar^2}{m\alpha^2}+\frac{\alpha^2}{2}m\omega^2 = \frac{3}{8}\frac{\hbar^2}{m\alpha^2}+\frac{\alpha^2}{2}m\omega^2
+E(\alpha)=\bigg(\frac{1}{4}-\frac{1}{8}\bigg)\frac{\hbar^2}{m\alpha^2}+\frac{\alpha^2}{2}m\omega^2 = \frac{1}{8}\frac{\hbar^2}{m\alpha^2}+\frac{\alpha^2}{2}m\omega^2
 \]
 The latter sum is a sum of two energy values.
 \begin{figure}[htbp!]
@@ -390,14 +393,13 @@ The latter sum is a sum of two energy values.
 \end{figure}
 To find $\alpha_{min}\rightarrow\frac{\partial}{\partial \alpha}E(\alpha)=0$
 \[
-\frac{\partial}{\partial \alpha}E(\alpha)=-2\cdot\frac{3}{8}\frac{\hbar}{m\alpha^{3}}+\alpha m\omega^2=0
+\frac{\partial}{\partial \alpha}E(\alpha)=-2\cdot\frac{1}{8}\frac{\hbar}{m\alpha^{3}}+\alpha m\omega^2=0
 \]
 Multiply by $\alpha^3$ both sides:
 \[
-\frac{\partial}{\partial \alpha}E(\alpha)=-\frac{\hbar}{m}+\alpha^4m\omega^2=0
+\frac{\partial}{\partial \alpha}E(\alpha)=-\frac{\hbar}{4m}+\alpha^4m\omega^2=0
 \]
-%notare che il prof aveva sbagliato a mettere il fattore della gaussiana
 \[
-\alpha^2=\sqrt{\frac{\hbar^2}{m^2\omega^2}}
+\alpha^2=\sqrt{\frac{\hbar^2}{4m^2\omega^2}}
 \]
 This is the same result we got for the quantum harmonic oscillation problem! Keep in mind that this method \underline{only} applies to the ground state.
