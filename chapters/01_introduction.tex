@@ -29,7 +29,7 @@
 \section{Classical mechanics}
 In classical mechanics, the state of a system is a collection at time $t$ of all the positions of all the particles in the system.
 We also need to define the velocity of the particle, or, better, the momentum.
-The latter obtained, in classical mechanics, by scaling the velocity by a constant being in this way equivalent to it.
+The latter is obtained, in classical mechanics, by scaling the velocity by a constant being in this way equivalent to it.
 The mathematical tool that allows to understand how a state evolves in time is the time derivative of the equation of interest.
 Solving a classical mechanics problem means to solve a set of differential equations.
 
@@ -39,8 +39,8 @@ Solving a classical mechanics problem means to solve a set of differential equat
   \begin{multicols}{2}
     \begin{enumerate}
       \item A body will continue its state at rest or at constant speed unless a force acts.
-        It is only true in inertial frames.
-        The lack of an initial consensus inertial frames raises issues.
+        This is only true in inertial frames.
+        The lack of an initial consensus inertial frame raises issues.
       \item How does the body change when it is subject to a force.
         It's difficult to define exactly what is a force: here we only deal with mass and acceleration.
         We have an issue, stuck in a loop.
@@ -106,7 +106,7 @@ Solving a classical mechanics problem means to solve a set of differential equat
   $$\Gamma(t) = (q(t),p(t))$$
 
   Cauchy's theorem implies that given a n-th order differential equation and given $n$ initial conditions, there exists exactly one solution.
-  Its corollary is that trajectories in the phase-space can never intersect.
+  Its corollary implies that trajectories in the phase-space can never intersect.
   Because of this classical mechanics is fully deterministic, as future $x(t)$ and $v(t)$ can be unambiguously predicted.
 
   \subsection{Systems in three dimension and with more than one particle}
@@ -255,7 +255,7 @@ Defining a physical theory in classical mechanics corresponds to specifying what
   Hamilton's theory is an equivalent reformulation of mechanics in which the key concept is not the force, but the Hamiltonian $H$ - which is closely related to energy.
   While from a practical standpoint the two formulation are equivalent with identical equations of motion, modern physics has shown that the notion of energy is more fundamental than the one of force.
   In this formulation the derivative of the position will be the derivative of $H$ with respect to position.
-  It can be noted that from $H(p,q)$ Newton's equation of motion can be retrieved, solved an prediction to compare with experimental results can be obtained following:
+  It can be noted that from $H(p,q)$ it is possible to retrieve Newton's equations of motion, solve them and obtain predictions to compare with experimental results following:
 
   \begin{multicols}{2}
     \begin{itemize}
@@ -267,7 +267,7 @@ Defining a physical theory in classical mechanics corresponds to specifying what
     \end{itemize}
   \end{multicols}
 
-  This procedure is repeated until concordance with the experiments is reached.
+  This procedure is repeated until concordance with experiments is reached.
   In this formulation the concept of force is never defined.
 
   \subsection{Hamilton's equations}
@@ -324,17 +324,17 @@ The hydrogen atom is formed by a proton in the centre with an electron orbiting 
     \begin{itemize}
       \item The mass of the electron divided by the mass of the proton is around $\frac{1}{2000}$ ($\frac{m_e}{M_p}\approx \frac{1}{2000}$).
         The center of mass of the system is very close to the nucleus, therefore we can assume that the nucleus remains still.
-        For the sake of simplicity an infinite proton mass $\frac{m_e}{M_p}=0$ is assumed.
-      \item The charge of the proton is the negative of the charge of the electron, so the overall system is neutral
-      \item  Because $\frac{d{}}{d{t}}\vec{L}=0$ because of angular momentum conservation, the electron's motion occurs on a plane and is two dimensional.
+        For the sake of simplicity, an infinite proton mass $\frac{m_e}{M_p}=0$ is assumed.
+      \item The charge of the proton is the negative of the charge of the electron, so the overall system is neutral.
+      \item  Because $\frac{d{}}{d{t}}\vec{L}=0$ (angular momentum conservation), the electron's motion occurs on a plane and is two dimensional.
     \end{itemize}
   \end{multicols}
 
   \subsection{Newton's equation}
-  Let us start from the Newton's equations.
+  Let us start from Newton's equations.
   We wish to express the attracting force acting on the electron towards the proton.
   This force has an inward direction with negative sign.
-  Since the electron is moving its coordinates $x$, $y$, $z$ are varying with time and they can be expressed as $x(t)$, $y(t)$ and $z(t)$.
+  Since the electron coordinates $x$, $y$, $z$ are varying with time, they can be expressed as $x(t)$, $y(t)$ and $z(t)$.
   The equations are coupled, meaning that we cannot solve one at a time: $y(t)$ and $z(t)$ are required for solving the first one and the same applies to the others.
   This is a quite tricky task, but luckily there is a way round this problem. We can employ the energy conservation that we mentioned previously though the usage of polar coordinates.
 
@@ -348,7 +348,7 @@ The hydrogen atom is formed by a proton in the centre with an electron orbiting 
   The mathematical expression shows that forces are anti-parallel.
   Rather than using Cartesian coordinates, we can use rotating coordinates.
   The centrality of force will imply two main results: mechanical energy is conserved and the angular momentum  of the particle is the torque, but it is zero for centripetal force, so $\vec{L}$ is conserved.
-  The second considerations lead us to understand that orbit lines are confined on a plane. This is particularly relevant, as in a plane we only need two coordinates as the third coordinate is fixed to zero.
+  The second considerations lead us to understand that orbit lines are confined on a plane. This is particularly relevant, as in a plane we only need two coordinates - as the third coordinate is fixed to zero.
   The potential energy is derived from Coulomb's $F=-\hat{r}\frac{e^2}{|\vec{r}^2|}$, so $U(|\vec{r}|) = -\frac{e^2}{|\vec{r}|}$
   Now, by using conservation to replace the differential equation, the position is divided in two components $\hat{u}_r$ and $\hat{u}_\theta$ orthogonal to each other, so that $v^2 = v_r^2+v_\theta^2$:
 

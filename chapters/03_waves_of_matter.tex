@@ -48,7 +48,7 @@ Physical laws can never be demonstrated, but only inferred from experiments and 
 
   And not just to $|p|$.
 
-  \subsection{Defining the Schr\"oedinger equation}
+  \subsection{Defining the Schr\"odinger equation}
   There is a need to use a different wave equation with respect to the photon's one.
   Noticing that $E^2\propto p^2$ follows from having two time derivatives, we can try a first time derivative to obtain $E\propto p^2$.
   Then the equation to solve becomes:
@@ -76,7 +76,7 @@ Recall that $\hbar$ is the Dirac's constant, obtained by the following formula: 
 
   $$H_0 \rightarrow H_0 + \underbrace{V(\vec{r})}_{\text{potential energy}} = H$$
 \noindent
-  Finally, the Schr\"oedinger equation is:
+  Finally, the Schr\"odinger equation is:
 
   $$i\hbar \frac{\partial {}}{\partial {t}}\psi(\vec{r},t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+V(\vec{r})\biggr)\psi(x,t)$$
 
@@ -91,7 +91,7 @@ Recall that $\hbar$ is the Dirac's constant, obtained by the following formula: 
 
     $$i\hbar\frac{\partial }{\partial x}\psi(\vec{x}, t) = \biggl(-\frac{\hbar^2}{2m}\nabla^2+U(\vec{x})\biggr)\psi(\vec{x},t)$$
 \noindent
-    The Schr\"oedinger equation is then recast as:
+    The Schr\"odinger equation is then recast as:
 
     $$i\hbar \frac{\partial {}}{\partial {t}}\psi(\vec{r},t) = \hat{H} \psi(\vec{r},t)$$
 \noindent
@@ -102,7 +102,7 @@ Recall that $\hbar$ is the Dirac's constant, obtained by the following formula: 
 
     $$\nabla^2 = \biggl(\frac{\partial^2}{\partial x^2} +\frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}\biggr)$$
 
-\section{Stationary Schr\"oedinger equation}
+\section{Stationary Schr\"odinger equation}
 Assuming that the system conserves mechanical energy:
 
 $$H(p,q, \bcancel{t}) = \frac{p^2}{2m}+U(q,\bcancel{t})$$
@@ -111,7 +111,7 @@ Considering the plane wave:
 
 $$\psi(\vec{r}, t) = \phi(\vec{r}) e^{-i \frac{E}{\hbar}t}$$
 \noindent
-By formulating a guess for the form of the solution and plugging it into the Schr\"oedinger equation:
+By formulating a guess for the form of the solution and plugging it into the Schr\"odinger equation:
 
 $$E\phi e^{-i \frac{i}{\hbar}(Et)} = He^{-\frac{i}{\hbar}Et}\phi$$
 \noindent
@@ -220,12 +220,13 @@ The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
     Then:
 
     \begin{align*}
-      \mathcal{N}^2 &= \frac{1}{\int|\phi_0|^2dx} = \frac{1}{(2\pi\sigma)^{\frac{1}{2}}} = \frac{1}{(2\pi\sqrt{\frac{\hbar}{2m\omega}})^\frac{1}{2}}\\
-      \mathcal{N} &= \frac{1}{(2\pi\sqrt{\frac{\hbar}{2m\omega}})^{\frac{1}{4}}}
+      \mathcal{N}^2 &= \frac{1}{\int|\phi_0|^2dx} = \frac{1}{(2\pi\sigma^2)^{\frac{1}{2}}} = \frac{1}{(2\pi\frac{\hbar}{2m\omega})^\frac{1}{2}}\\
+      \mathcal{N} &= \frac{1}{(\cancel{2}\pi\frac{\hbar}{\cancel{2}m\omega})^{\frac{1}{4}}} = \left(\frac{m\omega}{\pi\hbar}\right)^{-\frac{1}{4}}
     \end{align*}
 
     \subsubsection{Compute the average value of kinetic and potential energy}
-    Due to the fact that operations are stochastic, the outcome cannot be predicted. We can only compute the probability or the average values.
+    Due to the fact that operations are stochastic, the outcome cannot be predicted. 
+    We can only compute the probability or the average values.
     Let $\langle U\rangle $ be the average value of the potential energy, then:
 
     \begin{align*}
@@ -234,7 +235,8 @@ The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
           &=\frac{1}{4}\hbar\omega
     \end{align*}
 
-    So considering $E_0 = \frac{1}{2}\hbar\omega$, the energy remains the same, but the potential energy changes stochastically. Then:
+    So considering $E_0 = \frac{1}{2}\hbar\omega$, the energy remains the same, but the potential energy changes stochastically. 
+    Then:
 
     $$E_0 = \langle U\rangle  + \langle T\rangle $$
 
@@ -255,28 +257,39 @@ The solution for the ground state should be in the form $\hat{H}\psi_0 = E$.
 
     $$L_z = xP_y - yP_x\xrightarrow[]{\text{quantization}}x\biggl(-i\hbar\frac{\partial}{\partial y}\biggr) - y\biggl(-i\hbar\frac{\partial}{\partial x}\biggr)$$
 
-    Now considering $\langle \phi|O|\phi\rangle$ that specifies the state and that is equivalent to $\langle O\rangle$, where:
+    The quantum kinetic energy operator is obtained as following from the classical kinetic energy  $T=\frac{p^2}{2m} \rightarrow \hat{T}=\frac{\hat{p}^2}{2m}=\frac{(-i\hbar\vec{\nabla})^2}{2m}=\frac{\hbar^2}{2m}\nabla^2$
+    
+    In order to compute the expected value of operators, we need to consider $\langle \varphi|O|\varphi\rangle$ that specifies the state and that is equivalent to $\langle O\rangle$, where:
 
-    $$\langle O\rangle = \frac{\int dx \phi^*(x)(O(x)\cdot\phi(x))}{\int dx\phi^*(x)\phi(x)}$$
+    $$\langle O\rangle = \frac{\int dx \varphi^*(x)(O(x)\cdot\varphi(x))}{\int dx\varphi^*(x)\varphi(x)}$$
 
-    Then:
+    \underline{Potential energy operator}:
+    $$\langle\varphi|\hat{U}|\varphi\rangle =\frac{\int dx\varphi^*(x)(\hat{U}\varphi(x))}{\int dx |\varphi|^2}= \int d x U(x) |\varphi|^2$$
 
+	\underline{Kinetic energy operator}:
+	Consider $\varphi=e^{-\frac{\alpha x^2}{2}}$
     \begin{align*}
-      \langle\phi|\hat{T}|\phi\rangle &=\frac{\int dx\phi^*(x)(-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\phi(x))}{\int dx |\phi(x)|^2 = \frac{1}{4}\hbar^2}=\\
-                                      &=e^{-\alpha x^2}\frac{\partial^2}{\partial x^2}e^{-\alpha x^2} = e^{-\alpha x^2}\frac{\partial}{\partial x}(-2\alpha xe^{-\alpha x^2}) =\\
-                                      &=e^{-\alpha x^2}(-2\sigma w^{-\alpha x^2}+4\alpha^2x^2e^{-\alpha x^2})= \\
-                                      &=-2\alpha|\phi|^2 = 4\alpha^2 x^2|\phi|^2
+      \langle\varphi|\hat{T}|\varphi\rangle =\frac{\int dx\varphi^*(x)(-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\varphi(x))}{\int dx |\varphi|^2}\
+                                      &=e^{-\frac{\alpha x^2}{2}}\frac{\partial^2}{\partial x^2}e^{-\frac{\alpha x^2}{2}} = e^{-\frac{\alpha x^2}{2}}\frac{\partial}{\partial x}(-2\alpha xe^{-\frac{\alpha x^2}{2}}) =\\
+                                      &=e^{-\frac{\alpha x^2}{2}}(-\alpha e^{-\frac{\alpha x^2}{2}}+\alpha^2 x^2e^{-\frac{\alpha x^2}{2}})= \\
+                                      &=-\alpha|\varphi|^2 + \alpha^2 x^2|\varphi|^2
     \end{align*}
 
-    And so:
+   
+    We can then subsitute for $\alpha=\frac{m\omega}{\hbar}$ and $\langle{x^2}\rangle=\sigma^2=\frac{\hbar}{2\omega m}$:
 
-    $$\langle\phi|\hat{T}|\phi\rangle = \frac{-\frac{\hbar^2}{2m}\int |\phi(x)|^2dx}{\int|\phi(x)|^2}2\alpha= - \frac{\hbar^2}{2m}4\alpha^2\frac{\int dx|\psi|^2x^2}{\int dx|\psi|^2}$$
+    $$\langle\varphi|\hat{T}|\varphi\rangle = -\frac{\hbar^2}{2m} \alpha(\alpha x^2-1)=\frac{\hbar\omega}{4}$$
 
 
 \section{Quantum particle in a one dimensional infinite square well}
-We previously discussed at the classical level that a physical system can be bound or unbound. In quantum physics, a bound state is a quantum state of a particle subject to a potential such that the particle has a tendency to remain localized in one or more regions of space. Ultimately, matter and life exist because of bound systems, which allow the presence of macro structures.
+We previously discussed at the classical level that a physical system can be bound or unbound. 
+In quantum physics, a bound state is a quantum state of a particle subject to a potential such that the particle has a tendency to remain localized in one or more regions of space. 
+Ultimately, matter and life exist because of bound systems, which allow the presence of macro structures.
 While trying to solve a bound system problem, we will require a toy model - a model deliberately too simple to be realistic, which is not meant to predict the outcome of an experiment, but rather to understand the qualitative nature of the object under study.
-While implementing a toy model, if the scale where a detail occurs is very small compared with the size of the box, its effect can be neglected. As a consequence, everything which occurs within the box is idealized, allowing us to solve the problem. It's all a matter of scale e.g. $\lambda$ is the scale for details, $L$ the size of the physical system, $\eta$ the energy we are interested in, $E$ the unbounding energy. If the ratio $\frac{\lambda}{L}\ll1$ and $\frac{\eta}{E}\ll1$ , we can neglect the detail.\\
+While implementing a toy model, if the scale where a detail occurs is very small compared with the size of the box, its effect can be neglected. 
+As a consequence, everything which occurs within the box is idealized, allowing us to solve the problem. 
+It's all a matter of scale e.g. $\lambda$ is the scale for details, $L$ the size of the physical system, $\eta$ the energy we are interested in, $E$ the unbounding energy.
+If the ratio $\frac{\lambda}{L}\ll1$ and $\frac{\eta}{E}\ll1$ , we can neglect the detail.\\
 \\
 \begin{figure}[h!]
     \centering
@@ -284,12 +297,13 @@ While implementing a toy model, if the scale where a detail occurs is very small
     \caption{\label{fig:1D_well} Particle trapped in 1D infinite square well}
 \end{figure}
 \noindent
-For the case of a quantum particle in a one dimensional infinite square well, we will consider a particle constrained in a trap where interactions are so strong that it cannot escape and with two confining directions much narrower than the third. We can consider a box with size $L/2$ and $-L/2$ and find the eigenvalues and eigenvectors for the Schro\"edinger equation in this specific condition.
+For the case of a quantum particle in a one dimensional infinite square well, we will consider a particle constrained in a trap where interactions are so strong that it cannot escape and with two confining directions much narrower than the third. 
+We can consider a box with size $L/2$ and $-L/2$ and find the eigenvalues and eigenvectors for the Schr\"odinger equation in this specific condition.
 This can be modelled with a one dimensional confining potential:
 
 $$U(x) = \begin{cases} 0, &-\frac{L}{2}<x<\frac{L}{2}\\\infty &|x|>\frac{L}{2}\end{cases}$$
 
-Inside the box $U=0$, so the Schr\"oedinger equation is:
+Inside the box $U=0$, so the Schr\"odinger equation is:
 
 $$-\frac{\hbar^2}{2m}\frac{d{^2}}{d{x^2}}\psi(x) = E\psi(x)$$
 
@@ -398,7 +412,9 @@ Then:
 $$\hat{H} = -\frac{\hbar^2}{2m}\frac{\partial {^2}}{\partial {x^2}}-\frac{\hbar^2}{2m}\frac{\partial {^2}}{\partial {y^2}}$$
 
 Any $H$ can be separated as: $H(x,y) = H_1(x) + H_2(y)$.
-Anytime the Hamiltonian factorizes, i.e. $\hat{H}=\sum_i{\hat{h}_i}$, the solution of the Schr\"oedinger equation can be written as the product of two wave functions $\phi(x,y)=\phi_1(x)\phi_2(y)$. The corresponding energy will be obtained by summing the two energies $E=E_1+E_2$. By applying this property, we can write the solution to the Hamiltonian for our problem.
+Anytime the Hamiltonian factorizes, i.e. $\hat{H}=\sum_i{\hat{h}_i}$, the solution of the Schr\"odinger equation can be written as the product of two wave functions $\phi(x,y)=\phi_1(x)\phi_2(y)$. 
+The corresponding energy will be obtained by summing the two energies $E=E_1+E_2$. 
+By applying this property, we can write the solution to the Hamiltonian for our problem.
 
   \subsection{Solution}
   Then the solution is:
@@ -438,10 +454,16 @@ Anytime the Hamiltonian factorizes, i.e. $\hat{H}=\sum_i{\hat{h}_i}$, the soluti
 Lattice discretization is a technique by which a numerical solution is obtained by exploiting the connection between operators and matrices.\\
 
 \noindent
-We know that the wavefunction should be normlized and localized in a certain position of the space. By going towards the end and beginning of the x-axis, the function will go to zero - meaning that we have a maximum and minimum after which the function value can be neglected. We can either stop at maximum/minimum point, and this would be a first approximation. But let us divide the axis into little dots, such that the function can be considered almost constant in each dot. We are going to obtain a very accurate step-wise representation of the function,  and we can proceed until the result is good enough i.e. when the lattice space is smaller than the scale at which the wavefunction changes. Though discretization, we can tune the number of dots required to obtain an accurate result.\\
+We know that the wavefunction should be normlized and localized in a certain position of the space. 
+By going towards the end and beginning of the x-axis, the function will go to zero - meaning that we have a maximum and minimum after which the function value can be neglected. 
+We can either stop at maximum/minimum point, and this would be a first approximation. 
+But let us divide the axis into little dots, such that the function can be considered almost constant in each dot. 
+We are going to obtain a very accurate step-wise representation of the function,  and we can proceed until the result is good enough i.e. when the lattice space is smaller than the scale at which the wavefunction changes. 
+Though discretization, we can tune the number of dots required to obtain an accurate result.\\
 \\
 \noindent
-A large but finite number of equally spaced possible position is used. The possible positions are $x = x_{\min} + \Delta x$, where $\Delta x = \frac{x_{\max}-x_{\min}}{N}$.
+A large but finite number of equally spaced possible position is used. 
+The possible positions are $x = x_{\min} + \Delta x$, where $\Delta x = \frac{x_{\max}-x_{\min}}{N}$.
 After discretization, the wave function is represented by a list $\psi(x) \rightarrow(\psi_1,\dots, \psi_N)$.
 Thus, the wave function becomes a vector and the Hamiltonian a matrix.
 
@@ -478,10 +500,11 @@ Thus, the wave function becomes a vector and the Hamiltonian a matrix.
   The exact case is $N\rightarrow\infty$.
   Quantum mechanics is described by an infinite dimensional vector space called the Hilbert space.
 \noindent
-  After discretization, changing from coordinate representation to momentum representation (and opposite), i.e. performing Fourier transformation, basically involves changing a basis in the vector space that describes the state of the system. Lattice discretization allows us to go from quantum mechanics mathematics to linear algebra.
+  After discretization, changing from coordinate representation to momentum representation (and opposite), i.e. performing Fourier transformation, basically involves changing a basis in the vector space that describes the state of the system. 
+  Lattice discretization allows us to go from quantum mechanics mathematics to linear algebra.
 
 \section{Time evolution operators}
-Consider the time-dependent Schr\"oedinger equation:
+Consider the time-dependent Schr\"odinger equation:
 
 $$i\hbar\frac{\partial}{\partial t}\psi(x,t) = \hat{H}\psi(x,t)$$
 

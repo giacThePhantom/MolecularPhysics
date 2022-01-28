@@ -5,7 +5,8 @@ The instantaneous state of a system is represented by points in a Hilbert space:
 More precisely,  states are associated to rays - since $a|\psi\rangle$ and $|\psi\rangle$ represent the same state.
 Let $|\psi_3\rangle = a |\psi_2\rangle$, $|\psi_1\rangle$ and $|\psi_2\rangle$ represent different states and $|\psi_1\rangle$ and $|\psi_3\rangle$ represent the same one.\\
 \noindent
-The wavefunction $\psi(Q,t)$ describes the state of a quantum system, where $Q=\vec{q_1},...,\vec{q_N}$ are coordinates for the position of all the particles. Keep in mind that $\psi$ cannot be measured, it is a mere mathematical tool that we use for computing and making predictions.
+The wavefunction $\psi(Q,t)$ describes the state of a quantum system, where $Q=\vec{q_1},...,\vec{q_N}$ are coordinates for the position of all the particles. 
+Keep in mind that $\psi$ cannot be measured, it is a mere mathematical tool that we use for computing and making predictions.
 
 \section{Observable quantities}
 Observable quantities are associated to an Hermitian Operator, for example:
@@ -14,7 +15,7 @@ $$\underbrace{x}_{\text{position}}\rightarrow\underbrace{\hat{x}}_{\text{positio
 
 $$\underbrace{h}_{\text{energy}}\rightarrow\underbrace{\hat{H}}_{\text{Hamiltonian operator}}$$
 
-The only exception is time, which is not associated to an operator.
+The only exception is time, which is not associated to an operator. 
 
 $$O(p,q)\rightarrow\hat{O}(\underbrace{-i\hbar\vec{\nabla}}_{\text{p}},\bar{q})$$
 
@@ -28,8 +29,9 @@ If the system is in the quantum state $|\psi\rangle$, the probability of finding
 $$P(o_n) = |\langle o_n|\psi\rangle|^2$$
 
 Immediately after the measurement of $\hat{O}$ , yielding $o_n$, the state of the system is described by:
-$$\psi(Q,t_0)=f_n°(Q)$$
+$$psi(Q,t_0)=f_n°(Q)$$
 By measuring we observe the \textbf{collapse of the wavefunction} e.g. the state of the cat collapses to either dead or alive when we open the box.
+
 \section{Expectation value}
 The average over many measurement of $\hat{O}$ or expectation value is given by:
 
@@ -57,7 +59,9 @@ $\hat{O}_1,\hat{O}_2,...,\hat{O}_N$ are Hermitian operators.\\
 Let ${O_l}_{l=1,...,M<N}$ be the subset of mutually commuting operators. Then, for $[O_l,O_m]=0$ with $O_l,O_m \in M$ there will be a common set of eigenstates.\\
 \noindent
 
-$\hat{O}_lf_i=o_i^{(l)}f_i$, where $f_i$ are the eigenstates. By measuring immediately after a previous measurement $M,$ the result will be equal - as the $M$ measurement will provide the maximum information possible on the quantum system. Any other measurement will destroy the information e.g. if we measure the momentum (non-commuting) after the position, we will not know the position anymore.
+$\hat{O}_lf_i=o_i^{(l)}f_i$, where $f_i$ are the eigenstates. 
+By measuring immediately after a previous measurement $M,$ the result will be equal - as the $M$ measurement will provide the maximum information possible on the quantum system. 
+Any other measurement will destroy the information e.g. if we measure the momentum (non-commuting) after the position, we will not know the position anymore.
 
 Example: check whether $L_x$ and $L_y$ do not commute.
 $$\bar{L}=\left|\begin{array}{ll}\hat{i} \hat{j} \hat{k} \\ x y z \\ p_{x} p_{y} p_{z}\end{array}\right|=\hat{i} \underbrace{\left(y p_{z}-z p_{y}\right)}_{L_{x}}+\hat{j}(\underbrace{z p_{x}-x p_{z}}_{L_{y}}+\hat{k} \underbrace{\left(x p_{y}-y p_{x}\right)}_{L_{z}}$$
@@ -93,3 +97,78 @@ $$\left[\hat{L}_{y}, \hat{L}_{z}\right]=-i \hbar \hat{L}_{x}$$
 Keep in mind that $[\hat{L^2}, \hat{L}_{x}]=0,[\hat{L^2}, \hat{L}_{y}]=0,[\hat{L^2}, \hat{L}_{z}]=0$.\\
 \noindent
 Summarizing,  $\hat{L}_{x},\hat{L}_{y},\hat{L}_{z}$ are not mutually commuting, i.e., we can only know one compontent of the orbital momentum and the squared modulus (total length of the orbital momentum) at the same time.
+
+\section{Harmonic magnetic trap problem}
+In experiments on dilute cold gases, atoms are confined to a certain region of space by a magnetic trap formed by an appropriately configured magnetic field. 
+Close to the center of the trap, the effect of the magnetic field can be described as a harmonic potential, which is defined by the Hamiltonian.\\
+\\
+Imagine that we perform an experimental measurement at time $t_0$, giving as outcome $x_{0}=0$ \\
+By exploiting this result, we can obtain an approximation for the wavefunction:
+$$\psi(x,t=0)= \mathcal{N} e^{-\frac{m x^{2} \omega}{2 \hbar}}$$
+$$
+\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 4}=\mathcal{N}
+$$
+\noindent
+At time $t_0$ the trap is removed and the energy is measured.
+We then need to compute the expectation value for $E$:
+$$\expval{E} =\frac{(\psi, \hat{H} \psi)}{(\psi, \psi)}=\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} \int_{-\infty}^{+\infty}d x\, \psi^{*}(x) \hat{H} \psi(x)=$$
+$$ =\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} \int_{-\infty}^{+\infty} d x\,e^{-\frac{m \omega x^{2}}{2 \hbar}}\left(-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}}+U(x)\right) e^{-\frac{m \omega x^{2}}{ \hbar}}=
+\expval{T}+\expval{U}\\$$
+
+$$\expval{T} =-\frac{\hbar^{2}}{2 m}\left(\frac{m \omega}{\pi \hbar}\right)^{1 / 2} \int_{-\infty}^{+\infty} d x\, e^{-\frac{m x^{2} \omega}{2 \hbar}} e^{-\frac{m x^{2} \omega}{2 \hbar}}=\frac{1}{4} \hbar \omega$$
+
+$$\expval{U} =\left(\frac{m \omega}{\pi \hbar}\right)^{1 / 2} \int_{-\infty}^{+\infty} d x\, e^{-m x^{2} \omega} U(x) e^{-\frac{m x^{2} \omega}{2 \hbar}}=0$$
+
+\noindent
+While the trap is present, the function never gets to the infinity boundary, as it gets suppressed beforehand (the trap is narrower than the box). 
+Therefore, the whole integral equals zero.\\
+$$\expval{U}=0 \rightarrow \expval{E}=\expval{T}=\frac{1}{4} \hbar \omega $$
+
+\noindent
+Before $t_0$, the Hamiltonian is the trap. 
+Let's check if the Hamiltonian at $t_0$ is the box. 
+Usually, for a free particle in a one dimension box,  $E_n=\left(\frac{\pi^{2}n^2}{L^2}\right)\frac{\hbar^{2}}{2 m}$.\\
+\\
+By assuming that the trap is much larger than the particle, the particle behaves as a free particle. 
+As a consequence, it has many degrees of freedom and we can measure only its kinetic energy, as the probability of finding particles near the edges of the box is way lower than the average value (only kinetic component).\\
+\\
+\noindent
+If the outcome of $\hat{O}$ is $O_n$, given a state $\ket{\psi}$, the probability of finding $O_n$ is:
+\\
+State (initial $\psi): \psi(x)=\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 4} e^{-\frac{m \omega x^{2}}{2 \hbar}}$
+
+$P_{n}=|\bra{n} \ket{\psi}|^{2}=\left|\left(f_{0}^{n}(x), \psi(x)\right)\right|^{2}$ overlap integral, with $f_{0}^{n}(x)=\bra{x}\ket{n}$
+
+\[P\left(E_{1}\right)=\left|\int_{-\infty}^{+\infty} d x\, \varphi_{1}^{*}(x) \Psi(x)\right|^{2}
+\text{ with }
+\varphi_{1}(x)=\sqrt{\frac{2}{L}} \cos \frac{\pi}{L}x \in \mathbb{R},\]
+\[\varphi^{*} \text{ itself}
+=\left(\int_{-\infty}^{+\infty} d x\,\sqrt{\frac{2}{L}} \cos \frac{\pi}{L} \cdot \left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} e^{-\frac{m \omega x^{2}}{2 \hbar}}\right)^{2}
+\]
+$$=\frac{m \omega}{ \pi \hbar}\frac{2}{L} \left[\int_{-\infty}^{+\infty} d x \cos \frac{\pi}{L} x e^{-\frac{m \omega x^{2}}{2 \hbar}}\right]^{2}$$
+
+\noindent
+Let's now assume that the trap is much narrower than the box.
+\[\text{Kronecker delta: }  \delta_{i j}=\begin{cases}1,\, i=j \\ 0,\, i \neq j \end{cases} \rightarrow\, \delta(x, x^{\prime}) \sim\begin{cases}1,& \mid x-x^{\prime} \mid<a \\ 0, & x \neq x^{\prime}\end{cases}
+\]
+If $a<<<1$, $1/a\sim 1$\\
+I can also use a Gaussian delta function  $\delta\left(x-x^{\prime}\right)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-\frac{\left(x-x^{\prime}\right)^{2}}{2 \sigma^{2}}}$, which becomes narrower as $\sigma$ gets smaller.\\
+\\
+In our case $\sigma^2= \frac{\hbar}{2m}$, so we can multiply and divide for the Gaussian normalization factor:
+
+$$P\left(E_{1}\right)=\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} \frac{2}{L}\left(\int_{-\infty}^{+\infty} d x\, \frac{e^{-\frac{x^{2}}{2\sigma^2}}}{\sqrt{2 \pi} \sqrt{\frac{\hbar}{2 m}}} \cos \frac{\pi}{L} x\right) \frac{ \pi \hbar}{m \omega}$$
+
+\noindent
+Apply delta function:
+
+$$=\left(\frac{ \pi \hbar}{m\omega}\right)^{1 / 2}\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} \frac{2}{L}\int_{-\infty}^{+\infty} d x\, \delta(x-0) \cos \frac{\pi}{L} x=\cos \frac{\pi}{L} \cdot0=1$$
+
+\noindent
+Dimensionless check:
+$$P\left(E_{1}\right)=\frac{2}{L}\left(\frac{ \pi \hbar}{m \omega}\right)^{1 / 2} \rightarrow \sqrt{\frac{[J][S]}{[k g][S]^{-1}}}=\sqrt{[\frac{[kg][m]^2[S]^[S]}{[kg][S]^-1}} \cdot \frac{1}{[m]}$$
+$P\left(E_{1}\right)$ is dimensionless.\\
+\\
+\noindent
+The probability has actually a value larger than one, energy levels tend to overlap heavily when considering ground state at small oscillations.
+Anyway, the average value of energy is $\frac{1}{4}\hbar\omega$.
+
