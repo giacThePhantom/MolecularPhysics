@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  27 JAN 2022 23:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  28 JAN 2022 01:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1251,20 +1251,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <chapters/03/1D_well.png, id=1177, 325.215pt x 151.16475pt>
 File: chapters/03/1D_well.png Graphic file (type png)
 <use chapters/03/1D_well.png>
-Package pdftex.def Info: chapters/03/1D_well.png  used on input line 283.
+Package pdftex.def Info: chapters/03/1D_well.png  used on input line 292.
 (pdftex.def)             Requested size: 260.17464pt x 120.94118pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--289
+Underfull \hbox (badness 10000) in paragraph at lines 281--299
 
  []
 
 [32 <./chapters/03/1D_well.png>] [33] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--447
+Underfull \hbox (badness 10000) in paragraph at lines 452--465
 
  []
 
@@ -2038,7 +2038,7 @@ Here is how much of TeX's memory you used:
  30364 multiletter control sequences out of 15000+600000
  568252 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,19n,63p,856b,877s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,20n,63p,856b,877s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><
@@ -2082,7 +2082,7 @@ e1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
 ublic/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
 lic/cm-super/sfti0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
 c/cm-super/sfti1000.pfb>
-Output written on ./build/principal.pdf (114 pages, 2799637 bytes).
+Output written on ./build/principal.pdf (114 pages, 2800297 bytes).
 PDF statistics:
  1844 PDF objects out of 2073 (max. 8388607)
  1629 compressed objects within 17 object streams
