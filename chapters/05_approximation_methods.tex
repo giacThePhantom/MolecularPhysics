@@ -4,7 +4,7 @@ How do we solve quantum mechanical problems? Or to be more specific, how to solv
 As the problems become more complicated, even by relying on super computers it is impossible to design algorithms that provide for an exact solution.
 Here's the need for approximation methods.
 Approximation methods can be "ideal" and "non-ideal" (not conventional names).
-An ideal approximation method can become an exact method by tuning some parameters, the non-ideal ones will always remain an approximation, even with huge computational power (many in biology are non-ideal, like the Hartree-Fock, and are developed upon a physical intuition that allows to make important assumptions).
+An ideal approximation method can become an exact method by tuning some parameters, the non-ideal ones will always remain an approximation, even with huge computational power (many in biology are non-ideal, like the Hartree-Fock, and are developed upon a physical intuition that allows to make important assumfptions).
 Some assumption concern the shape of the Hamiltonian (like confining a particle in a box instead of a complex potential), some concern the solution of a given Hamiltonian.
 The question we ask ourselves as biologist is "do we want to be more accurate or insightful?".
 If our aim is a biological application of quantum mechanics we are more interested in accuracy rather than completely understanding a structure $\rightarrow$ approximation.
@@ -33,11 +33,17 @@ We can simplify our calculations and make a useful and accurate approximate solu
 	Where $\bigl(\psi_n(n),g(n)\bigr)$ are coefficient of the inner product with $c_n\in \mathbb{C}$.
 
 		\subsubsection{Expansion}
-		Any wave function can be expanded, just like $\vec{v} = \sum_n c_n \vec{e}_n$, where $c_n = \vec{v} \vec{e}_n$.
+	
+		Any wave function can be expanded, just like $\vec{v} = \sum_n c_n \vec{e}_n$, where $c_n = \vec{v} \, \vec{e}_n$.
 		But the expansion can be truncated.
 		For example, if we have a vector projected to its components $\vec v = v_1\hat{e}_1+v_r\hat{e}_r$, we can choose a smart basis ${\vec{w}_1, \vec{w}_2}$, so that we can describe the vector with fewer elements and end up with something like $ \vec{v} \cong (\vec{v} \cdot \vec{w}_1) \vec{w}_1 $ .
-		We shall truncate the sum to a finite number - not to infinite - such as there is no projection onto the third coordinate but only to a two dimensional plane.
-
+		We shall truncate the sum to a finite number - not to infinite - such as there is no projection onto the third coordinate but only to a two dimensional plane. Such an example is reported in figure \ref{fig:vector}.
+	\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.25\textwidth]{vector.jpg}
+    \caption{Example of an approximation using the vector example.}
+    \label{fig:vector}
+\end{figure}
 		\subsubsection{Momentum operator}
 		Suppose $\hat{O}=\hat{P}$ (momentum operator) $\rightarrow$ eigenstates are represented by plane waves that are continuous.
 		It can be integrated:
@@ -80,6 +86,7 @@ We can simplify our calculations and make a useful and accurate approximate solu
 	Our aim is to solve the Schr{\"o}dinger equation written as $\hat{H}\varphi_n=E_n\varphi_n$, but "there's no free launch", and we must "pay the price" assuming we can solve $\hat{H}_0\psi_n=\lambda_n\psi_n$ as it represents an harmonic oscillator (shown in figure \ref{fig:approximation}).
 
 	\begin{figure}[htbp!]
+	\centering
 	\includegraphics[scale=0.20]{img_1}
 	\caption{How to approximate an otherwise very difficult function with a known, simpler one.}
 	\label{fig:approximation}
@@ -285,10 +292,10 @@ We need to find any function approximating $\psi_0^{(x)}$.
 The expectation value for $\varphi$ is:
 
 \begin{align*}
-	\mel{\varphi}{\hat{H}}{\varphi}&=\braket{\sum_mc_m\psi_m}{sum_nc_n\psi_n}\sum_{n,m}c_n^{*}c_m\braket{\psi_n\,|\,\hat{H}\,|\,\psi_m}=\\
-																 &=\sum_{n,m}c_n^{*}c_mE_m\delta_{nm}=\\
-																 &=\sum_{n}|c_n|^2E_n=\\
-																 &=E_n\sum_n |c_n|^2
+\mel{\varphi}{\hat{H}}{\varphi}&= \sum_{mn} c^*_nc_m \langle \psi_n | \hat{H} | \psi_m \rangle =\\
+&=\sum_{n,m}c_n^{*}c_mE_m\delta_{nm}=\\
+&=\sum_{n}|c_n|^2E_n=\\
+&=E_n\sum_n |c_n|^2
 \end{align*}
 
 We recall that for a normalized set of functions $\sum_{n=0}|c_n|^2=1$ so $\mel{\varphi}{\hat{H}}{\varphi}=E_n$.
@@ -370,9 +377,9 @@ If given two functions $\psi_0$ and $\psi_1$ such that they have respectively ex
 
 		This is the same result we got for the quantum harmonic oscillation problem! Keep in mind that this method \underline{only} applies to the ground state.
 
-		\begin{figure}[htbp!]
+		\begin{figure}[h!]
 			\centering
-			\includegraphics[scale=0.20]{img_4}
+			\includegraphics[scale=0.30]{img_4}
 			\caption{In this picture we can see a point of intersection because we get the exact result.}
 			\label{fig:intersect}
 		\end{figure}
