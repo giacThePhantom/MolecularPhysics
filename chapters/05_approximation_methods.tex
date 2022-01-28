@@ -264,7 +264,7 @@ P_L=|\braket{L}{\psi(t)}|^2=\bigg|\braket{L}{\bigg(\frac{1}{\sqrt{2}}\ket{0}-\fr
 \]
 Knowing that $\braket{L}{L}=\frac{1}{\sqrt{2}}$ and $\braket{L}{R}=0$,
 \[
-=\bigg|\braket{L}{\frac{\ket{L}+{R}}{\sqrt{2}}-e^{-\frac{it}{\hbar}\varepsilon}\cdot\frac{\ket{L}-\ket{R}}{\sqrt{2}}}\bigg|^2
+=\bigg|\braket{L}{\frac{\ket{L}+\ket{R}}{\sqrt{2}}-e^{-\frac{it}{\hbar}\varepsilon}\cdot\frac{\ket{L}-\ket{R}}{\sqrt{2}}}\bigg|^2
 =\bigg(\frac{1}{2}-\frac{1}{2}\cdot e^{-\frac{it}{\hbar}\varepsilon}\bigg)^2
 =\bigg[\frac{1}{2}-\frac{1}{2}\bigg(\cos\frac{\varepsilon t}{\hbar}+i\sin\frac{\varepsilon t}{\hbar}\bigg)\bigg]^2
 \]
@@ -292,8 +292,8 @@ Remember that it can always be written as:
 We need to find any function approximating $\psi_0^{(x)}$, and we also assume that the wave function is already normalized.
 The expectation value for $\varphi$ is:
 \[
-\frac{\braket{\varphi\,|\,\hat{H}\,|\,\varphi}}{(\braket{\varphi \,|\, \varphi})}=
-\sum_{n,m}c_n^{*}c_m\braket{\psi_n\,|\,\hat{H}\,|\,\psi_m}=\sum_{n,m}c_n^{*}c_mE_m\delta_{nm}=
+\frac{\langle\varphi\,|\,\hat{H}\,|\,\varphi \rangle} {\langle\varphi \,|\, \varphi\rangle}=
+\sum_{n,m}c_n^{*}c_m\langle \psi_n\,|\,\hat{H}\,|\,\psi_m \rangle =\sum_{n,m}c_n^{*}c_mE_m\delta_{nm}=
 \sum_{n}|c_n|^2E_n
 \]
 By assuming $c_n \geq 0$, the whole operation is $\geq E_0$ but this is true only if $\psi_n=\psi_0$.\\
@@ -316,7 +316,7 @@ $\rightarrow$ if $E_0 < E_1$ then $E_0$ is a better approximation of the wave fu
 \newline
 \textit{Example: Given $\varphi(x, \alpha)$, which is a family of wave functions, find $\psi_0(x)$ such as it is the best approximation of the family.} In other words, we need to evaluate the following equation\\
 \[
-\braket{\varphi_{\alpha}(x)\,|\,\hat{H}\,|\,\varphi_{\alpha}(x)}=E(\alpha)
+\langle\varphi_{\alpha}(x)\,|\,\hat{H}\,|\,\varphi_{\alpha}(x)\rangle=E(\alpha)
 \]
 for whih $E$ is minimum.
 We must find the minimum of the function (derivative = 0).
@@ -326,7 +326,7 @@ We must find the minimum of the function (derivative = 0).
 Find $\alpha$ such as $E_{\alpha min}$ is the best approximation of $E_0$ and $\varphi_{\alpha min}(x)$ is the best approximation of $\psi_0$.
 Putting it formally, if we have multiple parameters: $\varphi_{\alpha \dots \alpha_n(x)}$
 \[
-\braket{\varphi_{\alpha \dots \alpha_n(x)}\,|\,\hat{H}\,|\,\varphi_{\alpha \dots \alpha_n(x)}} = E_{\alpha \dots \alpha_n}
+\langle\varphi_{\alpha \dots \alpha_n(x)}\,|\,\hat{H}\,|\,\varphi_{\alpha \dots \alpha_n(x)}\rangle = E_{\alpha \dots \alpha_n}
 \]
 We need to calculate the minimum of the multidimensional function:
 \[

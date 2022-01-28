@@ -81,7 +81,7 @@ By the variational principle, the wavefunction with the lowest value of energy i
 \[
 \hat{H}=-\frac{\hbar^2}{2m}\nabla_n^2-\frac{\hbar^2}{2m}\nabla_e^2-\frac{e^2}{|r_1a|}-\frac{e^2}{|r_1b|}-\frac{e^2}{|r_2a|}-\frac{e^2}{|r_2b|}-\frac{e^2}{|R_ab|}
 \]
-Even if spin is not involved in the Hamiltonian and eventually results in $\braket{\hat{S}\,|\,\hat{S}}=1$, the sign of the expected value of the Hamiltonian depends on the spin symmetry, because spatial value and spin symmetry are entangled.
+Even if spin is not involved in the Hamiltonian and eventually results in $\braket{\hat{S}}{\hat{S}}=1$, the sign of the expected value of the Hamiltonian depends on the spin symmetry, because spatial value and spin symmetry are entangled.
 \[E_1=\langle{\Psi_1\,|\,\hat{H}\,|\,\Psi_1}\rangle =\langle{\Phi_S\,|\,\hat{H}\,|\,\Phi_S}\rangle\]
 \[E_2=\langle{\Psi_2\,|\,\hat{H}\,|\,\Psi_2}\rangle=\langle{\Phi_A\,|\,\hat{H}\,|\,\Phi_A}\rangle\]
 We must solve, then,
@@ -89,22 +89,25 @@ We must solve, then,
 E_1=\frac{1}{2}\int d\vec{r_1}\int d\vec{r_2}\,\big[\varphi(|\vec{r_1}-\vec{R_a}|)\varphi(|\vec{r_2}-\vec{R_b}|)+\varphi(|\vec{r_1}-\vec{R_b}|)\varphi(|\vec{r_2}-\vec{R_a}|)\big](\hat{H})(\Phi_S)
 \]
 and same for $E_2$. I have two 6-dimensions functions in 6-dimensions integrals.\\
-Results are different whether I solve for the first or second electron. This is the result that is obtained when the two atoms are infinitely far.\\
-\[
-\braket{\,|\,\hat{H}\,|\,}_{S/A}=2E_0\pm\text{stuff}
-\]
-Else, if the two atoms start to approach,
-\[
-\braket{\,|\,\hat{H}\,|\,}_{S/A}=\frac{e^2}{R_{ab}}\pm\text{separated ground states}
-\]
-I obtain two different functions:
+Results are different whether I solve for the first or second electron.\\
+%This is the result that is obtained when the two atoms are infinitely far.\\
+%\[
+%\braket{\,|\,\hat{H}\,|\,}_{S/A}=2E_0\pm\text{stuff}
+%\]
+%Else, if the two atoms start to approach,
+%\[
+%\braket{\,|\,\hat{H}\,|\,}_{S/A}=\frac{e^2}{R_{ab}}\pm\text{separated ground states}
+%\]
+We obtain two different functions, depicted in figure \ref{fig:variational}:
 \begin{itemize}
-	\item \textbf{Symmetric spatial function}: spin 0 state, has a lower energy value that corresponds to an optimal distance between the two nuclei $\bar{R}$. It allows different calculable energy levels, bond oscillations and strength.
+	\item \textbf{Symmetric spatial function}: spin 0 state, has a lower energy value that corresponds to an optimal distance between the two nuclei $\bar{R}$. It allows different calculable energy levels, bond oscillations and strength. Important to notice is that \textbf{quantum symmetry} (state s=0) is key to the binding of atoms. 
 	\item \textbf{Antisymmetric spatial function}: goes against the variational approximation, but technically is a right solution from a quantum mechanical point of view.
 \end{itemize}
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_9}
+	\caption{The toal energy is: $|E \rangle = \langle \psi | H | \psi \rangle = 2E_0 + \frac{e^2}{R_{ab}} \text{+ other factors}$. $E_0$ corresponds tot the energy of two atoms infinitely far away from each others, while $\frac{e^2}{R_{ab}}$ acts when the two atoms start to approach.}
+	\label{fig:variational}
 \end{figure}
 \section{Electronic structure calculation methods}
 When choosing the best method to obtain an electronic structure, some evaluations have to be made regarding the accuracy of the calculation vs the computational cost of the operation. The first approximation to be chosen is always the most important and it determines the further steps that need to be taken. It is very important then to consider strategic decisions in computational sciences.\\

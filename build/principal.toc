@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {part}{I\hspace {1em}Quantum mechanics}{6}{part.1}%
 \contentsline {chapter}{\numberline {1}Revisiting classical mechanics}{7}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Physical theories}{7}{section.1.1}%
@@ -115,7 +115,7 @@
 \contentsline {section}{\numberline {7.1}The Born-Oppenheimer Approximation}{64}{section.7.1}%
 \contentsline {section}{\numberline {7.2}The H$_2$ molecule}{65}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Electronic structure calculation methods}{67}{section.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.0.1}Hartree-Fock Method}{68}{subsubsection.7.3.0.1}%
+\contentsline {subsubsection}{\numberline {7.3.0.1}Hartree-Fock Method}{67}{subsubsection.7.3.0.1}%
 \contentsline {subsection}{\numberline {7.3.1}Density Function Theory (DFT)}{69}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}QM-MM Schemes}{71}{subsection.7.3.2}%
 \contentsline {part}{III\hspace {1em}Quantum computing}{72}{part.3}%
