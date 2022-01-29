@@ -111,35 +111,53 @@ We obtain two different functions, depicted in figure \ref{fig:variational}:
 \end{figure}
 
 \section{Electronic structure calculation methods}
-When choosing the best method to obtain an electronic structure, some evaluations have to be made regarding the accuracy of the calculation vs the computational cost of the operation. 
+When choosing the best method to describe an electronic structure, some evaluations have to be made regarding the accuracy of the calculation vs the computational cost of the operation. \\
 The first approximation to be chosen is always the most important, as it determines the further steps that need to be taken. \\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_13}
+	\caption{Cartoon representing the main types of calculations, divided based on the cost and accuracy. Exact diagonalization is not reported, since it's computationally extremely hard). }
+\label{fig:calculations}
 \end{figure}
 \newline
-The \textbf{EXACT DIAGONALIZATION (TRUNCATED BASIS)} technique is very precise, but it can't be used with system with more than 5 or 6 particles at the same time.\\
-For biological system, chemical accuracy is important as long as the error is not dramatic (keep in mind that a slight change of temperature can drastically change the system). 
-A simulation is acceptable when $K_BT < 1.5\text{ KJ/mol} \div 2.4 \text{ KJ/mol}$.\\
-For macromolecules in biology, very accurate DFT are performed. The problem is that it's very difficult to predict Van Der Waals forces, since they are polynomial and DFT employs exponentials.\\
-The general goal is using classical equations to predict quantum-mechanics-descripted movements.\\
+The \textbf{exact diagonalization} (truncated basis) technique is very precise, but it can't be used with system with more than 5 or 6 particles at the same time.\\
+For biological systems, chemical accuracy is important as long as the error is not dramatic (keep in mind that a slight change of temperature can drastically change the system). A simulation is acceptable when $K_BT < 1.5\text{ KJ/mol} \div 2.4 \text{ KJ/mol}$.\\
+For macromolecules in biology, very accurate DFT are today's state of the art. The problem with other methods (Hartree-Fock) is that it does not predict Van Der Waals disperion forces, since they are polynomial. 
+\\
+In practice, exact solution are never found. However excellent approximations are possible and this is the reason why DFT is the most commonly adopted scheme for electronic calculations in condensed matter and quantum chemistry.\\
+
+The general goal is using classical equations to predict quantum-mechanics-descripted movements. In figure \ref{fig:calculations} the main approaches are reported.\\
 
 \subsubsection{Hartree-Fock Method}
-Hartree-Fock method is a method of approximation for the determination of the wave function and the energy of a quantum many-body system in a stationary state that combines Mean Field Approximation, Fermi symmetry, and the Variational Principle.\\
-The method uses the Slater matrix's determinant to approximate a set of $N$ fermions.
+We shall start the discussion about the Hartree-Fock method with the following observation: if the wave function is a sum of decoupled terms, then the wave function solution is a product of single particle wave functions:
+ \[
+ H(x_1,.., x_n) = \sum_i \bigg(-\hbar^2 \frac{\nabla_i^2}{2m} + V(x_i) \bigg)
+ \]
+ 
+and the solution is in the form 
+ \[
+ \psi(x_1, ..., x_n) = \phi(x_1) \cdot ... \cdot \phi(x_n) \;\;\;\; (*)
+ \]
+
+The Hartree method is a variational approach which yields the best solution
+to a quantum many-body problem in which the ground state trial wave
+function is in the factored form $(*)$ and Ritz variational principle is applied to
+determine the “best” single-particle orbitals $\phi(x)$ . \\
+It combines Mean Field Approximation, Pauli's symmetry, and the Variational Principle.\\
+HF uses the Slater matrix's determinant to approximate a set of $N$ fermions.
 \[
 \Psi(q_1...q_n)=\frac{1}{\sqrt{2}}
 \begin{pmatrix}
-\phi_1(r_1)&...&\phi_n(r_1)\\
+\phi_1(q_1)&...&\phi_n(q_1)\\
 ... & &...\\
-\phi_1(r_m)&...&\phi_n(r_m)
+\phi_1(q_m)&...&\phi_n(q_m)
 \end{pmatrix}
 \]
-We do not expect to find $\Psi(q_1...q_n)$.
-We can say it is the result of an equation and calculate the energy by using the Variational Principle with $E=\braket{\Psi\,|\,E\,|\,\Psi}$ and minimize $E$ with respect to$\psi(q)$ (a single-particle function) under the costraint of normalization ($\braket{\psi\,|\,\psi}=1$)\\
-Costraint minimization is operated with \textbf{Lagrange multipliers}: I consider a system of equations $f(x_1...x_n)$ where I can calculate the minimum and the maximum with the application of the gradient $\nabla f=0$.\\
+Where $q_i$ could contain the position and spin or just the position. Anyway, we do not expect to find $\Psi(q_1...q_n)$. \\
+We can hower consider it as the result of an equation and calculate the energy by using the Variational Principle with $E=\langle \Psi\,|\,E\,|\,\Psi \rangle$ and minimize $E$ with respect to $\phi(q)$ (a single-particle function) under the costraint of normalization ($\langle \psi\,|\,\psi \rangle =1$)\\
+Costraint minimization is operated with \textbf{Lagrange multipliers}: we consider a system of equations $f(x_1...x_n)$ where we can calculate the minimum and the maximum with the application of the gradient $\nabla f=0$.\\
 
-We eventually obtain the \textbf{Hartree Equation}, representing \ul{one electron interacting with a probability cloud}. 
+We eventually obtain the \textbf{Hartree Equation}, representing \textbf{one electron interacting with a probability cloud}. 
 It is a symmetric system (valid for bosons, since they have classical limits and can be represented as shown without further additions):
 \[
 \bigg(-\frac{\hbar^2}{2m}\nabla^2_i-\frac{Z}{r_i}\bigg)\Phi_\lambda(\vec{r_i})+\sum_\mu \sum_{j \neq i} \int\,d^3\vec{r_j}\bigg(\Phi^*_\mu(\vec{r_j})\Phi_\mu(\vec{r_j})\frac{1}{|r_i-r_j|}\Phi_\lambda(\vec{r_i})\bigg)=E\Phi_\lambda(\vec{r_i})
@@ -151,31 +169,27 @@ In particular:
 	\item $\mu$ is the orbital index that changes the wave function
 	\item $\Phi^*_\mu(r_j)\Phi_\mu(r_j) = \rho_\mu^{(i)}(r_j)$ is the electron density + density of charge around it (probability density) with sum of all electrons in all orbitals ($\mu$)
 \end{itemize}
-The Fermi symmetry introduces the Slater determinant, that is also called \textbf{exchange term} (\textbf{Fock equation}). 
-This introduction implies that I cannot bring two electrons with the same spin in the same orbital. 
-The wave function collapses to zero and I have repulsion between the electrons.\\
+The Fermi symmetry introduces the Slater determinant, that is also called \textbf{exchange term}, which is a repulsive term. (\textbf{Fock equation}). \\
+This introduction implies that two electrons with the same spin cannot exist in the same orbital. 
+The wave function collapses to zero and we obtain a repulsion between the electrons (basically, it would cost infinite enrgy if the two spins happen to be the same).\\
 \[
 \text{HARTREE EQN.}+
 \sum_\mu \sum_{j \neq i} \int\,d^3\vec{r_j}\bigg(\Phi^*_{\mathcolorbox{yellow}{\mu}}(\vec{r_j})\Phi_{\mathcolorbox{yellow}{\lambda}}(\vec{r_j})\frac{1}{|r_i-r_j|}\Phi_{\mathcolorbox{yellow}{\mu}}(\vec{r_i})\bigg)=E\Phi_\lambda(\vec{r_i})
 \]
-This implies that the electron density factor of Hartree equation is not present anymore, the two particles are in a different state. 
-At the same time, $\Phi_\mu(r_i)$ becomes Fock's generalization exchange term for fermions.
-This equation though is non linear ($\Phi^3$), so many quantum mechanics properties can't be applied to HF.\\
+This implies that the electron density factor ($\varphi^{(1)}_\mu(r_j)$) of the Hartree equation is not present anymore ($\varphi^{(2)}_{\mu\lambda}(r_j)$), the two particles are in a different state. \\
+At the same time, $\Phi_\mu(r_i)$ becomes Fock's generalization exchange term for fermions, generalizing the HF to fermions. \\
+This equation though is non linear ($\Phi^3$). However all N fucntions involve single particles, so we can simply the problem. The integral though is 3D, be we can apply nested methods. The pain is that we cannot hope to expand basis, diagonalize and other tricks previously used to simply problems.\\
 \\
-The computational cost doesn't change over the introduction of the exchange term, even if it has a three-dimensional integral.
-Since I can't expand the equation on a different basis, I must use SELF CONSISTED METHODS/APPROACHES, which are \ul{iterative procedures operated until the function converges.}
+Since we can't expand the equation on a different basis, we must use \textbf{self consisted methods}, which are \textbf{iterative} procedures operated until the function converges.
 \begin{enumerate}
 	\item (Guess) $\Phi_\lambda (\vec{r})$
 	\item Compute $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$, as they are numerical values
 	\item Insert $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$ into HF equation, resulting in a conventional linear Schr\"odinger equation.
 	\item Solve HF equation and get a more accurate wave function $\Phi_\lambda (\vec{r})$
 	\end{enumerate}
-The obtained $\Phi_\lambda (\vec{r})$ is a better guess than the initial one, so I use the latter obtained again for point 1 and recompute the density. 
-I continue until convergence is reached (usually a single minimum is present). \\
-
-I can use self consistent fields to compute the HF equation, but they are computationally expensive (parallel computing). \\
-
-I can further use the HF equation with SEMI EMPIRICAL METHODS with coefficients in front of direct and exchange terms, that can weight the two terms in order to better match the experimental results.  The HF equation is usually employed to build the expansion of the eigenfunction or in quantum computing.\\
+The obtained $\Phi_\lambda (\vec{r})$ is a better guess than the initial one, so I use the latter obtained again for point 1 and recompute the density (this is why the first poin of the list is in brakets). 
+The algorithm will run until convergence is reached (usually a single minimum is present). \\
+Even with this approach, the computation of HF is very expensive. For this reason, \textbf{semi-empirical methods} have been developed. Coefficients have been introduced in front of direct and exchange terms, that can weight the two terms in order to better match the experimental results. The HF equation is usually employed to build the expansion of the eigenfunction or in quantum computing.\\
 
 \subsection{Density Function Theory (DFT)}
 Variational scheme that in principle can yield the exact result,  but in practice needs heuristic input/approximation. 
