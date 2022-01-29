@@ -58,7 +58,7 @@
 		\subsubsection{One-dimensional Schr\"oedinger equation}
 		The wave function can then undergo variables separation, this implies the fact that eigenstates of the Hamiltonian are also eigenstates of the square of the angular momentum.
 
-		$$\Psi_{n,l,m}(r,\theta,\varphi)=R(r)\cdot Y_{l,m}(\theta,\varphi)$$
+		$$\psi_{n,l,m}(r,\theta,\varphi)=R(r)\cdot Y_{l,m}(\theta,\varphi)$$
 
 		I can calculate the Hamiltonian of the newly obtained wave function.
 
@@ -141,7 +141,7 @@
 
 	\subsection{The importance of spin}
 	Spin statistics can explain chemistry, quantum entanglement, and quantum computers.
-	Stern Gerlach experiments confirm the fact that electrons have a magnetic moment, which is quantised in integers or half integers, because they can interact with a magnetic field.
+	The Stern Gerlach experiments confirm the fact that electrons have a magnetic moment, which is quantised in integers or half integers, because they can interact with a magnetic field.
 Generally, particles behave differently and may have different states of being.
 	What we know is that we cannot measure more than one component of the magnetic moment (quantum uncertainty) and this \textbf{intrinsic} magnetic moment behaves like an angular momentum.
 	The rotation of the electron upon itself generates a magnetic field and a magnetic moment.
@@ -160,73 +160,78 @@ Photons, for instance, have $s=1$.
 	Let's consider a wave function of many identical particles $\psi$, for instance $n$ identical electrons with spin $s$, $\hat{S_z}$, and position $r$.
 All the particles have the same velocity.
 
-	$$\Psi(\vec{r_1}, s_1^z, \vec{r_2}, s_2^z, \dots, \vec{r_n}, s_n^z) \text{ ,with } \vec{q}=(\vec{r},\vec{s_z})$$
+	$$\psi(\vec{r_1}, s_1^z, \vec{r_2}, s_2^z, \dots, \vec{r_n}, s_n^z) \text{ ,with } \vec{q}=(\vec{r},\vec{s_z})$$
 
-	$$\text{For identical particles: }\Psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})A[\Psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})\pm\Psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})]$$
+	$$\text{For identical particles: }\psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})A[\psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})\pm\psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})]$$
 
-	\textbf{Antisymmetric wave-function (fermions)}: wave-function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{half integer} (1/2, 3/2, ...).
-Swapping the wave function \textbf{changes} it.
+		\subsubsection{Antisymmetric wave function}
+		An antisymmetric wave function is a wave-function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{half integer} (1/2, 3/2, ...).
+		Swapping the wave function \textbf{changes} it.
 
-	$$\Psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})=-\Psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})$$
+		$$\psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})=-\psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})$$
 
-	The particles that have an antisymmetric wavefunction are called \textbf{fermions}.
-	\newline
-	\textbf{Symmetric wave-function (bosons)}: wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...).
-Swapping the wave function \textbf{doesn't change} it.
+		The particles that have an antisymmetric wavefunction are called \textbf{fermions}.
 
-	$$\Psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})=\Psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})$$
+		\subsubsection{Symmetric wave functions}
+		A symmetric wave function is a wave function that under the exchange of pairs of identical particles has a total spin, $s$, that is an \textbf{integer} (1, 2, 3, ...).
+		Swapping the wave function \textbf{doesn't change} it.
 
-	The particles that have a symmetric wave function are called \textbf{bosons}.
-	\textbf{Corollary}: In a quantum wave function, there cannot be two fermions with identical state or else two identical fermions cannot be found in the same quantum state.
+		$$\psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})=\psi(\vec{q_1},\vec{q_2}, \dots, \vec{q_n})$$
 
-	$$\Psi(q_1, q_2)= -\Psi(q_2,q_1)$$
+		The particles that have a symmetric wave function are called \textbf{bosons}.
 
-	The two electrons are the same, $q_1=q_2=q$
+		\subsubsection{Pauli's exclusion principle}
+		In a quantum wave function, there cannot be two fermions with identical state or else two identical fermions cannot be found in the same quantum state.
 
-	$$\Psi(q,q)=-\Psi(q,q)$$
+		$$\psi(q_1, q_2)= -\psi(q_2,q_1)$$
 
-	The only condition for which this equality is true is for  $\Psi = 0$, there is no wave function that can describe a system of two identical fermions with identical state.
-This is called \textbf{Pauli's exclusion principle} and applies to all identical fermions.
-	\\
+		The two electrons are the same, $q_1=q_2=q$
+
+		$$\psi(q,q)=-\psi(q,q)$$
+
+		The only condition for which this equality is true is for  $\psi = 0$, there is no wave function that can describe a system of two identical fermions with identical state.
+		This is called \textbf{Pauli's exclusion principle} and applies to all identical fermions.
 	\subsection{Mean Field Approximation}
 	Solving the Schr\"oedinger equation for more than one particle rapidly becomes challenging, even resorting to High Performance Computing.
-However, much of the global, qualitative structure of the Mondelyev table can be understood within a simple \textbf{mean field} picture: instead of accounting for all pairwise Coulomb interactions, we assume that the effect on each electron, due to all other electrons and the protons can be represented by an overall confining potential.
+	However, much of the global, qualitative structure of the Mondelyev table can be understood within a simple \textbf{mean field} picture: instead of accounting for all pairwise Coulomb interactions, we assume that the effect on each electron, due to all other electrons and the protons can be represented by an overall confining potential.
 	Suppose we are dealing with two electrons:
 
-	$$\bigg(-\frac{\hbar^2}{2m}\sum_{i}^{N}\nabla^2_i+U(\vec{r_1}\cdots\vec{r_n})\bigg)\Psi(\varphi_1 \cdots\varphi_n)=E\Psi(q_1 \cdots q_n)$$
+	$$\bigg(-\frac{\hbar^2}{2m}\sum_{i}^{N}\nabla^2_i+U(\vec{r_1}\cdots\vec{r_n})\bigg)\psi(\varphi_1 \cdots\varphi_n)=E\psi(q_1 \cdots q_n)$$
 
 	The solution to the eigenvalue problem that is also antisymmetric to the potential depends on the position.
 
 	$$U(\vec{r_1}\cdots\vec{r_n})=\sum_{i,j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}-e^2\frac{\mathbb{Z}}{r_i}$$
 
 	Instead of keeping track of all the interactions of particles on one another, we consider the average of the whole many-body system, e.g., mean coulombic repulsion.
-I calculate the interaction between single electron and average electron density.
-The larger symmetry is the ground state, which for the H-atom this is \textbf{1s}, as shown in figure \ref{fig:spin1}.
+	The interaction between single electron and average electron density is computed.
+	The larger symmetry is the ground state, which for the H-atom this is \textbf{1s}, as shown in figure \ref{fig:spin1}.
 
 	\begin{figure}[htbp!]
- \centering
- \includegraphics[scale=0.20]{img_6}
- \caption{Position of electrons in the 1p and 1s states with relative spin (up or down)}
- \label{fig:spin1}
+ 		\centering
+ 		\includegraphics[scale=0.20]{img_6}
+ 		\caption{Position of electrons in the 1p and 1s states with relative spin (up or down)}
+ 		\label{fig:spin1}
 	\end{figure}
 
-	The structure of the wave function is influenced by spin even if it doesn't appear in the Hamiltonian and can be used not only for electrons but for all subatomic/subnuclear particles.\\
-	We may ask ourselves: is there any stable nucleus? For clarity, a nucleus is divided into two different type of nucleons, protons and neutrons.
-Nucleons can have two different states: spin up (protons) and spin down (neutrons).
-Actually, the spin is really the only thing that allow us to differentiate the two, since their mass is basically the same (neutrons have a little heavier mass).
-For each spin there's an isospin up and an isospin down (isospin measures the charge).
-An example of (impossible) nucleus decay is shown in figure \ref{fig:decay}.
+	The structure of the wave function is influenced by spin even if it doesn't appear in the Hamiltonian and can be used not only for electrons but for all subatomic/subnuclear particles.
 
-	\begin{figure}[htbp!]
- \centering
- \includegraphics[scale=0.20]{img_7}
- \caption{In this picture the $He^4$ nucleus is represented.
-					It it the most stable nucleus ($\alpha$particle).
-					The thing is that the difference in mass ($m_n > m_p$) $\Delta m \rightarrow \text{energy}$ is not sufficient to reach the higher energy state and become a proton.
-					Is there any other way? No, because of the spin theory.
-					So, even if in principle a neutron could decay into a proton, ultimately Pauli's exclusion principle does not allow to have the same spin.}
- \label{fig:decay}
-	\end{figure}
+		\subsubsection{Stable nuclei}
+		A nucleus is divided into two different type of nucleons, protons and neutrons.
+		Nucleons can have two different states: spin up (protons) and spin down (neutrons).
+		Actually, the spin is really the only thing that allow us to differentiate the two, since their mass is basically the same (neutrons have a little heavier mass).
+		For each spin there's an isospin up and an isospin down (isospin measures the charge).
+		An example of (impossible) nucleus decay is shown in figure \ref{fig:decay}.
+
+		\begin{figure}[htbp!]
+ 			\centering
+ 			\includegraphics[scale=0.20]{img_7}
+ 			\caption{In this picture the $He^4$ nucleus is represented.
+								It it the most stable nucleus ($\alpha$-particle).
+								The thing is that the difference in mass ($m_n > m_p$) $\Delta m \rightarrow \text{energy}$ is not sufficient to reach the higher energy state and become a proton.
+								Because of spin theory there is no other way that it can be.
+								So, even if in principle a neutron could decay into a proton, ultimately Pauli's exclusion principle does not allow to have the same spin.}
+ 			\label{fig:decay}
+		\end{figure}
 
 	\subsection{Quantum Entanglement}
 	In an external/mean potential, the Schr\"odinger equation has a potential of a single coordinate that depends on where that potential is located, thanks to the mean field approximation.
@@ -234,228 +239,259 @@ An example of (impossible) nucleus decay is shown in figure \ref{fig:decay}.
 	$$\hat{H}=-\frac{\hbar^2}{2m}\sum_{i}\nabla_i^2+\sum_{i=1}^NU(q_i)=\sum_i h_i$$
 
 	When $\hat{H}$ is separable into two parts, the wave function is the product of these two parts.
-	Consider N identical spin-0 bosons (simplest system that represents the sum of all possible permutations for $N > 2$):
-	$$\Psi(r_1, \dots, r_n)= \prod_K^n\varphi_n(r_i)=\varphi_1(r_1)\cdot \cdots\cdot \varphi_n(r_n)$$
 
-	If I swap two excited states eg., $\varphi_s(r_3)$ and $\varphi_p(r_1)$, I do not obtain the same wave function (I get $\varphi_s(r_1)$ and $\varphi_p(r_3)$) so they are antisymmetric.
-If I swap two ground states they stay the same (they are symmetric).
-This system is also used for distinguishable particles (boltzmanions) or identical particles in semiclassic regimes.
-	\newline
-	Consider now two identical fermions described by single-electron wave functions.
 
-	$$\Psi(r_1, s_1^2, r_2, s_2^2)=\varphi_{\uparrow}(r_1)\varphi_{\downarrow}(r_2)$$
+		\subsubsection{Identical bosons}
+		Consider N identical spin-0 bosons (simplest system that represents the sum of all possible permutations for $N > 2$):
 
-	We can prove that the wave function of the two different fermions (hence each one is described by a different spin state) system is antisymmetric.
-This is called \textbf{Slater determinant} for N>2 fermions.
+		$$\psi(r_1, \dots, r_n)= \prod_K^n\varphi_n(r_i)=\varphi_1(r_1)\cdot \cdots\cdot \varphi_n(r_n)$$
 
-	$$\Psi=\frac{1}{\sqrt{2}}\big(\varphi_{\uparrow}(r_1)\varphi_{\downarrow}(r_2)+\varphi_{\uparrow}(r_2)\varphi_{\downarrow}(r_1)\big)$$
+		If I swap two excited states eg., $\varphi_s(r_3)$ and $\varphi_p(r_1)$, I do not obtain the same wave function (I get $\varphi_s(r_1)$ and $\varphi_p(r_3)$) so they are antisymmetric.
+		If I swap two ground states they stay the same (they are symmetric).
+		This system is also used for distinguishable particles (boltzmanions) or identical particles in semiclassic regimes.
 
-	By swapping their indices
+		\subsubsection{Identical fermions}
+		Consider now two identical fermions described by single-electron wave functions.
 
-	$$\Psi'=\frac{1}{\sqrt{2}}\big(\varphi_{\uparrow}(r_2)\varphi_{\downarrow}(r_1)-\varphi_{\uparrow}(r_1)\varphi_{\downarrow}(r_2)\big)$$
+		$$\psi(r_1, s_1^2, r_2, s_2^2)=\varphi_{\uparrow}(r_1)\varphi_{\downarrow}(r_2)$$
 
-	And it's noticeable how $\Psi = -\Psi'$.
-The two functions are antisymmetric.
-	This represents a quantum superposition of states.
-In order to follow Pauli's principle, each state has a 50\% of probability to occur and when $r_1$ is $\uparrow$,  $r_2$ must necessarily be $\downarrow$.
-We found out that Pauli's principle \textbf{entangles}particles.
-In our case with two fermions, the state of particle n.2 is entangled to the state of particle 1.
+		We can prove that the wave function of the two different fermions (hence each one is described by a different spin state) system is antisymmetric.
+		This is called \textbf{Slater determinant} for N>2 fermions.
 
-	\begin{center}
-	\textbf{Quantum entanglement}: a physical phenomenon that occurs when a group of particles are generated, interact, or share spatial proximity in a way such that the quantum state of each particle of the group cannot be described independently of the state of the others, including when the particles are separated by a large distance.
-	\end{center}
+		$$\psi=\frac{1}{\sqrt{2}}\big(\varphi_{\uparrow}(r_1)\varphi_{\downarrow}(r_2)+\varphi_{\uparrow}(r_2)\varphi_{\downarrow}(r_1)\big)$$
 
-	The two particles are said to be an \textbf{EPR pair} (Einstein-Podolsky-Rosen) and the state of the two particles is called a \textbf{Bell state}.
-	If I measure spin 1, the wave function collapses into spin value 1 and spin 2 consequently collapses into spin value 2.
-	The concept of \textbf{quantum entanglement} has no correspondences in classical mechanics and is used to develop quantum computers.
-	In classical computers the iformation is carried on in one single state out of two (either the gate is open or is closed, binary system).
-In quantum computers I have N states, I have $2^N$ states entangled with each other at the same time.
-I can store much more information in $2^N$ compared to 1 \footnote{It may confuse a little, beacause we know that in a classical architecture, N bits can represent $2^N$ numbers.
-This formulation is not very correct and I will provide my own understanding on the matter.
-That is, with N bits we can ultimately have just one number, even if we have N possible ways to arrange the bits.
-Instead, a quantum architecture supports $2^N$ states \textit{simultaneously}.
-This more expressive power contributes to the idea of "quantum supremacy".}.
-	\newline
-	The antisymmetric equation is the determinant of this matrix:
+		By swapping their indices
 
-	$$\frac{1}{\sqrt{2}}\begin{pmatrix}\varphi_1(r_1)&\varphi_2(r_1)\\\varphi_1(r_2)&\varphi_2(r_2)\end{pmatrix}$$
+		$$\psi'=\frac{1}{\sqrt{2}}\big(\varphi_{\uparrow}(r_2)\varphi_{\downarrow}(r_1)-\varphi_{\uparrow}(r_1)\varphi_{\downarrow}(r_2)\big)$$
 
-	That can be generalized into
+		And it's noticeable how $\psi = -\psi'$.
+		The two functions are antisymmetric.
+		This represents a quantum superposition of states.
+		In order to follow Pauli's principle, each state has a $50\%$ of probability to occur and when $r_1$ is $\uparrow$,  $r_2$ must necessarily be $\downarrow$.
+		We found out that Pauli's principle \textbf{entangles} particles.
+		In our case with two fermions, the state of particle n.2 is entangled to the state of particle 1.
 
- $$\frac{1}{\sqrt{2}}\begin{pmatrix} \varphi_1(r_1)&\dots&\varphi_n(r_1)\\\dots& &\dots\\ \varphi_1(r_m)&\dots&\varphi_n(r_m) \end{pmatrix}$$
+		\begin{center}
+		\textbf{Quantum entanglement}: a physical phenomenon that occurs when a group of particles are generated, interact, or share spatial proximity in a way such that the quantum state of each particle of the group cannot be described independently of the state of the others, including when the particles are separated by a large distance.
+		\end{center}
 
-	This latter matrix is called \textbf{Slater matrix} and I can calculate Slater determinant that guarantees that the wave function is antisymmetric.
+		\subsubsection{Bell sate}
+		The two particles are said to be an \textbf{EPR pair} (Einstein-Podolsky-Rosen) and the state of the two particles is called a \textbf{Bell state}.
+		If I measure spin 1, the wave function collapses into spin value 1 and spin 2 consequently collapses into spin value 2.
+		The concept of \textbf{quantum entanglement} has no correspondences in classical mechanics and is used to develop quantum computers.
+		In classical computers the information is carried on in one single state out of two (either the gate is open or is closed, binary system).
+	In quantum computers I have N states, I have $2^N$ states entangled with each other at the same time.
+	I can store much more information in $2^N$ compared to 1 \footnote{With N bits in classical computer we can ultimately have just one number, even if we have N possible ways to arrange the bits.
+																																		Instead, a quantum architecture supports $2^N$ states \textit{simultaneously}.
+																																		This more expressive power contributes to the idea of "quantum supremacy".}.
+
+		\subsubsection{Slater matrix}
+		The antisymmetric equation is the determinant of this matrix:
+
+		$$\frac{1}{\sqrt{2}}\begin{pmatrix}\varphi_1(r_1)&\varphi_2(r_1)\\\varphi_1(r_2)&\varphi_2(r_2)\end{pmatrix}$$
+
+		That can be generalized into
+
+ 		$$\frac{1}{\sqrt{2}}\begin{pmatrix} \varphi_1(r_1)&\dots&\varphi_n(r_1)\\\dots& &\dots\\ \varphi_1(r_m)&\dots&\varphi_n(r_m) \end{pmatrix}$$
+
+		This latter matrix is called \textbf{Slater matrix} and I can calculate Slater determinant that guarantees that the wave function is antisymmetric.
 
 	\subsection{Mathematical formalism of Stern-Gerlach experiment}
 	The spin $\hat{S^2}$ doesn't have a classical correspondence, we cannot directly obtain a formula for $\hat{S^2}$ in classical mechanics.
 I must find objects that have two states.
 	Consider spin $1/2$ only and choose an Hillbert space and an operator that acts on it.
 Since a particle with $s=1/2$ can have two different states, the most natural choice for a Hillbert space would be \emph{$L^2$}.
-	The eigenstates of the z-components are:
 
-	$$\ket{\uparrow}=\begin{pmatrix}1\\0\end{pmatrix}\, \ket{\downarrow}=\begin{pmatrix}0\\1\end{pmatrix}$$
+		\subsubsection{Eigenstates of the z-component}
+		The eigenstates of the z-component are:
 
-	$\hat{S_x}$, $\hat{S_y}$, and $\hat{S_z}$ are represented by 2x2 matrices that must obey the commutation rule of $[\hat{S^2}\,,\,\hat{S_z}]=0$ and $[\hat{S_x}\,,\,\hat{S_y}]=i\hbar\hat{S_z}$
+		$$\ket{\uparrow}=\begin{pmatrix}1\\0\end{pmatrix}\, \ket{\downarrow}=\begin{pmatrix}0\\1\end{pmatrix}$$
 
-	\textbf{Pauli matrices:}
+		$\hat{S_x}$, $\hat{S_y}$, and $\hat{S_z}$ are represented by 2x2 matrices that must obey the commutation rule of $[\hat{S^2}\,,\,\hat{S_z}]=0$ and $[\hat{S_x}\,,\,\hat{S_y}]=i\hbar\hat{S_z}$
 
-	$$\hat{S_x}=\frac{\hbar}{2}\begin{pmatrix}0&1\\1&0\end{pmatrix}\;\,\hat{S_y}=\frac{\hbar}{2}\begin{pmatrix}0&-i\\i&0\end{pmatrix}\;\,	\hat{S_z}=\frac{\hbar}{2}\begin{pmatrix}1&0\\0&-1\end{pmatrix}$$
+		\subsubsection{Pauli's matrices}
 
-	The normalized eigenstates for the x-component are:
+		$$\hat{S_x}=\frac{\hbar}{2}\begin{pmatrix}0&1\\1&0\end{pmatrix}\;\,\hat{S_y}=\frac{\hbar}{2}\begin{pmatrix}0&-i\\i&0\end{pmatrix}\;\,	\hat{S_z}=\frac{\hbar}{2}\begin{pmatrix}1&0\\0&-1\end{pmatrix}$$
 
-	$$\ket{\rightarrow}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\1\end{pmatrix}\;\,\ket{\leftarrow}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\-1\end{pmatrix}\,$$
+		\subsubsection{Normalized eigenstates for the x-component}
+		The normalized eigenstates for the x-component are:
 
-	We can find the conditional probability of finding spin up with the condition of being in a state of spin left (but also spin up given spin up, etc.).
+		$$\ket{\rightarrow}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\1\end{pmatrix}\;\,\ket{\leftarrow}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\-1\end{pmatrix}\,$$
 
-	$$P(\ket{\uparrow}|\ket{\leftarrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&0\end{pmatrix}\begin{pmatrix}1\\-1\end{pmatrix}\bigg)^2=\frac{1}{2}$$
+		\subsubsection{Conditional probability of spin given another}
+		We can find the conditional probability of finding spin up with the condition of being in a state of spin left (but also spin up given spin up, etc.).
 
-	$$P(\ket{\uparrow}|\ket{\uparrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&0\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}\bigg)^2=1$$
+		$$P(\ket{\uparrow}|\ket{\leftarrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&0\end{pmatrix}\begin{pmatrix}1\\-1\end{pmatrix}\bigg)^2=\frac{1}{2}$$
 
-	$$P(\ket{\leftarrow}|\ket{\uparrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&-1\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}\bigg)^2=\frac{1}{2}$$
+		$$P(\ket{\uparrow}|\ket{\uparrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&0\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}\bigg)^2=1$$
 
-	This is also the mathematical formalism that represents the Stern Gerlach experiment.
-In fact, if we calculate $P(\ket{\uparrow}|\ket{\leftarrow}) = \frac{1}{2}$, then $P(\ket{\uparrow}|\ket{\uparrow}) = 1$, we will get again $P(\ket{\uparrow}|\ket{\leftarrow}) = \frac{1}{2}$.
- \\
-	We can calculate $\hat{S^2} = \hat{S_x}^2+\hat{S_y}^2+\hat{S_z}^2$ that results in a sum of identity matrices, in fact
+		$$P(\ket{\leftarrow}|\ket{\uparrow})=\bigg(\frac{1}{\sqrt{2}}\begin{pmatrix}1&-1\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}\bigg)^2=\frac{1}{2}$$
 
-	$$\hat{S^2}=\frac{3}{4}\hbar^2\big(\mathds{1}_e\big)$$
+		This is also the mathematical formalism that represents the Stern Gerlach experiment.
+		In fact, if we calculate $P(\ket{\uparrow}|\ket{\leftarrow}) = \frac{1}{2}$, then $P(\ket{\uparrow}|\ket{\uparrow}) = 1$, we will get again $P(\ket{\uparrow}|\ket{\leftarrow}) = \frac{1}{2}$.
 
-	The identity matrix $\\mathds{1}_e$ allows $\hat{S^2}$ to commute with every component of the spin operator.
+		\subsubsection{Total spin}
+		We can calculate $\hat{S^2} = \hat{S_x}^2+\hat{S_y}^2+\hat{S_z}^2$ that results in a sum of identity matrices, in fact
+
+			$$\hat{S^2}=\frac{3}{4}\hbar^2\big(\mathds{1}_e\big)$$
+
+		The identity matrix $\mathds{1}_e$ allows $\hat{S^2}$ to commute with every component of the spin operator.
 
 	\subsection{Tensor product states}
-	Up until now, we learned how to deal with spin's degrees of freedom only.
-But how do we integrate spin in the $L_2$ space of the wave function? We'll use the tensor product.
-Given two vectors, the definition of tensor product is:
 
-	$$\begin{pmatrix}a_1\\a_2\\\dots\\a_n\end{pmatrix}\otimes\begin{pmatrix}b_1\\b_2\\\dots\\b_n\end{pmatrix}=\begin{pmatrix}a_1b_1\\a_1b_2\\\dots\\a_1b_n\\a_2b_1\\a_2b_2\\\dots\\a_mb_n\end{pmatrix}$$
 
-	Tensor product is obtained by multiplying each $a$ term with every $b$ term.
-It creates another vector space (a larger Hillbert space) that is used to combine spins for many particles, spin and particle space of one particle ect.
-	Tensor product is used to describe the \emph{combination of two quantum states}.
+		\subsubsection{Tensor product}
+		Up until now, we learned how to deal with spin's degrees of freedom only.
+		But how do we integrate spin in the $L_2$ space of the wave function? We'll use the tensor product.
+		Given two vectors, the definition of tensor product is:
 
-	$$\text{Quantum state of particle 1: } \begin{pmatrix}\alpha_1\\\alpha_2\end{pmatrix}=\alpha_1\begin{pmatrix}1\\0\end{pmatrix}+\alpha_2\begin{pmatrix}0\\1\end{pmatrix}=\alpha_1\ket{\uparrow}+\alpha_2\ket{\downarrow}=\vec{\ket\alpha}$$
+		$$\begin{pmatrix}a_1\\a_2\\\dots\\a_n\end{pmatrix}\otimes\begin{pmatrix}b_1\\b_2\\\dots\\b_n\end{pmatrix}=\begin{pmatrix}a_1b_1\\a_1b_2\\\dots\\a_1b_n\\a_2b_1\\a_2b_2\\\dots\\a_mb_n\end{pmatrix}$$
 
-	$$\text{Quantum state of particle 2: } \begin{pmatrix}\beta_1\\\beta_2\end{pmatrix}=\beta_1\begin{pmatrix}1\\0\end{pmatrix}+\beta_2\begin{pmatrix}0\\1\end{pmatrix}=\beta_1\ket{\uparrow}+\beta_2\ket{\downarrow}=\vec{\ket{\beta}}$$
+		Tensor product is obtained by multiplying each $a$ term with every $b$ term.
+		It creates another vector space (a larger Hillbert space) that is used to combine spins for many particles, spin and particle space of one particle ect.
+		Tensor product is used to describe the \emph{combination of two quantum states}.
 
-	These two single quantum states represent qubits.
+		\subsubsection{Combination of two quantum states}
 
-	$$\text{Combination of the two states: }\vec{\ket{\alpha}}\otimes\vec{\ket{\beta}}\equiv{\ket{\vec{\alpha}\vec{\beta}}}=\begin{pmatrix}\alpha_1\beta_1\\\alpha_1\beta_2\\\alpha_2\beta_1\\\alpha_2\beta_2\end{pmatrix}$$
+		$$\text{Quantum state of particle 1: } \begin{pmatrix}\alpha_1\\\alpha_2\end{pmatrix}=\alpha_1\begin{pmatrix}1\\0\end{pmatrix}+\alpha_2\begin{pmatrix}0\\1\end{pmatrix}=\alpha_1\ket{\uparrow}+\alpha_2\ket{\downarrow}=\vec{\ket\alpha}$$
 
-	The combination of the two states creates a wavefunction which amplitude corresponds to the observation of all the combinations of the particles.
-For example, $\alpha_1\,\beta_1$ is the amplitude of observing the first particle $\uparrow$ and the second particle $\uparrow$.
-	We can build the basis for a vector product of two particles and with this we can describe four different states since $\mathbb{R}^2\otimes\mathbb{R}^2=\mathbb{R}^4$
+		$$\text{Quantum state of particle 2: } \begin{pmatrix}\beta_1\\\beta_2\end{pmatrix}=\beta_1\begin{pmatrix}1\\0\end{pmatrix}+\beta_2\begin{pmatrix}0\\1\end{pmatrix}=\beta_1\ket{\uparrow}+\beta_2\ket{\downarrow}=\vec{\ket{\beta}}$$
 
-	$$\begin{pmatrix}1\\0\\0\\0\end{pmatrix}=\ket{\uparrow\uparrow}\begin{matrix}\alpha_1=1\\\beta_1=1\end{matrix}\bigg| \;\;\begin{pmatrix}0\\1\\0\\0\end{pmatrix}=\ket{\uparrow\downarrow}\begin{matrix}\alpha_1=1\\\beta_2=1\end{matrix}\bigg| \;\;\begin{pmatrix}0\\0\\1\\0\end{pmatrix}=\ket{\downarrow\uparrow}\begin{matrix}\alpha_2=1\\\beta_1=1\end{matrix}\bigg| \;\;\begin{pmatrix}0\\0\\0\\1\end{pmatrix}=\ket{\downarrow\downarrow}\begin{matrix}\alpha_2=1\\\beta_2=1\end{matrix}\bigg|$$
+		These two single quantum states represent qubits.
 
-	We can also derive the most general quantum mechanical state description of the EPR pair:
+		$$\text{Combination of the two states: }\vec{\ket{\alpha}}\otimes\vec{\ket{\beta}}\equiv{\ket{\vec{\alpha}\vec{\beta}}}=\begin{pmatrix}\alpha_1\beta_1\\\alpha_1\beta_2\\\alpha_2\beta_1\\\alpha_2\beta_2\end{pmatrix}$$
 
-	$$\ket{\vec{\alpha}\vec{\beta}}=\alpha_1\beta_1\ket{\uparrow\uparrow}+\alpha_1\beta_2\ket{\uparrow\downarrow}+\alpha_2\beta_1\ket{\downarrow\uparrow}+\alpha_2\beta_2\ket{\downarrow\downarrow}$$
+		\subsubsection{Resulting wave-function}
+		The combination of the two states creates a wave function which amplitude corresponds to the observation of all the combinations of the particles.
+		For example, $\alpha_1\,\beta_1$ is the amplitude of observing the first particle $\uparrow$ and the second particle $\uparrow$.
+		We can build the basis for a vector product of two particles and with this we can describe four different states since $\mathbb{R}^2\otimes\mathbb{R}^2=\mathbb{R}^4$
 
-	In this way I can carry on information about multiple state simultaneously.
-	\newline
-	Given $\varphi(x)$ wavefunction lives in a \emph{$L^2$} Hillbert space.
+		$$\begin{pmatrix}1\\0\\0\\0\end{pmatrix}=\ket{\uparrow\uparrow}\begin{matrix}\alpha_1=1\\\beta_1=1\end{matrix}\bigg| \;\;\begin{pmatrix}0\\1\\0\\0\end{pmatrix}=\ket{\uparrow\downarrow}\begin{matrix}\alpha_1=1\\\beta_2=1\end{matrix}\bigg| \;\;\begin{pmatrix}0\\0\\1\\0\end{pmatrix}=\ket{\downarrow\uparrow}\begin{matrix}\alpha_2=1\\\beta_1=1\end{matrix}\bigg| \;\;\begin{pmatrix}0\\0\\0\\1\end{pmatrix}=\ket{\downarrow\downarrow}\begin{matrix}\alpha_2=1\\\beta_2=1\end{matrix}\bigg|$$
 
-	$$\varphi(x)\otimes(\alpha\ket{\uparrow}+\beta\ket{\downarrow})=\begin{pmatrix}\alpha\varphi(x)\\\beta\varphi(x)\end{pmatrix}=\begin{pmatrix}\varphi_{\uparrow}(x)\\\varphi_{\downarrow}(x)\end{pmatrix}$$
+		We can also derive the most general quantum mechanical state description of the EPR pair:
 
-	This latter matrix is called a \textbf{spinor}, which is a wavefunction that includes spin amplitude (usually wavefunction doesn't have information about spin of the particle).
-	Let's consider a \underline{non-entangled state}.
+		$$\ket{\vec{\alpha}\vec{\beta}}=\alpha_1\beta_1\ket{\uparrow\uparrow}+\alpha_1\beta_2\ket{\uparrow\downarrow}+\alpha_2\beta_1\ket{\downarrow\uparrow}+\alpha_2\beta_2\ket{\downarrow\downarrow}$$
 
-	$$\ket{\Psi}=\frac{1}{\sqrt{2}}\ket{\uparrow\uparrow}+\frac{1}{\sqrt{2}}\ket{\uparrow\downarrow}=\ket{\alpha\uparrow}$$
+		In this way I can carry on information about multiple state simultaneously.
 
-	The two measures are independent of each other, I can find particle 2 with a probability which is independent of the measurement of particle 1.
-It is said to be factorizable.
-	Let's now consider an \underline{entangled state}:
+		\subsubsection{Spinor}
+		Given $\varphi(x)$ wavefunction lives in a \emph{$L^2$} Hillbert space.
 
-	$$\ket{\Psi}=\frac{1}{\sqrt{2}}\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big) = \begin{pmatrix}0\\\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\\0\end{pmatrix}$$
+		$$\varphi(x)\otimes(\alpha\ket{\uparrow}+\beta\ket{\downarrow})=\begin{pmatrix}\alpha\varphi(x)\\\beta\varphi(x)\end{pmatrix}=\begin{pmatrix}\varphi_{\uparrow}(x)\\\varphi_{\downarrow}(x)\end{pmatrix}$$
 
-	Note that the expression cannot be factorized now.
-We can generate an operator that generates entangled states:
+		This latter matrix is called a \textbf{spinor}, which is a wave function that includes spin amplitude (usually wave function doesn't have information about spin of the particle).
 
-	$$\frac{\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big)}{\sqrt{2}}=\frac{1}{\sqrt{2}}\begin{pmatrix}0\\1\\1\\0\end{pmatrix}\bigg(U\bigg)\begin{pmatrix}1\\0\\0\\0\end{pmatrix}$$
+			\paragraph{Non-entangled state}
 
-	U is called \textbf{quantum gate} in quantum computing.
-	Quantum gates can be defined as a \textbf{time evolution operators} that acts on the function to solve time-dependent Schr\"odinger equation and provide the dynamics of the system.
-	$\hat{U}(\Delta t) = e^{i\hat{H}\Delta t}$ at state $\ket{\Psi(0)}$ can be approximated with $(1-\hat{H}\Delta t)$ and this latter can be solved by a quantum gate to give out $\ket{\Psi(t)}$.
-This operation cannot be solved by classical computers, dynamics is naturally given out by quantum computers.
+			$$\ket{\psi}=\frac{1}{\sqrt{2}}\ket{\uparrow\uparrow}+\frac{1}{\sqrt{2}}\ket{\uparrow\downarrow}=\ket{\alpha\uparrow}$$
 
-	\textit{Example: A three-electrons system}
-	Remember that thanks to the mean field approximation (needed for many-body calculations) we have the advantage that:
+			The two measures are independent of each other, I can find particle 2 with a probability which is independent of the measurement of particle 1.
+			It is said to be factorizable.
 
-	$$\sum_{i<j} U(r_{ij}) \simeq \sum_i \bar{U}(r_i)$$
+			\paragraph{Entangled state}
 
-	Making the computation piece-wise and therefore, much easier to solve.
-	The Hamiltonian becomes the sum of many small Hamiltonians:
+			$$\ket{\psi}=\frac{1}{\sqrt{2}}\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big) = \begin{pmatrix}0\\\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\\0\end{pmatrix}$$
 
-	$$H = \sum_{ij} h_i \rightarrow \phi(q_1, \dots, q_n) = \prod_i \phi(q_i)$$
+			Note that the expression cannot be factorized now.
 
-	With $q_i = (\bar{r}_i, S^z_i)$ representing the position.
-The thing is that a simple product generally does not respect the spin and its rules (e.g.Pauli blocking).
-This factorization works well for distinguishable particles, like in Boltzmanions systems.
-These are almost classical settings.
-\\
-	Let's assume we have he following systems:
+		\subsubsection{Generation of entangled states}
+		We can generate an operator that generates entangled states:
 
-	$$\textbf{Bosons} \;\; \frac{1}{\sqrt{2}}(\phi_0(r_1)\phi_1(r_2) + \phi_0(r_2)\phi_1(r_1))$$
+		$$\frac{\big(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\big)}{\sqrt{2}}=\frac{1}{\sqrt{2}}\begin{pmatrix}0\\1\\1\\0\end{pmatrix}\bigg(U\bigg)\begin{pmatrix}1\\0\\0\\0\end{pmatrix}$$
 
-	$$\textbf{Fermions} \;\; \frac{1}{\sqrt{2}}(\phi_0(r_1)\phi_1(r_2) + \phi_0(r_2)\phi_1(r_1))$$
+			\paragraph{Quantum gates}
+			$U$ is called \textbf{quantum gate} in quantum computing.
+			Quantum gates can be defined as a \textbf{time evolution operators} that acts on the function to solve time-dependent Schr\"odinger equation and provide the dynamics of the system.
+			$\hat{U}(\Delta t) = e^{i\hat{H}\Delta t}$ at state $\ket{\psi(0)}$ can be approximated with $(1-\hat{H}\Delta t)$ and this latter can be solved by a quantum gate to give out $\ket{\psi(t)}$.
+			This operation cannot be solved by classical computers, dynamics is naturally given out by quantum computers.
 
-	While for bosons for systems with $N>2$ the sum of permutations is sufficient (symmetry), for fermions we'll need to calculate the Slater determinant (since it's guaranteed that the wave-function is antisymmetric).
-\\
-	For this application ($N = 3 $) we need two energy levels.
-Indeed if we try to force the three particles in the same s-state, the Slater determinant will eventually go to zero.
+		\subsubsection{Three-electrons system}
+		Remember that thanks to the mean field approximation (needed for many-body calculations) we have the advantage that:
 
-	\begin{align*}
-		\det\frac{1}{\sqrt{N!}}&\begin{pmatrix}\phi_s^\uparrow(r_1)&\phi_s^\uparrow(r_2)&\phi_s^\uparrow(r_3)\\\phi_s^\downarrow(r_1)&\phi_s^\downarrow(r_2)&\phi_s^\downarrow(r_3)\\\phi_p^\uparrow(r_1)&\phi_p^\uparrow(r_2)&\phi_p^\uparrow(r_3)\\\end{pmatrix}=\\
-		=\frac{1}{\sqrt{N!}}\big[&\phi_s^\uparrow(r_1)\phi_s^\downarrow(r_2)\phi_p^\uparrow(r_3)-\phi_s^\uparrow(r_1)\phi_s^\downarrow(r_3)\phi_p^\uparrow(r_2)-\\
-		&\phi_s^\uparrow(r_2)\phi_s^\uparrow(r_3)\phi_p^\uparrow(r_1)+\phi_s^\uparrow(r_2)\phi_s^\downarrow(r_1)\phi_p^\uparrow(r_3)+\phi_s^\uparrow(r_3)\phi_s^\downarrow(r_1)\phi_p^\uparrow(r_2)-\phi_s^\uparrow(r_3)\phi_s^\downarrow(r_2)\phi_p^\uparrow(r_1)\big]
-	\end{align*}
+		$$\sum_{i<j} U(r_{ij}) \simeq \sum_i \bar{U}(r_i)$$
 
-	Six-terms determinant, complicated to evaluate!\\
-	\newline
-	\textit{Example: Application of the mean field approximation to calculate the density of electrons in a point ($N=2$)}\\
-	\newline
-	We can define a \textit{density operator}
+		Making the computation piece-wise and therefore, much easier to solve.
+		The Hamiltonian becomes the sum of many small Hamiltonians:
 
-	$$\hat{\rho}(x)=\sum_i\delta(x-r_i)$$
+		$$H = \sum_{ij} h_i \rightarrow \phi(q_1, \dots, q_n) = \prod_i \phi(q_i)$$
 
-	And apply it to a wave function that defines a point with two electrons (basically we want to calculate how much space these electrons occupy).
-We want to calculate $\mel{\Psi}{\hat{\rho}(x)}{\Psi}$
-	The wave function is:
+		With $q_i = (\bar{r}_i, S^z_i)$ representing the position.
+		The thing is that a simple product generally does not respect the spin and its rules (e.g.Pauli blocking).
+		This factorization works well for distinguishable particles, like in Boltzmanions systems.
+		These are almost classical settings.
 
-	$$\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=\frac{1}{\sqrt{2}}\big(\phi_\uparrow(r_1)\phi_\downarrow(r_2)-\phi_\downarrow(r_1)\phi_\uparrow(r_2)\big)$$
+		\subsubsection{Two particle systems}
+		Let's assume we have the following systems:
 
-	\marginpar{\textit{This is a 6-dim integral}}
+		$$\textbf{Bosons} \;\; \frac{1}{\sqrt{2}}(\phi_0(r_1)\phi_1(r_2) + \phi_0(r_2)\phi_1(r_1))$$
 
-	\begin{align*}
-		\mel{\Psi}{\hat{\rho}(x)}{\Psi}=\frac{1}{2}\int &d\vec{r_1}d\vec{r_2} \Psi^*(\vec{r_1},\vec{r_2},s_1^z,s_2^z)\cdot\bigg(\sum_i \delta(\vec{x}-\vec{r_i})\bigg)\cdot\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=\\
-		=\frac{1}{2}\int &d\vec{r_1}d\vec{r_2}\big(\phi^*_\uparrow(r_1)\phi^*_\downarrow(r_2)-\phi^*_\downarrow(r_1)\phi^*_\uparrow(r_2)\big)\cdot\big(\delta(\vec{x}-\vec{r_1})+\delta(\vec{x}-\vec{r_2})\big)\cdot\big(\phi_\uparrow(r_1)\phi_\downarrow(r_2)-\phi_\downarrow(r_1)\phi_\uparrow(r_2)\big)\\
-		=\frac{1}{2}\int_1&\int_2\bigg[\phi_1^{*\uparrow}\phi_2^{*\downarrow}\delta_1\phi_1^\uparrow\phi_2^\downarrow+\phi_1^{*\uparrow}\phi_2^{*\downarrow}\delta_2\phi_1^\uparrow\phi_2^\downarrow-\phi_1^{*\uparrow}\phi_2^{*\downarrow}\delta_1\phi_2^\uparrow\phi_1^\downarrow-\phi_1^{*\uparrow}\phi_2^{*\downarrow}\delta_2\phi_1^\downarrow\phi_2^\uparrow-\\
-											&-\phi_1^{*\downarrow}\phi_2^{*\uparrow}\delta_1\phi_1^\uparrow\phi_2^\downarrow\phi_1^{*\downarrow}\phi_2^{*\uparrow}\delta_2\phi_1^\uparrow\phi_2^\downarrow+\phi_1^{*\downarrow}\phi_2^{*\uparrow}\delta_1\phi_1^\downarrow\phi_2^\uparrow+\phi_1^{*\downarrow}\phi_2^{*\uparrow}\delta_2\phi_1^\downarrow\phi_2^\uparrow\bigg]d\vec{r_1}d\vec{r_2}
-	\end{align*}
+		$$\textbf{Fermions} \;\; \frac{1}{\sqrt{2}}(\phi_0(r_1)\phi_1(r_2) + \phi_0(r_2)\phi_1(r_1))$$
 
-	Now note that when the operator acts, e.g., on the electron 1, the remaining $\int \phi_2^{*\uparrow}\phi_2^\uparrow d\vec{r_2}=1$
+		While for bosons for systems with $N>2$ the sum of permutations is sufficient (symmetry), for fermions we'll need to calculate the Slater determinant (since it's guaranteed that the wave-function is antisymmetric).
+		For this application ($N = 3$) we need two energy levels.
+		Indeed if we try to force the three particles in the same s-state, the Slater determinant will eventually go to zero.
 
-	\begin{align*}
-		=\frac{1}{2}\int&\phi_1^{*\uparrow}\phi_1^\uparrow \,\delta_1\, d\vec{r_1}+\int \phi_2^{*\downarrow}\phi_2^\downarrow\, \delta_2\, d\vec{r_2}-\int \phi_1^{*\uparrow}\phi_1^\downarrow d\vec{r_1}-\int \phi_2^{*\downarrow}\phi_2^\uparrow d\vec{r_2}-\int \phi_1^{*\downarrow}\phi_1^\uparrow d\vec{r_1}-\\
-										&-\int \phi_2^{*\uparrow}\phi_2^\downarrow d\vec{r_2}+\int \phi_1^{*\downarrow}\phi_1^\downarrow\, \delta_1\, d\vec{r_1}+\int \phi_2^{*\uparrow}\phi_2^\uparrow\, \delta_2\, d\vec{r_2}
-	\end{align*}
+		\begin{align*}
+			\det\frac{1}{\sqrt{N!}}&\begin{pmatrix}\phi_s^\uparrow(r_1)&\phi_s^\uparrow(r_2)&\phi_s^\uparrow(r_3)\\\phi_s^\downarrow(r_1)&\phi_s^\downarrow(r_2)&\phi_s^\downarrow(r_3)\\\phi_p^\uparrow(r_1)&\phi_p^\uparrow(r_2)&\phi_p^\uparrow(r_3)\\\end{pmatrix}=\\
+			=\frac{1}{\sqrt{N!}}\big[&\phi_s^\uparrow(r_1)\phi_s^\downarrow(r_2)\phi_p^\uparrow(r_3)-\phi_s^\uparrow(r_1)\phi_s^\downarrow(r_3)\phi_p^\uparrow(r_2)-\\
+			&\phi_s^\uparrow(r_2)\phi_s^\uparrow(r_3)\phi_p^\uparrow(r_1)+\phi_s^\uparrow(r_2)\phi_s^\downarrow(r_1)\phi_p^\uparrow(r_3)+\phi_s^\uparrow(r_3)\phi_s^\downarrow(r_1)\phi_p^\uparrow(r_2)-\phi_s^\uparrow(r_3)\phi_s^\downarrow(r_2)\phi_p^\uparrow(r_1)\big]
+		\end{align*}
 
-	We can recall the fact that by construction $\phi_1^{*\uparrow}\phi_1^\uparrow=|\phi_1^\uparrow|^2$  and this $|\phi_1^\uparrow|^2$ corresponds to the probability of finding electron 1 with spin $\uparrow$ ($P^\uparrow(x)$).
-Same applies to electron 2.
+		This is a six-term determinant and is complicated to evaluate.
 
-	\begin{align*}
-		=\frac{1}{2}\int&|\phi_1^\uparrow|^2 \,\delta_1\, d\vec{r_1}+\int |\phi_2^\downarrow|^2\, \delta_2\, d\vec{r_2}-\int \phi_1^{*\uparrow}\phi_1^\downarrow d\vec{r_1}-\int \phi_2^{*\downarrow}\phi_2^\uparrow d\vec{r_2}-\int \phi_1^{*\downarrow}\phi_1^\uparrow d\vec{r_1}-\\
-										&-\int \phi_2^{*\uparrow}\phi_2^\downarrow d\vec{r_2}+\int |\phi_1^\downarrow|^2\, \delta_1\, d\vec{r_1}+\int |\phi_2^\uparrow|^2\, \delta_2\, d\vec{r_2}
-	\end{align*}
 
-	The integrals with an electron present with opposite spins $\int \phi_1^{*\uparrow}\phi_1^\downarrow d\vec{r_1}$ (aka the integrals with negative signs) represent the probablity of finding the particle in state $\uparrow$ \textbf{and} $\downarrow$ that is zero, so they cancel.
-Mind that the contribution from the entanglement of the two states doesn't occur within observables so the inner product is zero.
-Fermions, though, must be entangled to give an antisymmetric wavefunction.
-	By knowing that $\int\,dx\, g(x)\delta(x-x_0)=g(x_0)$ and by considering that there's no point in distinguishing the two electrons for anything but their spins (they have same mass and charge), we can say that:
-	\[P_1^\uparrow(x)=P_2^\uparrow(x)=P^\uparrow(x)\]
-	\[P_1^\downarrow(x)=P_2^\downarrow(x)=P^\downarrow(x)\]
-	Hence the probability density becomes
+		\subsubsection{Application of the mean-field approximation to calculate the density of electrons in a point with $N=2$}
 
-	$$\mel{\Psi}{\hat{\rho}(x)}{\Psi}=\frac{1}{2}\bigg[P^\uparrow(x)+P^\uparrow(x)+P^\downarrow(x)+P^\downarrow(x)\bigg]=P^\uparrow(x)+P^\downarrow(x)$$
+			\paragraph{Density operator}
+			We can define a \textit{density operator}
 
-	Either a particle is spin up or spin down in $x$.
+			$$\hat{\rho}(x)=\sum_i\delta(x-r_i)$$
+
+			And apply it to a wave function that defines a point with two electrons (basically we want to calculate how much space these electrons occupy).
+			We want to calculate $\mel{\psi}{\hat{\rho}(x)}{\psi}$
+			The wave function is:
+
+			$$\psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=\frac{1}{\sqrt{2}}\big(\phi_\uparrow(r_1)\phi_\downarrow(r_2)-\phi_\downarrow(r_1)\phi_\uparrow(r_2)\big)\qquad\text{Six-dimensional integra}$$
+
+
+			\begin{align*}
+				\mel{\psi}{\hat{\rho}(x)}{\psi}=\frac{1}{2}\int &d\vec{r_1}d\vec{r_2} \psi^*(\vec{r_1},\vec{r_2},s_1^z,s_2^z)\cdot\bigg(\sum_i \delta(\vec{x}-\vec{r_i})\bigg)\cdot\psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=\\
+				=\frac{1}{2}\int &d\vec{r_1}d\vec{r_2}\big(\phi^*_\uparrow(r_1)\phi^*_\downarrow(r_2)-\phi^*_\downarrow(r_1)\phi^*_\uparrow(r_2)\big)\cdot\big(\delta(\vec{x}-\vec{r_1})+\delta(\vec{x}-\vec{r_2})\big)\cdot\big(\phi_\uparrow(r_1)\phi_\downarrow(r_2)-\phi_\downarrow(r_1)\phi_\uparrow(r_2)\big)\\
+				=\frac{1}{2}\int_1&\int_2\bigg[\phi_1^{*\uparrow}\phi_2^{*\downarrow}\delta_1\phi_1^\uparrow\phi_2^\downarrow+\phi_1^{*\uparrow}\phi_2^{*\downarrow}\delta_2\phi_1^\uparrow\phi_2^\downarrow-\phi_1^{*\uparrow}\phi_2^{*\downarrow}\delta_1\phi_2^\uparrow\phi_1^\downarrow-\phi_1^{*\uparrow}\phi_2^{*\downarrow}\delta_2\phi_1^\downarrow\phi_2^\uparrow-\\
+													&-\phi_1^{*\downarrow}\phi_2^{*\uparrow}\delta_1\phi_1^\uparrow\phi_2^\downarrow\phi_1^{*\downarrow}\phi_2^{*\uparrow}\delta_2\phi_1^\uparrow\phi_2^\downarrow+\phi_1^{*\downarrow}\phi_2^{*\uparrow}\delta_1\phi_1^\downarrow\phi_2^\uparrow+\phi_1^{*\downarrow}\phi_2^{*\uparrow}\delta_2\phi_1^\downarrow\phi_2^\uparrow\bigg]d\vec{r_1}d\vec{r_2}
+			\end{align*}
+
+			\paragraph{Action of an operator}
+			Now note that when the operator acts, e.g., on the electron 1, the remaining $\int \phi_2^{*\uparrow}\phi_2^\uparrow d\vec{r_2}=1$
+
+			\begin{align*}
+				=\frac{1}{2}\int&\phi_1^{*\uparrow}\phi_1^\uparrow \,\delta_1\, d\vec{r_1}+\int \phi_2^{*\downarrow}\phi_2^\downarrow\, \delta_2\, d\vec{r_2}-\int \phi_1^{*\uparrow}\phi_1^\downarrow d\vec{r_1}-\int \phi_2^{*\downarrow}\phi_2^\uparrow d\vec{r_2}-\int \phi_1^{*\downarrow}\phi_1^\uparrow d\vec{r_1}-\\
+												&-\int \phi_2^{*\uparrow}\phi_2^\downarrow d\vec{r_2}+\int \phi_1^{*\downarrow}\phi_1^\downarrow\, \delta_1\, d\vec{r_1}+\int \phi_2^{*\uparrow}\phi_2^\uparrow\, \delta_2\, d\vec{r_2}
+			\end{align*}
+
+			We can recall the fact that by construction $\phi_1^{*\uparrow}\phi_1^\uparrow=|\phi_1^\uparrow|^2$  and this $|\phi_1^\uparrow|^2$ corresponds to the probability of finding electron 1 with spin $\uparrow$ ($P^\uparrow(x)$).
+			Same applies to electron 2.
+
+			\begin{align*}
+				=\frac{1}{2}\int&|\phi_1^\uparrow|^2 \,\delta_1\, d\vec{r_1}+\int |\phi_2^\downarrow|^2\, \delta_2\, d\vec{r_2}-\int \phi_1^{*\uparrow}\phi_1^\downarrow d\vec{r_1}-\int \phi_2^{*\downarrow}\phi_2^\uparrow d\vec{r_2}-\int \phi_1^{*\downarrow}\phi_1^\uparrow d\vec{r_1}-\\
+												&-\int \phi_2^{*\uparrow}\phi_2^\downarrow d\vec{r_2}+\int |\phi_1^\downarrow|^2\, \delta_1\, d\vec{r_1}+\int |\phi_2^\uparrow|^2\, \delta_2\, d\vec{r_2}
+			\end{align*}
+
+			\paragraph{Conclusion}
+			The integrals with an electron present with opposite spins $\int \phi_1^{*\uparrow}\phi_1^\downarrow d\vec{r_1}$ (the integrals with negative signs) represent the probability of finding the particle in state $\uparrow$ \textbf{and} $\downarrow$ that is zero, so they cancel.
+			Mind that the contribution from the entanglement of the two states doesn't occur within observables so the inner product is zero.
+			Fermions, though, must be entangled to give an antisymmetric wave function.
+			By knowing that $\int\,dx\, g(x)\delta(x-x_0)=g(x_0)$ and by considering that there's no point in distinguishing the two electrons for anything but their spins (they have same mass and charge), we can say that:
+
+			\begin{multicols}{2}
+				\begin{itemize}
+					\item $P_1^\uparrow(x)=P_2^\uparrow(x)=P^\uparrow(x)$
+					\item $P_1^\downarrow(x)=P_2^\downarrow(x)=P^\downarrow(x)$
+				\end{itemize}
+			\end{multicols}
+
+			Hence the probability density becomes
+
+			$$\mel{\psi}{\hat{\rho}(x)}{\psi}=\frac{1}{2}\bigg[P^\uparrow(x)+P^\uparrow(x)+P^\downarrow(x)+P^\downarrow(x)\bigg]=P^\uparrow(x)+P^\downarrow(x)$$
+
+			Either a particle is spin up or spin down in $x$.
