@@ -167,7 +167,7 @@ $E_0\gg \varepsilon$ because of the energy barrier due to $H_{mn}$.
 We reduced a complex problem to a linear algebra problem: $\hat{H}\psi=E\psi \rightarrow H_{mn}C_n^{(l)}=E_lC_n^{(l)}$.
 
 	\subsection{Ground state}
-	In the ground state tere is a $5-\%$ probability of finding the particle in the left part and $50\%$ of finding it in the right one.
+	In the ground state there is a $5-\%$ probability of finding the particle in the left part and $50\%$ of finding it in the right one.
 
 $$\begin{pmatrix}1 & -\frac{\varepsilon}{E_0}\\-\frac{\varepsilon}{E_0} & 1\end{pmatrix}\begin{pmatrix}1\\1\end{pmatrix}=\frac{1}{\sqrt{2}}\begin{pmatrix}1-\frac{\varepsilon}{E_0}\\1-\frac{\varepsilon}{E_0}\end{pmatrix}$$
 
@@ -333,7 +333,7 @@ If given two functions $\psi_0$ and $\psi_1$ such that they have respectively ex
 
 	\subsection{Quantum harmonic oscillator}
 	Let's use the quantum harmonic oscillator to determine the steps necessary to perform this approximation method.
-	Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2=\braket{T}+\braket{U}$.
+	Given the Hamiltonian equation for harmonic oscillator: $\hat{H}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2=\expval{T}+\expval{U}$.
 
 		\subsubsection{Guessing a normalized Gaussian}
 		Guess a normalized (the $4$ term is used for normalization) Gaussian to best represent the harmonic oscillator: $\varphi_{\alpha}(x)=\bigg(\frac{1}{\sqrt{2\pi}\alpha}\bigg)^{1/2}e^{-{\frac{x^2}{4\alpha^2}}}$
@@ -351,7 +351,7 @@ If given two functions $\psi_0$ and $\psi_1$ such that they have respectively ex
 
 		The total kinetic energy for this approximation of the quantum oscillator is:
 
-		$$\braket{T}=\frac{\hbar^2}{4m\alpha^2}\bigg[1-\frac{x^2}{2\alpha^2}\bigg]e^{-{\frac{x^2}{4\alpha^2}}}\cdot\frac{1}{(\sqrt{2\pi}\alpha)^{1/2}}$$
+		$$\expval{T}=\frac{\hbar^2}{4m\alpha^2}\bigg[1-\frac{x^2}{2\alpha^2}\bigg]e^{-{\frac{x^2}{4\alpha^2}}}\cdot\frac{1}{(\sqrt{2\pi}\alpha)^{1/2}}$$
 
 		And go on with the evaluation of $E(\alpha)$.
 
