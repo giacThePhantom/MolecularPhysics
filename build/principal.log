@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.4)  29 JAN 2022 17:39
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  29 JAN 2022 16:30
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.4)  29 JAN 2022 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,102 +944,57 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ) (./chapters/02_breakdown_classical_mechanics.tex [16]
 Chapter 2.
-<<<<<<< HEAD
-<chapters/02/gun_ds.png, id=1129, 626.94225pt x 348.70274pt>
+<chapters/02/gun_ds.png, id=1234, 626.94225pt x 348.70274pt>
 File: chapters/02/gun_ds.png Graphic file (type png)
 <use chapters/02/gun_ds.png>
 Package pdftex.def Info: chapters/02/gun_ds.png  used on input line 15.
-=======
-<chapters/02//gun_ds.png, id=1234, 626.94225pt x 348.70274pt>
-File: chapters/02//gun_ds.png Graphic file (type png)
-<use chapters/02//gun_ds.png>
-Package pdftex.def Info: chapters/02//gun_ds.png  used on input line 15.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 (pdftex.def)             Requested size: 260.17464pt x 144.70361pt.
 [17
 
-<<<<<<< HEAD
  <./chapters/02/gun_ds.png>]
-<chapters/02/wave_ds.png, id=1143, 566.115pt x 328.22626pt>
+<chapters/02/wave_ds.png, id=1247, 566.115pt x 328.22626pt>
 File: chapters/02/wave_ds.png Graphic file (type png)
 <use chapters/02/wave_ds.png>
 Package pdftex.def Info: chapters/02/wave_ds.png  used on input line 43.
 (pdftex.def)             Requested size: 260.17464pt x 150.85068pt.
- [17 <./chapters/02/wave_ds.png>]
-<chapters/02/electron_ds.png, id=1157, 1606.0pt x 863.225pt>
+ [18 <./chapters/02/wave_ds.png>]
+<chapters/02/electron_ds.png, id=1262, 1606.0pt x 863.225pt>
 File: chapters/02/electron_ds.png Graphic file (type png)
 <use chapters/02/electron_ds.png>
 Package pdftex.def Info: chapters/02/electron_ds.png  used on input line 78.
 (pdftex.def)             Requested size: 260.17464pt x 139.84431pt.
-<chapters/02/ele_bal_ds.png, id=1159, 518.93875pt x 250.9375pt>
+<chapters/02/ele_bal_ds.png, id=1264, 518.93875pt x 250.9375pt>
 File: chapters/02/ele_bal_ds.png Graphic file (type png)
 <use chapters/02/ele_bal_ds.png>
 Package pdftex.def Info: chapters/02/ele_bal_ds.png  used on input line 98.
-=======
- <./chapters/02//gun_ds.png>]
-<chapters/02//wave_ds.png, id=1247, 566.115pt x 328.22626pt>
-File: chapters/02//wave_ds.png Graphic file (type png)
-<use chapters/02//wave_ds.png>
-Package pdftex.def Info: chapters/02//wave_ds.png  used on input line 43.
-(pdftex.def)             Requested size: 260.17464pt x 150.85068pt.
- [18 <./chapters/02//wave_ds.png>]
-<chapters/02//electron_ds.png, id=1262, 1606.0pt x 863.225pt>
-File: chapters/02//electron_ds.png Graphic file (type png)
-<use chapters/02//electron_ds.png>
-Package pdftex.def Info: chapters/02//electron_ds.png  used on input line 78.
-(pdftex.def)             Requested size: 260.17464pt x 139.84431pt.
-<chapters/02//ele_bal_ds.png, id=1264, 518.93875pt x 250.9375pt>
-File: chapters/02//ele_bal_ds.png Graphic file (type png)
-<use chapters/02//ele_bal_ds.png>
-Package pdftex.def Info: chapters/02//ele_bal_ds.png  used on input line 98.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 (pdftex.def)             Requested size: 260.17464pt x 125.81686pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< HEAD
-[18 <./chapters/02/electron_ds.png>]
-<chapters/02/photoelectric.png, id=1171, 2569.6pt x 1290.8225pt>
+[19 <./chapters/02/electron_ds.png>]
+<chapters/02/photoelectric.png, id=1275, 2569.6pt x 1290.8225pt>
 File: chapters/02/photoelectric.png Graphic file (type png)
 <use chapters/02/photoelectric.png>
 Package pdftex.def Info: chapters/02/photoelectric.png  used on input line 136.
 
-=======
-[19 <./chapters/02//electron_ds.png>]
-<chapters/02//photoelectric.png, id=1275, 2569.6pt x 1290.8225pt>
-File: chapters/02//photoelectric.png Graphic file (type png)
-<use chapters/02//photoelectric.png>
-Package pdftex.def Info: chapters/02//photoelectric.png  used on input line 136
-.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 (pdftex.def)             Requested size: 260.17464pt x 130.68521pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< HEAD
-[19 <./chapters/02/ele_bal_ds.png>]
-<chapters/02/quantization.png, id=1183, 1048.91875pt x 931.48pt>
+[20 <./chapters/02/ele_bal_ds.png>]
+<chapters/02/quantization.png, id=1287, 1048.91875pt x 931.48pt>
 File: chapters/02/quantization.png Graphic file (type png)
 <use chapters/02/quantization.png>
 Package pdftex.def Info: chapters/02/quantization.png  used on input line 162.
-=======
-[20 <./chapters/02//ele_bal_ds.png>]
-<chapters/02//quantization.png, id=1287, 1048.91875pt x 931.48pt>
-File: chapters/02//quantization.png Graphic file (type png)
-<use chapters/02//quantization.png>
-Package pdftex.def Info: chapters/02//quantization.png  used on input line 162.
-
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 (pdftex.def)             Requested size: 260.17464pt x 231.03592pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< HEAD
-[20 <./chapters/02/photoelectric.png>] [21 <./chapters/02/quantization.png>]
-<chapters/02/stern_ger.png, id=1200, 642.4pt x 304.13625pt>
+[21 <./chapters/02/photoelectric.png>] [22 <./chapters/02/quantization.png>]
+<chapters/02/stern_ger.png, id=1305, 642.4pt x 304.13625pt>
 File: chapters/02/stern_ger.png Graphic file (type png)
 <use chapters/02/stern_ger.png>
 Package pdftex.def Info: chapters/02/stern_ger.png  used on input line 210.
@@ -1055,109 +1006,34 @@ Make it at least 12.51453pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[22 <./chapters/02/stern_ger.png>] [23]) (./chapters/03_waves_of_matter.tex
-[24]
-=======
-[21 <./chapters/02//photoelectric.png>] [22 <./chapters/02//quantization.png>]
-<chapters/02//stern_ger.png, id=1305, 642.4pt x 304.13625pt>
-File: chapters/02//stern_ger.png Graphic file (type png)
-<use chapters/02//stern_ger.png>
-Package pdftex.def Info: chapters/02//stern_ger.png  used on input line 210.
-(pdftex.def)             Requested size: 260.17464pt x 123.17914pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.51453pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.51453pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
-
-[23 <./chapters/02//stern_ger.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.51453pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.51453pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
-
-[24]) (./chapters/03_waves_of_matter.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.51453pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.51453pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
-
+[23 <./chapters/02/stern_ger.png>] [24]) (./chapters/03_waves_of_matter.tex
 [25]
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 Chapter 3.
 [26
 
-<<<<<<< HEAD
-] [26] [27]
-<chapters/03/qm_oscillator.png, id=1238, 376.40625pt x 256.45813pt>
+] [27] [28]
+<chapters/03/qm_oscillator.png, id=1343, 376.40625pt x 256.45813pt>
 File: chapters/03/qm_oscillator.png Graphic file (type png)
 <use chapters/03/qm_oscillator.png>
 Package pdftex.def Info: chapters/03/qm_oscillator.png  used on input line 146.
 
-=======
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.51453pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.51453pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
-
-[27]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.51453pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.51453pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
-
-[28]
-<chapters/03//qm_oscillator.png, id=1343, 376.40625pt x 256.45813pt>
-File: chapters/03//qm_oscillator.png Graphic file (type png)
-<use chapters/03//qm_oscillator.png>
-Package pdftex.def Info: chapters/03//qm_oscillator.png  used on input line 146
-.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 (pdftex.def)             Requested size: 260.17464pt x 177.27718pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< HEAD
-[28] [29 <./chapters/03/qm_oscillator.png>] [30] [31]
-<chapters/03/1D_well.png, id=1263, 325.215pt x 151.16475pt>
+[29] [30 <./chapters/03/qm_oscillator.png>] [31] [32]
+<chapters/03/1D_well.png, id=1367, 325.215pt x 151.16475pt>
 File: chapters/03/1D_well.png Graphic file (type png)
 <use chapters/03/1D_well.png>
 Package pdftex.def Info: chapters/03/1D_well.png  used on input line 296.
-=======
-[29] [30 <./chapters/03//qm_oscillator.png>] [31] [32]
-<chapters/03//1D_well.png, id=1367, 325.215pt x 151.16475pt>
-File: chapters/03//1D_well.png Graphic file (type png)
-<use chapters/03//1D_well.png>
-Package pdftex.def Info: chapters/03//1D_well.png  used on input line 296.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 (pdftex.def)             Requested size: 260.17464pt x 120.94118pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 285--303
 
  []
 
-<<<<<<< HEAD
-[32 <./chapters/03/1D_well.png>] [33] [34] [35]
-=======
-[33 <./chapters/03//1D_well.png>] [34] [35] [36]
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+[33 <./chapters/03/1D_well.png>] [34] [35] [36]
 Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
  []
@@ -1220,81 +1096,44 @@ Chapter 5.
 [47
 
 ]
-<<<<<<< HEAD
-<chapters/05/vector.jpg, id=1343, 778.91pt x 484.81125pt>
+<chapters/05/vector.jpg, id=1448, 778.91pt x 484.81125pt>
 File: chapters/05/vector.jpg Graphic file (type jpg)
 <use chapters/05/vector.jpg>
 Package pdftex.def Info: chapters/05/vector.jpg  used on input line 43.
 (pdftex.def)             Requested size: 108.405pt x 67.47363pt.
- [47 <./chapters/05/vector.jpg>]
-<chapters/05/img_1.jpg, id=1355, 544.0325pt x 381.425pt>
+ [48 <./chapters/05/vector.jpg>]
+<chapters/05/img_1.jpg, id=1460, 544.0325pt x 381.425pt>
 File: chapters/05/img_1.jpg Graphic file (type jpg)
 <use chapters/05/img_1.jpg>
 Package pdftex.def Info: chapters/05/img_1.jpg  used on input line 90.
 (pdftex.def)             Requested size: 108.80457pt x 76.28365pt.
- [48 <./chapters/05/img_1.jpg>]
-<chapters/05/img_2.jpg, id=1364, 684.5575pt x 358.33875pt>
+ [49 <./chapters/05/img_1.jpg>]
+<chapters/05/img_2.jpg, id=1468, 684.5575pt x 358.33875pt>
 File: chapters/05/img_2.jpg Graphic file (type jpg)
 <use chapters/05/img_2.jpg>
 Package pdftex.def Info: chapters/05/img_2.jpg  used on input line 124.
 (pdftex.def)             Requested size: 205.36882pt x 107.50244pt.
- [49 <./chapters/05/img_2.jpg>] [50]
-=======
-<chapters/05//vector.jpg, id=1448, 778.91pt x 484.81125pt>
-File: chapters/05//vector.jpg Graphic file (type jpg)
-<use chapters/05//vector.jpg>
-Package pdftex.def Info: chapters/05//vector.jpg  used on input line 43.
-(pdftex.def)             Requested size: 108.405pt x 67.47363pt.
- [48 <./chapters/05//vector.jpg>]
-<chapters/05//img_1.jpg, id=1460, 544.0325pt x 381.425pt>
-File: chapters/05//img_1.jpg Graphic file (type jpg)
-<use chapters/05//img_1.jpg>
-Package pdftex.def Info: chapters/05//img_1.jpg  used on input line 90.
-(pdftex.def)             Requested size: 108.80457pt x 76.28365pt.
- [49 <./chapters/05//img_1.jpg>]
-<chapters/05//img_2.jpg, id=1468, 684.5575pt x 358.33875pt>
-File: chapters/05//img_2.jpg Graphic file (type jpg)
-<use chapters/05//img_2.jpg>
-Package pdftex.def Info: chapters/05//img_2.jpg  used on input line 124.
-(pdftex.def)             Requested size: 205.36882pt x 107.50244pt.
- [50 <./chapters/05//img_2.jpg>] [51]
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+ [50 <./chapters/05/img_2.jpg>] [51]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
 07.
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-<<<<<<< HEAD
-) [51] [52]
-<chapters/05/img_3.jpg, id=1385, 705.63625pt x 326.21875pt>
+) [52] [53]
+<chapters/05/img_3.jpg, id=1489, 705.63625pt x 326.21875pt>
 File: chapters/05/img_3.jpg Graphic file (type jpg)
 <use chapters/05/img_3.jpg>
 Package pdftex.def Info: chapters/05/img_3.jpg  used on input line 275.
 (pdftex.def)             Requested size: 211.6925pt x 97.86636pt.
 
-[53 <./chapters/05/img_3.jpg>] [54] [55]
-<chapters/05/img_4.jpg, id=1402, 523.9575pt x 378.41376pt>
+[54 <./chapters/05/img_3.jpg>] [55] [56]
+<chapters/05/img_4.jpg, id=1507, 523.9575pt x 378.41376pt>
 File: chapters/05/img_4.jpg Graphic file (type jpg)
 <use chapters/05/img_4.jpg>
 Package pdftex.def Info: chapters/05/img_4.jpg  used on input line 382.
 (pdftex.def)             Requested size: 157.18846pt x 113.525pt.
 ) (./chapters/06_atomic_physics.tex
-[56 <./chapters/05/img_4.jpg>]
-=======
-) [52] [53]
-<chapters/05//img_3.jpg, id=1489, 705.63625pt x 326.21875pt>
-File: chapters/05//img_3.jpg Graphic file (type jpg)
-<use chapters/05//img_3.jpg>
-Package pdftex.def Info: chapters/05//img_3.jpg  used on input line 275.
-(pdftex.def)             Requested size: 211.6925pt x 97.86636pt.
- [54 <./chapters/05//img_3.jpg>] [55] [56]
-<chapters/05//img_4.jpg, id=1507, 523.9575pt x 378.41376pt>
-File: chapters/05//img_4.jpg Graphic file (type jpg)
-<use chapters/05//img_4.jpg>
-Package pdftex.def Info: chapters/05//img_4.jpg  used on input line 382.
-(pdftex.def)             Requested size: 157.18846pt x 113.525pt.
-) (./chapters/06_atomic_physics.tex [57 <./chapters/05//img_4.jpg>]
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+[57 <./chapters/05/img_4.jpg>]
 Chapter 6.
 [58
 
@@ -1305,585 +1144,259 @@ e of the an-gu-lar mo-men-tum $\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 ;  []\OT1/cm
 r/m/n/10 ] =
  []
 
-<<<<<<< HEAD
-<chapters/06/img_5.jpg, id=1421, 1095.09125pt x 269.005pt>
+<chapters/06/img_5.jpg, id=1526, 1095.09125pt x 269.005pt>
 File: chapters/06/img_5.jpg Graphic file (type jpg)
 <use chapters/06/img_5.jpg>
 Package pdftex.def Info: chapters/06/img_5.jpg  used on input line 110.
-=======
-<chapters/06//img_5.jpg, id=1526, 1095.09125pt x 269.005pt>
-File: chapters/06//img_5.jpg Graphic file (type jpg)
-<use chapters/06//img_5.jpg>
-Package pdftex.def Info: chapters/06//img_5.jpg  used on input line 110.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 (pdftex.def)             Requested size: 328.5299pt x 80.70212pt.
 [60]
 
-<<<<<<< HEAD
 Package Fancyhdr Warning: \headheight is too small (12.51453pt): 
 Make it at least 22.48724pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[60 <./chapters/06/img_5.jpg>] [61]
-<chapters/06/img_6.jpg, id=1442, 421.575pt x 372.39125pt>
+[61 <./chapters/06/img_5.jpg>] [62]
+<chapters/06/img_6.jpg, id=1547, 421.575pt x 372.39125pt>
 File: chapters/06/img_6.jpg Graphic file (type jpg)
 <use chapters/06/img_6.jpg>
 Package pdftex.def Info: chapters/06/img_6.jpg  used on input line 211.
 (pdftex.def)             Requested size: 84.31349pt x 74.47693pt.
- [62 <./chapters/06/img_6.jpg>]
-<chapters/06/img_7.jpg, id=1450, 537.00626pt x 372.39125pt>
+ [63 <./chapters/06/img_6.jpg>]
+<chapters/06/img_7.jpg, id=1555, 537.00626pt x 372.39125pt>
 File: chapters/06/img_7.jpg Graphic file (type jpg)
 <use chapters/06/img_7.jpg>
 Package pdftex.def Info: chapters/06/img_7.jpg  used on input line 227.
 (pdftex.def)             Requested size: 107.39934pt x 74.47693pt.
- [63 <./chapters/06/img_7.jpg>] [64] [65] [66] [67] [68]
-=======
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[61 <./chapters/06//img_5.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[62]
-<chapters/06//img_6.jpg, id=1547, 421.575pt x 372.39125pt>
-File: chapters/06//img_6.jpg Graphic file (type jpg)
-<use chapters/06//img_6.jpg>
-Package pdftex.def Info: chapters/06//img_6.jpg  used on input line 211.
-(pdftex.def)             Requested size: 84.31349pt x 74.47693pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[63 <./chapters/06//img_6.jpg>]
-<chapters/06//img_7.jpg, id=1555, 537.00626pt x 372.39125pt>
-File: chapters/06//img_7.jpg Graphic file (type jpg)
-<use chapters/06//img_7.jpg>
-Package pdftex.def Info: chapters/06//img_7.jpg  used on input line 227.
-(pdftex.def)             Requested size: 107.39934pt x 74.47693pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[64 <./chapters/06//img_7.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[65]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[66]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[67]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[68]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[69]
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+ [64 <./chapters/06/img_7.jpg>] [65] [66] [67] [68] [69]
 Overfull \hbox (50.92479pt too wide) detected at line 462
 []
  []
 
-<<<<<<< HEAD
-[69]) (./chapters/07_molecular_physics.tex [70]
-=======
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[70]) (./chapters/07_molecular_physics.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.48724pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.48724pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
-
-[71]
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+[70]) (./chapters/07_molecular_physics.tex [71]
 Chapter 7.
 [72
 
 ]
 
-<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 49.
-
-<chapters/07/img_8.jpg, id=1532, 411.5375pt x 255.95625pt>
-File: chapters/07/img_8.jpg Graphic file (type jpg)
-<use chapters/07/img_8.jpg>
-Package pdftex.def Info: chapters/07/img_8.jpg  used on input line 53.
-(pdftex.def)             Requested size: 123.4622pt x 76.78746pt.
-[72 <./chapters/07/img_8.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
-
- []
-
-[73]
-<chapters/07/img_9.jpg, id=1545, 555.07375pt x 376.40625pt>
-File: chapters/07/img_9.jpg Graphic file (type jpg)
-<use chapters/07/img_9.jpg>
-Package pdftex.def Info: chapters/07/img_9.jpg  used on input line 108.
-(pdftex.def)             Requested size: 166.52339pt x 112.92273pt.
-<chapters/07/img_13.jpg, id=1546, 1542.76375pt x 697.60625pt>
-File: chapters/07/img_13.jpg Graphic file (type jpg)
-<use chapters/07/img_13.jpg>
-Package pdftex.def Info: chapters/07/img_13.jpg  used on input line 118.
-=======
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 60.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `subscript' on input line 60.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 60.
 
-<chapters/07//img_8.jpg, id=1639, 411.5375pt x 255.95625pt>
-File: chapters/07//img_8.jpg Graphic file (type jpg)
-<use chapters/07//img_8.jpg>
-Package pdftex.def Info: chapters/07//img_8.jpg  used on input line 67.
+<chapters/07/img_8.jpg, id=1639, 411.5375pt x 255.95625pt>
+File: chapters/07/img_8.jpg Graphic file (type jpg)
+<use chapters/07/img_8.jpg>
+Package pdftex.def Info: chapters/07/img_8.jpg  used on input line 67.
 (pdftex.def)             Requested size: 123.4622pt x 76.78746pt.
-[73] [74 <./chapters/07//img_8.jpg>]
-<chapters/07//img_9.jpg, id=1651, 555.07375pt x 376.40625pt>
-File: chapters/07//img_9.jpg Graphic file (type jpg)
-<use chapters/07//img_9.jpg>
-Package pdftex.def Info: chapters/07//img_9.jpg  used on input line 144.
+[73] [74 <./chapters/07/img_8.jpg>]
+<chapters/07/img_9.jpg, id=1651, 555.07375pt x 376.40625pt>
+File: chapters/07/img_9.jpg Graphic file (type jpg)
+<use chapters/07/img_9.jpg>
+Package pdftex.def Info: chapters/07/img_9.jpg  used on input line 144.
 (pdftex.def)             Requested size: 166.52339pt x 112.92273pt.
- [75 <./chapters/07//img_9.jpg>]
-<chapters/07//img_13.jpg, id=1658, 1542.76375pt x 697.60625pt>
-File: chapters/07//img_13.jpg Graphic file (type jpg)
-<use chapters/07//img_13.jpg>
-Package pdftex.def Info: chapters/07//img_13.jpg  used on input line 156.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
+
+ []
+
+[75 <./chapters/07/img_9.jpg>]
+<chapters/07/img_13.jpg, id=1658, 1542.76375pt x 697.60625pt>
+File: chapters/07/img_13.jpg Graphic file (type jpg)
+<use chapters/07/img_13.jpg>
+Package pdftex.def Info: chapters/07/img_13.jpg  used on input line 157.
 (pdftex.def)             Requested size: 462.8327pt x 209.28348pt.
 
-Overfull \hbox (29.2127pt too wide) in paragraph at lines 156--157
+Overfull \hbox (29.2127pt too wide) in paragraph at lines 157--158
  [][] 
  []
 
-<<<<<<< HEAD
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-[74 <./chapters/07/img_9.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 155--159
-
- []
-
-[75 <./chapters/07/img_13.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 172--175
+Underfull \hbox (badness 10000) in paragraph at lines 162--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--184
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+[76 <./chapters/07/img_13.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 194--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--193
+Underfull \hbox (badness 10000) in paragraph at lines 211--214
 
  []
 
-[76]
-<chapters/07/img_14.png, id=1568, 557.08125pt x 414.54875pt>
-File: chapters/07/img_14.png Graphic file (type png)
-<use chapters/07/img_14.png>
-Package pdftex.def Info: chapters/07/img_14.png  used on input line 211.
-(pdftex.def)             Requested size: 167.12566pt x 124.36557pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--218
-
- []
-
-[77 <./chapters/07/img_14.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 223--226
+[77]
+Underfull \hbox (badness 10000) in paragraph at lines 217--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--260
+Underfull \hbox (badness 10000) in paragraph at lines 229--232
 
  []
 
 [78]
-<chapters/07/img_15.jpg, id=1581, 1229.59375pt x 249.93375pt>
+<chapters/07/img_14.png, id=1680, 557.08125pt x 414.54875pt>
+File: chapters/07/img_14.png Graphic file (type png)
+<use chapters/07/img_14.png>
+Package pdftex.def Info: chapters/07/img_14.png  used on input line 250.
+(pdftex.def)             Requested size: 167.12566pt x 124.36557pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+[79 <./chapters/07/img_14.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--299
+
+ []
+
+
+LaTeX Warning: Reference `fig:summary' on page 80 undefined on input line 305.
+
+<chapters/07/img_15.jpg, id=1688, 1229.59375pt x 249.93375pt>
 File: chapters/07/img_15.jpg Graphic file (type jpg)
 <use chapters/07/img_15.jpg>
-Package pdftex.def Info: chapters/07/img_15.jpg  used on input line 264.
+Package pdftex.def Info: chapters/07/img_15.jpg  used on input line 311.
 (pdftex.def)             Requested size: 368.88097pt x 74.9807pt.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 269--34
-
- []
-
-[79 <./chapters/07/img_15.jpg>] [80
-
-] (./chapters/08_quantum_computing.tex
-Chapter 8.
-[81
-=======
-[76 <./chapters/07//img_13.jpg>] [77]
-Overfull \hbox (27.27055pt too wide) detected at line 241
-[] \OT1/cmr/m/n/10 = [] []  \OML/cmm/m/it/10 d[]:::d[][] []\OT1/cmr/m/n/10 ([] 
-\OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ^^N\OT1/cmr/m/n/10 ([]
- \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )\OML/cmm/m/it/10  \OT1/cmr/m/n/10 ([] 
-\OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )[] [] = \OML/cmm/m/it/10 n\OT1/cmr/m/n/
-10 ([])
- []
-
-<chapters/07//img_14.png, id=1673, 557.08125pt x 414.54875pt>
-File: chapters/07//img_14.png Graphic file (type png)
-<use chapters/07//img_14.png>
-Package pdftex.def Info: chapters/07//img_14.png  used on input line 248.
-(pdftex.def)             Requested size: 167.12566pt x 124.36557pt.
-[78 <./chapters/07//img_14.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
-
- []
-
-<chapters/07//img_15.jpg, id=1688, 1229.59375pt x 249.93375pt>
-File: chapters/07//img_15.jpg Graphic file (type jpg)
-<use chapters/07//img_15.jpg>
-Package pdftex.def Info: chapters/07//img_15.jpg  used on input line 288.
-(pdftex.def)             Requested size: 368.88097pt x 74.9807pt.
-) [79] [80 <./chapters/07//img_15.jpg>] [81
+) [80] [81 <./chapters/07/img_15.jpg>] [82
 
 ]
 (./chapters/08_quantum_computing.tex
 Chapter 8.
-[82
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+[83
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-<<<<<<< HEAD
-<chapters/08/img_10.jpg, id=1596, 657.45625pt x 167.62625pt>
+<chapters/08/img_10.jpg, id=1706, 657.45625pt x 167.62625pt>
 File: chapters/08/img_10.jpg Graphic file (type jpg)
 <use chapters/08/img_10.jpg>
-Package pdftex.def Info: chapters/08/img_10.jpg  used on input line 50.
+Package pdftex.def Info: chapters/08/img_10.jpg  used on input line 86.
 (pdftex.def)             Requested size: 197.23839pt x 50.28825pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--54
-
- []
-
-[82 <./chapters/08/img_10.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 74--78
-
- []
-
-[83]
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
-\T1/cmr/m/it/10 frag-ment is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
-\T1/cmr/m/it/10 Quan-tum In-
- []
-
-[84]
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
-
- []
-
-
-Overfull \hbox (1.07393pt too wide) in paragraph at lines 137--138
-[]\T1/cmr/bx/n/10 CNOT gate\T1/cmr/m/n/10 : two-qubit op-er-a-tion. The $[]$ is
- the CON-TROL QUBIT, the $[]$
- []
-
-<chapters/08/img_11.png, id=1611, 219.82124pt x 157.58875pt>
+[84] [85 <./chapters/08/img_10.jpg>] [86] [87]
+<chapters/08/img_11.png, id=1731, 219.82124pt x 157.58875pt>
 File: chapters/08/img_11.png Graphic file (type png)
 <use chapters/08/img_11.png>
-Package pdftex.def Info: chapters/08/img_11.png  used on input line 141.
-=======
-<chapters/08//img_10.jpg, id=1713, 657.45625pt x 167.62625pt>
-File: chapters/08//img_10.jpg Graphic file (type jpg)
-<use chapters/08//img_10.jpg>
-Package pdftex.def Info: chapters/08//img_10.jpg  used on input line 86.
-(pdftex.def)             Requested size: 197.23839pt x 50.28825pt.
-[83] [84 <./chapters/08//img_10.jpg>] [85] [86]
-<chapters/08//img_11.png, id=1738, 219.82124pt x 157.58875pt>
-File: chapters/08//img_11.png Graphic file (type png)
-<use chapters/08//img_11.png>
-Package pdftex.def Info: chapters/08//img_11.png  used on input line 231.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+Package pdftex.def Info: chapters/08/img_11.png  used on input line 231.
 (pdftex.def)             Requested size: 65.94687pt x 47.27698pt.
- [87 <./chapters/08//img_11.png>]
+ [88 <./chapters/08/img_11.png>]
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-[85 <./chapters/08/img_11.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
-
- []
-=======
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 247.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `subscript' on input line 247.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 247.
 
-<<<<<<< HEAD
-<chapters/08/img_12.jpg, id=1618, 909.3975pt x 467.7475pt>
+<chapters/08/img_12.jpg, id=1739, 909.3975pt x 467.7475pt>
 File: chapters/08/img_12.jpg Graphic file (type jpg)
 <use chapters/08/img_12.jpg>
-Package pdftex.def Info: chapters/08/img_12.jpg  used on input line 170.
+Package pdftex.def Info: chapters/08/img_12.jpg  used on input line 275.
 (pdftex.def)             Requested size: 272.82135pt x 140.32532pt.
-[86]) [87 <./chapters/08/img_12.jpg>] [88
+[89]) [90 <./chapters/08/img_12.jpg>] [91
 
 ] (./chapters/aa_complex_numbers.tex
 Chapter 9.
-[89
+[92
 
-] [90] [91] [92]) (./chapters/ab_partial_derivatives.tex [93]
+] [93] [94] [95]) (./chapters/ab_partial_derivatives.tex [96]
 Chapter 10.
-[94
-
-]) (./chapters/ac_differential_operators.tex [95] [96]
-Chapter 11.
 [97
 
-] [98] [99] [100] [101]) (./chapters/ad_spherical_coordinates.tex [102]
+]) (./chapters/ac_differential_operators.tex [98] [99]
+Chapter 11.
+[100
+
+] [101] [102] [103] [104]) (./chapters/ad_spherical_coordinates.tex
+[105]
 Chapter 12.
-[103
+[106
 
-]) (./chapters/ae_multidimensional_integrals.tex [104]
+]) (./chapters/ae_multidimensional_integrals.tex [107]
 Chapter 13.
-[105
-
-]) (./chapters/af_wave_equations.tex [106] [107]
-Chapter 14.
 [108
 
-]) (./chapters/ag_hilbert_spaces.tex [109]
-Chapter 15.
-[110
-
-] [111] [112] [113]) (./chapters/ee_solved_exercises.tex [114]
-Chapter 16.
-(./chapters/exercises_sections/00_complex_numbers.tex [115
-=======
-<chapters/08//img_12.jpg, id=1746, 909.3975pt x 467.7475pt>
-File: chapters/08//img_12.jpg Graphic file (type jpg)
-<use chapters/08//img_12.jpg>
-Package pdftex.def Info: chapters/08//img_12.jpg  used on input line 275.
-(pdftex.def)             Requested size: 272.82135pt x 140.32532pt.
-[88]) [89 <./chapters/08//img_12.jpg>] [90
-
-] (./chapters/aa_complex_numbers.tex
-Chapter 9.
-[91
-
-] [92] [93] [94]) (./chapters/ab_partial_derivatives.tex [95]
-Chapter 10.
-[96
-
-]) (./chapters/ac_differential_operators.tex [97] [98]
-Chapter 11.
-[99
-
-] [100] [101] [102] [103]) (./chapters/ad_spherical_coordinates.tex [104]
-Chapter 12.
-[105
-
-]) (./chapters/ae_multidimensional_integrals.tex [106]
-Chapter 13.
-[107
-
-]) (./chapters/af_wave_equations.tex [108] [109]
+]) (./chapters/af_wave_equations.tex [109] [110]
 Chapter 14.
-[110
+[111
 
-]) (./chapters/ag_hilbert_spaces.tex [111]
+]) (./chapters/ag_hilbert_spaces.tex [112]
 Chapter 15.
-[112
+[113
 
-] [113] [114] [115]) (./chapters/ee_solved_exercises.tex [116]
+] [114] [115] [116]) (./chapters/ee_solved_exercises.tex [117]
 Chapter 16.
-(./chapters/exercises_sections/00_complex_numbers.tex [117
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
+(./chapters/exercises_sections/00_complex_numbers.tex [118
 
 ]
 Overfull \hbox (58.04228pt too wide) detected at line 51
 []
  []
 
-<<<<<<< HEAD
-) (./chapters/exercises_sections/01_partial_derivatives.tex [116])
-(./chapters/exercises_sections/02_differential_operators.tex [117] [118])
+) (./chapters/exercises_sections/01_partial_derivatives.tex [119])
+(./chapters/exercises_sections/02_differential_operators.tex [120] [121])
 (./chapters/exercises_sections/03_spherical_coordinates.tex)
-(./chapters/exercises_sections/04_multidimensional_integrals.tex [119]
-<chapters/exercises_sections/exercises_images/integration_area.png, id=1781, 80
+(./chapters/exercises_sections/04_multidimensional_integrals.tex [122]
+<chapters/exercises_sections/exercises_images/integration_area.png, id=1904, 80
 9.27344pt x 380.92313pt>
 File: chapters/exercises_sections/exercises_images/integration_area.png Graphic
  file (type png)
 <use chapters/exercises_sections/exercises_images/integration_area.png>
 Package pdftex.def Info: chapters/exercises_sections/exercises_images/integrati
 on_area.png  used on input line 25.
-=======
-) (./chapters/exercises_sections/01_partial_derivatives.tex [118])
-(./chapters/exercises_sections/02_differential_operators.tex [119] [120])
-(./chapters/exercises_sections/03_spherical_coordinates.tex)
-(./chapters/exercises_sections/04_multidimensional_integrals.tex [121]
-<chapters/exercises_sections/exercises_images//integration_area.png, id=1911, 8
-09.27344pt x 380.92313pt>
-File: chapters/exercises_sections/exercises_images//integration_area.png Graphi
-c file (type png)
-<use chapters/exercises_sections/exercises_images//integration_area.png>
-Package pdftex.def Info: chapters/exercises_sections/exercises_images//integrat
-ion_area.png  used on input line 25.
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 (pdftex.def)             Requested size: 433.62pt x 204.10863pt.
 )
 (./chapters/exercises_sections/05_wave_equations.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<<<<<<< HEAD
 ) (./chapters/exercises_sections/06_hilbert_spaces.tex))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
- [120] [121 <./chapters/exercises_sections/exercises_images/integration_area.pn
+ [123] [124 <./chapters/exercises_sections/exercises_images/integration_area.pn
 g>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
 
@@ -1892,16 +1405,23 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
 Package rerunfilecheck Info: File `principal.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 18231 strings out of 482820
- 317374 string characters out of 5957805
- 629201 words of memory out of 5000000
- 32613 multiletter control sequences out of 15000+600000
- 568252 words of font info for 123 fonts, out of 8000000 for 9000
+ 18285 strings out of 482820
+ 318288 string characters out of 5957805
+ 629216 words of memory out of 5000000
+ 32636 multiletter control sequences out of 15000+600000
+ 568655 words of font info for 125 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 44i,20n,52p,760b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,20n,52p,635b,864s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600
 pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0800.60
 0pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.6
@@ -1927,85 +1447,27 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/symbols/msbm7.pfb>
-Output written on build/principal.pdf (122 pages, 2786488 bytes).
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doubl
+estroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msbm5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msbm7.pfb>
+Output written on build/principal.pdf (125 pages, 2797716 bytes).
 PDF statistics:
- 2612 PDF objects out of 2984 (max. 8388607)
- 1815 compressed objects within 19 object streams
- 464 named destinations out of 1000 (max. 500000)
- 1809 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-) (./chapters/exercises_sections/06_hilbert_spaces.tex)) [122] [123 <./chapters
-/exercises_sections/exercises_images//integration_area.png>]
-(./build/principal.aux)
-Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 0553FBA030F5D67F0DB7EEFFB1E15CC4;38541.
- ) 
-Here is how much of TeX's memory you used:
- 23603 strings out of 478353
- 434250 string characters out of 5854635
- 763106 words of memory out of 5000000
- 40794 multiletter control sequences out of 15000+600000
- 435977 words of font info for 112 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 75i,20n,80p,635b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
-exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-latxfont/line10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfb
-x1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.p
-fb>
-Output written on ./build/principal.pdf (124 pages, 2977250 bytes).
-PDF statistics:
- 2211 PDF objects out of 2487 (max. 8388607)
- 1937 compressed objects within 20 object streams
- 507 named destinations out of 1000 (max. 500000)
+ 2735 PDF objects out of 2984 (max. 8388607)
+ 1941 compressed objects within 20 object streams
+ 495 named destinations out of 1000 (max. 500000)
  1969 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> a35853b7424b5ca19841af3546a46a2780227ae0
 
