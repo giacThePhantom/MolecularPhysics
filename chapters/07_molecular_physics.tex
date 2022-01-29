@@ -192,63 +192,81 @@ The algorithm will run until convergence is reached (usually a single minimum is
 Even with this approach, the computation of HF is very expensive. For this reason, \textbf{semi-empirical methods} have been developed. Coefficients have been introduced in front of direct and exchange terms, that can weight the two terms in order to better match the experimental results. The HF equation is usually employed to build the expansion of the eigenfunction or in quantum computing.\\
 
 \subsection{Density Function Theory (DFT)}
-Variational scheme that in principle can yield the exact result,  but in practice needs heuristic input/approximation. 
-Over the made assumptions, it is possible to achieve excellent results. 
-Simple inputs are required for the perfect compromise between accuracy and computational cost.\\
-This theory is not based on the wave function computation, but on the \textbf{density function computation}.\\
-
-
+The DTF is a variational approximation which represents a significant improvement with respect to the HF method, because \underline{in principle}, it enables for the exact solution of the electronic problem. \\
+In practice, exact solution are never found. However excellent approximations are
+possible and this is the reason why DFT is the most commonly adopted scheme for
+electronic calculations in condensed matter and quantum chemistry. \\
+DTF reaches such excellent results because it fuels the density function (as we'll see later) with \textbf{heuristic} inputs.\\
+This theory is not based on the wave function computation, but on the \textbf{density function computation}.
 \begin{multline}
  \text{Density operator:}\hat{\rho}(\vec{r})=\sum_{i=1}^{N_0}\delta(\vec{r}-\vec{r_i})\\
-\text{Expectation value, assuming} \braket{\Psi\,|\,\Psi}=1 \text{:}\, \braket{\Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi}=\\
-\sum_i \int\,d\vec{r_1}...d\vec{r_{N_e}}\bigg(\Psi^*(\vec{r_1}-\vec{r_{N_e}})\delta(\vec{r}-\vec{r_i})\Psi(\vec{r_1}-\vec{r_{N_e}})\bigg)\\
-\braket{\Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi}=n(\vec{r})
+\text{Expectation value, assuming} \langle \Psi\,|\,\Psi \rangle =1 \text{:}\, \langle \Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi \rangle=\\
+\sum_i \int\,d\vec{r_1}...d\vec{r_{N_e}}\bigg(\Psi^*(\vec{r_1}-\vec{r_{N_e}})\delta(\vec{r}-\vec{r_i})\Psi(\vec{r_1}-\vec{r_{N_e}})\bigg)s=n(\vec{r})
 \end{multline}
 
-
-which is the probability of finding any electron at the point $r$. 
-This concept is shown in the following picture,  where blue is low electron density and red is high electron density.\\
+which is the probability of finding any electron at the point $r$. \\
+This concept is shown in picture \ref{molecule}. \\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_14}
+	\caption{In this cartoon of a molecule, the parts with higher probability of finding the electrons are highlighted. Blue parts correspond to low electron density and the red ones to high electron density.}
+	\label{molecule}
 \end{figure}
 \newline
-\ul{OBS}: $n(\vec{r})$ is a so-called \textbf{SINGLE-BODY DENSITY}, it doesn't tell me the same information of the wave function (in fact $\hat{\rho}(\vec{r})$ reduces it when compared to $\Psi$). 
-For any Hamiltonian there is one and only single-body density.\\
+\textbf{OBS}: $n(\vec{r})$ is a so-called \textbf{single-body density}, it doesn't contain the same information of the full wave function (in fact $\hat{\rho}(\vec{r})$ reduces it when compared to $\Psi$). 
+\textbf{N.B.}: For any Hamiltonian there is one and only single-body density.\\
 
-Hochenberg and Kohn have elaborated two theorems that show that the ground state and excited states' properties of a system (quantum many-body system) are entirely determined by a single-body wavefunction $n(\vec{r})$.\\
+Hochenberg and Kohn have elaborated two theorems that show that the ground state and excited states' properties of a system (quantum many-body system) are entirely determined by the ground-state single body density $n(\vec{r})$.\\
 Mind that the quantum electronic structure calculation problem is:
 \[
 \hat{H}=-\frac{\hbar^2}{2m}\sum_i^{N_e}\nabla_i^2+\frac{1}{2}\sum_{i\neq j} \frac{e^2}{|r_i-r_j|}+\sum_i^{N_e}V_{ext}(\vec{r_i})
 \]
 The last term is the interaction between single electrons and nuclei. 
-In BO approximation, this was the external potential - as nuclei were fixed.\\
+In the Born-Oppenheimer approximation, this was the external potential - as nuclei were fixed.\\
 
-\ul{THEOREM 1)} For any system of interacting particles, the external potential is determined uniquely by the ground state one-body density.
-\[n_o(\vec{r})=\braket{\Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi}\]
+\textbf{Theorem 1:} \textit{For any system of interacting particles, the external potential is determined uniquely by the ground state one-body density.} I.e.: there cannot be two  external potentials which give the same ground-state density.
+\[n_o(\vec{r})=\langle \Psi\,|\,\hat{\rho}(\vec{r})\,|\,\Psi \rangle\]
 
-$\rightarrow\,\,$\ul{Corollary}: All wavefunctions (ground state, first excited state and all eigenstates of $\hat{H}$) are fully determined by $n_0(\vec{r})$\\
+$\rightarrow\,\,$\textbf{Corollary}: All wavefunctions (ground state, first excited state and all eigenstates of $\hat{H}$) are fully determined by $n_0(\vec{r})$.\\
 
-\ul{THEOREM 2)} A functional $E[n_0]$ can be defined such that the minimum of this functional with respect to $n_0(\vec{r})$ provides the exact $n_0(\vec{r})$ and $E_0$ (ground state energy).\\
+\textbf{Theorem 2:} \textit{An energy functional $E[n_0]$ can be defined such that the minimum of this functional with respect to $n_0(\vec{r})$ provides the exact $n_0(\vec{r})$ and $E_0$ (ground state energy).}\\
+\\
 
-\ul{OBS}: A function: $f: x \rightarrow f(x)$ ($x$ is a variable, $f(x)$ is a number)\\
-A functional: $E[f]: f(x) \rightarrow E[f]$ ($f(x)$ is a function of operators, $E[f]$ is a number). 
+\textbf{OBS}: 
+\begin{itemize}
+\item A function: $f: x \rightarrow f(x)$ ($x$ is a variable, $f(x)$ is a number).
+\item A functional: $E[f]: f(x) \rightarrow E[f]$ ($f(x)$ is a function of operators, $E[f]$ is a number).
+\end{itemize} 
+ 
 Examples of functionals are definite integrals or the expectation values of operators.\\
 Anyway, from Ritz Theorem we know that the minimum of the functional of the wave function (i.e., the expectation value of the Hamiltonian) is the exact ground state.\\
+\subsection{Building functionals}
+The challenge is therefore to build the energy functional.\\
+The HK theorems would have been relegated as useless curiosity hadn’t Kohn and Sham
+(KS) found a scheme to construct approximate functionals which turned out to
+work extremely well for a large class of electronic problems in condensed matter an
+molecular physics. \\
+The construction of such functionals stands on the so-called KS ansatz for $E[n]$
+and is based on the following main assumption: \textit{The ground state of the exact system can be found by minimising the Energy functional.}
+for an auxiliary non-interacting system with a local external potential: 
 
-It is possible to define a functional such as the minimum of the functional is the exact value of the ground state energy. 
-Differently from Ritz Theorem, here the functional is not given and not referred to the wave function. 
-The one body density's functional's minimum is the exact ground state energy of the problem $\forall$ Hamiltonians.\\
+ \[
+ H_{aux.} = \sum_i \bigg(-\hbar^2 \frac{\nabla_i^2}{2m} + V_{aux.}(x_i) \bigg)
+ \]
+ 
+I.e.: it is possible to define a functional such as the minimum of the functional is the exact value of the ground state energy. \\
+Differently from Ritz Theorem, here the functional is nor given or referred to the wave function. 
+The one body density's functional's minimum is the exact ground state energy of the problem \textbf{for all} Hamiltonians.\\
 
 These two are existent theorems; they do not provide any solution, and usually they are complemented with ways to build the right functional to solve the problem.\\
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_15}
+	\caption{A visualization of the methods we've seen to deal with complex many body systems.}
 \end{figure}
 
-\subsection{QM-MM Schemes}
-QM-MM = Quantum Mechanics, Molecular Mechanics. 
+\subsection{Hybrid (QM-MM) Schemes}
+QM-MM stands for Quantum Mechanics, Molecular Mechanics. 
 These schemes are used for large molecular models and chemical reactions studies (e.g., enzymatic reactions).\\
 QM is applied to the region of interest (so to have the computational effort only where needed),  while classical molecular mechanics is applied elsewhere and an hybrid method is used at the border between the two regions.\\
-The difficulty is presented when considering thermodynamics. 
-The more degrees of freedom, the more entropy.\\
+The difficulty is presented when considering thermodynamics. The more degrees of freedom, the more entropy.\\
