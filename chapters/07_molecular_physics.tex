@@ -1,124 +1,164 @@
 \graphicspath{{chapters/07/}}
 \chapter{Molecular physics}
+
 \section{The Born-Oppenheimer Approximation}
-Molecular physics expalins the origin of chemical bonds and makes it possible to understand quantum chemistry calculations. Chemistry can be represented by an "unsolvable" Schr\"odinger equation:\\
-\[
-\bigg[-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2
--\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i
-+V[\{\vec{R}\}_{\alpha},\{\vec{r_i}\}_i]\bigg]=E\Psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i]
-\]
-\[
-V[\{\vec{R}\}_{\alpha},\{\vec{r}_i\}]=\bigg(\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}
-+\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}
--\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}\bigg)\]
+Molecular physics expalins the origin of chemical bonds and makes it possible to understand quantum chemistry calculations.
+Chemistry can be represented by an "unsolvable" Schr\"odinger equation:
+
+$$\bigg[-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2-\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i+V[\{\vec{R}\}_{\alpha},\{\vec{r_i}\}_i]\bigg]=E\psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i]$$
+
+$$V[\{\vec{R}\}_{\alpha},\{\vec{r}_i\}]=\bigg(\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}+\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}-\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}\bigg)$$
+
 In order, the different parts of the equation represent:
-\begin{enumerate}
-	\item $-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2$,  Kinetics of nuclei
-	\item $-\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i$,  Kinetics of electrons
-	\item $\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}$,  Repulsive coulombic interaction between electrons
-	\item $\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}$,  Repulsive coulombic interaction between nuclei
-	\item $-\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}$,  Attractive coulombic interaction between nucleus and electrons
-	\item Curly brackets represent the collection of all r and R
-\end{enumerate}
-This equation can be approximated by considering that protons are much bigger and slower than electrons, and therefore are fixed. The Born-Oppenheimer approximation divides these operations in two (\textbf{decoupling}).\\
-\newline
-We can implement a \textit{divide et impera} approach:\\
-\textbf{1)} Study the electronic problem at fixed nuclear configuration (i.e. ignoring the kinetic energy of the nuclei).\\
-The first fragment is ignored (no motion, no kinetic energy) and the coulombic repulsion becomes constant consequently. Nuclei bind only when they are close to each other.
-\[
-\bigg[-\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i
-+\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}
--\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}\bigg]\cdot\Psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i] =E[\{R_{\alpha}\}]\Psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i]
-\]
-Where $E[\{R_{\alpha}\}]$ is the energy of the system at a fixed nuclear position, ${R_{\alpha}}$ represents the contributions of the electrons to the potential energy.\\
-The energy eigenvalue describes the electron density around the nuclei at fixed nuclei positions. The fact that there are electrons moving increases the overall potential energy (repulsive interactions), electrons can lower their higher potential energy by tunneling to another nucleus with Pauli symmetry. This lowers the total energy of the system and creates bonds.\\ 
-Note that this is not a "charge-driven" attraction, but a phenomenon driven by quantum tunneling and Pauli's symmetry. 
-\newline
-\textbf{2)} Solve the dynamics of the nuclei based on their own coulombic interactions and electrons effect.
-\[
-\bigg[-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2
-+\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}+E|\{R_\alpha\}| \bigg]\varphi(|R|)=\varepsilon\varPhi(\{R\})
-\]
-Note that $\varepsilon$ is a value, not a function, it does not depend on any parameter.\\
-The quantum effect becomes weaker as the weight of the system increases. To describe a many-body system, I can replace this Schr\"odinger equation with a Newtonian equation.\\
-\[
-M_\alpha\frac{d^2}{dt^2}R_\alpha(t)=-\nabla_\alpha(E(R)+E_t(R))
-\]
-This equation is fine for describing \textbf{classical molecular simulations}. We loose the quantum effects of the nuclei (protonation - quantum tunneling of protons, chemical reactions...), and often for molecules a classical formulation is enough.
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item $-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2$,  Kinetics of nuclei.
+		\item $-\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i$,  Kinetics of electrons.
+		\item $\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}$,  Repulsive coulombic interaction between electrons
+		\item $\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}$,  Repulsive coulombic interaction between nuclei.
+		\item $-\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}$,  Attractive coulombic interaction between nucleus and electrons.
+		\item Curly brackets represent the collection of all $r$ and $R$.
+	\end{enumerate}
+\end{multicols}
+
+This equation can be approximated by considering that protons are much bigger and slower than electrons, and therefore are fixed.
+The Born-Oppenheimer approximation divides these operations in two (\textbf{decoupling}).
+
+	\subsection{Decoupling approach}
+	We can implement a \textit{divide et impera} approach.
+
+		\subsubsection{Fixed nuclear configuration}
+		First the electronic problem is studied at fixed nuclear configuration (i.e. ignoring the kinetic energy of the nuclei).
+		The first fragment is ignored (no motion, no kinetic energy) and the coulombic repulsion becomes constant consequently.
+		Nuclei bind only when they are close to each other.
+
+		$$\bigg[-\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i+\sum_{i<j}\frac{e^2}{|\vec{r_i}-\vec{r_j}|}-\sum_{i,\alpha}\frac{e^2z_{\alpha}}{|\vec{r_i}-\vec{R_{\alpha}}|}\bigg]\cdot\psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i] =E[\{R_{\alpha}\}]\psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i]$$
+
+		Where $E[\{R_{\alpha}\}]$ is the energy of the system at a fixed nuclear position, ${R_{\alpha}}$ represents the contributions of the electrons to the potential energy.
+		The energy eigenvalue describes the electron density around the nuclei at fixed nuclei positions.
+		The fact that there are electrons moving increases the overall potential energy (repulsive interactions), electrons can lower their higher potential energy by tunneling to another nucleus with Pauli symmetry.
+		This lowers the total energy of the system and creates bonds.
+		Note that this is not a "charge-driven" attraction, but a phenomenon driven by quantum tunnelling and Pauli's symmetry.
+
+		\subsubsection{Dynamics of the nuclei}
+		The second step is to solve the dynamics of the nuclei based on their own coulombic interactions and electrons effec.
+
+		$$\bigg[-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2+\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}+E|\{R_\alpha\}| \bigg]\varphi(|R|)=\varepsilon\varPhi(\{R\})$$
+
+		Note that $\varepsilon$ is a value, not a function, it does not depend on any parameter.
+		The quantum effect becomes weaker as the weight of the system increases.
+
+	\subsection{Many-body systems}
+	To describe a many-body system, I can replace this Schr\"odinger equation with a Newtonian equation.
+
+	$$M_\alpha\frac{d^2}{dt^2}R_\alpha(t)=-\nabla_\alpha(E(R)+E_t(R))$$
+
+	This equation is fine for describing \textbf{classical molecular simulations}.
+	We loose the quantum effects of the nuclei (protonation - quantum tunneling of protons, chemical reactions, $\dots$), and often for molecules a classical formulation is enough.
 
 \section{The H$_2$ molecule}
-We are given two protons (a,b) and two electrons (1,2). Consider the structure of the electronic wave function as $\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z,(\vec{R_a},\vec{R_b}))$ where $(\vec{R_a},\vec{R_b})$ is a fixed external parameter because of the Born-Oppenheimer approximation (distance between nuclei). A schematic draw of the problem is depicted in figure \ref{fig:h2}.\\
+We are given two protons $(a,b)$ and two electrons $(1,2)$.
+Consider the structure of the electronic wave function as $\psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z,(\vec{R_a},\vec{R_b}))$ where $(\vec{R_a},\vec{R_b})$ is a fixed external parameter because of the Born-Oppenheimer approximation and is the distance between nuclei.
+A schematic draw of the problem is depicted in figure \ref{fig:h2}.
+
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_8}
-	\caption{A representation of the $H_2$ molecule, given the Born-Oppenheimer approximation.}
+	\caption{A representation of the $H_2$ molecule given the Born-Oppenheimer approximation.}
 	\label{fig:h2}
 \end{figure}
-\newline
-The system can be firstly represented as two atoms at a large distance that approach slowly to each other, generating a linear combination of mean wave functions. The electrons are in a superposition of states when they start interacting, so the resulting H-H chemical bond is actually an entangled electron tunneling.
-\[
-\Psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z,(\vec{R_a},\vec{R_b}))=\Psi_{\text{spatial}}(\vec{r_1},\vec{r_2})\otimes\Psi_{\text{spin}}(s_1^z,s_2^z)=\Phi\otimes\mathcal{X}
-\]
-The wave-function can be factorized, as the Hamiltonian is separable (i.e. does not depend on the spin).\\
-Spins can be $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\ket{\uparrow\downarrow}$, and $\ket{\downarrow\uparrow}$. Since electrons are fermions, the two spins' product must be antisymmetric, hence one of the two spins must be antisymmetric and the other one must be symmetric (the two possibilities are \textit{i}) spatial symmetry and spin antisymmetric, \textit{ii}) spatial antisymmetry and simmetric spin). Symmetry can be evaluated in entangled states, too. 
 
-\begin{description}
-   \item[Symmetric spin] ($J=1$): $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}$ also called \textbf{triplet state} (quantum state of a system with a spin quantum number $s=1$), molecule bends in Stern-Gerlach.\\
-   \item[Antisymmetric spin] ($J=0$): $\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}}$ also called \textbf{singlet state} (total spin angular moment $s=0$), molecule doesn't bend in Stern-Gerlach.\\
-\end{description}
+	\subsection{Representation}
+	The system can be firstly represented as two atoms at a large distance that approach slowly to each other, generating a linear combination of mean wave functions.
+	The electrons are in a superposition of states when they start interacting, so the resulting H-H chemical bond is actually an entangled electron tunnelling.
 
-The result is that a combination of two spin-1/2 particles can carry a total spin of 1 or 0, depending on whether they occupy a triplet or singlet state.\\
+	$$\psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z,(\vec{R_a},\vec{R_b}))=\psi_{\text{spatial}}(\vec{r_1},\vec{r_2})\otimes\psi_{\text{spin}}(s_1^z,s_2^z)=\Phi\otimes\mathcal{X}$$
 
-Now we can generate now a model through a variational ansatz:
-\[
-\Psi=\Phi \mathcal{X}=\begin{cases}
-\Psi_1=\Phi_S \mathcal{X}_A = \frac{1}{\sqrt{2}} \big(\varphi_a(r_{1a}) \varphi_b (r_{1b})+\varphi_a (r_{2a}) \varphi_b (r_{2b})\big) \otimes\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}}\\
-\Psi_2=\Phi_A\mathcal{X}_S = \frac{1}{\sqrt{2}} \big(\varphi_a(r_{1a}) \varphi_b (r_{1b})+\varphi_a (r_{2a}) \varphi_b (r_{2b})\big) \otimes\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}\\
-\end{cases}
-\]
-The latter is a mean field model where E1 lives in P1 and E2 lives in P2.\\
-By the variational principle, the wavefunction with the lowest value of energy is the one that best approximates the H$_2$ atom.\\
-\[
-\hat{H}=-\frac{\hbar^2}{2m}\nabla_n^2-\frac{\hbar^2}{2m}\nabla_e^2-\frac{e^2}{|r_1a|}-\frac{e^2}{|r_1b|}-\frac{e^2}{|r_2a|}-\frac{e^2}{|r_2b|}-\frac{e^2}{|R_ab|}
-\]
-Even if spin is not involved in the Hamiltonian and eventually results in $\braket{\hat{S}}{\hat{S}}=1$, the sign of the expected value of the Hamiltonian depends on the spin symmetry, because spatial value and spin symmetry are entangled.
-\[E_1=\langle{\Psi_1\,|\,\hat{H}\,|\,\Psi_1}\rangle =\langle{\Phi_S\,|\,\hat{H}\,|\,\Phi_S}\rangle\]
-\[E_2=\langle{\Psi_2\,|\,\hat{H}\,|\,\Psi_2}\rangle=\langle{\Phi_A\,|\,\hat{H}\,|\,\Phi_A}\rangle\]
-We must solve, then,
-\[
-E_1=\frac{1}{2}\int d\vec{r_1}\int d\vec{r_2}\,\big[\varphi(|\vec{r_1}-\vec{R_a}|)\varphi(|\vec{r_2}-\vec{R_b}|)+\varphi(|\vec{r_1}-\vec{R_b}|)\varphi(|\vec{r_2}-\vec{R_a}|)\big](\hat{H})(\Phi_S)
-\]
-and same for $E_2$. I have two 6-dimensions functions in 6-dimensions integrals.\\
-Results are different whether I solve for the first or second electron.\\
-%This is the result that is obtained when the two atoms are infinitely far.\\
-%\[
-%\braket{\,|\,\hat{H}\,|\,}_{S/A}=2E_0\pm\text{stuff}
-%\]
-%Else, if the two atoms start to approach,
-%\[
-%\braket{\,|\,\hat{H}\,|\,}_{S/A}=\frac{e^2}{R_{ab}}\pm\text{separated ground states}
-%\]
-We obtain two different functions, depicted in figure \ref{fig:variational}:
-\begin{itemize}
-	\item \textbf{Symmetric spatial function}: spin 0 state, has a lower energy value that corresponds to an optimal distance between the two nuclei $\bar{R}$. It allows different calculable energy levels, bond oscillations and strength. Important to notice is that \textbf{quantum symmetry} (state s=0) is key to the binding of atoms. 
-	\item \textbf{Antisymmetric spatial function}: goes against the variational approximation, but technically is a right solution from a quantum mechanical point of view.
-\end{itemize}
-\begin{figure}[htbp!]
-	\centering
-	\includegraphics[scale=0.30]{img_9}
-	\caption{The toal energy is: $|E \rangle = \langle \psi | H | \psi \rangle = 2E_0 + \frac{e^2}{R_{ab}} \text{+ other factors}$. $E_0$ corresponds tot the energy of two atoms infinitely far away from each others, while $\frac{e^2}{R_{ab}}$ acts when the two atoms start to approach.}
-	\label{fig:variational}
-\end{figure}
+	The wave-function can be factorized, as the Hamiltonian is separable (i.e. does not depend on the spin).
+
+	\subsection{Spin}
+	Spins can be $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\ket{\uparrow\downarrow}$, and $\ket{\downarrow\uparrow}$.
+	Since electrons are fermions, the two spins' product must be antisymmetric, hence one of the two spins must be antisymmetric and the other one must be symmetric (the two possibilities are \textit{i}) spatial symmetry and spin antisymmetric, \textit{ii}) spatial antisymmetry and symmetric spin).
+	Symmetry can be evaluated in entangled states, too.
+
+	\begin{multicols}{2}
+	\begin{itemize}
+		 \item \textbf{Symmetric spin ($J=1$)}: $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}$ also called \textbf{triplet state} (quantum state of a system with a spin quantum number $s=1$), molecule bends in Stern-Gerlach.
+		 \item \text{Antisymmetric spin ($J=0$)}: $\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}}$ also called \textbf{singlet state} (total spin angular moment $s=0$), molecule doesn't bend in Stern-Gerlach.
+	\end{itemize}
+	\end{multicols}
+
+	The result is that a combination of two spin-$\frac{1}{2}$ particles can carry a total spin of $1$ or $0$, depending on whether they occupy a triplet or singlet state.
+
+	\subsection{Model}
+	Now we can generate now a model through a variational ansatz:
+
+	$$\psi=\Phi \mathcal{X}=\begin{cases}\psi_1=\Phi_S \mathcal{X}_A = \frac{1}{\sqrt{2}} \big(\varphi_a(r_{1a}) \varphi_b (r_{1b})+\varphi_a (r_{2a}) \varphi_b (r_{2b})\big) \otimes\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}}\\\psi_2=\Phi_A\mathcal{X}_S = \frac{1}{\sqrt{2}} \big(\varphi_a(r_{1a}) \varphi_b (r_{1b})+\varphi_a (r_{2a}) \varphi_b (r_{2b})\big) \otimes\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}\\\end{cases}$$
+
+	The latter is a mean field model where E1 lives in P1 and E2 lives in P2.
+	By the variational principle, the wavefunction with the lowest value of energy is the one that best approximates the H$_2$ atom.
+
+	$$\hat{H}=-\frac{\hbar^2}{2m}\nabla_n^2-\frac{\hbar^2}{2m}\nabla_e^2-\frac{e^2}{|r_1a|}-\frac{e^2}{|r_1b|}-\frac{e^2}{|r_2a|}-\frac{e^2}{|r_2b|}-\frac{e^2}{|R_ab|}$$
+
+	Even if spin is not involved in the Hamiltonian and eventually results in $\braket{\hat{S}}{\hat{S}}=1$, the sign of the expected value of the Hamiltonian depends on the spin symmetry, because spatial value and spin symmetry are entangled.
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item $E_1=\langle{\psi_1\,|\,\hat{H}\,|\,\psi_1}\rangle =\langle{\Phi_S\,|\,\hat{H}\,|\,\Phi_S}\rangle$
+			\item $E_2=\langle{\psi_2\,|\,\hat{H}\,|\,\psi_2}\rangle=\langle{\Phi_A\,|\,\hat{H}\,|\,\Phi_A}\rangle$
+		\end{itemize}
+	\end{multicols}
+
+	We must solve, then,
+
+	$$E_1=\frac{1}{2}\int d\vec{r_1}\int d\vec{r_2}\,\big[\varphi(|\vec{r_1}-\vec{R_a}|)\varphi(|\vec{r_2}-\vec{R_b}|)+\varphi(|\vec{r_1}-\vec{R_b}|)\varphi(|\vec{r_2}-\vec{R_a}|)\big](\hat{H})(\Phi_S)$$
+
+	And same for $E_2$.
+	I have two 6-dimensions functions in 6-dimensions integrals.
+	Results are different whether I solve for the first or second electron.
+
+		\subsubsection{Distance of the atoms}
+		This is the result that is obtained when the two atoms are infinitely far.
+
+		$$\braket{\,|\,\hat{H}\,|\,}_{S/A}=2E_0\pm\text{stuff}$$
+
+		Else, if the two atoms start to approach,
+
+		$$\braket{\,|\,\hat{H}\,|\,}_{S/A}=\frac{e^2}{R_{ab}}\pm\text{separated ground states}$$
+
+	\subsection{Results}
+	We obtain two different functions, depicted in figure \ref{fig:variational}:
+
+	\begin{multicols}{2}
+	\begin{itemize}
+		\item \textbf{Symmetric spatial function}: spin $0$ state, has a lower energy value that corresponds to an optimal distance between the two nuclei $\bar{R}$.
+	It allows different calculable energy levels, bond oscillations and strength.
+	Important to notice is that \textbf{quantum symmetry} (state $s=0$) is key to the binding of atoms.
+		\item \textbf{Antisymmetric spatial function}: goes against the variational approximation, but technically is a right solution from a quantum mechanical point of view.
+	\end{itemize}
+	\end{multicols}
+
+	\begin{figure}[htbp!]
+		\centering
+		\includegraphics[scale=0.30]{img_9}
+		\caption{The total energy is: $|E \rangle = \langle \psi | H | \psi \rangle = 2E_0 + \frac{e^2}{R_{ab}} \text{+ other factors}$.
+							$E_0$ corresponds tot the energy of two atoms infinitely far away from each others, while $\frac{e^2}{R_{ab}}$ acts when the two atoms start to approach.}
+		\label{fig:variational}
+	\end{figure}
 
 \section{Electronic structure calculation methods}
+
 When choosing the best method to describe an electronic structure, some evaluations have to be made regarding the accuracy of the calculation vs the computational cost of the operation. \\
 The first approximation to be chosen is always the most important, as it determines the further steps that need to be taken. \\
+
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_13}
 	\caption{Cartoon representing the main types of calculations, divided based on the cost and accuracy. Exact diagonalization is not reported, since it's computationally extremely hard). }
 \label{fig:calculations}
 \end{figure}
+
 \newline
 The \textbf{exact diagonalization} (truncated basis) technique is very precise, but it can't be used with system with more than 5 or 6 particles at the same time.\\
 For biological systems, chemical accuracy is important as long as the error is not dramatic (keep in mind that a slight change of temperature can drastically change the system). A simulation is acceptable when $K_BT < 1.5\text{ KJ/mol} \div 2.4 \text{ KJ/mol}$.\\
@@ -257,8 +297,136 @@ for an auxiliary non-interacting system with a local external potential:
 I.e.: it is possible to define a functional such as the minimum of the functional is the exact value of the ground state energy. \\
 Differently from Ritz Theorem, here the functional is nor given or referred to the wave function. 
 The one body density's functional's minimum is the exact ground state energy of the problem \textbf{for all} Hamiltonians.\\
+=======
 
-These two are existent theorems; they do not provide any solution, and usually they are complemented with ways to build the right functional to solve the problem.\\
+	\subsection{Exact Diagonalization}
+	The exact diagonalization with truncated basis technique is very precise, but it can't be used with system with more than 5 or 6 particles at the same time.
+	For biological system, chemical accuracy is important as long as the error is not dramatic (keep in mind that a slight change of temperature can drastically change the system).
+	A simulation is acceptable when $K_BT < 1.5\text{ KJ/mol} \div 2.4 \text{ KJ/mol}$.
+	For macromolecules in biology, very accurate DFT are performed.
+	The problem is that it's very difficult to predict Van Der Waals forces, since they are polynomial and DFT employs exponentials.
+	The general goal is using classical equations to predict quantum-mechanics-descripted movements.
+
+	\subsection{Hartree-Fock Method}
+	Hartree-Fock method is a method of approximation for the determination of the wave function and the energy of a quantum many-body system in a stationary state that combines Mean Field Approximation, Fermi symmetry, and the Variational Principle.
+
+		\subsubsection{Slater matrix}
+		The method uses the Slater matrix's determinant to approximate a set of $N$ fermions.
+
+		$$\psi(q_1\cdots q_n)=\frac{1}{\sqrt{2}}\begin{pmatrix}\phi_1(r_1)&\cdots&\phi_n(r_1)\\\cdots & &\cdots\\\phi_1(r_m)&\cdots&\phi_n(r_m)\end{pmatrix}$$
+
+		We do not expect to find $\psi(q_1\cdots q_n)$.
+		We can say it is the result of an equation and calculate the energy by using the Variational Principle with $E=\braket{\psi\,|\,E\,|\,\psi}$ and minimize $E$ with respect to $\psi(q)$ (a single-particle function) under the constraint of normalization ($\braket{\psi\,|\,\psi}=1$).
+		Constraint minimization is operated with \textbf{Lagrange multipliers}: I consider a system of equations $f(x_1\cdots x_n)$ where I can calculate the minimum and the maximum with the application of the gradient $\nabla f=0$.
+
+		\subsubsection{Hartree equation}
+		We eventually obtain the \textbf{Hartree Equation}, representing \ul{one electron interacting with a probability cloud}.
+		It is a symmetric system (valid for bosons, since they have classical limits and can be represented as shown without further additions):
+
+		$$\bigg(-\frac{\hbar^2}{2m}\nabla^2_i-\frac{Z}{r_i}\bigg)\Phi_\lambda(\vec{r_i})+\sum_\mu \sum_{j \neq i} \int\,d^3\vec{r_j}\bigg(\Phi^*_\mu(\vec{r_j})\Phi_\mu(\vec{r_j})\frac{1}{|r_i-r_j|}\Phi_\lambda(\vec{r_i})\bigg)=E\Phi_\lambda(\vec{r_i})$$
+
+		In particular:
+
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item $-\frac{Z}{r_i}$ is the coulombic attraction for a single nucleus (atomic physics version)
+				\item $\Phi_\lambda(\vec{r_i})$ represents orbital position of the electron + spin.
+			The number of electrons is the number of equations that need to be solved
+				\item $\mu$ is the orbital index that changes the wave function
+				\item $\Phi^*_\mu(r_j)\Phi_\mu(r_j) = \rho_\mu^{(i)}(r_j)$ is the electron density + density of charge around it (probability density) with sum of all electrons in all orbitals ($\mu$)
+			\end{itemize}
+		\end{multicols}
+
+		\subsubsection{Fock equation}
+		The Fermi symmetry introduces the Slater determinant, that is also called \textbf{exchange term} (\textbf{Fock equation}).
+		This introduction implies that I cannot bring two electrons with the same spin in the same orbital.
+		The wave function collapses to zero and I have repulsion between the electrons.
+
+		$$\text{HARTREE EQN}+\sum_\mu \sum_{j \neq i} \int\,d^3\vec{r_j}\bigg(\Phi^*_{\mathcolorbox{yellow}{\mu}}(\vec{r_j})\Phi_{\mathcolorbox{yellow}{\lambda}}(\vec{r_j})\frac{1}{|r_i-r_j|}\Phi_{\mathcolorbox{yellow}{\mu}}(\vec{r_i})\bigg)=E\Phi_\lambda(\vec{r_i})$$
+
+		This implies that the electron density factor of Hartree equation is not present anymore, the two particles are in a different state.
+		At the same time, $\Phi_\mu(r_i)$ becomes Fock's generalization exchange term for fermions.
+		This equation though is non linear ($\Phi^3$), so many quantum mechanics properties can't be applied to HF.
+		The computational cost doesn't change over the introduction of the exchange term, even if it has a three-dimensional integral.
+
+		\subsubsection{Algorithm}
+		Since the equation cannot be expanded on a different basis, self consisted methods must be used.
+		These are iterative procedures operated until the function converges:
+
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item (Guess) $\Phi^{(t)}_\lambda (\vec{r})$.
+				\item Compute $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$, as they are numerical values.
+				\item Insert $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$ into HF equation, resulting in a conventional linear Schr\"odinger equation.
+				\item Solve HF equation and get a more accurate wave function $\Phi^{(t+1)}_\lambda (\vec{r})$.
+				\item Let $\Phi^{(t)}_\lambda = \Phi^{(t+1)}_\lambda$.
+				\item Repeat until convergence (typically a single minimum is present).
+			\end{enumerate}
+		\end{multicols}
+
+		I can use self consistent fields to compute the Hartree-Fock equation, but they are computationally expensive because they make heavy use of parallel computing.
+		The Hartree-Fock equation can be used with semi empirical methods with coefficients in front of direct and exchange terms, that can weight the two terms in order to better match the experimental results.
+		The Hartree-Fock equation is usually employed to build the expansion of the eigenfunction or in quantum computing.
+
+	\subsection{Density Function Theory (DFT)}
+	Variational in principle can yield the exact result, but they needs heuristic input and approximation to be feasible.
+	Over the made assumptions, it is possible to achieve excellent results.
+	Simple inputs are required for the perfect compromise between accuracy and computational cost.
+
+		\subsubsection{Density function computation}
+		The density function theory is based on density function computation instead of the wave function computation.
+		Let the density operator:
+
+		$$\hat{\rho}(\vec{r})=\sum_{i=1}^{N_0}\delta(\vec{r}-\vec{r_i})$$
+
+		Now, its expected value assuming $\braket{\psi\,|\,\psi}=1$:
+
+		$$\braket{\psi\,|\,\hat{\rho}(\vec{r})\,|\,\psi}=\sum_i \int\,d\vec{r_1}...d\vec{r_{N_e}}\bigg(\psi^*(\vec{r_1}-\vec{r_{N_e}})\delta(\vec{r}-\vec{r_i})\psi(\vec{r_1}-\vec{r_{N_e}})\bigg)\braket{\psi\,|\,\hat{\rho}(\vec{r})\,|\,\psi}=n(\vec{r})$$
+
+		Which is the probability of finding any electron at the point $r$.
+		This concept is shown in the following picture,  where blue is low electron density and red is high electron density.
+
+		\begin{figure}[htbp!]
+			\centering
+			\includegraphics[scale=0.30]{img_14}
+		\end{figure}
+
+		\subsubsection{Single body density}
+		$n(\vec{r})$ is a so-called single body density, representing different information with respect of the wave function (in fact $\hat{\rho}(\vec{r})$ reduces it when compared to $\psi$).
+		For any Hamiltonian there is one and only single-body density.
+
+		\subsubsection{Hochenberg and Kohn}
+		Hochenberg and Kohn have elaborated two theorems that show that the ground state and excited states' properties of a system (quantum many-body system) are entirely determined by a single-body wave function $n(\vec{r})$.
+		Mind that the quantum electronic structure calculation problem is:
+
+		$$\hat{H}=-\frac{\hbar^2}{2m}\sum_i^{N_e}\nabla_i^2+\frac{1}{2}\sum_{i\neq j} \frac{e^2}{|r_i-r_j|}+\sum_i^{N_e}V_{ext}(\vec{r_i})$$
+
+		The last term is the interaction between single electrons and nuclei.
+		In the Born-Oppenheimer approximation, this was the external potential as nuclei were fixed.
+
+			\paragraph{First theorem}
+			For any system of interacting particles, the external potential is determined uniquely by the ground state one-body density.
+
+			$$n_o(\vec{r})=\braket{\psi\,|\,\hat{\rho}(\vec{r})\,|\,\psi}$$
+
+				\subparagraph{Corollary}
+				All wave functions (ground state, first excited state and all eigenstates of $\hat{H}$) are fully determined by $n_0(\vec{r})$.
+
+			\paragraph{Second theorem}
+			A functional $E[n_0]$ can be defined such that the minimum of this functional with respect to $n_0(\vec{r})$ provides the exact $n_0(\vec{r})$ and $E_0$ (ground state energy).\\
+
+		\subsubsection{Density function minimum}
+		Given a function: $f: x \rightarrow f(x)$ where $x$ is a variable and $f(x)$ is a number), a functional $E[f]: f(x) \rightarrow E[f]$ is such where $f(x)$ is a function of operators and $E[f]$ is a number.
+		Examples of functionals are definite integrals or the expectation values of operators.
+		Ritz Theorem determines that the minimum of the functional of the wave function (the expectation value of the Hamiltonian) is the exact ground state.
+
+			\paragraph{Solution}
+			It is possible to define a functional such as the minimum of the functional is the exact value of the ground state energy.
+			Differently from Ritz Theorem, the functional is not given and not referred to the wave function.
+			The one body density functional minimum is the exact ground state energy of the problem for all the Hamiltonians.
+			The theorems described above do not provide any solution, and they are usually complemented with ways to build the right functional to solve the problem.
+
+
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.30]{img_15}
@@ -266,7 +434,10 @@ These two are existent theorems; they do not provide any solution, and usually t
 \end{figure}
 
 \subsection{Hybrid (QM-MM) Schemes}
-QM-MM stands for Quantum Mechanics, Molecular Mechanics. 
-These schemes are used for large molecular models and chemical reactions studies (e.g., enzymatic reactions).\\
-QM is applied to the region of interest (so to have the computational effort only where needed),  while classical molecular mechanics is applied elsewhere and an hybrid method is used at the border between the two regions.\\
-The difficulty is presented when considering thermodynamics. The more degrees of freedom, the more entropy.\\
+
+	\subsection{QM-MM Schemes}
+	QM-MM (Quantum mechanics - molecular mechanics) refers to hybrid systems used for large molecular models and chemical reactions studies like enzymatic reactions.
+	Quantum mechanics is applied to the region of interest, while classical mechanics is used elsewhere.
+	An hybrid method is used at the border of the two region of interest.
+	This is done to focus the computational power strictly when needed, but still has problems when considering thermodynamics.
+
