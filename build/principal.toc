@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {part}{I\hspace {1em}Quantum mechanics}{7}{part.1}%
 \contentsline {chapter}{\numberline {1}Revisiting classical mechanics}{8}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Physical theories}{8}{section.1.1}%
@@ -180,10 +180,22 @@
 \contentsline {subsubsection}{\numberline {7.2.3.1}Distance of the atoms}{75}{subsubsection.7.2.3.1}%
 \contentsline {subsection}{\numberline {7.2.4}Results}{75}{subsection.7.2.4}%
 \contentsline {section}{\numberline {7.3}Electronic structure calculation methods}{76}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Hartree-Fock Method}{77}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Density Function Theory (DFT)}{78}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Building functionals}{80}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Hybrid (QM-MM) Schemes}{80}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.1}Exact diagonalization}{76}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Hartree-Fock Method}{76}{subsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.1}Slater matrix}{77}{subsubsection.7.3.2.1}%
+\contentsline {subsubsection}{\numberline {7.3.2.2}Hartree equation}{77}{subsubsection.7.3.2.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.3}Fock equation}{78}{subsubsection.7.3.2.3}%
+\contentsline {subsubsection}{\numberline {7.3.2.4}Self consisted methods}{78}{subsubsection.7.3.2.4}%
+\contentsline {subsection}{\numberline {7.3.3}Density Function Theory (DFT)}{78}{subsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.1}Density function computation}{78}{subsubsection.7.3.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.3.2}Single-body density}{79}{subsubsection.7.3.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3.3}Hochenberg and Kohn theorems}{79}{subsubsection.7.3.3.3}%
+\contentsline {paragraph}{\numberline {7.3.3.3.1}First theorem}{80}{paragraph.7.3.3.3.1}%
+\contentsline {subparagraph}{\numberline {7.3.3.3.1.1}Corollary}{80}{subparagraph.7.3.3.3.1.1}%
+\contentsline {paragraph}{\numberline {7.3.3.3.2}Second theorem}{80}{paragraph.7.3.3.3.2}%
+\contentsline {subparagraph}{\numberline {7.3.3.3.2.1}Functionals}{80}{subparagraph.7.3.3.3.2.1}%
+\contentsline {subsection}{\numberline {7.3.4}Building functionals}{80}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Hybrid (QM-MM) Schemes}{80}{subsection.7.3.5}%
 \contentsline {part}{III\hspace {1em}Quantum computing}{82}{part.3}%
 \contentsline {chapter}{\numberline {8}Quantum computing}{83}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Qubits}{83}{section.8.1}%

@@ -4,7 +4,7 @@ How do we solve quantum mechanical problems? Or to be more specific, how to solv
 As the problems become more complicated, even by relying on super computers it is impossible to design algorithms that provide for an exact solution.
 Here's the need for approximation methods.
 Approximation methods can be "ideal" and "non-ideal" (not conventional names).
-An ideal approximation method can become an exact method by tuning some parameters, the non-ideal ones will always remain an approximation, even with huge computational power (many in biology are non-ideal, like the Hartree-Fock, and are developed upon a physical intuition that allows to make important assumfptions).
+An ideal approximation method can become an exact method by tuning some parameters, the non-ideal ones will always remain an approximation, even with huge computational power (many in biology are non-ideal, like the Hartree-Fock, and are developed upon a physical intuition that allows to make important assumptions).
 Some assumption concern the shape of the Hamiltonian (like confining a particle in a box instead of a complex potential), some concern the solution of a given Hamiltonian.
 The question we ask ourselves as biologist is "do we want to be more accurate or insightful?".
 If our aim is a biological application of quantum mechanics we are more interested in accuracy rather than completely understanding a structure $\rightarrow$ approximation.
@@ -33,7 +33,7 @@ We can simplify our calculations and make a useful and accurate approximate solu
 	Where $\bigl(\psi_n(n),g(n)\bigr)$ are coefficient of the inner product with $c_n\in \mathbb{C}$.
 
 		\subsubsection{Expansion}
-	
+
 		Any wave function can be expanded, just like $\vec{v} = \sum_n c_n \vec{e}_n$, where $c_n = \vec{v} \, \vec{e}_n$.
 		But the expansion can be truncated.
 		For example, if we have a vector projected to its components $\vec v = v_1\hat{e}_1+v_r\hat{e}_r$, we can choose a smart basis ${\vec{w}_1, \vec{w}_2}$, so that we can describe the vector with fewer elements and end up with something like $ \vec{v} \cong (\vec{v} \cdot \vec{w}_1) \vec{w}_1 $ .
