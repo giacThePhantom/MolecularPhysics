@@ -2,7 +2,7 @@
 \chapter{Molecular physics}
 
 \section{The Born-Oppenheimer Approximation}
-Molecular physics expalins the origin of chemical bonds and makes it possible to understand quantum chemistry calculations.
+Molecular physics explains the origin of chemical bonds and makes it possible to understand quantum chemistry calculations.
 Chemistry can be represented by an "unsolvable" Schr\"odinger equation:
 
 $$\bigg[-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2-\sum_{i=0}^{N_e}\frac{\hbar^2}{2m_e}\cdot\nabla^2_i+V[\{\vec{R}\}_{\alpha},\{\vec{r_i}\}_i]\bigg]=E\psi[\{\vec{R}\}_{\alpha},\{\vec{r}\}_i]$$
@@ -158,11 +158,10 @@ The first approximation to be chosen is always the most important, as it determi
 \label{fig:calculations}
 \end{figure}
 
-	\subsection{Exact diagonalization}
-	The \textbf{exact diagonalization} (truncated basis) technique is very precise, but it can't be used with system with more than $5$ or $6$ particles at the same time.
-	For biological systems, chemical accuracy is important as long as the error is not dramatic (keep in mind that a slight change of temperature can drastically change the system). A simulation is acceptable when $K_BT < 1.5\text{ KJ/mol} \div 2.4 \text{ KJ/mol}$.
-	For macromolecules in biology, very accurate DFT are today's state of the art. The problem with other methods (Hartree-Fock) is that it does not predict Van Der Waals disperion forces, since they are polynomial.
-	In practice, exact solution are never found. However excellent approximations are possible and this is the reason why DFT is the most commonly adopted scheme for electronic calculations in condensed matter and quantum chemistry.
+	The \textbf{exact diagonalization} (truncated basis) technique that we encountered at the beginning of Chapter 5 is also used with very precise outcomes, but it can't be used with systems bearing more than $5$ or $6$ particles at the same time.
+	For biological systems, chemical accuracy is important as long as the error is not dramatic (keep in mind that a slight change of temperature can drastically change the system). A simulation is acceptable when $K_BT < 1.5\text{ KJ/mol} \divisionsymbol 2.4 \text{ KJ/mol}$.
+	For macromolecules in biology, very accurate DFT are today's state of the art, but they don't predict Van Der Waals dispersion forces, since they have a polynomial form. Instead, other methods are used (\textit{i.e.}, Hartree-Fock).
+	In practice, exact solutions for many-body systems are never found but excellent approximations are possible and this is the reason why DFT is the most commonly adopted scheme for electronic calculations in condensed matter physics and quantum chemistry.
 	The general goal is using classical equations to predict quantum-mechanics-descripted movements. In figure \ref{fig:calculations} the main approaches are reported.
 
 	\subsection{Hartree-Fock Method}
@@ -175,7 +174,7 @@ The first approximation to be chosen is always the most important, as it determi
 	$$\psi(x_1, ..., x_n) = \phi(x_1) \cdot ... \cdot \phi(x_n) \;\;\;\; (*)$$
 
 	The Hartree method is a variational approach which yields the best solution to a quantum many-body problem in which the ground state trial wave function is in the factored form $(*)$ and Ritz variational principle is applied to determine the “best” single-particle orbitals $\phi(x)$.
-	It combines Mean Field Approximation, Pauli's symmetry, and the Variational Principle.
+	It combines Mean Field Approximation, Fermi symmetry, and the Variational Principle.
 
 		\subsubsection{Slater matrix}
 		HF uses the Slater matrix's determinant to approximate a set of $N$ fermions.
@@ -294,7 +293,7 @@ The first approximation to be chosen is always the most important, as it determi
 
 \subsection{Building functionals}
 The challenge is therefore to build the energy functional.
-The HK theorems would have been relegated as useless curiosity hadn’t Kohn and Sham (KS) found a scheme to construct approximate functionals which turned out to work extremely well for a large class of electronic problems in condensed matter an molecular physics.
+The HK theorems would have been relegated as useless curiosity if Kohn and Sham (KS) hadn't found a scheme to construct approximate functionals which turned out to work extremely well for a large class of electronic problems in condensed matter and molecular physics.
 The construction of such functionals stands on the so-called KS ansatz for $E[n]$ and is based on the following main assumption: \textit{The ground state of the exact system can be found by minimising the Energy functional for an auxiliary non-interacting system with a local external potential:}
 
 $$H_{aux.} = \sum_i \bigg(-\hbar^2 \frac{\nabla_i^2}{2m} + V_{aux.}(x_i) \bigg)$$
