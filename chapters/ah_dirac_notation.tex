@@ -1,125 +1,137 @@
 \chapter{Dirac notation}
-\textit{Ref: D. J. Griffith - Introduction to Quantum Mechanics, second edition}\\
+In quantum mechanics, the state of a system can be represented by a vector $\ket{\vec{L}(t)}$ that "lives out there in Hilbert space" but can be expressed by means of any number of different bases.
+The wave function $\psi(x,t)$ is the coefficient in the expansion of $\ket{\vec{L}}$ in the basis of position eigenfunctions.
 
-In quantum mechanics, the state of a system can be represented by a vector $\ket{\vec{L}(t)}$ that "lives out there in Hilbert space" but can be expressed by means of any number of different BASES.\\
-The wave function $\Psi(x,t)$ is the coefficient in the expansion of $\ket{\vec{L}}$ in the basis of position eigenfunctions.
-\[
-\Psi(x,t)=\braket{x}{\vec{L}}
-\]
-The momentum space wavefunction $\Phi(p,t)$ is the expansion of $\ket{\vec{L}}$ in the basis of momentum eigenfunctions.
-\[
-\Phi(p,t)=\braket{p}{\vec{L}}
-\]
+$$\psi(x,t)=\braket{x}{\vec{L}}$$
+
+The momentum space wavefunction $\phi(p,t)$ is the expansion of $\ket{\vec{L}}$ in the basis of momentum eigenfunctions.
+
+$$\phi(p,t)=\braket{p}{\vec{L}}$$
+
 We can also expand the wave function $\ket{\vec{L}}$ with energy eigenfunctions (discrete spectrum)
-\[
-c_n(t)=\braket{n}{\vec{L}}
-\]
-The functions $\Psi$, $\Phi$, and the set of coefficients ${c_n}$ are the same way of describing the same vector:
-\[
-\Psi(x,t)=\int\ Psi(y,t)\delta(x-y)\,dy\,=\int\Phi(p,t)\cdot\frac{1}{\sqrt{2\pi \hbar}}e^{\frac{ipx}{\hbar}}dp\,=\sum c_n\cdot e^{-\frac{iE_nt}{\hbar}}\psi_n(x)
-\]
+
+$$c_n(t)=\braket{n}{\vec{L}}$$
+
+The functions $\psi$, $\phi$, and the set of coefficients ${c_n}$ are the same way of describing the same vector:
+
+$$\psi(x,t)=\int\ \psi(y,t)\delta(x-y)\,dy\,=\int\phi(p,t)\cdot\frac{1}{\sqrt{2\pi \hbar}}e^{\frac{ipx}{\hbar}}dp\,=\sum c_n\cdot e^{-\frac{iE_nt}{\hbar}}\psi_n(x)$$
+
 Operators acting on observables are linear transformations and transform one vector into another $\ket{\beta}=\hat{O}\ket{\alpha}$ and can be represented with respect to a particular basis by their matrix elements.
-\[
-\mel{e_m}{\hat{O}}{e_n}\equiv Q_{mn} \text{ so we can say }
-\sum_n b_n\ket{e_n}=\sum_na_n\hat{O}\ket{e_n}
-\]
-by considering the inner product $\sum_nb_n\braket{e_m}{e_n}=\sum_na_n\mel{e_m}{\hat{O}}{e_n}$
-\[
-b_m=\sum_nQ_{mn}a_n
-\]
-where $Q_{mn}$ is a matrix element that will determine how the components transform.\\
+
+$$\mel{e_m}{\hat{O}}{e_n}\equiv Q_{mn} \text{ so we can say }\sum_n b_n\ket{e_n}=\sum_na_n\hat{O}\ket{e_n}$$
+
+By considering the inner product $\sum_nb_n\braket{e_m}{e_n}=\sum_na_n\mel{e_m}{\hat{O}}{e_n}$
+
+$$b_m=\sum_nQ_{mn}a_n$$
+
+Where $Q_{mn}$ is a matrix element that will determine how the components transform.\\
 I might have a system that only admits a finite number of linearly independent states (usually two). $\ket{L(t)}$ lives in an N-dimensional vector space that can be represented with a column of N components. Operators take the form of a (NxM) matrix.\\
 Anyway, for the inner product Dirac proposed the \textbf{braket notation} $\braket{a}{b}$ where:
-\begin{itemize}
-    \item $\ket{b}$ Ket = vector
-    \item $\bra{a}$ Bra = linear function of vector that, if it hits the ket, it gives the inner product of the two, a \underline{number}
-\end{itemize}
-Operator + vector = vector\\
-Bra + vector = number\\
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item $\ket{b}$ Ket = vector
+        \item $\bra{a}$ Bra = linear function of vector that, if it hits the ket, it gives the inner product of the two, a \underline{number}
+    \end{itemize}
+\end{multicols}
+
+$$Operator + vector = vector$$
+
+$$Bra + vector = number$$
+
 Bra notation can be resembled as a function to integrate $\bra{f}=\int f^*[...]dx$ in an infinite vector space. In a finite vector space, the bra represents a row complex vector such as
-\[
-\braket{a}{b}=\begin{pmatrix}a^*_1&a^*_2&...&a^*_n\end{pmatrix}\begin{pmatrix}b_1\\b_2\\...\\b_n\end{pmatrix}
-\]
-Collection of bras is another vector space = DUAL SPACE\\
+
+$$\braket{a}{b}=\begin{pmatrix}a^*_1&a^*_2&...&a^*_n\end{pmatrix}\begin{pmatrix}b_1\\b_2\\...\\b_n\end{pmatrix}$$
+
+Collection of bras is another vector space, so there is a dual space.
+
 \section{Vector space representation}
 In vector space ( $\mathbb{R}^3$), we can express each $v$ as $v_i=\hat{e}_i \cdot \vec{v}$. $\hat{e}_1,\hat{e}_2,\hat{e}_3$ are orthogonal and orthonormal. The choice of the basis is key.
-\subsection{Inner product}
-$$(\bar{v}\bar{w})=\sum_{i} v_i w_i$$
-\subsection{Operator}
-$$(\hat{e}_{j} ; \vec{0}(\sum_{i} \hat{e}_{i} v_{i})_{1}=0_{j i}$$
-\begin{enumerate}
-\item take each component of the vector
-\item apply transformation
-\item compute the product of the transformed components
-\end{enumerate}
 
-$$
-\left(\hat{e}_{i j}(\hat{o} \bar{v})\right)=(\hat{e}_{j}, \sum_{i} \hat{o} \underbrace{\hat{e}_{i} v_{i}}_{v_{i}})= \\
-=\sum({\left.\hat{e}_{j}, \hat{o} \hat{e}_{i}\right) v_{i}}$$
-As a result: $$ \quad \hat{o} \bar{v} \rightarrow \Sigma_{j i} v_{i}=w_{j}$$
+    \subsection{Inner product}
+
+    $$(\bar{v}\bar{w})=\sum_{i} v_i w_i$$
+
+    \subsection{Operator}
+
+    $$(\hat{e}_{j} ; \vec{0}(\sum_{i} \hat{e}_{i} v_{i})_{1})=0_{j i}$$
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+            \item take each component of the vector
+            \item apply transformation
+            \item compute the product of the transformed components
+        \end{enumerate}
+    \end{multicols}
+
+    $$\left(\hat{e}_{i j}(\hat{o} \bar{v})\right)=(\hat{e}_{j}, \sum_{i} \hat{o} \underbrace{\hat{e}_{i} v_{i}}_{v_{i}})=\sum({\left.\hat{e}_{j}, \hat{o} \hat{e}_{i}\right) v_{i}}$$
+
+    As a result: $$ \quad \hat{o} \bar{v} \rightarrow \Sigma_{j i} v_{i}=w_{j}$$
 
 \section{Hilbert space representation}
 The elements of the Hilbert space are represented as following: $\ket{\psi},\ket{\xi} \in \mathcal{H}$
-\subsection{Inner product}
-The Dirac delta function can assume either $0$ or $1$ as a value.
-$$\bra{x}\ket{x} = \delta (x,x')$$
-\noindent
-We can compute $\ket{\psi}$ as the integral over the inner product with the position ($\bra{x}\ket{\psi} \in \mathbb{C}$) and the position vector itself.
 
-$$\ket{\psi}= \int d x \bra{x}\ket{\psi} \ket{x} = \int d x \psi(x) \ket{x} $$
-\subsection{Operator}
-$$\mel{x}{\hat{p}}{\psi}=\int d x^{\prime} \underbrace{\left\langle x|p| x^{\prime}\right\rangle}_{\operatorname{matrix}} \psi\left(x^{\prime}\right)
-=\int d x \delta\left(x, x^{\prime}\right)\left(-i \hbar \frac{d}{d x^{\prime}}\right) \psi\left(x^{\prime}\right)
-=-i \hbar \frac{d}{d x} \psi(x)$$
-Since
-$$
-\int d x^{\prime} \delta\left(x, x^{\prime}\right) g\left(x^{\prime}\right)=g(x)$$
-In general, $\sum_{j} \delta_{i j} A_{j}=A_{i} $. In the case in which $i=2$:
- $$ \underbrace{\delta_{21} A_{1}}_{0}+\underbrace{\delta_{22} A_{2}}_{1}+\underbrace{\delta_{23} A_{3}}_{0}
-$$
-\noindent
-$\ket{\psi(x)}$ is called "ket" and $\bra{\psi(x)}$ is called "bra"; together they form the norm of $\psi$,  also known as "bracket".\\
-\\
-\underline{Expectation value}:
-$$\expval{\hat{O}}{\psi}= \int d x \expval{\hat{O}}{\psi} \psi(x)= \int d x^{\prime} \psi^{*}(x) \mel{x'}{\hat{O}}{x} \psi(x)$$
+    \subsection{Inner product}
+    The Dirac delta function can assume either $0$ or $1$ as a value.
 
-\underline{S.E.}:
-$$ \ket{\psi(t)}\rightarrow i \hbar \frac{d}{d t}\ket{\psi(t)}=\hat{H}\ket{\psi(t)}\stackrel{x \text { space }}{\rightarrow} i \hbar \frac{d}{d t}\bra{x} \ket{\psi(t)}=\int d x^{\prime} \mel{x'}{\hat{H}}{x} \bra{x} \ket{\psi}$$
+    $$\bra{x}\ket{x} = \delta (x,x')$$
+    \noindent
+    We can compute $\ket{\psi}$ as the integral over the inner product with the position ($\bra{x}\ket{\psi} \in \mathbb{C}$) and the position vector itself.
 
-\section{\textit{Example: two linearly independent states}}
-\[\ket{1}=\begin{pmatrix}1\\0\end{pmatrix}\,\ket{2}=\begin{pmatrix}0\\1\end{pmatrix}\]
+    $$\ket{\psi}= \int d x \bra{x}\ket{\psi} \ket{x} = \int d x \psi(x) \ket{x} $$
+
+    \subsection{Operator}
+
+    $$\mel{x}{\hat{p}}{\psi}=\int d x^{\prime} \underbrace{\left\langle x|p| x^{\prime}\right\rangle}_{\operatorname{matrix}} \psi\left(x^{\prime}\right)=\int d x \delta\left(x, x^{\prime}\right)\left(-i \hbar \frac{d}{d x^{\prime}}\right) \psi\left(x^{\prime}\right)=-i \hbar \frac{d}{d x} \psi(x)$$
+
+    Since
+
+    $$\int d x^{\prime} \delta\left(x, x^{\prime}\right) g\left(x^{\prime}\right)=g(x)$$
+
+    In general, $\sum_{j} \delta_{i j} A_{j}=A_{i} $. In the case in which $i=2$:
+    $$\underbrace{\delta_{21} A_{1}}_{0}+\underbrace{\delta_{22} A_{2}}_{1}+\underbrace{\delta_{23} A_{3}}_{0}$$
+
+    \noindent
+    $\ket{\psi(x)}$ is called "ket" and $\bra{\psi(x)}$ is called "bra"; together they form the norm of $\psi$,  also known as "bracket".
+
+        \subsubsection{Expectation value}
+
+        $$\expval{\hat{O}}{\psi}= \int d x \expval{\hat{O}}{\psi} \psi(x)= \int d x^{\prime} \psi^{*}(x) \mel{x'}{\hat{O}}{x} \psi(x)$$
+
+        \subsubsection{SChr\"oedinger equation}
+
+        $$ \ket{\psi(t)}\rightarrow i \hbar \frac{d}{d t}\ket{\psi(t)}=\hat{H}\ket{\psi(t)}\stackrel{x \text { space }}{\rightarrow} i \hbar \frac{d}{d t}\bra{x} \ket{\psi(t)}=\int d x^{\prime} \mel{x'}{\hat{H}}{x} \bra{x} \ket{\psi}$$
+
+\section{two linearly independent states}
+
+$$\ket{1}=\begin{pmatrix}1\\0\end{pmatrix}\,\ket{2}=\begin{pmatrix}0\\1\end{pmatrix}$$
+
 The most general state is a normalized linear combination: $\ket{L}=a\ket{1}+b\ket{2}=\begin{pmatrix}a\\b\end{pmatrix}$ with $|a|^2+|b|^2=1$.\\
 \[\text{Hamiltonian: } \hat{H}=\begin{pmatrix}h&g\\g&h\end{pmatrix}, h,g\,\in \mathbb{R}\]
 If the system at $t=0$ is at $\ket{1}$, what state will it be at $t$?
+
 \begin{enumerate}
     \item Solve time independent Schr\"odinger equation $\hat{H}\ket{L}=E\ket{L}$ and find eigenvalues and eigenvectors.
-    \[
-    \det\begin{pmatrix}h-E&g\\g&h-E\end{pmatrix}=(h-E)^2-g^2=0 \rightarrow h-E=\pm g \rightarrow E_{\pm}=h\pm g
-    \]
-    I have two allowed energies.
+
+        $$\det\begin{pmatrix}h-E&g\\g&h-E\end{pmatrix}=(h-E)^2-g^2=0 \rightarrow h-E=\pm g \rightarrow E_{\pm}=h\pm g$$
+
+        There are two allowed energies.
     \item Determine eigenvectors:
-    \[
-    \begin{pmatrix}h&g\\g&h\end{pmatrix}\begin{pmatrix}\alpha\\\beta\end{pmatrix}=(h\pm g)\begin{pmatrix}\alpha\\\beta\end{pmatrix} \rightarrow h\alpha + g\beta = (h\pm g)\alpha \rightarrow \beta = \pm\alpha
-    \]
-    Normalized eigenvectors: $\ket{L_{\pm}}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\\pm 1\end{pmatrix}$
+
+        $$\begin{pmatrix}h&g\\g&h\end{pmatrix}\begin{pmatrix}\alpha\\\beta\end{pmatrix}=(h\pm g)\begin{pmatrix}\alpha\\\beta\end{pmatrix} \rightarrow h\alpha + g\beta = (h\pm g)\alpha \rightarrow \beta = \pm\alpha$$
+
+        Normalized eigenvectors: $\ket{L_{\pm}}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\\pm 1\end{pmatrix}$
     \item Expansion of the initial state as linear combination of eigenvectors of the hamiltonian (entanglement of the two states).
-    \[
-    \ket{L(0)}=\begin{pmatrix}1\\0\end{pmatrix}=\frac{1}{\sqrt{2}}(\ket{L_+}+\ket{L_-})
-    \]
+
+        $$\ket{L(0)}=\begin{pmatrix}1\\0\end{pmatrix}=\frac{1}{\sqrt{2}}(\ket{L_+}+\ket{L_-})$$
+
     \item We add the time-dependence $e^{-\frac{iE_nt}{\hbar}}$ to calculate the state at time $t$:
-    \[
-    \ket{L(t)}=\frac{1}{\sqrt{2}}\bigg[e^{-\frac{i(g+h)t}{\hbar}}\ket{L_+}+e^{-\frac{i(h-g)t}{\hbar}}\ket{L_-}\bigg]
-    \]
-    \[
-    =\frac{1}{2}\bigg[e^{-\frac{i(g+h)t}{\hbar}}\begin{pmatrix}1\\1\end{pmatrix}+e^{-\frac{i(h-g)t}{\hbar}}\begin{pmatrix}1\\-1\end{pmatrix}\bigg]
-    \]
-    \[
-    =\frac{1}{2}e^{-\frac{iht}{\hbar}}\bigg[\begin{pmatrix}e^{-\frac{igt}{\hbar}}+e^{-\frac{igt}{\hbar}}\\e^{-\frac{igt}{\hbar}}-e^{-\frac{igt}{\hbar}}\end{pmatrix}\bigg]
-    =e^{-\frac{iht}{\hbar}}
-    \begin{pmatrix}
-    \cos (gt/\hbar)\\
-    -i\sin (gt/\hbar)
-    \end{pmatrix}
-    \]
+
+        \begin{align*}
+            \ket{L(t)}&=\frac{1}{\sqrt{2}}\bigg[e^{-\frac{i(g+h)t}{\hbar}}\ket{L_+}+e^{-\frac{i(h-g)t}{\hbar}}\ket{L_-}\bigg]=\\
+                      &=\frac{1}{2}\bigg[e^{-\frac{i(g+h)t}{\hbar}}\begin{pmatrix}1\\1\end{pmatrix}+e^{-\frac{i(h-g)t}{\hbar}}\begin{pmatrix}1\\-1\end{pmatrix}\bigg]=\\
+                      &=\frac{1}{2}e^{-\frac{iht}{\hbar}}\bigg[\begin{pmatrix}e^{-\frac{igt}{\hbar}}+e^{-\frac{igt}{\hbar}}\\e^{-\frac{igt}{\hbar}}-e^{-\frac{igt}{\hbar}}\end{pmatrix}\bigg]=\\
+                      &=e^{-\frac{iht}{\hbar}}\begin{pmatrix}\cos (gt/\hbar)\\-i\sin (gt/\hbar)\end{pmatrix}
+        \end{align*}
 \end{enumerate}
-We can check this by observing that the result satisfies the time-dependent Schr\"odinger equation. It's a first raw model for neutrino oscillations :)
+We can check this by observing that the result satisfies the time-dependent Schr\"odinger equation. It's a first raw model for neutrino oscillations.
