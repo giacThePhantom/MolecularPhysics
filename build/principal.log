@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  29 JAN 2022 23:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  1 FEB 2022 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,7 +891,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./chapters/02_breakdown_classical_mechanics.tex [16]
 Chapter 2.
-<chapters/02//gun_ds.png, id=1239, 626.94225pt x 348.70274pt>
+<chapters/02//gun_ds.png, id=1185, 626.94225pt x 348.70274pt>
 File: chapters/02//gun_ds.png Graphic file (type png)
 <use chapters/02//gun_ds.png>
 Package pdftex.def Info: chapters/02//gun_ds.png  used on input line 15.
@@ -899,18 +899,18 @@ Package pdftex.def Info: chapters/02//gun_ds.png  used on input line 15.
 [17
 
  <./chapters/02//gun_ds.png>]
-<chapters/02//wave_ds.png, id=1252, 566.115pt x 328.22626pt>
+<chapters/02//wave_ds.png, id=1198, 566.115pt x 328.22626pt>
 File: chapters/02//wave_ds.png Graphic file (type png)
 <use chapters/02//wave_ds.png>
 Package pdftex.def Info: chapters/02//wave_ds.png  used on input line 43.
 (pdftex.def)             Requested size: 260.17464pt x 150.85068pt.
  [18 <./chapters/02//wave_ds.png>]
-<chapters/02//electron_ds.png, id=1267, 1606.0pt x 863.225pt>
+<chapters/02//electron_ds.png, id=1213, 1606.0pt x 863.225pt>
 File: chapters/02//electron_ds.png Graphic file (type png)
 <use chapters/02//electron_ds.png>
 Package pdftex.def Info: chapters/02//electron_ds.png  used on input line 78.
 (pdftex.def)             Requested size: 260.17464pt x 139.84431pt.
-<chapters/02//ele_bal_ds.png, id=1269, 518.93875pt x 250.9375pt>
+<chapters/02//ele_bal_ds.png, id=1215, 518.93875pt x 250.9375pt>
 File: chapters/02//ele_bal_ds.png Graphic file (type png)
 <use chapters/02//ele_bal_ds.png>
 Package pdftex.def Info: chapters/02//ele_bal_ds.png  used on input line 98.
@@ -920,7 +920,7 @@ Package pdftex.def Info: chapters/02//ele_bal_ds.png  used on input line 98.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19 <./chapters/02//electron_ds.png>]
-<chapters/02//photoelectric.png, id=1280, 2569.6pt x 1290.8225pt>
+<chapters/02//photoelectric.png, id=1226, 2569.6pt x 1290.8225pt>
 File: chapters/02//photoelectric.png Graphic file (type png)
 <use chapters/02//photoelectric.png>
 Package pdftex.def Info: chapters/02//photoelectric.png  used on input line 136
@@ -931,7 +931,7 @@ Package pdftex.def Info: chapters/02//photoelectric.png  used on input line 136
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20 <./chapters/02//ele_bal_ds.png>]
-<chapters/02//quantization.png, id=1293, 1048.91875pt x 931.48pt>
+<chapters/02//quantization.png, id=1238, 1048.91875pt x 931.48pt>
 File: chapters/02//quantization.png Graphic file (type png)
 <use chapters/02//quantization.png>
 Package pdftex.def Info: chapters/02//quantization.png  used on input line 162.
@@ -942,7 +942,7 @@ Package pdftex.def Info: chapters/02//quantization.png  used on input line 162.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [21 <./chapters/02//photoelectric.png>] [22 <./chapters/02//quantization.png>]
-<chapters/02//stern_ger.png, id=1310, 642.4pt x 304.13625pt>
+<chapters/02//stern_ger.png, id=1255, 642.4pt x 304.13625pt>
 File: chapters/02//stern_ger.png Graphic file (type png)
 <use chapters/02//stern_ger.png>
 Package pdftex.def Info: chapters/02//stern_ger.png  used on input line 210.
@@ -997,7 +997,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.51453pt}.
 
 [28]
-<chapters/03//qm_oscillator.png, id=1348, 376.40625pt x 256.45813pt>
+<chapters/03//qm_oscillator.png, id=1294, 376.40625pt x 256.45813pt>
 File: chapters/03//qm_oscillator.png Graphic file (type png)
 <use chapters/03//qm_oscillator.png>
 Package pdftex.def Info: chapters/03//qm_oscillator.png  used on input line 146
@@ -1008,7 +1008,7 @@ Package pdftex.def Info: chapters/03//qm_oscillator.png  used on input line 146
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29] [30 <./chapters/03//qm_oscillator.png>] [31] [32]
-<chapters/03//1D_well.png, id=1372, 325.215pt x 151.16475pt>
+<chapters/03//1D_well.png, id=1318, 325.215pt x 151.16475pt>
 File: chapters/03//1D_well.png Graphic file (type png)
 <use chapters/03//1D_well.png>
 Package pdftex.def Info: chapters/03//1D_well.png  used on input line 296.
@@ -1081,19 +1081,19 @@ Chapter 5.
 [47
 
 ]
-<chapters/05//vector.jpg, id=1453, 778.91pt x 484.81125pt>
+<chapters/05//vector.jpg, id=1398, 778.91pt x 484.81125pt>
 File: chapters/05//vector.jpg Graphic file (type jpg)
 <use chapters/05//vector.jpg>
 Package pdftex.def Info: chapters/05//vector.jpg  used on input line 43.
 (pdftex.def)             Requested size: 108.405pt x 67.47363pt.
  [48 <./chapters/05//vector.jpg>]
-<chapters/05//img_1.jpg, id=1465, 544.0325pt x 381.425pt>
+<chapters/05//img_1.jpg, id=1410, 544.0325pt x 381.425pt>
 File: chapters/05//img_1.jpg Graphic file (type jpg)
 <use chapters/05//img_1.jpg>
 Package pdftex.def Info: chapters/05//img_1.jpg  used on input line 90.
 (pdftex.def)             Requested size: 108.80457pt x 76.28365pt.
  [49 <./chapters/05//img_1.jpg>]
-<chapters/05//img_2.jpg, id=1473, 684.5575pt x 358.33875pt>
+<chapters/05//img_2.jpg, id=1418, 684.5575pt x 358.33875pt>
 File: chapters/05//img_2.jpg Graphic file (type jpg)
 <use chapters/05//img_2.jpg>
 Package pdftex.def Info: chapters/05//img_2.jpg  used on input line 124.
@@ -1105,13 +1105,13 @@ LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
 (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [52] [53]
-<chapters/05//img_3.jpg, id=1494, 705.63625pt x 326.21875pt>
+<chapters/05//img_3.jpg, id=1439, 705.63625pt x 326.21875pt>
 File: chapters/05//img_3.jpg Graphic file (type jpg)
 <use chapters/05//img_3.jpg>
 Package pdftex.def Info: chapters/05//img_3.jpg  used on input line 275.
 (pdftex.def)             Requested size: 211.6925pt x 97.86636pt.
  [54 <./chapters/05//img_3.jpg>] [55] [56]
-<chapters/05//img_4.jpg, id=1512, 523.9575pt x 378.41376pt>
+<chapters/05//img_4.jpg, id=1456, 523.9575pt x 378.41376pt>
 File: chapters/05//img_4.jpg Graphic file (type jpg)
 <use chapters/05//img_4.jpg>
 Package pdftex.def Info: chapters/05//img_4.jpg  used on input line 382.
@@ -1127,7 +1127,7 @@ e of the an-gu-lar mo-men-tum $\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 ;  []\OT1/cm
 r/m/n/10 ] =
  []
 
-<chapters/06//Ta-1.jpg, id=1531, 1164.35pt x 266.9975pt>
+<chapters/06//Ta-1.jpg, id=1475, 1164.35pt x 266.9975pt>
 File: chapters/06//Ta-1.jpg Graphic file (type jpg)
 <use chapters/06//Ta-1.jpg>
 Package pdftex.def Info: chapters/06//Ta-1.jpg  used on input line 110.
@@ -1151,7 +1151,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
 
 [62]
-<chapters/06//img_6.jpg, id=1552, 421.575pt x 372.39125pt>
+<chapters/06//img_6.jpg, id=1497, 421.575pt x 372.39125pt>
 File: chapters/06//img_6.jpg Graphic file (type jpg)
 <use chapters/06//img_6.jpg>
 Package pdftex.def Info: chapters/06//img_6.jpg  used on input line 211.
@@ -1166,7 +1166,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
 
 [63 <./chapters/06//img_6.jpg>]
-<chapters/06//img_7.jpg, id=1560, 537.00626pt x 372.39125pt>
+<chapters/06//img_7.jpg, id=1505, 537.00626pt x 372.39125pt>
 File: chapters/06//img_7.jpg Graphic file (type jpg)
 <use chapters/06//img_7.jpg>
 Package pdftex.def Info: chapters/06//img_7.jpg  used on input line 227.
@@ -1264,19 +1264,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 60.
 
-<chapters/07//img_8.jpg, id=1644, 411.5375pt x 255.95625pt>
+<chapters/07//img_8.jpg, id=1588, 411.5375pt x 255.95625pt>
 File: chapters/07//img_8.jpg Graphic file (type jpg)
 <use chapters/07//img_8.jpg>
 Package pdftex.def Info: chapters/07//img_8.jpg  used on input line 67.
 (pdftex.def)             Requested size: 123.4622pt x 76.78746pt.
 [73] [74 <./chapters/07//img_8.jpg>]
-<chapters/07//img_9.jpg, id=1656, 555.07375pt x 376.40625pt>
+<chapters/07//img_9.jpg, id=1601, 555.07375pt x 376.40625pt>
 File: chapters/07//img_9.jpg Graphic file (type jpg)
 <use chapters/07//img_9.jpg>
 Package pdftex.def Info: chapters/07//img_9.jpg  used on input line 144.
 (pdftex.def)             Requested size: 166.52339pt x 112.92273pt.
  [75 <./chapters/07//img_9.jpg>]
-<chapters/07//img_13.jpg, id=1663, 1542.76375pt x 697.60625pt>
+<chapters/07//img_13.jpg, id=1608, 1542.76375pt x 697.60625pt>
 File: chapters/07//img_13.jpg Graphic file (type jpg)
 <use chapters/07//img_13.jpg>
 Package pdftex.def Info: chapters/07//img_13.jpg  used on input line 156.
@@ -1287,26 +1287,26 @@ Overfull \hbox (29.2127pt too wide) in paragraph at lines 156--157
  []
 
 [76 <./chapters/07//img_13.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
+Underfull \hbox (badness 10000) in paragraph at lines 184--187
 
  []
 
 [77] [78]
-<chapters/07//img_14.png, id=1690, 557.08125pt x 414.54875pt>
+<chapters/07//img_14.png, id=1634, 557.08125pt x 414.54875pt>
 File: chapters/07//img_14.png Graphic file (type png)
 <use chapters/07//img_14.png>
-Package pdftex.def Info: chapters/07//img_14.png  used on input line 260.
+Package pdftex.def Info: chapters/07//img_14.png  used on input line 259.
 (pdftex.def)             Requested size: 167.12566pt x 124.36557pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--268
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
  []
 
 [79 <./chapters/07//img_14.png>]
-<chapters/07//img_15.jpg, id=1700, 1229.59375pt x 249.93375pt>
+<chapters/07//img_15.jpg, id=1644, 1229.59375pt x 249.93375pt>
 File: chapters/07//img_15.jpg Graphic file (type jpg)
 <use chapters/07//img_15.jpg>
-Package pdftex.def Info: chapters/07//img_15.jpg  used on input line 314.
+Package pdftex.def Info: chapters/07//img_15.jpg  used on input line 313.
 (pdftex.def)             Requested size: 368.88097pt x 74.9807pt.
 ) [80] [81 <./chapters/07//img_15.jpg>]
 [82
@@ -1320,13 +1320,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-<chapters/08//img_10.jpg, id=1722, 657.45625pt x 167.62625pt>
+<chapters/08//img_10.jpg, id=1666, 657.45625pt x 167.62625pt>
 File: chapters/08//img_10.jpg Graphic file (type jpg)
 <use chapters/08//img_10.jpg>
 Package pdftex.def Info: chapters/08//img_10.jpg  used on input line 86.
 (pdftex.def)             Requested size: 197.23839pt x 50.28825pt.
 [84] [85 <./chapters/08//img_10.jpg>] [86] [87]
-<chapters/08//img_11.png, id=1747, 219.82124pt x 157.58875pt>
+<chapters/08//img_11.png, id=1690, 219.82124pt x 157.58875pt>
 File: chapters/08//img_11.png Graphic file (type png)
 <use chapters/08//img_11.png>
 Package pdftex.def Info: chapters/08//img_11.png  used on input line 231.
@@ -1344,7 +1344,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 247.
 
-<chapters/08//img_12.jpg, id=1755, 909.3975pt x 467.7475pt>
+<chapters/08//img_12.jpg, id=1698, 909.3975pt x 467.7475pt>
 File: chapters/08//img_12.jpg Graphic file (type jpg)
 <use chapters/08//img_12.jpg>
 Package pdftex.def Info: chapters/08//img_12.jpg  used on input line 275.
@@ -1380,87 +1380,83 @@ Chapter 14.
 Chapter 15.
 [113
 
-] [114] [115] [116]) (./chapters/ee_solved_exercises.tex [117]
+] [114] [115] [116]) (./chapters/ah_dirac_notation.tex [117]
 Chapter 16.
-(./chapters/exercises_sections/00_complex_numbers.tex [118
 
-]
-Overfull \hbox (58.04228pt too wide) detected at line 51
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
  []
 
-) (./chapters/exercises_sections/01_partial_derivatives.tex [119])
-(./chapters/exercises_sections/02_differential_operators.tex [120] [121])
-(./chapters/exercises_sections/03_spherical_coordinates.tex)
-(./chapters/exercises_sections/04_multidimensional_integrals.tex [122]
-<chapters/exercises_sections/exercises_images//integration_area.png, id=1920, 8
-09.27344pt x 380.92313pt>
-File: chapters/exercises_sections/exercises_images//integration_area.png Graphi
-c file (type png)
-<use chapters/exercises_sections/exercises_images//integration_area.png>
-Package pdftex.def Info: chapters/exercises_sections/exercises_images//integrat
-ion_area.png  used on input line 25.
-(pdftex.def)             Requested size: 433.62pt x 204.10863pt.
-)
-(./chapters/exercises_sections/05_wave_equations.tex
+[118
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+]
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
-) (./chapters/exercises_sections/06_hilbert_spaces.tex)) [123] [124 <./chapters
-/exercises_sections/exercises_images//integration_area.png>]
-(./build/principal.aux)
+ []
+
+[119]
+Underfull \hbox (badness 10000) in paragraph at lines 79--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
+
+ []
+
+[120]) [121] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 577467B41591B15217918413C63BF6FF;38761.
+(rerunfilecheck)             Checksum: BAC261652FA386D1E273A5FC457125A1;36244.
  ) 
 Here is how much of TeX's memory you used:
- 23606 strings out of 478353
- 434290 string characters out of 5854635
- 763722 words of memory out of 5000000
- 40798 multiletter control sequences out of 15000+600000
- 435977 words of font info for 112 fonts, out of 8000000 for 9000
+ 23524 strings out of 478353
+ 431072 string characters out of 5854635
+ 753601 words of memory out of 5000000
+ 40753 multiletter control sequences out of 15000+600000
+ 434848 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,20n,80p,635b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,20n,80p,644b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-latxfont/line10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfb
-x1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.p
-fb>
-Output written on ./build/principal.pdf (125 pages, 2996017 bytes).
+s/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fon
+ts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/latxfont/line10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.
+pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share
+/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf-dist/fon
+ts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public
+/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1
+440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist
+/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+frm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></u
+sr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb
+>
+Output written on ./build/principal.pdf (122 pages, 2989376 bytes).
 PDF statistics:
- 2220 PDF objects out of 2487 (max. 8388607)
- 1945 compressed objects within 20 object streams
- 506 named destinations out of 1000 (max. 500000)
- 1977 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2153 PDF objects out of 2487 (max. 8388607)
+ 1883 compressed objects within 19 object streams
+ 498 named destinations out of 1000 (max. 500000)
+ 1884 words of extra memory for PDF output out of 10000 (max. 10000000)
 

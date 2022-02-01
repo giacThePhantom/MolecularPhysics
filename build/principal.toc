@@ -144,7 +144,7 @@
 \contentsline {subsection}{\numberline {6.2.4}Quantum Entanglement}{64}{subsection.6.2.4}%
 \contentsline {subsubsection}{\numberline {6.2.4.1}Identical bosons}{64}{subsubsection.6.2.4.1}%
 \contentsline {subsubsection}{\numberline {6.2.4.2}Identical fermions}{64}{subsubsection.6.2.4.2}%
-\contentsline {subsubsection}{\numberline {6.2.4.3}Bell sate}{65}{subsubsection.6.2.4.3}%
+\contentsline {subsubsection}{\numberline {6.2.4.3}Bell state}{65}{subsubsection.6.2.4.3}%
 \contentsline {subsubsection}{\numberline {6.2.4.4}Slater matrix}{65}{subsubsection.6.2.4.4}%
 \contentsline {subsection}{\numberline {6.2.5}Mathematical formalism of Stern-Gerlach experiment}{66}{subsection.6.2.5}%
 \contentsline {subsubsection}{\numberline {6.2.5.1}Eigenstates of the z-component}{66}{subsubsection.6.2.5.1}%
@@ -180,22 +180,21 @@
 \contentsline {subsubsection}{\numberline {7.2.3.1}Distance of the atoms}{75}{subsubsection.7.2.3.1}%
 \contentsline {subsection}{\numberline {7.2.4}Results}{75}{subsection.7.2.4}%
 \contentsline {section}{\numberline {7.3}Electronic structure calculation methods}{76}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Exact diagonalization}{76}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Hartree-Fock Method}{76}{subsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.2.1}Slater matrix}{77}{subsubsection.7.3.2.1}%
-\contentsline {subsubsection}{\numberline {7.3.2.2}Hartree equation}{77}{subsubsection.7.3.2.2}%
-\contentsline {subsubsection}{\numberline {7.3.2.3}Fock equation}{78}{subsubsection.7.3.2.3}%
-\contentsline {subsubsection}{\numberline {7.3.2.4}Self consisted methods}{78}{subsubsection.7.3.2.4}%
-\contentsline {subsection}{\numberline {7.3.3}Density Function Theory (DFT)}{78}{subsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.3.1}Density function computation}{78}{subsubsection.7.3.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.3.2}Single-body density}{79}{subsubsection.7.3.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3.3}Hochenberg and Kohn theorems}{79}{subsubsection.7.3.3.3}%
-\contentsline {paragraph}{\numberline {7.3.3.3.1}First theorem}{80}{paragraph.7.3.3.3.1}%
-\contentsline {subparagraph}{\numberline {7.3.3.3.1.1}Corollary}{80}{subparagraph.7.3.3.3.1.1}%
-\contentsline {paragraph}{\numberline {7.3.3.3.2}Second theorem}{80}{paragraph.7.3.3.3.2}%
-\contentsline {subparagraph}{\numberline {7.3.3.3.2.1}Functionals}{80}{subparagraph.7.3.3.3.2.1}%
-\contentsline {subsection}{\numberline {7.3.4}Building functionals}{80}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}Hybrid (QM-MM) Schemes}{80}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.1}Hartree-Fock Method}{76}{subsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.1.1}Slater matrix}{77}{subsubsection.7.3.1.1}%
+\contentsline {subsubsection}{\numberline {7.3.1.2}Hartree equation}{77}{subsubsection.7.3.1.2}%
+\contentsline {subsubsection}{\numberline {7.3.1.3}Fock equation}{78}{subsubsection.7.3.1.3}%
+\contentsline {subsubsection}{\numberline {7.3.1.4}Self consisted methods}{78}{subsubsection.7.3.1.4}%
+\contentsline {subsection}{\numberline {7.3.2}Density Function Theory (DFT)}{78}{subsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.1}Density function computation}{78}{subsubsection.7.3.2.1}%
+\contentsline {subsubsection}{\numberline {7.3.2.2}Single-body density}{79}{subsubsection.7.3.2.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.3}Hochenberg and Kohn theorems}{79}{subsubsection.7.3.2.3}%
+\contentsline {paragraph}{\numberline {7.3.2.3.1}First theorem}{80}{paragraph.7.3.2.3.1}%
+\contentsline {subparagraph}{\numberline {7.3.2.3.1.1}Corollary}{80}{subparagraph.7.3.2.3.1.1}%
+\contentsline {paragraph}{\numberline {7.3.2.3.2}Second theorem}{80}{paragraph.7.3.2.3.2}%
+\contentsline {subparagraph}{\numberline {7.3.2.3.2.1}Functionals}{80}{subparagraph.7.3.2.3.2.1}%
+\contentsline {subsection}{\numberline {7.3.3}Building functionals}{80}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Hybrid (QM-MM) Schemes}{80}{subsection.7.3.4}%
 \contentsline {part}{III\hspace {1em}Quantum computing}{82}{part.3}%
 \contentsline {chapter}{\numberline {8}Quantum computing}{83}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Qubits}{83}{section.8.1}%
@@ -212,7 +211,7 @@
 \contentsline {subsection}{\numberline {8.2.3}Entangled states}{86}{subsection.8.2.3}%
 \contentsline {section}{\numberline {8.3}Quantum circuits}{87}{section.8.3}%
 \contentsline {subsection}{\numberline {8.3.1}Elementary logic gates}{87}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Universaility}{87}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.2}Universality}{87}{subsection.8.3.2}%
 \contentsline {subsection}{\numberline {8.3.3}Quantum logic gates}{88}{subsection.8.3.3}%
 \contentsline {subsubsection}{\numberline {8.3.3.1}Qubits}{88}{subsubsection.8.3.3.1}%
 \contentsline {subsection}{\numberline {8.3.4}Types of quantum circuits}{88}{subsection.8.3.4}%
@@ -311,21 +310,11 @@
 \contentsline {subsubsection}{\numberline {15.2.3.2}Second corollary}{117}{subsubsection.15.2.3.2}%
 \contentsline {subsubsection}{\numberline {15.2.3.3}Third corollary}{117}{subsubsection.15.2.3.3}%
 \contentsline {section}{\numberline {15.3}Fourier transform}{117}{section.15.3}%
-\contentsline {chapter}{\numberline {16}Solved exercises}{118}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Complex numbers}{118}{section.16.1}%
-\contentsline {subsection}{\numberline {16.1.1}Conversion in different forms}{118}{subsection.16.1.1}%
-\contentsline {subsection}{\numberline {16.1.2}Multivalued functions}{119}{subsection.16.1.2}%
-\contentsline {section}{\numberline {16.2}Partial derivatives}{120}{section.16.2}%
-\contentsline {subsection}{\numberline {16.2.1}Solving partial derivatives}{120}{subsection.16.2.1}%
-\contentsline {section}{\numberline {16.3}Differential operators}{120}{section.16.3}%
-\contentsline {subsection}{\numberline {16.3.1}Computing the gradient of a function}{120}{subsection.16.3.1}%
-\contentsline {subsection}{\numberline {16.3.2}Computing the divergence of a function}{121}{subsection.16.3.2}%
-\contentsline {subsection}{\numberline {16.3.3}Computing the curl of a function}{121}{subsection.16.3.3}%
-\contentsline {subsection}{\numberline {16.3.4}Curl of the grad of a function}{121}{subsection.16.3.4}%
-\contentsline {subsection}{\numberline {16.3.5}Divergence of the curl of a function}{122}{subsection.16.3.5}%
-\contentsline {subsection}{\numberline {16.3.6}Divergence of the gradient of a function}{122}{subsection.16.3.6}%
-\contentsline {section}{\numberline {16.4}Spherical coordinates}{123}{section.16.4}%
-\contentsline {section}{\numberline {16.5}Multidimensional integrals}{123}{section.16.5}%
-\contentsline {subsection}{\numberline {16.5.1}Computing multidimensional integrals}{123}{subsection.16.5.1}%
-\contentsline {section}{\numberline {16.6}Wave equations}{123}{section.16.6}%
-\contentsline {section}{\numberline {16.7}Hilbert spaces}{123}{section.16.7}%
+\contentsline {chapter}{\numberline {16}Dirac notation}{118}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Vector space representation}{119}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Inner product}{119}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.2}Operator}{119}{subsection.16.1.2}%
+\contentsline {section}{\numberline {16.2}Hilbert space representation}{120}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Inner product}{120}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.2}Operator}{120}{subsection.16.2.2}%
+\contentsline {section}{\numberline {16.3}\textit {Example: two linearly independent states}}{120}{section.16.3}%

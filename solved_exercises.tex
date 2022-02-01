@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,outer=1.5cm,inner=1.5cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsthm, amssymb, amsfonts, amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{subfig}
+\usetikzlibrary{calc,shapes}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{hyperref, mathabx}
+\usepackage{makecell}
+
+\newcommand{\boxitem}[2]{\vspace{.55cm}
+\item[#1]
+\leavevmode
+\strut
+\vadjust{%%
+\noindent
+\raisebox{\dimexpr\dp\strutbox+\ht\strutbox+1ex}[0pt][0pt]{\tikzmark{bl}}}%%
+#2
+\leavevmode
+\vadjust{%
+\noindent
+\hspace*{\dimexpr\textwidth+1ex}\tikzmark{br}}%%
+
+\tikz[overlay,remember picture]{\draw[black]
+(bl) rectangle
+(br);}}
+
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\p}{\mathbb{P}}
+\newcommand{\E}{\mathbb{E}}
+\newtheorem*{lemma}{Lemma}
+\newtheorem{llemma}{Lemma}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{prop}{Proposition}
+
+
+\title{\Huge \textbf{Molecular Physics solved exercises}}
+
+\author{
+  Giacomo Fantoni\qquad\qquad\qquad\qquad\quad
+  \small Telegram: \href{https://t.me/GiacomoFantoni}{@GiacomoFantoni} \\[3pt]
+  Ilaria Cherchi\qquad\qquad\qquad\qquad\quad
+  \small Telegram: \href{https://t.me/ilariacherchi}{@ilariacherchi} \\[3pt]
+  Alessia Guadagnin Pattaro\qquad
+  \small Telegram: \href{https://t.me/alessiagp}{@alessiagp} \\[3pt]
+  Elisa Pettin\`a\qquad\qquad\qquad\qquad\quad
+  \small Telegram: \href{https://t.me/elisapettina}{@elispettina} \\[3pt]
+  Stefano Cretti\qquad\qquad\qquad\qquad\quad
+  \small Telegram: \href{https://t.me/StefanoCretti}{@StefanoCretti} \\[3pt]
+\small Github: \href{https://github.com/giacThePhantom/MolecularPhysics}{https://github.com/giacThePhantom/MolecularPhysics}}
+
+\begin{document}
+  \maketitle
+  \tableofcontents
+  \graphicspath{{solved_exercises/exercises_images/}}
+
+  \input{solved_exercises/01_partial_derivatives}
+  \input{solved_exercises/02_differential_operators}
+  \input{solved_exercises/03_spherical_coordinates}
+  \input{solved_exercises/04_multidimensional_integrals}
+  \input{solved_exercises/05_wave_equations}
+  \input{solved_exercises/06_hilbert_spaces}
+\end{document}
