@@ -191,7 +191,7 @@ The items that connect the elements represents the operations performed on qubit
 	The elementary logic gates are model of computation or physical electronic devise that implements a boolean function on one or more binary input.
 	They are irreversible: the input cannot be recovered from the output.
 
-	\subsection{Universaility}
+	\subsection{Universality}
 	Quantum computers can achieve universality, the complete conversion of an input of an arbitrary set of items into a corresponding output.
 	Usually in quantum computation the output is a rotation of the input, all the operations used to perform such rotation $f(x)$ on input $x$ can be expressed as a single unitary matrix, for example
 
@@ -238,11 +238,11 @@ Quantum logic gates require a reversible function called unitary mapping which i
 	\begin{align*}
 		H&=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}\,\,\ket{0}=\begin{pmatrix}1\\0\end{pmatrix}\,\,\ket{1}=\begin{pmatrix}0\\1\end{pmatrix}\\
 		H\,\ket{0}&=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}=\frac{1}{\sqrt{2}}\begin{pmatrix}1+0\\1+0\end{pmatrix}=\begin{pmatrix}1/\sqrt{2}\\1/\sqrt{2}\end{pmatrix}\\
-		H\,(H\,\ket{0})&=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}\begin{pmatrix}1/\sqrt{2}\\1/\sqrt{2}\end{pmatrix}=\frac{1}{\sqrt{2}}\begin{pmatrix}1/\sqrt{2}+1/\sqrt{2}\\1/\sqrt{2}-1/\sqrt{2}\end{pmatrix}=\frac{1}{\sqrt{2}}\begin{pmatrix}2/\sqrt{2}\\0\end{pmatrix}=\begin{pmatrix}1\\0\end{pmatrix}
+		H\,(H\,\ket{0})&=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}\begin{pmatrix}1/\sqrt{2}\\1/\sqrt{2}\end{pmatrix}=\frac{1}{\sqrt{2}}\begin{pmatrix}1/\sqrt{2}+1/\sqrt{2}\\1/\sqrt{2}-1/\sqrt{2}\end{pmatrix}=\frac{1}{\sqrt{2}}\begin{pmatrix}2/\sqrt{2}\\0\end{pmatrix}=\begin{pmatrix}1\\0\end{pmatrix}\,\text{Q.E.D.}
 	\end{align*}
 
 	It's pointless to put two Hadamard gates in a row from a mathematical point of view.
-	From a physical point of view it means that I am restoring the cat in an aline/dear definite state that is technically not possible.
+	From a physical point of view it means that I am restoring the cat in an alive/dead definite state that is technically not possible.
 
 	\subsection{Example of a $HC_{NOT}$}
 	Application of the two gates on different entangled states of qubits $\ket{0}$ and $\ket{1}$.
@@ -260,7 +260,7 @@ Quantum logic gates require a reversible function called unitary mapping which i
 
 	$$\frac{\ket{0\,0}-\ket{1\,1}}{\sqrt{2}}=\ket{\phi^-}\,\,\frac{\ket{0\,1}+\ket{1\,0}}{\sqrt{2}}=\ket{\psi^+}\,\,\frac{\ket{0\,1}-\ket{1\,0}}{\sqrt{2}}=\ket{\psi^-}$$
 
-	$$\braket{\psi^+\,|\,\psi^-}=0$$
+	$$\braket{\psi^+}{psi^-}=0$$
 
 \section{The Elitzur-Vaidman bomb tester}
 The Elitzur-Vaidman bomb tester is a quantum mechanics thought experiment that uses interaction-free mechanism to verify that a bomb is functional without having to detonate it.
