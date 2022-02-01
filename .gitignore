@@ -21,3 +21,5 @@
 **/build/*.mtc1
 **/build/*.out
 **/build/*.synctex.gz
+
+!**/build/*.pdf
