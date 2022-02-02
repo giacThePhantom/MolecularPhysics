@@ -136,7 +136,7 @@ Solving a classical mechanics problem means to solve a set of differential equat
   \begin{align*}
     \frac{d{}}{d{t}}T = \frac{d{}}{d{t}}\frac{1}{2}mv^2 = \frac{1}{2}m \frac{d{}}{d{t}}v^2 = \frac{1}{2}2m \vec{v}\underbrace{\frac{d{\vec{v}}}{d{t}}}_{\vec{a}} = \vec{v} \vec{F}\\
     \int_{t_0}^{t_f}dt \frac{d{}}{d{t}}T = T_B-T_A = \int_{t_i}^{t_f}dt \frac{d{\vec{r}}}{d{t}}\vec{F} = \int_{\vec{r}_A}^{\vec{r}_B} d \vec{r}\cdot \vec{F} = W_{AB}\\
-    T_B-T_a = W_{A\rightarrow B}
+    T_B-T_A = W_{A\rightarrow B}
   \end{align*}
 
     \subsubsection{Conservative forces}
@@ -216,12 +216,10 @@ Solving a classical mechanics problem means to solve a set of differential equat
   By taking the derivative of the angular momentum with respect to time, we can asses under which conditions linear momentum is conserved.
   Consider that velocity and momentum are parallel, therefore the cross product depending on the angle between them is zero:
 
-  $$\frac{d \vec{L}}{d t}=\frac{d \bar{x}}{d t} \times \vec{p}+\bar{x} \times \frac{d \vec{p}}{d t}=\underbrace{\bar{v} \times \bar{p}}_{0}+m \frac{d \bar{v}}{d t} \Rightarrow \vec{F}=m \cdot \bar{a}$$
-
-  \begin{align*}
-    \frac{d}{d t} \bar{p}_{+0 r}&=\frac{d}{d t}\left(\sum_{i=1}^{N} \bar{p}_{i}\right)=0 \\
-    m \bar{v}+m \vec{v}&=m \bar{v}^{-}+M \vec{v}^{0} \\
-    \vec{v}^{\prime}&=-\left(\frac{m}{M}\right) \bar{v}^{\prime}
+\begin{align*}
+    \frac{d{}}{d{t}}\vec{L} &= \frac{d{}}{d{t}}(\vec{r}\times \vec{p})=\\
+                            &=\underbrace{\frac{d{\vec{r}}}{d{t}}}_{=0}\times\vec{p} + \underbrace{\frac{d{\vec{p}}}{d{t}}}_{=F}\times\vec{r} =\\
+                            &= \vec{r}\times \vec{F}
   \end{align*}
 
   Whenever the torque of a particle is zero, then the angular momentum of that particle is conserved.
@@ -229,15 +227,12 @@ Solving a classical mechanics problem means to solve a set of differential equat
 
   \begin{align*}
     \frac{d \vec{L}}{d t}&=\bar{x} \times \vec{F}=0 \\
+   \end{align*}
+   
+  The following is true for any force:
+   
+   \begin{align*}
     \frac{d}{d t}\left(\vec{L}_{\text {TOT }}\right)&=\frac{d}{d t}\left(\Sigma_{i} \vec{L}_{i}\right)=0 \\
-  \end{align*}
-
-  Now considering:
-
-  \begin{align*}
-    \frac{d{}}{d{t}}\vec{L} &= \frac{d{}}{d{t}}(\vec{r}\times \vec{p})=\\
-                            &=\underbrace{\frac{d{\vec{r}}}{d{t}}}_{=0}\times\vec{p} + \underbrace{\frac{d{\vec{p}}}{d{t}}}_{=F}\times\vec{r} =\\
-                            &= \vec{r}\times \vec{F}
   \end{align*}
 
   If $\vec{r}\parallel \vec{F}\Rightarrow \frac{d{}}{d{t}}\vec{L} = 0$.
@@ -352,7 +347,7 @@ The hydrogen atom is formed by a proton in the centre with an electron orbiting 
   The potential energy is derived from Coulomb's $F=-\hat{r}\frac{e^2}{|\vec{r}^2|}$, so $U(|\vec{r}|) = -\frac{e^2}{|\vec{r}|}$
   Now, by using conservation to replace the differential equation, the position is divided in two components $\hat{u}_r$ and $\hat{u}_\theta$ orthogonal to each other, so that $v^2 = v_r^2+v_\theta^2$:
 
-  $$\vec{v} = \hat{u}_\theta v_\theta +\hat{u}_r\underbrace{v_r}_{\frac{d{r}}{d{t}}}\Rightarrow v_2 = \biggl(\frac{d{r}}{d{t}}\biggr)^2+v_\theta$$
+  $$\vec{v} = \hat{u}_\theta v_\theta +\hat{u}_r\underbrace{v_r}_{\frac{d{r}}{d{t}}}\Rightarrow v^2 = \biggl(\frac{d{r}}{d{t}}\biggr)^2+v_\theta^2$$
 
   Now, rewriting the angular momentum:
 
