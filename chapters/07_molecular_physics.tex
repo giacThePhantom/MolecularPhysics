@@ -42,7 +42,7 @@ The Born-Oppenheimer approximation divides these operations in two (\textbf{deco
 		Note that this is not a "charge-driven" attraction, but a phenomenon driven by quantum tunnelling and Pauli's symmetry.
 
 		\subsubsection{Dynamics of the nuclei}
-		The second step is to solve the dynamics of the nuclei based on their own coulombic interactions and electrons effec.
+		The second step is to solve the dynamics of the nuclei based on their own coulombic interactions and electrons effect.
 
 		$$\bigg[-\sum_{q=1}^{N_{\alpha}}\frac{\hbar^2}{2m_{\alpha}}\cdot\nabla_{\alpha}^2+\sum_{\alpha<\beta}\frac{z_{\alpha}z_{\beta}e^2}{|\vec{R_{\alpha}}-\vec{R_{\beta}}|}+E|\{R_\alpha\}| \bigg]\varphi(|R|)=\varepsilon\varPhi(\{R\})$$
 
@@ -79,7 +79,7 @@ A schematic draw of the problem is depicted in figure \ref{fig:h2}.
 
 	\subsection{Spin}
 	Spins can be $\ket{\uparrow\uparrow}$, $\ket{\downarrow\downarrow}$, $\ket{\uparrow\downarrow}$, and $\ket{\downarrow\uparrow}$.
-	Since electrons are fermions, the two spins' product must be antisymmetric, hence one of the two spins must be antisymmetric and the other one must be symmetric (the two possibilities are \textit{i}) spatial symmetry and spin antisymmetric, \textit{ii}) spatial antisymmetry and symmetric spin).
+	Since electrons are fermions, the two spins' product must be antisymmetric, hence one of the two spins must be antisymmetric and the other one must be symmetric (the two possibilities are spatial symmetry and spin antisymmetric or spatial antisymmetry and symmetric spin).
 	Symmetry can be evaluated in entangled states, too.
 
 	\begin{multicols}{2}
@@ -115,8 +115,8 @@ A schematic draw of the problem is depicted in figure \ref{fig:h2}.
 	$$E_1=\frac{1}{2}\int d\vec{r_1}\int d\vec{r_2}\,\big[\varphi(|\vec{r_1}-\vec{R_a}|)\varphi(|\vec{r_2}-\vec{R_b}|)+\varphi(|\vec{r_1}-\vec{R_b}|)\varphi(|\vec{r_2}-\vec{R_a}|)\big](\hat{H})(\Phi_S)$$
 
 	And same for $E_2$.
-	I have two 6-dimensions functions in 6-dimensions integrals.
-	Results are different whether I solve for the first or second electron.
+	There are 6-dimensions functions in 6-dimensions integrals.
+	Results are different whether the equations are solved for the first or second electron.
 
 		\subsubsection{Distance of the atoms}
 		This is the result that is obtained when the two atoms are infinitely far.
@@ -177,7 +177,7 @@ The first approximation to be chosen is always the most important, as it determi
 	It combines Mean Field Approximation, Fermi symmetry, and the Variational Principle.
 
 		\subsubsection{Slater matrix}
-		HF uses the Slater matrix's determinant to approximate a set of $N$ fermions.
+		Hartree Fock uses the Slater matrix's determinant to approximate a set of $N$ fermions.
 
 		$$\psi(q_1\cdots q_n)=\frac{1}{\sqrt{2}}\begin{pmatrix}\phi_1(q_1)&\cdots&\phi_n(q_1)\\\cdots & &\cdots\\\phi_1(q_m)&\cdots&\phi_n(q_m)\end{pmatrix}$$
 
@@ -205,14 +205,14 @@ The first approximation to be chosen is always the most important, as it determi
 		\subsubsection{Fock equation}
 		The Fermi symmetry introduces the Slater determinant, that is also called \textbf{exchange term}, which is a repulsive term. (\textbf{Fock equation}).
 		This introduction implies that two electrons with the same spin cannot exist in the same orbital.
-		The wave function collapses to zero and we obtain a repulsion between the electrons (basically, it would cost infinite enrgy if the two spins happen to be the same).
+		The wave function collapses to zero and we obtain a repulsion between the electrons (basically, it would cost infinite energy if the two spins happen to be the same).
 
 		$$\text{HARTREE EQN.}+\sum_\mu \sum_{j \neq i} \int\,d^3\vec{r_j}\bigg(\Phi^*_{\mathcolorbox{yellow}{\mu}}(\vec{r_j})\Phi_{\mathcolorbox{yellow}{\lambda}}(\vec{r_j})\frac{1}{|r_i-r_j|}\Phi_{\mathcolorbox{yellow}{\mu}}(\vec{r_i})\bigg)=E\Phi_\lambda(\vec{r_i})$$
 
-		This implies that the electron density factor ($\varphi^{(1)}_\mu(r_j)$) of the Hartree equation is not present anymore ($\varphi^{(2)}_{\mu\lambda}(r_j)$), the two particles are in a different state.
-		At the same time, $\Phi_\mu(r_i)$ becomes Fock's generalization exchange term for fermions, generalizing the HF to fermions.
+		This implies that the electron density factor ($\varphi^{(1)}_\mu(r_j)$) of the Hartree equation is not present any more ($\varphi^{(2)}_{\mu\lambda}(r_j)$), the two particles are in a different state.
+		At the same time, $\Phi_\mu(r_i)$ becomes Fock's generalization exchange term for fermions, generalizing the Hartree Fock to fermions.
 		This equation though is non linear ($\Phi^3$).
-		However all N fucntions involve single particles, so we can simply the problem.
+		However all N functions involve single particles, so we can simply the problem.
 		The integral though is 3D, be we can apply nested methods.
 		The basis cannot be expanded, diagonalized or transformed by other tricks previously used to simply problems.
 
@@ -223,20 +223,20 @@ The first approximation to be chosen is always the most important, as it determi
 			\begin{enumerate}
 				\item (Guess) $\Phi_\lambda (\vec{r})$
 				\item Compute $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$, as they are numerical values
-				\item Insert $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$ into HF equation, resulting in a conventional linear Schr\"odinger equation.
-				\item Solve HF equation and get a more accurate wave function $\Phi_\lambda (\vec{r})$
+				\item Insert $\rho_\mu^{(1)}(\vec{r})$ and $\rho_\mu^{(2)}(\vec{r})$ into the Hartree Fock equation, resulting in a conventional linear Schr\"odinger equation.
+				\item Solve the Hartree Fock equation and get a more accurate wave function $\Phi_\lambda (\vec{r})$
 			\end{enumerate}
 		\end{multicols}
 
-		The obtained $\Phi_\lambda (\vec{r})$ is a better guess than the initial one, so I use the latter obtained again for point 1 and recompute the density (this is why the first point of the list is in parenthesis).
+		The obtained $\Phi_\lambda (\vec{r})$ is a better guess than the initial one, so it is used again for another iteration starting from point $1$ and recomputing the density (this is why the first point of the list is in parenthesis).
 		The algorithm will run until convergence is reached and usually a single minimum is present.
-		Even with this approach, the computation of HF is very expensive.
+		Even with this approach, the computation of Hartree Fock is very expensive.
 		For this reason, \textbf{semi-empirical methods} have been developed.
 		Coefficients have been introduced in front of direct and exchange terms, that can weight the two terms in order to better match the experimental results.
-		The HF equation is usually employed to build the expansion of the eigenfunction or in quantum computing.
+		The Hartree Fock equation is usually employed to build the expansion of the eigenfunction or in quantum computing.
 
 	\subsection{Density Function Theory (DFT)}
-	DTF is a variational approximation which represents a significant improvement with respect to the HF method, because \underline{in principle}, it enables for the exact solution of the electronic problem.
+	DTF is a variational approximation which represents a significant improvement with respect to the Hartree Fock method, because \underline{in principle}, it enables for the exact solution of the electronic problem.
 	In practice, exact solution are never found.
 	However excellent approximations are possible and this is the reason why DFT is the most commonly adopted scheme for electronic calculations in condensed matter and quantum chemistry.
 	DTF reaches such excellent results because it fuels the density function (as we'll see later) with \textbf{heuristic} inputs.

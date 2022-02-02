@@ -37,7 +37,7 @@ We can simplify our calculations and make a useful and accurate approximate solu
 		Any wave function can be expanded, just like $\vec{v} = \sum_n c_n \vec{e}_n$, where $c_n = \vec{v} \, \vec{e}_n$.
 		But the expansion can be truncated.
 		For example, if we have a vector projected to its components $\vec v = v_1\hat{e}_1+v_r\hat{e}_r$, we can choose a smart basis ${\vec{w}_1, \vec{w}_2}$, so that we can describe the vector with fewer elements and end up with something like $ \vec{v} \cong (\vec{v} \cdot \vec{w}_1) \vec{w}_1 $ .
-		We shall truncate the sum to a finite number - not to infinite - such as there is no projection onto the third coordinate but only to a two dimensional plane. Such an example is reported in figure \ref{fig:vector}.
+		We shall truncate the sum to a finite number, not to infinite, such as there is no projection onto the third coordinate but only to a two dimensional plane. Such an example is reported in figure \ref{fig:vector}.
 	\begin{figure}[htbp!]
     \centering
     \includegraphics[width=0.25\textwidth]{vector.jpg}
@@ -60,8 +60,8 @@ We can simplify our calculations and make a useful and accurate approximate solu
 
 	\subsection{Quantum system composed by a nucleus and an electron}
 	Suppose we have a quantum system composed by a nucleus with an electron flying by.
-	I need $|\psi(x)|^2$, I can get it by solving Schr{\"o}dinger equation.
-	With scattering experiments I can measure the Fourier transform $\mathbf{|\tilde{\psi}(p)|^2}$.
+	$|\psi(x)|^2$ needs to be computed by solving the Schr{\"o}dinger equation.
+	With scattering experiments the Fourier transform $\mathbf{|\tilde{\psi}(p)|^2}$ can be measured.
 	This method is used in X-Ray Diffraction Crystallography, IR spectroscopy and so on.
 
 		\subsubsection{Truncating the expansion}
@@ -83,7 +83,7 @@ We can simplify our calculations and make a useful and accurate approximate solu
 	For example, we might want to use the harmonic oscillator ground state to approximate a sum of Gaussian.
 	Meaning "use problem B to solve problem A".
 	Clearly, problem B shall be as close as possible to problem A.
-	Our aim is to solve the Schr{\"o}dinger equation written as $\hat{H}\varphi_n=E_n\varphi_n$, but "there's no free launch", and we must "pay the price" assuming we can solve $\hat{H}_0\psi_n=\lambda_n\psi_n$ as it represents an harmonic oscillator (shown in figure \ref{fig:approximation}).
+	Our aim is to solve the Schr{\"o}dinger equation written as $\hat{H}\varphi_n=E_n\varphi_n$, assuming we can solve $\hat{H}_0\psi_n=\lambda_n\psi_n$ that represents an harmonic oscillator (shown in figure \ref{fig:approximation}).
 
 	\begin{figure}[htbp!]
 	\centering
@@ -155,7 +155,7 @@ The final result is:
 $$H_{RR}=\frac{1}{2}\hbar\omega$$
 
 And since this is a symmetrical problem we can also foresee that $H_{LL}\cong\frac{1}{2}\hbar\omega$.
-The result of $H_{LR}=H_{RL}$ is expected to be very small because the probability of finding the particle in the middle of the harmonic oscillator is very small, i.e. when $\psi_L(x)$ is large, $\psi_R(x)$ is going o be small and viceversa.
+The result of $H_{LR}=H_{RL}$ is expected to be very small because the probability of finding the particle in the middle of the harmonic oscillator is very small, i.e. when $\psi_L(x)$ is large, $\psi_R(x)$ is going to be small and viceversa.
 
 $$H_{RL}=H_{LR}=\int dx\,\psi_L(x)\hat{H}\psi_R(x) = \varepsilon$$
 
@@ -167,7 +167,7 @@ $E_0\gg \varepsilon$ because of the energy barrier due to $H_{mn}$.
 We reduced a complex problem to a linear algebra problem: $\hat{H}\psi=E\psi \rightarrow H_{mn}C_n^{(l)}=E_lC_n^{(l)}$.
 
 	\subsection{Ground state}
-	In the ground state there is a $5-\%$ probability of finding the particle in the left part and $50\%$ of finding it in the right one.
+	In the ground state there is a $50\%$ probability of finding the particle in the left part and $50\%$ of finding it in the right one.
 
 $$\begin{pmatrix}1 & -\frac{\varepsilon}{E_0}\\-\frac{\varepsilon}{E_0} & 1\end{pmatrix}\begin{pmatrix}1\\1\end{pmatrix}=\frac{1}{\sqrt{2}}\begin{pmatrix}1-\frac{\varepsilon}{E_0}\\1-\frac{\varepsilon}{E_0}\end{pmatrix}$$
 

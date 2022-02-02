@@ -19,7 +19,7 @@
 
 		$$\nabla^2=\frac{1}{r^2}\frac{\partial^2}{\partial r^2}+\frac{1}{r^2}\cdot\bigg(\frac{\partial^2}{\partial \theta^2}+\frac{1}{\tan\theta}\frac{\partial}{\partial\theta}+\frac{1}{\sin\theta}\frac{\partial^2}{\partial\varphi^2}\bigg)$$
 
-		The Hamiltonian so becomes:
+		The Hamiltonian then becomes:
 
 		$$\hat{H}=\frac{\hbar^2}{2mr^2}\frac{\partial^2}{\partial r^2}+\frac{\hbar^2}{2mr^2}\cdot\bigg(\frac{\partial^2}{\partial \theta^2}+\frac{1}{\tan\theta}\frac{\partial}{\partial\theta}+\frac{1}{\sin\theta}\frac{\partial^2}{\partial\varphi^2}\bigg)-\frac{e^2}{r}$$
 
@@ -38,7 +38,7 @@
 		$$\hat{H}=\frac{\hbar^2}{2mr^2}\frac{\partial^2}{\partial r^2}+\frac{\hat{L^2}}{2mr^2}-\frac{e^2}{r}$$
 
 		The fact that the angular momentum is not present in the radial part of the Hamiltonian means that the two operators must commute $[\hat{H},\,\hat{L^2}]=0$ and they must also share the same eigenstates.
-		It's also important to note that the invidiar components of the angular momentum only commute with $\hat{L^2}$ but not with each other.
+		It's also important to note that the individual components of the angular momentum only commute with $\hat{L^2}$ but not with each other.
 
 		$$\begin{cases}[\hat{L_i},\hat{L_j}]\neq0 \qquad i,j=1, 2, 3, \dots \\ [\hat{L_i},\hat{L^2}]=0\end{cases}$$
 
@@ -64,7 +64,7 @@
 
 		$$\hat{H}\psi_{n,l,m}=\bigg[\frac{-\hbar^2}{2mr^2}\frac{\partial^2r}{\partial r^2}R_nY_{l,m}+\frac{\hbar^2l(l+1)}{2mr^2}R_nY_{l,m}-\frac{e^2}{r}R_nY_{l,m}\bigg]=E_{n,m,l}R_nY_{l,m}$$
 
-		By eliminating $Y_{l,m}$ we obtain the \textbf{one-dimensional Schr\"odinger equation}, I obtain one equation for each value of $l$.
+		By eliminating $Y_{l,m}$ we obtain the \textbf{one-dimensional Schr\"odinger equation}, with one equation for each value of $l$.
 		Each equation is referred to a different expression of energy.
 
 		$$\frac{-\hbar^2}{2mr^2}\frac{\partial^2r}{\partial r^2}R_n+\frac{\hbar^2l(l+1)}{2mr^2}R_n-\frac{e^2}{r}R_n=E_{n,m,l}R_n$$
@@ -132,7 +132,7 @@
 
 		$$P(\vec{r},\vec{r}+dr)=\vec{r}^2R^2(r)dr$$
 
-		Depending on the value of $l$ I can get the probability of the electron depending on $\theta$ and $\varphi$.
+		Depending on the value of $l$ the probability of the electron depending on $\theta$ and $\varphi$ can be obtained.
 		At $l=0$ the probability is more concentrated on the centre and then fades out (s orbital).
 		At $l=1$ the function depends on $\theta$ but not on $\varphi$, the function is cylindrically symmetrical (p orbital).
 		It is important to remember that there is no orbit in an atom, for the concept of trajectory breaks down on a quantum level.
@@ -280,8 +280,8 @@ All the particles have the same velocity.
 		If I measure spin 1, the wave function collapses into spin value 1 and spin 2 consequently collapses into spin value 2.
 		The concept of \textbf{quantum entanglement} has no correspondences in classical mechanics and is used to develop quantum computers.
 		In classical computers the information is carried on in one single state out of two (either the gate is open or is closed, binary system).
-	In quantum computers I have N states, I have $2^N$ states entangled with each other at the same time.
-	I can store much more information in $2^N$ compared to 1 \footnote{With N bits in classical computer we can ultimately have just one number, even if we have N possible ways to arrange the bits.
+	In quantum computers there are N states, $2^N$ states entangled with each other at the same time.
+	Much more information in $2^N$ can be stored compared to 1 \footnote{With N bits in classical computer we can ultimately have just one number, even if we have N possible ways to arrange the bits.
 																																		Instead, a quantum architecture supports $2^N$ states \textit{simultaneously}.
 																																		This more expressive power contributes to the idea of "quantum supremacy".}.
 
@@ -294,11 +294,11 @@ All the particles have the same velocity.
 
  		$$\frac{1}{\sqrt{2}}\begin{pmatrix} \varphi_1(r_1)&\dots&\varphi_n(r_1)\\\dots& &\dots\\ \varphi_1(r_m)&\dots&\varphi_n(r_m) \end{pmatrix}$$
 
-		This latter matrix is called \textbf{Slater matrix} and I can calculate Slater determinant that guarantees that the wave function is antisymmetric.
+		This latter matrix is called \textbf{Slater matrix} and the Slater determinant guarantees that the wave function is antisymmetric.
 
 	\subsection{Mathematical formalism of Stern-Gerlach experiment}
 	The spin $\hat{S^2}$ doesn't have a classical correspondence, we cannot directly obtain a formula for $\hat{S^2}$ in classical mechanics.
-I must find objects that have two states.
+	Objects that have two states need to be found.
 	Consider spin $1/2$ only and choose an Hillbert space and an operator that acts on it.
 Since a particle with $s=1/2$ can have two different states, the most natural choice for a Hillbert space would be \emph{$L^2$}.
 
@@ -372,7 +372,7 @@ Since a particle with $s=1/2$ can have two different states, the most natural ch
 
 		$$\ket{\vec{\alpha}\vec{\beta}}=\alpha_1\beta_1\ket{\uparrow\uparrow}+\alpha_1\beta_2\ket{\uparrow\downarrow}+\alpha_2\beta_1\ket{\downarrow\uparrow}+\alpha_2\beta_2\ket{\downarrow\downarrow}$$
 
-		In this way I can carry on information about multiple state simultaneously.
+		In this way information about multiple state can be carried simultaneously.
 
 		\subsubsection{Spinor}
 		Given $\varphi(x)$ wavefunction lives in a \emph{$L^2$} Hillbert space.
@@ -385,7 +385,7 @@ Since a particle with $s=1/2$ can have two different states, the most natural ch
 
 			$$\ket{\psi}=\frac{1}{\sqrt{2}}\ket{\uparrow\uparrow}+\frac{1}{\sqrt{2}}\ket{\uparrow\downarrow}=\ket{\alpha\uparrow}$$
 
-			The two measures are independent of each other, I can find particle 2 with a probability which is independent of the measurement of particle 1.
+			The two measures are independent of each other, particle 2 can be found with a probability which is independent of the measurement of particle 1.
 			It is said to be factorizable.
 
 			\paragraph{Entangled state}
@@ -451,8 +451,7 @@ Since a particle with $s=1/2$ can have two different states, the most natural ch
 			We want to calculate $\mel{\psi}{\hat{\rho}(x)}{\psi}$
 			The wave function is:
 
-			$$\psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=\frac{1}{\sqrt{2}}\big(\phi_\uparrow(r_1)\phi_\downarrow(r_2)-\phi_\downarrow(r_1)\phi_\uparrow(r_2)\big)\qquad\text{Six-dimensional integra}$$
-
+			$$\psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=\frac{1}{\sqrt{2}}\big(\phi_\uparrow(r_1)\phi_\downarrow(r_2)-\phi_\downarrow(r_1)\phi_\uparrow(r_2)\big)\quad\text{Six-dimensional integral}$$
 
 			\begin{align*}
 				\mel{\psi}{\hat{\rho}(x)}{\psi}=\frac{1}{2}\int &d\vec{r_1}d\vec{r_2} \psi^*(\vec{r_1},\vec{r_2},s_1^z,s_2^z)\cdot\bigg(\sum_i \delta(\vec{x}-\vec{r_i})\bigg)\cdot\psi(\vec{r_1},\vec{r_2},s_1^z,s_2^z)=\\
