@@ -55,7 +55,7 @@ $$i\hbar \frac{d{}}{d{t}}|\psi(t)\rangle = H|\psi(t)\rangle$$
 
 The formal solution of this equation is given by the time evolution operator:
 
-$$|\psi(t)\rangle = \hat{U}(t-t_0(|\psi(t_0)\rangle$$
+$$|\psi(t)\rangle = \hat{U}(t-t_0)|\psi(t_0)\rangle$$
 
 $$\hat{U}(t-t_0) = e^{-\frac{i}{\hbar}\hat{H}(t-t_0)}$$
 
@@ -94,7 +94,7 @@ Any other measurement will destroy the information e.g. if we measure the moment
 		&(-i \hbar)^{2}\left\{\left(y \frac{\partial}{\partial z}-z \frac{\partial}{\partial y}\right)\left[z \frac{\partial}{\partial x} \varphi-x \frac{\partial}{\partial z} \varphi\right]\right\}-(-i h)^{2}\left\{\left(z \frac{\partial}{\partial x}-x \frac{\partial}{\partial z}\right)\left[y \frac{\partial}{\partial z} \varphi-z \frac{\partial}{\partial y} \varphi\right]\right\}=\\
 		&=(-i \hbar)^{2}\left\{{y \frac{\partial}{\partial x} \varphi+y z \frac{\partial}{\partial z} \frac{\partial}{\partial x} \varphi-y x \frac{\partial^{2}}{\partial z^{2}} \varphi-z^{2} \frac{\partial}{\partial y} \frac{\partial}{\partial x} \varphi+z x \frac{\partial}{\partial y} \frac{\partial}{\partial z} \varphi}\right\} \\
 		&\qquad\qquad-(-i\hbar)^{2}\left\{{z y \frac{\partial}{\partial x} \frac{\partial}{\partial z} \varphi-z^{2} \frac{\partial}{\partial x} \frac{\partial}{\partial y} \varphi-x y \frac{\partial^{2}}{\partial z} \varphi+x \frac{\partial}{\partial y} \varphi+x z \frac{\partial}{\partial z} \frac{\partial}{\partial y} \varphi}\right\}=\\
-		&=(-i \hbar)(-i \hbar)[y \frac{\partial}{\partial x} \varphi-x\frac{\partial}{\partial y}\varphi] = i\hbar \hat{L}_{z}\varphi \qquad \text {By deleting terms}\\
+		&=(-i \hbar)(-i \hbar)\biggl[y \frac{\partial}{\partial x} \varphi-x\frac{\partial}{\partial y}\varphi\biggr] = i\hbar \hat{L}_{z}\varphi \qquad \text {By deleting terms}\\
 \end{align*}
 
 	As a result, $\left[\hat{L}_{x}, \hat{L}_{y}\right]=i\hbar \hat{L}_{z}$.\\
@@ -128,11 +128,11 @@ At time $t_0$ the trap is removed and the energy is measured.
 We then need to compute the expectation value for $E$:
 
 \begin{align*}
-	\expval{E} &=\frac{(\psi, \hat{H} \psi)}{(\psi, \psi)}=\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} \int_{-\infty}^{+\infty}d x\, \psi^{*}(x) \hat{H} \psi(x)=\\
-					 	 &=\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} \int_{-\infty}^{+\infty} d x\,e^{-\frac{m \omega x^{2}}{2 \hbar}}\left(-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}}+U(x)\right) e^{-\frac{m \omega x^{2}}{ 2\hbar}}=\\
+	\expval{E} &=\frac{(\psi, \hat{H} \psi)}{(\psi, \psi)}=\left(\frac{m \omega}{ \pi \hbar}\right)^{\frac{1}{2}} \int_{-\infty}^{+\infty}d x\, \psi^{*}(x) \hat{H} \psi(x)=\\
+					 	 &=\left(\frac{m \omega}{ \pi \hbar}\right)^{\frac{1}{2}} \int_{-\infty}^{+\infty} d x\,e^{-\frac{m \omega x^{2}}{2 \hbar}}\left(-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}}+U(x)\right) e^{-\frac{m \omega x^{2}}{ 2\hbar}}=\\
 						 &=\expval{T}+\expval{U}\\
-	\expval{T} &=-\frac{\hbar^{2}}{2 m}\left(\frac{m \omega}{\pi \hbar}\right)^{1 / 2} \int_{-\infty}^{+\infty} d x\, e^{-\frac{m x^{2} \omega}{2 \hbar}} \frac{\partial^{2}}{\partial x^{2}} e^{-\frac{m x^{2} \omega}{2 \hbar}}=\frac{1}{4} \hbar \omega\\
-	\expval{U} &=\left(\frac{m \omega}{\pi \hbar}\right)^{1 / 2} \int_{-\infty}^{+\infty} d x\, e^{-\frac{m x^{2} \omega}{2 \hbar}} U(x) e^{-\frac{m x^{2} \omega}{2 \hbar}}=0
+	\expval{T} &=-\frac{\hbar^{2}}{2 m}\left(\frac{m \omega}{\pi \hbar}\right)^{\frac{1}{2}} \int_{-\infty}^{+\infty} d x\, e^{-\frac{m x^{2} \omega}{2 \hbar}} \frac{\partial^{2}}{\partial x^{2}} e^{-\frac{m x^{2} \omega}{2 \hbar}}=\frac{1}{4} \hbar \omega\\
+	\expval{U} &=\left(\frac{m \omega}{\pi \hbar}\right)^{\frac{1}{2}} \int_{-\infty}^{+\infty} d x\, e^{-\frac{m x^{2} \omega}{2 \hbar}} U(x) e^{-\frac{m x^{2} \omega}{2 \hbar}}=0
 \end{align*}
 
 \noindent
@@ -158,7 +158,7 @@ Usually, for a free particle in a one dimension box,  $E_n=\left(\frac{\pi^{2}n^
 
 	\begin{align*}
 		P\left(E_{1}\right)&=\left|\int_{-\infty}^{+\infty} d x\, \varphi_{1}^{*}(x) \psi(x)\right|^{2}\qquad \text{ with }\varphi_{1}(x)=\sqrt{\frac{2}{L}} \cos \frac{\pi}{L}x \in \mathbb{R}\\
-		&=\left(\int_{-\infty}^{+\infty} d x\,\sqrt{\frac{2}{L}} \cos \frac{\pi}{L} \cdot \left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} e^{-\frac{m \omega x^{2}}{2 \hbar}}\right)^{2}=\\
+		&=\left(\int_{-\infty}^{+\infty} d x\,\sqrt{\frac{2}{L}} \cos \frac{\pi}{L} \cdot \left(\frac{m \omega}{ \pi \hbar}\right)^{\frac{1}{2}} e^{-\frac{m \omega x^{2}}{2 \hbar}}\right)^{2}=\\
 															&=\frac{m \omega}{ \pi \hbar}\frac{2}{L} \left[\int_{-\infty}^{+\infty} d x \cos \frac{\pi}{L} x e^{-\frac{m \omega x^{2}}{2 \hbar}}\right]^{2}
 	\end{align*}
 
@@ -174,14 +174,14 @@ Usually, for a free particle in a one dimension box,  $E_n=\left(\frac{\pi^{2}n^
 	In our case $\sigma^2= \frac{\hbar}{2m\omega}$, so we can multiply and divide for the Gaussian normalization factor:
 
 	\begin{align*}
-		P\left(E_{1}\right)&=\left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} \frac{2}{L}\left(\int_{-\infty}^{+\infty} d x\, \frac{e^{-\frac{x^{2}}{2\sigma^2}}}{\sqrt{2 \pi} \sqrt{\frac{\hbar}{2 m \omega}}} \cos \frac{\pi}{L} x\right)^2 \frac{ \pi \hbar}{m \omega}\\
-											 &=\left(\frac{ \pi \hbar}{m\omega}\right) \left(\frac{m \omega}{ \pi \hbar}\right)^{1 / 2} \frac{2}{L}\int_{-\infty}^{+\infty} d x\, \delta(x-0) \cos \frac{\pi}{L} x=\cos \frac{\pi}{L} \cdot0=1\qquad\text{Applying the Delta function}
+		P\left(E_{1}\right)&=\left(\frac{m \omega}{ \pi \hbar}\right)^{\frac{1}{2}} \frac{2}{L}\left(\int_{-\infty}^{+\infty} d x\, \frac{e^{-\frac{x^{2}}{2\sigma^2}}}{\sqrt{2 \pi} \sqrt{\frac{\hbar}{2 m \omega}}} \cos \frac{\pi}{L} x\right)^2 \frac{ \pi \hbar}{m \omega}\\
+											 &=\left(\frac{ \pi \hbar}{m\omega}\right) \left(\frac{m \omega}{ \pi \hbar}\right)^{\frac{1}{2}} \frac{2}{L}\int_{-\infty}^{+\infty} d x\, \delta(x-0) \cos \frac{\pi}{L} x=\cos \frac{\pi}{L} \cdot0=1\qquad\text{Applying the Delta function}
 	\end{align*}
 
 	\noindent
 	Check that $P(E_1)$ is dimensionless:
 
-	$$P\left(E_{1}\right)=\frac{2}{L}\left(\frac{ \pi \hbar}{m \omega}\right)^{1 / 2} \rightarrow \sqrt{\frac{[J][S]}{[k g][S]^{-1}}}=\sqrt{[\frac{[kg][m]^2[S]^-2[S]}{[kg][S]^-1}} \cdot \frac{1}{[m]}$$
+	$$P\left(E_{1}\right)=\frac{2}{L}\left(\frac{ \pi \hbar}{m \omega}\right)^{\frac{1}{2}} \rightarrow \sqrt{\frac{[J][S]}{[k g][S]^{-1}}}=\sqrt{[\frac{[kg][m]^2[S]^-2[S]}{[kg][S]^-1}} \cdot \frac{1}{[m]}$$
 
 	$P\left(E_{1}\right)$ is dimensionless.
 
